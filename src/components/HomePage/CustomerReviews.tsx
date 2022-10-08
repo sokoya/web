@@ -2,9 +2,8 @@ import React from "react";
 import { reviewsList } from "../../listData/homepage";
 import Customers from "../Customers";
 
-type Props = {};
 
-const CustomerSection = (props: Props) => {
+const CustomerSection = () => {
   const reviewsJSX = (
     <>
       {reviewsList.map((el, index) => (
