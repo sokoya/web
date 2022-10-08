@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Signika Negative', sans-serif;
+   /* color: #ff3d3d33; */
+}
+
+@media (max-width: 900px) {
+   html {
+    font-size: 62.5%;
+   }
+}
+@media (max-width: 600px) {
+   html {
+    font-size: 100%;
+   }
+}
+@media (max-width: 500px) {
+   html {
+    font-size: 80%;
+   }
+}
+/* @media (max-width: 380px) {
+   html {
+    font-size: 75%;
+   }
+} */
+
+/* 
+code {
+} */
