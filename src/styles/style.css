@@ -1,0 +1,89 @@
+.primary {
+  color: #3362b0;
+  /* primary */
+}
+.scondary {
+  color: #4c76ba;
+}
+
+.secondarydark {
+  color: #06324b;
+}
+
+.tertiary {
+  color: #00bee7;
+}
+.tetiary2 {
+  color: #00aae7;
+}
+
+.accent {
+  color: #f16436;
+}
+.accentlight {
+  color: #f16346;
+}
+.error {
+  color: #ff3d3d;
+}
+
+.black {
+  color: #000000;
+}
+.white {
+  color: #ffffff;
+}
+.whitesmoke {
+  color: #f8f9fa;
+}
+
+.gray {
+  color: #a1b1c7;
+}
+.gray2 {
+  color: #9da3b4;
+}
+.lightgray {
+  color: #d1dee8;
+}
+.darkgray {
+  color: #373434;
+}
+.hmm {
+  color: #373e31;
+}
+
+.green {
+  color: #66d59a;
+}
+.lightGreen {
+  color: #e6fef0;
+}
+
+.lime {
+  color: #00ba63;
+}
+.emerald {
+  color: #2bc978;
+}
+
+.red {
+  color: #ff4134;
+}
+.lightRed {
+  color: #fff1f0;
+}
+
+.purple {
+  color: #6b3ce9;
+}
+.lightpurple {
+  color: #f3efff;
+}
+
+.yellow {
+  color: #ffc664;
+}
+.lightyellow {
+  color: #fff9ec;
+}

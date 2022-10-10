@@ -33,7 +33,7 @@ const Nav = (props: Props) => {
         <Button class="  font-semibold text-primary1 py-3 px-6   rounded-xl">
           Sign In
         </Button>
-        <Button class="bg-primary2  text-white py-2 px-6 mr-8 bp2:mr-0  rounded-sm">
+        <Button class="bg-primary2  text-white py-2 px-6 mr-8 bp2:mr-0 ">
           Create Account
         </Button>
       </div>

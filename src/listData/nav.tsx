@@ -31,55 +31,55 @@ export const navList: {
       {
         name: "Send/Recive Payments",
         href: "/",
-        icon: <img src={PaymentImg} alt="" className="w-[1rem]" />,
+        icon: <img src={PaymentImg} alt="" className="w-[1.2rem]" />,
         description:
           "Accept unrestricted payment with your phone number, dedicated QR",
       },
       {
         name: "Airtime to Cash",
         href: "/",
-        icon: <img src={AirtimeImg} alt="" className="w-[1rem]" />,
+        icon: <img src={AirtimeImg} alt="" className="w-[1.2rem]" />,
         description: "Convert that mistakenly loaded airtime to instant cash",
       },
       {
         name: "Sell Giftcards",
         href: "/",
-        icon: <img src={GiftCardImg} alt="" className="w-[1rem]" />,
+        icon: <img src={GiftCardImg} alt="" className="w-[1.2rem]" />,
         description:
           "An easy to use platform that helps you exchange Giftcards at finger licking rates.",
       },
       {
         name: "Save & Earn",
         href: "/",
-        icon: <img src={SavingsImg} alt="" className="w-[1rem]" />,
+        icon: <img src={SavingsImg} alt="" className="w-[1.2rem]" />,
         description:
           "Upto 12%p.a for every target saving, let your money work for you",
       },
       {
         name: "Virtual Dollar (Coming soon)",
         href: "/",
-        icon: <img src={VirtualCardImg} alt="" className="w-[1rem]" />,
+        icon: <img src={VirtualCardImg} alt="" className="w-[1.2rem]" />,
         description:
           "Experience the truly borderless payment with Payscribe virtual Card",
       },
       {
         name: "Bills Payment",
         href: "/",
-        icon: <img src={BillsImg} alt="" className="w-[1rem]" />,
+        icon: <img src={BillsImg} alt="" className="w-[1.2rem]" />,
         description:
           "Our system can make auto subscription for you, while you attend to what matter most.",
       },
       {
         name: "Rewards",
         href: "/",
-        icon: <img src={GiftImg} alt="" className="w-[1rem]" />,
+        icon: <img src={GiftImg} alt="" className="w-[1.2rem]" />,
         description:
           "Rewards for every transaction and task, Yes! You deserve it.",
       },
       {
         name: "Event",
         href: "/",
-        icon: <img src={EventImg} alt="" className="w-[1rem]" />,
+        icon: <img src={EventImg} alt="" className="w-[1.2rem]" />,
         description: "Buy and sell event tickets around you.",
       },
     ],

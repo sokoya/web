@@ -5,9 +5,7 @@ module.exports = {
     screens: {
       xxs: "370px",
       xs: "400px",
-     
       sm: "600px",
-     
       md: "950px",
       lg: "1200px",
       xl: "1500px",
@@ -16,7 +14,7 @@ module.exports = {
     extend: {
       colors: {
         primary1: "#373434",
-        primary2: "#39BEE7",
+        primary2: "#3362b0",
         secondary1: "#727376",
         secondary2: "#F16436",
         secondary3: "#F58634",

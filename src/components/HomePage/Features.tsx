@@ -57,7 +57,7 @@ const Features = (props: Props) => {
   return (
     <section className="mt-[5rem]">
       <div className=" mb-[5rem]">
-        <h1 className=" font-bold text-4xl xxs:text-5xl">
+        <h1 className=" text-center font-bold text-4xl xxs:text-5xl">
           Amazing Features We offer
         </h1>
       </div>

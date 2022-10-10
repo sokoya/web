@@ -42,7 +42,7 @@ export default function NavPopOver(props: Props) {
           onMouseLeave={() => setOpen(false)}
           className={`
                 ${openNav ? "" : "text-opacity-90"}
-                hover:text-[#f1653678] group inline-flex items-center rounded-md px-3 py-2 text-base font-semibold text-primary1 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                hover:text-[#7b9fd8] group inline-flex items-center rounded-md px-3 py-2 text-base font-semibold text-primary1 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
         >
           <span>{props.navtitle}</span>
           <RiArrowDownSLine
@@ -76,7 +76,7 @@ export default function NavPopOver(props: Props) {
                   >
                     <div
                       // style={{backgroundColor: "#F16436"}}
-                      className="flex w-[.5rem] bg-[#f165361b] rounded-full  shrink-0 items-center justify-center text-primary2 sm:h-12 sm:w-12 text-[1rem]"
+                      className="flex w-[.5rem] bg-[#7b9fd8] rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-[1.2rem]"
                     >
                       {item.icon}
                     </div>

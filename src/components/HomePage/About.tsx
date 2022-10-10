@@ -8,8 +8,8 @@ type Props = {};
 const About = (props: Props) => {
   const aboutContentsJSX = (
     <ul className="flex flex-wrap  justify-center w-full ">
-      {aboutList.map((el, index) => (
-        <li className="w-full  sm:w-[33.3%]" key={el.header}>
+      {aboutList.map((el) => (
+        <li className=" my-[2rem] sm:my-0 w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]" key={el.header}>
           <IconCards
             iconBgColor={el.bgColor}
             iconColor={el.color}
@@ -24,10 +24,12 @@ const About = (props: Props) => {
 
   return (
     <section className="mt-[7rem] py-[2rem]">
-      <div className=" ">
-        <h1 className=" text-center sm:text-left text-4xl  xs:text-5xl font-bold">
-          Pay with Payscribe anywhere
-        </h1>
+      <div className=" text-center ">
+        <h1 className=" text-4xl mb-3  xs:text-5xl font-bold">More than bills</h1>
+        <p className= "w-[90%] sm:w-[40%] text-lg mx-auto text-secondary1 ">
+          Our suite of products make financial transactions faster, easier and
+          smarter
+        </p>
       </div>
       <div className="mt-[4rem]">{aboutContentsJSX}</div>
     </section>

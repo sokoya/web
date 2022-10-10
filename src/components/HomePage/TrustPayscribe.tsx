@@ -3,7 +3,7 @@ import { tabs } from "../../listData/homepage";
 import { motion, AnimatePresence } from "framer-motion";
 type Props = {};
 
-const Section2 = (props: Props) => {
+const TrustPayscribe = (props: Props) => {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   useEffect(() => {
@@ -19,9 +19,14 @@ const Section2 = (props: Props) => {
   }, []);
   return (
     <section className="my-[7rem]">
-      <div className="mb-[5rem]">
-        <h1 className="text-4xl xxs:text-5xl font-bold">HEADER SECTION</h1>
-        <p className="text-secondary1">section sub heading</p>
+      <div className="text-center mb-[3rem]">
+        <h1 className="text-4xl mb-3 xxs:text-5xl font-bold">
+          10,000+ users Trust Payscribe
+        </h1>
+        <p className="mx-auto w-[90%] sm:w-[40%] text-lg text-secondary1">
+          Businesses/Users use Payscribe to simplify digital finance, boost
+          earnings , and to make essential daily payment easy for them.
+        </p>
       </div>
       <div className="flex flex-wrap items-center">
         <div className="w-[80%] mx-auto sm:w-[50%]  ">
@@ -84,4 +89,4 @@ const Section2 = (props: Props) => {
   );
 };
 
-export default Section2;
+export default TrustPayscribe;

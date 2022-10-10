@@ -10,62 +10,55 @@ import { AiFillLock } from "react-icons/ai";
 
 export const aboutList = [
   {
-    header: "Transfer Money",
-    body: "Fast and free to any Payscriber. Locally and Internationally.",
+    header: "Get more value",
+    body: "Say No to charges, hello rewards! With Payscribe you get whooping cashbacks and rewards for every transactions",
     icon: <TbCurrencyNaira />,
     bgColor: "#0082e633",
     color: "#0082E7",
   },
   {
-    header: "Bills Payment",
-    body: "TV Subscription, Electricity Payment, Airtime Topup (locally and internationally), Internet Subscription",
+    header: "Receive money in peace",
+    body: "Body: Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
     icon: <MdPayment />,
     bgColor: "#f5843233",
     color: "#F58634",
   },
   {
-    header: "Smart Lock",
-    body: "You dont have to spend it all, Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
+    header: "Earn-as-you-spend", 
+    body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
     icon: <AiFillLock />,
     bgColor: "#ff3d3d33",
     color: "#FF3D3D",
   },
   {
     header: "Airtime to Cash",
-    body: "Convert that mistakenly loaded airtime to instant cash",
+    body: "No more panic. Send Payscribe the airtime you erroneously recharged, and we will give you the equivalent cash. Easy and simple.",
     icon: <GiTakeMyMoney />,
     bgColor: "#eec41b33",
     color: "#EEC21A",
   },
   {
-    header: "Educational Voucher",
-    body: "Pay for all educational result checker",
+    header: "Financial control in your pocket",
+    body: "Body: Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
     icon: <MdCastForEducation />,
     bgColor: "#0082e633",
     color: "#0082E7",
   },
   {
-    header: "Sell Giftcard",
-    body: "Trade all gift cards; instant payout.",
+    header: "Event Management",
+    body: "Discover what is happening around you. Purchase event tickets without stress.",
     icon: <MdCardGiftcard />,
     bgColor: "#eec41b33",
     color: "#EEC21A",
-  },
-  {
-    header: "Bulk SMS",
-    body: "Send bulk SMS for groups, teams, and campaigns.",
-    icon: <FaMailBulk />,
-    bgColor: "#f5843233",
-    color: "#F58634",
-  },
+  }
 ];
 
 export const tabs = [
   {
     label: <img src={tab1Img} alt="tab1img" />,
-    header: "Header 1",
+    header: "The only app you need",
     color: "#F58634",
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt nostrum recusandae aliquid earum tempora mollitia velit voluptatum consequatur dicta omnis aspernatur, repellat facilis, ab quisquam minus odit laudantium accusantium.",
+    body: "We designed payscribe app for your busy lifestyle, set auto renewal, tap-and-pay with no need to fill long form. No sweat. Send and reveive money at ease. Save money as you spend with our Earn-as-you-spend feature Do what matters most while Payscribe handles all your recurring bills    (Airtime, internet data, TV Subscription, Power) and so much more.",
   },
   {
     label: <img src={tab2Img} alt="tab2img" />,
@@ -75,9 +68,9 @@ export const tabs = [
   },
   {
     label: <img src={tab3Img} alt="tab2img" />,
-    header: "Header3",
+    header: "We’re always happy to help you",
     color: "#EEC21A",
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt nostrum recusandae aliquid earum tempora mollitia velit voluptatum consequatur dicta omnis aspernatur, repellat facilis, ab quisquam minus odit laudantium accusantium.",
+    body: "You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy.",
   },
 ];
 
@@ -85,13 +78,11 @@ export const footerList = [
   {
     header: "Products",
     list: [
-      "Payments",
       "Sell Giftcards",
       "Virtual Dollar",
       "Rewards",
       "Airtime To Cash",
       "Save & Earn",
-      "Bill Payments",
       "Event",
     ],
   },
