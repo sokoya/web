@@ -14,11 +14,14 @@ const Signup = (props: Props) => {
     content = (
       <>
         <div className="text-center">
-          <h1 className=" mx-4 sm:mx-0 text-3xl">What do you want to use payscribe for?</h1>
+          <h1 className=" mx-4 sm:mx-0 text-3xl">
+            What do you want to use payscribe for?
+          </h1>
           <RadioGroup />
+
           <Button
             clicked={() => setOptionpage(false)}
-            class="w-[90%] sm:w-[70%] bg-primary2 text-white py-4"
+            class="w-[90%] sm:w-[80%] bg-primary2 text-white py-4"
           >
             Next
           </Button>
@@ -96,6 +99,15 @@ const Signup = (props: Props) => {
               class="w-full px-3 py-4"
               divclass="my-6"
             />
+            <div className="text-sm  mx-auto flex items-center my-6">
+              <label className="mr-auto flex items-center">
+                <Input class="mr-2" type="checkbox" />
+                <p>
+                  I have read, understand and agree to Payscribe's Privacy
+                  Policy and Terms and Conditions
+                </p>
+              </label>
+            </div>
             <Input
               type="submit"
               class="w-full cursor-pointer py-3 text-white text-lg bg-primary2"
@@ -118,7 +130,9 @@ const Signup = (props: Props) => {
       <div className="w-full h-screen flex ">
         <div className="w-full md:w-[60%] relative ">
           <div className="my-[2rem] mb-[5rem] mb:mt-0 mt-[5rem] md:mt-0">
-            <img className="mx-auto" src={LogoImg} alt="" />
+            <Link to="/">
+              <img className="mx-auto" src={LogoImg} alt="" />
+            </Link>
           </div>
           {content}
         </div>

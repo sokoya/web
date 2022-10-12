@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import HeroImg from "../assets/login/hero.svg";
 import LogoImg from "../assets/Payscribe-Logo-200-x-50.png";
+import HeroImg from "../assets/login/hero.svg";
 import Input from "../components/Input";
 
 type Props = {};
@@ -11,7 +11,9 @@ const Login = (props: Props) => {
       <div className="w-full h-screen flex ">
         <div className="w-full md:w-[60%] relative ">
           <div className="my-[2rem]">
-            <img className="mx-auto" src={LogoImg} alt="" />
+            <Link to="/">
+              <img className="mx-auto" src={LogoImg} alt="" />
+            </Link>
           </div>
           <div className="text-center mt-[5rem] md:mt-0">
             <h1 className="text-[2.7rem] mb-1">Login</h1>
@@ -47,7 +49,9 @@ const Login = (props: Props) => {
                 />
               </form>
               <div className="flex items-center">
-                <p className="mr-auto text-primary2">Forgot Password?</p>
+                <Link className="mr-auto" to={"/forgot-password"}>
+                  <p className=" text-primary2">Forgot Password?</p>
+                </Link>
                 <div className="text-center flex">
                   <p className="mr-1">Not signed up yet?</p>
                   <Link to="/signup">

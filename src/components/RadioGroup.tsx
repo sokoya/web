@@ -4,12 +4,13 @@ import { RadioGroup } from "@headlessui/react";
 const plans = [
   {
     name: "Individual",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iste."
+    content:
+      "I run my business personally and I want to use Payscribe for personal use. Note You can always upgrade to a business account anytime",
   },
   {
     name: "Business",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iste.",
-   
+    content:
+      "I own a legally registered business entity and want to enjoy the full benefit of Payscribe.This is suitable for Business Name, Limited Limited Company(LTD), Public Limited Company (PLC), NGO (suitable for all type of registered business)",
   },
 ];
 
@@ -17,8 +18,7 @@ export default function Group() {
   const [selected, setSelected] = useState(plans[0]);
 
   return (
-    <div className="w-[90%] sm:w-[70%] mx-auto my-10">
-        
+    <div className="w-[90%] sm:w-[80%] mx-auto my-10">
       <div className=" mx-auto w-full ">
         <RadioGroup value={selected} onChange={setSelected}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
@@ -46,7 +46,7 @@ export default function Group() {
                         <div className="text-sm">
                           <RadioGroup.Label
                             as="p"
-                            className={`font-medium text-left text-2xl  ${
+                            className={`font-medium text-left text-2xl mb-[.7rem]  ${
                               checked ? "text-white" : "text-gray-900"
                             }`}
                           >
@@ -54,12 +54,11 @@ export default function Group() {
                           </RadioGroup.Label>
                           <RadioGroup.Description
                             as="span"
-                            className={`inline ${
+                            className={`  ${
                               checked ? "text-sky-100" : "text-gray-500"
                             }`}
                           >
-                            
-                            <span>{plan.content}</span>
+                            <span className="w-[90%] text-left block">{plan.content}</span>
                           </RadioGroup.Description>
                         </div>
                       </div>
