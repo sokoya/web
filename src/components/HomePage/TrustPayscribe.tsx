@@ -15,7 +15,7 @@ const TrustPayscribe = (props: Props) => {
       }
       count = count + 1;
       setSelectedTab(tab[count - 1]);
-    }, 2000);
+    }, 4000);
   }, []);
   return (
     <section className="my-[7rem]">
@@ -64,14 +64,14 @@ const TrustPayscribe = (props: Props) => {
                           ? item.color
                           : "black",
                     }}
-                    className="my-1 cursor-pointer font-bold text-2xl h-[30px]"
+                    className="my-1 cursor-pointer font-bold text-2xl h-[35px]"
                   >
                     {item.header}
                   </h1>
                   <div
                     className="  mb-4 h-[4px] transition-all"
                     style={{
-                      width: item.header === selectedTab.header ? "4rem" : "0",
+                      width: item.header === selectedTab.header ? "10rem" : "0",
                       backgroundColor: item.color,
                     }}
                   ></div>

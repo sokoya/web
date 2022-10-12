@@ -17,7 +17,7 @@ export default function Group() {
   const [selected, setSelected] = useState(plans[0]);
 
   return (
-    <div className="w-full px-4 py-16">
+    <div className="w-[90%] sm:w-[70%] mx-auto my-10">
         
       <div className=" mx-auto w-full ">
         <RadioGroup value={selected} onChange={setSelected}>
@@ -46,7 +46,7 @@ export default function Group() {
                         <div className="text-sm">
                           <RadioGroup.Label
                             as="p"
-                            className={`font-medium text-2xl  ${
+                            className={`font-medium text-left text-2xl  ${
                               checked ? "text-white" : "text-gray-900"
                             }`}
                           >

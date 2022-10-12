@@ -31,12 +31,12 @@ const Nav = (props: Props) => {
       </div>
       <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>
       <div className=" hidden bp4:block">
-        <Link to="/signup">
+        <Link to="/login">
           <Button class="  font-semibold text-primary1 py-3 px-6   rounded-xl">
             Sign In
           </Button>
         </Link>
-        <Link to="/signup">
+        <Link to="/login">
           <Button class="bg-primary2  text-white py-2 px-6 mr-8 bp2:mr-0 ">
             Create Account
           </Button>

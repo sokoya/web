@@ -7,11 +7,12 @@ interface Props {
   label?: string;
   type: string;
   value?: string
+  divclass?: string
 }
 
 const Input = (props: Props) => {
   return (
-    <div className="my-6">
+    <div className={` ${props.divclass}`}>
       {props.label ? (
         <label className="block text-left mb-1">{props.label}</label>
       ) : null}

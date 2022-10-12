@@ -10,21 +10,21 @@ import { AiFillLock } from "react-icons/ai";
 
 export const aboutList = [
   {
-    header: "Get more value",
+    header: "Get More Value",
     body: "Say No to charges, hello rewards! With Payscribe you get whooping cashbacks and rewards for every transactions",
     icon: <TbCurrencyNaira />,
     bgColor: "#0082e633",
     color: "#0082E7",
   },
   {
-    header: "Receive money in peace",
-    body: "Body: Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
+    header: "Receive Money in Peace",
+    body: "Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
     icon: <MdPayment />,
     bgColor: "#f5843233",
     color: "#F58634",
   },
   {
-    header: "Earn-as-you-spend", 
+    header: "Earn-as-you-spend",
     body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
     icon: <AiFillLock />,
     bgColor: "#ff3d3d33",
@@ -38,8 +38,8 @@ export const aboutList = [
     color: "#EEC21A",
   },
   {
-    header: "Financial control in your pocket",
-    body: "Body: Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
+    header: "Financial Control in your Pocket",
+    body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
     icon: <MdCastForEducation />,
     bgColor: "#0082e633",
     color: "#0082E7",
@@ -50,7 +50,7 @@ export const aboutList = [
     icon: <MdCardGiftcard />,
     bgColor: "#eec41b33",
     color: "#EEC21A",
-  }
+  },
 ];
 
 export const tabs = [
@@ -62,9 +62,9 @@ export const tabs = [
   },
   {
     label: <img src={tab2Img} alt="tab2img" />,
-    header: "Header2",
+    header: "Secure & Guaranteed",
     color: "#F16436",
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt nostrum recusandae aliquid earum tempora mollitia velit voluptatum consequatur dicta omnis aspernatur, repellat facilis, ab quisquam minus odit laudantium accusantium.",
+    body: "We take security so dearly. Funds are protected with the same 256-bit HTTPs SSL as well as other banks. Get started to enjoy flawless transactions.",
   },
   {
     label: <img src={tab3Img} alt="tab2img" />,
@@ -104,26 +104,26 @@ export const featuresList = [
   {
     color: "#F16436",
     backgroundColor: "#f165360d",
-    header: "Set Recuring Bills",
-    body: "Do what matters most in your life, and we do the auto renewal subscription for you",
+    header: "Startups",
+    body: "Leverage on Payscribe lifestyle bills payment, power your app with our all-in-one solution.",
   },
   {
     color: "#00BEE7",
     backgroundColor: "#00bde70d",
-    header: "Tap and Pay",
-    body: "Avoid the long stress of filling forms over and over. Tap and pay with just a single click",
+    header: "Business ",
+    body: "Looking to send run a bulk SMS, own a Point of Sale (POS) or to scale up your business? Payscribe got you cover",
   },
   {
     color: "#EEC21A",
     backgroundColor: "#eec41a0d",
-    header: "Payment Link",
-    body: "Receive Payments to your wallet with your unique link",
+    header: "Event Organizer",
+    body: "Tap into the world of endless opportunites with our top-notch event ticketing system.",
   },
   {
     color: "#00BEE7",
     backgroundColor: "#00bde70d",
-    header: "Scan and Receive Payments",
-    body: "Scan, receive payments using your niqur QR code, instant pop up",
+    header: "Personal Use",
+    body: "Subscribe all daily essential lifestyle bills, ranging from Airtime purchase, internet data, electricity bill, vable subscription etc",
   },
   {
     color: "#F16436",
