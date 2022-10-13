@@ -1,12 +1,10 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Header from "../components/HomePage/Header";
-import About from "../components/HomePage/About";
-import TrustPayscribe from "../components/HomePage/TrustPayscribe";
-import Features from "../components/HomePage/Features";
 import Footer from "../components/Footer";
-import CustomerReviews from "../components/HomePage/CustomerReviews";
-import ScanToPay from "../components/HomePage/ScanToPay";
+
+import { Outlet, Route, Routes } from "react-router-dom";
+import Hompeage from "../components/Hompeage";
+import AirtimeToCash from "./AirtimeToCash";
 
 interface Props {}
 
@@ -15,14 +13,9 @@ const Home = (props: Props) => {
     <>
       <div className="px-[2rem] md:px-[3rem] max-w-[1900px]">
         <Nav />
-        <Header />
-        <About />
-        <ScanToPay />
-        <TrustPayscribe />
-        <Features />
-        <CustomerReviews />
+        <Outlet />
       </div>
-      <Footer />
+        <Footer />
     </>
   );
 };

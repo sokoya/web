@@ -27,7 +27,9 @@ const Nav = (props: Props) => {
       className={`flex fixed bg-white z-20 w-full left-0 px-[2rem] md:px-[3rem] top-0 items-center py-[1.5rem]`}
     >
       <div className="w-[8rem] mr-auto">
-        <img src={Logo} alt="logo" />
+        <Link to="/">
+          <img src={Logo} alt="logo" />
+        </Link>
       </div>
       <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>
       <div className=" hidden bp4:block">

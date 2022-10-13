@@ -37,13 +37,13 @@ export const navList: {
       },
       {
         name: "Airtime to Cash",
-        href: "/",
+        href: "/airtime-to-cash",
         icon: <img src={AirtimeImg} alt="" className="w-[1.2rem]" />,
         description: "Convert that mistakenly loaded airtime to instant cash",
       },
       {
         name: "Sell Giftcards",
-        href: "/",
+        href: "/sell-giftcards",
         icon: <img src={GiftCardImg} alt="" className="w-[1.2rem]" />,
         description:
           "An easy to use platform that helps you exchange Giftcards at finger licking rates.",
