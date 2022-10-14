@@ -64,7 +64,7 @@ export const navList: {
       },
       {
         name: "Bills Payment",
-        href: "/",
+        href: "/bills-payment",
         icon: <img src={BillsImg} alt="" className="w-[1.2rem]" />,
         description:
           "Our system can make auto subscription for you, while you attend to what matter most.",

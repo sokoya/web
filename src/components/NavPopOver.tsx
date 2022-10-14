@@ -11,27 +11,6 @@ interface Props {
   documentation: boolean;
 }
 
-const solutions = [
-  {
-    name: "Insights",
-    description: "Measure actions your users take",
-    href: "##",
-    icon: IconOne,
-  },
-  {
-    name: "Automations",
-    description: "Create your own targeted content",
-    href: "##",
-    icon: IconTwo,
-  },
-  {
-    name: "Reports",
-    description: "Keep track of your growth",
-    href: "##",
-    icon: IconThree,
-  },
-];
-
 export default function NavPopOver(props: Props) {
   const [openNav, setOpen] = useState<boolean>(false);
   return (
@@ -75,8 +54,7 @@ export default function NavPopOver(props: Props) {
                     className=" -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                   >
                     <div
-                      // style={{backgroundColor: "#F16436"}}
-                      className="flex w-[.5rem] bg-[#7b9fd8] rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-[1.2rem]"
+                      className="flex w-[.5rem] bg-primary2 rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-[1.2rem]"
                     >
                       {item.icon}
                     </div>

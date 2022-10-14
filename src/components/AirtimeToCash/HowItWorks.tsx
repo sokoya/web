@@ -10,17 +10,17 @@ const howitworksList = [
   {
     title: "Sign Up",
     body: "Create an Payscribe account with a valid email. Follow our simple steps. ",
-    icon: <AiOutlineUser />,
+    icon: <AiOutlineUser className="text-[#226c1a68]" />,
   },
   {
     title: "View Rates",
     body: "From the 'Airtime to Cash' menu, select your network, and the amount you want to convert.",
-    icon: <GiMoneyStack />,
+    icon: <GiMoneyStack className="text-[#82111168]" />,
   },
   {
     title: "Convert",
     body: "Send the airtime to number highlighted for you, and in no distant moment, you will receive estimated value for the airtime. ",
-    icon: <SiConvertio />,
+    icon: <GiMoneyStack className="text-[#12109868]" />,
   },
 ];
 
@@ -39,14 +39,14 @@ const HowItWorks = (props: Props) => {
   );
   return (
     <section className="mt-[5rem]">
-      <div className="w-full flex py-[2rem] items-center  font-semibold bg-[#3363b02f]">
-        <div className="w-[50%]">
+      <h1 className="text-4xl mb-10 text-center font-semibold">How It Works</h1>
+      <div className="w-full flex flex-wrap py-[2rem] mt:items-start lg:items-center   font-semibold ">
+        <div className=" w-[100%] md:w-[50%] bg-[#3363b02f] mb-[2rem] md:mb-0">
           <img src={HowItWorksImg} alt="" />
         </div>
-        <div className="w-[50%]">
-          <div className="w-[80%] mx-auto">
-            <h1 className="text-3xl mb-10">How It Works</h1>
-            {jsx}
+        <div className="w-full md:w-[50%]">
+          <div className="w-full md:w-[85%] mx-auto">
+            <div className="flex flex-wrap justify-between">{jsx}</div>
           </div>
         </div>
       </div>

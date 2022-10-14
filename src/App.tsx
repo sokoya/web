@@ -12,9 +12,9 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import AirtimeToCash from "./pages/AirtimeToCash";
-// import Homepage from "./pages/Homepage";
 import Hompeage from "./components/Hompeage";
 import SellGiftCards from "./pages/SellGiftCards";
+import BillsPayment from "./pages/BillsPayment";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />}>
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
+        <Route path="bills-payment" element={<BillsPayment />} />
         <Route path="/" element={<Hompeage />} />
       </Route>
       <Route path="signup" element={<Signup />} />
