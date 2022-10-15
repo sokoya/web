@@ -4,6 +4,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { Fragment, useState } from "react";
 import { INavItems } from "../listData/nav";
 import APIImg from "../assets/nav/API.svg";
+import {Link} from "react-router-dom"
 
 interface Props {
   navtitle: string;
@@ -48,9 +49,9 @@ export default function NavPopOver(props: Props) {
             <div className="py-[1rem] overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
                 {props.navitems.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className=" -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                   >
                     <div
@@ -66,7 +67,7 @@ export default function NavPopOver(props: Props) {
                         {item.description}
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
               {props.documentation ? (

@@ -2,9 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-import { Outlet, Route, Routes } from "react-router-dom";
-import Hompeage from "../components/Hompeage";
-import AirtimeToCash from "./AirtimeToCash";
+import { Outlet,  } from "react-router-dom";
 
 interface Props {}
 
