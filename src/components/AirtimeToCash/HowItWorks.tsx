@@ -20,13 +20,13 @@ const howitworksList = [
   {
     title: "Convert",
     body: "Send the airtime to number highlighted for you, and in no distant moment, you will receive estimated value for the airtime. ",
-    icon: <GiMoneyStack className="text-[#12109868]" />,
+    icon: <SiConvertio className="text-[#12109868]" />,
   },
 ];
 
 const HowItWorks = (props: Props) => {
   const jsx = (
-    <>
+  <>
       {howitworksList.map((el) => (
         <IconPlate
           title={el.title}
@@ -39,7 +39,7 @@ const HowItWorks = (props: Props) => {
   );
   return (
     <section className="mt-[5rem]">
-      <h1 className="text-4xl mb-10 text-center font-semibold">How It Works</h1>
+      <h1 className="text-5xl mb-10 text-center font-semibold">How It Works</h1>
       <div className="w-full flex flex-wrap py-[2rem] mt:items-start lg:items-center   font-semibold ">
         <div className=" w-[100%] md:w-[50%] bg-[#3363b02f] mb-[2rem] md:mb-0">
           <img src={HowItWorksImg} alt="" />

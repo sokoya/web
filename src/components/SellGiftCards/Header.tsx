@@ -6,8 +6,8 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <header className="">
-      <div className="flex w-full mt-[7rem] items-center">
-        <div className="w-[50%]">
+      <div className="flex flex-wrap w-full mt-[7rem] items-center">
+        <div className="w-full md:w-[50%]">
           <h1 className="text-[3.5rem] leading-[5rem] mb-[4rem] font-bold">
             Trade unused Giftcards for instant cash at amazing rates.
           </h1>
@@ -15,7 +15,7 @@ const Header = (props: Props) => {
             <p>Register Now</p>
           </Button>
         </div>
-        <div className="w-[50%]">
+        <div className="w-full md:w-[50%]">
           <img src={HeroImg} alt="" />
         </div>
       </div>

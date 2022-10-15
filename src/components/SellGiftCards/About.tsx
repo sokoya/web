@@ -2,6 +2,8 @@ import React from "react";
 import IconCards from "../IconCards";
 import { SiFsecure } from "react-icons/si";
 import { MdOutlineEventAvailable, MdPayment } from "react-icons/md";
+import GiftImg from "../../assets/giftcards/giftImg.svg";
+import Button from "../Button";
 
 type Props = {};
 
@@ -50,7 +52,7 @@ const About = (props: Props) => {
   const aboutJSX = (
     <>
       {aboutList.map((el) => (
-        <div className="w-[33%]">
+        <div className="w-full sm:w-[80%] md:w-[50%] lg:w-[33%] mb-11 lg:mb-0  h-[25rem] lg:h-[24rem]">
           <IconCards
             content={el.content}
             header={el.header}
@@ -62,7 +64,36 @@ const About = (props: Props) => {
       ))}
     </>
   );
-  return <div className="flex items-center justify-between mt-[3rem]">{aboutJSX}</div>;
+  return (
+    <section>
+      <div className="flex flex-wrap items-center justify-center lg:justify-between mt-[3rem]">
+        {aboutJSX}
+      </div>
+      <div className=" flex flex-wrap justify-between items-center mt-[5rem] py-[3rem] px-4">
+        <div className=" mb-[3rem] lg:mb-0 w-full md:w-[50%] bg-[#3363b02f]">
+          <img src={GiftImg} alt="gift img" />
+        </div>
+        <div className="w-full md:w-[45%]">
+          <h1 className=" text-4xl font-bold mb-[2rem]">
+            Every year, Giftcards worth billions of dollars are wasted, left
+            unused and discarded.
+          </h1>
+          <p className="mb-8 text-[#151515f1] text-2xl bp3:text-base">
+            This became a global problem, and Payscribe stepped in as the number
+            one problem-solving platform that it is. Payscribe allows users in
+            Nigeria to sell their unused Giftcards for instant cash at amazing
+            rates. Using Payscribe, you can sell various Giftcards in Nigeria,
+            including but not limited to iTunes, Amazon, Steam Wallet, Google
+            Play, eBay, Walmart, Sephora, OneVanilla, American Express,
+            Offgamers, Best Buy, Gamestop, Nike, PlayStation and others.{" "}
+          </p>
+          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
+            <p>Register Now</p>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default About;

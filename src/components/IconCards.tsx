@@ -12,7 +12,7 @@ interface Props {
 
 const IconCards = (props: Props) => {
   return (
-    <div className=" bg-white shadow-lg h-[23rem] lg:h-[20rem] px-8  w-full  sm:w-auto  text-center mb-[2rem] sm:mb-[4rem] sm:mx-[1rem]">
+    <div className=" bg-white shadow-lg h-full  pt-[1rem]  px-8  w-full  sm:w-auto  text-center mb-[2rem] sm:mb-[4rem] sm:mx-[1rem]">
       <div className="my-auto">
         <div
           style={{ backgroundColor: props.iconBgColor, color: props.iconColor }}
@@ -21,7 +21,7 @@ const IconCards = (props: Props) => {
           {props.icon}
         </div>
         <h1 className="font-bold mb-[2rem] text-lg ">{props.header}</h1>
-        <p className="text-secondary1">{props.content}</p>
+        <p className="text-[#151515f1]">{props.content}</p>
         <a href="/">{props.linkName}</a>
       </div>
     </div>
