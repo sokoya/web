@@ -11,11 +11,7 @@ interface Props {}
 const Home = (props: Props) => {
   return (
     <>
-      <div className="px-[2rem] md:px-[3rem] max-w-[1900px]">
-        <Nav />
-        <Outlet />
-      </div>
-        <Footer />
+      <Hompeage />
     </>
   );
 };

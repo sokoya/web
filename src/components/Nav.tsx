@@ -3,7 +3,7 @@ import Button from "./Button";
 import Logo from "../assets/Payscribe-Logo-2000x-634.png";
 import NavPopOver from "./NavPopOver";
 import { navList } from "../listData/nav";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 type Props = {};
 
 const Nav = (props: Props) => {
@@ -27,22 +27,22 @@ const Nav = (props: Props) => {
       className={`flex fixed bg-white z-20 w-full left-0 px-[2rem] md:px-[3rem] top-0 items-center py-[1.5rem]`}
     >
       <div className="w-[8rem] mr-auto">
-        <Link to="/">
+        <a href="/">
           <img src={Logo} alt="logo" />
-        </Link>
+        </a>
       </div>
       <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>
       <div className=" hidden bp4:block">
-        <Link to="/login">
+        <a href="/login">
           <Button class="  font-semibold text-primary1 py-3 px-6   rounded-xl">
             Sign In
           </Button>
-        </Link>
-        <Link to="/login">
+        </a>
+        <a href="/login">
           <Button class="bg-primary2  text-white py-2 px-6 mr-8 bp2:mr-0 ">
             Create Account
           </Button>
-        </Link>
+        </a>
       </div>
       <div
         onClick={() => setOpen(!open)}

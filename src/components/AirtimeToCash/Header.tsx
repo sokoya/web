@@ -8,7 +8,7 @@ function Header({}: Props) {
   return (
     <header className="">
       <div className="flex flex-wrap w-full mt-[7rem] items-center">
-        <div className="w-full md:w-[50%] text-center md:text-right">
+        <div className="w-full md:w-[50%]">
           <h1 className="text-[3.5rem] leading-[5rem] mb-[4rem] font-bold">
             Convert your excess airtime to cash and get your money in seconds!
           </h1>
