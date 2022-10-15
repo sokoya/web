@@ -30,12 +30,46 @@ const router = createBrowserRouter(
   )
 );
 
+const routers = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "sell-giftcards",
+    element: <SellGiftCards />,
+  },
+  {
+    path: "airtime-to-cash",
+    element: <AirtimeToCash />,
+  },
+  {
+    path: "sell-giftcards",
+    element: <SellGiftCards />,
+  },
+  {
+    path: "bills-payment",
+    element: <BillsPayment />,
+  },
+  {
+    path: "signup",
+    element: <Signup />,
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "forgot-password",
+    element: <ForgotPassword />,
+  },
+]);
 function App() {
   return (
     <>
       <Layout>
         <Nav />
-        <RouterProvider router={router} />;
+        <RouterProvider router={routers} />;
       </Layout>
       <Footer />
     </>
