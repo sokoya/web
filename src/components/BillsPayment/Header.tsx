@@ -8,11 +8,11 @@ function Header({}: Props) {
   return (
     <header className="mt-[7rem]">
       <div className="flex mt-[10rem] items-center flex-wrap">
-        <div className=" w-[50%]">
+        <div className=" w-full md:w-[50%]">
           <h1 className="text-6xl font-bold mb-8">
             Paying lifestyle bills at ease
           </h1>
-          <div className="text-xl font-light mb-8 ">
+          <div className=" text-2xl md:text-xl font-light mb-8 ">
             <h2 className="mb-3">
               Payscribe has the most convenient and secured bills payment system
               that facilitates the payment of educational fees( Such as WAEC
@@ -29,7 +29,7 @@ function Header({}: Props) {
             <p>Get Started</p>
           </Button>
         </div>
-        <div className="w-[50%]">
+        <div className="w-full md:w-[50%]">
           <img src={HeroImg} alt="hero img" />
         </div>
       </div>

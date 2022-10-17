@@ -39,11 +39,13 @@ const HowToPay = (props: Props) => {
     </>
   );
   return (
-    <section>
-      <div className="flex justify-between flex-wrap items-center">
-        <div className="w-[48%]">
-          <h1 className="font-bold text-5xl mb-6">How to pay subscription </h1>
-          <p className="text-[#151515f1] mb-6">
+    <section className="mt-[6rem]">
+      <div className="flex justify-between flex-wrap">
+        <div className="w-full md:w-[48%]">
+          <h1 className="font-bold text-5xl mb-14 md:mb-6 text-center md:text-left">
+            How to pay subscription{" "}
+          </h1>
+          <p className="text-[#151515f1] mb-6 text-2xl md:text-base">
             Ran out of electricity unit? Need to get insurance? Bulk SMS?
             Education? Toll? TVs subscriptions? Want to fund your betting
             wallet? With easy to follow steps you can pay all your bills from
@@ -54,12 +56,12 @@ const HowToPay = (props: Props) => {
           </p>
 
           <div className="flex flex-wrap items-center">
-            <div className="w-full md:w-[100%] mx-auto">
-            <div className="flex flex-wrap justify-between">{jsx}</div>
+            <div className="w-full md:w-[80%] ">
+              <div className="flex flex-wrap justify-between">{jsx}</div>
             </div>
           </div>
         </div>
-        <div className="w-[50%] bg-[#3363b02f] ">
+        <div className="w-full md:w-[50%] bg-[#3363b02f] ">
           <img src={subscribedImg} alt="subscribed" />
         </div>
       </div>

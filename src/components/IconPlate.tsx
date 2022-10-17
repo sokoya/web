@@ -17,7 +17,7 @@ const IconPlate = (props: Props) => {
           {props.title || props.number}
         </h1>
       </div>
-      <p className="text-2xl bp3:text-base text-[#151515f1]">{props.body}</p>
+      <p className="text-2xl md:text-base text-[#151515f1]">{props.body}</p>
     </div>
   );
 };
