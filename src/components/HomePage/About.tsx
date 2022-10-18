@@ -9,7 +9,7 @@ const About = (props: Props) => {
   const aboutContentsJSX = (
     <ul className="flex flex-wrap  justify-center w-full ">
       {aboutList.map((el) => (
-        <li className=" h-[23rem] lg:h-[20rem] my-[2rem] sm:my-0 w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]" key={el.header}>
+        <li className=" h-[23rem] lg:h-[22rem] my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]" key={el.header}>
           <IconCards
             iconBgColor={el.bgColor}
             iconColor={el.color}

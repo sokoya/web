@@ -8,14 +8,17 @@ interface Props {
 }
 
 const NavMobile = (props: Props) => {
+  const [openDisclosure, setOpenDisclosure] = useState<string>("");
   const disclosures = (
     <>
       {navList.map((el) => (
         <NavDisclosure
+          clicked={(val: string) => setOpenDisclosure(val.toLowerCase())}
           key={el.title}
           navitems={el.items}
           navtitle={el.title}
           documentation={el.documentation}
+          open={openDisclosure}
         />
       ))}
     </>

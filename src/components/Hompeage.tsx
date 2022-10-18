@@ -5,6 +5,7 @@ import TrustPayscribe from "../components/HomePage/TrustPayscribe";
 import Features from "../components/HomePage/Features";
 import CustomerReviews from "../components/HomePage/CustomerReviews";
 import ScanToPay from "../components/HomePage/ScanToPay";
+import CTA from "./CTA";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ function Hompeage({}: Props) {
       <TrustPayscribe />
       <Features />
       <CustomerReviews />
+      <CTA />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/AirtimeToCash/Header";
 import HowItWorks from "../components/AirtimeToCash/HowItWorks";
 import Button from "../components/Button";
+import CTA from "../components/CTA";
 
 type Props = {};
 
@@ -34,6 +35,7 @@ const AirtimeToCash = (props: Props) => {
           <p>Register Now</p>
         </Button>
       </div>
+      <CTA />
     </>
   );
 };
