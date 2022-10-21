@@ -29,12 +29,14 @@ const HowToPay = (props: Props) => {
   const jsx = (
     <>
       {HowToPayList.map((el) => (
-        <IconPlate
-          number={el.number}
-          body={el.body}
-          icon={el.icon}
-          key={el.number}
-        />
+        <div className="w-[100%] bp3:w-[45%] my-[2rem]">
+          <IconPlate
+            number={el.number}
+            body={el.body}
+            icon={el.icon}
+            key={el.number}
+          />
+        </div>
       ))}
     </>
   );

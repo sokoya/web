@@ -15,6 +15,7 @@ import AirtimeToCash from "./pages/AirtimeToCash";
 import Hompeage from "./components/Hompeage";
 import SellGiftCards from "./pages/SellGiftCards";
 import BillsPayment from "./pages/BillsPayment";
+import SRMoney from "./pages/SRMoney";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
         <Route path="bills-payment" element={<BillsPayment />} />
+        <Route path="send-receive-money" element={<SRMoney />} />
         <Route path="/" element={<Hompeage />} />
       </Route>
       <Route path="signup" element={<Signup />} />

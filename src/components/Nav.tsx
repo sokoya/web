@@ -25,10 +25,9 @@ const Nav = (props: Props) => {
   const hambugerClass = "transition-all bg-primary2 w-full h-[3px] absolute";
   return (
     <>
-    <div className=" block md:hidden">
-
-      <NavMobile show={open} />
-    </div>
+      <div className=" block md:hidden">
+        <NavMobile closeNav={() => setOpen(!open)} show={open} />
+      </div>
       <nav
         className={`flex fixed bg-white z-[120] w-full left-0 px-[2rem] md:px-[3rem] top-0 items-center py-[1.5rem]`}
       >

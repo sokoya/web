@@ -2,19 +2,20 @@ import ikedc from "../assets/bills/electricity/ikedc.png";
 import phedc from "../assets/bills/electricity/phedc.png";
 import aedc from "../assets/bills/electricity/aecd.png";
 import ibedc from "../assets/bills/electricity/ibedc.png";
-import jedc from "../assets/bills/electricity/jedc.jpg";
+import jedc from "../assets/bills/electricity/jedc.png";
 import ekedc from "../assets/bills/electricity/ekedc.png";
 import showmax from "../assets/bills/tv/showmax.png";
 import multichoice from "../assets/bills/tv/multichoice.png";
 import startimes from "../assets/bills/tv/startimes.png";
-import bet9ja from "../assets/bills/bet/bet9ja.svg";
+import bet9ja from "../assets/bills/bet/bet9ja.png";
 import onexbet from "../assets/bills/bet/1xbet.png";
 import bangbet from "../assets/bills/bet/bangbet.png";
 import betking from "../assets/bills/bet/betking.png";
 import betway from "../assets/bills/bet/betway.png";
 import merrybet from "../assets/bills/bet/merrybet.png";
 import naijabet from "../assets/bills/bet/naijabet.png";
-import nairabet from "../assets/bills/bet/Nairabet.svg";
+import nairabet from "../assets/bills/bet/nairabet.png";
+import paripesa from "../assets/bills/bet/paripesa.jpg";
 
 export const billsList = [
   {
@@ -36,6 +37,7 @@ export const billsList = [
       merrybet,
       naijabet,
       nairabet,
+      paripesa,
     ],
   },
 ];

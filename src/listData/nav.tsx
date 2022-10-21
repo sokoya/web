@@ -30,7 +30,7 @@ export const navList: {
     items: [
       {
         name: "Send/Recive Payments",
-        href: "/",
+        href: "send-receive-money",
         icon: <img src={PaymentImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:
           "Accept unrestricted payment with your phone number, dedicated QR",

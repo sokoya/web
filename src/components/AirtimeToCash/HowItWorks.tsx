@@ -26,14 +26,16 @@ const howitworksList = [
 
 const HowItWorks = (props: Props) => {
   const jsx = (
-  <>
+    <>
       {howitworksList.map((el) => (
-        <IconPlate
-          title={el.title}
-          body={el.body}
-          icon={el.icon}
-          key={el.title}
-        />
+        <div className="my-[2rem] -[100%] bp3:w-[45%]">
+          <IconPlate
+            title={el.title}
+            body={el.body}
+            icon={el.icon}
+            key={el.title}
+          />
+        </div>
       ))}
     </>
   );

@@ -1,12 +1,12 @@
-import { Disclosure } from "@headlessui/react";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { INavItems } from "../listData/nav";
 interface Props {
   navtitle: string;
   navitems: INavItems[];
   documentation: boolean;
   clicked: (val: string) => void;
+  closeNav: () => void;
   open: string;
 }
 export default function NavDisclosure(props: Props) {
@@ -39,20 +39,22 @@ export default function NavDisclosure(props: Props) {
         } flex items-center  flex-wrap transition-all`}
       >
         {props.navitems.map((el) => (
-          <div
-            key={el.name}
-            className={` ${
-              props.open === props.navtitle.toLowerCase() ? "flex" : "hidden"
-            } items-center w-[100%] sm:w-[50%] mb-[3rem]`}
-          >
-            <div className="flex mr-[2rem]  bg-primary2 rounded-md   items-center justify-center text-white h-20 w-20 text-[3rem]">
-              {el.icon}
+          <Link key={el.name} to={el.href}>
+            <div
+              onClick={props.closeNav}
+              className={` ${
+                props.open === props.navtitle.toLowerCase() ? "flex" : "hidden"
+              } items-center w-[100%] sm:w-[50%] mb-[3rem]`}
+            >
+              <div className="flex mr-[2rem]  bg-primary2 rounded-md   items-center justify-center text-white h-20 w-20 text-[3rem]">
+                {el.icon}
+              </div>
+              <div className="w-[60%]">
+                <h1 className="font-bold text-xl sm:text-2xl">{el.name}</h1>
+                <p>{el.description}</p>
+              </div>
             </div>
-            <div className="w-[60%]">
-              <h1 className="font-bold text-xl sm:text-2xl">{el.name}</h1>
-              <p>{el.description}</p>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

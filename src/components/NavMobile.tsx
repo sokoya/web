@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 interface Props {
   show: boolean;
+  closeNav: () => void;
 }
 
 const NavMobile = (props: Props) => {
@@ -19,6 +20,7 @@ const NavMobile = (props: Props) => {
           navtitle={el.title}
           documentation={el.documentation}
           open={openDisclosure}
+          closeNav={props.closeNav}
         />
       ))}
     </>
