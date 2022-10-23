@@ -1,0 +1,36 @@
+.Kano {
+  background-image: linear-gradient(#000000fd, #000000a8),
+    url("../assets/events/kano.png");
+  background-position: center;
+  background-size: cover;
+}
+.Lagos {
+  background-image: linear-gradient(#000000aa, #000000a8),
+    url("../assets/events/Lag.png");
+  background-position: center;
+  background-size: cover;
+}
+.Port {
+  background-image: linear-gradient(#000000fd, #000000a8),
+    url("../assets/events/port.png");
+  background-position: contain;
+  background-size: cover;
+}
+.Abuja {
+  background-image: linear-gradient(#000000fd, #000000a8),
+    url("../assets/events/abuja.png");
+  background-size: cover;
+  background-position: center;
+}
+.Ogun {
+  background-image: linear-gradient(#000000fd, #000000a8),
+    url("../assets/events/ogun.png");
+  background-size: cover;
+  background-position: center;
+}
+.Ibadan {
+  background-image: linear-gradient(#000000fd, #000000a8),
+    url("../assets/events/ibadan.png");
+  background-size: cover;
+  background-position: center;
+}

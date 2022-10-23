@@ -78,7 +78,7 @@ export const navList: {
       },
       {
         name: "Event",
-        href: "/",
+        href: "/events",
         icon: <img src={EventImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description: "Buy and sell event tickets around you.",
       },
