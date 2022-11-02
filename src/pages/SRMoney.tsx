@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollRestoration } from "react-router-dom";
 import CTA from "../components/CTA";
 import Section3 from "../components/SellGiftCards/Section3";
 import About from "../components/SRMoney/About";
@@ -13,6 +14,7 @@ const SRMoney = (props: Props) => {
       <About />
       <Section3 />
       <CTA />
+      <ScrollRestoration />
     </>
   );
 };

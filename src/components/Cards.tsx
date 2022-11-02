@@ -7,25 +7,18 @@ interface Props {
   body: string;
   icon?: ReactNode;
   color: string;
+  cardImg: ReactNode;
 }
 
 const Cards = (props: Props) => {
   return (
-    <div
-      style={{ backgroundColor: props.backgroundColor }}
-      className="rounded-xl bg-opacity-10 px-[2rem] text-center py-[4rem] "
-    >
-      <div className="w-[15rem] mx-auto">
-        <img src={testImg} alt="" />
-      </div>
+    <div className="rounded-xl h-[30rem] bg-primary3-light bg-opacity-10 text-center py-[2.5rem] ">
+      <div className="w-[15rem] mx-auto">{props.cardImg}</div>
       <div className="">
-        <h1
-          style={{ color: props.color }}
-          className="text-center font-semibold text-xl mb-6"
-        >
+        <h1 className="text-center mt-7 font-semibold text-xl mb-6 text-white">
           {props.header}
         </h1>
-        <p className="text-sm">{props.body}</p>
+        <p className="text-white px-[2rem]">{props.body}</p>
       </div>
     </div>
   );

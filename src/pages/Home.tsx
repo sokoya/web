@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-
+import { ScrollRestoration } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
 interface Props {}
@@ -13,6 +13,7 @@ const Home = (props: Props) => {
         <Nav />
         <Outlet />
       </div>
+      <ScrollRestoration />
       <Footer />
     </>
   );

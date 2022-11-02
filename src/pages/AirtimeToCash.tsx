@@ -3,6 +3,7 @@ import Header from "../components/AirtimeToCash/Header";
 import HowItWorks from "../components/AirtimeToCash/HowItWorks";
 import Button from "../components/Button";
 import CTA from "../components/CTA";
+import { ScrollRestoration } from "react-router-dom";
 
 type Props = {};
 
@@ -36,6 +37,7 @@ const AirtimeToCash = (props: Props) => {
         </Button>
       </div>
       <CTA />
+      <ScrollRestoration />
     </>
   );
 };

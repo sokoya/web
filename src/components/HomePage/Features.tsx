@@ -48,6 +48,7 @@ const Features = (props: Props) => {
               body={el.body}
               color={el.color}
               header={el.header}
+              cardImg={el.cardImg}
             />
           </SwiperSlide>
         ))}

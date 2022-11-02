@@ -9,7 +9,8 @@ const Header = (props: Props) => {
   return (
     <header className="flex flex-wrap items-center w-full mt-[3rem]">
       <div className="w-full sm:w-[60%] mx-auto md:w-[50%] mt-[5rem]">
-        <div className=" text-[3.5rem]  lg:text-[4rem] font-bold leading-[4.5rem] lg:leading-[5.5rem]">
+        <h5 className="mb-6 "><span className="font-bold mr-1 text-primary2">Pay</span> Introducing a lifestyle with ease</h5>
+        <div className=" w-[90%] text-[3.5rem]  lg:text-header font-bold leading-[4rem] lg:leading-[5rem]">
           <h1 className=" ">
             Pay Lifestyle bills and manage your finances at ease
           </h1>

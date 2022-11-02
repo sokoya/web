@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Payscribe-Logo-2000x-634.png";
+import Logo from "../assets/payscribe.svg";
 import { footerList } from "../listData/homepage";
 import FooterList from "./FooterList";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -21,14 +21,14 @@ const Footer = (props: Props) => {
     </>
   );
   return (
-    <footer className=" bg-[#050931] text-white w-full px-[3rem] py-[7rem] mt-[5rem] ">
+    <footer className=" bg-primary3 text-white w-full px-[3rem] py-[7rem] mt-[5rem] ">
       <div className="w-full  flex items-start flex-wrap">
         <div className="w-full mb-[3rem] bp4:mb-0 bp4:w-[30%] ">
-          <div className="w-[10rem] mb-6">
+          <div className="w-[10rem] -mt-[3rem]">
             <img src={Logo} alt="logo" />
           </div>
           <div className=" mb-4">
-            <p className="w-[90%] mb-2">
+            <p className="w-[85%] mb-4">
               95 Oreta Road, Opposite Clay View Hotel, Ikorodu, Lagos State
             </p>
             <p className="mb-2">hello@payscribe.ng</p>

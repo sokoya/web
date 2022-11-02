@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollRestoration } from "react-router-dom";
 import CTA from "../components/CTA";
 import About from "../components/SellGiftCards/About";
 import Header from "../components/SellGiftCards/Header";
@@ -11,6 +12,7 @@ const SellGiftCards = (props: Props) => {
       <Header />
       <About />
       <CTA />
+      <ScrollRestoration />
     </>
   );
 };

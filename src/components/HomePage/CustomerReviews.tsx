@@ -14,7 +14,7 @@ const CustomerSection = () => {
   return (
     <section className="mt-[10rem]">
       <h1 className="font-bold text-4xl xxs:text-5xl mb-[5rem] text-center">What Our Customers Think</h1>
-      <div className="flex flex-wrap">{reviewsJSX}</div>
+      <div className="flex justify-between flex-wrap">{reviewsJSX}</div>
     </section>
   );
 };

@@ -7,6 +7,10 @@ import { TbCurrencyNaira } from "react-icons/tb";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { FaMailBulk } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
+import Startups from "../assets/Startups.png"
+import Personal from "../assets/personal.png"
+import Event from "../assets/event.png"
+import Business from "../assets/Business.png"
 
 export const aboutList = [
   {
@@ -57,19 +61,19 @@ export const tabs = [
   {
     label: <img src={tab1Img} alt="tab1img" />,
     header: "The only app you need",
-    color: "#F58634",
+    color: "#3362B0",
     body: "We designed payscribe app for your busy lifestyle, set auto renewal, tap-and-pay with no need to fill long form. No sweat. Send and reveive money at ease. Save money as you spend with our Earn-as-you-spend feature Do what matters most while Payscribe handles all your recurring bills    (Airtime, internet data, TV Subscription, Power) and so much more.",
   },
   {
     label: <img src={tab2Img} alt="tab2img" />,
     header: "Secure & Guaranteed",
-    color: "#F16436",
+    color: "#3362B0",
     body: "We take security so dearly. Funds are protected with the same 256-bit HTTPs SSL as well as other banks. Get started to enjoy flawless transactions.",
   },
   {
     label: <img src={tab3Img} alt="tab2img" />,
     header: "We’re always happy to help you",
-    color: "#EEC21A",
+    color: "#3362B0",
     body: "You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy.",
   },
 ];
@@ -105,24 +109,28 @@ export const featuresList = [
     color: "#F16436",
     backgroundColor: "#f165360d",
     header: "Startups",
+    cardImg: <img src={Startups} alt="img" />,
     body: "Leverage on Payscribe lifestyle bills payment, power your app with our all-in-one solution.",
   },
   {
     color: "#00BEE7",
     backgroundColor: "#00bde70d",
     header: "Business ",
+    cardImg: <img src={Business} alt="img" />,
     body: "Looking to send run a bulk SMS, own a Point of Sale (POS) or to scale up your business? Payscribe got you cover",
   },
   {
     color: "#EEC21A",
     backgroundColor: "#eec41a0d",
     header: "Event Organizer",
+    cardImg: <img src={Event} alt="img" />,
     body: "Tap into the world of endless opportunites with our top-notch event ticketing system.",
   },
   {
     color: "#00BEE7",
     backgroundColor: "#00bde70d",
     header: "Personal Use",
+    cardImg: <img src={Personal} alt="img" />,
     body: "Subscribe all daily essential lifestyle bills, ranging from Airtime purchase, internet data, electricity bill, vable subscription etc",
   },
   {

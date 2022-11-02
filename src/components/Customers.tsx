@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
+import QuoteImg from "../assets/quote.svg";
 
 interface Props {
   comment: string;
@@ -12,13 +13,21 @@ const Customers = (props: Props) => {
     <div
       className={`${
         props.index === 2 ? "block sm:hidden md:block" : ""
-      } w-full sm:w-[45%] md:w-[28%] mb-6 sm:mb-0  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
+      } w-full sm:w-[30%%] light-shadow bg-white py-[2rem] px-[1rem] rounded-md md:w-[28%] mb-6 sm:mb-0  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
     >
-      <div className="flex items-start">
-        <FaUserCircle className="text-[8rem] mr-[2rem] -mt-[2rem]" />
+      <div className="">
+        <img className="mb-9" src={QuoteImg} alt="quoteimg" />
         <div className="">
-          <p className="text-secondary1 text-lg sm:text-sm mb-4">{props.comment}</p>
-          <h2 className="font-semibold">{props.customer_name}</h2>
+          <p className="text-secondary1 text-lg sm:text-sm mb-9">
+            {props.comment}
+          </p>
+          <div className="flex items-center">
+            <FaUserCircle className="text-[2.5rem] mr-4" />
+            <div className="">
+              <h2 className="font-semibold">{props.customer_name}</h2>
+              <p>Business Man</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
