@@ -9,7 +9,7 @@ const Login = (props: Props) => {
   return (
     <main className="">
       <div className="w-full h-screen flex ">
-        <div className="w-full md:w-[60%] relative ">
+        <div className="w-full md:w-[40%] relative ">
           <div className="my-[2rem]">
             <Link to="/">
               <img className="mx-auto" src={LogoImg} alt="" />
@@ -62,7 +62,7 @@ const Login = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] h-[100%] ml-auto bg-[#81818121] hidden md:block">
+        <div className="w-[60%] h-[100%] ml-auto bg-[#81818121] hidden md:block">
           <div className="mt-[5rem] w-[100%]">
             <img src={HeroImg} alt="" />
           </div>

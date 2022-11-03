@@ -6,7 +6,7 @@ type Props = {};
 
 const ScanToPay = (props: Props) => {
   return (
-    <section className="mt-[7rem] bg-gradient-to-b from-[#D5D1FF] to-[#E9E9E9]">
+    <section className="mt-[4rem] rounded-lg bg-gradient-to-b from-[#D5D1FF] to-[#E9E9E9]">
       <div className="flex flex-row-reverse sm:flex-row flex-wrap items-center py-[5rem]  px-[3rem]">
         <div className="w-full sm:w-[50%]">
           <h1 className="text-[3.5rem] sm:text-[4.5rem] mb-14 font-semibold leading-[5rem]">

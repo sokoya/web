@@ -12,10 +12,10 @@ interface Props {
 
 const Cards = (props: Props) => {
   return (
-    <div className="rounded-xl h-[30rem] bg-primary3-light bg-opacity-10 text-center py-[2.5rem] ">
-      <div className="w-[15rem] mx-auto">{props.cardImg}</div>
+    <div className="rounded-3xl h-[30rem] bg-primary3-light bg-opacity-10 text-center py-[.4rem] ">
+      <div className="w-[96%] mx-auto">{props.cardImg}</div>
       <div className="">
-        <h1 className="text-center mt-7 font-semibold text-xl mb-6 text-white">
+        <h1 className="text-center mt-4 font-semibold text-xl mb-2 text-white">
           {props.header}
         </h1>
         <p className="text-white px-[2rem]">{props.body}</p>

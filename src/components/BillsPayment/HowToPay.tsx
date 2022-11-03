@@ -41,7 +41,7 @@ const HowToPay = (props: Props) => {
     </>
   );
   return (
-    <section className="mt-[6rem]">
+    <section className="mt-[6rem] px-[5rem]">
       <div className="flex justify-between flex-wrap">
         <div className="w-full md:w-[48%]">
           <h1 className="font-bold text-5xl mb-14 md:mb-6 text-center md:text-left">

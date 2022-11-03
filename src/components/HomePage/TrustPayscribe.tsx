@@ -18,8 +18,8 @@ const TrustPayscribe = (props: Props) => {
     }, 4000);
   }, []);
   return (
-    <section className="my-[7rem]">
-      <div className="text-center mb-[3rem]">
+    <section className="my-[2rem]">
+      <div className="text-center mb-[3rem] ">
         <h1 className="text-4xl mb-3 xxs:text-5xl font-bold">
           10,000+ users Trust Payscribe
         </h1>
@@ -28,7 +28,7 @@ const TrustPayscribe = (props: Props) => {
           earnings , and to make essential daily payment easy for them.
         </p>
       </div>
-      <div className="flex flex-wrap items-center">
+      <div className="flex flex-wrap items-center pb-[5rem] px-[3rem]">
         <div className="w-[80%] mx-auto sm:w-[50%]  ">
           <AnimatePresence exitBeforeEnter>
             <motion.div

@@ -13,7 +13,7 @@ const Customers = (props: Props) => {
     <div
       className={`${
         props.index === 2 ? "block sm:hidden md:block" : ""
-      } w-full sm:w-[30%%] light-shadow bg-white py-[2rem] px-[1rem] rounded-md md:w-[28%] mb-6 sm:mb-0  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
+      } w-full relative h-[18rem] sm:w-[30%%] light-shadow bg-white py-[2rem] px-[1rem] rounded-md md:w-[28%] mb-6 sm:mb-0  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
     >
       <div className="">
         <img className="mb-9" src={QuoteImg} alt="quoteimg" />
@@ -21,7 +21,7 @@ const Customers = (props: Props) => {
           <p className="text-secondary1 text-lg sm:text-sm mb-9">
             {props.comment}
           </p>
-          <div className="flex items-center">
+          <div className="flex items-center absolute bottom-6 ">
             <FaUserCircle className="text-[2.5rem] mr-4" />
             <div className="">
               <h2 className="font-semibold">{props.customer_name}</h2>

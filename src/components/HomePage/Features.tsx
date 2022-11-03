@@ -24,7 +24,7 @@ const Features = (props: Props) => {
       <Swiper
         breakpoints={{
           950: {
-            slidesPerView: 3,
+            slidesPerView: 3.5,
           },
           600: {
             slidesPerView: 2,
@@ -70,5 +70,6 @@ const Features = (props: Props) => {
     </section>
   );
 };
+
 
 export default Features;

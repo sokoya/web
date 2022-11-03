@@ -9,6 +9,16 @@ type Props = {};
 
 const Nav = (props: Props) => {
   const [open, setOpen] = useState<boolean>(false);
+  const [navber, setNavbar] = useState<boolean>(false);
+
+  const showShadow = () => {
+    if (window.scrollY > 50) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  };
+  window.addEventListener("scroll", showShadow);
   const navLinksJSX = (
     <ul className="items-center flex ">
       {navList.map((el, index) => (
@@ -29,7 +39,7 @@ const Nav = (props: Props) => {
         <NavMobile closeNav={() => setOpen(!open)} show={open} />
       </div>
       <nav
-        className={`flex fixed bg-white z-[120] w-full left-0 px-[2rem] md:px-[3rem] top-0 items-center py-[1.5rem]`}
+        className={`${navber ? "shadow-md" : ""} flex fixed bg-white z-[120] w-full left-0 px-[2rem] md:px-[3rem] top-0 items-center py-[1.5rem]`}
       >
         <div className="w-[8rem] mr-auto">
           <Link to="/">

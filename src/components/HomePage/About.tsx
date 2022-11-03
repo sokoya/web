@@ -26,7 +26,7 @@ const About = (props: Props) => {
   );
 
   return (
-    <section className="mt-[7rem] py-[2rem]">
+    <section className="mt-[4rem] py-[2rem]">
       <div className=" text-center ">
         <h1 className=" text-4xl mb-3  xs:text-5xl font-bold">
           More than bills
@@ -36,7 +36,7 @@ const About = (props: Props) => {
           easier and smarter
         </p>
       </div>
-      <div className="mt-[4rem]">{aboutContentsJSX}</div>
+      <div className="">{aboutContentsJSX}</div>
     </section>
   );
 };

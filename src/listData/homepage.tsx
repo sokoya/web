@@ -7,10 +7,10 @@ import { TbCurrencyNaira } from "react-icons/tb";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { FaMailBulk } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
-import Startups from "../assets/Startups.png"
-import Personal from "../assets/personal.png"
-import Event from "../assets/event.png"
-import Business from "../assets/Business.png"
+import Startups from "../assets/Startups.png";
+import Personal from "../assets/personal.png";
+import Event from "../assets/event.png";
+import Business from "../assets/Business.png";
 
 export const aboutList = [
   {
@@ -143,19 +143,19 @@ export const featuresList = [
 
 export const reviewsList = [
   {
-    name: "Customer1",
+    name: "govina samson ese",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla vero repellendus vel quo neque, maiores",
+      "This app is awesome, but I have one problem with the app, printing of recharge cards is not yet working, I can't generate cards to print, hope you people will try as much as possible so we can be able to print cards",
   },
   {
-    name: "Customer2",
+    name: "SimoN “PhilSTRING” Philemon",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla vero repellendus vel quo neque, maiores",
+      "Payscribe is the best ever, please you people should do something so that we can get SMS deposit alart when founding the wallet",
   },
   {
-    name: "Customer3",
+    name: "Ofofo Movie",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla vero repellendus vel quo neque, maiores",
+      "The best platform in Nigeria to trade giftcards. They have swift payment mode for iTunes card. Well done Payscribe",
   },
 ];
 

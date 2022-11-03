@@ -6,8 +6,8 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="">
-      <div className="flex flex-wrap w-full mt-[7rem] items-center">
+    <header className="bg-[#efefef] px-[6rem]">
+      <div className="flex flex-wrap w-full mt-[6rem] items-center">
         <div className="w-full md:w-[50%]">
           <h1 className="text-[3.5rem] leading-[5rem] mb-[4rem] font-bold">
             Convert your excess airtime to cash and get your money in seconds!

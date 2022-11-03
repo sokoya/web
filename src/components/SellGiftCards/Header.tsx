@@ -5,7 +5,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="">
+    <header className="bg-[#efefef] px-[6rem]">
       <div className="flex flex-wrap w-full mt-[7rem] items-center">
         <div className="w-full md:w-[50%]">
           <h1 className="text-[3.5rem] leading-[5rem] mb-[4rem] font-bold">

@@ -51,9 +51,9 @@ const Section3 = (props: Props) => {
     </ul>
   );
   return (
-    <section className="mt-[2rem] py-[2rem]">
-      <div className="mt-[4rem]">{jsx}</div>
-      <div className="flex items-center flex-wrap">
+    <section className=" py-[2rem]">
+      <div className="mt-[2rem]">{jsx}</div>
+      <div className="flex bg-[#efefef] items-center flex-wrap">
         <div className="w-[50%]">
           <img src={DemoImg} alt="" />
         </div>

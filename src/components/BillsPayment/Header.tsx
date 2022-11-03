@@ -6,8 +6,8 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="mt-[7rem]">
-      <div className="flex mt-[10rem] items-center flex-wrap">
+    <header className="mt-[7rem] bg-[#efefef] px-[6rem]">
+      <div className="flex  items-center flex-wrap">
         <div className=" w-full md:w-[50%]">
           <h1 className="text-6xl font-bold mb-8">
             Paying lifestyle bills at ease
