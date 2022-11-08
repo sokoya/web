@@ -4,6 +4,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { GiMoneyStack } from "react-icons/gi";
 import { SiConvertio } from "react-icons/si";
 import IconPlate from "../IconPlate";
+import Button from "../Button";
 type Props = {};
 
 const howitworksList = [
@@ -42,14 +43,40 @@ const HowItWorks = (props: Props) => {
   return (
     <section className="mt-[5rem]">
       <h1 className="text-5xl mb-10 text-center font-semibold">How It Works</h1>
-      <div className="w-full flex flex-wrap py-[2rem] mt:items-start lg:items-center   font-semibold ">
-        <div className=" w-[100%] md:w-[50%] bg-[#3363b02f] mb-[2rem] md:mb-0">
-          <img src={HowItWorksImg} alt="" />
-        </div>
-        <div className="w-full md:w-[50%]">
-          <div className="w-full md:w-[85%] mx-auto">
-            <div className="flex flex-wrap justify-between">{jsx}</div>
+      <div className="bg-[#F2F2F2] py-[3rem]">
+        <div className="w-full  flex flex-wrap  mt:items-start lg:items-center   font-semibold ">
+          <div className=" w-[100%] md:w-[50%] mb-[2rem] md:mb-0">
+            <img src={HowItWorksImg} alt="" />
           </div>
+          <div className="w-full md:w-[50%]">
+            <div className="w-full md:w-[85%] mx-auto">
+              <div className="flex flex-wrap justify-between">{jsx}</div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-[3rem] text-center bp3:mt-[5rem] ">
+          <p className="text-4xl font-bold mb-[2rem]">
+            The mistake of <span className="text-primary3">over recharged</span> airtime is common
+          </p>
+          <div className="text-2xl bp3:text-base text-[#151515f1]">
+            <p className=" mb-2">
+              If it hasn't happened to you, it has happened to someone close to
+              you. And sometimes, you might be financially pressed while having
+              an ample amount of airtime.
+            </p>
+            <p className="mb-2">
+              But you cannot spend that, can you? Payscribe, as a
+              problem-solving platform, provides a solution for this by offering
+              this Airtime to Instant Cash service.
+            </p>
+            <p className="mb-[3rem]">
+              At juicy rates, you can convert your excess airtime of any network
+              and get your money in naira instantly.
+            </p>
+          </div>
+          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.6rem]  px-[2.5rem]  w-full sm:w-auto">
+            <p>Register Now &nbsp; &rarr;</p>
+          </Button>
         </div>
       </div>
     </section>

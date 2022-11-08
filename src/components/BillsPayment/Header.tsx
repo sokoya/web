@@ -6,15 +6,15 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="mt-[7rem] bg-[#efefef] px-[6rem]">
+    <header className="mt-[7rem] bg-[#efefef] px-[2rem]">
       <div className="flex  items-center flex-wrap">
         <div className=" w-full md:w-[50%]">
-          <h1 className="text-6xl font-bold mb-8">
+          <h1 className="text-6xl font-bold mb-8 w-[90%]">
             Paying lifestyle bills at ease
           </h1>
-          <div className=" text-2xl md:text-xl font-light mb-8 ">
+          <div className=" text-2xl md:text-lg font-light mb-8 ">
             <h2 className="mb-3">
-              Payscribe has the most convenient and secured bills payment system
+              Payscribe has the most <span className="text-primary3"> convenient and secured bills payment system </span>
               that facilitates the payment of educational fees( Such as WAEC
               ,NECO,UTME Vouchers) Television subscriptions, payment of
               electricity for all Nigeria distributions.
@@ -25,8 +25,8 @@ function Header({}: Props) {
               that easy and simple, with amazing cash-backs
             </h2>
           </div>
-          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
-            <p>Get Started</p>
+          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
+            <p>Get Started &nbsp; &rarr;</p>
           </Button>
         </div>
         <div className="w-full md:w-[50%]">

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function CTA() {
   return (
-    <section className=" bg-[#efefef] px-[6rem] mx-auto sm:py-[1rem] mt-[4rem] block ">
+    <section className="  px-[6rem] mx-auto sm:py-[1rem] mt-[4rem] block ">
       <div className="flex  flex-wrap items-center sm:h-[50vh]  md:h-[60vh]">
         <div className="w-full sm:w-[50%] sm:px-[3rem]  mb-[5rem] sm:mb-0 text-center sm:text-left">
           <h1 className="text-4xl font-bold mb-8 ">Ready To get Started ?</h1>

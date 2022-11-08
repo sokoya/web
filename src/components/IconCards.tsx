@@ -6,8 +6,8 @@ interface Props {
   icon?: ReactNode;
   links?: ReactNode;
   linkName?: ReactNode;
-  iconBgColor: string;
-  iconColor: string;
+  iconBgColor?: string;
+  iconColor?: string;
 }
 
 const IconCards = (props: Props) => {

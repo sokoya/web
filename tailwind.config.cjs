@@ -18,7 +18,7 @@ module.exports = {
         "primary3-light": "#3362B0B2",
         secondary1: "#3b3b3b",
         secondary2: "#F16436",
-        secondary3: "#F58634",
+        secondary3: "#D7D4FE",
         accent1: "#01485E",
         accent2: "#0B8DB5",
         accent3: "#EEC21A",
@@ -33,6 +33,7 @@ module.exports = {
         error4: "#E00007",
         error5: "#FF050D",
         dark1: "#373434",
+        headerBg: "#efefef"
       },
       screens: {
         bp1: "1000px",

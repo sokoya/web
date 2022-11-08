@@ -41,8 +41,8 @@ const HowToPay = (props: Props) => {
     </>
   );
   return (
-    <section className="mt-[6rem] px-[5rem]">
-      <div className="flex justify-between flex-wrap">
+    <section className="mt-[6rem] px-[2rem]">
+      <div className="flex bg-[#F2F2F2] p-[3rem] justify-between flex-wrap">
         <div className="w-full md:w-[48%]">
           <h1 className="font-bold text-5xl mb-14 md:mb-6 text-center md:text-left">
             How to pay subscription{" "}
@@ -63,7 +63,7 @@ const HowToPay = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[50%] bg-[#3363b02f] ">
+        <div className="w-full md:w-[50%] ">
           <img src={subscribedImg} alt="subscribed" />
         </div>
       </div>

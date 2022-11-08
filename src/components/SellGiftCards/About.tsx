@@ -4,6 +4,8 @@ import { SiFsecure } from "react-icons/si";
 import { MdOutlineEventAvailable, MdPayment } from "react-icons/md";
 import GiftImg from "../../assets/giftcards/giftImg.svg";
 import Button from "../Button";
+import Lottie from "lottie-react";
+import Secured from "../lottie-animations/secured payment.json";
 
 type Props = {};
 
@@ -18,7 +20,7 @@ const aboutList = [
     ),
     bgColor: "#0082e633",
     color: "#0082E7",
-    icon: <SiFsecure />,
+    icon: <Lottie animationData={Secured} />,
   },
   {
     header: "CROSS-PLATFORM AVAILABILITY ",
@@ -69,14 +71,17 @@ const About = (props: Props) => {
       <div className="flex flex-wrap items-center justify-center lg:justify-between mt-[3rem]">
         {aboutJSX}
       </div>
-      <div className=" flex flex-wrap justify-between items-center mt-[5rem] py-[3rem] px-4">
-        <div className=" mb-[3rem] lg:mb-0 w-full md:w-[50%] bg-[#3363b02f]">
+      <div className=" bg-secondary3 flex flex-wrap justify-between items-center mt-[5rem] py-[3rem] px-4">
+        <div className=" mb-[3rem] lg:mb-0 w-full md:w-[50%] ">
           <img src={GiftImg} alt="gift img" />
         </div>
         <div className="w-full md:w-[45%]">
           <h1 className=" text-4xl font-bold mb-[2rem]">
-            Every year, Giftcards worth billions of dollars are wasted, left
-            unused and discarded.
+            Every year,{" "}
+            <span className="text-primary3">
+              Giftcards worth billions of dollars &nbsp;
+            </span>
+            are wasted, left unused and discarded.
           </h1>
           <p className="mb-8 text-[#151515f1] text-2xl bp3:text-base">
             This became a global problem, and Payscribe stepped in as the number
@@ -87,7 +92,7 @@ const About = (props: Props) => {
             Play, eBay, Walmart, Sephora, OneVanilla, American Express,
             Offgamers, Best Buy, Gamestop, Nike, PlayStation and others.{" "}
           </p>
-          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
+          <Button class="font-bold text-lg xs:text-lg bg-primary2 text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
             <p>Register Now</p>
           </Button>
         </div>

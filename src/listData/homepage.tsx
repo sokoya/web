@@ -11,33 +11,32 @@ import Startups from "../assets/Startups.png";
 import Personal from "../assets/personal.png";
 import Event from "../assets/event.png";
 import Business from "../assets/Business.png";
+import ReceiveMoney from "../components/lottie-animations/Receive money.json";
+import Earn from "../components/lottie-animations/Earn as you spend.json";
+import Airtime from "../components/lottie-animations/Airtime to cash.json";
+import EventMan from "../components/lottie-animations/Event management.json";
+import Lottie from "lottie-react";
 
 export const aboutList = [
   {
     header: "Get More Value",
     body: "Say No to charges, hello rewards! With Payscribe you get whooping cashbacks and rewards for every transactions",
     icon: <TbCurrencyNaira />,
-    bgColor: "#0082e633",
-    color: "#0082E7",
   },
   {
     header: "Receive Money in Peace",
     body: "Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
-    icon: <MdPayment />,
-    bgColor: "#f5843233",
-    color: "#F58634",
+    icon: <Lottie animationData={ReceiveMoney} />,
   },
   {
     header: "Earn-as-you-spend",
     body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
-    icon: <AiFillLock />,
-    bgColor: "#ff3d3d33",
-    color: "#FF3D3D",
+    icon: <Lottie animationData={Earn} />,
   },
   {
     header: "Airtime to Cash",
     body: "No more panic. Send Payscribe the airtime you erroneously recharged, and we will give you the equivalent cash. Easy and simple.",
-    icon: <GiTakeMyMoney />,
+    icon: <Lottie animationData={Airtime} />,
     bgColor: "#eec41b33",
     color: "#EEC21A",
   },
@@ -45,15 +44,11 @@ export const aboutList = [
     header: "Financial Control in your Pocket",
     body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
     icon: <MdCastForEducation />,
-    bgColor: "#0082e633",
-    color: "#0082E7",
   },
   {
     header: "Event Management",
     body: "Discover what is happening around you. Purchase event tickets without stress.",
-    icon: <MdCardGiftcard />,
-    bgColor: "#eec41b33",
-    color: "#EEC21A",
+    icon: <Lottie animationData={EventMan} />,
   },
 ];
 
