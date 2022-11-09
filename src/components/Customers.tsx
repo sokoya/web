@@ -11,9 +11,7 @@ interface Props {
 const Customers = (props: Props) => {
   return (
     <div
-      className={`${
-        props.index === 2 ? "block sm:hidden md:block" : ""
-      } w-full relative h-[18rem] sm:w-[30%%] light-shadow bg-white py-[2rem] px-[1rem] rounded-md md:w-[28%] mb-6 sm:mb-0  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
+      className={`w-full relative h-[18rem]  light-shadow bg-white py-[2rem] px-[1rem] rounded-md my-[2rem] mb-[2rem]  mx-[1rem] bp1:mx-[1.2rem] lg:mx-[1.5rem]`}
     >
       <div className="">
         <img className="mb-9" src={QuoteImg} alt="quoteimg" />

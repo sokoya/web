@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button";
-import HeroImg from "../../assets/hero1.svg";
+import HeroImg from "../../assets/homepage/heroImg.png";
 import { Link } from "react-router-dom";
 
 type Props = {};

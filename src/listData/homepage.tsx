@@ -152,6 +152,16 @@ export const reviewsList = [
     review:
       "The best platform in Nigeria to trade giftcards. They have swift payment mode for iTunes card. Well done Payscribe",
   },
+  {
+    name: "Benjamin Abayomi",
+    review:
+      "Payscribe is the best data site have seen ever....I love payscribe and I can't stop using it..",
+  },
+  {
+    name: "Aminu Aliyu",
+    review:
+      "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
+  },
 ];
 
 //: Exquisite USB port for high speed-data transmission.

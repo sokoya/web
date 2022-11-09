@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Hero1Img from "../../assets/events/hero1.svg";
+import Hero1Img from "../../assets/events/heroImg.png";
 import Button from "../Button";
 
 type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="flex bg-[#efefef] px-[6rem] flex-wrap items-center w-full mt-[3rem]">
+    <header className="flex bg-[#efefef] px-[2rem] py-[3rem] flex-wrap items-center w-full mt-[3rem]">
       <div className="w-full sm:w-[60%] mx-auto md:w-[50%] mt-[5rem]">
         <div className=" text-[3.5rem]  lg:text-[4rem] font-bold leading-[4.5rem] lg:leading-[5.5rem]">
           <h1 className=" ">
