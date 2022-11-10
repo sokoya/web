@@ -2,11 +2,8 @@ import React from "react";
 import tab1Img from "../assets/tab1.svg";
 import tab2Img from "../assets/tab2.svg";
 import tab3Img from "../assets/tab3.svg";
-import { MdPayment, MdCastForEducation, MdCardGiftcard } from "react-icons/md";
+import { MdCastForEducation } from "react-icons/md";
 import { TbCurrencyNaira } from "react-icons/tb";
-import { GiTakeMyMoney } from "react-icons/gi";
-import { FaMailBulk } from "react-icons/fa";
-import { AiFillLock } from "react-icons/ai";
 import Startups from "../assets/Startups.png";
 import Personal from "../assets/personal.png";
 import Event from "../assets/event.png";
@@ -15,13 +12,15 @@ import ReceiveMoney from "../components/lottie-animations/Receive money.json";
 import Earn from "../components/lottie-animations/Earn as you spend.json";
 import Airtime from "../components/lottie-animations/Airtime to cash.json";
 import EventMan from "../components/lottie-animations/Event management.json";
+import GTV from "../components/lottie-animations/Get more value.json";
+import FinancialControl from "../components/lottie-animations/financial management.json";
 import Lottie from "lottie-react";
 
 export const aboutList = [
   {
     header: "Get More Value",
     body: "Say No to charges, hello rewards! With Payscribe you get whooping cashbacks and rewards for every transactions",
-    icon: <TbCurrencyNaira />,
+    icon: <Lottie animationData={GTV} />,
   },
   {
     header: "Receive Money in Peace",
@@ -43,7 +42,7 @@ export const aboutList = [
   {
     header: "Financial Control in your Pocket",
     body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
-    icon: <MdCastForEducation />,
+    icon: <Lottie animationData={FinancialControl} />,
   },
   {
     header: "Event Management",
@@ -127,12 +126,6 @@ export const featuresList = [
     header: "Personal Use",
     cardImg: <img src={Personal} alt="img" />,
     body: "Subscribe all daily essential lifestyle bills, ranging from Airtime purchase, internet data, electricity bill, vable subscription etc",
-  },
-  {
-    color: "#F16436",
-    backgroundColor: "#f165360d",
-    header: "Reward and Loyalty",
-    body: "You deserve to earn something for every transctions you and your referred downline make",
   },
 ];
 

@@ -37,7 +37,10 @@ const Features = (props: Props) => {
         spaceBetween={50}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+          // bulletClass: "swiper-pagination-bullet-active",
+        }}
         scrollbar={{ draggable: true }}
         className="mySwiper cursor-grab"
       >

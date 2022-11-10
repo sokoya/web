@@ -3,6 +3,7 @@ import { reviewsList } from "../../listData/homepage";
 import Button from "../Button";
 import Customers from "../Customers";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "../../styles/swiper.css";
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -44,8 +45,13 @@ const CustomerSection = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={{}}
+        autoHeight={false}
+        pagination={{
+          clickable: true,
+          // bulletClass: "swiper-pagination-bullet-active",
+        }}
+        
         scrollbar={{ draggable: true }}
         className="mySwiper cursor-grab"
       >
