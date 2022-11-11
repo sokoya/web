@@ -41,8 +41,8 @@ const HowToPay = (props: Props) => {
     </>
   );
   return (
-    <section className="mt-[6rem] px-[2rem]">
-      <div className="flex bg-[#F2F2F2] p-[3rem] justify-between flex-wrap">
+    <section className="mt-[6rem] sm:px-[2rem]">
+      <div className="flex bg-[#F2F2F2] px-[1.5rem] sm:px-[3rem] py-[3rem] justify-between flex-wrap">
         <div className="w-full md:w-[48%]">
           <h1 className="font-bold text-5xl mb-14 md:mb-6 text-center md:text-left">
             How to pay subscription{" "}

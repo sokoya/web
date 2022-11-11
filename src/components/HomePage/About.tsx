@@ -10,7 +10,7 @@ const About = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {aboutList.map((el) => (
         <li
-          className=" h-[23rem] lg:h-[22rem] my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" h-[23rem] lg:h-[22rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
           key={el.header}
         >
           <IconCards

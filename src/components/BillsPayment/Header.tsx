@@ -7,14 +7,18 @@ type Props = {};
 function Header({}: Props) {
   return (
     <header className="mt-[7rem] bg-[#efefef] px-[2rem]">
-      <div className="flex  items-center flex-wrap">
+      <div className="flex py-[2rem] items-center flex-wrap">
         <div className=" w-full md:w-[50%]">
-          <h1 className="text-6xl font-bold mb-8 w-[90%]">
+          <h1 className="text-[2.5rem] sm:text-[3.5rem] leading-[4rem] lg:leading-[5rem] font-bold mb-8 w-[90%]">
             Paying lifestyle bills at ease
           </h1>
-          <div className=" text-2xl md:text-lg font-light mb-8 ">
+          <div className=" text-lg am:text-2xl md:text-lg font-light mb-8 ">
             <h2 className="mb-3">
-              Payscribe has the most <span className="text-primary3"> convenient and secured bills payment system </span>
+              Payscribe has the most{" "}
+              <span className="text-primary3">
+                {" "}
+                convenient and secured bills payment system{" "}
+              </span>
               that facilitates the payment of educational fees( Such as WAEC
               ,NECO,UTME Vouchers) Television subscriptions, payment of
               electricity for all Nigeria distributions.

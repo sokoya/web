@@ -54,7 +54,7 @@ const About = (props: Props) => {
   const aboutJSX = (
     <>
       {aboutList.map((el) => (
-        <div className="w-full sm:w-[80%] md:w-[50%] lg:w-[33%] mb-11 lg:mb-0  h-[25rem] lg:h-[24rem]">
+        <div className="w-full sm:w-[80%] md:w-[50%] lg:w-[33%] md:mb-11 lg:mb-0  md:h-[25rem] lg:h-[24rem]">
           <IconCards
             content={el.content}
             header={el.header}
@@ -67,7 +67,8 @@ const About = (props: Props) => {
     </>
   );
   return (
-    <section>
+    <section className="mt-[7rem]">
+      <h1 className="text-center text-5xl font-bold">What You Gain</h1>
       <div className="flex flex-wrap items-center justify-center lg:justify-between mt-[3rem]">
         {aboutJSX}
       </div>

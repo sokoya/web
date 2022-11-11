@@ -12,7 +12,7 @@ interface Props {
 
 const IconCards = (props: Props) => {
   return (
-    <div className=" bg-white h-full  pt-[1rem]  px-8  w-full  sm:w-auto  text-center mb-[2rem] sm:mb-[4rem] sm:mx-[1rem]">
+    <div className=" bg-white h-full  pt-[1rem]  px-8  w-full  sm:w-auto  text-center mb-[1rem] sm:mb-[4rem] sm:mx-[1rem]">
       <div className="my-auto">
         <div
           style={{ backgroundColor: props.iconBgColor, color: props.iconColor }}

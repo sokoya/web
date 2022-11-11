@@ -30,7 +30,7 @@ const Features = (props: Props) => {
             slidesPerView: 2,
           },
           300: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
           },
         }}
         modules={[Navigation, Pagination, Scrollbar, A11y]}

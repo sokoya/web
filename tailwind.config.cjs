@@ -40,6 +40,7 @@ module.exports = {
         bp2: "900px",
         bp3: "500px",
         bp4: "1030px",
+        bp5: "450px"
       },
       fontSize: {
         header: "3.5rem"

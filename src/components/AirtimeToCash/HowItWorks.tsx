@@ -50,15 +50,15 @@ const HowItWorks = (props: Props) => {
           </div>
           <div className="w-full md:w-[50%]">
             <div className="w-full md:w-[85%] mx-auto">
-              <div className="flex flex-wrap justify-between">{jsx}</div>
+              <div className="flex flex-wrap justify-between px-[2rem] md:px-0">{jsx}</div>
             </div>
           </div>
         </div>
-        <div className="mt-[3rem] text-center bp3:mt-[5rem] ">
+        <div className="mt-[3rem] text-center bp3:mt-[5rem] px-[2rem] sm:px-0">
           <p className="text-4xl font-bold mb-[2rem]">
             The mistake of <span className="text-primary3">over recharged</span> airtime is common
           </p>
-          <div className="text-2xl bp3:text-base text-[#151515f1]">
+          <div className="text-xl sm:text-base text-[#151515f1]">
             <p className=" mb-2">
               If it hasn't happened to you, it has happened to someone close to
               you. And sometimes, you might be financially pressed while having

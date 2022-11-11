@@ -9,7 +9,7 @@ interface Props {}
 const Home = (props: Props) => {
   return (
     <>
-      <div className="px-[2rem] md:px-[1rem] max-w-[1500px] mx-auto">
+      <div className="px-[.5rem] sm:px-[2rem] md:px-[1rem] max-w-[1500px] mx-auto">
         <Nav />
         <Outlet />
       </div>

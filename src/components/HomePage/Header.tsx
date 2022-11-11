@@ -13,7 +13,7 @@ const Header = (props: Props) => {
           <span className="font-bold mr-1 text-primary3">Pay</span> Introducing
           a lifestyle with ease
         </h5>
-        <div className=" w-[90%] text-[3.5rem]  lg:text-header font-bold leading-[4rem] lg:leading-[5rem]">
+        <div className=" w-[90%] text-[2.5rem] sm:text-[3.5rem]  lg:text-header font-bold leading-[4rem] lg:leading-[5rem]">
           <h1 className=" ">
             Pay Lifestyle bills and manage your <span className="text-primary3">finances</span>  at ease
           </h1>

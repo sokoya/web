@@ -20,7 +20,7 @@ const TrustPayscribe = (props: Props) => {
   return (
     <section className="my-[2rem]">
       <div className="text-center mb-[3rem] ">
-        <h1 className="text-4xl mb-3 xxs:text-5xl font-bold">
+        <h1 className=" mb-3 text-[2.3rem] sm:text-5xl font-bold">
           10,000+ users Trust Payscribe
         </h1>
         <p className="mx-auto w-[90%] sm:w-[40%] text-lg text-secondary1">
@@ -28,7 +28,7 @@ const TrustPayscribe = (props: Props) => {
           earnings , and to make essential daily payment easy for them.
         </p>
       </div>
-      <div className="flex flex-wrap items-center pb-[5rem] px-[3rem]">
+      <div className="flex flex-wrap items-center pb-[5rem] px-[1rem] xs:px-[3rem]">
         <div className="w-[80%] mx-auto sm:w-[50%]  ">
           <AnimatePresence exitBeforeEnter>
             <motion.div

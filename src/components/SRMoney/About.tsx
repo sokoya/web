@@ -46,7 +46,7 @@ const About = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {aboutList.map((el) => (
         <li
-          className=" h-[28rem] lg:h-[26rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" sm:h-[28rem] lg:h-[26rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
           key={el.header}
         >
           <IconCards content={el.body} header={el.header} icon={el.icon} />

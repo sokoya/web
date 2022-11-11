@@ -5,8 +5,8 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="bg-[#efefef] px-[2rem] py-[1rem]">
-      <div className="flex flex-wrap w-full mt-[1rem] items-center">
+    <header className="bg-[#efefef] px-[2rem]">
+      <div className="flex flex-wrap w-full mt-[5rem] bp1:mt-[1rem] items-center">
         <div className="w-full md:w-[50%]">
           <h1 className="text-[3.5rem] leading-[5rem] mb-[4rem] font-bold">
             Trade unused Giftcards for instant cash at amazing{" "}
