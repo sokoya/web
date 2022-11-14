@@ -7,10 +7,10 @@ type Props = {};
 
 const About = (props: Props) => {
   const aboutContentsJSX = (
-    <ul className="flex flex-wrap  justify-center w-full ">
+    <ul className="flex flex-wrap  justify-between w-full ">
       {aboutList.map((el) => (
         <li
-          className=" h-[23rem] lg:h-[22rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" h-[23rem] px-8 sm:mx-[1rem] lg:h-[22rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[30.3%]"
           key={el.header}
         >
           <IconCards

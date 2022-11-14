@@ -8,15 +8,22 @@ interface Props {
   linkName?: ReactNode;
   iconBgColor?: string;
   iconColor?: string;
+  alignStyle?: "left";
 }
 
 const IconCards = (props: Props) => {
   return (
-    <div className=" bg-white h-full  pt-[1rem]  px-8  w-full  sm:w-auto  text-center mb-[1rem] sm:mb-[4rem] sm:mx-[1rem]">
+    <div
+      className={` h-full  pt-[1rem]  w-full ${
+        props.alignStyle === "left" ? "" : "text-center"
+      } mb-[1rem] sm:mb-[4rem] `}
+    >
       <div className="my-auto">
         <div
           style={{ backgroundColor: props.iconBgColor, color: props.iconColor }}
-          className="my-[2rem] mb-[3rem] rounded-full h-[5rem] w-[5rem] mx-auto flex items-center justify-center text-4xl "
+          className={`my-[2rem] mb-[3rem] rounded-full h-[5rem] w-[5rem] ${
+            props.alignStyle === "left" ? "" : "mx-auto "
+          } flex items-center justify-center text-4xl `}
         >
           {props.icon}
         </div>

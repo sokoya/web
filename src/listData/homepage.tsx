@@ -20,34 +20,34 @@ export const aboutList = [
   {
     header: "Get More Value",
     body: "Say No to charges, hello rewards! With Payscribe you get whooping cashbacks and rewards for every transactions",
-    icon: <Lottie animationData={GTV} />,
+    icon: <Lottie style={{ width: "200px" }} animationData={GTV} />,
   },
   {
     header: "Receive Money in Peace",
     body: "Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
-    icon: <Lottie animationData={ReceiveMoney} />,
+    icon: <Lottie style={{ width: "70px" }} animationData={ReceiveMoney} />,
   },
   {
     header: "Earn-as-you-spend",
     body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
-    icon: <Lottie animationData={Earn} />,
+    icon: <Lottie style={{ width: "70px" }} animationData={Earn} />,
   },
   {
     header: "Airtime to Cash",
     body: "No more panic. Send Payscribe the airtime you erroneously recharged, and we will give you the equivalent cash. Easy and simple.",
-    icon: <Lottie animationData={Airtime} />,
+    icon: <Lottie style={{ width: "70px" }} animationData={Airtime} />,
     bgColor: "#eec41b33",
     color: "#EEC21A",
   },
   {
     header: "Financial Control in your Pocket",
     body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
-    icon: <Lottie animationData={FinancialControl} />,
+    icon: <Lottie style={{ width: "70px" }} animationData={FinancialControl} />,
   },
   {
     header: "Event Management",
     body: "Discover what is happening around you. Purchase event tickets without stress.",
-    icon: <Lottie animationData={EventMan} />,
+    icon: <Lottie style={{ width: "70px" }} animationData={EventMan} />,
   },
 ];
 

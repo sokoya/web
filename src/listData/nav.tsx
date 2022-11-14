@@ -50,7 +50,7 @@ export const navList: {
       },
       {
         name: "Save & Earn",
-        href: "/",
+        href: "/save-earn",
         icon: <img src={SavingsImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:
           "Upto 12%p.a for every target saving, let your money work for you",

@@ -14,32 +14,34 @@ const About = (props: Props) => {
     {
       header: "Save Money On Every Transaction",
       body: "onveniently receive and send money without paying unreasonable charges",
-      icon: <Lottie width={2000} animationData={SaveMoney} />,
+      icon: <Lottie style={{ width: "70px" }} animationData={SaveMoney} />,
     },
     {
       header: "Secure Transfer",
       body: "You can bank on our proven reliability, enterprise-grade encryption and multi-signature authorisation of our system. All your funds and transactions are safe.",
-      icon: <Lottie animationData={SecuredTransfer} />,
+      icon: (
+        <Lottie style={{ width: "70px" }} animationData={SecuredTransfer} />
+      ),
     },
     {
       header: "Quick and Easy To Use",
       body: "Our high-tech powered payment solutions send money in seconds ensuring a seemless experience for both sender and recipient.",
-      icon: <Lottie animationData={EasyToUse} />,
+      icon: <Lottie style={{ width: "70px" }} animationData={EasyToUse} />,
     },
     {
       header: "Dedicated Account Number",
       body: "When you sign up with Payscribe, you're assigned a virtual account number, which you can use to receive money from any local bank, fast and easy",
-      icon: <Lottie animationData={AccountNumber} />,
+      icon: <Lottie style={{ width: "70px" }} animationData={AccountNumber} />,
     },
     {
       header: "NDIC insured",
       body: "Your deposits are securely managed by our bank partners who are NDIC-insured, and PCI-DSS Compliance certified. 100% Secured",
-      icon: <Lottie animationData={Insured} />,
+      icon: <Lottie style={{ width: "70px" }} animationData={Insured} />,
     },
     {
       header: "More channels",
       body: "Having multiple channels to receive payment has never been this easy. Conveniently receive money using your Phone number or a dedicated QR Code.",
-      icon: <Lottie animationData={Channel} />,
+      icon: <Lottie style={{ width: "70px" }} animationData={Channel} />,
     },
   ];
   const aboutContentsJSX = (
