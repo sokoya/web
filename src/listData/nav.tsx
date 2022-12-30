@@ -90,14 +90,14 @@ export const navList: {
     items: [
       {
         name: "Why Payscribe",
-        href: "/",
+        href: "/why-payscribe",
         icon: <BsQuestionLg />,
         description:
           "Set up in a minute, topup bulk airtime, data, and pay bills, anyhow, how you want it",
       },
       {
         name: "How it works",
-        href: "/",
+        href: "/how-it-works",
         icon: <MdBusinessCenter />,
         description:
           "Learn how we can help you grow your business by integrating our services",

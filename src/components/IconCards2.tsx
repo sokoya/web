@@ -12,7 +12,7 @@ interface Props {
   alignStyle?: "left";
 }
 
-const IconCards = (props: Props) => {
+const IconCards2 = (props: Props) => {
   return (
     <div
       className={` h-full  pt-[1rem]  w-full ${
@@ -38,4 +38,4 @@ const IconCards = (props: Props) => {
   );
 };
 
-export default IconCards;
+export default IconCards2;
