@@ -71,7 +71,7 @@ export const navList: {
       },
       {
         name: "Rewards",
-        href: "/",
+        href: "/rewards",
         icon: <img src={GiftImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:
           "Rewards for every transaction and task, Yes! You deserve it.",
@@ -139,13 +139,13 @@ export const navList: {
         icon: <MdPayment />,
         description: "Reach out to us, we are friendly.",
       },
-      {
-        name: "Blog",
-        href: "/",
-        icon: <MdPayment />,
-        description:
-          "Stay ahead with stories, insights and new from Payscribe team",
-      },
+      // {
+      //   name: "Blog",
+      //   href: "/",
+      //   icon: <MdPayment />,
+      //   description:
+      //     "Stay ahead with stories, insights and new from Payscribe team",
+      // },
     ],
     documentation: false,
   },

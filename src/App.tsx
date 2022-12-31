@@ -20,6 +20,7 @@ import Event from "./pages/Event";
 import SaveEarn from "./pages/SaveEarn";
 import WhyPayscribe from "./pages/WhyPayscribe";
 import HowItWorks from "./pages/HowItWorks";
+import Rewards from "./pages/Rewards";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,8 +28,9 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />}>
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
-        <Route path="/why-payscribe" element={<WhyPayscribe />} />
-        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="why-payscribe" element={<WhyPayscribe />} />
+        <Route path="rewards" element={<Rewards />} />
+        <Route path="how-it-works" element={<HowItWorks />} />
         <Route path="bills-payment" element={<BillsPayment />} />
         <Route path="send-receive-money" element={<SRMoney />} />
         <Route path="events" element={<Event />} />
