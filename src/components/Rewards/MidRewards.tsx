@@ -20,7 +20,7 @@ const MidRewards = (props: Props) => {
         </div>
         <h2 className="mt-[0rem] w-full text-secondary1 text-lg text-gray-600 sm:text-base" style={{fontSize: "16px"}}>
         Reduce cost and increase value with our loyalty and rewards        </h2>
-            <ul className="mt-[4rem] pl-[1rem]">
+            <ul className="mt-[4rem] pl-[1.1rem]">
             <li className="relative flex items-baseline gap-2 pb-1">
                 <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400 timeline2">
                 <div className="icon">
