@@ -134,8 +134,8 @@ export const navList: {
         description: "Empowering digital and lifestyle services with no limit",
       },
       {
-        name: "Contact",
-        href: "/",
+        name: "Contact us",
+        href: "/contact-us",
         icon: <MdPayment />,
         description: "Reach out to us, we are friendly.",
       },
