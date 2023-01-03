@@ -129,7 +129,7 @@ export const navList: {
     items: [
       {
         name: "About",
-        href: "/",
+        href: "/about-us",
         icon: <MdPayment />,
         description: "Empowering digital and lifestyle services with no limit",
       },
