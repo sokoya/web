@@ -22,6 +22,7 @@ import WhyPayscribe from "./pages/WhyPayscribe";
 import HowItWorks from "./pages/HowItWorks";
 import Rewards from "./pages/Rewards";
 import ContactUs from "./pages/ContactUs";
+import AboutUs from "./pages/AboutUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
         <Route path="why-payscribe" element={<WhyPayscribe />} />
+        <Route path="about-us" element={<AboutUs />} />
         <Route path="rewards" element={<Rewards />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="how-it-works" element={<HowItWorks />} />
