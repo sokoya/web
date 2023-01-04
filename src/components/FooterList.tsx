@@ -8,11 +8,11 @@ interface Props {
 const FooterList = (props: Props) => {
   const footerListJSX = (
     <div className="text-white  ">
-      <h1 className="mb-4 font-bold text-xl">{props.header}</h1>
+      <h1 className="mb-4 font-bold text-lg">{props.header}</h1>
 
       {props.footerItems.map((el, index) => (
         <li className="my-2" key={index}>
-          <a className="font-light text-lg" href="/">{el}</a>
+          <a className="font-light text-sm" href="/">{el}</a>
         </li>
       ))}
     </div>

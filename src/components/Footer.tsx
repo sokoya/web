@@ -28,7 +28,7 @@ const Footer = (props: Props) => {
           <div className="w-[10rem] -mt-[3rem]">
             <img src={Logo} alt="logo" />
           </div>
-          <div className=" mb-4">
+          <div className=" mb-4 text-sm">
             <p className="w-[85%] mb-4">
               95 Oreta Road, Opposite Clay View Hotel, Ikorodu, Lagos State
             </p>
@@ -36,7 +36,7 @@ const Footer = (props: Props) => {
             <p className="mb-2">+234 703 806 7493</p>
           </div>
           <div className="w-full mb-7 mr-[5rem] md:mr-8">
-            <div className="flex items-center text-2xl mb-[3rem] sm:mb-[5rem] md:mb-6">
+            <div className="flex items-center text-xl mb-[3rem] sm:mb-[5rem] md:mb-6">
               <FaFacebookSquare className="mr-5" />
               <BsTwitter className="mr-5" />
               <FiInstagram className="mr-2" />

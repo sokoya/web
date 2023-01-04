@@ -14,8 +14,8 @@ const AboutUs = (props: Props) => {
       {/* <WhyUsePayscribe />
       <MidSection /> */}
       <MidSection />
-      <CTA />
       <EndSection />
+      <CTA />
       <ScrollRestoration />
     </>
   );

@@ -16,7 +16,7 @@ const Customers = (props: Props) => {
       <div className="">
         <img className="mb-9" src={QuoteImg} alt="quoteimg" />
         <div className="">
-          <p className="text-secondary1 text-lg sm:text-sm mb-9">
+          <p className="text-secondary1 text-sm sm:text-sm mb-9">
             {props.comment}
           </p>
           <div className="flex items-center absolute bottom-6 ">

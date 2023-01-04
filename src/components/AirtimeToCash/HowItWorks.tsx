@@ -58,7 +58,7 @@ const HowItWorks = (props: Props) => {
           <p className="text-4xl font-bold mb-[2rem]">
             The mistake of <span className="text-primary3">over recharged</span> airtime is common
           </p>
-          <div className="text-xl sm:text-base text-[#151515f1]">
+          <div className="text-xl sm:text-sm text-[#151515f1]">
             <p className=" mb-2">
               If it hasn't happened to you, it has happened to someone close to
               you. And sometimes, you might be financially pressed while having

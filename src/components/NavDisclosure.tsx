@@ -25,7 +25,7 @@ export default function NavDisclosure(props: Props) {
   return (
     <div className=" w-full my-8 px-[2rem]">
       <button
-        className="text-2xl sm:text-4xl  w-full flex items-center outline-none "
+        className="text-sm sm:text-2xl  w-full flex items-center outline-none "
         onClick={buttonHandler}
       >
         <p className="mr-auto">{props.navtitle}</p>
@@ -50,7 +50,7 @@ export default function NavDisclosure(props: Props) {
                 {el.icon}
               </div>
               <div className="w-[60%]">
-                <h1 className="font-bold text-xl sm:text-2xl">{el.name}</h1>
+                <h1 className="font-bold text-sm sm:text-xl">{el.name}</h1>
                 <p>{el.description}</p>
               </div>
             </div>
