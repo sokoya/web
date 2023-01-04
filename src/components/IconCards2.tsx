@@ -31,7 +31,7 @@ const IconCards2 = (props: Props) => {
           {props.icon}
         </div>
         <h1 className="font-bold mb-[2rem] text-lg ">{props.header}</h1>
-        <p className="text-[#151515f1]">{props.content}</p>
+        <p className="text-[#151515f1] text-sm">{props.content}</p>
         <a href="/">{props.linkName}</a>
       </div>
     </div>

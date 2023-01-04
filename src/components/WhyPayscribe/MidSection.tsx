@@ -18,7 +18,7 @@ const MidSection = (props: Props) => {
           Payscribe broadens your revenue sources
           </h1>
         </div>
-        <h2 className="mt-[2rem] w-full text-secondary1 text-lg text-gray-600 sm:text-base" style={{fontSize: "16px"}}>
+        <h2 className="mt-[2rem] w-full text-secondary1 text-sm text-gray-600 sm:text-sm" style={{fontSize: "16px"}}>
         We are empowering businesses across Africa whilst extending an exclusive lifestyle-as-a-service partnership to their customers
         </h2>
 
@@ -27,7 +27,7 @@ const MidSection = (props: Props) => {
           Secure Payments
           </h1>
         </div>
-        <h2 className="mt-[.5rem] w-full text-secondary1 text-lg text-gray-600 sm:text-base" style={{fontSize: "16px"}}>
+        <h2 className="mt-[.5rem] w-full text-secondary1 text-sm text-gray-600 sm:text-sm" style={{fontSize: "16px"}}>
         Our payment processors Paystack, Providus Bank and Flutterwave is PADSS & PCIDSS compliant satisfying the highest level of Security Audit available        </h2>
 
 
@@ -37,7 +37,7 @@ const MidSection = (props: Props) => {
           Bank Level Security
           </h1>
         </div>
-        <h2 className="mt-[.5rem] w-full text-secondary1 text-lg text-gray-600 sm:text-base" style={{fontSize: "16px"}}>
+        <h2 className="mt-[.5rem] w-full text-secondary1 text-sm text-gray-600 sm:text-sm" style={{fontSize: "16px"}}>
         We use state-of-the-art data encryption when handling your information and two-factor authentication (2FA) protection. 
  We're backed by top financial market operators in other to meet and exceed traditional banking security standards</h2>
 
@@ -56,7 +56,7 @@ const MidSection = (props: Props) => {
           Your Success = Our Mission
           </h1>
         </div>
-        <h2 className="mt-[2rem] w-full text-secondary1 text-lg text-gray-600 sm:text-base md:px-[15rem]" style={{fontSize: "16px"}}>
+        <h2 className="mt-[2rem] w-full text-secondary1 text-lg text-gray-600 sm:text-sm md:px-[15rem]" style={{fontSize: "16px"}}>
         We have a long history of innovation and excellence with payment and subscriptions infrastructure and
 we are committed to bringing our clients leading edge solutions for the growth of their businesses        </h2>
       </div>

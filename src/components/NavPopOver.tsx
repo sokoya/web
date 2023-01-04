@@ -22,12 +22,12 @@ export default function NavPopOver(props: Props) {
           onMouseLeave={() => setOpen(false)}
           className={`
                 ${openNav ? "" : "text-opacity-90"}
-                hover:text-[#7b9fd8] group inline-flex items-center rounded-md px-3 py-2 text-base font-semibold text-primary1 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+                hover:text-[#7b9fd8] group inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-primary1 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
         >
           <span>{props.navtitle}</span>
           <RiArrowDownSLine
             className={`${openNav ? " rotate-180" : "text-opacity-70"}
-              ml-1 h-5 w-5 text-base  transition duration-150 ease-in-out group-hover:text-opacity-80`}
+              ml-1 h-5 w-5 text-sm  transition duration-150 ease-in-out group-hover:text-opacity-80`}
             aria-hidden="true"
           />
         </Popover.Button>
@@ -47,7 +47,7 @@ export default function NavPopOver(props: Props) {
             className="absolute  left-1/2 z-10 mt-0 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl"
           >
             <div className="py-[1rem] overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+              <div className="relative text-sm grid gap-8 bg-white p-7 lg:grid-cols-2">
                 {props.navitems.map((item) => (
                   <Link
                     key={item.name}
@@ -55,7 +55,7 @@ export default function NavPopOver(props: Props) {
                     className=" -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                   >
                     <div
-                      className="flex w-[.5rem] bg-primary2 rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-[1.2rem]"
+                      className="flex w-[.5rem] bg-primary2 rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-sm"
                     >
                       {item.icon}
                     </div>
