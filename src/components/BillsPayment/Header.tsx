@@ -34,7 +34,7 @@ function Header({}: Props) {
           </Button>
         </div>
         <div className="w-full md:w-[50%]">
-          <img src={HeroImg} alt="hero img" />
+          <img src={HeroImg} alt="hero img " />
         </div>
       </div>
     </header>
