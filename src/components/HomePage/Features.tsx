@@ -42,7 +42,7 @@ const Features = (props: Props) => {
           // bulletClass: "swiper-pagination-bullet-active",
         }}
         scrollbar={{ draggable: true }}
-        className="mySwiper cursor-grab"
+        className="mySwiper cursor-grab mt-[3rem]"
       >
         {featuresList.map((el, index) => (
           <SwiperSlide key={el.header}>

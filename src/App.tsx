@@ -23,6 +23,7 @@ import HowItWorks from "./pages/HowItWorks";
 import Rewards from "./pages/Rewards";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import './App.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

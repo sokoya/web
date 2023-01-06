@@ -5,7 +5,8 @@ import FooterList from "./FooterList";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
-import GooglePlayImg from "../assets/play_store.png"
+import GooglePlayImg from "../assets/playstore.png"
+import AppStoreImg from "../assets/applestore.png"
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -35,14 +36,17 @@ const Footer = (props: Props) => {
             <p className="mb-2">hello@payscribe.ng</p>
             <p className="mb-2">+234 703 806 7493</p>
           </div>
-          <div className="w-full mb-7 mr-[5rem] md:mr-8">
-            <div className="flex items-center text-xl mb-[3rem] sm:mb-[5rem] md:mb-6">
+          <div className="w-full mb-2 mr-[5rem] md:mr-8">
+            <div className="flex items-center text-xl mb-[2rem] sm:mb-[5rem] md:mb-6">
               <FaFacebookSquare className="mr-5" />
               <BsTwitter className="mr-5" />
               <FiInstagram className="mr-2" />
             </div>
           </div>
+          <div className="flex gap-6">
           <img src={GooglePlayImg} alt="" className="w-[10rem] mt-8" />
+          <img src={AppStoreImg} alt="" className="w-[10rem] mt-8" />
+          </div>
         </div>
 
         <div className="w-full bp4:w-[70%] flex flex-wrap justify-between sm:justify-start">

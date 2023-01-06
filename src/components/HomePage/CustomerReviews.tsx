@@ -68,12 +68,12 @@ const CustomerSection = () => {
     </>
   );
   return (
-    <section className="mt-[10rem]">
+    <section className="mt-[5rem]">
       <h1 className="font-bold text-4xl xxs:text-5xl mb-[2rem] text-center">
         What Our Customers Think
       </h1>
       <div className="">{reviews}</div>
-      <div className="flex justify-center mt-[5rem]">
+      <div className="flex justify-center mt-[3rem]">
         <Button class="bg-primary2 text-white px-[2rem] py-4">
           Read More Reviews
         </Button>
