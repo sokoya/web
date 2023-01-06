@@ -12,7 +12,7 @@ function Header({}: Props) {
           <h1 className="text-[2.5rem] sm:text-[3.5rem] leading-[4rem] lg:leading-[5rem] font-bold mb-8 w-[90%]">
             Paying lifestyle bills at ease
           </h1>
-          <div className=" text-lg am:text-2xl md:text-lg font-light mb-8 ">
+          <div className=" text-sm am:text-xl md:text-sm font-light mb-8 ">
             <h2 className="mb-3">
               Payscribe has the most{" "}
               <span className="text-primary3">

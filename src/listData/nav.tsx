@@ -29,7 +29,7 @@ export const navList: {
     title: "Products",
     items: [
       {
-        name: "Send/Recive Payments",
+        name: "Send/Receive Payments",
         href: "send-receive-money",
         icon: <img src={PaymentImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:

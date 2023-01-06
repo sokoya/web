@@ -38,10 +38,10 @@ const Features = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {aboutList.map((el) => (
         <li
-          className=" h-[23rem] px-8 lg:h-[22rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[23.3%]"
+          className=" h-[23rem] px-4 lg:h-[22rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[23.3%]"
           key={el.header}
         >
-          <IconCards2 content={el.body} header={el.header} icon={el.icon} extraClass={"bg-white rounded-2xl px-[1rem]"} />
+          <IconCards2 content={el.body} header={el.header} icon={el.icon} extraClass={"bg-white rounded-2xl px-[0.5rem]"} />
         </li>
       ))}
     </ul>

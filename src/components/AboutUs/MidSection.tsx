@@ -9,7 +9,7 @@ type Props = {};
 const MidSection = (props: Props) => {
   return (
 <main>
-    <section className="bg-gray-900 py-20 sm:py-32">
+    <section className="bg-gray-900 py-15 sm:py-10">
         {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
                 <h2 className="text-3xl font-medium tracking-tight text-white">Every feature you need to win. Try it for yourself.</h2>
@@ -84,7 +84,7 @@ At Payscribe, we strongly believe that your money should come with your own rule
             <div className="mt-6 flex justify-center gap-3"><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 1"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500"
                     aria-label="Go to slide 2"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 3"><span className="absolute -inset-x-1.5 -inset-y-3" /></button></div>
         </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden md:mt-20 md:block">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden md:mt-0 md:block">
             <div className="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24">
                 <div className="relative z-10 order-last col-span-6 space-y-6" role="tablist" aria-orientation="vertical">
                     <div className="relative rounded-2xl transition-colors hover:bg-gray-800/30">

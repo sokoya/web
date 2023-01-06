@@ -1,0 +1,8 @@
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,20px))!important;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,6px))!important;
+    display: inline-block;
+    border-radius: 0px!important;
+    background: var(--swiper-pagination-bullet-inactive-color,#000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+  }

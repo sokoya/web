@@ -42,7 +42,7 @@ const Questions = (props: Props) => {
 
 
   return (
-    <section className="mt-[1rem] py-[3rem]">
+    <section className="mt-[1rem] py-[2rem]">
 
       <div className="w-full mx-auto px-5 bg-white min-h-sceen">
   <div className="flex flex-col items-center">
@@ -50,9 +50,9 @@ const Questions = (props: Props) => {
     Questions we get the most
     </h2>
   </div>
-  <div className="grid divide-y divide-neutral-200 w-full px-[4rem] mx-auto mt-8">
+  <div className="grid divide-y divide-neutral-200 w-full px-[3rem] mx-auto mt-8">
   {questions.map((el) => (
-    <div className="py-5" style={{border: "none"}}>
+    <div className="py-2" style={{border: "none"}}>
       <details className="group">
         <summary className="flex justify-between items-center font-medium cursor-pointer list-none bg-[#EEEDED] rounded-2xl py-[15px] px-[15px]">
           <span>{el.header}</span>
