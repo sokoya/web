@@ -13,14 +13,21 @@ const ScanToPay = (props: Props) => {
             Scan and Accept payments instantly{" "}
           </h1>
           <p className="w-full sm:w-[85%] mb-[1rem] ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
-            quis fugit natus ex,
+          Empower your business with the right tools to transact anywhere while boosting your revenue
           </p>
-          <p className="text-primary3-light sm:w-[85%] mb-[3rem] sm:mb-0">
-            {" "}
-            est vero nemo fugiat explicabo architecto voluptatem aliquid rem
-            minus dolorum suscipit incidunt, maxime veritatis unde velit.
+          <p className="w-full sm:w-[85%] mb-[1rem] ">
+   Website and Mobile
+Use our various payment channels to accept online payments and donations.
           </p>
+          <p className="w-full sm:w-[85%] mb-[1rem] ">
+
+Payment Links
+Easily send payment links and invoices through email or social media.
+          </p>
+          <p className="w-full sm:w-[85%] mb-[1rem] ">Point of Sale (POS)
+Improve the experience of in-person transactions by enabling payment options at your retail stores, restaurants, or events.
+          </p>
+       
         </div>
         <div className="w-full sm:w-[50%]">
           <img src={ScanImg} alt="scantopay" />

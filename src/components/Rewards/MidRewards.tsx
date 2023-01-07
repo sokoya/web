@@ -65,7 +65,7 @@ const MidRewards = (props: Props) => {
         <div className="flex mt-12">
           <Link to="/register">
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
-              <p className="flex items-center">Register Now <BsArrowRight className="ml-[1rem]" /></p>
+              <p className="flex items-center">Get Started <BsArrowRight className="ml-[1rem]" /></p>
             </Button>
           </Link>
         </div>

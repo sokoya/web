@@ -18,7 +18,7 @@ const Header = (props: Props) => {
             We believe payments should be fun & seamless, so we created the most flexible and inclusive way to pay and get paid
           </p>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
-            <p>Register Now &nbsp; &rarr;</p>
+            <p>Get Started &nbsp; &rarr;</p>
           </Button>
         </div>
         <div className="w-full md:w-[50%]">

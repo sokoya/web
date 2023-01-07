@@ -50,7 +50,7 @@ const Goals = (props: Props) => {
             </ul>
           </div>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.6rem]  px-[2.1rem]  w-full sm:w-auto">
-            <p>Register Now &nbsp; &rarr; </p>
+            <p>Get Started &nbsp; &rarr; </p>
           </Button>
         </div>
       </div>

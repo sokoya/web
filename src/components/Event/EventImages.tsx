@@ -5,7 +5,7 @@ type Props = {};
 
 const EventImages = (props: Props) => {
   return (
-    <section className="mt-[7rem]">
+    <section className="mt-[7rem] px-[2rem]">
       <div className="flex flex-wrap justify-between text-white">
         <div className={`h-[20rem] relative w-[59%] mb-3  ${classes.Lagos}`}>
           <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
@@ -38,10 +38,10 @@ const EventImages = (props: Props) => {
           </div>
         </div>
       </div>
-      <p className="mt-[2rem]">
+      {/* <p className="mt-[2rem]">
         and many more. There are many reasons Payscribe is one of the best
         ticketing platform in Nigeria.
-      </p>
+      </p> */}
     </section>
   );
 };
