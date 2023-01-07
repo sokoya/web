@@ -1,6 +1,6 @@
 import React from "react";
 import { BsQuestionLg, BsLightningFill } from "react-icons/bs";
-import { MdPayment, MdBusinessCenter } from "react-icons/md";
+import { MdPayment, MdBusinessCenter, MdQuestionAnswer } from "react-icons/md";
 import {VscLibrary} from "react-icons/vsc"
 import BillsImg from "../assets/nav/Bills Payment.svg";
 import GiftCardImg from "../assets/nav/giftcard.svg";
@@ -138,6 +138,12 @@ export const navList: {
         href: "/contact-us",
         icon: <MdPayment />,
         description: "Reach out to us, we are friendly.",
+      },
+      {
+        name: "Frequently Asked Questions",
+        href: "/faq",
+        icon: <MdQuestionAnswer />,
+        description: "Are You New To Payscribe And Got Questions?",
       },
       // {
       //   name: "Blog",

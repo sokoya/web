@@ -25,6 +25,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import './App.css'
 import Developers from "./pages/Developers";
+import Faq from "./pages/Faq";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
         <Route path="why-payscribe" element={<WhyPayscribe />} />
+        <Route path="faq" element={<Faq />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="rewards" element={<Rewards />} />
         <Route path="developers" element={<Developers />} />
