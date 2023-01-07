@@ -77,7 +77,7 @@ export const navList: {
           "Rewards for every transaction and task, Yes! You deserve it.",
       },
       {
-        name: "Event",
+        name: "Events",
         href: "/events",
         icon: <img src={EventImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description: "Buy and sell event tickets around you.",
@@ -109,20 +109,20 @@ export const navList: {
     title: "For Developers",
     items: [
       {
-        name: "Quick Start",
-        href: "/",
+        name: "Overview",
+        href: "/developers",
         icon: <BsLightningFill />,
         description: "Integrate Payscribe products and tools in a minute",
       },
       {
-        name: "Libraries",
+        name: "API Documentation",
         href: "/",
         icon: <VscLibrary />,
         description:
           "Use our SDK to integrate Payscribe product. stay in control",
       },
     ],
-    documentation: true,
+    documentation: false,
   },
   {
     title: "Company",

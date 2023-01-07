@@ -13,7 +13,7 @@ const Header = (props: Props) => {
             <span className="text-primary3">rates</span> .
           </h1>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
-            <p>Register Now &nbsp; &rarr;</p>
+            <p>Get Started &nbsp; &rarr;</p>
           </Button>
         </div>
         <div className="w-full md:w-[50%]">

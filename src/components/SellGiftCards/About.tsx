@@ -54,7 +54,7 @@ const About = (props: Props) => {
   const aboutJSX = (
     <>
       {aboutList.map((el) => (
-        <div className="w-full sm:w-[80%] md:w-[50%] lg:w-[33%] md:mb-11 lg:mb-0  md:h-[25rem] lg:h-[24rem]">
+        <div className="w-full sm:w-[80%] md:w-[50%] px-[2.5rem] lg:w-[33%] md:mb-11 lg:mb-0  md:h-[25rem] lg:h-[24rem]">
           <IconCards
             content={el.content}
             header={el.header}
@@ -88,13 +88,16 @@ const About = (props: Props) => {
             This became a global problem, and Payscribe stepped in as the number
             one problem-solving platform that it is. Payscribe allows users in
             Nigeria to sell their unused Giftcards for instant cash at amazing
-            rates. Using Payscribe, you can sell various Giftcards in Nigeria,
+            rates. 
+            </p>
+            <p className="mb-8 text-[#151515f1] text-2xl bp3:text-base">
+            Using Payscribe, you can sell various Giftcards in Nigeria,
             including but not limited to iTunes, Amazon, Steam Wallet, Google
             Play, eBay, Walmart, Sephora, OneVanilla, American Express,
             Offgamers, Best Buy, Gamestop, Nike, PlayStation and others.{" "}
           </p>
           <Button class="font-bold text-lg xs:text-lg bg-primary2 text-white py-[1rem]  px-[2.5rem]  w-full sm:w-auto">
-            <p>Register Now</p>
+            <p>Get Started</p>
           </Button>
         </div>
       </div>

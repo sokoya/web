@@ -36,7 +36,7 @@ const Section3 = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {list.map((el) => (
         <li
-          className=" h-[25rem] lg:h-[23rem] my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" h-[25rem] lg:h-[23rem] my-[2rem] px-[4rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
           key={el.header}
         >
           <IconCards
@@ -53,7 +53,7 @@ const Section3 = (props: Props) => {
   return (
     <section className=" py-[2rem]">
       <div className="mt-[2rem]">{jsx}</div>
-      <div className="flex bg-[#efefef] items-center flex-wrap">
+      <div className="flex bg-[#efefef] items-center flex-wrap" style={{marginBottom: "-120px"}}>
         <div className="w-[50%]">
           <img src={DemoImg} alt="" />
         </div>

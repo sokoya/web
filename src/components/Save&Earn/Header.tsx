@@ -19,7 +19,7 @@ const Header = (props: Props) => {
         <div className="flex items-center mt-12">
           <Link to="/login">
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
-              <p>Register Now &nbsp; &rarr; </p>
+              <p>Get Started &nbsp; &rarr; </p>
             </Button>
           </Link>
         </div>

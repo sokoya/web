@@ -14,24 +14,24 @@ const About = (props: Props) => {
     {
       header: "Save Money On Every Transaction",
       body: "onveniently receive and send money without paying unreasonable charges",
-      icon: <Lottie style={{ width: "70px" }} animationData={SaveMoney} />,
+      icon: <Lottie style={{ width: "250px" }} animationData={SaveMoney} />,
     },
     {
       header: "Secure Transfer",
       body: "You can bank on our proven reliability, enterprise-grade encryption and multi-signature authorisation of our system. All your funds and transactions are safe.",
       icon: (
-        <Lottie style={{ width: "70px" }} animationData={SecuredTransfer} />
+        <Lottie style={{ width: "250px" }} animationData={SecuredTransfer} />
       ),
     },
     {
       header: "Quick and Easy To Use",
       body: "Our high-tech powered payment solutions send money in seconds ensuring a seemless experience for both sender and recipient.",
-      icon: <Lottie style={{ width: "70px" }} animationData={EasyToUse} />,
+      icon: <Lottie style={{ width: "250px" }} animationData={EasyToUse} />,
     },
     {
       header: "Dedicated Account Number",
       body: "When you sign up with Payscribe, you're assigned a virtual account number, which you can use to receive money from any local bank, fast and easy",
-      icon: <Lottie style={{ width: "70px" }} animationData={AccountNumber} />,
+      icon: <Lottie style={{ width: "250px" }} animationData={AccountNumber} />,
     },
     {
       header: "NDIC insured",
@@ -48,7 +48,7 @@ const About = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {aboutList.map((el) => (
         <li
-          className=" sm:h-[28rem] lg:h-[26rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" sm:h-[28rem] lg:h-[26rem]  w-full sm:w-[50%] px-[3rem] md:w-[40%] bp1:w-[33.3%]"
           key={el.header}
         >
           <IconCards content={el.body} header={el.header} icon={el.icon} />

@@ -13,7 +13,7 @@ function Header({}: Props) {
             Convert your excess airtime to cash and get your money in <span className="text-primary3">seconds!</span> 
           </h1>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
-            <p>Register Now &nbsp; &rarr;</p>
+            <p>Get Started &nbsp; &rarr;</p>
           </Button>
         </div>
         <div className="w-full md:w-[50%]">

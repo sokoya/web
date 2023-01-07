@@ -41,9 +41,9 @@ const HowItWorks = (props: Props) => {
     </>
   );
   return (
-    <section className="mt-[5rem]">
-      <h1 className="text-5xl mb-10 text-center font-semibold">How It Works</h1>
-      <div className="bg-[#F2F2F2] py-[3rem]">
+    <section className="mt-[5rem] px-[2rem]">
+      <h1 className="text-5xl mb-6 text-center font-semibold">How It Works</h1>
+      <div className="bgg-[#F2F2F2] py-[3rem]">
         <div className="w-full  flex flex-wrap  mt:items-start lg:items-center   font-semibold ">
           <div className=" w-[100%] md:w-[50%] mb-[2rem] md:mb-0">
             <img src={HowItWorksImg} alt="" />
@@ -75,7 +75,7 @@ const HowItWorks = (props: Props) => {
             </p>
           </div>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.6rem]  px-[2.5rem]  w-full sm:w-auto">
-            <p>Register Now &nbsp; &rarr;</p>
+            <p>Get Started &nbsp; &rarr;</p>
           </Button>
         </div>
       </div>
