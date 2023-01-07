@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
-  footerItems: string[];
+  footerItems: any[];
   header: string;
 }
 
@@ -12,7 +13,7 @@ const FooterList = (props: Props) => {
 
       {props.footerItems.map((el, index) => (
         <li className="my-2" key={index}>
-          <a className="font-light text-sm" href="/">{el}</a>
+          <Link className="font-light text-sm" target={el.blank? "_blank" : ""} to={el.url}>{el.title}</Link>
         </li>
       ))}
     </div>

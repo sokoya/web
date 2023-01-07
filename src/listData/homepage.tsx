@@ -76,25 +76,79 @@ export const footerList = [
   {
     header: "Products",
     list: [
-      "Sell Giftcards",
-      "Virtual Dollar",
-      "Rewards",
-      "Airtime To Cash",
-      "Save & Earn",
-      "Event",
+      {
+        title: "Sell Giftcards",
+        url: "/sell-giftcards",
+        blank: false
+      },
+      {
+        title: "Virtual Dollar(coming soon)",
+        url: "/",
+        blank: false
+      },
+      {
+        title: "Rewards",
+        url: "/rewards",
+        blank: false
+      },
+      {
+        title: "Airtime To Cash",
+        url: "/airtime-to-cash",
+        blank: false
+      },
+      {
+        title: "Save & Earn",
+        url: "/save-earn",
+        blank: false
+      },
+      {
+        title: "Events",
+        url: "/events",
+        blank: false
+      },
     ],
   },
   {
     header: "For Business",
-    list: ["Why Payscribe", "How It Works"],
+    list: [
+      {
+        title: "Why Payscribe",
+        url: "/why-payscribe",
+        blank: false
+      }, 
+      {
+        title: "How It Works",
+        url: "/how-it-works",
+        blank: false
+      }],
   },
   {
     header: "For Developers",
-    list: ["Quick Start", "Libraries", "API Documentation"],
+    list: [
+      {
+        title: "Overview",
+        url: "/developers",
+        blank: false
+      },
+     {
+        title: "Api Documentation",
+        url: "/",
+        blank: false
+      }],
   },
   {
     header: "Company",
-    list: ["About", "Libraries", "Blog"],
+    list: [
+      {
+        title: "About",
+        url: "/about-us",
+        blank: false
+      },
+     {
+      title: "Blog",
+      url: "/",
+      blank: true
+    }],
   },
 ];
 

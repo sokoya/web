@@ -17,7 +17,7 @@ const Footer = (props: Props) => {
           key={el.header}
           className=" mb-[3rem] bp4:mb-0 w-full xs:w-[40%] bp3:w-[25%] mr-[1.5rem] sm:mr-0"
         >
-          <FooterList footerItems={el.list} header={el.header} />
+          <FooterList footerItems={el.list} header={el.header}/>
         </div>
       ))}
     </>
@@ -31,7 +31,7 @@ const Footer = (props: Props) => {
           </div>
           <div className=" mb-4 text-sm">
             <p className="w-[85%] mb-4">
-              95 Oreta Road, Opposite Clay View Hotel, Ikorodu, Lagos State
+            Building the world-class technology that digitizes cash payments and provides daily essentials financial services all at your finger tips.
             </p>
             <p className="mb-2">hello@payscribe.ng</p>
             <p className="mb-2">+234 703 806 7493</p>
