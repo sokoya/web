@@ -24,7 +24,7 @@ const ScanToPay = (props: Props) => {
                 </div>
                 </div>
                 <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5">   Website and Mobile
+                <p className="mt-0 mb-5 text-gray-600 text-md pr-5">  <b>Website and Mobile </b>
 Use our various payment channels to accept online payments and donations.</p>
                 </div>
             </li>
@@ -37,7 +37,7 @@ Use our various payment channels to accept online payments and donations.</p>
                 </div>
                 </div>
                 <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5">Payment Links
+                <p className="mt-0 mb-5 text-gray-600 text-md pr-5"><b>Payment Links </b>
 Easily send payment links and invoices through email or social media.</p>
                 </div>
             </li>
@@ -50,7 +50,7 @@ Easily send payment links and invoices through email or social media.</p>
                 </div>
                 </div>
                 <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5">Improve the experience of in-person transactions by enabling payment options at your retail stores, restaurants, or events.</p>
+                <p className="mt-0 mb-5 text-gray-600 text-md pr-5"><b>Improve the experience</b> of in-person transactions by enabling payment options at your retail stores, restaurants, or events.</p>
                 </div>
             </li>
             </ul>
