@@ -10,12 +10,12 @@ const Header = (props: Props) => {
   return (
     <header className="flex bg-primary2 px-[2rem] py-[5rem] flex-wrap items-center w-full mt-[3rem]">
       <div className="w-full sm:w-[100%] mx-auto md:w-[60%] mt-[3rem] text-center">
-        <div className=" text-[3.5rem]  lg:text-[4.1em] font-bold leading-[4.5rem] lg:leading-[5.5rem]">
+        <div className=" text-[2.5rem]  lg:text-[3em] font-bold leading-[3.5rem] lg:leading-[4.5rem]">
           <h1 className="text-white">
          Frequently Asked Questions
           </h1>
         </div>
-        <h2 className="mt-[2rem] w-full text-gray-300 text-lg sm:text-base" style={{fontSize: "23px"}}>
+        <h2 className="mt-[2rem] w-full text-gray-300 text-md sm:text-base" style={{fontSize: "18px"}}>
         Are You New To Payscribe And Got Questions? The Best
 Place To Find Answers Is Below
         </h2>
