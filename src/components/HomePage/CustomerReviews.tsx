@@ -1,5 +1,5 @@
 import React from "react";
-import { reviewsList } from "../../listData/homepage";
+import { reg_link, reviewsList } from "../../listData/homepage";
 import Button from "../Button";
 import Customers from "../Customers";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +14,7 @@ import SwiperCore, {
 } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 const CustomerSection = () => {
   const reviewsJSX = (
@@ -74,9 +75,11 @@ const CustomerSection = () => {
       </h1>
       <div className="">{reviews}</div>
       <div className="flex justify-center mt-[3rem]">
-        <Button class="bg-primary2 text-white px-[2rem] py-4">
+        <Link to={reg_link}>
+        <Button clicked={()=>window.open("https://g.page/r/Cfh9X-mmbYuOEB0/review")} class="bg-primary2 text-white px-[2rem] py-4">
           Read More Reviews
         </Button>
+        </Link>
       </div>
     </section>
   );

@@ -2,6 +2,8 @@ import React from "react";
 import HeroImg from "../../assets/rewards/hero.png";
 import Button from "../Button";
 import bg from '../../assets/rewards/light-curve.png'
+import { Link } from "react-router-dom";
+import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
@@ -17,9 +19,11 @@ const Header = (props: Props) => {
             {" "}
             We believe payments should be fun & seamless, so we created the most flexible and inclusive way to pay and get paid
           </p>
+          <Link to={reg_link}>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
             <p>Get Started &nbsp; &rarr;</p>
           </Button>
+          </Link>
         </div>
         <div className="w-full md:w-[50%]">
           <img className="ml-auto" src={HeroImg} alt="" />

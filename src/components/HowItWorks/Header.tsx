@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Hero1Img from "../../assets/why-payscribe/WhyHeader.png";
 import Button from "../Button";
 import { BsArrowRight } from "react-icons/bs";
+import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
@@ -19,7 +20,7 @@ const Header = (props: Props) => {
         We’ve positioned ourselves to be the capital base of agency banking in Africa, by creating value for businesses to access financial services.
         </h2>
         <div className="flex items-center justify-center mt-12">
-          <Link to="/signup">
+          <Link to={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
               <p className="flex items-center">Get Started <BsArrowRight className="ml-[1rem]" /></p>
             </Button>
