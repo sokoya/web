@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button";
 import HeroImg from "../../assets/homepage/heroImg.png";
 import { Link } from "react-router-dom";
+import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
@@ -22,7 +23,7 @@ const Header = (props: Props) => {
           money, and pay for everyday essentials.
         </h2>
         <div className="flex items-center mt-12">
-          <Link to="/login">
+          <Link to={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
               <p>Get Started &nbsp; &rarr; </p>
             </Button>

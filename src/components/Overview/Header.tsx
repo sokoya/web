@@ -2,6 +2,8 @@ import React from "react";
 import HeroImg from "../../assets/rewards/hero.png";
 import Button from "../Button";
 import bg from '../../assets/rewards/light-curve.png'
+import { Link } from "react-router-dom";
+import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
@@ -11,32 +13,18 @@ const Header = (props: Props) => {
   
   <div className="relative pt-40 pb-20 lg:pt-44 lg:pl-[1.5rem]"  style={{background: `url('${bg}')`}}>
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-      <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">Run successful remote and <br className="lg:block hidden" /> <span className="relative bg-clip-text bg-gradient-to-r text-black">Hybrid teams</span>.</h1>
+      <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-2xl text-center sm:text-2xl md:text-5xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">PAYSCRIBE FOR DEVELOPERS<br className="l:block hiden" /> <span className="relative bg-clip-text bg-gradient-to-r text-black text-[23px]">Adopt top-notch payment experience for your web and mobile application.</span></h1>
       <div className="lg:flex">
-        <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+        <div className="relative mt-8 md:mt-10 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
           <p className="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
-            DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
+          We've made it easy for you to accept payments, pay daily essential bills with just a few lines of code.
           </p>
-          <span className="block font-semibold text-gray-500 dark:text-gray-400">The best companion bot for your chat app.</span>
-          <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
-            <a aria-label="add to slack" href="#" className="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
-              <div className="flex justify-center space-x-4">
-                <img className="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png" alt="slack logo" loading="lazy" width={128} height={128} />
-                <span className="hidden font-medium md:block dark:text-white">Slack</span>
-              </div>
-            </a>    
-            <a aria-label="add to chat" href="#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
-              <div className="flex justify-center space-x-4">
-                <img className="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png" alt="chat logo" loading="lazy" width={128} height={128} />
-                <span className="hidden font-medium md:block dark:text-white">Google Chat</span>
-              </div>
-            </a>   
-            <a aria-label="add to zoom" href="#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
-              <div className="flex justify-center space-x-4">
-                <img className="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png" alt="chat logo" loading="lazy" width={128} height={128} />
-                <span className="hidden font-medium md:block dark:text-white">Zoom</span>
-              </div>
-            </a>    
+          <div className="flex md:justify-start justify-start">
+              <Link to={reg_link}>
+          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
+            <p>Get Started &nbsp; &rarr;</p>
+          </Button>
+          </Link>
           </div>
           {/* <div className="dark:text-gray-300">
             🔥🌟 

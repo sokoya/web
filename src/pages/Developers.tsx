@@ -11,7 +11,7 @@ const Developers = (props: Props) => {
     <>
       <Header />
       <MidSection />
-      <CTA />
+      {/* <CTA /> */}
       <ScrollRestoration />
     </>
   );

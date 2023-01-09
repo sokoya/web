@@ -148,6 +148,15 @@ export const footerList = [
       title: "Blog",
       url: "/",
       blank: true
+    },
+    {
+      title: "Privacy Policy",
+      url: "/privacy",
+      blank: false
+    },     {
+      title: "Terms and Conditions",
+      url: "/terms",
+      blank: false
     }],
   },
 ];
@@ -210,7 +219,7 @@ export const reviewsList = [
       "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
   },
 ];
-
+export const reg_link = "https://app.payscribe.ng/auth/create";
 //: Exquisite USB port for high speed-data transmission.
 //: Easy to understand and use
 //: International security technologies - PCI and NFC Contactless
