@@ -10,7 +10,7 @@ type Props = {};
 const howitworksList = [
   {
     title: "Sign Up",
-    body: "Create an Payscribe account with a valid email. Follow our simple steps. ",
+    body: "Create an account in less than a minute and complete the KYC. ",
     icon: <AiOutlineUser className="text-[#226c1a68]" />,
   },
   {

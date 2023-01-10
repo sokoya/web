@@ -25,6 +25,7 @@ const CustomerSection = () => {
           key={el.name}
           comment={el.review}
           customer_name={el.name}
+          role={el.role}
         />
       ))}
     </>
@@ -62,6 +63,7 @@ const CustomerSection = () => {
               index={index}
               comment={el.review}
               customer_name={el.name}
+              role={el.role}
             />
           </SwiperSlide>
         ))}
@@ -75,11 +77,9 @@ const CustomerSection = () => {
       </h1>
       <div className="">{reviews}</div>
       <div className="flex justify-center mt-[3rem]">
-        <Link to={reg_link}>
         <Button clicked={()=>window.open("https://g.page/r/Cfh9X-mmbYuOEB0/review")} class="bg-primary2 text-white px-[2rem] py-4">
           Read More Reviews
         </Button>
-        </Link>
       </div>
     </section>
   );

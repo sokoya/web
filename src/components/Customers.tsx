@@ -6,6 +6,7 @@ interface Props {
   comment: string;
   customer_name: string;
   index: number;
+  role: string;
 }
 
 const Customers = (props: Props) => {
@@ -23,7 +24,7 @@ const Customers = (props: Props) => {
             <FaUserCircle className="text-[2.5rem] mr-4" />
             <div className="">
               <h2 className="font-semibold">{props.customer_name}</h2>
-              <p>Business Man</p>
+              <p>{props.role}</p>
             </div>
           </div>
         </div>
