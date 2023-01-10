@@ -12,8 +12,8 @@ type Props = {};
 const About = (props: Props) => {
   const aboutList = [
     {
-      header: "Save Money On Every Transaction",
-      body: "onveniently receive and send money without paying unreasonable charges",
+      header: "Save More",
+      body: "By using Payscribe, you have the opportunity to save money on every transaction you make. No funny charges. ",
       icon: <Lottie style={{ width: "250px" }} animationData={SaveMoney} />,
     },
     {

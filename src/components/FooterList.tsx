@@ -13,7 +13,7 @@ const FooterList = (props: Props) => {
 
       {props.footerItems.map((el, index) => (
         <li className="my-2" key={index}>
-          <Link className="font-light text-sm" target={el.blank? "_blank" : ""} to={el.url}>{el.title}</Link>
+          {el.blank?  <a className="font-light text-sm" target={el.blank? "_blank" : ""} href={el.url}>{el.title}</a>: <Link className="font-light text-sm" target={el.blank? "_blank" : ""} to={el.url}>{el.title}</Link>}
         </li>
       ))}
     </div>

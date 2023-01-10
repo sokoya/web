@@ -15,10 +15,7 @@ const Header = (props: Props) => {
           </h1>
           <p className="mb-10 sm:w-[90%]">
             {" "}
-            With Payscribe, you can send and receive money with other Payscribe
-            users and Nigerian banks for free and get the transfer done in
-            real-time. All you need is an active email address and a phone
-            number to open an account.
+            With Payscribe, you can send and receive money from anywhere in the world without breaking the bank. This feature makes it easy to transfer funds to friends, family, or business associates, no matter where they are located. Simply link your bank account or use a credit card to start sending and receiving money with ease.
           </p>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
             <p>Get Started &nbsp; &rarr;</p>

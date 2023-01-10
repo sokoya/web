@@ -23,12 +23,12 @@ export const aboutList = [
     icon: <Lottie style={{ height: "350px" }} animationData={GTV} />,
   },
   {
-    header: "Receive Money in Peace",
+    header: "Receive Money",
     body: "Send or receive instant transfer from any bank account within Nigeria, or through your mobile phone number, payment link, or QR code.",
     icon: <Lottie style={{ height: "250px" }} animationData={ReceiveMoney} />,
   },
   {
-    header: "Earn-as-you-spend",
+    header: "Spend and Save",
     body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
     icon: <Lottie style={{ height: "250px" }} animationData={Earn} />,
   },
@@ -41,7 +41,7 @@ export const aboutList = [
   },
   {
     header: "Financial Control in your Pocket",
-    body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS (group, team, campaigns) and lots more",
+    body: "Upgrade your lifestyle with a secure and convenient way to pay bills, buy bulk internet data, send bulk SMS and lots more",
     icon: <Lottie style={{ height: "250px" }} animationData={FinancialControl} />,
   },
   {
@@ -56,19 +56,22 @@ export const tabs = [
     label: <img src={tab1Img} alt="tab1img" />,
     header: "The only app you need",
     color: "#3362B0",
-    body: "We designed payscribe app for your busy lifestyle, set auto renewal, tap-and-pay with no need to fill long form. No sweat. Send and reveive money at ease. Save money as you spend with our Earn-as-you-spend feature Do what matters most while Payscribe handles all your recurring bills    (Airtime, internet data, TV Subscription, Power) and so much more.",
+    isMarkup: true,
+    body: "The Payscribe app was created to fit your busy lifestyle, with features like automatic renewal and tap-and-pay to make transactions quick and easy. Sending and receiving money has never been simpler. <br /> <br /> Save money as you spend with our spend-and-save feature and so much more!",
   },
   {
     label: <img src={tab2Img} alt="tab2img" />,
     header: "Secure & Guaranteed",
     color: "#3362B0",
-    body: "We take security so dearly. Funds are protected with the same 256-bit HTTPs SSL as well as other banks. Get started to enjoy flawless transactions.",
+    isMarkup: false,
+    body: "Security is our top priority. Transactions are protected with the same 256-bit HTTPS SSL encryption used by banks. Start using Payscribe for secure and seamless transactions.",
   },
   {
     label: <img src={tab3Img} alt="tab2img" />,
     header: "We’re always happy to help you",
     color: "#3362B0",
-    body: "You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy.",
+    isMarkup: false,
+    body: "We are social, available on all social media and not leaving you hanging anyday, anytime.",
   },
 ];
 
@@ -134,6 +137,11 @@ export const footerList = [
         title: "Api Documentation",
         url: "/",
         blank: false
+      },
+      {
+        title: "Status Page",
+        url: " https://payscribe.statuspage.io/ ",
+        blank: true
       }],
   },
   {
@@ -157,7 +165,8 @@ export const footerList = [
       title: "Terms and Conditions",
       url: "/terms",
       blank: false
-    }],
+    },
+],
   },
 ];
 
@@ -194,30 +203,35 @@ export const featuresList = [
 
 export const reviewsList = [
   {
-    name: "govina samson ese",
+    name: "Anonymous",
+    role: "CTO",
     review:
-      "This app is awesome, but I have one problem with the app, printing of recharge cards is not yet working, I can't generate cards to print, hope you people will try as much as possible so we can be able to print cards",
+      "We needed a stable and trusted API to savage the damage caused by our previous partners. Payscribe is one of the best choice we have made in this business.",
   },
   {
-    name: "SimoN “PhilSTRING” Philemon",
+    name: "Douglas Ucheagwu",
+    role: "Douch Enterprise",
     review:
-      "Payscribe is the best ever, please you people should do something so that we can get SMS deposit alart when founding the wallet",
+      "Very reliable company. I have been using Payscribe for over a year now, and I barely message their customer support. Thumbs up guys",
   },
   {
-    name: "Ofofo Movie",
+    name: "Mr Johnson",
+    role: "Personal Use",
     review:
-      "The best platform in Nigeria to trade giftcards. They have swift payment mode for iTunes card. Well done Payscribe",
+      "Simply the best. instant delivery of services and prompt customer service.  I have never been disappointed of choosing Payscribe.",
   },
   {
-    name: "Benjamin Abayomi",
+    name: "Jeff",
+    role: "Tradift",
     review:
-      "Payscribe is the best data site have seen ever....I love payscribe and I can't stop using it..",
+      "We just integrated with Payscribe this week. The integration process was very smooth. Payscribe has one of the best API documentation, pretty simple",
   },
-  {
-    name: "Aminu Aliyu",
-    review:
-      "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
-  },
+  // {
+  //   name: "Aminu Aliyu",
+  //   role: "",
+  //   review:
+  //     "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
+  // },
 ];
 export const reg_link = "https://app.payscribe.ng/auth/create";
 //: Exquisite USB port for high speed-data transmission.

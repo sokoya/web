@@ -75,7 +75,7 @@ const TrustPayscribe = (props: Props) => {
                       backgroundColor: item.color,
                     }}
                   ></div>
-                  <h1 className="text-secondary1">{item.body}</h1>
+                  <h1 className="text-secondary1">{item.isMarkup? <span dangerouslySetInnerHTML={{__html: item.body}} /> : item.body}</h1>
                 </div>
                 {item === selectedTab ? (
                   <motion.div className="underline" layoutId="underline" />
