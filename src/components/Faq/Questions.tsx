@@ -168,7 +168,7 @@ const Questions = (props: Props) => {
                         </details>
                         </div>))}
                       </div>
-                      <div className={openTab === 3 ? "block px-4" : "hidden px-4"} id="link3">
+                      <div className={openTab === 3 ? "block px-4" : "hidden  px-4"} id="link3">
                       {general.map((el) => (
                         <div className="py-2" style={{border: "none"}}>
                         <details className="group">
