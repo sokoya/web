@@ -3,19 +3,25 @@
         export const questions = [
             {
               header: "What is Payscribe?",
-              body: "Payscribe is a lifestyle bills payment where you can conveniently make all daily essential bills payment and save with no stress. We are building the world-class technology that digitizes cash payments and provides daily essential financial services at your finger tips",
+              body: "Payscribe is a lifestyle bills payment where you can conveniently make all daily essential bills payment and subscription, receive and send money and save for a target effortlessly. We are building the world-class technology that digitizes cash payments and provides daily essential financial services at your finger tips",
               list: [
-                "No maintenance fee",
-                "No extra deduction",
-                "No mimimum balance",
-                "No delay in transaction",
-                "24/7 Customer support.",
+                {title: "No maintenance fee", markup: false},
+                {title: "No extra deduction", markup: false},
+                {title: "No mimimum balance", markup: false},
+                {title: "No delay in transaction", markup: false},
+                {title: "24/7 Customer support.", markup: false},
               ]
             },
             {
               header: "Why should I use Payscribe?",
               body: "We are dedicated to making cash payments easy as 1-2-3",
-              list: []
+              list: [
+                {title: "No maintenance fee", markup: false},
+                {title: "No extra deduction", markup: false},
+                {title: "No mimimum balance", markup: false},
+                {title: "No delay in transaction", markup: false},
+                {title: "24/7 Customer support.", markup: false},
+              ]
             },
             {
               header: "What do I need to open a Payscribe account?",
@@ -40,26 +46,29 @@
               {
                 header: "What are some of the features that make Payscribe unique?",
                 list: [
-                    'Payscribe gived you a contactless payment using transfer via phone number, email, and QR code to scan and pay; ***A link to CBN Cashless policy - https://www.cbn.gov.ng/cashless/***',
-                    'For every transactions you make on Payscribe you get a whooping cashback, others don\'t!',
-                    'With our unique tap-and-pay feature, you can safely make purchase without the need to fill long form over and over everytime you want to make purchase',
-                    'Want to send bulk airtime, internet data to friends and family? Payscribe got you cover.',
-                    '99.9 downtime',
+                    {
+                      title: 'Payscribe gived you a contactless payment using transfer via phone number, email, and QR code to scan and pay; <a href="https://www.cbn.gov.ng/cashless/" target="_blank" class="text-primary2">CBN Cashless policy</a>',
+                      markup: true
+                    },
+                    {title: 'For every transactions you make on Payscribe you get a whooping cashback, others don\'t!', markup: false},
+                    {title: 'With our unique tap-and-pay feature, you can safely make purchase without the need to fill long form over and over everytime you want to make purchase', markup: false},
+                    {title: 'Want to send bulk airtime, internet data to friends and family? Payscribe got you cover.', markup: false},
+                    {title: '99.9 downtime', markup: false},
                 ],
                 body: "Dedicated to making cashless payments easy and accessible to people and businesses all over Africa;",
               },
               {
                 header: "Services on Payscribe",
                 list: [
-                    'Send & Receive money',
-                    'Buy Airtime & Internet Data',
-                    'Pay bills',
-                    'Fund your betting wallet',
-                    'Pay insurance & Health fee',
-                    'Get education vouchers',
-                    'Send bulk SMS',
-                    'Convert excess airtime to cash',
-                    'Buy/Sell giftcards',
+                    {title: 'Send & Receive money', markup: false},
+                    {title: 'Buy Airtime & Internet Data', markup: false},
+                    {title: 'Pay bills', markup: false},
+                    {title: 'Fund your betting wallet', markup: false},
+                    {title: 'Pay insurance & Health fee', markup: false},
+                    {title: 'Get education vouchers', markup: false},
+                    {title: 'Send bulk SMS', markup: false},
+                    {title: 'Convert excess airtime to cash', markup: false},
+                    {title: 'Buy/Sell giftcards', markup: false},
                 ],
                 body: "We are not limited; we are on a mission, these are some of the services you get on Payscribe",
               },
@@ -146,8 +155,8 @@
               header: "What are the saving methods on Payscribe?",
               body: "Currently there are two saving methods, the save for a target, and spend and save. The save for a target is further categorized into two;",
               list: [
-                "The fixed savings: This is the type of savings that you lock and can't be withdrawn until the date you set for withdrawal",
-	            'The target savings: We understand that there might be emergency, and you urgently need money to settle it, The target savings allows you to break the target even before the withdrawal date you have set.',
+                {title: "The fixed savings: This is the type of savings that you lock and can't be withdrawn until the date you set for withdrawal", markup: false},
+	            {title: 'The target savings: We understand that there might be emergency, and you urgently need money to settle it, The target savings allows you to break the target even before the withdrawal date you have set.', markup: false},
               ]
             },
             {

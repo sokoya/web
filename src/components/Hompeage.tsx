@@ -5,6 +5,7 @@ import Features from "../components/HomePage/Features";
 import CustomerReviews from "../components/HomePage/CustomerReviews";
 import ScanToPay from "../components/HomePage/ScanToPay";
 import CTA from "./CTA";
+import ForDevelopers from "./HomePage/ForDevelopers";
 
 type Props = {};
 
@@ -15,6 +16,7 @@ function Hompeage({}: Props) {
       <About />
       <ScanToPay />
       <Features />
+      <ForDevelopers />
       <CustomerReviews />
       <CTA />
     </>

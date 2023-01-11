@@ -11,15 +11,11 @@ const Header = (props: Props) => {
       <div className="w-full sm:w-[60%] mx-auto md:w-[50%] mt-[5rem]">
         <div className=" text-[3.5rem]  lg:text-[4rem] font-bold leading-[4.5rem] lg:leading-[5.5rem]">
           <h1 className=" ">
-            Register and sell your event tickets online
+          Explore what's happening, where and when.
           </h1>
         </div>
         <h2 className="mt-[2rem] w-full sm:w-[90%] text-secondary1 text-lg sm:text-base">
-          With Payscribe you can easily register your event and sell your event
-          tickets online. It's smooth, easy and cheap. Here is where you find
-          out what events are forthcoming Nigeria, where and when it is
-          happening. All across the cities and states, Payscribe helps you to
-          maximise the reach of your events.
+        Post events in Nigeria, free and paid events. Find events around you, register for free event, buy tickets, sell tickets online, manage and promote your event in Nigeria
         </h2>
         <div className="flex items-center mt-12">
           <Link to="/login">

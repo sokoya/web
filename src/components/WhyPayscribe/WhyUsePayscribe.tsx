@@ -43,7 +43,7 @@ const WhyUsePayscribe = (props: Props) => {
       <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
       Easy! Fast! Reliable!
       </h2>
-      <p className="mt-4 text-gray-500 sm:text-xl">
+      <p className="mt-4 text-gray-500">
       We open your business to the world of endless possibilities with lifestyle payment and savings, and investments With Payscribe there is no limitation to your business. Power your business with our array of products.
       </p>
     </div>
@@ -65,9 +65,9 @@ const WhyUsePayscribe = (props: Props) => {
         </div>
         <div className="flex flex-col rounded-lg border-[1.5px] border-gray-300 px-4 py-8 text-center">
           <dt className="order-last text-lg font-medium text-gray-500">
-          Transactions
+          AVG. Monthly Transactions
           </dt>
-          <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">$15,000+</dd>
+          <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">$1,000,000+</dd>
         </div>
         <div className="flex flex-col rounded-lg border-[1.5px] border-gray-300 px-4 py-8 text-center">
           <dt className="order-last text-lg font-medium text-gray-500">
