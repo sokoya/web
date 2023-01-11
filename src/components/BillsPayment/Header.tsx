@@ -10,9 +10,9 @@ function Header({}: Props) {
       <div className="flex py-[2rem] items-center flex-wrap">
         <div className=" w-full md:w-[50%]">
           <h1 className="text-[2.5rem] sm:text-[3.5rem] leading-[4rem] lg:leading-[5rem] font-bold mb-8 w-[90%]">
-            Paying lifestyle bills at ease
+          Bills and Utilities Subscription at ease.
           </h1>
-          <div className=" text-sm am:text-xl md:text-sm font-light mb-8 ">
+          <div className=" text-sm am:text-lg md:text-sm font- mb-8 ">
             <h2 className="mb-3">
               Payscribe has the most{" "}
               <span className="text-primary3">

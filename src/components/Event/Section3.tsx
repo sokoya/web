@@ -12,21 +12,21 @@ const Section3 = (props: Props) => {
   const list = [
     {
       header: "Event management ",
-      body: "Create and post your free and paid events within minutes. Be explicit in the needed description of venues, time, date and category in the form that will be provided to you. ",
+      body: "We have done the work for you to get you to get buy/sell that event tickets.",
       icon: <TbCurrency />,
       bgColor: "#0082e633",
       color: "#0082E7",
     },
     {
-      header: "Secure Transfer",
-      body: "Our fast interface gives you the maximum smoothness and ease in booking your tickets online. ",
+      header: "Easy Booking",
+      body: "Make bookings for your favourite events and secure a spot anytime, anywhere. ",
       icon: <MdPayment />,
       bgColor: "#f5843233",
       color: "#F58634",
     },
     {
       header: "Secure Payment",
-      body: "You can request for payout at any time and get it within minutes. ",
+      body: "Receive instant payout for every tickets sold. No downtime! No holidays. ",
       icon: <AiFillLock />,
       bgColor: "#ff3d3d33",
       color: "#FF3D3D",
@@ -58,6 +58,7 @@ const Section3 = (props: Props) => {
           <img src={DemoImg} alt="" />
         </div>
         <div className="w-[50%] px-[5rem]">
+          <h3 className="font-bold text-4xl mb-3">It's time to do the most!!</h3>
           <p className="mb-[2rem]">
             Payscribe event ticketing service provides you with a topnotch
             experience as an event planner or an attendee. Post both paid and
