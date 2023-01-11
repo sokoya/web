@@ -68,7 +68,7 @@ export const tabs = [
   },
   {
     label: <img src={tab3Img} alt="tab2img" />,
-    header: "We’re always happy to help you",
+    header: "24/7 Friendly Customer Support",
     color: "#3362B0",
     isMarkup: false,
     body: "We are social, available on all social media and not leaving you hanging anyday, anytime.",
