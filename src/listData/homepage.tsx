@@ -238,7 +238,7 @@ export const reg_link = "https://app.payscribe.ng/auth/create";
 
 export const developersCode = [
   {
-    language: 'Curl',
+    lang: 'Curl',
     code: `curl --location --request \n POST 'BASE_URL/airtime' \
     \n--header 'Authorization: Bearer PAYSCRIBE_API_TOKEN' \
     \n
@@ -250,7 +250,7 @@ export const developersCode = [
   },
 
   {
-    language: 'PHP',
+    lang: 'PHP',
     code: `<?php
     $curl = curl_init();
     curl_setopt_array($curl, array(
@@ -279,7 +279,7 @@ export const developersCode = [
   },
 
   {
-    language: 'Node.JS',
+    lang: 'Node.JS',
     code: `var request = require('request');
     var options = {
       'method': 'POST',
@@ -297,7 +297,7 @@ export const developersCode = [
   },
 
   {
-    language: 'Java',
+    lang: 'Java',
     code: `var myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer PAYSCRIBE_API_TOKEN");
     var raw = "{\n    \"network\": \"mtn\",\n    \"amount\": 100,\n    \"recipient\": \"08169254598\",\n    \"ported\": false\n}";
@@ -315,7 +315,7 @@ export const developersCode = [
   },
 
   {
-    language: 'Python',
+    lang: 'Python',
     code: `import requests
     url = "BASE_URL/airtime"
     payload = "{\n    \"network\": \"mtn\",\n    \"amount\": 100,\n    \"recipient\": \"08169254598\",\n    \"ported\": false\n}"

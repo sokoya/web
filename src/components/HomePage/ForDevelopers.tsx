@@ -36,7 +36,7 @@ const ForDevelopers = (props: Props) => {
 
                                 <pre className="p-3 mt-6 w-full mx-2 text-white sm:h-100 whitespace-pre-wrap overflow-y-auto h-[400px]">
                                     {developersCode.map(({code, language}, index) => (
-                                        <code key={index} className={openTab === index ? "block" : "hidden"} language={language}>
+                                        <code key={index} className={openTab === index ? "block" : "hidden"} lang={language}>
                                             {" "}
                                             <React.Fragment>{code}</React.Fragment>
                                         </code>
