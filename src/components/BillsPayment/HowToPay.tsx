@@ -4,42 +4,45 @@ import { GiMoneyStack } from "react-icons/gi";
 import { SiConvertio } from "react-icons/si";
 import IconPlate from "../IconPlate";
 import subscribedImg from "../../assets/bills/subscribed.svg";
+import VerticalItems from "../VerticalItems";
+
+import { createAccount } from '../../helpers/Links'
 
 type Props = {};
 
 const HowToPayList = [
   {
-    number: "1",
-    body: "Login to your account if you already have an account with Payscribe",
-    icon: <AiOutlineUser className="text-[#226c1a68]" />,
+    title: "1",
+    content: `Login to your account if you already have an account with Payscribe, or <a href="${createAccount}" className="secondary" title="Create an account">create an account</a>`,
+    icon: <AiOutlineUser className="text-white" />,
   },
   {
-    number: "2",
-    body: "Select the service provider you want to vend.",
-    icon: <GiMoneyStack className="text-[#82111168]" />,
+    title: "2",
+    content: "Tap on Topup, Select the service provider you want to vend.",
+    icon: <GiMoneyStack className="text-white" />,
   },
   {
-    number: "3",
-    body: " Subscription successful!",
-    icon: <SiConvertio className="text-[#12109868]" />,
+    title: "3",
+    content: "Fill the bill payment form accurately, and review to submit.",
+    icon: <SiConvertio className="text-white" />,
   },
 ];
 
 const HowToPay = (props: Props) => {
-  const jsx = (
-    <>
-      {HowToPayList.map((el) => (
-        <div className="w-[100%] bp3:w-[45%] my-[2rem]">
-          <IconPlate
-            number={el.number}
-            body={el.body}
-            icon={el.icon}
-            key={el.number}
-          />
-        </div>
-      ))}
-    </>
-  );
+  // const jsx = (
+  //   <>
+  //     {HowToPayList.map((el) => (
+  //       <div className="w-[100%] bp3:w-[45%] my-[2rem]">
+  //         <IconPlate
+  //           number={el.number}
+  //           body={el.body}
+  //           icon={el.icon}
+  //           key={el.number}
+  //         />
+  //       </div>
+  //     ))}
+  //   </>
+  // );
   return (
     <section className="mt-[6rem] sm:px-[2rem]">
       <div className="flex bg-[#F2F2F2] px-[1.5rem] sm:px-[3rem] py-[3rem] justify-between flex-wrap">
@@ -59,7 +62,12 @@ const HowToPay = (props: Props) => {
 
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-[80%] ">
-              <div className="flex flex-wrap justify-between">{jsx}</div>
+              <div className="flex flex-wrap justify-between">
+                  {/* {jsx} */}
+                  <VerticalItems
+                      items={HowToPayList}
+                  />
+              </div>
             </div>
           </div>
         </div>

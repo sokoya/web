@@ -1,5 +1,6 @@
 import React from "react";
 import ScanImg from "../../assets/scantopay.svg";
+import VerticalItems from "../VerticalItems";
 import TrustPayscribe from "./TrustPayscribe";
 
 type Props = {};
@@ -13,47 +14,20 @@ const ScanToPay = (props: Props) => {
             Scan and Accept payments instantly{" "}
           </h1>
           <p className="mt-0 mb-3 text-gray-600 text-md pr-5">Empower your business with the right tools to transact anywhere while boosting your revenue</p>
-          <ul className="mt-[4rem] pl-[1.1rem]">
-
-            <li className="relative flex items-baseline gap-2 pb-5">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400 timeline2">
-                <div className="icon">
-                <div>
-                    1
-                </div>
-                </div>
-                </div>
-                <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5">  <b>Website and Mobile </b>
-Use our various payment channels to accept online payments and donations.</p>
-                </div>
-            </li>
-            <li className="relative flex items-baseline gap-2 pb-5">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400 timeline2">
-                <div className="icon">
-                <div>
-                    2
-                </div>
-                </div>
-                </div>
-                <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5"><b>Payment Links </b>
-Easily send payment links and invoices through email or social media.</p>
-                </div>
-            </li>
-            <li className="relative flex items-baseline gap-2 pb-5">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-40 timeline2">
-                <div className="icon">
-                <div>
-                    3
-                </div>
-                </div>
-                </div>
-                <div style={{alignSelf: "center"}}>
-                <p className="mt-0 mb-5 text-gray-600 text-md pr-5"><b>Improve the experience</b> of in-person transactions by enabling payment options at your retail stores, restaurants, or events.</p>
-                </div>
-            </li>
-            </ul>
+			
+			<VerticalItems 
+				items={[
+					{
+						content: "<b>Website and Mobile </b>Use our various payment channels to accept online payments and donations."
+					},
+					{
+						content: "<b>Payment Links </b> Easily send payment links and invoices through email or social media."
+					},
+					{
+						content: "<b>Payment Links </b> Easily send payment links and invoices through email or social media."
+					}
+				]}
+			/>
         </div>
         <div className="w-full sm:w-[50%]">
           <img src={ScanImg} alt="scantopay" />
