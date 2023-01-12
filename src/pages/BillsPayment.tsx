@@ -4,6 +4,7 @@ import HowToPay from "../components/BillsPayment/HowToPay";
 import Partners from "../components/BillsPayment/Partners";
 import CTA from "../components/CTA";
 import { ScrollRestoration } from "react-router-dom";
+import TwoColumn from "../components/BillsPayment/TwoColumn";
 
 type Props = {};
 
@@ -12,6 +13,7 @@ function BillsPayment({}: Props) {
     <>
       <Header />
       <HowToPay />
+      <TwoColumn />
       <Partners />
       <CTA />
       <ScrollRestoration />
