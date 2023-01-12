@@ -1,5 +1,6 @@
 import React from "react";
 import { ScrollRestoration } from "react-router-dom";
+import TwoColumn from "../components/BillsPayment/TwoColumn";
 import CTA from "../components/CTA";
 import About from "../components/WhyPayscribe/About";
 import Header from "../components/WhyPayscribe/Header";
@@ -14,6 +15,7 @@ const WhyPayscribe = (props: Props) => {
       <Header />
       <WhyUsePayscribe />
       <MidSection />
+      <TwoColumn />
       <CTA />
       <ScrollRestoration />
     </>

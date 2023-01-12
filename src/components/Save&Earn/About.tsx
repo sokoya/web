@@ -11,12 +11,12 @@ const About = (props: Props) => {
   const aboutList = [
     {
       header: "You're in Control",
-      body: "Set how and when a certain % of money should be saved on every transaction you make. ",
+      body: "Set how and when a certain % of money should be saved for you on every transaction you make on Airtime, Data purchase, Bills payment etc",
       icon: <Lottie style={{ width: "70px" }} animationData={Control} />,
     },
     {
       header: "Manage Your Money",
-      body: "Set aside funds for a fixed period of time without having access to it until maturity",
+      body: "Set a saving target for a fixed period of time, and watch it grow while attending to other things that matters to you.",
       icon: <Lottie style={{ width: "70px" }} animationData={Manage} />,
     },
     {
