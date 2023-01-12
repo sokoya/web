@@ -21,22 +21,22 @@ const ForDevelopers = (props: Props) => {
                         <div className="mx-auto mt-5 w-full">
                             <div className="flex flex-col items-center justify-center w-full ">
                                 <ul className="flex space-x-2 w-full px-3 justify-start" style={{justifyContent: "flex-start"}}>
-                                    {developersCode.map(({language}, index) => (
-                                        <li key={`${language}-${index}`}>
+                                    {developersCode.map(({lang}, index) => (
+                                        <li key={`${lang}-${index}`}>
                                             <a
                                                 href="javascript: void(0);"
                                                 onClick={() => setOpenTab(index)}
                                                 className={` ${openTab === index ? "bg-[#27456b] text-white" : ""} inline-block px-4 py-2 text-[#fff] rounded`}
                                             >
-                                            {language}
+                                            {lang}
                                             </a>
                                         </li>
                                     ))}
                                 </ul>
 
                                 <pre className="p-3 mt-6 w-full mx-2 text-white sm:h-100 whitespace-pre-wrap overflow-y-auto h-[400px]">
-                                    {developersCode.map(({code, language}, index) => (
-                                        <code key={index} className={openTab === index ? "block" : "hidden"} lang={language}>
+                                    {developersCode.map(({code, lang}, index) => (
+                                        <code key={index} className={openTab === index ? "block" : "hidden"} lang={lang}>
                                             {" "}
                                             <React.Fragment>{code}</React.Fragment>
                                         </code>
@@ -51,7 +51,7 @@ const ForDevelopers = (props: Props) => {
                             For Developers
                         </p>
                         <h2 className="text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4">
-                            Powerful APIs built by developers for developers. Choose your preferred code language.
+                            Powerful APIs built by developers for developers. Choose your preferred code lang.
                         </h2>
                         <p className="max-w-md text-gray-600 mb-8">
                             Whatever it is you want to build we have made it easy as possible with our APIs and SDKs, documentation as well as other resouces to make you setup in less than 5 minutes.
