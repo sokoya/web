@@ -14,7 +14,9 @@ import SwiperCore, {
 } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
+
+import { allReviews } from '../../helpers/Links'
+
 SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 const CustomerSection = () => {
   const reviewsJSX = (
@@ -72,12 +74,12 @@ const CustomerSection = () => {
   );
   return (
     <section className="mt-[5rem]">
-      <h1 className="font-bold text-4xl xxs:text-5xl mb-[2rem] text-center">
+      <h1 className="text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4 text-center">
         What Our Customers Think
       </h1>
       <div className="">{reviews}</div>
       <div className="flex justify-center mt-[3rem]">
-        <Button clicked={()=>window.open("https://g.page/r/Cfh9X-mmbYuOEB0/review")} class="bg-primary2 text-white px-[2rem] py-4">
+        <Button clicked={()=>window.open(allReviews)} class="bg-primary2 text-white px-[2rem] py-4">
           Read More Reviews
         </Button>
       </div>

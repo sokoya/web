@@ -9,8 +9,6 @@ type Props = {};
 const Questions = (props: Props) => {
         const [openTab, setOpenTab] = React.useState(1);
         var color = "pink"
-
-        
         return (
           <>
             <div className="flex flex-wrap lg:px-[5rem] mt-3">

@@ -28,7 +28,7 @@ const About = (props: Props) => {
   return (
     <section className="mt-[4rem] py-[2rem]">
       <div className=" text-center ">
-        <h1 className=" text-4xl mb-3  xs:text-5xl font-bold">
+        <h1 className=" text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4">
           More than bills
         </h1>
         <p className="w-[90%] sm:w-[40%] text-lg mx-auto text-secondary1 ">

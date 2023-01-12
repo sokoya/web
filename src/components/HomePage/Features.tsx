@@ -61,10 +61,10 @@ const Features = (props: Props) => {
   return (
     <section className="mt-[5rem]">
       <div className=" mb-[5rem]">
-        <h1 className=" text-center font-bold mb-3 text-4xl xxs:text-5xl">
+        <h1 className="text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4 xxs:text-5xl text-center">
           Who can use Payscribe
         </h1>
-        <p className="mx-auto w-[90%] sm:w-[40%] text-center  text-lg text-secondary1">
+        <p className="mx-auto w-[90%] sm:w-[40%] text-center  text-md text-secondary1">
           Payscribe is specially crafted to meet all your daily essential
           payments. This makes it easy for business and personal use.
         </p>

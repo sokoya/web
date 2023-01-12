@@ -234,6 +234,99 @@ export const reviewsList = [
   // },
 ];
 export const reg_link = "https://app.payscribe.ng/auth/create";
+
+
+export const developersCode = [
+  {
+    language: 'Curl',
+    code: `curl --location --request \n POST 'BASE_URL/airtime' \
+    \n--header 'Authorization: Bearer PAYSCRIBE_API_TOKEN' \
+    \n
+    --data-raw '{
+        "network": "mtn",
+        "amount": 100,
+        "recipient": ["08169254598", "07038067493"],
+    }'`
+  },
+
+  {
+    language: 'PHP',
+    code: `<?php
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+      CURLOPT_URL => 'BASE_URL/airtime',
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_ENCODING => '',
+      CURLOPT_MAXREDIRS => 10,
+      CURLOPT_TIMEOUT => 0,
+      CURLOPT_FOLLOWLOCATION => true,
+      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+      CURLOPT_CUSTOMREQUEST => 'POST',
+      CURLOPT_POSTFIELDS =>'{
+        "network": "mtn",
+        "amount": 100,
+        "recipient": "08169254598",
+        "ported": false
+    }',
+      CURLOPT_HTTPHEADER => array(
+        'Authorization: Bearer PAYSCRIBE_API_TOKEN'
+      ),
+    ));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    echo $response;
+    `
+  },
+
+  {
+    language: 'Node.JS',
+    code: `var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'BASE_URL/airtime',
+      'headers': {
+        'Authorization': 'Bearer PAYSCRIBE_API_TOKEN'
+      },
+      body: '{\n        "network": "mtn",\n        "amount": 50,\n        "recipient": "08169254598",\n       }'
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+    `
+  },
+
+  {
+    language: 'Java',
+    code: `var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer PAYSCRIBE_API_TOKEN");
+    var raw = "{\n    \"network\": \"mtn\",\n    \"amount\": 100,\n    \"recipient\": \"08169254598\",\n    \"ported\": false\n}";
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    fetch("BASE_URL/airtime", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));`
+  },
+
+  {
+    language: 'Python',
+    code: `import requests
+    url = "BASE_URL/airtime"
+    payload = "{\n    \"network\": \"mtn\",\n    \"amount\": 100,\n    \"recipient\": \"08169254598\",\n    \"ported\": false\n}"
+    headers = {
+      'Authorization': 'Bearer PAYSCRIBE_API_TOKEN'
+    }
+    response = requests.request("POST", url, headers=headers, data=payload)
+    print(response.text)` 
+  }
+
+];
 //: Exquisite USB port for high speed-data transmission.
 //: Easy to understand and use
 //: International security technologies - PCI and NFC Contactless
