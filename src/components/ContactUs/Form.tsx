@@ -42,9 +42,9 @@ const Form = (props: Props) => {
               <input className="outline-none flex-1 placeholder:text-gray-400 placeholder:text-md placeholder:font-chivo py-5 px-[30px]" type="text" placeholder="Your email" />
               <input className="outline-none flex-1 placeholder:text-gray-400 placeholder:text-md placeholder:font-chivo py-5 px-[30px]" type="text" placeholder="Phone number" />
             </div>
-            <textarea className="w-full py-2 resize-none outline-0 px-[30px] max-h-[150px] mb-[35px] md:mb-[56px]" name="" cols={100} rows={10} placeholder="Tell us about yourself" defaultValue={""} />
+            <textarea className="w-full py-2 resize-none outline-0 px-[30px] max-h-[150px] mb-[35px] md:mb-[56px]" name="" cols={100} rows={10} placeholder="Reason for contacting us" defaultValue={""} />
             <div className="flex flex-col gap-5">
-              <button className="flex items-center transition-colors duration-200 px-[22px] py-[15px] lg:px-[32px] lg:py-[15px] rounded-[30px] font-chivo font-semibold text-md md:text-lg text-white bg-primary2 w-fit" type="submit">Send Message<i></i>
+              <button className="flex items-center transition-colors duration-200 px-[22px] py-[15px] lg:px-[32px] lg:py-[15px] rounded-[5px] font-chivo font-semibold text-md md:text-lg text-white bg-primary2 w-fit" type="submit">Send Message<i></i>
               </button>
             
             </div>

@@ -28,7 +28,7 @@ export const aboutList = [
     icon: <Lottie style={{ height: "250px" }} animationData={ReceiveMoney} />,
   },
   {
-    header: "Spend and Save",
+    header: "Savings",
     body: "You dont have to spend it all,  Get 5% to 15% annual interest on every money you lock. Target a saving, spend and save and let it yield",
     icon: <Lottie style={{ height: "250px" }} animationData={Earn} />,
   },

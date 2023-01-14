@@ -23,7 +23,7 @@ const VerticalItems2 = (props: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div style={{alignSelf: "center"}}>
+                        <div>
                             {item?.title && <h4 className='pb-2 font-bold text-lg text-white '>{item.title}</h4>}
                             <p className="mt-0 mb-5 text-white text-md pr-5"
                                 dangerouslySetInnerHTML={{ __html: item.content}}

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Image from "../../assets/rewards/Image.png";
 import { reg_link } from "../../listData/homepage";
 import Button from "../Button";
+import VerticalItems from "../VerticalItems";
 
 type Props = {};
 
@@ -19,49 +20,26 @@ const MidRewards = (props: Props) => {
           No worries! No Pressure!
           </h1>
         </div>
-        <h2 className="mt-[0rem] w-full text-secondary1 text-lg text-gray-600 sm:text-sm" style={{fontSize: "16px"}}>
-        Reduce cost and increase value with our loyalty and rewards        </h2>
-            <ul className="mt-[4rem] pl-[1.1rem]">
-            <li className="relative flex items-baseline gap-2 pb-1">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400 timeline2">
-                <div className="icon">
-                <div>
-                    1
-                </div>
-                </div>
-                </div>
-                <div>
-                <p className="text-xl">Amazing Cashbacks</p>
-                <p className="mt-2 text-gray-600 text-md pr-5">Get commission on transactions and also revenue share every transactions done by someone you referred</p>
-                </div>
-            </li>
-            <li className="relative flex items-baseline gap-2 pb-5">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400 timeline2">
-                <div className="icon">
-                <div>
-                    2
-                </div>
-                </div>
-                </div>
-                <div>
-                <p className="text-xl">No Hidden Charge</p>
-                <p className="mt-2 text-gray-600 text-md pr-5">Why pay for bills and still incur charges? Payscribe gives discount for every purchase</p>
-                </div>
-            </li>
-            <li className="relative flex items-baseline gap-2 pb-5">
-                <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-40 timeline2">
-                <div className="icon">
-                <div>
-                    3
-                </div>
-                </div>
-                </div>
-                <div>
-                <p className="text-xl">Referral Rewards</p>
-                <p className="mt-2 text-gray-600 text-md pr-5">Invite your family and friends using your referrallink, and get instant cash. No hassle</p>
-                </div>
-            </li>
-            </ul>
+        <h2 className="mt-[0rem] w-full text-lg text-gray-600 sm:text-sm" style={{fontSize: "16px"}}>
+          Reduce cost and increase value with our loyalty and rewards 
+        </h2>
+          
+          <VerticalItems 
+                items={[
+                    {
+                      title: 'Amazing Cashbacks',
+                      content: 'Get commission on transactions and also revenue share every transactions done by someone you referred'
+                    },
+                    {
+                      title: 'No Hidden Charge',
+                      content: 'Why pay for bills and still incur charges? Payscribe gives discount for every purchase'
+                    },
+                    {
+                      title: 'Referral Rewards',
+                      content: 'Invite your family and friends using your referrallink, and get instant cash. No hassle'
+                    },
+                ]}
+            />
 
         <div className="flex mt-12">
           <Link to={reg_link}>

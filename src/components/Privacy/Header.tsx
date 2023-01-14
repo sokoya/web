@@ -3,21 +3,23 @@ import HeroImg from "../../assets/rewards/hero.png";
 import Button from "../Button";
 import bg from '../../assets/rewards/light-curve.png'
 
-type Props = {};
+import { Link } from 'react-router-dom'
+
+type Props = {
+  pageTitle: string
+};
 
 const Header = (props: Props) => {
   return (
 <>
 <div className="lg:flex lg:items-center lg:justify-between px-[3rem] py-[4rem] mt-[6rem] bg-primary2">
   <div className="min-w-0 flex-1">
-    <h2 className="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">Privacy Policy</h2>
-   
+    <h2 className="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">{props.pageTitle}</h2>
   </div>
   <div className="mt-0 flex lg:mt-0 lg:ml-4">
   <div className="mt01 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
       <div className="mt-2 flex items-center text-sm text-white">
-        
-        Home
+        <Link to="/">Home</Link>
       </div>
       <div className="mt-2 flex items-center text-sm text-white">
         {/* Heroicon name: mini/map-pin */}
@@ -25,8 +27,7 @@ const Header = (props: Props) => {
       </div>
       <div className="mt-2 flex items-center text-sm text-white">
         {/* Heroicon name: mini/currency-dollar */}
-        
-        Privacy Policy
+        {props.pageTitle}
       </div>
      
     

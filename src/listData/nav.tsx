@@ -33,7 +33,7 @@ export const navList: {
         href: "send-receive-money",
         icon: <img src={PaymentImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:
-          "Accept unrestricted payment with your phone number, dedicated QR",
+          "Accept unrestricted payment with your phone number, dedicated QR, and account number.",
       },
       {
         name: "Airtime to Cash",
@@ -49,11 +49,11 @@ export const navList: {
           "An easy to use platform that helps you exchange Giftcards at finger licking rates.",
       },
       {
-        name: "Save & Earn",
+        name: "Savings",
         href: "/save-earn",
         icon: <img src={SavingsImg} alt="" className="w-[3rem] md:w-[1.2rem]" />,
         description:
-          "Upto 12%p.a for every target saving, let your money work for you",
+          "Upto 15%P.A for every target saving, let your money work for you",
       },
       {
         name: "Virtual Dollar (Coming soon)",
