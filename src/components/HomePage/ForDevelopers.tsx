@@ -2,6 +2,9 @@ import React from "react";
 import Button from "../Button";
 import HeroImg from "../../assets/homepage/heroImg.png";
 import { Link } from "react-router-dom";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+// import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import  tomorrowNightBlue from 'react-syntax-highlighter/dist/esm/styles/hljs/tomorrow-night-blue';
 
 
 import { developersCode } from "../../listData/homepage";
@@ -36,10 +39,11 @@ const ForDevelopers = (props: Props) => {
 
                                 <pre className="p-3 mt-6 w-full mx-2 text-white sm:h-100 whitespace-pre-wrap overflow-y-auto h-[400px]">
                                     {developersCode.map(({code, lang}, index) => (
-                                        <code key={index} className={openTab === index ? "block" : "hidden"} lang={lang}>
-                                            {" "}
-                                            <React.Fragment>{code}</React.Fragment>
-                                        </code>
+                                        <div  className={openTab === index ? "block" : "hidden"}>
+                                        <SyntaxHighlighter language={lang} style={tomorrowNightBlue} key={index}>
+                                        {code}
+                                        </SyntaxHighlighter>
+                                        </div>
                                     ))}
                                 </pre>
                             </div>

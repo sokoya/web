@@ -22,12 +22,12 @@ const Goals = (props: Props) => {
   ];
   return (
     <section className="bg-[#D7D4FE]">
-      <div className="flex items-center py-[3rem] sm:py-[2rem] px-[2rem]">
+      <div className="flex items-center py-[0rem] sm:py-[0rem] px-[2rem]">
         <div className="w-[50%] scale-x-[-1] hidden md:block">
           <img src={heroImg} alt="" />
         </div>
         <div className="w-full md:w-[50%]">
-          <h3>Achieve Goals</h3>
+          <h2 className="text-4xl mb-3 font-bold">Achieve Goals</h2>
           <p>
             Payscribe allows you to grow your money and reach your saving goals
             while also building credibility
@@ -36,7 +36,7 @@ const Goals = (props: Props) => {
             <ul className="flex flex-wrap items-center justify-between w-full">
               {goalsList.map((el) => (
                 <li
-                  className=" w-full sm:w-[48%] h-[20rem] sm:h-[23rem] lg:h-[22rem] my-[.5rem] sm:my-[2rem]"
+                  className=" w-full sm:w-[48%] h-[20rem] sm:h-[18rem] lg:h-[18rem] my-[.5rem] sm:my-[1rem]"
                   key={el.header}
                 >
                   <IconCards
