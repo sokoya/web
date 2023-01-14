@@ -12,7 +12,7 @@ const Section3 = (props: Props) => {
   const list = [
     {
       header: "Event management ",
-      body: "We have done the work for you to get you to get buy/sell that event tickets.",
+      body: "We have done all the heavy lifting for you to buy/sell that event tickets",
       icon: <TbCurrency />,
       bgColor: "#0082e633",
       color: "#0082E7",

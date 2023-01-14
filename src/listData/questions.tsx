@@ -44,13 +44,13 @@ export const questions = [
         header: "What are some of the features that make Payscribe unique?",
         list: [
             {
-              title: 'Payscribe gived you a contactless payment using transfer via phone number, email, and QR code to scan and pay; <a href="https://www.cbn.gov.ng/cashless/" target="_blank" class="text-primary2">CBN Cashless policy</a>',
+              title: 'Payscribe gives you a contactless payment using transfer via phone number, email, and QR code to scan and pay; <a href="https://www.cbn.gov.ng/cashless/" target="_blank" class="text-primary2">CBN Cashless policy</a>',
               markup: true
             },
             {title: 'For every transactions you make on Payscribe you get a whooping cashback, others don\'t!', markup: false},
             {title: 'With our unique tap-and-pay feature, you can safely make purchase without the need to fill long form over and over everytime you want to make purchase', markup: false},
             {title: 'Want to send bulk airtime, internet data to friends and family? Payscribe got you cover.', markup: false},
-            {title: '99.9 downtime', markup: false},
+            {title: '99.9 uptime', markup: false},
         ],
         body: "Dedicated to making cashless payments easy and accessible to people and businesses all over Africa;",
       },
