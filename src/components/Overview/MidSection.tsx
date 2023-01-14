@@ -19,7 +19,7 @@ const MidSection = (props: Props) => {
         Utilize our comprehensive APIs to design unique payment experiences.
         </h2>
         <p className="my-8 text-gray-600 dark:text-gray-300">
-        Leverage on our well documented open APIs to build scalable financial products that can serve your customers anytime of the day.
+        Leverage on our well documented open APIs to build scalable financial products that can serve your customers anytime of the day.<br />There is no limit to what you can build.
         </p>
         <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
           <div className="mt-8 flex gap-4 md:items-center">
@@ -135,43 +135,43 @@ const MidSection = (props: Props) => {
 
 <section className="p-6 bg-gray-800 text-gray-100" style={{marginBottom: "-80px"}}>
   <div className="container mx-auto">
-    <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase text-primary2">Payscribe powers growth for amazing businesses</span>
-    <h2 className="text-5xl font-bold text-center text-gray-50">Payscribe powers growth for amazing businesses</h2>
+    <span className="block mb-2 text-lg font-medium tracking-widest text-center uppercase text-primary2">Payscribe powers growth for amazing businesses</span>
+    <h2 className="text-4xl font-bold text-center text-gray-50">Payscribe powers growth for amazing businesses</h2>
     <div className="grid gap-6 my-16 lg:grid-cols-3">
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">1</div>
         <p className="text-2xl font-semibold">
-          <b>Savings: </b><br /><span className="text-sm">Integrate savings and credit into your product without hassles.</span>
+          <b>Savings </b><br /><span className="text-sm">Integrate savings and credit into your product without hassles.</span>
         </p>
       </div>
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">2</div>
         <p className="text-2xl font-semibold">
-          <b>Pay Utilities Bills: </b><br /><span className="text-sm">Power your product with our array of bills payment.</span>
+          <b>Pay Utilities Bills </b><br /><span className="text-sm">Power your product with our array of bills payment.</span>
         </p>
       </div>
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">3</div>
         <p className="text-2xl font-semibold">
-          <b>Receive Payment: </b><br /><span className="text-sm">Receive payment via multiple channels in different currencies.</span>
+          <b>Receive Payment </b><br /><span className="text-sm">Receive payment via multiple channels in different currencies.</span>
         </p>
       </div>
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">4</div>
         <p className="text-2xl font-semibold">
-          <b>Subscriptions: </b><br /><span className="text-sm">Set up recurring payments and debit your customers automatically at preferred intervals.</span>
+          <b>Subscriptions </b><br /><span className="text-sm">Set up recurring payments and debit your customers automatically at preferred intervals.</span>
         </p>
       </div>
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">5</div>
         <p className="text-2xl font-semibold">
-          <b>Make Transfer: </b><br /><span className="text-sm">Automatically transfer money to  bank accounts with one API call.</span>
+          <b>Make Transfer </b><br /><span className="text-sm">Automatically transfer money to  bank accounts with one API call.</span>
         </p>
       </div>
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-primary2 text-white">6</div>
         <p className="text-2xl font-semibold">
-          <b>Check Authorization: </b><br /><span className="text-sm">Make certain authorization, and validations before vending.</span>
+          <b>Make Validation </b><br /><span className="text-sm">Make certain authorization, and validations before vending.</span>
         </p>
       </div>
     </div>

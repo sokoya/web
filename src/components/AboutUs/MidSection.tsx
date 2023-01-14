@@ -118,7 +118,7 @@ At Payscribe, we strongly believe that your money should come with your own rule
                                 {/* <path d="M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z" fill="#737373" /> */}
                                 </svg>
                             <h3 className="mt-6 text-lg font-semibold text-white"><button className="text-left [&:not(:focus-visible)]:focus:outline-none" id="headlessui-tabs-tab-:ru:" role="tab" type="button" aria-selected="false" tabIndex={-1} data-headlessui-state><span className="absolute inset-0 rounded-2xl" />Our Vision</button></h3>
-                            <p className="mt-2 text-sm text-gray-400">Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.</p>
+                            <p className="mt-2 text-sm text-gray-400">Our goal is to create the top technology for digitizing cash payments and giving African individuals financial independence, ultimately improving their lives.</p>
                         </div>
                     </div>
                     <div className="relative rounded-2xl transition-colors hover:bg-gray-800/30">
