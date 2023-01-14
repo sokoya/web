@@ -13,18 +13,21 @@ const ScanToPay = (props: Props) => {
           <h1 className="text-[1.5rem] sm:text-[3.5rem] mb-14 font-bold sm:font-semibold leading-[1.7rem] sm:leading-[4rem]">
             Scan and Accept payments instantly{" "}
           </h1>
-          <p className="mt-0 mb-3 text-gray-600 text-md pr-5">Empower your business with the right tools to transact anywhere while boosting your revenue</p>
+          <p className="mt-0 mb-3 text-gray-600 text-md pr-5">Empower your business with the right tools to transact anywhere while boosting your revenue.</p>
 			
 			<VerticalItems 
 				items={[
 					{
-						content: "<b>Website and Mobile </b>Use our various payment channels to accept online payments and donations."
+            title: 'Website and mobile',
+						content: "Use our various payment channels to send and accept payments."
 					},
 					{
-						content: "<b>Payment Links </b> Easily send payment links and invoices through email or social media."
+            title: 'Payment Links',
+						content: "Easily send payment links and invoices through email or social media and get paid."
 					},
 					{
-						content: "<b>Payment Links </b> Easily send payment links and invoices through email or social media."
+            title: 'Dedicated QR Code',
+						content: "Receive payments from customers with our unrestricted payment QR feature."
 					}
 				]}
 			/>

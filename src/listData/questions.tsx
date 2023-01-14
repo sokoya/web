@@ -22,7 +22,7 @@ export const questions = [
       },
       {
         header: "What do I need to open a Payscribe account?",
-        body: 'If you own a smartphone, you can download the app on apple store or google play. Kindly search for "Payscribe".Basically you need to provide your full name, phone number, email, and perform some know your customer(KYC)',
+        body: 'If you own a smartphone, you can download the app on apple store or google play. Kindly search for "Payscribe". Basically you need to provide your full name, phone number, email, and proof your identity to satisfy your know your customer (KYC) policy.',
         list: []
       },
       {
