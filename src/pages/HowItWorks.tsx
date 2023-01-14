@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { ScrollRestoration } from "react-router-dom";
 import CTA from "../components/CTA";
 import Features from "../components/HowItWorks/Features";
@@ -11,6 +12,10 @@ type Props = {};
 const HowItWorks = (props: Props) => {
   return (
     <>
+      <Helmet>
+          <title>My Title</title>
+          <meta name="description" content="Helmet application" />
+      </Helmet>
       <Header />
       {/* <WhyUsePayscribe />
       <MidSection /> */}

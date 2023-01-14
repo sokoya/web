@@ -1,30 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import HeroImg from "../../assets/save&earn/hero2.png";
 import Button from "../Button";
-import HeroImg from "../../assets/save&earn/hero.svg";
+import bg from '../../assets/rewards/light-curve.png'
+import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 
 type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="flex flex-wrap bg-headerBg items-center w-full mt-[3rem] px-[4rem]">
-      <div className="w-full sm:w-[60%] mx-auto md:w-[50%] mt-[5rem]">
-        <div className=" w-[90%] text-[2.5rem] sm:text-[3.5rem]  lg:text-header font-bold leading-[4rem] lg:leading-[5rem]">
-          <h1 className=" ">Save & Earn</h1>
-        </div>
-        <h2 className="mt-[2rem] w-full sm:w-[70%] text-secondary1 text-lg sm:text-base">
-        Lock funds (save) for every transactions you perform orfor a fixed period of time to meet a target. Earn up to 15% P.A
-        </h2>
-        <div className="flex items-center mt-12">
-          <Link to="/login">
-            <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
-              <p>Get Started &nbsp; &rarr; </p>
+    <header className="bg-headerBg px-[0rem]" style={{background: `url('${bg}')`}}>
+      <div className="flex flex-wrap w-full mt-[0rem] items-center ">
+        <div className="w-full md:w-[50%] sm:pl-[0rem] lg:pl-[3rem]">
+          <h1 className="py-[1rem] sm:py-0 text-[2.5rem] sm:text-[3.5rem] w-[90%] leading-[4rem] sm:leading-[5rem] mb-[1rem] font-bold">
+          Save and Earn
+          </h1>
+          <p className="mb-10 sm:w-[90%]">
+            {" "}
+            Lock funds (save) for every transactions you perform orfor a fixed period of time to meet a target. Earn up to 15% P.A  </p> 
+            <Link to={"/"}>
+            <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
+              <p className="flex items-center">Get Started <BsArrowRight className="ml-[1rem]" /></p>
             </Button>
           </Link>
         </div>
-      </div>
-      <div className="w-[100%] md:w-[50%] mt-[4rem]">
-        <img src={HeroImg} alt="Hero Img" />
+        <div className="w-full md:w-[50%] sm:hidden lg:block">
+          <img className="ml-auto sm:hidden lg:block" src={HeroImg} alt="" />
+        </div>
       </div>
     </header>
   );
