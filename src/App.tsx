@@ -27,6 +27,7 @@ import './App.css'
 import Developers from "./pages/Developers";
 import Faq from "./pages/Faq";
 import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
         <Route path="rewards" element={<Rewards />} />
         <Route path="developers" element={<Developers />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="terms" element={<Terms />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="how-it-works" element={<HowItWorks />} />
         <Route path="bills-payment" element={<BillsPayment />} />
