@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import Logo from "../assets/Payscribe-Logo-2000x-634.png";
+
+import Logo from "../assets/payscribe-logo-new.png";
 import NavPopOver from "./NavPopOver";
 import { navList } from "../listData/nav";
 import { Link } from "react-router-dom";
@@ -43,7 +44,7 @@ const Nav = (props: Props) => {
       >
         <div className="w-[8rem] mr-auto">
           <Link to="/">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="Payscribe logo" />
           </Link>
         </div>
         <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>

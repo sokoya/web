@@ -5,7 +5,7 @@ import Features from "../components/HomePage/Features";
 import CustomerReviews from "../components/HomePage/CustomerReviews";
 import ScanToPay from "../components/HomePage/ScanToPay";
 import CTA from "./CTA";
-import ForDevelopers from "./HomePage/ForDevelopers";
+// import ForDevelopers from "./HomePage/ForDevelopers";
 import { Helmet } from "react-helmet";
 
 type Props = {};
@@ -34,7 +34,7 @@ function Hompeage({}: Props) {
       <About />
       <ScanToPay />
       <Features />
-      <ForDevelopers />
+      {/* <ForDevelopers /> */}
       <CustomerReviews />
       <CTA />
     </>

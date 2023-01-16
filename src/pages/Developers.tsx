@@ -5,6 +5,7 @@ import MidSection from "../components/Overview/MidSection";
 import CTA from "../components/CTA";
 import EndSection from "../components/AboutUs/EndSection";
 import { Helmet } from "react-helmet";
+import ForDevelopers from "../components/HomePage/ForDevelopers";
 
 type Props = {};
 
@@ -30,6 +31,7 @@ const Developers = (props: Props) => {
 
       </Helmet>
       <Header />
+      <ForDevelopers />
       <MidSection />
       <EndSection />
       <ScrollRestoration />

@@ -135,7 +135,7 @@ const MidSection = (props: Props) => {
 
 <section className="p-6 bg-gray-800 text-gray-100 mt-[3rem]" style={{marginBottom: "-80px"}}>
   <div className="container mx-auto">
-    <span className="block mb-2 text-lg font-medium tracking-widest text-center uppercase text-primary2">Payscribe powers growth for amazing businesses</span>
+    <span className="block mb-2 text-lg font-medium tracking-widest text-center uppercase text-primary2 mt-4">Payscribe powers growth for amazing businesses</span>
     <h2 className="text-4xl font-bold text-center text-gray-50">Payscribe powers growth for amazing businesses</h2>
     <div className="grid gap-6 my-16 lg:grid-cols-3">
       <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">

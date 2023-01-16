@@ -233,7 +233,7 @@ export const reviewsList = [
   //     "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
   // },
 ];
-export const reg_link = "https://app.payscribe.ng/auth/create";
+export const reg_link = "https://app.payscribe.ng/create";
 
 
 export const developersCode = [

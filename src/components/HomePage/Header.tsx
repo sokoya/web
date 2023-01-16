@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import HeroImg from "../../assets/homepage/heroImg.png";
+import HomeSmile from "../../assets/homepage/payscribe-welcome-smile.png"
 import { Link } from "react-router-dom";
 import { reg_link } from "../../listData/homepage";
 
@@ -31,7 +32,7 @@ const Header = (props: Props) => {
         </div>
       </div>
       <div className="w-[100%] md:w-[50%] mt-[4rem]">
-        <img src={HeroImg} alt="Hero Img" />
+        <img src={HomeSmile} alt="Payscribe - Manage your finances while spending on daily essential bills." />
       </div>
     </header>
   );

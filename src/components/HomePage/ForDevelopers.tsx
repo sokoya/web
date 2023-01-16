@@ -41,7 +41,7 @@ const ForDevelopers = (props: Props) => {
                                     {developersCode.map(({code, lang}, index) => (
                                         <div  className={openTab === index ? "block" : "hidden"}>
                                         <SyntaxHighlighter language={lang} style={tomorrowNightBlue} key={index}>
-                                        {code}
+                                            {code}
                                         </SyntaxHighlighter>
                                         </div>
                                     ))}

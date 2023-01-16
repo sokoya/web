@@ -12,7 +12,7 @@ const Faq = (props: Props) => {
   return (
     <>
       <Helmet>
-      <title>Frequently Asked Questions (FAQs) about Payscribe</title>
+          <title>Frequently Asked Questions (FAQs) about Payscribe</title>
           <meta name="title" content="Frequently Asked Questions (FAQs) about Payscribe" />
           <meta name="description" content="Find answers to common questions about Payscribe's services, features, and how to use our platform. Our FAQ page covers everything from account setup to transaction details and troubleshooting. Get the information you need to make the most of Payscribe's digitized cash payments and daily essentials services." />
           <meta name="keywords" content="FAQ, Payscribe, Frequently Asked Questions, services, features, platform, account setup, transaction details, troubleshooting, digitized cash payments, daily essentials services, help, support, questions, answers" />
