@@ -10,7 +10,7 @@ type Props = {};
 const EndSection = (props: Props) => {
   return (
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-[6rem]">
+        <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-[6rem] mt-[3rem]">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="relative h-32 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img alt="mailing" src={Mailing} className="absolute inset-0 rounded-lg h-full w-full object-contain" style={{backgroundPosition: "right"}}/>
