@@ -8,7 +8,7 @@ interface Props {
 
 const VerticalItems = (props: Props) => {
     return (
-        <ul className="mt-[4rem] pl-[1.1rem]">
+        <ul className="sm:mt-[4rem] mt-6 pl-[3rem] sm:pl-[1.1rem]">
             {props.items.map((item, index) => {
                 return (
                     <li key={index} className="relative flex items-baseline gap-2 pb-5">

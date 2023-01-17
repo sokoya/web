@@ -10,7 +10,7 @@ const About = (props: Props) => {
     <ul className="flex flex-wrap  justify-between w-full ">
       {aboutList.map((el) => (
         <li
-          className=" h-[23rem] px-8 sm:mx-[1rem] lg:h-[15rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[30.3%]"
+          className=" sm:h-[23rem] h-[18rem] px-8 sm:mx-[1rem] lg:h-[15rem] my-[.5rem] sm:my-[2rem] w-full sm:w-[50%] md:w-[40%] bp1:w-[30.3%]"
           key={el.header}
         >
           <IconCards

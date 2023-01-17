@@ -36,7 +36,7 @@ const Section3 = (props: Props) => {
     <ul className="flex flex-wrap  justify-center w-full ">
       {list.map((el) => (
         <li
-          className=" h-[25rem] lg:h-[23rem] my-[2rem] px-[4rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
+          className=" h-[14rem] lg:h-[23rem] my-[2rem] px-[4rem]  w-full sm:w-[50%] md:w-[40%] bp1:w-[33.3%]"
           key={el.header}
         >
           <IconCards
@@ -51,13 +51,13 @@ const Section3 = (props: Props) => {
     </ul>
   );
   return (
-    <section className=" py-[2rem]">
+    <section className=" py-[2rem] mb-[9rem] sm:mb-[4rem] sm:mb-5">
       <div className="mt-[2rem]">{jsx}</div>
-      <div className="flex bg-[#efefef] items-center flex-wrap" style={{marginBottom: "-120px"}}>
-        <div className="w-[50%]">
+      <div className="flex bg-[#efefef] flex-col sm:flex-row items-center flex-wrap" style={{marginBottom: "-120px"}}>
+        <div className="w-full sm:w-[50%]">
           <img src={DemoImg} alt="" />
         </div>
-        <div className="w-[50%] px-[5rem]">
+        <div className="w-full sm:w-[50%]  px-[2rem] sm:px-[5rem] pb-16 sm:pb-0">
           <h3 className="font-bold text-4xl mb-3">It's time to do the most!!</h3>
           <p className="mb-[2rem]">
             Payscribe event ticketing service provides you with a topnotch

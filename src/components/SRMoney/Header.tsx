@@ -9,11 +9,11 @@ const Header = (props: Props) => {
     <header className="bg-headerBg px-[2rem]">
       <div className="flex flex-wrap w-full mt-[5rem] items-center">
         <div className="w-full md:w-[50%]">
-          <h1 className="py-[2rem] sm:py-0 text-[2.5rem] sm:text-[3.5rem] w-[90%] leading-[4rem] sm:leading-[5rem] mb-[1rem] font-bold">
+          <h1 className="py-[2rem] text-center mt-[2rem] sm:mt-0 sm:text-left sm:py-0 text-[2rem] sm:text-[3.5rem] w-[90%] leading-[2rem] sm:leading-[5rem] mb-[1rem] font-bold">
             Send and Receive money from anywhere for&nbsp;
             <span className="text-primary3">free</span>
           </h1>
-          <p className="mb-10 sm:w-[90%]">
+          <p className="mb-10 sm:w-[90%] text-center sm:text-left">
             {" "}
             With Payscribe, you can send and receive money from anywhere in the world without breaking the bank. This feature makes it easy to transfer funds to friends, family, or business associates, no matter where they are located. Simply link your bank account or use a credit card to start sending and receiving money with ease.
           </p>

@@ -24,7 +24,7 @@ const Partners = (props: Props) => {
     </>
   );
   return (
-    <section className="mt-[7rem]">
+    <section className="mt-[7rem] px-4 sm:px-0">
       <h1 className="text-center font-bold text-5xl mb-[5rem] ">Our Partners</h1>
       <div className="">{jsx}</div>
     </section>

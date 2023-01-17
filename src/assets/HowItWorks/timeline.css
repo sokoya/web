@@ -12,13 +12,13 @@
 .timeline > h1 {
   text-align: center;
   text-transform: capitalize;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: bold;
   padding: 1rem;
 }
 
 .timeline > .column {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   position: relative;
   gap: 10px;
