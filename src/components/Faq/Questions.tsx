@@ -13,7 +13,7 @@ const Questions = (props: Props) => {
     <>
       <div className="flex flex-wrap lg:px-[5rem] mt-3">
         <div className="w-full flex flex-col sm:flex-row">
-          <ul className="flex mb-0 list-none sm:flex-wrap pt-0 pb-4 flex-row overflow-scroll sm:flex-col gap-3 w-[100%] sm:w-[20%]" role="tablist">
+          <ul className="flex list-none mb-5 sm:mb-0 sm:flex-wrap px-1 sm:px-0 pt-0 pb-4 flex-row overflow-x-scroll scrll sm:flex-col gap-3 w-[100%] sm:w-[20%]" role="tablist">
             {questions.map(({ title, key}) => (
                 <li key={key} className="-mb-px last:mr-0 flex-uto text-center">
                     <a
