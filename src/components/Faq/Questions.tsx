@@ -12,13 +12,13 @@ const Questions = (props: Props) => {
   return (
     <>
       <div className="flex flex-wrap lg:px-[5rem] mt-3">
-        <div className="w-full flex">
-          <ul className="flex mb-0 list-none flex-wrap pt-0 pb-4 flex-col gap-3" style={{width: "20%"}} role="tablist">
+        <div className="w-full flex flex-col sm:flex-row">
+          <ul className="flex mb-0 list-none sm:flex-wrap pt-0 pb-4 flex-row overflow-scroll sm:flex-col gap-3 w-[100%] sm:w-[20%]" role="tablist">
             {questions.map(({ title, key}) => (
                 <li key={key} className="-mb-px last:mr-0 flex-uto text-center">
                     <a
                         className={
-                            "text-xs font-bold uppercase px-5 py-3 border rounded block leading-normal " +
+                            "text-xs w-[9rem] sm:w-auto font-bold uppercase px-5 py-3 border rounded block leading-normal " +
                             (openTab === key ? "text-white bg-primary2" : "text-primary2" + " bg-white")
                         }
                         onClick={ e => { e.preventDefault(); setOpenTab(key); }}
@@ -33,10 +33,10 @@ const Questions = (props: Props) => {
 
           </ul>
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 border rounded lg:ml-[1.5rem]">
-            <div className="px-4 py-5 flex-auto">
+            <div className="px-1 sm:px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                     {questions.map(({ key, items}) => (
-                        <div key={key} className={openTab === key ? "block px-4" : "hidden px-4"} id={key}>
+                        <div key={key} className={openTab === key ? "block px-0 sm:px-4" : "hidden px-0 sm:px-4"} id={key}>
                             {items.map((el) => (
                                 <div className="py-2" style={{border: "none"}}>
                                     <details className="group">

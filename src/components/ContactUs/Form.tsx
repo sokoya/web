@@ -11,7 +11,7 @@ type Props = {};
 
 const Form = (props: Props) => {
   return (
-    <div className="bgg-[#efefef] bg-headerBg relative p-[40px] md:pt-[91px] md:pr-[98px] md:pb-[86px] md:pl-[92px] lg:mt-[120px] mt-[70px] lg:rounded-[20px] lg:mx-[3rem]">
+    <div className="bgg-[#efefef] bg-headerBg relative p-[40px] md:pt-[91px] md:pr-[98px] md:pb-[86px] md:pl-[92px] lg:mt-[120px] sm:mt-[70px] lg:rounded-[20px] lg:mx-[3rem]">
       <div className="mx-auto relative max-w-[1320px]"><img className="absolute right-0 max-w-[95px] top-[-50px]" src={Mail} alt="mail image" />
         <p className="text-capitalized text-gray-500 uppercase tracking-[2px] mb-[15px]">Contact us</p>
         <h2 className="font-bold font-chivo text-[25px] leading-[30px] md:text-heading-3 mb-[22px]">We’re Always Here For You!

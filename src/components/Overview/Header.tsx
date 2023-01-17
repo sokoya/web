@@ -13,9 +13,9 @@ const Header = (props: Props) => {
   
   <div className="relative pt-40 pb-20 lg:pt-44 lg:pl-[1.5rem]"  style={{background: `url('${bg}')`}}>
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-      <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-2xl text-center sm:text-2xl md:text-5xl lg:w-auto lg:text-left xl:text-7xl">PAYSCRIBE FOR DEVELOPERS<br className="l:block hiden" /> <span className="relative bg-clip-text bg-gradient-to-r text-black text-[23px]">Adopt top-notch payment experience for your web and mobile application.</span></h1>
+      <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl sm:text-center sm:text-2xl md:text-5xl lg:w-auto lg:text-left xl:text-7xl">PAYSCRIBE FOR DEVELOPERS<br className="l:block hiden" /> <span className="relative bg-clip-text bg-gradient-to-r text-black text-[23px]">Adopt top-notch payment experience for your web and mobile application.</span></h1>
       <div className="lg:flex">
-        <div className="relative mt-8 md:mt-10 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+        <div className="relative mt-8 md:mt-10 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto sm:text-center lg:text-left lg:mr-auto lg:w-7/12">
           <p className="sm:text-lg text-gray-700 lg:w-11/12">
           We've made it easy for you to accept payments, pay daily essential bills with just a few lines of code.
           </p>

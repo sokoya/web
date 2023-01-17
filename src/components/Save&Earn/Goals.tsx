@@ -22,7 +22,7 @@ const Goals = (props: Props) => {
   ];
   return (
     <section className="bg-[#D7D4FE]">
-      <div className="flex items-center py-[0rem] sm:py-[0rem] px-[2rem]">
+      <div className="flex items-center py-[5rem] sm:py-[0rem] px-[2rem]">
         <div className="w-[50%] scale-x-[-1] hidden md:block">
           <img src={heroImg} alt="" />
         </div>
@@ -49,7 +49,7 @@ const Goals = (props: Props) => {
               ))}
             </ul>
           </div>
-          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.6rem]  px-[2.1rem]  w-full sm:w-auto">
+          <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[1rem]  px-[2.1rem]  w-full sm:w-auto">
             <p>Get Started &nbsp; &rarr; </p>
           </Button>
         </div>

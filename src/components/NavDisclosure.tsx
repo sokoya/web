@@ -51,7 +51,7 @@ export default function NavDisclosure(props: Props) {
               </div>
               <div className="w-[60%]">
                 <h1 className="font-bold text-sm sm:text-xl">{el.name}</h1>
-                <p>{el.description}</p>
+                <p className="text-sm">{el.description}</p>
               </div>
             </div>
           </Link>

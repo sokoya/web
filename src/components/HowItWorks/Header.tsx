@@ -11,7 +11,7 @@ const Header = (props: Props) => {
   return (
     <header className="flex bg-[#efefef] px-[2rem] py-[5rem] flex-wrap items-center w-full mt-[3rem]" style={{background: `linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(${Hero1Img})`, backgroundRepeat: "no-repeat"}}>
       <div className="w-full sm:w-[100%] mx-auto md:w-[60%] mt-[3rem] text-center">
-        <div className=" text-[3.5rem]  lg:text-[4.1em] font-bold leading-[4.5rem] lg:leading-[5.5rem]">
+        <div className="text-[2rem] leading:[2rem] sm:text-[3.5rem]  lg:text-[4.1em] font-bold sm:leading-[4.5rem] lg:leading-[5.5rem]">
           <h1 className=" ">
           Democratising Lifestyle Bills & Savings
           </h1>

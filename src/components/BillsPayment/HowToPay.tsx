@@ -50,7 +50,7 @@ const HowToPay = (props: Props) => {
           <h1 className="font-bold text-5xl mb-14 md:mb-6 text-center md:text-left">
             How to pay subscription{" "}
           </h1>
-          <p className="text-[#151515f1] mb-6 text-2xl md:text-base">
+          <p className="text-[#151515f1] mb-6 text-sm sm:text-2xl md:text-base">
             Ran out of electricity unit? Need to get insurance? Bulk SMS?
             Education? Toll? TVs subscriptions? Want to fund your betting
             wallet? With easy to follow steps you can pay all your bills from

@@ -10,7 +10,7 @@ type Props = {};
 
 const MidRewards = (props: Props) => {
   return (
-    <section className="flex px-[3rem] py-[0rem] pb-[2rem] flex-wrap w-full mt-[5rem]">
+    <section className="flex sm:px-[3rem] py-[0rem] pb-[2rem] flex-wrap px-[1rem] w-full mt-[5rem]">
     <div className="w-full sm:w-[100%] mx-auto md:w-[50%] mt-[0rem] lg:px-[2em] ">
     <img className="w-full" src={Image} />
       </div>

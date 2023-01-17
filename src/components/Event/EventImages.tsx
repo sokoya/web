@@ -5,7 +5,7 @@ type Props = {};
 
 const EventImages = (props: Props) => {
   return (
-    <section className="mt-[7rem] px-[2rem]">
+    <section className="mt-[7rem] px-[5px] sm:px-[2rem]">
       <div className="flex flex-wrap justify-between text-white">
         <div className={`h-[20rem] relative w-[59%] mb-3  ${classes.Lagos}`}>
           <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">

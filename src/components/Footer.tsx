@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
     </>
   );
   return (
-    <footer className=" bg-primary3 text-white w-full px-[3rem] py-[7rem] mt-[5rem] ">
+    <footer className=" bg-primary3 text-white w-full px-[2rem] py-[3rem] sm:px-[3rem] sm:py-[5rem] mt-[5rem] ">
       <div className="w-full  flex items-start flex-wrap">
         <div className="w-full mb-[3rem] bp4:mb-0 bp4:w-[30%] ">
           <div className="w-[10rem] -mt-[3rem]">

@@ -9,11 +9,11 @@ type Props = {};
 
 const EndSection = (props: Props) => {
   return (
-      <section>
+      <section className="mb-[8rem] sm:mb-0">
         <div className="mx-auto max-w-screen-xl px-4 pt-16 sm:px-6 lg:px-[6rem] mt-[3rem]">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-32 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-              <img alt="mailing" src={Mailing} className="absolute inset-0 rounded-lg h-full w-full object-contain" style={{backgroundPosition: "right"}}/>
+            <div className="relative h-[16rem] sm:h-32 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img alt="mailing" src={Mailing} className="absolute inset-0 rounded-lg h-full w-full object-cover sm:object-contain" style={{backgroundPosition: "right"}}/>
             </div>
             <div className="lg:py-24">
               <h2 className="text-3xl font-bold sm:text-4xl">Let's do this together</h2>
