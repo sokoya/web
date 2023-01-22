@@ -20,14 +20,14 @@ const HowItWorks = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Understand How Payscribe Works and Digitize Your Cash Payments" />
           <meta property="og:description" content="Learn about the features and benefits of Payscribe, the platform that helps you digitize your cash payments and access daily essentials like airtime and data purchase. Discover how easy it is to use and how it can improve your financial management. Visit our website to learn more." />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/how-it-works" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Understand How Payscribe Works and Digitize Your Cash Payments" />
           <meta name="twitter:description" content="Learn about the features and benefits of Payscribe, the platform that helps you digitize your cash payments and access daily essentials like airtime and data purchase. Discover how easy it is to use and how it can improve your financial management. Visit our website to learn more" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
       </Helmet>
       <Header />
       {/* <WhyUsePayscribe />

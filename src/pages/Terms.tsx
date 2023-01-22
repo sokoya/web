@@ -17,14 +17,14 @@ const Terms = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Why Payscribe - The Best Solution for Digitizing Cash Payments and Daily Essentials" />
           <meta property="og:description" content="Discover the benefits of using Payscribe for digitizing cash payments and managing daily essentials like airtime and data purchase. Learn how Payscribe's secure and convenient platform can help you improve your financial management and stay connected on-the-go. Check out our website to learn more." />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/why-payscribe" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Why Payscribe - The Best Solution for Digitizing Cash Payments and Daily Essentials" />
           <meta name="twitter:description" content="Discover the benefits of using Payscribe for digitizing cash payments and managing daily essentials like airtime and data purchase. Learn how Payscribe's secure and convenient platform can help you improve your financial management and stay connected on-the-go. Check out our website to learn more." />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
       </Helmet>
       <Header pageTitle="Terms of Services"/>
       <TermsPage />

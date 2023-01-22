@@ -18,14 +18,14 @@ const SellGiftCards = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Sell Your Gift Cards for Cash with Payscribe" />
           <meta property="og:description" content="Convert your unused gift cards into cash with Payscribe. Our platform offers an easy and secure way to sell gift cards from popular retailers. Get cash for your gift cards today with Payscribe." />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/sell-giftcards" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Sell Your Gift Cards for Cash with Payscribe" />
           <meta name="twitter:description" content="Convert your unused gift cards into cash with Payscribe. Our platform offers an easy and secure way to sell gift cards from popular retailers. Get cash for your gift cards today with Payscribe." />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
       </Helmet>
       <Header />
       <About />

@@ -6,6 +6,9 @@ import NavPopOver from "./NavPopOver";
 import { navList } from "../listData/nav";
 import { Link } from "react-router-dom";
 import NavMobile from "./NavMobile";
+
+import { login, createAccount } from '../helpers/Links';
+
 type Props = {};
 
 const Nav = (props: Props) => {
@@ -49,16 +52,16 @@ const Nav = (props: Props) => {
         </div>
         <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>
         <div className=" hidden bp4:block">
-          <Link to="/login">
+          <a href={login}>
             <Button class="  font-semibold text-primary1 py-3 px-6   rounded-xl">
               Sign In
             </Button>
-          </Link>
-          <Link to="/login">
+          </a>
+          <a href={createAccount}>
             <Button class="bg-primary2  text-white py-2 px-6 mr-8 bp2:mr-0 ">
               Create Account
             </Button>
-          </Link>
+          </a>
         </div>
         <div
           onClick={() => setOpen(!open)}

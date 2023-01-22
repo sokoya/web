@@ -203,6 +203,12 @@ export const featuresList = [
 
 export const reviewsList = [
   {
+    name: "Jeff",
+    role: "Founder/CEO Tradift",
+    review:
+      "We just integrated with Payscribe this week. The integration process was very smooth. Payscribe has one of the best API documentation, pretty simple",
+  },
+  {
     name: "Anonymous",
     role: "CTO",
     review:
@@ -211,21 +217,14 @@ export const reviewsList = [
   {
     name: "Douglas Ucheagwu",
     role: "Douch Enterprise",
-    review:
-      "Very reliable company. I have been using Payscribe for over a year now, and I barely message their customer support. Thumbs up guys",
-  },
+    review: "Very reliable company. I have been using Payscribe for over a year now, and I barely message their customer support. Thumbs up guys", },
   {
-    name: "Mr Johnson",
+    name: "Johnson Adepinle",
     role: "Personal Use",
     review:
       "Simply the best. instant delivery of services and prompt customer service.  I have never been disappointed of choosing Payscribe.",
   },
-  {
-    name: "Jeff",
-    role: "Tradift",
-    review:
-      "We just integrated with Payscribe this week. The integration process was very smooth. Payscribe has one of the best API documentation, pretty simple",
-  },
+  
   // {
   //   name: "Aminu Aliyu",
   //   role: "",
@@ -233,7 +232,7 @@ export const reviewsList = [
   //     "Payscribe are doing great but please I suggest you reduce your data price if possible Regards",
   // },
 ];
-export const reg_link = "https://app.payscribe.ng/create";
+export const reg_link = "https://app.payscribe.ng/auth/create";
 
 
 export const developersCode = [
@@ -327,7 +326,3 @@ export const developersCode = [
   }
 
 ];
-//: Exquisite USB port for high speed-data transmission.
-//: Easy to understand and use
-//: International security technologies - PCI and NFC Contactless
-//: Ultra-small size meets the needs of multi-scenario applications

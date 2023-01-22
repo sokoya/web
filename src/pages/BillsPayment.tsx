@@ -20,14 +20,14 @@ function BillsPayment({}: Props) {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Efficiently Pay Your Bills with Payscribe's Bill Payment Service" />
           <meta property="og:description" content="Easily manage and pay your bills with Payscribe's bill payment service. Our platform offers a secure and convenient way to pay bills online, including electricity, tv subscription, water, and credit card bills. Experience the convenience of cashless transactions and schedule automatic payments with Payscribe. Sign up now!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/bills-payment" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Efficiently Pay Your Bills with Payscribe's Bill Payment Service" />
           <meta name="twitter:description" content="Easily manage and pay your bills with Payscribe's bill payment service. Our platform offers a secure and convenient way to pay bills online, including electricity, tv subscription, water, and credit card bills. Experience the convenience of cashless transactions and schedule automatic payments with Payscribe. Sign up now!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
 
       </Helmet>
       <Header />

@@ -18,14 +18,14 @@ const AirtimeToCash = (props: Props) => {
           <meta name="robots" content="index, follow"/>
           <meta property="og:title" content="Convert Airtime to Instant Cash Effortlessly with Payscribe"/>
           <meta property="og:description" content="Experience a new level of convenience with Payscribe's airtime to cash feature. Easily convert your airtime to cash and use it for payments, savings, and more. Sign up now to access this feature and many more on Payscribe's platform."/>
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png"/>
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg"/>
           <meta property="og:url" content="https://www.payscribe.ng/airtime-to-cash"/>
           <meta property="og:site_name" content="Payscribe"/>
           <meta name="twitter:card" content="summary"/>
           <meta name="twitter:site" content="@payscribe"/>
           <meta name="twitter:title" content="Convert Airtime to Instant Cash Effortlessly with Payscribe"/>
           <meta name="twitter:description" content="Experience a new level of convenience with Payscribe's airtime to cash feature. Easily convert your airtime to cash and use it for payments, savings, and more. Sign up now to access this feature and many more on Payscribe's platform."/>
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png"/>
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg"/>
       </Helmet>    
       <Header />
       <HowItWorks />

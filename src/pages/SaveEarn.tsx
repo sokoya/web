@@ -18,14 +18,14 @@ const SaveEarn = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Save and Earn with Payscribe's new feature" />
           <meta property="og:description" content="Unlock the power of saving and earning with Payscribe's new feature. Effortlessly manage your daily transactions and earn rewards for using the platform. Experience the convenience of cashless payments and secure transactions with Payscribe. Sign up now!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/save-earn" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Save and Earn with Payscribe's new feature" />
           <meta name="twitter:description" content="Unlock the power of saving and earning with Payscribe's new feature. Effortlessly manage your daily transactions and earn rewards for using the platform. Experience the convenience of cashless payments and secure transactions with Payscribe. Sign up now!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
       </Helmet>
       <Header />
       <About />

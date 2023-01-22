@@ -16,7 +16,7 @@ const PrivacyPage = (props: Props) => {
   </div>
   <div className="w-full mx-auto text-sm">
     <p>
-    At Payscribe.ng, accessible from https://payscribe.ng, one of our main priorities is the privacy of our visitors.
+    At Payscribe.ng, accessible from https://www.payscribe.ng, one of our main priorities is the privacy of our visitors.
 This Privacy Policy document contains types of information that is collected and recorded by www.payscribe.ng and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
     </p>
   </div>

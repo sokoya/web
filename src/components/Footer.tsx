@@ -31,17 +31,21 @@ const Footer = (props: Props) => {
           </div>
           <div className=" mb-4 text-sm">
             <p className="w-[85%] mb-4">
-            Building the world-class technology that digitizes cash payments and provides daily essentials financial services all at your finger tips.
+              Building the world-class technology that digitizes cash payments and provides daily essentials financial services all at your finger tips.
             </p>
-            <p className="mb-2">hello@payscribe.ng</p>
-            <p className="mb-2">+234 703 806 7493</p>
+            <p className="mb-2">
+              <a href="mailto:hello@payscribe.ng">hello@payscribe.ng</a>
+            </p>
+            <p className="mb-2">
+              <a href="tel:+2347038067493">+234 703 806 7493</a>
+            </p>
           </div>
           <div className="w-full mb-2 mr-[5rem] md:mr-8">
             <div className="flex items-center text-xl mb-[2rem] sm:mb-[5rem] md:mb-6">
-              <FaFacebookSquare onClick={() => window.open("https://www.facebook.com/payscribe/")} className="mr-5" />
-              <BsTwitter onClick={() => window.open("https://twitter.com/payscribeapp/")} className="mr-5" />
-              <FiLinkedin onClick={() => window.open("https://www.linkedin.com/company/payscribe/")}  className="mr-5" />
-              <FiInstagram onClick={() => window.open("https://www.instagram.com/payscribeng/")}  className="mr-2" />
+                <FaFacebookSquare onClick={() => window.open("https://www.facebook.com/payscribe/")} className="mr-5" />
+                <BsTwitter onClick={() => window.open("https://twitter.com/payscribeapp/")} className="mr-5" />
+                <FiLinkedin onClick={() => window.open("https://www.linkedin.com/company/payscribe/")}  className="mr-5" />
+                <FiInstagram onClick={() => window.open("https://www.instagram.com/payscribeng/")}  className="mr-2" />
             </div>
           </div>
           <div className="flex gap-6">

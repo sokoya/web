@@ -20,13 +20,13 @@ function Hompeage({}: Props) {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Efficiently Manage Your Daily Essentials and Savings with Payscribe" />
           <meta property="og:description" content="Stay connected and manage your finances with Payscribe. Our platform offers a wide range of services including airtime and data purchase, electricity payments, and savings. Experience the convenience of cashless transactions and secure payments with Payscribe. Sign up now!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Efficiently Manage Your Daily Essentials and Savings with Payscribe" />
-          <meta name="twitter:description" content="Find answers to common questions about Payscribe's services, features, and how to use our platform. Our FAQ page covers everything from account setup to transaction details and troubleshooting. Get the information you need to make the most of Payscribe's digitized cash payments and daily essentials services." />
+          <meta name="twitter:description" content="Stay connected and manage your finances with Payscribe. Our platform offers a wide range of services including airtime and data purchase, electricity payments, and savings. Experience the convenience of cashless transactions and secure payments with Payscribe. Sign up now!" />
 
               
       </Helmet>    

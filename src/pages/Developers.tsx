@@ -20,14 +20,14 @@ const Developers = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="API documentation and resources for Developers - Payscribe" />
           <meta property="og:description" content="Unlock the power of Payscribe's services for your business with our API documentation and resources for developers. Easily integrate our platform for digitizing cash payments, airtime and data purchase, electricity payments, and savings into your application. Start building today!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/developers" />
           <meta property="og:site_name" content="Payscribe" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="API documentation and resources for Developers - Payscribe" />
           <meta name="twitter:description" content="Unlock the power of Payscribe's services for your business with our API documentation and resources for developers. Easily integrate our platform for digitizing cash payments, airtime and data purchase, electricity payments, and savings into your application. Start building today!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
 
       </Helmet>
       <Header />

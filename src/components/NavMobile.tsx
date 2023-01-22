@@ -3,6 +3,7 @@ import NavDisclosure from "./NavDisclosure";
 import { navList } from "../listData/nav";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { createAccount, login } from "../helpers/Links";
 interface Props {
   show: boolean;
   closeNav: () => void;
@@ -33,16 +34,16 @@ const NavMobile = (props: Props) => {
     >
       <div className="mt-[8rem]">{disclosures}</div>
       <div className="px-[2rem] mt-[5rem]">
-        <Link to="/login">
+        <a href={login}>
           <Button class="w-full border border-primary2 mb-4  font-semibold text-primary1 py-3 px-6   rounded-xl">
             Sign In
           </Button>
-        </Link>
-        <Link to="/login">
+        </a>
+        <a href={createAccount}>
           <Button class="w-full border border-primary2  bg-primary2  text-white py-3 px-6 mr-8 bp2:mr-0 ">
             Create Account
           </Button>
-        </Link>
+        </a>
       </div>
     </nav>
   );

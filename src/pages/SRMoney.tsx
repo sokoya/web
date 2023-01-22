@@ -18,7 +18,7 @@ const SRMoney = (props: Props) => {
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Effortlessly Send and Receive Money with Payscribe" />
           <meta property="og:description" content="Easily transfer money to friends and family with Payscribe's Send and Receive Money feature. Our platform offers secure and convenient online money transfer services, with low fees and fast processing times. Sign up now and experience the ease of Payscribe!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
           <meta property="og:url" content="https://www.payscribe.ng/send-receive-money" />
           <meta property="og:site_name" content="Payscribe" />
           <meta property="og:site_name" content="Payscribe" />
@@ -26,7 +26,7 @@ const SRMoney = (props: Props) => {
           <meta name="twitter:site" content="@payscribe" />
           <meta name="twitter:title" content="Effortlessly Send and Receive Money with Payscribe" />
           <meta name="twitter:description" content="Easily transfer money to friends and family with Payscribe's Send and Receive Money feature. Our platform offers secure and convenient online money transfer services, with low fees and fast processing times. Sign up now and experience the ease of Payscribe!" />
-          <meta property="og:image" content="https://payscribe.ng/assets/notice.png" />
+          <meta property="og:image" content="https://www.payscribe.ng/assets/notice.jpg" />
       </Helmet>
       <Header />
       <About />
