@@ -84,13 +84,13 @@ const About = (props: Props) => {
             </span>
             are wasted, left unused and discarded.
           </h1>
-          <p className="mb-8 text-[#151515f1] text-2xl bp3:text-base">
+          <p className="mb-8 text-[#151515f1] text-sm sm:text-2xl bp3:text-base">
             This became a global problem, and Payscribe stepped in as the number
             one problem-solving platform that it is. Payscribe allows users in
             Nigeria to sell their unused Giftcards for instant cash at amazing
             rates. 
             </p>
-            <p className="mb-8 text-[#151515f1] text-2xl bp3:text-base">
+            <p className="mb-8 text-[#151515f1] text-sm sm:text-2xl bp3:text-base">
             Using Payscribe, you can sell various Giftcards in Nigeria,
             including but not limited to iTunes, Amazon, Steam Wallet, Google
             Play, eBay, Walmart, Sephora, OneVanilla, American Express,

@@ -50,7 +50,7 @@ const Questions = (props: Props) => {
     Questions we get the most
     </h2>
   </div>
-  <div className="grid divide-y divide-neutral-200 w-full px-[3rem] mx-auto mt-8">
+  <div className="grid divide-y divide-neutral-200 w-full sm:px-[3rem] mx-auto mt-8">
   {questions.map((el) => (
     <div className="py-2" style={{border: "none"}}>
       <details className="group">

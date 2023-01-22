@@ -11,7 +11,7 @@ function Header({}: Props) {
     <header className=" px-[2rem] bg-headerBg">
       <div className="py-[2rem] sm:py-0 flex flex-wrap w-full mt-[6rem] items-center">
         <div className="w-full md:w-[50%]">
-          <h1 className="text-[2.5rem] sm:text-[3.5rem] leading-[4rem] sm:leading-[5rem] mb-[4rem] font-bold">
+          <h1 className="text-[2rem] sm:text-[2.5rem] sm:text-[3.5rem] leading-[3rem] sm:leading-[5rem] mb-[4rem] font-bold">
             Convert your excess airtime to cash and get your money in <span className="text-primary3">seconds!</span> 
           </h1>
           <Link to={reg_link}>

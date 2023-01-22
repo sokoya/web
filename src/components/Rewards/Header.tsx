@@ -10,7 +10,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <header className="bg-headerBg px-[2rem]" style={{background: `url('${bg}')`}}>
-      <div className="flex flex-wrap w-full mt-[5rem] items-center pl-[3rem]">
+      <div className="flex flex-wrap w-full mt-[5rem] items-center pl-[0rem] sm:pl-[3rem]">
         <div className="w-full md:w-[50%]">
           <h1 className="py-[2rem] sm:py-0 text-[2.5rem] sm:text-[3.5rem] w-[90%] leading-[4rem] sm:leading-[5rem] mb-[1rem] font-bold">
           Pay smartly

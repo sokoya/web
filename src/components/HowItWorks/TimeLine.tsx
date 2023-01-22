@@ -9,14 +9,32 @@ import img3 from "../../assets/HowItWorks/2.png"
 import back from "../../assets/HowItWorks/back.png"
 import '../../assets/HowItWorks/timeline.css'
 import { reg_link } from "../../listData/homepage";
+import VerticalItems from "../VerticalItems";
+import { createAccount } from "../../helpers/Links";
 
 type Props = {};
-
+const list = [
+  {
+    title: "Create an Account",
+    content: `With our seamless onboarding process, you can set up an coount in less than 5 min`,
+    icon: 1,
+  },
+  {
+    title: "Top up your Wallet ",
+    content: "Select any payment method that suites you and top your wallet to get started ",
+    icon: 2,
+  },
+  {
+    title: "Integrate Payscribe",
+    content: "Integrate Payscribe on your website and app with our easy to use API. SDKs also available You're all set!!! ",
+    icon: 3,
+  },
+];
 const TimeLine = (props: Props) => {
   return (
-    <section className="timeline px-[5rem] py-[2rem] flex-wrap items-center w-full mt-[3rem]" style={{background: `url('${back}')`}}>
-    <h1 className="mt-[2rem] mb-[5rem]">Leverage Your Business on Payscribe</h1>
-    <div className="column mt-[2rem] px-[5rem]">
+    <section className="timeline flex px-[1rem] sm:px-[5rem] py-[2rem] flex-wrap items-center w-full mt-[3rem]" style={{background: `url('${back}')`}}>
+    <h1 className="mt-[2rem] mb-1 sm:mb-[5rem] text-[2rem] sm:text-[4rem]">Leverage Your Business on Payscribe</h1>
+    <div className="hidden column  sm:flex mt-[2rem] px[1rem] sm:px-[5rem]">
       <div className="row">
         <div className="text">
           <h3>Create an Account</h3>
@@ -69,7 +87,17 @@ const TimeLine = (props: Props) => {
         </div>
       </div>
     </div>
-    <div className="flex items-center justify-center mt-[5rem] pt-[5rem]">
+    <div className="sm:hidden flex flex-wrap items-center">
+            <div className="w-full ">
+              <div className="flex flex-wrap justify-between">
+                  {/* {jsx} */}
+                  <VerticalItems
+                      items={list}
+                  />
+              </div>
+            </div>
+          </div>
+    <div className="flex items-center justify-center mt-[1rem] sm:mt-[5rem] pt-1 sm:pt-[5rem]">
           <Link to={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
               <p className="flex items-center">Get Started <BsArrowRight className="ml-[1rem]" /></p>

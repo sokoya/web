@@ -40,6 +40,8 @@ const MidSection = (props: Props) => {
 At Payscribe, we strongly believe that your money should come with your own rules, enabling insant and true financial freedom not just for business owners but for everyone</p>
                         </div>
                     </div>
+                    <div className="mt-6 flex justify-center gap-3"><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-300" aria-label="Go to slide 1"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500"
+                    aria-label="Go to slide 2"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 3"><span className="absolute -inset-x-1.5 -inset-y-3" /></button></div>
                 </div>
                 <div className="w-full flex-none snap-center px-4 sm:px-6">
                     <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
@@ -64,6 +66,8 @@ At Payscribe, we strongly believe that your money should come with your own rule
                             <p className="mt-2 text-sm text-gray-400">Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.</p>
                         </div>
                     </div>
+                    <div className="mt-6 flex justify-center gap-3"><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 1"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-300"
+                    aria-label="Go to slide 2"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 3"><span className="absolute -inset-x-1.5 -inset-y-3" /></button></div>
                 </div>
                 <div className="w-full flex-none snap-center px-4 sm:px-6">
                     <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
@@ -79,10 +83,11 @@ At Payscribe, we strongly believe that your money should come with your own rule
                             <p className="mt-2 text-sm text-gray-400">We believe that financial empowerment is a key factor in improving people's lives and enabling them to achieve their full potential. By providing access to financial services and helping people to manage their money effectively, we hope to empower individuals in Africa to take control of their financial future and build a better life for themselves and their familie</p>
                         </div>
                     </div>
+                    <div className="mt-6 flex justify-center gap-3"><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 1"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500"
+                    aria-label="Go to slide 2"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-300" aria-label="Go to slide 3"><span className="absolute -inset-x-1.5 -inset-y-3" /></button></div>
                 </div>
             </div>
-            <div className="mt-6 flex justify-center gap-3"><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 1"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500"
-                    aria-label="Go to slide 2"><span className="absolute -inset-x-1.5 -inset-y-3" /></button><button type="button" className="relative h-0.5 w-4 rounded-full bg-gray-500" aria-label="Go to slide 3"><span className="absolute -inset-x-1.5 -inset-y-3" /></button></div>
+
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden md:mt-0 md:block">
             <div className="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24">

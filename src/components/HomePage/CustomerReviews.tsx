@@ -74,7 +74,7 @@ const CustomerSection = () => {
   );
   return (
     <section className="mt-[5rem]">
-      <h1 className="text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4 text-center">
+      <h1 className="text-gray-900 text-2xl md:text-2xl lg:text-4xl font-bold mb-4 text-center">
         What Our Customers Think
       </h1>
       <div className="">{reviews}</div>
