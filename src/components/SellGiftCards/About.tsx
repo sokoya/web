@@ -3,6 +3,7 @@ import IconCards from "../IconCards";
 import { SiFsecure } from "react-icons/si";
 import { MdOutlineEventAvailable, MdPayment } from "react-icons/md";
 import GiftImg from "../../assets/giftcards/giftImg.svg";
+import HeroImg from "../../assets/giftcards/giftcards.png";
 import Button from "../Button";
 import Lottie from "lottie-react";
 import Secured from "../lottie-animations/secured payment.json";
@@ -74,7 +75,7 @@ const About = (props: Props) => {
       </div>
       <div className=" bg-secondary3 flex flex-wrap justify-between items-center mt-[5rem] py-[3rem] px-4">
         <div className=" mb-[3rem] lg:mb-0 w-full md:w-[50%] ">
-          <img src={GiftImg} alt="gift img" />
+          <img src={HeroImg} alt="Why Sell Giftcards on Payscribe" className="w-full" />
         </div>
         <div className="w-full md:w-[45%]">
           <h1 className=" text-4xl font-bold mb-[2rem]">

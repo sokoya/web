@@ -1,6 +1,8 @@
 import React from "react";
-import HeroImg from "../../assets/giftcards/giftcards.png";
+
+import GiftImg from "../../assets/giftcards/giftImg.svg";
 import Button from "../Button";
+
 type Props = {};
 
 const Header = (props: Props) => {
@@ -17,7 +19,7 @@ const Header = (props: Props) => {
           </Button>
         </div>
         <div className="w-full md:w-[50%]">
-          <img src={HeroImg} alt="" className="w-full" />
+          <img src={GiftImg} alt="Sell giftcards on Payscribe" className="w-full" />
         </div>
       </div>
     </header>

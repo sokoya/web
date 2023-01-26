@@ -4,7 +4,8 @@ import tab2Img from "../assets/tab2.svg";
 import tab3Img from "../assets/tab3.svg";
 import { MdCastForEducation } from "react-icons/md";
 import { TbCurrencyNaira } from "react-icons/tb";
-import Startups from "../assets/Startups.png";
+import Startups from "../assets/startup.png";
+import microFinance from "../assets/micro-finance.png";
 import Personal from "../assets/personal.png";
 import Event from "../assets/event.png";
 import Business from "../assets/Business.png";
@@ -175,22 +176,29 @@ export const featuresList = [
     color: "#F16436",
     backgroundColor: "#f165360d",
     header: "Startups",
-    cardImg: <img src={Startups} alt="img" />,
+    cardImg: <img src={Startups} alt="For Startups" />,
     body: "Leverage on Payscribe lifestyle bills payment, power your app with our all-in-one solution.",
   },
   {
     color: "#00BEE7",
     backgroundColor: "#00bde70d",
     header: "Business ",
-    cardImg: <img src={Business} alt="img" />,
+    cardImg: <img src={Business} alt="Business Use" />,
     body: "Looking to send run a bulk SMS, own a Point of Sale (POS) or to scale up your business? Payscribe got you cover",
   },
   {
     color: "#EEC21A",
     backgroundColor: "#eec41a0d",
     header: "Event Organizer",
-    cardImg: <img src={Event} alt="img" />,
+    cardImg: <img src={Event} alt="Event Organizer" />,
     body: "Tap into the world of endless opportunites with our top-notch event ticketing system.",
+  },
+  {
+    color: "#EEC21A",
+    backgroundColor: "#eec41a0d",
+    header: "Micro-finance and loan providers",
+    cardImg: <img src={microFinance} alt="Micro-finance and loan providers" />,
+    body: "Payscribe's API could be integrated into micro-finance and loan providers platforms, providing an easy way to manage savings and loan.",
   },
   {
     color: "#00BEE7",
