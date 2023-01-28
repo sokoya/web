@@ -28,6 +28,7 @@ import Developers from "./pages/Developers";
 import Faq from "./pages/Faq";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -53,6 +54,7 @@ const router = createBrowserRouter(
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
+      <Route path="*" element={<NotFound />} />
     </>
   )
 );
