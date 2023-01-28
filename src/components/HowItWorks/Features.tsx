@@ -16,22 +16,22 @@ const Features = (props: Props) => {
     {
       header: "For Businesses/Developers",
       body: "We give you tools and resources to help you grow your business",
-      icon: <img style={{ width: "100px", marginTop: "-150px" }} src={Group1} />,
+      icon: <img style={{ width: "100px", marginTop: "00px" }} src={Group1} />,
     },
     {
       header: "Earn More Money",
       body: "Take advantage of our low fees and earn more commission with Payscribe so you stay ahead.",
-      icon: <img style={{ width: "100px", marginTop: "-160px" }} src={Group2} />,
+      icon: <img style={{ width: "250px", marginTop: "00px" }} src={Group2} />,
     },
     {
       header: "Reliable Network",
       body: "Enjoy peace of mind with a fast and reliable network. 99.9% uptime on all our services",
-      icon: <img style={{ width: "100px", marginTop: "-140px" }} src={Group3} />
+      icon: <img style={{ width: "100px", marginTop: "0px" }} src={Group3} />
     },
     {
         header: "Dedicated Customer Service",
         body: "You are not alone. Active and dedicated customer support for you all the way",
-        icon: <img style={{ width: "100px", marginTop: "-150px" }} src={Group4} />
+        icon: <img style={{ width: "100px", marginTop: "0px" }} src={Group4} />
       },
   ];
   const aboutContentsJSX = (
