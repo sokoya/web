@@ -50,23 +50,21 @@ export default function NavPopOver(props: Props) {
               <div className="relative text-sm grid gap-8 bg-white p-7 lg:grid-cols-2">
                 {props.navitems.map((item) => (
                   <Link
-                    key={item.name}
-                    to={item.href}
-                    className=" -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                  >
-                    <div
-                      className="flex w-[.5rem] bg-primary2 rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-sm"
-                    >
-                      {item.icon}
-                    </div>
-                    <div className="ml-4">
-                      <p className="text-lg font-semibold text-gray-900">
-                        {item.name}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {item.description}
-                      </p>
-                    </div>
+                  key={item.name}
+                  to={item.href}
+                  className=" -m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                >
+                  <div className="flex w-[.5rem] bg-primary2 rounded-md  shrink-0 items-center justify-center text-white sm:h-12 sm:w-12 text-sm">
+                    {item.icon}
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-lg font-semibold text-gray-900">
+                      {item.name}
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      {item.description}
+                    </p>
+                  </div>
                   </Link>
                 ))}
               </div>

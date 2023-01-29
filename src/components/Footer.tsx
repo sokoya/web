@@ -7,6 +7,8 @@ import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import GooglePlayImg from "../assets/playstore.png"
 import AppStoreImg from "../assets/applestore.png"
+
+import { Link } from "react-router-dom";
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -53,9 +55,20 @@ const Footer = (props: Props) => {
           <img src={AppStoreImg} alt="" className="w-[10rem] mt-8" />
           </div>
         </div>
-
         <div className="w-full bp4:w-[70%] flex flex-wrap justify-between sm:justify-start">
           {footerListJSX}
+        </div>
+
+        <div className="my-[4rem] mx-auto border-t border-gray-50 py-4">
+          <p className="text-white font-light text-sm">
+          Pscribe Digital Sevices Ltd (Payscribe) is not a bank but provides a bills payment and spending management technology platform.<br />
+          The account number is a virtual bank account number in line with the Nigeria Uniform Bank Account Number (NUBAN) formating system. The NUBAN accounts are generated through our bank partner
+          Providus Bank PLC - licensed and regulated by the CBN & money is duly insured by NDIC.<br />
+          The information provided on this website is not an exhaustive representation of all the products and services offered by Payscribe.
+          By using this website, you accept our <Link to="/privacy" title="Payscribe Privacy">Privacy Policy</Link> and <Link to="/terms" title="Terms of use">Terms of Use</Link>. <br />
+          Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo, and iPhone are trademarks of Apple Inc. registered in the U.S.
+          
+          </p>
         </div>
       </div>
     </footer>

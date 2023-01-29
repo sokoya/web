@@ -64,7 +64,7 @@ const ForDevelopers = (props: Props) => {
                         {/* action btn */}
                         <div className="mt-auto flex gap-3">
                             <a href={createAccount} className="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Get Started</a>
-                            <a href={developersPage} className="inline-block bg-primary2 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-white hover:text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Developers</a>
+                            <a href={developersPage} className="inline-block bg-primary2 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-white hover:text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Developers Hub</a>
                         </div>
                     </div>
 

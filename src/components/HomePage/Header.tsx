@@ -23,12 +23,12 @@ const Header = (props: Props) => {
           Be at the centre of your finances when you send, receive or save
           money, and pay for everyday essentials.
         </h2>
-        <div className="flex items-center mt-12">
-          <Link to={reg_link}>
+        <div className="flex items-center mt-12 mb-6">
+          <a href={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
               <p>Get Started &nbsp; &rarr; </p>
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="w-[100%] md:w-[50%] mt-[4rem]">

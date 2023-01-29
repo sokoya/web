@@ -49,15 +49,22 @@ const router = createBrowserRouter(
         <Route path="send-receive-money" element={<SRMoney />} />
         <Route path="events" element={<Event />} />
         <Route path="save-earn" element={<SaveEarn />} />
+        <Route path="developers-hub" element={<DevelopersHub />} />
         <Route path="/" element={<Hompeage />} />
       </Route>
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
+      
       <Route path="*" element={<NotFound />} />
     </>
   )
 );
+
+function DevelopersHub(){
+    window.location.replace("https://developers.payscribe.ng");
+    return null;
+}
 
 function App() {
   return <RouterProvider router={router} />;

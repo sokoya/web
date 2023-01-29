@@ -2,6 +2,7 @@ import React from "react";
 import { BsQuestionLg, BsLightningFill } from "react-icons/bs";
 import { MdPayment, MdBusinessCenter, MdQuestionAnswer } from "react-icons/md";
 import {VscLibrary} from "react-icons/vsc"
+import { HiOutlinePlay } from "react-icons/hi";
 import BillsImg from "../assets/nav/Bills Payment.svg";
 import GiftCardImg from "../assets/nav/giftcard.svg";
 import GiftImg from "../assets/nav/giftcard2.svg";
@@ -116,7 +117,7 @@ export const navList: {
       },
       {
         name: "API Documentation",
-        href: "/",
+        href: "/developers-hub",
         icon: <VscLibrary />,
         description:
           "Use our SDK to integrate Payscribe product. stay in control",
@@ -130,7 +131,7 @@ export const navList: {
       {
         name: "About",
         href: "/about-us",
-        icon: <MdPayment />,
+        icon: <HiOutlinePlay />,
         description: "Empowering digital and lifestyle services with no limit",
       },
       {

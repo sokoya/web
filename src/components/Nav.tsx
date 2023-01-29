@@ -22,6 +22,7 @@ const Nav = (props: Props) => {
       setNavbar(false)
     }
   };
+  
   window.addEventListener("scroll", showShadow);
   const navLinksJSX = (
     <ul className="items-center flex ">
@@ -53,7 +54,7 @@ const Nav = (props: Props) => {
         <div className="hidden bp4:block mr-auto">{navLinksJSX}</div>
         <div className=" hidden bp4:block">
           <a href={login}>
-            <Button class="  font-semibold text-primary1 py-3 px-6   rounded-xl">
+            <Button class="font-semibold text-primary1 py-3 px-6   rounded-xl">
               Sign In
             </Button>
           </a>
