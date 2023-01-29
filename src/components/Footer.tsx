@@ -60,7 +60,7 @@ const Footer = (props: Props) => {
         </div>
 
         <div className="mt-[3rem] mx-auto border-t border-gray-50 py-4">
-          <p className="text-white font-light text-sm">
+          <p className="text-white font-light text-xs">
           Pscribe Digital Sevices Ltd (Payscribe) is not a bank but provides a bills payment and spending management technology platform.<br />
           The account number is a virtual bank account number in line with the Nigeria Uniform Bank Account Number (NUBAN) formating system. The NUBAN accounts are generated through our bank partner
           Providus Bank PLC - licensed and regulated by the CBN & money is duly insured by NDIC.<br />
