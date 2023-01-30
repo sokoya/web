@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Image from "../../assets/why-payscribe/Payscribe_homepage.png";
 import Button from "../Button";
+import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
@@ -43,11 +44,11 @@ const MidSection = (props: Props) => {
 
 
         <div className="flex mt-12">
-          <Link to="/register">
+          <a href={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
               <p className="flex items-center">Schedule a Demo <BsArrowRight className="ml-[1rem]" /></p>
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="w-full sm:w-[100%] mx-auto md:w-[100%] mt-[3rem] text-center py-[3rem] ">
