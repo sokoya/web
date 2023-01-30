@@ -63,7 +63,7 @@ const Footer = (props: Props) => {
           <p className="text-center text-white font-light text-xs">
             Pscribe Digital Sevices Ltd (Payscribe) is not a bank but provides a bills payment and spending management technology platform.<br />
             The account number is a virtual bank account number in line with the Nigeria Uniform Bank Account Number (NUBAN) formating system. The NUBAN accounts are generated through our bank partner
-            Providus Bank PLC - licensed and regulated by the CBN & money is duly insured by NDIC.<br />
+            Providus Bank PLC - licensed and regulated by the CBN and money is duly insured by NDIC.<br />
             The information provided on this website is not an exhaustive representation of all the products and services offered by Payscribe.
             By using this website, you accept our <Link to="/privacy" title="Payscribe Privacy">Privacy Policy</Link> and <Link to="/terms" title="Terms of use">Terms of Use</Link>. <br />
             Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo, and iPhone are trademarks of Apple Inc. registered in the U.S.
