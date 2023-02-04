@@ -20,11 +20,11 @@ const Header = (props: Props) => {
         Integrate with Payscribe and let your customers pay all lifestyle bills, without leaving your platform
         </h2>
         <div className="flex items-center justify-center mt-12">
-          <Link to={reg_link}>
+          <a href={reg_link}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.5rem]  px-[1.5rem]  w-full sm:w-auto">
               <p className="flex items-center">Get Started <BsArrowRight className="ml-[1rem]" /></p>
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </header>
