@@ -4,6 +4,7 @@ import HeroImg from "../../assets/homepage/heroImg.png";
 import HomeSmile from "../../assets/homepage/payscribe-welcome-smile.png"
 import { Link } from "react-router-dom";
 import { reg_link } from "../../listData/homepage";
+import { login } from "../../helpers/Links";
 
 type Props = {};
 
@@ -24,7 +25,7 @@ const Header = (props: Props) => {
           money, and pay for everyday essentials.
         </h2>
         <div className="flex items-center mt-12 mb-6">
-          <a href={reg_link}>
+          <a href={login}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
               <p>Get Started &nbsp; &rarr; </p>
             </Button>
