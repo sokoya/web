@@ -121,7 +121,7 @@ const PrivacyPage = (props: Props) => {
 			<p>Usage Data</p>
 		</li>
     </ul>
-    <h3 className="y-2">Usage Data</h3>
+    <h3 className="my-2"><strong>Usage Data</strong></h3>
 	<p>Usage Data is collected automatically when using the Service.</p>
 	<p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
 	<p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
@@ -135,7 +135,7 @@ const PrivacyPage = (props: Props) => {
     </ul>
     	<p>We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.</p>
     	<p>You can enable or disable access to this information at any time, through Your Device settings.</p>
-    	<h2>Use of Your Personal Data</h2>
+    	<h2><strong>Use of Your Personal Data</strong></h2>
     	<p>The Company may use Personal Data for the following purposes:</p>
     <ul>
 		<li>
