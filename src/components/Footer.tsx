@@ -29,11 +29,11 @@ const Footer = (props: Props) => {
       <div className="w-full  flex items-start flex-wrap">
         <div className="w-full mb-[3rem] bp4:mb-0 bp4:w-[30%] ">
           <div className="w-[10rem] -mt-[3rem]">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="Payscribe Logo" />
           </div>
           <div className=" mb-4 text-sm">
             <p className="w-[85%] mb-4">
-              Building the world-class technology that digitizes cash payments and provides daily essentials financial services all at your finger tips.
+              Building the world-class technology that digitalize cash payments and provides daily essentials financial services all at your finger tips.
             </p>
             <p className="mb-2">
               <a href="mailto:hello@payscribe.ng">hello@payscribe.ng</a>
@@ -61,7 +61,7 @@ const Footer = (props: Props) => {
 
         <div className="mt-[3rem] mx-auto border-t border-gray-50 py-4">
           <p className="text-center text-white font-light text-xs">
-            Pscribe Digital Sevices Ltd (Payscribe) is not a bank but provides a bills payment and spending management technology platform.<br />
+            Pscribe Digital Sevices Ltd (Payscribe) is a financial technology company not a bank.<br />
             The account number is a virtual bank account number in line with the Nigeria Uniform Bank Account Number (NUBAN) formating system. The NUBAN accounts are generated through our bank partner
             Providus Bank PLC - licensed and regulated by the CBN and money is duly insured by NDIC.<br />
             The information provided on this website is not an exhaustive representation of all the products and services offered by Payscribe.
