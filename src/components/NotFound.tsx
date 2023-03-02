@@ -1,11 +1,22 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
+import QuickPay from "./QuickPay/Index";
 
 function NotFoundPage() {
+  var path = location.pathname;
+  console.log(path)
+  if(path[1] === "@"){
+    return (
+      <>
+      <QuickPay tag={path} />
+      </>
+    )
+  }
   return (
-    <section className="bg-white pt-16">
+    <section className="bg-white pt-16 mb-[-5rem]">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
-          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary2 darrk:text-primary-500">
+          <h1 className="mb-4 text-7xl mt-[3rem] tracking-tight font-extrabold lg:text-9xl text-primary2 darrk:text-primary-500">
             404
           </h1>
           <p className="mb-4 text-3xl tracking-tight font-bold text-grey-500 md:text-4xl darrk:text-white">
