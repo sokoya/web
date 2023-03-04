@@ -20,11 +20,11 @@ const Header = (props: Props) => {
           We've made it easy for you to accept payments, pay daily essential bills with just a few lines of code.
           </p>
           <div className="flex md:justify-start justify-start">
-              <Link to={reg_link}>
+              <a  href={reg_link}>
           <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.2rem]  w-full sm:w-auto">
             <p>Get Started &nbsp; &rarr;</p>
           </Button>
-          </Link>
+          </a>
           </div>
           {/* <div className="dark:text-gray-300">
             🔥🌟 
