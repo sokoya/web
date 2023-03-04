@@ -51,8 +51,10 @@ const Footer = (props: Props) => {
             </div>
           </div>
           <div className="flex gap-6">
-          <img src={GooglePlayImg} alt="" className="w-[10rem] mt-8" />
-          <img src={AppStoreImg} alt="" className="w-[10rem] mt-8" />
+            <img src={GooglePlayImg} alt="" className="w-[10rem] mt-8" />
+            <a target="_blank" href="https://apple.co/3y7gi0x">
+              <img src={AppStoreImg} alt="" className="w-[10rem] mt-8" />
+            </a>
           </div>
         </div>
         <div className="w-full bp4:w-[70%] flex flex-wrap justify-between sm:justify-start">
