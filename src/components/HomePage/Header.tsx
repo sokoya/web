@@ -24,36 +24,36 @@ const Header = (props: Props) => {
           Be at the centre of your finances when you send, receive or save
           money, and pay for everyday essentials.
         </h2>
-        <div className="scroll-parent mt-3">
-  <div className="scroll-element primary">
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/damilola-jerugba.svg" alt="damilola jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/tosin-jerugba.svg" alt="tosin jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/fiyin-jerugba.svg" alt="fiyin jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
+        {/* <div className="scroll-parent mt-3">
+            <div className="scroll-element primary">
+              <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+                <img src="https://avatars.dicebear.com/api/adventurer/damilola-jerugba.svg" alt="damilola jerugba" />
+                <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+              </div>
+              <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+                <img src="https://avatars.dicebear.com/api/adventurer/tosin-jerugba.svg" alt="tosin jerugba" />
+                <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+              </div>
+              <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+                <img src="https://avatars.dicebear.com/api/adventurer/fiyin-jerugba.svg" alt="fiyin jerugba" />
+                <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+            </div>
         </div>
         <div className="scroll-element secondary">
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/damilola-jerugba.svg" alt="damilola jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/tosin-jerugba.svg" alt="tosin jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
-          <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
-            <img src="https://avatars.dicebear.com/api/adventurer/fiyin-jerugba.svg" alt="fiyin jerugba" />
-            <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
-          </div>
+            <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+              <img src="https://avatars.dicebear.com/api/adventurer/damilola-jerugba.svg" alt="damilola jerugba" />
+              <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+            </div>
+            <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+              <img src="https://avatars.dicebear.com/api/adventurer/tosin-jerugba.svg" alt="tosin jerugba" />
+              <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+            </div>
+            <div className="flex border py-2 px-1 mx-2 gap-1" style={{width: "600px", alignItems: "center", background: "#fff"}}>
+              <img src="https://avatars.dicebear.com/api/adventurer/fiyin-jerugba.svg" alt="fiyin jerugba" />
+              <span style={{fontSize: "10px"}}><b>@ayo</b> just recieved NGN500</span>
+            </div>
         </div>
-      </div>
+      </div> */}
 
 
                 <div className="flex items-center mt-0 mb-6">
