@@ -8,7 +8,7 @@ import { bankCodes, reg_link } from "../../listData/homepage";
 import { FaArrowLeft } from "react-icons/fa";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import NotFoundPage from "../NotFound";
-
+import toast, { Toaster } from 'react-hot-toast';
 type Props = {
   tag: string;
 };
@@ -106,7 +106,7 @@ const QuickPay = (props: Props) => {
               <h2 className="mt-3 mb-1 text-3xl font-bold text-gray-800 text-uppercase">
                 {user.name || ""}
               </h2>
-              <p className="mt-1 mb-4 font-bold">payscri.be/@{tag.substring(1)}</p>
+              <p className="mt-1 mb-4 font-bold">payscri.be/{tag.substring(1)}</p>
               <form className="space-y-5" onSubmit={next}>
                 <div className="space-y-4">
                   {index == 0 ? (
@@ -138,7 +138,7 @@ const QuickPay = (props: Props) => {
                           autoComplete="amount"
                           required
                           placeholder="Enter an Amount"
-                          className="focus:outline-none block w-full rounded-full placeholder-gray-500 bg-gray-100 pl-12 pr-4 h-12 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-primary"
+                          className="focus:outline-none block w-full rounded-full placeholder-gray-500 bg-gray-100 pl-12 pr-4 h-12 text-gray-600 transition duration-300 invalid:ring-2 invalid:rng-red-400 focus:ring-2 focus:ring-primary"
                         />
                         <div className="absolute right-1">
                           <button
@@ -399,7 +399,7 @@ const QuickPay = (props: Props) => {
                       <FaArrowLeft />
                     </button>
                     <p className="my-2">
-                      Transfer to the account details below.
+                      Transfer to <b>NGN{new Intl.NumberFormat().format(parseInt(amount))}</b> the account details below.
                     </p>
                     <div className="">
                       <div className="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 px-4 py-1 md:p-3 md:px-4">
@@ -407,12 +407,15 @@ const QuickPay = (props: Props) => {
                           <h2 className="text-primary2 text-xl md:text-2xl font-bold">
                             {user.accountNumber || ""}
                           </h2>
-                          <p className="text-gray-600 text-md text-uppercase">{user.bankName || ""} - {user.accountName || ""}</p>
+                          <p className="text-gray-600 text-[14px] text-uppercase">{user.bankName || ""} - {user.accountName || ""}</p>
                         </div>
-                        <CopyToClipboard text={user.accountNumber || ""}>
+                        <Toaster
+                        position="bottom-center"
+                        />
+                        <CopyToClipboard onCopy={(text, res) => res == true && toast.success('COPIED!')} text={user.accountNumber || ""}>
                         <a
                           href="#"
-                          className="inline-block bg-primary2 hover:bg-secondary active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 py-3"
+                          className="inline-block bg-primary2 hover:bg-secondary active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-3 py-2"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -495,7 +498,7 @@ const QuickPay = (props: Props) => {
                       <div className="ussd__info mt-2">
                         <p>Tap to dial this code</p>{" "}
                         <a
-                          href="tel:*894*500*7056096988%23"
+                          href={bankCodes[bank](amount, user.accountNumber)}
                           className="text-primary2 text-md md:text-xl font-bold"
                         >
                         {bankCodes[bank](amount, user.accountNumber)}
