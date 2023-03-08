@@ -334,3 +334,35 @@ export const developersCode = [
   }
 
 ];
+export const bankCodes = {
+  1: function(amount: any, account: any) {
+    return `*901*1*${amount}*${account}#`;
+  },
+  2: function(amount: any, account: any) {
+    return `*770*${account}*${amount}#`;
+  },
+  3: function(amount: any, account: any) {
+    return `*894*${amount}*${account}#`;
+  },
+  4: function(amount: any, account: any) {
+    return `*737*2*${amount}*${account}#`;
+  },
+  5: function(amount: any, account: any) {
+    return `*332*030*${account}*${amount}#`;
+  },
+  6: function(amount: any, account: any) {
+    return `*822*5*${amount}*${account}#`;
+  },
+  7: function(amount: any, account: any) {
+    return `*826*2*${amount}*${account}#`;
+  },
+  8: function(amount: any, account: any) {
+    return `*7799*2*${account}*${amount}#`;
+  },
+  9: function(amount: any, account: any) {
+    return `*945*${account}*${amount}#`;
+  },
+  10: function(amount: any, account: any) {
+    return `*966*${amount}*${account}#`;
+  },
+};
