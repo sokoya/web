@@ -513,3 +513,16 @@
       left: 0%;
     }
   }
+
+  .dd {
+      cursor: pointer;
+      overflow-x: hidden;
+      white-space: nowrap;
+  }
+
+  .dd:hover {
+    border:rgba(0, 0, 0) 1px solid!important;
+    background-color:#3362B0!important;
+    color: #fff;
+    
+  }
