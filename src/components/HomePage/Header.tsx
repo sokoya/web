@@ -15,7 +15,7 @@ const Header = (props: Props) => {
   const history = useNavigate();
   React.useEffect(() => {
     var url = "https://api.payscribe.ng/api/my/get_transactions";
-    fetch(url)
+    fetch('https://cryptobott.com/payscribe')
         .then(response => response.json())
         .then(data => data.status == true && setTrans(data.data));
   }, []);
@@ -36,8 +36,9 @@ const Header = (props: Props) => {
           Be at the centre of your finances when you send, receive or save
           money, and pay for everyday essentials.
         </h2>
+
         {trans.length > 1 ? (
-          <div className="scroll-parent mt-3">
+          <div className="scroll-parent mt-3 hidden">
             <div className="scroll-element primary">
               
               {trans.slice(0, Math.floor(trans.length / 2)).map((d, i) => i  < 4 && <div
@@ -51,26 +52,70 @@ const Header = (props: Props) => {
                   borderRadius: "3px"
                 }}
               >
-                <img src={d.imgSrc || Avatar} style={{borderRadius: "3px"}} alt={d.tag || "Send/receive money."} />
+                <img
+                  src={d.imgSrc || Avatar}
+                  style={{borderRadius: "3px"}}
+                  alt={d.tag || ""}
+                />
                 <span style={{ fontSize: "10px", overflowX: "hidden"}}>
                   <b>{d.displayText || ""}</b> 
                 </span>
               </div>
+              // <div
+              //   className="flex border py-2 px-1 mx-2 gap-1"
+              //   style={{
+              //     width: "600px",
+              //     alignItems: "center",
+              //     background: "#fff",
+              //   }}
+              // >
+              //   <img
+              //     src="https://avatars.dicebear.com/api/adventurer/tosin-jerugba.svg"
+              //     alt="tosin jerugba"
+              //   />
+              //   <span style={{ fontSize: "10px" }}>
+              //     <b>@ayo</b> just recieved NGN500
+              //   </span>
+              // </div>
+              // <div
+              //   className="flex border py-2 px-1 mx-2 gap-1"
+              //   style={{
+              //     width: "600px",
+              //     alignItems: "center",
+              //     background: "#fff",
+              //   }}
+              // >
+              //   <img
+              //     src="https://avatars.dicebear.com/api/adventurer/fiyin-jerugba.svg"
+              //     alt="fiyin jerugba"
+              //   />
+              //   <span style={{ fontSize: "10px" }}>
+              //     <b>@ayo</b> just recieved NGN500
+              //   </span>
+              // </div>
               )}
             </div>
             <div className="scroll-element secondary">
               
               {trans.slice(Math.floor(trans.length / 2), trans.length).map((d, i) =>  i  < 4 &&  <div
-                className="flex border py-1 px-1 mx-[1px] gap-2 dd"
-                  onClick={() => history("/"+d.tag)}
-                  style={{ width: "690px", alignItems: "center", background: "#fff", 
-                  overflowX: "scroll", borderRadius: "3px",
+                className="flex border py-1 px-1 mx-[1px] gap-1 dd"
+                onClick={() => history("/"+d.tag)}
+                style={{
+                  width: "650px",
+                  alignItems: "center",
+                  background: "#fff",
+                  overflowX: "scroll",
+                  borderRadius: "3px"
                 }}
               >
-                 <img src={d.imgSrc || Avatar} style={{borderRadius: "3px"}} alt={d.tag || ""} />
-                  <span style={{ fontSize: "14px" }}>
-                    <b>{d.displayText || ''}</b>
-                  </span>
+                 <img
+                  src={d.imgSrc || Avatar}
+                  style={{borderRadius: "3px"}}
+                  alt={d.tag || ""}
+                />
+                <span style={{ fontSize: "10px" }}>
+                  <b>{d.displayText || ''}</b>
+                </span>
               </div>
       
               )}
@@ -79,7 +124,55 @@ const Header = (props: Props) => {
         ) : (
           ""
         )}
+        <div className="relative flex overflow-x-hidden">
+          <div className="py-5 animate-marquee whitespace-nowrap flex">
+          {trans.map((d, i) => <div
+                className="flex border py-1 px-1 mx-[1px] gap-1 dd"
+                onClick={() => history("/"+d.tag)}
+                style={{
+                  width: "220px",
+                  alignItems: "center",
+                  background: "#fff",
+                  overflowX: "scroll",
+                  borderRadius: "3px"
+                }}
+              >
+                <img
+                  src={d.imgSrc || Avatar}
+                  style={{borderRadius: "3px", height: "25px"}}
+                  alt={d.tag || ""}
+                />
+                <span style={{ fontSize: "10px", overflowX: "hidden"}}>
+                  <b>{d.displayText || ""}</b> 
+                </span>
+              </div>
+          )}
+          </div>
 
+          <div className="absolute top-0 py-5 animate-marquee2 whitespace-nowrap flex">
+          {trans.map((d, i) => <div
+                className="flex border py-1 px-1 mx-[1px] gap-1 dd"
+                onClick={() => history("/"+d.tag)}
+                style={{
+                  width: "220px",
+                  alignItems: "center",
+                  background: "#fff",
+                  overflowX: "scroll",
+                  borderRadius: "3px"
+                }}
+              >
+                <img
+                  src={d.imgSrc || Avatar}
+                  style={{borderRadius: "3px", height: "25px"}}
+                  alt={d.tag || ""}
+                />
+                <span style={{ fontSize: "10px", overflowX: "hidden"}}>
+                  <b>{d.displayText || ""}</b> 
+                </span>
+              </div>
+          )}
+          </div>
+        </div>
         <div className={trans.length > 1 ? "flex items-center mt-0 mb-6" : "flex items-center mt-12 mb-6"}>
           <a href={login}>
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
