@@ -15,7 +15,7 @@ const Header = (props: Props) => {
   const history = useNavigate();
   React.useEffect(() => {
     var url = "https://api.payscribe.ng/api/my/get_transactions";
-    fetch('https://cryptobott.com/payscribe')
+    fetch(url)
         .then(response => response.json())
         .then(data => data.status == true && setTrans(data.data));
   }, []);
