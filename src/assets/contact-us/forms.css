@@ -489,11 +489,11 @@
   }
   
   .primary {
-    animation: primary 10s linear infinite;
+    animation: primary 15s linear infinite;
   }
   
   .secondary {
-    animation: secondary 10s linear infinite;
+    animation: secondary 15s linear infinite;
   }
   
   @keyframes primary {
