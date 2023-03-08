@@ -160,14 +160,14 @@ const Header = (props: Props) => {
                   overflowX: "scroll",
                   borderRadius: "3px"
                 }}
-              >
+              > 
                 <img
                   src={d.imgSrc || Avatar}
                   style={{borderRadius: "3px", height: "25px"}}
                   alt={d.tag || ""}
                 />
                 <span style={{ fontSize: "10px", overflowX: "hidden"}}>
-                  <b>{d.displayText || ""}</b> 
+                  <b>{d.displayText || ""}</b>  
                 </span>
               </div>
           )}
