@@ -36,7 +36,6 @@ const Header = (props: Props) => {
           Be at the centre of your finances when you send, receive or save
           money, and pay for everyday essentials.
         </h2>
-
         {trans.length > 1 ? (
           <div className="scroll-parent mt-3">
             <div className="scroll-element primary">
