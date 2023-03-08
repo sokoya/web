@@ -61,24 +61,16 @@ const Header = (props: Props) => {
             <div className="scroll-element secondary">
               
               {trans.slice(Math.floor(trans.length / 2), trans.length).map((d, i) =>  i  < 4 &&  <div
-                className="flex border py-1 px-1 mx-[1px] gap-1 dd"
-                onClick={() => history("/"+d.tag)}
-                style={{
-                  width: "650px",
-                  alignItems: "center",
-                  background: "#fff",
-                  overflowX: "scroll",
-                  borderRadius: "3px"
+                className="flex border py-1 px-1 mx-[1px] gap-2 dd"
+                  onClick={() => history("/"+d.tag)}
+                  style={{ width: "690px", alignItems: "center", background: "#fff", 
+                  overflowX: "scroll", borderRadius: "3px",
                 }}
               >
-                 <img
-                  src={d.imgSrc || Avatar}
-                  style={{borderRadius: "3px"}}
-                  alt={d.tag || ""}
-                />
-                <span style={{ fontSize: "10px" }}>
-                  <b>{d.displayText || ''}</b>
-                </span>
+                 <img src={d.imgSrc || Avatar} style={{borderRadius: "3px"}} alt={d.tag || ""} />
+                  <span style={{ fontSize: "14px" }}>
+                    <b>{d.displayText || ''}</b>
+                  </span>
               </div>
       
               )}
