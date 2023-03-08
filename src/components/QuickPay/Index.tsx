@@ -4,8 +4,10 @@ import bg from "../../assets/rewards/light-curve.png";
 import { Link } from "react-router-dom";
 import HeroImg from "../../assets/bills/hero1.svg";
 import QR from "../../assets/contact-us/qrr.png";
-import { reg_link } from "../../listData/homepage";
+import { bankCodes, reg_link } from "../../listData/homepage";
 import { FaArrowLeft } from "react-icons/fa";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import NotFoundPage from "../NotFound";
 
 type Props = {
   tag: string;
@@ -16,11 +18,70 @@ const QuickPay = (props: Props) => {
   const [index, setIndex] = React.useState(0);
   const [check, setCheck] = React.useState(0);
   const [amount, setAmount] = React.useState("");
-  const [bank, setBank] = React.useState("");
+  const [loading, setLoading] = React.useState(0);
+  const [user, setUser] = React.useState<any>({});
+
+  const [bank, setBank] = React.useState<number>(0);
   const next = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     setIndex(1);
   };
+
+  React.useEffect(() => {
+    var url = "https://api.payscribe.ng/api/my/user_tag/?tag=";
+    fetch(url+tag.substring(1))
+        .then(response => response.json())
+        .then(data => {
+          if(data.status == true){
+            setUser(data.data);
+            setLoading(2);
+            }
+            else{
+              setLoading(1)
+            }
+        });
+  }, []);
+  if(loading == 0){
+    return <main style={{
+      height: "60vh",
+      marginTop: "60px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    }}>
+      <div role="status">
+      <svg aria-hidden="true" className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
+        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill" />
+      </svg>
+      <span className="sr-only">Loading...</span>
+    </div>
+
+    </main>
+  }
+  if(loading == 1){
+    return     <section className="bg-white pt-16 mb-[-5rem]">
+    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="mx-auto max-w-screen-sm text-center">
+        <h1 className="mb-4 text-7xl mt-[3rem] tracking-tight font-extrabold lg:text-9xl text-primary2 darrk:text-primary-500">
+          404
+        </h1>
+        <p className="mb-4 text-3xl tracking-tight font-bold text-grey-500 md:text-4xl darrk:text-white">
+          Something's missing.
+        </p>
+        <p className="mb-4 text-lg font-light text-gray-500 darrk:text-gray-400">
+          Sorry, we can't find that page. You'll find lots to explore on the
+          home page.{" "}
+        </p>
+        <Link to="/"
+          className="inline-flex text-white bg-primary2 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center darrk:focus:ring-primary-900 my-4"
+        >
+          Back to Homepage
+        </Link>
+      </div>
+    </div>
+  </section>
+  }
   return (
     <div>
       <div
@@ -38,14 +99,14 @@ const QuickPay = (props: Props) => {
           <div className=" sm:w-4/5 md:w-2/5 xl:w-2/5">
             <div className="p-8 md:py-12">
               <img
-                src="https://cdn.pixabay.com/photo/2017/01/10/03/54/avatar-1968236__480.png"
+                src={user.profilePic || "https://cdn.pixabay.com/photo/2017/01/10/03/54/avatar-1968236__480.png"}
                 className="w-40 rounded-full shadow-lg"
                 alt="Avatar"
               />
-              <h2 className="mt-3 mb-1 text-3xl font-bold text-gray-800">
-                AYOMIDE OLOYEDE
+              <h2 className="mt-3 mb-1 text-3xl font-bold text-gray-800 text-uppercase">
+                {user.name || ""}
               </h2>
-              <p className="mt-1 mb-4 font-bold">pays.be/{tag.substring(1)}</p>
+              <p className="mt-1 mb-4 font-bold">payscri.be/@{tag.substring(1)}</p>
               <form className="space-y-5" onSubmit={next}>
                 <div className="space-y-4">
                   {index == 0 ? (
@@ -75,6 +136,7 @@ const QuickPay = (props: Props) => {
                           value={amount}
                           onChange={(e) => setAmount(e.target.value)}
                           autoComplete="amount"
+                          required
                           placeholder="Enter an Amount"
                           className="focus:outline-none block w-full rounded-full placeholder-gray-500 bg-gray-100 pl-12 pr-4 h-12 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-primary"
                         />
@@ -242,7 +304,7 @@ const QuickPay = (props: Props) => {
                             </svg>
                           </label>
                         </div>
-                        <div className="option">
+                        { user && user.scanUrl? <div className="option">
                           <input
                             type="radio"
                             name="card"
@@ -258,24 +320,24 @@ const QuickPay = (props: Props) => {
                             <span />
                             SCAN QR CODE
                             {/* <div className="card card--dark card--sm">
-        <div className="card__chip" />
-        <div className="card__content">
-          <div className="card__text">
-            <div className="text__row">
-              <div className="text__loader" />
-              <div className="text__loader" />
-            </div>
-            <div className="text__row">
-              <div className="text__loader" />
-              <div className="text__loader" />
-            </div>
-          </div>
-          <div className="card__symbol">
-            <span />
-            <span />
-          </div>
-        </div>
-      </div> */}
+                              <div className="card__chip" />
+                                <div className="card__content">
+                                  <div className="card__text">
+                                    <div className="text__row">
+                                      <div className="text__loader" />
+                                      <div className="text__loader" />
+                                    </div>
+                                    <div className="text__row">
+                                      <div className="text__loader" />
+                                      <div className="text__loader" />
+                                    </div>
+                                  </div>
+                                  <div className="card__symbol">
+                                    <span />
+                                    <span />
+                                  </div>
+                                </div>
+                              </div> */}
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               style={{ justifySelf: "flex-end" }}
@@ -308,7 +370,7 @@ const QuickPay = (props: Props) => {
                               </g>
                             </svg>
                           </label>
-                        </div>
+                        </div> : ""} 
                       </div>
 
                       {/* <div className="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
@@ -343,10 +405,11 @@ const QuickPay = (props: Props) => {
                       <div className="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 px-4 py-1 md:p-3 md:px-4">
                         <div>
                           <h2 className="text-primary2 text-xl md:text-2xl font-bold">
-                            3160020316
+                            {user.accountNumber || ""}
                           </h2>
-                          <p className="text-gray-600">WEMA BANK</p>
+                          <p className="text-gray-600 text-md text-uppercase">{user.bankName || ""} - {user.accountName || ""}</p>
                         </div>
+                        <CopyToClipboard text={user.accountNumber || ""}>
                         <a
                           href="#"
                           className="inline-block bg-primary2 hover:bg-secondary active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 py-3"
@@ -379,6 +442,7 @@ const QuickPay = (props: Props) => {
                             </g>
                           </svg>
                         </a>
+                        </CopyToClipboard>
                       </div>
                     </div>
                   </div>
@@ -392,7 +456,7 @@ const QuickPay = (props: Props) => {
                       onClick={() => {
                         setIndex(1);
                         setCheck(0);
-                        setBank("");
+                        setBank(0);
                       }}
                       className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white"
                       style={{ alignItems: "center", justifyContent: "center" }}
@@ -407,34 +471,34 @@ const QuickPay = (props: Props) => {
                         Bank Name
                       </label>
                       <select
-                        onChange={(e) => setBank(e.target.value)}
+                        onChange={(e) => setBank(parseInt(e.target.value))}
                         name="bank"
                         className="w-full bg-gray-50 text-gray-800 border ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
                       >
-                        <option selected hidden={bank !== ""} value="">
+                        <option selected hidden={bank !== 0} value="">
                           Select your bank
                         </option>
-                        <option value={"044"}>Access bank</option>
-                        <option value={"070"}>Fidelity bank</option>
-                        <option value={"011"}>First bank</option>
-                        <option value={"058"}>GTBank</option>
-                        <option value={"030"}>Heritage bank</option>
-                        <option value={"232"}>Sterling bank</option>
-                        <option value={"032"}>Union bank</option>
-                        <option value={"230"}>Unity bank</option>
-                        <option value={"035"}>Wema bank</option>
-                        <option value={"057"}>Zenith bank</option>
+                        <option className={"044"} value="1">Access bank</option>
+                        <option className={"070"} value="2">Fidelity bank</option>
+                        <option className={"011"} value="3">First bank</option>
+                        <option className={"058"} value="4">GTBank</option>
+                        <option className={"030"} value="5">Heritage bank</option>
+                        <option className={"232"} value="6">Sterling bank</option>
+                        <option className={"032"} value="7">Union bank</option>
+                        <option className={"230"} value="8">Unity bank</option>
+                        <option className={"035"} value="9">Wema bank</option>
+                        <option className={"057"} value="10">Zenith bank</option>
                       </select>
                     </div>
 
-                    {bank !== "" ? (
+                    {bank !== 0 ? (
                       <div className="ussd__info mt-2">
                         <p>Tap to dial this code</p>{" "}
                         <a
                           href="tel:*894*500*7056096988%23"
                           className="text-primary2 text-md md:text-xl font-bold"
                         >
-                          *894*500*7056096988#
+                        {bankCodes[bank](amount, user.accountNumber)}
                         </a>
                       </div>
                     ) : (
@@ -445,7 +509,7 @@ const QuickPay = (props: Props) => {
                   ""
                 )}
 
-                {index == 2 && check == 3 ? (
+                {index == 2 && check == 3 && user && user.scanUrl? (
                   <div className="relative">
                     <button
                       onClick={() => {
@@ -463,7 +527,7 @@ const QuickPay = (props: Props) => {
                     </p>
                     <img
                       className="mt-2"
-                      src={QR}
+                      src={user.scanUrl}
                       style={{ height: "250px" }}
                     />
                   </div>
