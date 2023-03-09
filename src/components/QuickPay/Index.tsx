@@ -14,9 +14,9 @@ type Props = {
 };
 
 const QuickPay = (props: Props) => {
-  var tag = props.tag;
+  let tag = props.tag;
   const [index, setIndex] = React.useState(0);
-  const [check, setCheck] = React.useState(0);
+  const [check, setCheck] = React.useState('');
   const [amount, setAmount] = React.useState("");
   const [loading, setLoading] = React.useState(0);
   const [user, setUser] = React.useState<any>({});
@@ -33,13 +33,15 @@ const QuickPay = (props: Props) => {
       .then((response) => response.json())
       .then((data) => {
         if (data.status == true) {
-          setUser(data.data);
-          setLoading(2);
+			setUser(data.data);
+			setLoading(2);
         } else {
           setLoading(1);
         }
       });
   }, []);
+
+
   if (loading == 0) {
     return (
       <main
@@ -73,6 +75,8 @@ const QuickPay = (props: Props) => {
       </main>
     );
   }
+
+
   if (loading == 1) {
     return (
       <section className="bg-white pt-16 mb-[-5rem]">
@@ -99,47 +103,38 @@ const QuickPay = (props: Props) => {
       </section>
     );
   }
+
+
   return (
     <div>
       <div
         className="relative  pb-2 pt-[5rem] bg-headerBg px-[2rem]"
         style={{ background: `url('${bg}')` }}
       >
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 transition duration-300 delay-0"
-        >
-          {/* <div className="blur-[106px] h-56 bg-gradient-to-br from-grey-300 to-red-400" />
-    <div className="blur-[106px] h-32 bg-gradient-to-r from-primary-400 to-yellow-300" /> */}
+        <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 transition duration-300 delay-0" >
         </div>
         <div className="relative xl:container px-0 text-gray-500 md:px-0 mt-0 flex">
           <div className=" sm:w-4/5 md:w-2/5 xl:w-2/5">
             <div className="p-8 md:py-12">
               <img
-                src={
-                  user.profilePic ||
-                  "https://cdn.pixabay.com/photo/2017/01/10/03/54/avatar-1968236__480.png"
-                }
+                src={ user.profilePic || "https://cdn.pixabay.com/photo/2017/01/10/03/54/avatar-1968236__480.png" }
                 className="w-40 rounded-full shadow-lg"
                 alt="Avatar"
               />
               <h2 className="mt-3 mb-1 text-3xl font-bold text-gray-800 text-uppercase">
-                {user.name || ""}
+                {user.name.toUpperCase() || ""}
               </h2>
               <p className="mt-1 mb-4 font-bold">
-                payscri.be/{tag.substring(1)}
+                payscribe.ng/{tag.substring(1)}
               </p>
               <form className="space-y-5" onSubmit={next}>
                 <div className="space-y-4">
                   {index == 0 ? (
                     <>
                       <label htmlFor="username" className="text-gray-600 ">
-                        How Much Do you want to send?
+                        How much do you want to send?
                       </label>
                       <div className="relative flex items-center">
-                          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 absolute left-4 inset-y-0 my-auto">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                          </svg>                       */}
                         <svg
                           id="Layer_1"
                           data-name="Layer 1"
@@ -147,7 +142,7 @@ const QuickPay = (props: Props) => {
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 115.09 122.88"
                         >
-                          <title>nigeria-naira</title>
+                          <title>Send-Receive Money</title>
                           <path d="M13.42,0H32.1a1.25,1.25,0,0,1,1,.6L58,42.26H83.17v-41A1.23,1.23,0,0,1,84.39,0h17.28a1.23,1.23,0,0,1,1.23,1.23v41h11a1.23,1.23,0,0,1,1.23,1.23V54.55a1.23,1.23,0,0,1-1.23,1.23h-11v9.41h11a1.23,1.23,0,0,1,1.23,1.22V77.48a1.23,1.23,0,0,1-1.23,1.22h-11v43a1.23,1.23,0,0,1-1.23,1.23H84.39a1.25,1.25,0,0,1-1-.6L58,78.7H33.26v43A1.23,1.23,0,0,1,32,122.88H13.42a1.23,1.23,0,0,1-1.23-1.23V78.7h-11A1.23,1.23,0,0,1,0,77.48V66.41a1.23,1.23,0,0,1,1.23-1.22h11V55.78h-11A1.23,1.23,0,0,1,0,54.55V43.49a1.23,1.23,0,0,1,1.23-1.23h11v-41A1.23,1.23,0,0,1,13.42,0ZM33.26,55.78v9.41h17l-4.4-9.41ZM70,65.19H83.17V55.78H65.68L70,65.19ZM83.17,78.7H77.88l5.29,11v-11ZM33.26,32.76v9.5h4.57l-4.57-9.5Z" />
                         </svg>
 
@@ -159,17 +154,14 @@ const QuickPay = (props: Props) => {
                           onChange={(e) => setAmount(e.target.value)}
                           autoComplete="amount"
                           required
+                          min={100}
+                          max={100000}
                           placeholder="Enter an Amount"
                           className="focus:outline-none block w-full rounded-full placeholder-gray-500 bg-gray-100 pl-12 pr-4 h-12 text-gray-600 transition duration-300 invalid:ring-2 invalid:rng-red-400 focus:ring-2 focus:ring-primary"
                         />
                         <div className="absolute right-1">
-                          <button
-                            type="submit"
-                            className="relative flex h-10 w-10 sm:w-max ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary2 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                          >
-                            <span className="hidden relative text-base font-semibold text-white sm:block">
-                              Next
-                            </span>
+                          <button type="submit" className="relative flex h-10 w-10 sm:w-max ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary2 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                            <span className="hidden relative text-base font-semibold text-white sm:block">Next</span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
@@ -192,52 +184,26 @@ const QuickPay = (props: Props) => {
                 </div>
                 {index == 1 ? (
                   <div className="relative">
-                    <button
-                      onClick={() => setIndex(0)}
-                      className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white"
-                      style={{ alignItems: "center", justifyContent: "center" }}
-                    >
+                    <button onClick={() => setIndex(0)} className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white" style={{ alignItems: "center", justifyContent: "center" }}>
                       <FaArrowLeft />
                     </button>
                     <label htmlFor="username" className="text-gray-600 mb-10">
-                      How Do You want to send it?
+                      How do you prefer to send {user.name} money?
                     </label>
                     <div className="radio-btns mt-3">
                       <div className="container">
                         <div className="option">
                           <input
                             type="radio"
-                            name="type"
-                            id="transfer"
-                            defaultValue="transfer"
-                            checked={check == 1}
-                            onChange={(e) => {
-                              setCheck(1);
-                              setIndex(2);
+                            name="payment_method"
+                            id="bank-transfer"
+                            defaultValue="bank-transfer"
+                            checked={check === 'bank'}
+                            onChange={(e) => { setCheck('bank'); setIndex(2);
                             }}
                           />
-                          <label htmlFor="silver" aria-label="Silver">
-                            <span />
-                            BANK TRANSFER
-                            {/* <div className="card card--white card--sm">
-                                <div className="card__chip" />
-                                <div className="card__content">
-                                  <div className="card__text">
-                                    <div className="text__row">
-                                      <div className="text__loader" />
-                                      <div className="text__loader" />
-                                    </div>
-                                    <div className="text__row">
-                                      <div className="text__loader" />
-                                      <div className="text__loader" />
-                                    </div>
-                                  </div>
-                                  <div className="card__symbol">
-                                    <span />
-                                    <span />
-                                  </div>
-                                </div>
-                              </div> */}
+                          <label htmlFor="bank-transfer" aria-label="bank-transfer">
+                            <span /> BANK TRANSFER
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               style={{ justifySelf: "flex-end" }}
@@ -265,37 +231,17 @@ const QuickPay = (props: Props) => {
                         <div className="option">
                           <input
                             type="radio"
-                            name="type"
+                            name="payment_method"
                             id="ussd"
                             defaultValue="ussd"
-                            checked={check == 2}
+                            checked={check === 'ussd'}
                             onChange={(e) => {
-                              setCheck(2);
+                              setCheck('ussd');
                               setIndex(2);
                             }}
                           />
-                          <label htmlFor="royal" aria-label="Royal blue">
-                            <span />
-                            PAY WITH USSD
-                            {/* <div className="card card--blue card--sm">
-                            <div className="card__chip" />
-                            <div className="card__content">
-                              <div className="card__text">
-                                <div className="text__row">
-                                  <div className="text__loader" />
-                                  <div className="text__loader" />
-                                </div>
-                                <div className="text__row">
-                                  <div className="text__loader" />
-                                  <div className="text__loader" />
-                                </div>
-                              </div>
-                              <div className="card__symbol">
-                                <span />
-                                <span />
-                              </div>
-                            </div>
-                          </div> */}
+                          <label htmlFor="ussd" aria-label="ussd ">
+                            <span />PAY WITH USSD
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               style={{ justifySelf: "flex-end" }}
@@ -330,37 +276,17 @@ const QuickPay = (props: Props) => {
                           <div className="option">
                             <input
                               type="radio"
-                              name="type"
-                              id="qrcode"
-                              defaultValue="qrcode"
-                              checked={check == 3}
+                              name="payment_method"
+                              id="scan"
+                              defaultValue="scan"
+                              checked={check === 'scan'}
                               onChange={(e) => {
-                                setCheck(3);
+                                setCheck('scan');
                                 setIndex(2);
                               }}
                             />
-                            <label htmlFor="dark" aria-label="Dark grey">
-                              <span />
-                              SCAN QR CODE
-                              {/* <div className="card card--dark card--sm">
-                              <div className="card__chip" />
-                                <div className="card__content">
-                                  <div className="card__text">
-                                    <div className="text__row">
-                                      <div className="text__loader" />
-                                      <div className="text__loader" />
-                                    </div>
-                                    <div className="text__row">
-                                      <div className="text__loader" />
-                                      <div className="text__loader" />
-                                    </div>
-                                  </div>
-                                  <div className="card__symbol">
-                                    <span />
-                                    <span />
-                                  </div>
-                                </div>
-                              </div> */}
+                            <label htmlFor="scan" aria-label="card transfer">
+                              <span />SCAN QR CODE
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 style={{ justifySelf: "flex-end" }}
@@ -398,41 +324,31 @@ const QuickPay = (props: Props) => {
                           ""
                         )}
                       </div>
-
-                      {/* <div className="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-    <input id="bordered-radio-1" type="radio" defaultValue={""} name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-    <label htmlFor="bordered-radio-1" className="w-full py-4 ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">BANK TRANSFER</label>
-  </div>
-  <div className="flex items-center pl-4 border border-gray-200 rounded dark:border-gray-700">
-    <input defaultChecked id="bordered-radio-2" type="radio" defaultValue={""} name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-    <label htmlFor="bordered-radio-2" className="w-full py-4 ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">PAY WITH USSD</label>
-  </div> */}
                     </div>
                   </div>
                 ) : (
                   ""
                 )}
-                {index == 2 && check == 1 ? (
+                {index == 2 && check === 'bank' ? (
                   <div className="relative">
-                    <button
-                      onClick={() => {
-                        setIndex(1);
-                        setCheck(0);
-                      }}
+                    <button onClick={() => { 
+						setIndex(1); 
+						setCheck(''); 
+					}}
                       className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white"
                       style={{ alignItems: "center", justifyContent: "center" }}
                     >
                       <FaArrowLeft />
                     </button>
                     <p className="my-2">
-                      Transfer to{" "}
+                      Transfer {" "}
                       <b>
                         NGN{new Intl.NumberFormat().format(parseInt(amount))}
                       </b>{" "}
-                      the account details below.
+                      to the account details below.
                     </p>
                     <div className="">
-                      <div className="flex flex-col sm:flex-row justify-between items-end sm:items-center bg-gray-100 rounded-lg gap-4 px-4 py-1 md:p-3 md:px-4">
+                      <div className="flex flex-col sm:flex-row justify-between items-center bg-gray-100 rounded-lg gap-4 px-4 py-1 md:p-3 md:px-4">
                         <div>
                           <h2 className="text-primary2 text-xl md:text-2xl font-bold">
                             {user.accountNumber || ""}
@@ -442,14 +358,10 @@ const QuickPay = (props: Props) => {
                           </p>
                         </div>
                         <Toaster position="bottom-center" />
-                        <CopyToClipboard
-                          onCopy={(text, res) =>
-                            res == true && toast.success("COPIED!")
-                          }
+                        <CopyToClipboard onCopy={(text, res) => res == true && toast.success("Account Number Copied!") }
                           text={user.accountNumber || ""}
                         >
-                          <a
-                            href="#"
+                          <a href="javascript:void()"
                             className="inline-block bg-primary2 hover:bg-secondary active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-3 py-2"
                           >
                             <svg
@@ -488,12 +400,12 @@ const QuickPay = (props: Props) => {
                   ""
                 )}
 
-                {index == 2 && check == 2 ? (
+                {index == 2 && check === 'ussd' ? (
                   <div className="relative">
                     <button
                       onClick={() => {
                         setIndex(1);
-                        setCheck(0);
+                        setCheck('');
                         setBank(0);
                       }}
                       className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white"
@@ -502,59 +414,32 @@ const QuickPay = (props: Props) => {
                       <FaArrowLeft />
                     </button>
                     <div>
-                      <label
-                        htmlFor="bank"
-                        className="inline-block text-gray-800 text-sm sm:text-base mb-2"
-                      >
-                        Bank Name
+                      <label htmlFor="bank" className="inline-block text-gray-800 text-sm sm:text-base mb-2" >
+                        Select Bank Name
                       </label>
                       <select
                         onChange={(e) => setBank(parseInt(e.target.value))}
                         name="bank"
                         className="w-full bg-gray-50 text-gray-800 border ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
                       >
-                        <option selected hidden={bank !== 0} value="">
-                          Select your bank
-                        </option>
-                        <option className={"044"} value="1">
-                          Access bank
-                        </option>
-                        <option className={"070"} value="2">
-                          Fidelity bank
-                        </option>
-                        <option className={"011"} value="3">
-                          First bank
-                        </option>
-                        <option className={"058"} value="4">
-                          GTBank
-                        </option>
-                        <option className={"030"} value="5">
-                          Heritage bank
-                        </option>
-                        <option className={"232"} value="6">
-                          Sterling bank
-                        </option>
-                        <option className={"032"} value="7">
-                          Union bank
-                        </option>
-                        <option className={"230"} value="8">
-                          Unity bank
-                        </option>
-                        <option className={"035"} value="9">
-                          Wema bank
-                        </option>
-                        <option className={"057"} value="10">
-                          Zenith bank
-                        </option>
+                        <option selected hidden={bank !== 0} value=""> Select your bank </option>
+                        <option className={"044"} value="1"> Access bank </option>
+                        <option className={"070"} value="2"> Fidelity bank </option>
+                        <option className={"011"} value="3"> First bank </option>
+                        <option className={"058"} value="4"> GTBank </option>
+                        <option className={"030"} value="5"> Heritage bank </option>
+                        <option className={"232"} value="6"> Sterling bank </option>
+                        <option className={"032"} value="7"> Union bank </option> 
+						<option className={"230"} value="8"> Unity bank </option>
+                        <option className={"035"} value="9">Wema bank </option>
+                        <option className={"057"} value="10"> Zenith bank </option>
                       </select>
                     </div>
 
                     {bank !== 0 ? (
                       <div className="ussd__info mt-2">
                         <p>Tap to dial this code</p>{" "}
-                        <a
-                          href={bankCodes[bank](amount, user.accountNumber)}
-                          className="text-primary2 text-md md:text-xl font-bold"
+                        <a href={`tel:${bankCodes[bank](amount, user.accountNumber)}`} className="text-primary2 text-md md:text-xl font-bold"
                         >
                           {bankCodes[bank](amount, user.accountNumber)}
                         </a>
@@ -567,12 +452,12 @@ const QuickPay = (props: Props) => {
                   ""
                 )}
 
-                {index == 2 && check == 3 && user && user.scanUrl ? (
+                {index == 2 && check === 'scan' && user && user.scanUrl ? (
                   <div className="relative">
                     <button
                       onClick={() => {
                         setIndex(1);
-                        setCheck(0);
+                        setCheck('');
                       }}
                       className="w-8 h-8 rounded-full mb-2 flex bg-blue-500 hover:bg-primary2 text-white"
                       style={{ alignItems: "center", justifyContent: "center" }}
@@ -580,26 +465,21 @@ const QuickPay = (props: Props) => {
                       <FaArrowLeft />
                     </button>
                     <h3 className="font-bold text-2xl">Scan QR CODE</h3>
-                    <p className="text-sm">
-                      Scan this QR Code in app to continue
-                    </p>
-                    <img
-                      className="mt-2"
-                      src={user.scanUrl}
-                      style={{ height: "250px" }}
-                    />
+                    <p className="text-sm">From your Payscribe mobile app, scan this QR Code to continue</p>
+                    <img className="mt-2" src={user.scanUrl} style={{ height: "250px" }} />
                   </div>
                 ) : (
                   ""
                 )}
+
+
+
                 <p className="text-gray-500 text-sm">
-                  By proceeding, you consent to get calls, WhatsApp or SMS
-                  messages, including by automated means, from Tailus and its
-                  affiliates to the number provided.
+                  {user.name.toUpperCase()} gets the amount within a seconds. You can also send and receive money seamlessly by creating an account on Payscribe
                 </p>
                 <p className="border-t border-gray-100 pt-6 text-sm text-gray-500">
                   Don't have an account?
-                  <a href="#" className="text-primary">
+                  <a href={`${reg_link}/${tag.substring(1)}`} className="text-primary">
                     {" "}
                     Sign up
                   </a>
@@ -608,7 +488,7 @@ const QuickPay = (props: Props) => {
             </div>
           </div>
           <div className=" sm:w-4/5 md:w-3/5 xl:w-2/5 sm:px-10 sm:hidden lg:block">
-            <img className="ml-auto sm:hidden lg:block" src={HeroImg} alt="" />
+            <img className="ml-auto sm:hidden lg:block" src={HeroImg} alt="Send and Receive money on Payscribe at ease." />
           </div>
         </div>
       </div>
