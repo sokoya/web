@@ -521,7 +521,7 @@
 
   .dd {
       cursor: pointer;
-      overflow-x: hidden;
+      overflow-x: hidden!important;
       white-space: nowrap;
   }
 
