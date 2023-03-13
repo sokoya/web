@@ -7,6 +7,8 @@ import HomeSmile from "../../assets/homepage/payscribe-welcome-smile.png";
 import { Link } from "react-router-dom";
 import { reg_link } from "../../listData/homepage";
 import { login } from "../../helpers/Links";
+import GooglePlayImg from "../../assets/playstore.png"
+import AppStoreImg from "../../assets/applestore.png"
 
 type Props = {};
 
@@ -149,7 +151,7 @@ const Header = (props: Props) => {
           )}
           </div>
 
-          <div className="absolute top-0 py-5 animate-marquee2 whitespace-nowrap flex">
+          <div className="absolute top-0 pt-5 pb-2 animate-marquee2 whitespace-nowrap flex">
           {trans.map((d, i) => <div
                 className="flex border py-1 px-1 mx-[1px] gap-1 dd"
                 onClick={() => history("/"+d.tag)}
@@ -180,6 +182,14 @@ const Header = (props: Props) => {
             </Button>
           </a>
         </div>
+        <div className="flex gap-6">
+        <a target="_blank" href=" https://bit.ly/payscribe-android">
+            <img src={GooglePlayImg} alt="" className="w-[12rem] mt-2 mb-5"  style={{height: "63px"}} />
+          </a>
+            <a target="_blank" href="https://apple.co/3y7gi0x">
+              <img src={AppStoreImg} alt="" className="w-[12rem] mt-2 mb-5" />
+            </a>
+          </div>
       </div>
       <div className="w-[100%] md:w-[50%] mt-[4rem]">
         <img

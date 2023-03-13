@@ -51,7 +51,9 @@ const Footer = (props: Props) => {
             </div>
           </div>
           <div className="flex gap-6">
-            <img src={GooglePlayImg} alt="" className="w-[10rem] mt-8" />
+            <a target={"_blank"} href="https://bit.ly/payscribe-android">
+            <img src={GooglePlayImg} alt="" className="w-[10rem] mt-8" style={{height: "55px"}} />
+            </a>
             <a target="_blank" href="https://apple.co/3y7gi0x">
               <img src={AppStoreImg} alt="" className="w-[10rem] mt-8" />
             </a>
