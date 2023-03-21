@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .contact-form [multiple], .contact-form [type=date], .contact-form [type=datetime-local], .contact-form [type=email], .contact-form [type=month], .contact-form [type=number], .contact-form [type=password], .contact-form [type=search], .contact-form [type=tel], .contact-form [type=text], .contact-form [type=time], .contact-form [type=url], .contact-form [type=week], .contact-form select, .contact-form textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
