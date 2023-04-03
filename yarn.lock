@@ -480,6 +480,11 @@
   "resolved" "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
   "version" "2.0.6"
 
+"@vercel/analytics@^0.1.11":
+  "integrity" "sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw=="
+  "resolved" "https://registry.npmjs.org/@vercel/analytics/-/analytics-0.1.11.tgz"
+  "version" "0.1.11"
+
 "@vitejs/plugin-react@^2.1.0":
   "integrity" "sha512-am6rPyyU3LzUYne3Gd9oj9c4Rzbq5hQnuGXSMT6Gujq45Il/+bunwq3lrB7wghLkiF45ygMwft37vgJ/NE8IAA=="
   "resolved" "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-2.1.0.tgz"
@@ -1362,7 +1367,7 @@
   "resolved" "https://registry.npmjs.org/react-type-animation/-/react-type-animation-2.1.1.tgz"
   "version" "2.1.1"
 
-"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || 16 || 17 || 18", "react@^15.x.x || ^16.x.x || ^17.x.x || ^18.x.x", "react@^16 || ^17 || ^18", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18.0.0", "react@^18", "react@^18.0.0", "react@^18.2.0", "react@>= 0.14.0", "react@>= 15.0.0", "react@>=16", "react@>=16.3.0", "react@>=16.8", "react@>=16.8.0":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || 16 || 17 || 18", "react@^15.x.x || ^16.x.x || ^17.x.x || ^18.x.x", "react@^16 || ^17 || ^18", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8||^17||^18", "react@^16.9.0 || ^17.0.0 || ^18.0.0", "react@^18", "react@^18.0.0", "react@^18.2.0", "react@>= 0.14.0", "react@>= 15.0.0", "react@>=16", "react@>=16.3.0", "react@>=16.8", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
