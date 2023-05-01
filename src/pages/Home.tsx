@@ -3,14 +3,18 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { ScrollRestoration } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import { HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
+
 
 interface Props {}
 
 const Home = (props: Props) => {
   return (
     <>
-        <Helmet>
+        <HelmetProvider>
+      <Helmet defer={false}>
         <title>Save - Spend - Earn and manage your finances at ease | Payscribe</title>
             <meta name="title" content="Efficiently Manage Your Daily Essentials and Savings with Payscribe" />
             <meta name="description" content="Stay connected and manage your finances with Payscribe. Our platform offers a wide range of services including airtime and data purchase, electricity payments, and savings. Experience the convenience of cashless transactions and secure payments with Payscribe. Sign up now!" />
@@ -22,6 +26,7 @@ const Home = (props: Props) => {
             <meta property="og:url" content="https://www.payscribe.ng" />
             <meta property="og:site_name" content="Payscribe"/>
         </Helmet>
+        </HelmetProvider>
       <div className="px-[0rem] sm:px-[0rem] md:px-[0rem] max-w-[1500px] mx-auto">
         <Nav />
         <Outlet />
