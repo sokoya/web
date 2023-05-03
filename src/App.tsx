@@ -29,7 +29,6 @@ import Faq from "./pages/Faq";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
-import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -68,7 +67,7 @@ function DevelopersHub(){
 }
 
 function App() {
-  return <HelmetProvider><RouterProvider router={router} /></HelmetProvider>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
