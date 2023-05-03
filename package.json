@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && node snap.js",
+    "build": "tsc && vite build && npx react-snapshot",
     "preview": "vite preview"
   },
   "dependencies": {
