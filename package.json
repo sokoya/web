@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && node server.js",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "postbuild": "node server.js" 
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
