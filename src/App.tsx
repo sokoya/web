@@ -30,11 +30,9 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-  export const Router = () => {
-    return (
-    <Routes>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
       <Route path="/" element={<Home />}>
         <Route path="sell-giftcards" element={<SellGiftCards />} />
         <Route path="airtime-to-cash" element={<AirtimeToCash />} />
@@ -59,19 +57,17 @@ import NotFound from "./pages/NotFound";
       <Route path="forgot-password" element={<ForgotPassword />} />
       
       <Route path="*" element={<NotFound />} />
-    </Routes>
-    )
-  }
-//   )
-// );
+    </>
+  )
+);
 
 function DevelopersHub(){
     window.location.replace("https://developers.payscribe.ng");
     return null;
 }
 
-// function App() {
-//   return <RouterProvider router={router} />;
-// }
+function App() {
+  return <RouterProvider router={router} />;
+}
 
-// export default App;
+export default App;

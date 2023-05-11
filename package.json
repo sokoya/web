@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development node server",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "serve": "NODE_ENV=production node server"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -16,8 +14,6 @@
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.3.8",
     "framer-motion": "^7.5.0",
-    "h3": "^1.6.5",
-    "listhen": "^1.0.4",
     "lottie-react": "^2.3.1",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
@@ -31,7 +27,6 @@
     "react-snap": "^1.23.0",
     "react-syntax-highlighter": "^15.5.0",
     "react-type-animation": "^2.1.1",
-    "sirv": "^2.0.3",
     "swiper": "^8.4.2"
   },
   "devDependencies": {
