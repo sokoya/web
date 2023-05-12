@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs';
 const app = express();
-const port = process.env.PORT || 5173;
+const PORT = 6000;
 
 import { fileURLToPath } from 'url';
 
