@@ -62,4 +62,5 @@ app.get('*', function(request, response) {
   response.sendFile(filePath);
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// app.listen(port, () => console.log(`Listening on port ${port}`));
+module.exports = app
