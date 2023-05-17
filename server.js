@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs';
 const app = express();
-const PORT = 6000;
+const PORT = 5500;
 
 import { fileURLToPath } from 'url';
 
@@ -62,5 +62,5 @@ app.get('*', function(request, response) {
   response.sendFile(filePath);
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
-module.exports = app
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+export default app;
