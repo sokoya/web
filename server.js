@@ -268,6 +268,7 @@ app.get('/events', function(request, response) {
     let result = data.replace(/\$OG_TITLE/g, 'Stay Up-to-Date with the Latest Payscribe Event');
     result = result.replace(/\$OG_DESCRIPTION/g, "Stay informed and be the first to know about the latest Payscribe events, updates, and promotions. Discover new ways to use our platform to digitize cash payments, purchase daily essentials, and manage your savings. Check out our events page now!");
     result = result.replace(/\$meta_title/g, "Stay Up-to-Date with the Latest Payscribe Event");
+    result = result.replace(/\$OG_IMAGE/g, 'https://payscribe.ng/assets/notice.png');
     result = result.replace(/\$OG_SITENAME/g, 'Payscribe');
     result = result.replace(/\$OG_URL/g, 'https://payscribe.ng/events');
     result = result.replace(/\$OG_KEYWORDS/g, 'Payscribe events, updates, promotions, cashless payments, digital transactions, daily essentials, savings, financial management, secure payments, cashless living, utility payments, digital financial services, mobile financial services, online financial services, digital banking services, mobile banking services, online banking services');
