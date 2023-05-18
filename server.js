@@ -51,7 +51,7 @@ app.get('/about-us', function(request, response) {
 });
 app.get('/sell-giftcards', function(request, response) {
   console.log('Sell Giftcards');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -67,7 +67,7 @@ app.get('/sell-giftcards', function(request, response) {
 });
 app.get('/rewards', function(request, response) {
   console.log('Rewards');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -84,7 +84,7 @@ app.get('/rewards', function(request, response) {
 });
 app.get('/airtime-to-cash', function(request, response) {
   console.log('Airtime to cash');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -102,7 +102,7 @@ app.get('/airtime-to-cash', function(request, response) {
 
 app.get('/why-payscribe', function(request, response) {
   console.log('Why Payscribe');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -118,7 +118,7 @@ app.get('/why-payscribe', function(request, response) {
 });
 app.get('/faq', function(request, response) {
   console.log('Faq');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -135,7 +135,7 @@ app.get('/faq', function(request, response) {
 
 app.get('/developers', function(request, response) {
   console.log('Developers');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -151,7 +151,7 @@ app.get('/developers', function(request, response) {
 });
 app.get('/privacy', function(request, response) {
   console.log('Privacy');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -167,7 +167,7 @@ app.get('/privacy', function(request, response) {
 });
 app.get('/terms', function(request, response) {
   console.log('Terms');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -183,7 +183,7 @@ response.send(result);
 });
 app.get('/contact-us', function(request, response) {
   console.log('Contact us');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -199,7 +199,7 @@ response.send(result);
 });
 app.get('/how-it-works', function(request, response) {
   console.log('How it works');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -215,7 +215,7 @@ app.get('/how-it-works', function(request, response) {
 });
 app.get('/bills-payment', function(request, response) {
   console.log('Rewards');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -232,7 +232,7 @@ app.get('/bills-payment', function(request, response) {
 
 app.get('/send-receive-money', function(request, response) {
   console.log('Send Receive Money');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -249,7 +249,7 @@ app.get('/send-receive-money', function(request, response) {
 
 app.get('/events', function(request, response) {
   console.log('Events');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -266,7 +266,7 @@ app.get('/events', function(request, response) {
 
 app.get('/save-earn', function(request, response) {
   console.log('Save Earn');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -282,7 +282,7 @@ app.get('/save-earn', function(request, response) {
 });
 app.get('/developers-hub', function(request, response) {
   console.log('Developers');
-  const filePath = path.resolve(__dirname, './build', 'index.html')
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
   fs.readFile(filePath, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
