@@ -124,6 +124,11 @@ export const footerList = [
         title: "How It Works",
         url: "/how-it-works",
         blank: false
+      },
+      {
+        title: "Ambassadors",
+        url: "/ambassadors",
+        blank: false
       }],
   },
   {

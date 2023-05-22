@@ -1,0 +1,293 @@
+import React from "react";
+import Button from "../Button";
+import HeroImg from "../../assets/airtime/hero1.svg";
+import { Link } from "react-router-dom";
+import { reg_link } from "../../listData/homepage";
+
+type Props = {};
+
+function Body({}: Props) {
+  const [activeAccordion, setActiveAccordion] = React.useState(0);
+  return (
+
+  <>
+  <section className="bg-gray-50 py-32 dark:bg-darker">
+  <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Play a role </h2>
+      <p className="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">in shaping how money moves in Africa.</p>
+    </div>
+    <div className="mt-12 grid gap-8 md:grid-cols-2">
+      <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
+        <div className="flex h-full flex-col justify-center space-y-6 md:space-y-8">
+          <img className="mr-auto h-12 w-auto" src="https://ampire.netlify.app/images/clients/microsoft.svg" loading="lazy" alt="microsoft" />
+          <p className="text-gray-600 dark:text-gray-300 md:text-lg lg:text-xl">
+            <span className="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <br />
+            <br />
+            Esse, sint sit aut ducimus ea ipsam velit saepe earum dolorem, dignissimos minima voluptate quo accusamus corporis, quaerat beatae aliquid. Impedit, accusamus. <span className="font-serif">"</span>
+          </p>
+          <div className="flex items-center gap-3">
+            <img className="h-12 w-12 rounded-full" src="https://ampire.netlify.app/images/avatars/avatar-2.webp" loading="lazy" alt="user avatar" width={200} height={200} />
+            <div>
+              <h3 className="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Andy Doe</h3>
+              <span className="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+        <img className="h-12 w-auto" src="https://ampire.netlify.app/images/clients/airbnb.svg" loading="lazy" alt="airbnb" />
+        <p className="text-gray-600 dark:text-gray-300"><span className="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span className="font-serif">"</span></p>
+        <div className="flex items-center gap-3 text-left">
+          <img className="h-12 w-12 rounded-full" src="https://ampire.netlify.app/images/avatars/avatar-3.webp" alt="user avatar" width={200} height={200} loading="lazy" />
+          <div>
+            <h3 className="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Janet Doe</h3>
+            <span className="text-sm text-gray-500 dark:text-gray-400">UX Designer</span>
+          </div>
+        </div>
+      </div>
+      <div className="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+        <img className="h-12 w-auto" src="https://ampire.netlify.app/images/clients/ge.svg" loading="lazy" alt="ge" />
+        <p className="text-gray-600 dark:text-gray-300"><span className="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span className="font-serif">"</span></p>
+        <div className="flex items-center gap-3 text-left">
+          <img className="h-12 w-12 rounded-full" src="https://ampire.netlify.app/images/avatars/avatar-4.webp" alt="user avatar" width={200} height={200} loading="lazy" />
+          <div>
+            <h3 className="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">John Doe</h3>
+            <span className="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section className="my-32">
+  <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">What's in it for me?</h2>
+    </div>
+    <div style={{borderBottomLeftRadius: "0", borderBottomRightRadius: "0"}} className="mt-12 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 dark:divide-gray-700 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0">
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">First feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Second feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Third feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-gray-50 transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900 lg:hidden">
+        <div className="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div  style={{borderTopLeftRadius: 0, borderTopRightRadius: 0}} className="mt-0 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 dark:divide-gray-700 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0">
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">First feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Second feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
+        <div className="relative space-y-8 p-8 py-12">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Third feature</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div className="group relative bg-gray-50 transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900 lg:hidden">
+        <div className="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+          <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
+          <div className="space-y-2">
+            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
+            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+          </div>
+          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
+            <span className="text-sm">Read more</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="my-32">
+  <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
+    <h2 className="mb-12 text-center text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Frequently Asqued Questions</h2>
+    <div className="divide-y divide-gray-200 border-y border-gray-200 dark:divide-gray-800 dark:border-gray-800">
+      <div>
+        <dl className="faq mx-auto max-w-2xl">
+          <dt className="text-lg">
+            <button type="button" className="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-0" data-active="false" onClick={() => setActiveAccordion(1)}>
+              <span className="font-medium text-gray-900 dark:text-white">What included in the pack ?</span>
+              <span className="ml-6 flex h-7 items-center">
+                <svg className="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd className="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-0" style={{maxHeight: activeAccordion == 1? "96px" : "0px"}}>
+            <p className="pb-6 text-base text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod pariatur possimus at fugit natus aspernatur molestiae. Velit, odio modi provident necessitatibus molestias qui voluptatibus similique magnam a nam rem!</p>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <dl className="faq mx-auto max-w-2xl">
+          <dt className="text-lg">
+            <button type="button" className="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-1" data-active="false" onClick={() => setActiveAccordion(2)}>
+              <span className="font-medium text-gray-900 dark:text-white">What included in the pack ?</span>
+              <span className="ml-6 flex h-7 items-center">
+                <svg className="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd className="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-1" style={{maxHeight: activeAccordion == 2? "96px" : "0px"}}>
+            <p className="pb-6 text-base text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod pariatur possimus at fugit natus aspernatur molestiae. Velit, odio modi provident necessitatibus molestias qui voluptatibus similique magnam a nam rem!</p>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <dl className="faq mx-auto max-w-2xl">
+          <dt className="text-lg">
+            <button type="button" className="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-2" data-active="false" onClick={() => setActiveAccordion(3)}>
+              <span className="font-medium text-gray-900 dark:text-white">What included in the pack ?</span>
+              <span className="ml-6 flex h-7 items-center">
+                <svg className="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd className="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-2" style={{maxHeight: activeAccordion == 3? "96px" : "0px"}}>
+            <p className="pb-6 text-base text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod pariatur possimus at fugit natus aspernatur molestiae. Velit, odio modi provident necessitatibus molestias qui voluptatibus similique magnam a nam rem!</p>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <dl className="faq mx-auto max-w-2xl">
+          <dt className="text-lg">
+            <button type="button" className="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-4" data-active="false" onClick={() => setActiveAccordion(4)}>
+              <span className="font-medium text-gray-900 dark:text-white">Are updates included in this pack ?</span>
+              <span className="ml-6 flex h-7 items-center">
+                <svg className="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd className="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-4" style={{maxHeight: activeAccordion == 4? "96px" : "0px"}}>
+            <p className="pb-6 text-base text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod pariatur possimus at fugit natus aspernatur molestiae. Velit, odio modi provident necessitatibus molestias qui voluptatibus similique magnam a nam rem!</p>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <dl className="faq mx-auto max-w-2xl">
+          <dt className="text-lg">
+            <button type="button" className="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-5" data-active="false" onClick={() => setActiveAccordion(5)}>
+              <span className="font-medium text-gray-900 dark:text-white">What included in the pack ?</span>
+              <span className="ml-6 flex h-7 items-center">
+                <svg className="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd className="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-5" style={{maxHeight: activeAccordion == 5? "96px" : "0px"}}>
+            <p className="pb-6 text-base text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quod pariatur possimus at fugit natus aspernatur molestiae. Velit, odio modi provident necessitatibus molestias qui voluptatibus similique magnam a nam rem!</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</>
+  );
+}
+
+export default Body;
