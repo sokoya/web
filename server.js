@@ -328,7 +328,6 @@ app.get('/ambassadors', function(request, response) {
   });
 });
 app.use(express.static(path.resolve(__dirname, './dist')));
-
 app.get('*', function(request, response) {
   const filePath = path.resolve(__dirname, './dist', 'index.html');
   response.sendFile(filePath);
