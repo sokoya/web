@@ -1,12 +1,14 @@
 import React from "react";
 import Button from "../Button";
 import HeroImg from "../../assets/airtime/hero1.svg";
-import { Link } from "react-router-dom";
+import TheCheck from "../../assets/ambassadors/thecheck.webp";
+import { Link, useNavigate } from "react-router-dom";
 import { reg_link } from "../../listData/homepage";
 
 type Props = {};
 
 function Body({}: Props) {
+  let history = useNavigate();
   const [activeAccordion, setActiveAccordion] = React.useState(0);
   return (
 
@@ -72,60 +74,39 @@ function Body({}: Props) {
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">First feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Paid Internship Opportunities</h3>
+            <p className="text-gray-600 dark:text-gray-400">Get a chance to intern with one of our partner companies or with us.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
         </div>
       </div>
       <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Second feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Obtain a certificate of participation.</h3>
+            <p className="text-gray-600 dark:text-gray-400">Earn recognition by receiving a certificate of participation after your experience at the Payscribe ambassador's program.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
+        
         </div>
       </div>
       <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Third feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Gain relevant skills for today's workforce</h3>
+            <p className="text-gray-600 dark:text-gray-400">Cultivate relevant skills by joining any skill-based team based on your interests.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
+        
         </div>
       </div>
       <div className="group relative bg-gray-50 transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-900 lg:hidden">
         <div className="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Exclusive access to Payscribe events</h3>
+            <p className="text-gray-600 dark:text-gray-400">Enjoy special access to Payscribe-specific hangouts, product debuts, tech talks, sponsored events, and more.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
+      
         </div>
       </div>
     </div>
@@ -134,38 +115,27 @@ function Body({}: Props) {
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">First feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Access to career support</h3>
+            <p className="text-gray-600 dark:text-gray-400">Gain career mentorship from seasoned professionals in different fields at Payscribe.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
+         
         </div>
       </div>
       <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Second feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Community of like-minded individuals.</h3>
+            <p className="text-gray-600 dark:text-gray-400">Become part of a vibrant community of young intellectuals across different schools nationwide.</p>
           </div>
-          <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
-            <span className="text-sm">Read more</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-              <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clipRule="evenodd" />
-            </svg>
-          </a>
         </div>
       </div>
       <div className="group relative bg-white transition-shadow hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800">
         <div className="relative space-y-8 p-8 py-12">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Third feature</h3>
-            <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">Exclusive access to Payscribe events</h3>
+            <p className="text-gray-600 dark:text-gray-400">Enjoy special access to Payscribe-specific hangouts, product debuts, tech talks, sponsored events, and more.</p>
           </div>
           <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
             <span className="text-sm">Read more</span>
@@ -179,7 +149,7 @@ function Body({}: Props) {
         <div className="relative space-y-8 p-8 py-12 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
           <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" loading="lazy" className="w-12" width={512} height={512} alt="burger illustration" />
           <div className="space-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
+            <h3 className="text-xl font-semibold text-gray-700 transition group-hover:text-primary dark:text-white dark:group-hover:text-primaryLight">More features</h3>
             <p className="text-gray-600 dark:text-gray-400">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
           </div>
           <a href="#" className="flex items-center justify-between text-gray-500 group-hover:text-primary dark:text-gray-400 dark:group-hover:text-primaryLight">
@@ -193,6 +163,141 @@ function Body({}: Props) {
     </div>
   </div>
 </section>
+<section className="mt-32">
+  <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">All you need to become an <br/> Ambassadors</h2>
+    </div>
+    <div className="mt-20">
+      <div className="gap-6 space-y-12 md:flex md:space-y-0">
+        <div className="relative md:w-1/2">
+          <div className="panel visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 md:absolute" id="panel-0">
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white md:text-2xl">To become a Payscribe ambassador,<br /> you should:</h3>
+              <div className="mt-12 space-y-6">
+                <div className="flex items-center gap-6">
+                  <div className="flex h-10 w-10 rounded border border-gray-200 bg-white p-0 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-5 w-auto" src={TheCheck} alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Be passionate about financial education.</h4>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-10 w-10 rounded border border-gray-200 bg-white p-0 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-5 w-auto" src={TheCheck} alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Be eager to learn effective communication skills.</h4>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-10 w-10 rounded border border-gray-200 bg-white p-0 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-5 w-auto" src={TheCheck} alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Be enthusiastic about teamwork and collaboration.</h4>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-10 w-10 rounded border border-gray-200 bg-white p-0 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-5 w-auto" src={TheCheck} alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Be excited about creating innovation and showcasing creativity.</h4>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-10 w-10 rounded border border-gray-200 bg-white p-0 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-5 w-auto" src={TheCheck} alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Be open to active learning and personal development.</h4>
+                  </div>
+                </div>
+              </div>
+              <button
+              onClick={()=> history("/join-waitlist")}
+                  type="button"
+                  className="px-4 py-3 mt-10 bg-blue-600 rounded-md text-white outline-none focus:ring-4 shadow-lg transform active:scale-x-75 transition-transform flex"
+                >
+                  <span className="ml-2">Join Our Waitlist</span>
+                </button>
+            </div>
+          </div>
+          <div className="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500" id="panel-1">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Make work flow across teams while connecting back to company goals</h3>
+              <p className="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+              <div className="mt-12 space-y-6">
+                <div className="flex items-center gap-6">
+                  <div className="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png" alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Together as one</h4>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/2313/2313906.png" alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">New ideas</h4>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500" id="panel-2">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Make work flow across teams while connecting back to company goals</h3>
+              <p className="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+              <div className="mt-12 space-y-6">
+                <div className="flex items-center gap-6">
+                  <div className="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/3340/3340200.png" alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Together as one</h4>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                    <img className="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/5405/5405929.png" alt="icon illustration" loading="lazy" width={512} height={512} />
+                  </div>
+                  <div className="w-[calc(100%-7.5rem)]">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Growth</h4>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
+          <div className="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700">
+            <div className="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
+              <div data-target="panel-0" className="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
+                <img src="https://ampire.netlify.app/images/screenshots/tailus-home.webp" className="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus screenshot" loading="lazy" width={850} height={1780} />
+              </div>
+              <div data-target="panel-1" className="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
+                <img src="https://ampire.netlify.app/images/screenshots/tailus-home-dark.webp" className="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus screenshot dark-mode" loading="lazy" width={850} height={1780} />
+              </div>
+              <div data-target="panel-2" className="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
+                <img src="https://ampire.netlify.app/images/screenshots/tailus-contact.webp" className="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus contact screenshot" loading="lazy" width={850} height={1780} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section className="my-32">
   <div className="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
     <h2 className="mb-12 text-center text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Frequently Asqued Questions</h2>

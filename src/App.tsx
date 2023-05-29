@@ -30,6 +30,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import Ambassador from "./pages/Ambassadors";
+import BecomeAmbassador from "./pages/BecomeAmbassador";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -52,6 +53,7 @@ const router = createBrowserRouter(
         <Route path="save-earn" element={<SaveEarn />} />
         <Route path="developers-hub" element={<DevelopersHub />} />
         <Route path="ambassadors" element={<Ambassador />} />
+        <Route path="join-waitlist" element={<BecomeAmbassador />} />
         <Route path="/" element={<Hompeage />} />
       </Route>
       <Route path="signup" element={<Signup />} />

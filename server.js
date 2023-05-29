@@ -327,6 +327,23 @@ app.get('/ambassadors', function(request, response) {
     response.send(result);
   });
 });
+app.get('/join-waitlist', function(request, response) {
+  console.log('Join Waitlist');
+  const filePath = path.resolve(__dirname, './dist', 'index.html')
+  fs.readFile(filePath, 'utf8', function (err,data) {
+    if (err) {
+      return console.log(err);
+    }
+    let result = data.replace(/\$OG_TITLE/g, 'Become A Payscribe Ambassador');
+    result = result.replace(/\$OG_DESCRIPTION/g, "Build career-relevant skills through task-driven networking and collaboration with your peers from over 60 campuses in Nigeria.");
+    result = result.replace(/\$meta_title/g, "Become A Payscribe Ambassador");
+    result = result.replace(/\$OG_IMAGE/g, 'https://payscribe.ng/assets/notice.jpeg');
+    result = result.replace(/\$OG_SITENAME/g, 'Payscribe');
+    result = result.replace(/\$OG_URL/g, 'https://payscribe.ng/developers-hub');
+    result = result.replace(/\$OG_KEYWORDS/g, 'Ambassadors');
+    response.send(result);
+  });
+});
 app.use(express.static(path.resolve(__dirname, './dist')));
 app.get('*', function(request, response) {
   const filePath = path.resolve(__dirname, './dist', 'index.html');
