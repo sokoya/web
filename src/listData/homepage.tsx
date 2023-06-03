@@ -129,6 +129,11 @@ export const footerList = [
         title: "Ambassadors",
         url: "/ambassadors",
         blank: false
+      },
+      {
+        title: "Business",
+        url: "/business",
+        blank: false
       }],
   },
   {
