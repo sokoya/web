@@ -16,36 +16,36 @@ const Footer = (props: Props) => {
       </div>
       <span className="text-2xl font-bold text-gray-900 darrk:text-white">PAYSCRIBE</span>
     </a> */}
-    <center>
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
       <Link className="w-[8rem] flex items-center justify-center space-x-2 text-teal-600 flex items-center space-x-2 payscribe-MDGWKRRQ" to="/">
                 <img src={Logo} alt="Payscribe developers" />
               </Link>
-      </center>
+      </div>
     <ul role="list" className="mt-12 flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 darrk:text-gray-400 sm:gap-8">
       <li role="listitem">
-        <a href="#home" className="duration-300 hover:text-primary darrk:hover:text-white">
+        <Link to="/" className="duration-300 hover:text-primary darrk:hover:text-white">
           Home
-        </a>
+        </Link>
       </li>
       <li role="listitem">
-        <a href="#features" className="duration-300 hover:text-primary darrk:hover:text-white">
-          Features
-        </a>
+        <Link to="/about-us" className="duration-300 hover:text-primary darrk:hover:text-white">
+          About Payscribe
+        </Link>
       </li>
       <li role="listitem">
-        <a href="#solution" className="duration-300 hover:text-primary darrk:hover:text-white">
-          Solution
-        </a>
+        <Link to="/terms" className="duration-300 hover:text-primary darrk:hover:text-white">
+          Privacy Policy
+        </Link>
       </li>
       <li role="listitem">
-        <a href="#reviews" className="duration-300 hover:text-primary darrk:hover:text-white">
-          Reviews
-        </a>
+        <Link to="/terms" className="duration-300 hover:text-primary darrk:hover:text-white">
+          Terms and Conditions
+        </Link>
       </li>
       <li role="listitem">
-        <a href="#pricing" className="duration-300 hover:text-primary darrk:hover:text-white">
-          Pricing
-        </a>
+        <Link to="/ambassadors" className="duration-300 hover:text-primary darrk:hover:text-white">
+          Ambassadors
+        </Link>
       </li>
     </ul>
     <div className="m-auto mt-4 flex w-max items-center justify-between space-x-4 text-gray-500">
