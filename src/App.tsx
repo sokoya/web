@@ -55,9 +55,9 @@ const router = createBrowserRouter(
         <Route path="developers-hub" element={<DevelopersHub />} />
         <Route path="ambassadors" element={<Ambassador />} />   
         <Route path="join-waitlist" element={<BecomeAmbassador />} />
+        <Route path="business" element={<Business />} />     
         <Route path="/" element={<Hompeage />} />
       </Route>
-      <Route path="business" element={<Business />} />     
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
       <Route path="forgot-password" element={<ForgotPassword />} />

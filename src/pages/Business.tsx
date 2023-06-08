@@ -11,13 +11,11 @@ type Props = {};
 function Business({}: Props) {
   return (
     <>
-      <div className="px-[0rem] sm:px-[0rem] md:px-[0rem] max-w-[1500px] mx-auto">
-        <Nav />
+
         <Index />
-      </div>
+
     
       <ScrollRestoration />
-      <Footer />
     </>
   );
 }
