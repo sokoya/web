@@ -176,11 +176,12 @@ const Header = (props: Props) => {
           </div>
         </div>
         <div className={trans.length > 1 ? "flex items-center mt-0 mb-6" : "flex items-center mt-12 mb-6"}>
-          <a href={login}>
+          {/* <Link href={login}> */}
+          <Link to="/new-home">
             <Button class="font-bold bg-primary2 text-lg xs:text-lg text-white py-[.8rem]  px-[2.3rem]  w-full sm:w-auto">
               <p>Get Started &nbsp; &rarr; </p>
             </Button>
-          </a>
+          </Link>
         </div>
         <div className="flex gap-6 mb-6">
 
