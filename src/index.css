@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +22,10 @@ body {
   font-family: "Signika Negative", sans-serif;
   color: #373434;
   /* color: #ff3d3d33; */
+}
+
+main h1,h2,h3,h4,h5,h6 {
+  /* font-family: "Signika Negative", sans-serif!important; */
 }
 .swiper-pagination-bullet-active {
   background-color: #000 !important;

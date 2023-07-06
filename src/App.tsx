@@ -32,6 +32,8 @@ import NotFound from "./pages/NotFound";
 import Ambassador from "./pages/Ambassadors";
 import BecomeAmbassador from "./pages/BecomeAmbassador";
 import Business from "./pages/Business";
+import NewHome from "./pages/NewHome";
+import Index from "./components/NewHome/Index";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -58,6 +60,7 @@ const router = createBrowserRouter(
         <Route path="business" element={<Business />} />     
         <Route path="/" element={<Hompeage />} />
       </Route>
+      <Route path="/new-home" element={<NewHome><Index></Index></NewHome>}/>
       <Route path="signup" element={<Signup />} />
       <Route path="login" element={<Login />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
