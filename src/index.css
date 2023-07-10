@@ -59,3 +59,39 @@ main h1,h2,h3,h4,h5,h6 {
 /* 
 code {
 } */
+
+
+.payscribe-hero-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.4rem;
+    color: #000
+}
+
+.payscribe-hero-sub{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  max-width: 450px;
+}
+
+.ps-card-title {
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+
+.ps-card-text {
+  font-size: .8rem;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+.bg-wood-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 253 251/var(--tw-bg-opacity));
+}

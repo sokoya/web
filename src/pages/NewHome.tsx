@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "../components/NewHome/Nav";
-import Footer from "../components/NewHome/Footer";
+import Footer from "../components/Footer";
 import { ScrollRestoration } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -12,7 +12,7 @@ interface Props {
 const NewHome = (props: Props) => {
   return (
     <>
-    <main style={{fontFamily: "Poppins"}}>
+    <main style={{fontFamily: ""}}>
         <Helmet>
         <title>Save - Spend - Earn and manage your finances at ease | Payscribe</title>
             <meta name="title" content="Efficiently Manage Your Daily Essentials and Savings with Payscribe" />
