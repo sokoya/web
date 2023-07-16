@@ -106,8 +106,8 @@ export const footerList = [
         blank: false
       },
       {
-        title: "Events",
-        url: "/events",
+        title: "Send/Receive Money",
+        url: "/send-receive-money",
         blank: false
       },
     ],

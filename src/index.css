@@ -64,7 +64,7 @@ code {
 .payscribe-hero-header {
     font-style: normal;
     font-weight: 700;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     line-height: 3.4rem;
     color: #000
 }
@@ -78,8 +78,8 @@ code {
 }
 
 .ps-card-title {
-  font-weight: 700;
-  font-size: .9rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   line-height: 1.2rem;
   text-align: center;
 }

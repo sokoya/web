@@ -29,8 +29,8 @@ const Index = (props: Props) => {
      <section className="relative overflow-hidden bg-[#ecf5ff] border-b">
      <div className="items-center lg:px-16 max-w-7xl md:px-12 mx-auto px-8 xl:px-24 py-12 lg:py-24 lg:pt-16 relative">
     <div className="lg:grid-flow-col-dense lg:gap-24 lg:grid lg:grid-cols-2 lg:max-w-7xl lg:mx-auto">
-      <div className="lg:pr-24 md:pr-12">
-        <p className="items-center inline-flex text-[#000]"><span className="font-bold text-base tracking-tight">Payscribe = Payment + Subscription</span></p>
+      <div className="lg:pr-0 md:pr-0">
+        <p className="items-center inline-flex text-[#000]"><span className="font-bold text-base tracking-tight">Simple and Easy to Use</span></p>
         <h2 className="font-bold text-primary2 tracking-tighter mt-6 payscribe-hero-header ">Your passport to everyday online payments and finance management</h2>
         <p className="text-slate-500 mt-5 payscribe-hero-sub"> Whether it's <b className="text-[#000]">sending money globally or settling bills</b> locally and abroad to over 100+ countries and payments in GBP, USD, EUR and more. The only financial app you need</p>
         <div className="flex justify-center">
@@ -55,7 +55,7 @@ const Index = (props: Props) => {
       </div>
     </button>
 
-    <button className="flex mt-3 w-48 h-14 bg-[#000] text-white rounded-lg items-center justify-center items-center inline-flex " style={{position: "absolute"}}>
+    <button className="flex mt-3 ml-2 w-48 h-14 bg-[#000] text-white rounded-lg items-center justify-center items-center inline-flex " style={{position: "absolute"}}>
       <div className="mr-3">
         <svg viewBox="0 0 384 512" width={30}>
           <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
@@ -83,7 +83,7 @@ const Index = (props: Props) => {
 <section className="bg-white">
   <div className="mx-auto max-w-7xl py-24 pt-12 px-24 text-center">
     <h2 className="mb-6 font-bold text-[1.5rem]"> Trusted By</h2>
-    <div className="mx-auto grid gap-12 grid-cols-2 lg:grid-cols-6 md:grid-cols-3">
+    <div className="mx-auto grid gap-12 grid-cols-6 lg:grid-cols-6 md:grid-cols-3">
       <div className="flex justify-center col-span-1 grayscale opacity-50"><svg fill="none" viewBox="0 0 148 48" xmlns="http://www.w3.org/2000/svg" height={48} width={148}><path d="M0.239289 26.2057L15.7943 41.7607C7.85086 40.418 1.582 34.1491 0.239289 26.2057Z" fill="#5E6AD2" /><path d="M0 21.9828L20.0172 42C21.2077 41.9364 22.3691 41.7633 23.4914 41.4906L0.509432 18.5086C0.236716 19.631 0.0636084 20.7923 0 21.9828Z" fill="#5E6AD2" /><path d="M1.50586 15.5212L26.4789 40.4943C27.3885 40.1039 28.2615 39.6446 29.0913 39.123L2.87713 12.9088C2.3555 13.7386 1.89623 14.6116 1.50586 15.5212Z" fill="#5E6AD2" /><path d="M4.56891 10.6172C8.05582 6.56555 13.2214 4 18.9863 4C29.4873 4 38 12.5127 38 23.0137C38 28.7786 35.4345 33.9442 31.3828 37.4311L4.56891 10.6172Z" fill="#5E6AD2" /><path d="M57.8101 34.3999H71.7418V30.6061H62.4115V12.6363H57.8101V34.3999ZM74.7039 34.3999H79.2311V18.0772H74.7039V34.3999ZM76.978 16.1431C78.2959 16.1431 79.4329 15.1442 79.4329 13.8477C79.4329 12.5619 78.2959 11.563 76.978 11.563C75.671 11.563 74.534 12.5619 74.534 13.8477C74.534 15.1442 75.671 16.1431 76.978 16.1431ZM87.3845 24.9633C87.3949 22.8593 88.6489 21.6265 90.4767 21.6265C92.294 21.6265 93.3886 22.8167 93.3779 24.8146V34.3999H97.9049V24.0069C97.9049 20.2026 95.6733 17.8647 92.2727 17.8647C89.8498 17.8647 88.0963 19.0549 87.3632 20.9571H87.1718V18.0772H82.8573V34.3999H87.3845V24.9633ZM108.954 34.7188C113.003 34.7188 115.713 32.7527 116.35 29.7241L112.174 29.4478C111.717 30.6912 110.537 31.3394 109.039 31.3394C106.776 31.3394 105.341 29.841 105.341 27.4075V27.3969H116.457V26.1535C116.457 20.6064 113.099 17.8647 108.784 17.8647C103.981 17.8647 100.867 21.2759 100.867 26.313C100.867 31.4882 103.938 34.7188 108.954 34.7188ZM105.341 24.5914C105.426 22.7317 106.85 21.244 108.858 21.244C110.814 21.244 112.174 22.6467 112.195 24.5914H105.341ZM124.129 34.7082C126.541 34.7082 128.104 33.6561 128.901 32.1364H129.028V34.3999H133.321V23.3906C133.321 19.5012 129.995 17.8647 126.467 17.8647C122.45 17.8647 119.91 19.735 119.283 22.7105L123.47 23.0505C123.778 21.9666 124.745 21.1696 126.371 21.1696C127.933 21.1696 128.784 21.9347 128.794 23.3056C128.805 24.3789 127.678 24.5383 124.841 24.8146C121.611 25.1121 118.709 26.1961 118.709 29.841C118.709 33.0716 121.015 34.7082 124.129 34.7082ZM125.426 31.5838C124.033 31.5838 123.035 30.9356 123.035 29.6922C123.035 28.4171 124.087 27.79 125.681 27.5669C126.669 27.4288 128.284 27.195 128.826 26.8337V28.5659C128.826 30.2768 127.413 31.5838 125.426 31.5838ZM136.833 34.3999H141.361V25.1653C141.371 23.1674 142.816 21.7966 144.644 21.7966C145.26 21.7966 145.76 21.9666 146.185 22.1791L147.545 18.4385C146.95 18.0772 146.185 17.8434 145.314 17.8434C143.475 17.8434 141.987 18.9061 141.392 20.9252H141.222V18.0772H136.833V34.3999Z" fill="#040406" /></svg></div>
       <div className="flex justify-center col-span-1 grayscale opacity-50"><svg fill="none" viewBox="0 0 127 48" xmlns="http://www.w3.org/2000/svg" height={48} width={127}><path d="M122.957 31.9803C123.033 32.8499 123.728 33.9567 124.934 33.9567H125.638C125.912 33.9567 126.136 33.7327 126.136 33.4592V17.9535H126.133C126.119 17.6922 125.903 17.483 125.638 17.483H123.454C123.19 17.483 122.974 17.6922 122.96 17.9535H122.957V19.2134C121.618 17.5635 119.508 16.8787 117.392 16.8787C112.581 16.8787 108.682 20.7811 108.682 25.5953C108.682 30.4099 112.581 34.3124 117.392 34.3124C119.508 34.3124 121.815 33.4911 122.957 31.9784V31.9803ZM117.4 31.2617C114.341 31.2617 111.861 28.725 111.861 25.5953C111.861 22.4663 114.341 19.9295 117.4 19.9295C120.46 19.9295 122.94 22.4663 122.94 25.5953C122.94 28.725 120.46 31.2617 117.4 31.2617Z" fill="#0D0E10" clipRule="evenodd" fillRule="evenodd" /><path d="M105.919 24.49C105.919 19.9672 103.068 16.916 98.522 16.916C96.3516 16.916 94.5725 18.172 93.9441 19.2509C93.8083 18.4073 93.3608 17.5205 91.973 17.5205H91.2656C90.992 17.5205 90.7686 17.7447 90.7686 18.0182V32.0191C90.7686 32.0196 90.7686 32.0206 90.7686 32.0213V33.5252H90.7713C90.7856 33.786 91.0016 33.9955 91.2658 33.9955H93.4505C93.4839 33.9955 93.5167 33.9915 93.5484 33.9854C93.5629 33.9825 93.5763 33.9768 93.5904 33.9729C93.6066 33.9679 93.6236 33.964 93.639 33.9576C93.6584 33.9496 93.6761 33.9388 93.6941 33.9287C93.703 33.9232 93.7123 33.9194 93.7208 33.9138C93.7426 33.8997 93.7626 33.8827 93.782 33.8655C93.7851 33.8623 93.7889 33.8601 93.7921 33.8572C93.8138 33.8362 93.8337 33.813 93.8512 33.7889C93.9058 33.7138 93.9392 33.6229 93.9447 33.5252H93.9475V24.3656C93.9475 21.9365 95.9154 19.9672 98.3428 19.9672C100.77 19.9672 102.738 21.9365 102.738 24.3656L102.74 32.0218L102.74 32.0191C102.74 32.0259 102.742 32.0329 102.742 32.0401V33.5252H102.744C102.759 33.786 102.975 33.9955 103.239 33.9955H105.424C105.457 33.9955 105.49 33.9915 105.521 33.9854C105.534 33.983 105.546 33.9777 105.559 33.9742C105.577 33.969 105.595 33.9646 105.612 33.9576C105.63 33.9502 105.647 33.9399 105.663 33.9304C105.674 33.9246 105.685 33.9204 105.694 33.9138C105.715 33.9005 105.733 33.8844 105.751 33.8687C105.756 33.8643 105.761 33.8612 105.765 33.8568C105.786 33.8368 105.805 33.8152 105.821 33.7926C105.823 33.7909 105.824 33.7896 105.825 33.7879C105.879 33.7134 105.912 33.6235 105.918 33.5265C105.918 33.5258 105.918 33.5252 105.918 33.5252H105.921L105.919 24.49Z" fill="#0D0E10" clipRule="evenodd" fillRule="evenodd" /><path d="M83.1678 31.9803C83.2442 32.8498 83.9398 33.9566 85.1448 33.9566H85.8498C86.1231 33.9566 86.3468 33.7327 86.3468 33.4591V17.9535H86.344C86.3298 17.6922 86.1136 17.483 85.8498 17.483H83.6651C83.4009 17.483 83.1851 17.6922 83.1703 17.9535H83.1678V19.2134C81.8292 17.5635 79.7189 16.8787 77.6026 16.8787C72.7924 16.8787 68.8931 20.7811 68.8931 25.5954C68.8931 30.4098 72.7924 34.3124 77.6026 34.3124C79.7189 34.3124 82.0252 33.4912 83.1676 31.9783L83.1678 31.9803ZM77.6111 31.2616C74.552 31.2616 72.0718 28.725 72.0718 25.5954C72.0718 22.4663 74.552 19.9295 77.6111 19.9295C80.6706 19.9295 83.1503 22.4663 83.1503 25.5954C83.1503 28.725 80.6706 31.2616 77.6111 31.2616Z" fill="#0D0E10" clipRule="evenodd" fillRule="evenodd" /><path d="M55.9739 29.7596C57.4323 30.7707 59.0242 31.2618 60.554 31.2618C62.0114 31.2618 63.5181 30.5057 63.5181 29.1896C63.5181 27.4325 60.235 27.1591 58.1723 26.4575C56.1091 25.7559 54.3322 24.3055 54.3322 21.9568C54.3322 18.3628 57.5321 16.8784 60.5187 16.8784C62.4109 16.8784 64.3633 17.5029 65.6291 18.3975C66.065 18.728 65.7996 19.1075 65.7996 19.1075L64.5913 20.8346C64.4555 21.0291 64.218 21.1972 63.8772 20.9866C63.5363 20.7762 62.3407 19.9293 60.5187 19.9293C58.6964 19.9293 57.5988 20.7715 57.5988 21.8153C57.5988 23.067 59.0254 23.4607 60.6963 23.8874C63.6082 24.6729 66.7847 25.6171 66.7847 29.1896C66.7847 32.3561 63.825 34.3131 60.554 34.3131C58.0752 34.3131 55.9648 33.6059 54.1948 32.306C53.826 31.9367 54.0835 31.5938 54.0835 31.5938L55.2859 29.8755C55.5306 29.5542 55.839 29.6663 55.9739 29.7596Z" fill="#0D0E10" clipRule="evenodd" fillRule="evenodd" /><path d="M47.5752 31.9803C47.6515 32.8498 48.3471 33.9566 49.552 33.9566H50.2571C50.5304 33.9566 50.7544 33.7327 50.7544 33.4591V17.9535H50.7513C50.737 17.6922 50.5212 17.483 50.2571 17.483H48.0725C47.8083 17.483 47.5925 17.6922 47.5778 17.9535H47.5752V19.2134C46.2367 17.5635 44.1263 16.8787 42.0101 16.8787C37.1998 16.8787 33.3003 20.7811 33.3003 25.5954C33.3003 30.4098 37.1998 34.3124 42.0101 34.3124C44.1263 34.3124 46.4326 33.4912 47.5748 31.9783L47.5752 31.9803ZM42.0186 31.2616C38.9593 31.2616 36.4792 28.725 36.4792 25.5954C36.4792 22.4663 38.9593 19.9295 42.0186 19.9295C45.0778 19.9295 47.5577 22.4663 47.5577 25.5954C47.5577 28.725 45.0778 31.2616 42.0186 31.2616Z" fill="#0D0E10" clipRule="evenodd" fillRule="evenodd" /><path d="M21.0895 26.1881C17.8525 26.1881 15.2282 28.8123 15.2282 32.0497C15.2282 35.2868 17.8525 37.911 21.0895 37.911C24.3267 37.911 26.9509 35.2868 26.9509 32.0497C26.9509 28.8123 24.3267 26.1881 21.0895 26.1881ZM5.86134 26.1886C2.62424 26.1886 0 28.8123 0 32.0497C0 35.2868 2.62424 37.911 5.86134 37.911C9.09858 37.911 11.723 35.2868 11.723 32.0497C11.723 28.8123 9.09858 26.1886 5.86134 26.1886ZM19.3367 18.8612C19.3367 22.0986 16.7126 24.7231 13.4755 24.7231C10.2382 24.7231 7.61414 22.0986 7.61414 18.8612C7.61414 15.6245 10.2382 13 13.4755 13C16.7126 13 19.3367 15.6245 19.3367 18.8612Z" fill="#F06A6A" clipRule="evenodd" fillRule="evenodd" /></svg></div>
       <div className="flex justify-center col-span-1 grayscale opacity-50"><svg fill="none" viewBox="0 0 140 48" xmlns="http://www.w3.org/2000/svg" height={48} width={140}><g clipPath="url(#clip0_201_8180)"><path d="M21.0727 3.0791C9.4747 3.0791 0.0722656 12.4813 0.0722656 24.0792C0.0722656 35.6777 9.4747 45.0791 21.0727 45.0791C32.6719 45.0791 42.0733 35.6777 42.0733 24.0792C42.0733 12.482 32.6719 3.0801 21.0724 3.0801L21.0727 3.0791ZM30.7033 33.3673C30.3271 33.9842 29.5196 34.1798 28.9028 33.8011C23.9721 30.7894 17.765 30.1073 10.455 31.7774C9.75055 31.9379 9.04839 31.4966 8.8879 30.7919C8.72665 30.0872 9.16625 29.3851 9.87243 29.2246C17.872 27.3969 24.7339 28.1839 30.2695 31.5668C30.8864 31.9454 31.082 32.7504 30.7033 33.3673ZM33.2737 27.6492C32.7997 28.4196 31.7916 28.6628 31.0218 28.1889C25.3769 24.7192 16.7722 23.7144 10.0954 25.7411C9.22945 26.0026 8.31489 25.5146 8.05208 24.6502C7.79127 23.7843 8.27953 22.8715 9.14394 22.6082C16.7707 20.2941 26.2521 21.415 32.7345 25.3985C33.5044 25.8725 33.7477 26.8806 33.2737 27.6495V27.6492ZM33.4944 21.6949C26.726 17.6748 15.5592 17.3051 9.09704 19.2664C8.05935 19.5811 6.96197 18.9953 6.6475 17.9576C6.33303 16.9194 6.91834 15.8228 7.95678 15.5073C15.3749 13.2554 27.7066 13.6905 35.4991 18.3165C36.4344 18.8704 36.7404 20.0759 36.1862 21.008C35.6345 21.9414 34.4257 22.2491 33.4954 21.6949H33.4944ZM57.2074 22.4653C53.5812 21.6006 52.9367 20.9937 52.9367 19.7186C52.9367 18.5139 54.0702 17.7031 55.7579 17.7031C57.3929 17.7031 59.0129 18.3187 60.7132 19.5861C60.7633 19.6245 60.8285 19.6398 60.8912 19.6298C60.9564 19.6203 61.0116 19.5854 61.0492 19.533L62.8196 17.0373C62.8924 16.9345 62.8723 16.7928 62.7745 16.7143C60.7508 15.0911 58.4738 14.3019 55.8106 14.3019C51.896 14.3019 49.1601 16.6514 49.1601 20.013C49.1601 23.6178 51.5199 24.8942 55.5974 25.8795C59.0656 26.6787 59.6524 27.3483 59.6524 28.545C59.6524 29.8716 58.4687 30.6966 56.5629 30.6966C54.4464 30.6966 52.7185 29.9819 50.7876 28.3118C50.74 28.2691 50.6748 28.2516 50.6146 28.2541C50.5494 28.2591 50.4917 28.2892 50.4516 28.3368L48.4655 30.6991C48.3827 30.7994 48.3927 30.9449 48.488 31.0301C50.7349 33.0363 53.4984 34.0945 56.4826 34.0945C60.7006 34.0945 63.4265 31.79 63.4265 28.2215C63.434 25.2105 61.631 23.5428 57.2149 22.4685L57.2074 22.4653ZM72.9709 18.8893C71.1428 18.8893 69.6431 19.6095 68.4043 21.0853V19.4242C68.4043 19.293 68.299 19.1862 68.1686 19.1862H64.9211C64.7907 19.1862 64.6854 19.293 64.6854 19.4242V37.8812C64.6854 38.0116 64.7907 38.1194 64.9211 38.1194H68.1686C68.299 38.1194 68.4043 38.0116 68.4043 37.8812V32.0558C69.6431 33.4425 71.1428 34.1221 72.9709 34.1221C76.3688 34.1221 79.8094 31.5066 79.8094 26.5064C79.8144 21.5053 76.3739 18.889 72.9734 18.889L72.9709 18.8893ZM76.0328 26.5064C76.0328 29.0515 74.4655 30.8295 72.2186 30.8295C69.9992 30.8295 68.3241 28.9713 68.3241 26.5064C68.3241 24.0414 69.9992 22.1836 72.2186 22.1836C74.4279 22.1834 76.0328 24.001 76.0328 26.5062V26.5064ZM88.6241 18.8893C84.2481 18.8893 80.82 22.2586 80.82 26.5609C80.82 30.817 84.2255 34.1497 88.5714 34.1497C92.9624 34.1497 96.4005 30.7919 96.4005 26.5064C96.4005 22.2356 92.985 18.8898 88.6241 18.8898V18.8893ZM88.6241 30.8546C86.2969 30.8546 84.5415 28.9838 84.5415 26.5052C84.5415 24.0153 86.2367 22.2085 88.5714 22.2085C90.9136 22.2085 92.679 24.0785 92.679 26.5596C92.679 29.049 90.9738 30.8546 88.6241 30.8546ZM105.744 19.1862H102.171V15.5334C102.171 15.4025 102.065 15.2957 101.935 15.2957H98.6875C98.5571 15.2957 98.4493 15.4025 98.4493 15.5334V19.1862H96.8895C96.7591 19.1862 96.6538 19.293 96.6538 19.4242V22.2145C96.6538 22.3454 96.7591 22.4525 96.8895 22.4525H98.4493V29.6734C98.4493 32.5899 99.9013 34.0695 102.768 34.0695C103.931 34.0695 104.897 33.8287 105.807 33.3121C105.882 33.272 105.927 33.1918 105.927 33.1065V30.4483C105.927 30.3681 105.885 30.2903 105.814 30.2477C105.744 30.2026 105.656 30.2001 105.584 30.2377C104.959 30.5511 104.355 30.6966 103.678 30.6966C102.637 30.6966 102.171 30.2226 102.171 29.1644V22.4537H105.744C105.875 22.4537 105.98 22.3469 105.98 22.2157V19.4257C105.985 19.2945 105.88 19.1877 105.747 19.1877L105.744 19.1862ZM118.193 19.2005V18.7518C118.193 17.432 118.699 16.8435 119.833 16.8435C120.51 16.8435 121.054 16.9779 121.663 17.181C121.738 17.2046 121.816 17.1928 121.876 17.1479C121.939 17.103 121.974 17.031 121.974 16.9548V14.2189C121.974 14.1143 121.909 14.0218 121.806 13.9909C121.164 13.7996 120.342 13.6032 119.108 13.6032C116.111 13.6032 114.524 15.2919 114.524 18.485V19.1721H112.964C112.834 19.1721 112.726 19.279 112.726 19.4099V22.2145C112.726 22.3454 112.834 22.4525 112.964 22.4525H114.524V33.588C114.524 33.7209 114.632 33.8262 114.762 33.8262H118.007C118.14 33.8262 118.245 33.7209 118.245 33.588V22.4532H121.277L125.921 33.588C125.395 34.7566 124.876 34.9898 124.168 34.9898C123.597 34.9898 122.992 34.8193 122.378 34.4807C122.32 34.4506 122.25 34.4456 122.19 34.4632C122.127 34.4858 122.075 34.5309 122.049 34.5911L120.949 37.006C120.896 37.1214 120.941 37.2543 121.051 37.3145C122.2 37.9364 123.236 38.2022 124.517 38.2022C126.914 38.2022 128.241 37.0837 129.407 34.0795L135.039 19.5255C135.07 19.4522 135.059 19.3695 135.014 19.3045C134.972 19.2401 134.899 19.2012 134.821 19.2012H131.441C131.338 19.2012 131.248 19.2657 131.215 19.3607L127.752 29.2496L123.96 19.3542C123.925 19.2622 123.837 19.2012 123.74 19.2012H118.193V19.2005ZM110.975 19.1862H107.728C107.597 19.1862 107.49 19.293 107.49 19.4242V33.588C107.49 33.7209 107.597 33.8262 107.728 33.8262H110.975C111.106 33.8262 111.214 33.7209 111.214 33.588V19.4252C111.214 19.294 111.108 19.1872 110.975 19.1872V19.1862ZM109.37 12.7366C108.084 12.7366 107.041 13.7778 107.041 15.064C107.041 16.3509 108.084 17.3934 109.37 17.3934C110.657 17.3934 111.698 16.3509 111.698 15.064C111.698 13.778 110.654 12.7366 109.37 12.7366ZM137.813 23.7404C136.529 23.7404 135.528 22.7085 135.528 21.4554C135.528 20.2023 136.542 19.1586 137.826 19.1586C139.109 19.1586 140.11 20.1903 140.11 21.4424C140.11 22.6955 139.097 23.7404 137.813 23.7404ZM137.826 19.3858C136.654 19.3858 135.769 20.3161 135.769 21.4554C135.769 22.5942 136.649 23.512 137.813 23.512C138.984 23.512 139.869 22.5824 139.869 21.4424C139.869 20.3036 138.989 19.3858 137.826 19.3858ZM138.332 21.6773L138.979 22.5821H138.432L137.851 21.7521H137.352V22.5821H136.895V20.1837H137.963C138.523 20.1837 138.889 20.4689 138.889 20.9488C138.891 21.3421 138.663 21.5823 138.335 21.6773H138.332ZM137.946 20.5953H137.352V21.3538H137.946C138.242 21.3538 138.42 21.2086 138.42 20.9742C138.42 20.7274 138.242 20.5953 137.946 20.5953Z" fill="#1ED760" /></g><defs><clipPath id="clip0_201_8180"><rect fill="white" height={48} width={140} /></clipPath></defs></svg></div>
@@ -99,7 +99,7 @@ const Index = (props: Props) => {
         <div className="text-center max-w-xl mx-auto">
             <div>
                 <p className="text-black font-extrabold tracking-tight lg:text-4xl text-3xl mt-2">More Than Payments and Subscriptions</p>
-                <p className="text-slate-500 text-base max-w-xl lg:mx-auto mt-4">Simplify your lifestyle and cross-border experiences and unlock a world of possibilities with Payscribe</p>
+                <p className="text-slate-500 text-base max-w-xl lg:mx-auto mt-4">Simplify your lifestyle payments and cross-border experiences.<br />Unlock the world of possibilities with Payscribe</p>
             </div>
         </div>
         <dl className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 md:grid-cols-2">
@@ -108,17 +108,17 @@ const Index = (props: Props) => {
                     <div className="lg:text-left p-8 pb-0">
                     <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3">Cross-border Payment</span>
                         <p className="font-semibold text-xl md:text-2xl lg:text-3xl">Send GBP, USG, EUR</p>
-                        <p className="text-slate-500 mt-2 text-sm">Obtaining access to intermediaries facilitating global payments in Africa (and other emerging markets) for USD, EUR, CNY and GBP can be challenging due to limited availability. However, we are here to bridge that gap. With our services, your payments are guaranteed round-the-clock, providing you with peace of mind.</p>
+                        <p className="text-slate-500 mt-2">We made it easy for individual and businesses and other financial institutions to make global payments in over 20 currencies including USD, EUR and GBP. </p>
                     </div>
-                    <div className="mt-[5.5rem]"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox1.png" /></div>
+                    <div className="mt-12"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox1.png" /></div>
                 </div>
             </a>
             <a href="#">
                 <div className="overflow-hidden h-full bg-slate-100 rounded-[2rem]">
                     <div className="lg:text-left p-8 pb-0">
-                    <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3"> Pay Bills</span>
+                    <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3"> Bill Payments</span>
                         <p className="font-semibold text-xl md:text-2xl lg:text-3xl">Local and International</p>
-                        <p className="text-slate-500 mt-2 text-sm">Managing your essential expenses has never been easier. Whether it's topping up your airtime and data, paying your electricity bills, renewing your cable subscription, sending bulk SMS, or converting airtime to cash, we've got you covered both locally and internationally. Say goodbye to the hassle of multiple platforms and long queues. Our seamless and secure platform allows you to conveniently handle all your bill payments in one place.</p>
+                        <p className="text-slate-500 mt-2 text">Location is not a barrier, make bills payment and subscriptions – Airtime, Internet data, electricity, and lots more across. Pay bills to over to over 120 countries and counting.</p>
                     </div>
                     <div className="mt-12"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox2.png" /></div>
                 </div>
@@ -128,9 +128,9 @@ const Index = (props: Props) => {
             <a href="#">
                 <div className="overflow-hidden h-full bg-slate-100 rounded-[2rem]">
                     <div className="lg:text-left p-8 pb-0">
-                    <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3"> Save</span>
+                    <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3"> Payscribe Vault</span>
                         <p className="font-semibold text-xl md:text-2xl lg:text-3xl">Savings with interest</p>
-                        <p className="text-slate-500 mt-2 text-sm">Body Our innovative savings service offers you the opportunity to grow your money with an impressive annual interest rate of up to 15%. Whether you're saving for a dream vacation, a down payment on a home, or simply building an emergency fund, Payscribe Savings is here to help you achieve your goals. With our secure and user-friendly platform, you can easily deposit funds, track your savings progress, and watch your money grow. Money withdrawal anytime, any day.</p>
+                        <p className="text-slate-500 mt-2 text">Our innovative savings service offers you an automated daily, weekly, monthly savings with upto 15% Interest P.A. Let your money works for you.</p>
                     </div>
                     <div className="mt-12"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox1.png" /></div>
                 </div>
@@ -140,9 +140,9 @@ const Index = (props: Props) => {
                     <div className="lg:text-left p-8 pb-0">
                     <span className="inline-flex text-left items-center rounded-md bg-[#e8f1ff] px-2 py-1 text-xs font-medium text-primary2 ring-1 ring-inset ring-primary2 mb-5 mt-3"> Detailed Analysis</span>
                         <p className="font-semibold text-xl md:text-2xl lg:text-3xl">Be Financially Informed</p>
-                        <p className="text-slate-500 mt-2 text-sm">Our inbuilt powerful tool empowers you to create and manage budgets with ease. Gain a clear understanding of your income, expenses, and savings goals, allowing you to make smarter financial decisions. Track your spending, set personalized budget categories, and receive real-time insights into your financial health.</p>
+                        <p className="text-slate-500 mt-2 text">Our inbuilt powerful tool empowers you to create and manage budgets with ease. Gain a clear understanding of your income, expenses, and savings goals, allowing you to make smarter financial decisions. Track your spending, set personalized budget categories, and receive real-time insights into your financial health.</p>
                     </div>
-                    <div className="mt-[5.5rem]"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox2.png" /></div>
+                    <div className="mt-12"><img alt="" src="https://semplice.lexingtonthemes.com/assets/phonebox2.png" /></div>
                 </div>
             </a>
         </dl>
@@ -202,68 +202,53 @@ const Index = (props: Props) => {
   <div className="items-center 2xl:max-w-7xl max-w-6xl md:px-12 mx-auto px-8 py-32">
   <div className=" mb-[5rem]"><h1 className="text-gray-900 text-xl md:text-2xl lg:text-4xl font-bold mb-4 xxs:text-5xl text-center">Who can use Payscribe</h1><p className="mx-auto w-[90%] sm:w-[40%] text-center  text-md text-secondary1">Payscribe is specially crafted to meet all your daily essential payments. This makes it easy for business and personal use.</p></div>
     <div className="grid gap-12 grid-cols-1 lg:gap-10 lg:space-y-0 sm:grid-cols-2 lg:grid-cols-3">
-      <a href="#" className="group" title="Businesses">
+      <div className="group" title="Businesses">
         <article className="h-full flex-1">
-          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Businesses" className="h-full object-cover aspect-[384/246] bg-center" src={business} /></div>
+          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Businesses" style={{height: "225px"}} className="h-full object-cover aspect-[384/246] bg-center" src={business} /></div>
           <div className="w-full p-4 -mt-12 flex flex-1 flex-col items-start justify-between">
             <div className="w-full p-4 bg-wood-100">
               <div>
                 <p className="font-bold text-black text-lg">Businesses</p>
               </div>
-              <p className="text-slate-600 font-serif line-clamp-2 mt-2 text-xs">Payscribe empowers businesses with seamless local and international payment solutions. Simplify your financial operations and streamline bills payment processes. Expand your business globally, save time, and make smarter decisions. Experience the power of Payscribe for efficient payments and business growth.</p>
+              <p className="text-slate-600 line-clamp-2 mt-2 text-xs">Payscribe empowers businesses with seamless local and international payment solutions. Simplify your financial operations and streamline bills payment processes. Expand your business globally, save time, and make smarter decisions. Experience the power of Payscribe for efficient payments and business growth.</p>
             </div>
-            <footer className="px-4">
-              <div className="items-center inline-flex space-x-1 mt-8">
-              <p className="font-medium text-primary2 text-xs">Read More</p><span aria-hidden="true">·</span>
-                {/* <div className="flex text-gray-500 text-xs"><time dateTime="Wed Jul 12">Wed Jul 12</time></div> */}
-              </div>
-            </footer>
+       
           </div>
         </article>
-      </a>
-      <a href="#" className="group" title="Startups/Fintech">
+      </div>
+      <div className="group" title="Startups/Fintech">
         <article className="h-full flex-1">
-          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Startups/Fintech" className="h-full object-cover aspect-[384/246] bg-center" src={startup} /></div>
+          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Startups/Fintech" style={{height: "225px"}} className="h-full object-cover aspect-[384/246] bg-center" src={startup} /></div>
           <div className="w-full p-4 -mt-12 flex flex-1 flex-col items-start justify-between">
             <div className="w-full p-4 bg-wood-100">
               <div>
                 <p className="font-bold text-black text-lg">Startups/Fintech</p>
               </div>
-              <p className="text-slate-600 font-serif line-clamp-2 mt-2 text-xs"> We have streamline financial operations for you, with our array of products and services, making transactions faster, more efficient, and very much secure. Seamlessly handle cross-border payments, enabling your business to grow and expand globally with ease.</p>
+              <p className="text-slate-600 line-clamp-2 mt-2 text-xs"> We have streamline financial operations for you, with our array of products and services, making transactions faster, more efficient, and very much secure. Seamlessly handle cross-border payments, enabling your business to grow and expand globally with ease.</p>
             </div>
-            <footer className="px-4">
-              <div className="items-center inline-flex space-x-1 mt-[3rem]">
-              <p className="font-medium text-primary2 text-xs">Read More</p><span aria-hidden="true">·</span>
-                {/* <div className="flex text-gray-500 text-xs"><time dateTime="Tue Jul 18">Tue Jul 18</time></div> */}
-              </div>
-            </footer>
+          
           </div>
         </article>
-      </a>
-      <a href="#" className="group" title="Personal Use">
+      </div>
+      <div className="group" title="Personal Use">
         <article className="h-full flex-1">
-          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Personal Use" className="h-full object-cover aspect-[384/246] bg-center" src={personal} /></div>
+          <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Personal Use" style={{height: "225px"}} className="h-full object-cover aspect-[384/246] bg-center" src={personal} /></div>
           <div className="w-full p-4 -mt-12 flex flex-1 flex-col items-start justify-between">
             <div className="w-full p-4 bg-wood-100">
               <div>
                 <p className="font-bold text-black text-lg">Personal Use</p>
               </div>
-              <p className="text-slate-600 font-serif line-clamp-2 mt-2 text-xs">Discover a new level of convenience and flexibility with Payscribe, you can rely on Payscribe for all your local and international payment needs. Whether it's shopping online, sending money to loved ones across borders, or paying your bills both locally and internationally, Payscribe simplifies the process. </p>
+              <p className="text-slate-600 line-clamp-2 mt-2 text-xs">Discover a new level of convenience and flexibility with Payscribe, you can rely on Payscribe for all your local and international payment needs. Whether it's shopping online, sending money to loved ones across borders, or paying your bills both locally and internationally, Payscribe simplifies the process. </p>
             </div>
-            <footer className="px-4">
-              <div className="items-center inline-flex space-x-1 mt-8">
-                <p className="font-medium text-primary2 text-xs">Read More</p><span aria-hidden="true">·</span>
-                {/* <div className="flex text-gray-500 text-xs"><time dateTime="Sun Jul 23">Sun Jul 23</time></div> */}
-              </div>
-            </footer>
+            
           </div>
         </article>
-      </a>
+      </div>
     </div>
   </div>
 </section>
 
-<div id="services" className="section bg-[#ecf5ff] mb-[-80px] relative pt-6 pb-8 md:pt-16 md:pb-0 bg-white">
+<div id="services" className="section bg-[#ecf5ff] mb-[-80px] relative pt-6 pb-8 md:pt-16 md:pb-16 bg-white">
   <div className="container xl:max-w-6xl mx-auto px-4">
     {/* Heading start */}
     <header className="text-center mx-auto mb-12 lg:px-20">
@@ -312,7 +297,7 @@ const Index = (props: Props) => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Bill Payments</h3>
-          <p className="text-gray-500 text-xs"> Don’t be caught unaware, pay your Cable, Electricity bill, and with Payscribe auto-renewal system, be assured of getting value at the set time.</p>
+          <p className="text-gray-500 text-xs">We pride to say we are AWS Lifestyles bills payment. Pay all your bills including insurance, cable subscriptions, electricity, transportation and get amazing cashbacks</p>
         </div>
         {/* end service block */}
       </div>
@@ -327,7 +312,7 @@ const Index = (props: Props) => {
             </svg>
           </div>
           <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Airtime to Cash</h3>
-          <p className="text-gray-500 text-xs">We know how it feels, Payscribe got you cover. Convert that erroneously loaded airtime to instant cash at an equivalent value.</p>
+          <p className="text-gray-500 text-xs">If feels bad when you mistakenly load airtime that was above your budget. Conveniently convert that erroeously loaded airtime to instant cash.</p>
         </div>
         {/* end service block */}
       </div>
@@ -340,8 +325,8 @@ const Index = (props: Props) => {
               <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
             </svg>
           </div>
-          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Budget &amp; Marketing</h3>
-          <p className="text-gray-500 text-xs">This is a wider card with supporting text below as a natural content.</p>
+          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Budgeting</h3>
+          <p className="text-gray-500 text-xs">Payscribe AI helps you to organize your spending, track how and what you are spending on in other to be more financially informed. Take ultimate control of your money.</p>
         </div>
         {/* end service block */}
       </div>
@@ -354,8 +339,8 @@ const Index = (props: Props) => {
               <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
             </svg>
           </div>
-          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Optimize conversions</h3>
-          <p className="text-gray-500 text-xs">This is a wider card with supporting text below as a natural content.</p>
+          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">Automated</h3>
+          <p className="text-gray-500 text-xs">With Payscribe automation you can focus on things that matters to you, set a renewal on bills payment and let our AI do the magic.</p>
         </div>
         {/* end service block */}
       </div>
