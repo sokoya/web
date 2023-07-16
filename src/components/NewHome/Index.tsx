@@ -207,7 +207,7 @@ const Index = (props: Props) => {
           <div className="w-full block lg:col-span-2" style={{border: "5px solid #3362b0"}}><img alt="Businesses" style={{height: "225px"}} className="h-full object-cover aspect-[384/246] bg-center" src={business} /></div>
           <div className="w-full p-4 -mt-12 flex flex-1 flex-col items-start justify-between">
             <div className="w-full p-4 bg-wood-100">
-              <div>
+              <div> 
                 <p className="font-bold text-black text-lg">Businesses</p>
               </div>
               <p className="text-slate-600 line-clamp-2 mt-2 text-xs">Payscribe empowers businesses with seamless local and international payment solutions. Simplify your financial operations and streamline bills payment processes. Expand your business globally, save time, and make smarter decisions. Experience the power of Payscribe for efficient payments and business growth.</p>
