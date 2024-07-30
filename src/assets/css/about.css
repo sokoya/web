@@ -1,0 +1,63 @@
+.abt-hero {
+    background: #F4F8FC;
+    background: #000;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.abt-hero h3 {
+    font-size: 4.5rem;
+    width: 100%;
+    color: #082552;
+    margin-bottom: 15px;
+    padding-top: 5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.abt-hero p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.abt-hero .abt-hero-text {
+    width: 60%;
+    margin: 0px auto;
+    display: block;
+}
+
+
+/* abt-text-body */
+.abt-text-body {
+    background: #F4F8FC;
+}
+
+.abt-text-body .abt-header-text {
+    /* background: ; */
+}
+
+.div-text-box {
+    background: #fff;
+    padding: 50px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 26px 30px -14px rgba(0,102,245,.08);
+}
+
+.div-text-box img {
+    margin-bottom: 50px;
+}
+
+.div-text-box h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.div-text-box p {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
