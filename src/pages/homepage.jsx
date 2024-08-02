@@ -431,23 +431,25 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="join-us">
-                    <div className="grid-2">
-                        <div>
-                            <h3>Start Building Today</h3>
-                            <p>Sign up in seconds and start processing payments right away! Alternatively, our
-                                experts are here to help you craft a tailored payment solution that perfectly suits your
-                                business needs - just reach out to us!.</p>
-                            <div className="flex-div">
-                                <Link className="btn btn-accent" to="">Start Building <img src={ArrowRightMain} alt="arrow right" /></Link>
-                                <Link className="btn btn-gray-border" to="">Contact Sales <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
+                <div className="container">
+                    <div className="join-us">
+                        <div className="grid-2">
+                            <div>
+                                <h3>Start Building Today</h3>
+                                <p>Sign up in seconds and start processing payments right away! Alternatively, our
+                                    experts are here to help you craft a tailored payment solution that perfectly suits your
+                                    business needs - just reach out to us!.</p>
+                                <div className="flex-div">
+                                    <Link className="btn btn-accent" to="">Start Building <img src={ArrowRightMain} alt="arrow right" /></Link>
+                                    <Link className="btn btn-gray-border" to="">Contact Sales <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                        </div>
-                        <div>
-                            <div className="phone-block">
-                                <img src={PhoneImg} className="phone" alt="Phone" />
+                            <div>
+                            </div>
+                            <div>
+                                <div className="phone-block">
+                                    <img src={PhoneImg} className="phone" alt="Phone" />
+                                </div>
                             </div>
                         </div>
                     </div>

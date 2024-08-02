@@ -9,15 +9,15 @@ const Footer = props => {
     const { control } = useForm({});
     return (
         <div className={`${props.noMargin ? "no-margin" : ""} footer`}>
-            <div className="cover-div">
+            <div className="contain">
                 <div className="grid-4-bias">
                     <div className="logo-div">
                         <div className="div-logo">
                             <img src={Logo} alt="logo" className="logo" />
                             <h2 className="logo-title">Payscribe</h2>
                         </div>
-                        <p>Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for 
-                            seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available 
+                        <p>Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for
+                            seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available
                             for individuals.</p>
                         {/* <p>Building the world-class technology that digitalize cash payments and provides daily essentials financial
                             services all at your finger tips.</p> */}
@@ -109,16 +109,10 @@ const Footer = props => {
                         </div>
                     </div>
                 </div>
-                <div className="grid-flex mt_2">
-                    <div>
-                        <div className="desktop-only">
+                <div className="grid-flex mt_2" style={{ alignItems: "flex-end" }}>
+                    {/* <div>
                             <p>95 Oreta Road Tipper Garage. Ikorodu. Lagos State</p>
-                            {/* <p>Plot 7A, Block 4, <br /> Admirality Road, <br />Lekki Phase 1, Lagos State.</p> */}
-                        </div>
-                        <div className="mobile-only">
-                            <p>Plot 7A, Block 4, Admirality Road,Lekki Phase 1, Lagos State.</p>
-                        </div>
-                    </div>
+                    </div> */}
                     <div>
                         <div className="social-box">
                             <div>

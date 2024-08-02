@@ -111,12 +111,11 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    width: 70%;
     margin: 0px auto;
     margin-top: 5%;
     display: block;
     padding: 3% 3%;
-    /* padding-bottom: 0%; */
+    width: calc(100% - 6%);
 }
 
 .join-us .grid-2-bias {

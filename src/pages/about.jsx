@@ -5,11 +5,12 @@ import Navigation from "../components/nav";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 
-import Iconbar from "../assets/images/homepage/new/cowry.png";
+import Iconbar from "../assets/images/_1.svg?react";
+import BusinessImgg from "../assets/images/homepage/new/paystack.jpg";
 
 const AboutUsPage = () => {
     return (
-        <div>
+        <div className="about-page">
             <Navigation />
             <div className="abt-hero">
                 <div className="cover-div">
@@ -41,7 +42,7 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                         <div className="div-text-box">
@@ -49,7 +50,7 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                         <div className="div-text-box">
@@ -57,7 +58,7 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                         <div className="div-text-box">
@@ -65,7 +66,7 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                         <div className="div-text-box">
@@ -73,7 +74,7 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                         <div className="div-text-box">
@@ -81,18 +82,43 @@ const AboutUsPage = () => {
                                 <img src={Iconbar} alt="" />
                             </div>
                             <h4>Regular Savings</h4>
-                            <p>From budgeting and saving to investing and managing expenses, we provide the 
+                            <p>From budgeting and saving to investing and managing expenses, we provide the
                                 tools and support necessary to help you achieve financial success save money.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="abt-body">
+            <div className="abt-body mt_5">
                 <div className="cover-div">
                     <div className="grid-2">
                         <div>
+                            <p className="text-top-tag">OUR PRODUCT OFFERINGS</p>
+                            <h4 className="sect-title">Full Comprehensive Financial <br /> Solutions for You</h4>
+                            <p>Payscribe offers a wide range of financial solutions tailored to your needs. From
+                                budgeting and saving to investing and managing expenses, we provide the tools and support necessary to help you
+                                achieve financial success. Whether you’re just starting out or looking to optimize your finances, we’re here to
+                                assist you every step of the way.</p>
+                            <div className="mt_5">
+                                <ul className="break">
+                                    <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Send / Receive Payments</li>
+                                    <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> USD/NGN cards for transactions</li>
+                                    <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Bill Managements</li>
+                                    <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Airtime to Cash</li>
+                                    <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Track your Expenses</li>
+                                    <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Cross-platform support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
                             <div className="img-block">
-                                {/* <img src={BusinessImgg} className="internal" alt="" /> */}
+                                <img src={BusinessImgg} className="internal" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grid-2 mt_5">
+                        <div>
+                            <div className="img-block">
+                                <img src={BusinessImgg} className="internal" alt="" />
                             </div>
                         </div>
                         <div>
@@ -103,7 +129,7 @@ const AboutUsPage = () => {
                                 achieve financial success. Whether you’re just starting out or looking to optimize your finances, we’re here to
                                 assist you every step of the way.</p>
                             <div className="mt_5">
-                                <ul>
+                                <ul className="break">
                                     <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Send / Receive Payments</li>
                                     <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> USD/NGN cards for transactions</li>
                                     <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Bill Managements</li>
@@ -111,9 +137,6 @@ const AboutUsPage = () => {
                                     <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Track your Expenses</li>
                                     <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Cross-platform support</li>
                                 </ul>
-                            </div>
-                            <div className="mt_10">
-                                <Link style={{ width: "max-content" }} to="" className="btn btn-main">Create an Account For Free</Link>
                             </div>
                         </div>
                     </div>

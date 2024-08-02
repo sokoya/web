@@ -1,3 +1,7 @@
+.about-page {
+    background: #fff;
+}
+
 .abt-hero {
     background: #F4F8FC;
     background: #000;
@@ -16,7 +20,14 @@
     margin-bottom: 15px;
     padding-top: 5rem;
     color: #fff;
+    line-height: 1;
     text-transform: capitalize;
+    background: linear-gradient(to bottom right, transparent 50%, #FFE27C 50%), linear-gradient(#FFE27C, #FFE27C), linear-gradient(to top left, transparent 50%, #FFE27C 50%);
+    background-repeat: no-repeat;
+    -webkit-background-size: 16px 64px, calc(100% - 32px) 64px, 16px 64px;
+    background-size: 16px 64px, calc(100% - 32px) 64px, 16px 64px;
+    -webkit-background-position: left center, center, right;
+    background-position: left center, center, right;
 }
 
 .abt-hero p {
@@ -45,7 +56,7 @@
     background: #fff;
     padding: 50px 30px 30px;
     border-radius: 8px;
-    box-shadow: 0 26px 30px -14px rgba(0,102,245,.08);
+    box-shadow: 0 26px 30px -14px rgba(0, 102, 245, .08);
 }
 
 .div-text-box img {
@@ -60,4 +71,369 @@
 .div-text-box p {
     font-size: 1.5rem;
     margin-bottom: 5px;
+}
+
+.abt-body img {
+    width: 100%;
+    height: 100%;
+}
+
+.abt-body .grid-2 {
+    grid-gap: 40px;
+}
+
+.abt-body .grid-2 ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 2.8;
+}
+
+ul.break {
+    column-count: 2;
+    column-gap: 0rem;
+}
+
+
+/* airtime-hero */
+.airtime-hero {
+    background: #C7E2FE;
+    height: 700px;
+    /* display: flex;
+    align-items: center; */
+    background: #00200E;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.airtime-hero .hero-gradient-bar {
+    background: url("../images/homepage/new/sprout-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.airtime-hero .airtime-hero-text {
+    z-index: 2;
+}
+
+.airtime-hero h2 {
+    font-size: 7rem;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+    font-weight: 800;
+    word-spacing: -5px;
+    margin-bottom: 20px;
+    /* text-transform: capitalize; */
+}
+
+.airtime-hero p {
+    font-size: 1.6rem;
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.airtime-hero .button-flex {
+    margin: 0px auto;
+    width: max-content;
+}
+
+.product-page .airtime-hero img {
+    width: auto;
+    height: 2.5rem;
+}
+
+.airtime-hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.airtime-hero .grid-2 {
+    align-items: center;
+    height: 100%;
+}
+
+.airtime-hero .img-bar {
+    position: relative;
+    height: 100%;
+}
+
+.airtime-hero .cover-div {
+    width: 100%;
+    height: 100%;
+}
+
+.airtime-hero .img-bar .svg {
+    position: absolute;
+    z-index: 1;
+    /* height: 100rem; */
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+.airtime-hero .img-bar .main-img {
+    z-index: 2;
+    position: relative;
+}
+
+.product-page img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-page .airtime-props .grid-2.main {
+    display: flex;
+    align-items: center;
+    grid-gap: 100px;
+}
+
+.product-page .airtime-props {
+    /* background: #FFFBF4; */
+}
+
+.product-page .airtime-props .grid-2 p {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.product-page .airtime-props .grid-2 h3 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.product-page .airtime-props p.tool-tag {
+    margin-bottom: 15px;
+}
+
+
+.product-page .simple-props {
+    background: #FEF5E6;
+    background: #FFFCF9;
+    background: #F3F5F7;
+    padding: 40px 30px 30px;
+    border-radius: 8px;
+}
+
+.product-page .simple-props {
+    grid-gap: 40px;
+}
+
+.product-page .simple-props h4 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.product-page .simple-props p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.product-page .simple-props img {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+}
+
+.product-page .simple-props._2 img {
+    width: 60%;
+}
+
+.product-page .airtime-props.main-div .grid-2 {
+    grid-gap: 35px;
+}
+
+.product-page .airtime-props.main-div img {
+    width: 60%;
+}
+
+.product-page .airtime-props.main-div h4 {
+    font-size: 4rem;
+    font-size: 2.2rem;
+}
+
+
+.story-div {
+    background: #1B1B1B;
+}
+
+.story-div .grid-2 {
+    align-items: center;
+}
+
+.story-div p {
+    color: rgb(250, 244, 238);
+}
+
+.story-div h4.sect-title {
+    color: rgb(250, 244, 238);
+}
+
+.story-div ul li {
+    color: rgb(250, 244, 238);
+    font-size: 1.3rem;
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.product-page .story-div .simple-props {
+    background: #272727;
+}
+
+.product-page .story-div .simple-props h4 {
+    color: rgb(250, 244, 238);
+}
+
+.payscribe-display-control ul {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.payscribe-display-control {
+    border-bottom: 2px solid #DAD7D1;
+}
+
+.payscribe-display-control ul li {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0px 20px 20px;
+    font-weight: 600;
+}
+
+.payscribe-display-control ul li.active {
+    border-bottom: 5px solid #B3ABA4;
+    font-weight: 800;
+}
+
+.payscribe-display-box {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 40px;
+}
+
+.payscribe-display-box .payscribe-display-summary {
+    background: #FEF5E6;
+    padding: 5% 30px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.payscribe-display-box .payscribe-display-summary p {
+    margin-bottom: 40px;
+}
+
+.payscribe-display-box .payscribe-display-summary h4 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.payscribe-display-box .payscribe-display-summary button {
+    border: 2px solid #D9D2C5;
+    color: #000;
+    border-radius: 50px;
+}
+
+.center-div {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+.center-div h3 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.center-div p {
+    font-size: 1.6rem;
+}
+
+.center-div p.tag {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-control {
+    border: 2px solid #EBEBEB;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-control ion-icon {
+    font-size: 2rem;
+}
+
+.mobile-testimonial .testimonial-header h3 {
+    font-size: 3rem;
+}
+
+.mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body h4 {
+    font-size: 1.6rem;
+}
+
+.mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body .grid-flex {
+    margin-bottom: 10px;
+}
+
+.solution {
+    width: 70% !important;
+    margin: 0px auto;
+    display: block;
+}
+
+.button-arrow {
+    width: 2rem !important;
+}
+
+.question-box {
+    border: 2px solid #F1ECDF;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.answer-box {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+}
+
+.answer-box .question-box h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.answer-box .question-box ion-icon {
+    font-size: 2rem;
+}
+
+.answer-box .question-box:last-child {
+    margin-bottom: 0px;
 }
