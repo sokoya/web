@@ -34,17 +34,29 @@
 
 @font-face {
     font-family: "Nunito Sans Extra Bold";
-    src: url("../fonts/nunito_sans/NunitoSans_7pt-Black.ttf");
+    src: url("../fonts/nunito-sans/NunitoSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans Regular";
+    src: url("../fonts/nunito-sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans Bold";
+    src: url("../fonts/nunito-sans/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans Bold";
+    src: url("../fonts/nunito-sans/NunitoSans-ExtraBold.ttf");
 }
 
 
 body,
 html {
     box-sizing: border-box;
-    font-family: "Freestyle Font Semi-Bold";
     font-family: "Nunito Sans", sans-serif;
-    /* font-family: "Nunito Sans Medium"; */
-    font-weight: normal;
     font-weight: 500;
     font-size: 10px;
     overflow-x: hidden;
@@ -52,9 +64,10 @@ html {
     margin: 0px auto;
     display: block;
     background: #FFFCF9;
-    background: #FAFAFA;
-    background: #FFFCF9;
     color: #1a2b3b;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-stroke: 1px transparent;
+    text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -65,11 +78,6 @@ h5,
 h6,
 button {
     font-family: "Nunito Sans", sans-serif;
-    /* font-family: "Nunito Sans Extra Bold"; */
-    /* font-weight: normal; */
-    /* font-weight: 700;
-    font-weight: normal; */
-    font-weight: 900;
     color: #1a2b3b;
 }
 
@@ -97,6 +105,10 @@ p {
 /* layout */
 .mt_5 {
     margin-top: 5%;
+}
+
+.mt_8 {
+    margin-top: 8%;
 }
 
 .py_5 {
@@ -180,12 +192,27 @@ p {
 }
 
 .btn img {
+    height: 2rem !important;
+    width: auto !important;
+}
+
+.btn img {
     height: 2rem;
     transform: rotate(-30deg);
     transition: transform .3s ease-in-out;
 }
 
+.btn ion-icon {
+    font-size: 2.5rem;
+    transform: rotate(-30deg);
+    transition: transform .3s ease-in-out;
+}
+
 .btn:hover img {
+    transform: unset;
+}
+
+.btn:hover ion-icon {
     transform: unset;
 }
 
@@ -209,6 +236,16 @@ p {
     color: #000;
     color: #fff;
 }
+
+.btn-border-main {
+    background: #88F157;
+    border: 2px solid #88F157;
+    background: transparent;
+    border: 2px solid #0357EE;
+    color: #000;
+    color: #0357EE;
+}
+
 
 .btn-main ion-icon {
     color: #fff;
@@ -559,10 +596,12 @@ p {
 
 .ant-dropdown-menu {
     background: #050505 !important;
+    background: #FFFCF9 !important;
 }
 
 .ant-dropdown-menu .ant-dropdown-menu-item a {
     color: rgb(253, 253, 253) !important;
+    color: #101113 !important;
 }
 
 .ant-drawer-header {
@@ -633,6 +672,18 @@ p {
         margin-top: 20%;
     }
 
+    .pt_5 {
+        padding-top: 20%;
+    }
+
+    .mt_3 {
+        margin-top: 9%;
+    }
+
+    .pt_3 {
+        padding-top: 9%;
+    }
+
     .py_5 {
         padding-top: 20%;
         padding-bottom: 20%;
@@ -690,7 +741,6 @@ p {
     .nav-drawer .ant-drawer-body ul li a {
         color: #eff0f6;
         color: #111;
-        color: rgb(253, 253, 253);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -714,8 +764,7 @@ p {
 
     .nav-drawer .ant-drawer-body {
         background: #000;
-        background: #F5FCFF;
-        background: #050505;
+        background: #FFFCF9;
     }
 
     .drawer-nav-block {
@@ -764,4 +813,29 @@ p {
     .hero-section .hero-img-cover .arr-left {
         display: none;
     }
+
+    .nav-footer {
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+    }
+
+    .nav-main-list {
+        position: relative;
+        height: 80%;
+    }
+
+    .nav-main-list .nav-footer a {
+        width: calc(100% - 60px);
+        text-align: center;
+    }
+}
+
+.navigation ul li a {
+    /* color: #000; */
+    font-size: 1.4rem;
+}
+
+.div-logo h2.logo-title {
+    /* color: #000; */
 }

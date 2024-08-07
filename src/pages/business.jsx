@@ -59,7 +59,7 @@ const BusinessPage = () => {
     }
 
     return (
-        <div className="">
+        <div className="businesses">
             <div className="product-page">
                 <Navigation />
                 <div className="airtime-hero">
@@ -76,129 +76,45 @@ const BusinessPage = () => {
                     </div>
                     <div className="hero-gradient-bar"></div>
                 </div>
-                <div className="mobile-testimonial mt_5">
+                <div className="company-testimonial mt_5">
                     <div className="cover-div">
-                        <div className="testimonial-header grid-flex">
-                            <h3>Loved by engineering <br /> teams around the world</h3>
+                        <div className="grid-2">
                             <div>
-                                <div className="button-flex">
-                                    <div className="testimonial-control">
-                                        <ion-icon name="arrow-back-outline"></ion-icon>
-                                    </div>
-                                    <div className="testimonial-control">
-                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                <h3>$10 billion strong: Deel leads the industry in global payroll payments</h3>
+                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
+                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
+                                <Link className="btn btn-main" to="">Reach out to us</Link>
+                            </div>
+                            <div>
+                                <div className="companies-list">
+                                    <div className="grid-4">
+                                        <div className="company-box border-bottom">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box border-bottom">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box border-bottom">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box border-bottom border-none">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box">
+                                            <div className="company-img"></div>
+                                        </div>
+                                        <div className="company-box border-none">
+                                            <div className="company-img"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <Divider />
-                        <div className="testimonial-bar">
-                            <Swiper
-                                centeredSlides={false}
-                                loop={false} breakpoints={breakpoints}>
-                                <SwiperSlide key={1}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={2}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={3}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={4}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={5}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={6}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
                         </div>
                     </div>
                 </div>
@@ -308,7 +224,7 @@ const BusinessPage = () => {
                             <p className="tag">immigration features</p>
                             <h3>One hub for immigration, <br /> payroll, and HR</h3>
                         </div>
-                        <div className="payscribe-display-control">
+                        <div className="payscribe-display-control mt_4">
                             <ul>
                                 <li className="active">Visa eligibility</li>
                                 <li>Visa eligibility</li>

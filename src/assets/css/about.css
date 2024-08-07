@@ -105,8 +105,24 @@ ul.break {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.businesses .airtime-hero {
     text-align: center;
     justify-content: center;
+}
+
+.airtime-hero h5 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.airtime-hero .cover-div {
+    display: flex;
+    align-items: center;
 }
 
 .airtime-hero .hero-gradient-bar {
@@ -124,35 +140,59 @@ ul.break {
 }
 
 .airtime-hero h2 {
-    font-size: 7rem;
+    font-size: 4rem;
     margin-bottom: 10px;
     color: #fff;
-    width: 80%;
-    margin: 0px auto;
     display: block;
     font-weight: 800;
     word-spacing: -5px;
     margin-bottom: 20px;
+    line-height: 1.4;
     /* text-transform: capitalize; */
+}
+
+.businesses .airtime-hero h2 {
+    font-size: 7rem;
+    width: 80%;
+    margin: 0px auto;
 }
 
 .airtime-hero p {
     font-size: 1.6rem;
-    width: 40%;
+    width: 100%;
     margin: 0px auto;
     display: block;
     color: #fff;
     margin-bottom: 30px;
 }
 
-.airtime-hero .button-flex {
+.businesses .airtime-hero p {
+    width: 40%;
+}
+
+.businesses .airtime-hero .button-flex {
     margin: 0px auto;
     width: max-content;
 }
 
-.product-page .airtime-hero img {
+.airtime-hero .block-bar {
+    background: #000;
+    height: 50rem;
+    width: 100%;
+    border-radius: 50%;
+    width: 50rem;
+    margin: 0px auto;
+    display: block;
+}
+
+.businesses .product-page .airtime-hero img {
     width: auto;
     height: 2.5rem;
+}
+
+.airtime-hero .grid-2 {
+    align-items: center;
+    grid-gap: 80px;
 }
 
 .airtime-hero img {
@@ -160,7 +200,7 @@ ul.break {
     height: 100%;
 }
 
-.airtime-hero .grid-2 {
+.businesses .airtime-hero .grid-2 {
     align-items: center;
     height: 100%;
 }
@@ -187,6 +227,9 @@ ul.break {
 .airtime-hero .img-bar .main-img {
     z-index: 2;
     position: relative;
+    width: 70%;
+    margin: 0px auto;
+    display: block;
 }
 
 .product-page img {
@@ -277,18 +320,44 @@ ul.break {
 
 .story-div p {
     color: rgb(250, 244, 238);
+    font-size: 1.5rem;
+}
+
+.story-div a {
+    color: rgb(250, 244, 238);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.story-div a ion-icon {
+    font-size: 2.5rem;
+}
+
+.story-div p.text-top-tag {
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .story-div h4.sect-title {
     color: rgb(250, 244, 238);
+    font-size: 4rem;
 }
 
 .story-div ul li {
     color: rgb(250, 244, 238);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     list-style: none;
     margin-bottom: 20px;
-    font-weight: 900;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.story-div ul li ion-icon {
+    font-size: 2rem;
 }
 
 .product-page .story-div .simple-props {
@@ -302,25 +371,47 @@ ul.break {
 .payscribe-display-control ul {
     display: flex;
     align-items: center;
-    width: 60%;
+    /* width: 60%; */
     justify-content: space-between;
     margin: 0px auto;
+    grid-gap: 30px;
 }
 
 .payscribe-display-control {
     border-bottom: 2px solid #DAD7D1;
 }
 
+
+.payscribe-display-control {
+    background: #FFFCF9;
+    background: transparent;
+    border: 2px solid #FFFCF9;
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.payscribe-display-control ul li a {
+    color: #000;
+}
+
 .payscribe-display-control ul li {
     font-size: 1.5rem;
     list-style: none;
-    padding: 0px 20px 20px;
+    padding: 15px 30px;
     font-weight: 600;
+    color: #000;
+    color: #FFFCF9;
 }
 
 .payscribe-display-control ul li.active {
-    border-bottom: 5px solid #B3ABA4;
+    background: #FFFCF9;
+    border: 1px solid #FFFCF9;
+    border-radius: 50px;
     font-weight: 800;
+    color: #000;
 }
 
 .payscribe-display-box {
@@ -346,11 +437,23 @@ ul.break {
     margin-bottom: 10px;
 }
 
-.payscribe-display-box .payscribe-display-summary button {
+.payscribe-display-box .payscribe-display-summary .summary-story {
+    display: none;
+}
+
+.payscribe-display-box .payscribe-display-summary .summary-story.active {
+    display: block;
+}
+
+.payscribe-display-box .business-img {
+    border-radius: 16px;
+}
+
+/* .payscribe-display-box .payscribe-display-summary button {
     border: 2px solid #D9D2C5;
     color: #000;
     border-radius: 50px;
-}
+} */
 
 .center-div {
     width: 40%;
@@ -390,12 +493,34 @@ ul.break {
     font-size: 2rem;
 }
 
+.testimonial-author-flex {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.testimonial-author-flex .author-div {
+    height: 60px;
+    width: 60px;
+    background: #082552;
+    border-radius: 50%;
+}
+
+.testimonial-author-flex img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .mobile-testimonial .testimonial-header h3 {
     font-size: 3rem;
 }
 
 .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
 .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body .grid-flex {
@@ -403,7 +528,7 @@ ul.break {
 }
 
 .solution {
-    width: 70% !important;
+    width: 55% !important;
     margin: 0px auto;
     display: block;
 }
@@ -436,4 +561,436 @@ ul.break {
 
 .answer-box .question-box:last-child {
     margin-bottom: 0px;
+}
+
+
+.why-summary .summary-bar {
+    border: 2px solid #DAD7D1;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.why-summary .summary-bar {
+    padding: 30px 20px;
+}
+
+.why-summary .summary-bar h4 {
+    font-size: 1.8rem;
+}
+
+.why-summary .summary-bar .summary-icon {
+    width: 100px;
+    height: 100px;
+    background: #DAD7D1;
+    border-radius: 50%;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.why-detail ul li {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.why-detail .why-card {
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+.why-detail .grid-2 {
+    grid-gap: 30px;
+}
+
+.width-60 {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.width-60.grid-2 {
+    grid-gap: 80px;
+}
+
+
+.company-testimonial h3 {
+    font-size: 3.5rem;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.company-testimonial p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.companies-list {
+    border: 2px solid #F2ECE6;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.companies-list .grid-4 {
+    grid-gap: 0px;
+}
+
+.companies-list .company-box .company-img {
+    height: 15rem;
+}
+
+.companies-list .company-box {
+    border-right: 2px solid #F2ECE6;
+}
+
+.companies-list .company-box.border-none {
+    border-right: none;
+}
+
+.companies-list .company-box.border-bottom {
+    border-bottom: 2px solid #F2ECE6;
+}
+
+.faq .grid-2-bias {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 80px;
+}
+
+.faq .answer-box {
+    width: 100%;
+}
+
+.faq-hero {
+    background: #000;
+    height: 45rem;
+}
+
+.faq-hero .faq-hero-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.faq-hero .faq-hero-text h2 {
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.faq-hero .faq-hero-text p {
+    color: rgb(153, 151, 145);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.faq-hero .faq-hero-text h5 {
+    color: rgb(153, 151, 145);
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.faq .faq-body h4 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-hero .grid-2 {
+    height: 100%;
+}
+
+.dashboard-copy {
+    background: #FFFCF9;
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 16px 0px 0px 0px;
+}
+
+.faq-hero-img {
+    position: relative;
+}
+
+
+/* airtime-hero */
+.airtime-hero {
+    background: #C7E2FE;
+    height: 650px;
+    background: #00200E;
+    background: #F4F8FC;
+    background: #1B1B1B;
+    position: relative;
+    display: block;
+    align-items: center;
+}
+
+.airtime-hero h2 {
+    /* color: #000; */
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    width: 80%;
+}
+
+.airtime-hero h5 {
+    /* color: #000; */
+    margin-bottom: 20px;
+    font-weight: 1000;
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+}
+
+.airtime-hero p {
+    /* color: #000; */
+    font-size: 1.5rem;
+    margin: unset;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.airtime-hero .grid-2 {
+    /* grid-template-columns: 1.5fr 1fr; */
+}
+
+.airtime-hero .cover-div {
+    position: relative;
+    width: calc(100% - 14%);
+}
+
+.airtime-hero .text-bar {
+    /* position: absolute; */
+    /* width: 45%; */
+    /* bottom: 10%; */
+}
+
+.airtime-hero .text-ba {
+    position: absolute;
+    bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.airtime-hero .text-ba .main-img {
+    width: 65%;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+}
+
+@media screen and (max-width: 720px) {
+    .center-div {
+        width: 100%;
+    }
+
+    .product-page .grid-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .story-div h4.sect-title {
+        font-size: 2.5rem;
+    }
+
+    .story-div .grid-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .story-div p {
+        font-size: 1.3rem;
+    }
+
+    .story-div .grid-2 .mt_5 {
+        margin-top: 3%;
+    }
+
+    .answer-box {
+        width: 100%;
+    }
+
+    .answer-box .grid-flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .airtime-hero .grid-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .airtime-hero .img-bar .main-img {
+        width: 70%;
+        display: none;
+    }
+
+    .airtime-hero {
+        height: 100%;
+        padding: 30% 0px 20%;
+    }
+
+    .airtime-hero h2 {
+        font-size: 2.8rem;
+        word-spacing: unset;
+        font-weight: 900;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    .airtime-hero h5 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        font-weight: 1000;
+    }
+
+    .airtime-hero p {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        width: 100%;
+    }
+
+    .detail-summary p.text-top-tag {
+        font-size: 1.2rem !important;
+    }
+
+    .detail-summary ul.break {
+        /* display: none; */
+        column-count: unset;
+    }
+
+    .mobile-testimonial .testimonial-header h3 {
+        font-size: 2.3rem;
+    }
+
+    .mobile-testimonial .testimonial-header .button-flex {
+        display: none;
+    }
+
+    .mobile-testimonial p {
+        font-size: 1.3rem;
+    }
+
+    .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body .grid-flex {
+        grid-gap: 0px;
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+    .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body h4 {
+        font-size: 1.4rem;
+    }
+
+    .product-page .simple-props {
+        padding: 30px 15px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .product-page .airtime-props.main-div h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+    }
+
+    .product-page .simple-props p {
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+    }
+
+    .product-page .airtime-props.main-div img {
+        width: 70%;
+    }
+
+    .center-div h3 {
+        font-size: 2.3rem;
+    }
+
+    .center-div p {
+        font-size: 1.3rem;
+    }
+
+    .answer-box .question-box h5 {
+        font-size: 1.3rem;
+    }
+
+    .question-box {
+        padding: 15px 15px;
+    }
+
+    .faq .center-div {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .payscribe-display-mobile-header {
+        border-bottom: 2px solid #FFFCF9;
+        margin-bottom: 20px;
+    }
+
+    .payscribe-display-mobile .ant-collapse-header-text {
+        font-size: 1.4rem;
+        padding-bottom: 5px;
+        color: #fff !important;
+    }
+
+    .payscribe-display-mobile .ant-collapse-header {
+        padding: 10px 0px !important;
+        border-bottom: 2px solid #FFFCF9;
+        border-radius: 0px !important;
+    }
+
+    .payscribe-display-mobile .ant-collapse-content-box {
+        padding: 30px 0px 0px !important;
+    }
+
+    .payscribe-display-mobile p {
+        color: #fff;
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .payscribe-display-mobile h4 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        width: 80%;
+        line-height: 1.6;
+    }
+
+    .payscribe-display-mobile img {
+        margin: 30px 0px;
+        border-radius: 8px;
+    }
+
+    .props-grid-display.mt_5 .grid-2 .mt_5 {
+        margin-top: 5%;
+    }
+
+    .solution {
+        width: 70% !important;
+        margin-bottom: 40px;
+    }
+
+    .airtime-hero .cover-div {
+        width: calc(100% - 10%);
+    }
+
+    .airtime-hero .text-ba {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        grid-gap: 50px;
+    }
+
+    .airtime-hero .text-ba .main-img {
+        width: 80%;
+    }
 }

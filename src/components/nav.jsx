@@ -52,59 +52,35 @@ const Navigation = props => {
         {
             key: '1',
             label: (
-                <Link to="/">
-                    Sell Giftcards
+                <Link to={AppRoutes.bills}>
+                    Pay Bills
                 </Link>
             ),
         },
         {
             key: '2',
             label: (
-                <Link to="/">
-                    Virtual Dollar (coming soon)
-                </Link>
-            ),
-        },
-        {
-            key: '3',
-            label: (
-                <Link to="/">
-                    Airtime to Cash
+                <Link to={AppRoutes.save_and_earn}>
+                    Save and Invest
                 </Link>
             ),
         },
         {
             key: '4',
             label: (
-                <Link to="/">
-                    Save and Earn
+                <Link to={AppRoutes.sell_giftcards}>
+                    Buy and Sell Giftcards
                 </Link>
             ),
         },
         {
             key: '5',
             label: (
-                <Link to="/">
-                    Events
+                <Link to={AppRoutes.handle_payments}>
+                    Send and Receive Payments
                 </Link>
             ),
         }
-        // {
-        //     key: '6',
-        //     label: (
-        //         <Link to="/">
-        //             Why Payscribe
-        //         </Link>
-        //     ),
-        // },
-        // {
-        //     key: '7',
-        //     label: (
-        //         <Link to="/">
-        //             How It Works
-        //         </Link>
-        //     ),
-        // }
     ];
 
     const developerItems = [
@@ -178,19 +154,122 @@ const Navigation = props => {
                                 <Dropdown
                                     menu={{
                                         items: solutionItems,
-                                    }}
-                                >
-                                    <Link to="/">Products</Link>
+                                    }}>
+                                    <div className="relative-bar">
+                                        <Link to="#">Products</Link>
+                                        {/* <div className="ps-dropdown-bar">
+                                        <div className="ps-dropdown-b">
+                                            <div className="nav-inline-list">
+                                                <div className="nav-inline-text-bar">
+                                                    <div className="nav-inline-text-box">
+                                                        <ul>
+                                                            <li>
+                                                                <Link to={AppRoutes.handle_payments}>
+                                                                    <div className="nav-inline-bar">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="telescope-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Handle Payments</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to={AppRoutes.sell_giftcards}>
+                                                                    <div className="nav-inline-bar _2">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="server-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Sell Giftcards</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to={AppRoutes.airtime_to_cash}>
+                                                                    <div className="nav-inline-bar _3">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="wallet-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Airtime to Cash</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to={AppRoutes.save_and_earn}>
+                                                                    <div className="nav-inline-bar _4">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="trophy-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Save and Earn</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to={AppRoutes.bills}>
+                                                                    <div className="nav-inline-bar _1">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="telescope-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Pay Bills</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                            <li>
+                                                                <Link to={AppRoutes.events}>
+                                                                    <div className="nav-inline-bar _2">
+                                                                        <div className="nav-inline-img-cover">
+                                                                            <ion-icon name="wine-outline"></ion-icon>
+                                                                        </div>
+                                                                        <div className="nav-inline-text-cover">
+                                                                            <div>
+                                                                                <h3>Events</h3>
+                                                                                <p>Get your Payscribe smart card for all payment types</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </Link>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div className="nav-side-img">
+                                                    <div className="nav-side-img-cover"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    </div>
+                                    {/* <div>
+
+                                    </div> */}
                                 </Dropdown>
                             </li>
                             <li>
-                                <Dropdown
-                                    menu={{
-                                        items: businessItems
-                                    }}
-                                >
-                                    <Link to="/">For Businesses</Link>
-                                </Dropdown>
+                                <Link to="#">For Businesses</Link>
                             </li>
                             <li>
                                 <Dropdown
@@ -198,7 +277,7 @@ const Navigation = props => {
                                         items: developerItems,
                                     }}
                                 >
-                                    <Link to="/">For Developers</Link>
+                                    <Link to="#">For Developers</Link>
                                 </Dropdown>
                             </li>
                             <li>
@@ -207,7 +286,7 @@ const Navigation = props => {
                                         items: companyItems,
                                     }}
                                 >
-                                    <Link to="/">Companies</Link>
+                                    <Link to="#">Companies</Link>
                                 </Dropdown>
                             </li>
                         </ul>
@@ -225,7 +304,7 @@ const Navigation = props => {
                 </div>
                 <div className="mobile-only">
                     <div
-                    // onClick={toggleMobileNavDisplay}
+                        onClick={toggleMobileNavDisplay}
                     >
                         {fixedNav ?
                             <img src={MenuBlackIcon} alt="menu" />
@@ -244,23 +323,26 @@ const Navigation = props => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="nav-main-list">
                     <ul className="mobile-nav">
                         <li className="mobile-nav-list">
                             <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
                                 to="/">Home</NavLink>
                         </li>
                         <li className="mobile-nav-list">
-                            <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
-                                to={AppRoutes.home}>Products</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? 'active' : ''}
+                                to="#">
+                                <div>
+                                    Products
+                                </div>
+                                <div>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </NavLink>
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
                                 to={AppRoutes.home}>For Businesses</NavLink>
-                        </li>
-                        <li className="mobile-nav-list">
-                            <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
-                                to={AppRoutes.home}>Gallery</NavLink>
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink onClick={e => {
@@ -274,7 +356,7 @@ const Navigation = props => {
                                 toggleMobileNavDisplay();
                                 e.preventDefault();
                             }} className={({ isActive }) => isActive ? 'active' : ''}
-                                to={AppRoutes.home}>Companies</NavLink>
+                                to={AppRoutes.home}>About Us</NavLink>
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink onClick={e => {
@@ -283,14 +365,27 @@ const Navigation = props => {
                             }} className={({ isActive }) => isActive ? 'active' : ''}
                                 to={AppRoutes.home}>Sign In</NavLink>
                         </li>
+                        {/* <li className="mobile-nav-list">
+                            <NavLink onClick={e => {
+                                toggleMobileNavDisplay();
+                                e.preventDefault();
+                            }} className={({ isActive }) => isActive ? 'active' : ''}
+                                to={AppRoutes.home}>Privacy Policies</NavLink>
+                        </li>
                         <li className="mobile-nav-list">
                             <NavLink onClick={e => {
                                 toggleMobileNavDisplay();
                                 e.preventDefault();
                             }} className={({ isActive }) => isActive ? 'active' : ''}
-                                to={AppRoutes.home}>Open a Free Account</NavLink>
-                        </li>
+                                to={AppRoutes.home}>Terms and Conditions</NavLink>
+                        </li> */}
                     </ul>
+                    {/* <div className="nav-footer">
+                        <Link to="" className="btn btn-border-main">Sign In</Link>
+                        <div className="mt_2">
+                            <Link to="" className="btn btn-main">Create a free account</Link>
+                        </div>
+                    </div> */}
                 </div>
             </Drawer>
         </div>

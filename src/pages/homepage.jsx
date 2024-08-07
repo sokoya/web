@@ -88,7 +88,7 @@ const Homepage = () => {
     }
 
     return (
-        <div>
+        <div className="homepag">
             <Navigation />
             <div className="homepage">
                 <div className="hero-section">

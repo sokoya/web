@@ -36,7 +36,7 @@ const AboutUsPage = () => {
                         <h4>Save money on your own terms</h4>
                         <p>With just one account, you can save in multiple different ways. How about that?</p>
                     </div>
-                    <div className="grid-3 mt_5">
+                    <div className="grid-2 width-60 mt_5">
                         <div className="div-text-box">
                             <div className="div-box-header">
                                 <img src={Iconbar} alt="" />

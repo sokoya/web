@@ -22,9 +22,13 @@ import ArrowRightGrayMain from "../../assets/images/arrow-up-right-gray.svg";
 
 import PhoneImg from "../../assets/images/homepage/phone.png";
 import SolutionImg from "../../assets/images/homepage/new/solution.webp";
+import TopImg from "../../assets/images/homepage/new/raenest.svg";
+
+import Vidyard from "../../assets/images/homepage/new/vidyard.webp";
 
 import { Link } from "react-router-dom";
 import { Divider, Rate } from "antd";
+import RatingsSlider from "../../components/swiper";
 
 const AirtimeToCashPage = () => {
 
@@ -62,146 +66,26 @@ const AirtimeToCashPage = () => {
             <div className="product-page">
                 <div className="airtime-hero">
                     <div className="cover-div">
-                        <div className="grid-2">
+                        <div className="text-ba">
                             <div className="text-bar">
-                                <h2>Providing global teams with equity has never been simpler</h2>
-                                <p>Easily offer equity to +110 countries compliantly. Deel simplifies taxes reporting, automates
-                                    admin, and oversees all compensation in one place.</p>
-                            </div>
-                            <div className="img-bar">
-                                <div>
-                                    <img src={_1Svg} className="svg" alt="" />
+                                <h5>Airtime to Cash</h5>
+                                <h2>Instant Airtime Conversion: Turn Your Unused Airtime into Cash</h2>
+                                <p>Easily convert your spare airtime into cash with just a few clicks. Our fast and secure
+                                    service ensures you get money in no time, so you can make the most of your unused airtime. Enjoy
+                                    the convenience and flexibility of having extra cash at your fingertips!</p>
+                                <div className="button-flex mt_3">
+                                    <Link className="btn btn-main" to="/">Open a Free Account <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
+                                    <Link className="btn btn-white" to="/">Reach out to us <img src={ArrowRightMain} alt="arrow right" /></Link>
                                 </div>
-                                <img src={_1} alt="" className="main-img" />
+                            </div>
+                            <div>
+                                <img src={Vidyard} className="main-img" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="mobile-testimonial mt_5">
-                    <div className="cover-div">
-                        <div className="testimonial-header grid-flex">
-                            <h3>Loved by engineering <br /> teams around the world</h3>
-                            <div>
-                                <div className="button-flex">
-                                    <div className="testimonial-control">
-                                        <ion-icon name="arrow-back-outline"></ion-icon>
-                                    </div>
-                                    <div className="testimonial-control">
-                                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <Divider />
-                        <div className="testimonial-bar">
-                            <Swiper
-                                centeredSlides={false}
-                                loop={false} breakpoints={breakpoints}>
-                                <SwiperSlide key={1}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={2}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={3}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={4}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={5}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide key={6}>
-                                    <div className="testimonial-card">
-                                        <div className="testimonial-card-body">
-                                            <div className="grid-flex">
-                                                <div>
-                                                    <h4>Adeleke Ifeoluwase</h4>
-                                                </div>
-                                                <div>
-                                                    <Rate value={5} />
-                                                </div>
-                                            </div>
-                                            <p>Whether you're making international purchases, paying for local services, or traveling
-                                                abroad, our dual-currency cards provide the flexibility and convenience you need. With competitive exchange rates
-                                                you can enjoy a hassle.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                    </div>
+                <div className="desktop-only">
+                    <RatingsSlider />
                 </div>
                 <div className="airtime-props main-div mt_2 py_5">
                     <div className="cover-div">
@@ -210,25 +94,25 @@ const AirtimeToCashPage = () => {
                         </div>
                         <div className="grid-3 mt_3">
                             <div className="simple-props">
-                                <h4>Select the right equity plan</h4>
-                                <p>With our expert guidance, you can confidently choose the most favorable
-                                    equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
+                                <h4>Instant Conversion Process</h4>
+                                <p>Instantly convert your airtime to cash with ease. Our quick and
+                                    reliable service ensures you get your money in seconds, making the process simple and hassle-free.</p>
                                 <div>
                                     <img src={CardDealImg} alt="" />
                                 </div>
                             </div>
                             <div className="simple-props _2">
-                                <h4>Select the right equity plan</h4>
-                                <p>With our expert guidance, you can confidently choose the most favorable
-                                    equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
+                                <h4>Competitive Conversion Rates</h4>
+                                <p>Take advantage of our competitive conversion rates, which provide excellent value for your
+                                    airtime and ensure you get the most cash back.</p>
                                 <div>
                                     <img src={CardDealImg1} alt="" />
                                 </div>
                             </div>
                             <div className="simple-props">
-                                <h4>Select the right equity plan</h4>
-                                <p>With our expert guidance, you can confidently choose the most favorable
-                                    equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
+                                <h4>Many Providers Supported</h4>
+                                <p>We support many providers, giving you the flexibility to handle all your
+                                    transactions in one place. Enjoy the convenience of our extensive network.</p>
                                 <div>
                                     <img src={CardDealImg2} alt="" />
                                 </div>
@@ -241,7 +125,7 @@ const AirtimeToCashPage = () => {
                         <div className="grid-2 main">
                             <div>
                                 <p className="text-top-tag">OUR PRODUCT OFFERINGS</p>
-                                <h4 className="sect-title">Full Comprehensive Financial <br /> Solutions for You</h4>
+                                <h4 className="sect-title">Full Comprehensive <br /> Financial Solutions for You</h4>
                                 <p>Payscribe offers a wide range of financial solutions tailored to your needs. From
                                     budgeting and saving to investing and managing expenses, we provide the tools and support necessary to help you
                                     achieve financial success. Whether you’re just starting out or looking to optimize your finances, we’re here to
