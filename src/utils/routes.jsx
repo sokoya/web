@@ -9,7 +9,7 @@ const AppRoutes = {
     events: "/events",
     sell_giftcards: "/sell-giftcards",
     compliance: "/compliance",
-    privacy_policies: "/privacy-policies",
+    privacy_policies: "/privacy",
     terms: "/terms",
 }
 
