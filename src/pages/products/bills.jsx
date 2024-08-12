@@ -11,9 +11,9 @@ import 'swiper/css';
 import "swiper/css/effect-fade";
 
 import DealImg from "../../assets/images/homepage/new/deel.jpg";
-import CardDealImg from "../../assets/images/homepage/new/shorts/bill_1.png";
-import CardDealImg1 from "../../assets/images/homepage/new/shorts/bill_2.png";
-import CardDealImg2 from "../../assets/images/homepage/new/shorts/bill_3.png";
+import CardDealImg from "../../assets/images/homepage/new/card_deel.png";
+import CardDealImg1 from "../../assets/images/homepage/new/card_deel1.png";
+import CardDealImg2 from "../../assets/images/homepage/new/card_deel2.png";
 
 import ArrowRightMain from "../../assets/images/arrow-up-right.svg";
 import ArrowRightGrayMain from "../../assets/images/arrow-up-right-gray.svg";
@@ -81,10 +81,10 @@ const PayBillsPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="desktop-only">
+                {/* <div className="desktop-only">
                     <RatingsSlider />
-                </div>
-                <div className="airtime-props main-div mt_2 py_5">
+                </div> */}
+                <div className="airtime-props main-div py_5">
                     <div className="cover-div">
                         <div className="center-div">
                             <h2 className="sect-title">Unlock the Full Potential of Your Bill Payments</h2>
@@ -124,7 +124,7 @@ const PayBillsPage = () => {
                     </div>
                 </div>
                 <ProductDetailStory />
-                <div className="cover-div">
+                <div className="cover-box">
                     <div className="join-us">
                         <div className="grid-2">
                             <div>

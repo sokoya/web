@@ -17,7 +17,10 @@ import EventsPage from "./pages/products/events";
 import GiftcardsPage from "./pages/products/giftcards";
 import SaveAndEarnPage from "./pages/products/save";
 import PaymentsPage from "./pages/products/payments";
-import FAQsPage from "./pages/faq";
+import FAQsPage from "./pages/mini/faq";
+import ComplaincePage from "./pages/mini/complaint";
+import PrivacyPage from "./pages/mini/privacy";
+import AbtPage from "./pages/abt";
 
 const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -40,7 +43,7 @@ const AllAppRoutes = () => {
                         <Route path={AppRoutes.faqs} element={<FAQsPage />} />
 
                         <Route path={AppRoutes.airtime_to_cash} element={<AirtimeToCashPage />} />
-                        <Route path={AppRoutes.bills} element={<PayBillsPage />} />
+                        <Route path={AppRoutes.bills} element={<AbtPage />} />
                         <Route path={AppRoutes.handle_payments} element={<PaymentsPage />} />
                         <Route path={AppRoutes.events} element={<EventsPage />} />
                         <Route path={AppRoutes.sell_giftcards} element={<GiftcardsPage />} />
@@ -48,6 +51,11 @@ const AllAppRoutes = () => {
 
 
                         <Route path={AppRoutes.business} element={<BusinessPage />} />
+
+                        <Route path={AppRoutes.compliance} element={<ComplaincePage />} />
+                        <Route path={AppRoutes.privacy_policies} element={<PrivacyPage />} />
+                        <Route path={AppRoutes.compliance} element={<ComplaincePage />} />
+
 
                         <Route path="/why-payscribe" element={<WhyPayscribe />} />
                     </Routes>

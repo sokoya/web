@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import Logo from "../assets/images/payscribe.png";
-import LogoBlk from "../assets/images/payscribe_blk.png";
+import LogoBlk from "../assets/images/blk_logo.png";
 import { Drawer, Dropdown } from "antd";
 
 import MenuIcon from "../assets/images/icons/menu.svg";
@@ -52,7 +52,7 @@ const Navigation = props => {
         {
             key: '1',
             label: (
-                <Link to={AppRoutes.bills}>
+                <Link to="/">
                     Pay Bills
                 </Link>
             ),
@@ -60,7 +60,7 @@ const Navigation = props => {
         {
             key: '2',
             label: (
-                <Link to={AppRoutes.save_and_earn}>
+                <Link to="/">
                     Save and Invest
                 </Link>
             ),
@@ -68,7 +68,7 @@ const Navigation = props => {
         {
             key: '4',
             label: (
-                <Link to={AppRoutes.sell_giftcards}>
+                <Link to="/">
                     Buy and Sell Giftcards
                 </Link>
             ),
@@ -76,7 +76,7 @@ const Navigation = props => {
         {
             key: '5',
             label: (
-                <Link to={AppRoutes.handle_payments}>
+                <Link to="/">
                     Send and Receive Payments
                 </Link>
             ),
@@ -138,6 +138,7 @@ const Navigation = props => {
                     {fixedNav ?
                         <div className="div-logo">
                             <img src={LogoBlk} alt="logo" className="logo" />
+                            <h2 className="logo-title">Payscribe</h2>
                         </div>
                         :
                         <div className="div-logo">
@@ -294,6 +295,9 @@ const Navigation = props => {
                 </div>
                 <div className="desktop-only">
                     <ul className="extra-nav">
+                        {/* <li>
+                            <Link className="" to="/">Sales: +234 (813) 227 7316</Link>
+                        </li> */}
                         <li>
                             <Link className="btn btn-white" to="/">Sign In Now</Link>
                         </li>

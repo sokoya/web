@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "../components/nav";
 import Footer from "../components/footer";
 
@@ -17,6 +17,8 @@ import CardDealImg2 from "../assets/images/homepage/new/card_deel2.png";
 import CardDealImg3 from "../assets/images/homepage/new/card_deel3.png";
 import CardDealImg4 from "../assets/images/homepage/new/card_deel4.png";
 
+import DeelImg from "../assets/images/homepage/new/testimonial/deel.png";
+
 import ArrowRightMain from "../assets/images/arrow-up-right.svg";
 import ArrowRightGrayMain from "../assets/images/arrow-up-right-gray.svg";
 
@@ -26,9 +28,12 @@ import PhoneImg from "../assets/images/homepage/phone.png";
 import SolutionImg from "../assets/images/homepage/new/solution.webp";
 
 import { Link } from "react-router-dom";
-import { Divider, Rate } from "antd";
+import { Collapse, Divider, Rate } from "antd";
 
 const BusinessPage = () => {
+
+    const [currentDisp, setCurrentDisp] = useState(0);
+    const [activeKey, setActiveKey] = useState("1");
 
     const SwiperButtonPrev = ({ children }) => {
         const swiper = useSwiper();
@@ -39,6 +44,13 @@ const BusinessPage = () => {
         const swiper = useSwiper();
         return <button className="carousel-controller" onClick={() => swiper.slidePrev()}>{children}</button>;
     };
+
+    const handlePanelChanges = key => {
+        if (key.length == 0) {
+            return;
+        }
+        setActiveKey(key)
+    }
 
     let breakpoints = {
         // when window width is >= 320px
@@ -76,142 +88,134 @@ const BusinessPage = () => {
                     </div>
                     <div className="hero-gradient-bar"></div>
                 </div>
-                <div className="company-testimonial mt_5">
+                <div className="business-prop mt_5">
                     <div className="cover-div">
-                        <div className="grid-2">
+                        <div className="business-props-summary">
                             <div>
                                 <h3>$10 billion strong: Deel leads the industry in global payroll payments</h3>
                                 <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
                                     global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
                                 <Link className="btn btn-main" to="">Reach out to us</Link>
                             </div>
+                        </div>
+                        <div className="grid-4">
                             <div>
-                                <div className="companies-list">
-                                    <div className="grid-4">
-                                        <div className="company-box border-bottom">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box border-bottom">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box border-bottom">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box border-bottom border-none">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box">
-                                            <div className="company-img"></div>
-                                        </div>
-                                        <div className="company-box border-none">
-                                            <div className="company-img"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src={DeelImg} alt="" />
+                                <p>Results in 15 minutes </p>
+                            </div>
+                            <div>
+                                <img src={DeelImg} alt="" />
+                                <p>Results in 15 minutes </p>
+                            </div>
+                            <div>
+                                <img src={DeelImg} alt="" />
+                                <p>Results in 15 minutes </p>
+                            </div>
+                            <div>
+                                <img src={DeelImg} alt="" />
+                                <p>Results in 15 minutes </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="airtime-props main-div mt_5 py_5">
-                    <div className="cover-div">
-                        <div className="center-div">
-                            <h2 className="sect-title">Loved by engineering teams around the world</h2>
-                        </div>
-                        <div className="grid-2 mt_3">
-                            <div className="simple-props">
-                                <h4>Select the right equity plan</h4>
-                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
-                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
-                                <div>
-                                    <img src={CardDealImg} alt="" />
-                                </div>
+                <div className="bg-black sec-bg mt_5">
+                    <div className="why-payscribe">
+                        <div className="cover-div">
+                            <div className="center-div">
+                                <p className="tag">Effortless Financial Integration</p>
+                                <h3>Streamline Your Financial Services with Ease</h3>
+                                {/* <h3>One hub for immigration, <br /> payroll, and HR</h3> */}
                             </div>
-                            <div className="simple-props _2">
-                                <h4>Select the right equity plan</h4>
-                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
-                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
-                                <div>
-                                    <img src={CardDealImg2} alt="" />
-                                </div>
-                            </div>
-                            <div className="simple-props">
-                                <h4>Select the right equity plan</h4>
-                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
-                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
-                                <div>
-                                    <img src={CardDealImg3} alt="" />
-                                </div>
-                            </div>
-                            <div className="simple-props">
-                                <h4>Select the right equity plan</h4>
-                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
-                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
-                                <div>
-                                    <img src={CardDealImg2} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="story-div py_5">
-                    <div className="cover-div">
-                        <div className="grid-2 main">
-                            <div>
-                                <p className="text-top-tag">OUR PRODUCT OFFERINGS</p>
-                                <h4 className="sect-title">Full Comprehensive Financial <br /> Solutions for You</h4>
-                                <p>Payscribe offers a wide range of financial solutions tailored to your needs. From
-                                    budgeting and saving to investing and managing expenses, we provide the tools and support necessary to help you
-                                    achieve financial success. Whether you’re just starting out or looking to optimize your finances, we’re here to
-                                    assist you every step of the way.</p>
-                                <div className="mt_5">
-                                    <ul className="break">
-                                        <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Send / Receive Payments</li>
-                                        <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> USD/NGN cards for transactions</li>
-                                        <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Bill Managements</li>
-                                        <li><ion-icon name="checkmark-done-circle-outline"></ion-icon> Airtime to Cash</li>
-                                        <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Track your Expenses</li>
-                                        <li className="last-two"><ion-icon name="checkmark-done-circle-outline"></ion-icon> Cross-platform support</li>
+                            <div className="desktop-only">
+                                <div className="payscribe-display-control mt_4">
+                                    <ul>
+                                        <li onClick={() => setCurrentDisp(0)} className={`${currentDisp === 0 ? "active" : ""}`}>Accounts and Wallets</li>
+                                        <li onClick={() => setCurrentDisp(1)} className={`${currentDisp === 1 ? "active" : ""}`}>Issue USD/NGN Cards</li>
+                                        <li onClick={() => setCurrentDisp(2)} className={`${currentDisp === 2 ? "active" : ""}`}>Savings & Investment</li>
+                                        <li onClick={() => setCurrentDisp(3)} className={`${currentDisp === 3 ? "active" : ""}`}>Bill Payments</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src={SolutionImg} alt="" className="solution" />
+                                <div className="payscribe-display-box mt_3">
+                                    <div className="payscribe-display-summary">
+                                        <div className={`${currentDisp === 0 ? "active" : ""} summary-story`}>
+                                            <h4>Build seamless <br /> accounts and wallets <br /> with half the effort.</h4>
+                                            <p>Effortlessly integrate account and wallet services into your fintech platform, allowing
+                                                your users to manage their finances easily and securely. Our robust API simplifies the
+                                                process, reducing development time and effort.</p>
+                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                        </div>
+                                        <div className={`${currentDisp === 1 ? "active" : ""} summary-story`}>
+                                            <h4>Expand financial <br /> reach with effortless <br /> USD/NGN card issuance</h4>
+                                            <p>Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your
+                                                users with cards for both international and local transactions, all through a straightforward
+                                                setup and management process.</p>
+                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                        </div>
+                                        <div className={`${currentDisp === 2 ? "active" : ""} summary-story`}>
+                                            <h4>Boost savings <br /> and investments <br /> with minimal work</h4>
+                                            <p>Enhance your fintech services by offering effortless savings and investment solutions. Our platform
+                                                simplifies the process, allowing users to manage and grow their funds with minimal effort. This
+                                                streamlined approach enables you to provide robust financial tools without complex implementation.</p>
+                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                        </div>
+                                        <div className={`${currentDisp === 3 ? "active" : ""} summary-story`}>
+                                            <h4>Simplify bill <br /> payments with ease</h4>
+                                            <p>Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their
+                                                bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.</p>
+                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                        </div>
+                                    </div>
+                                    <div className="payscribe-display-main">
+                                        {
+                                            currentDisp === 0 ?
+                                                <img src={BusinessImg} className="business-img" alt="business" />
+                                                :
+                                                currentDisp === 1 ?
+                                                    <img src={BusinessImg} className="business-img" alt="business" />
+                                                    :
+                                                    currentDisp === 2 ?
+                                                        <img src={BusinessImg} className="business-img" alt="business" />
+                                                        :
+                                                        <img src={BusinessImg} className="business-img" alt="business" />
+                                        }
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <div className="pt_3">
-                                <div className="grid-3 mt_3">
-                                    <div className="simple-props">
-                                        <h4>Select the right equity plan</h4>
-                                        <p>With our expert guidance, you can confidently choose the most favorable
-                                            equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
-                                        <div>
-                                            <img src={CardDealImg} alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="simple-props _2">
-                                        <h4>Select the right equity plan</h4>
-                                        <p>With our expert guidance, you can confidently choose the most favorable
-                                            equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
-                                        <div>
-                                            <img src={CardDealImg1} alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="simple-props">
-                                        <h4>Select the right equity plan</h4>
-                                        <p>With our expert guidance, you can confidently choose the most favorable
-                                            equity type based on your employee's location. Ensure compliance when you grant EOR.</p>
-                                        <div>
-                                            <img src={CardDealImg2} alt="" />
-                                        </div>
+                            <div className="mobile-only">
+                                <div className="payscribe-display-mobile mt_8">
+                                    <div className="">
+                                        <Collapse ghost expandIconPosition="right" accordion activeKey={activeKey} onChange={handlePanelChanges}>
+                                            <Collapse.Panel header="Accounts and Wallets" key="1">
+                                                <h4>Expand financial reach with effortless USD/NGN card issuance</h4>
+                                                <p>Put an end to long email chains and misplaced documents. Get all relevant information in one
+                                                    place—including essential documents, case details, and costs—and easily book a call for speedy assistance.</p>
+                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <img src={BusinessImg} className="business-img" alt="business" />
+                                            </Collapse.Panel>
+                                            <Collapse.Panel header="Issue USD/NGN Cards" key="2">
+                                                <h4>Expand financial reach with effortless USD/NGN card issuance</h4>
+                                                <p>Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your
+                                                    users with cards for both international and local transactions, all through a straightforward
+                                                    setup and management process.</p>
+                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <img src={BusinessImg} className="business-img" alt="business" />
+                                            </Collapse.Panel>
+                                            <Collapse.Panel header="Savings & Investment" key="3">
+                                                <h4>Boost savings and investments with minimal work</h4>
+                                                <p>Enhance your fintech services by offering effortless savings and investment solutions. Our platform
+                                                    simplifies the process, allowing users to manage and grow their funds with minimal effort. This
+                                                    streamlined approach enables you to provide robust financial tools without complex implementation.</p>
+                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <img src={BusinessImg} className="business-img" alt="business" />
+                                            </Collapse.Panel>
+                                            <Collapse.Panel header="Bill Payments" key="4">
+                                                <h4>Simplify bill payments with ease</h4>
+                                                <p>Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their
+                                                    bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.</p>
+                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <img src={BusinessImg} className="business-img" alt="business" />
+                                            </Collapse.Panel>
+                                        </Collapse>
                                     </div>
                                 </div>
                             </div>

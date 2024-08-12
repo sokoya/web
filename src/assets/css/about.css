@@ -3,74 +3,130 @@
 }
 
 .abt-hero {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(231, 231, 231, 1));
+    background: #071A2B;
     background: #F4F8FC;
-    background: #000;
-    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    height: 450px;
 }
-
 
 .abt-hero h3 {
     font-size: 4.5rem;
     width: 100%;
     color: #082552;
-    margin-bottom: 15px;
-    padding-top: 5rem;
-    color: #fff;
-    line-height: 1;
+    color: #000;
+    /* color: #fff; */
+    margin-bottom: 20px;
+    font-weight: 1000;
+    line-height: 1.2;
     text-transform: capitalize;
-    background: linear-gradient(to bottom right, transparent 50%, #FFE27C 50%), linear-gradient(#FFE27C, #FFE27C), linear-gradient(to top left, transparent 50%, #FFE27C 50%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 16px 64px, calc(100% - 32px) 64px, 16px 64px;
-    background-size: 16px 64px, calc(100% - 32px) 64px, 16px 64px;
-    -webkit-background-position: left center, center, right;
-    background-position: left center, center, right;
+    font-family: "Gilroy-ExtraBold";
 }
 
 .abt-hero p {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.abt-hero .abt-hero-text {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
     width: 60%;
+    display: block;
+    color: #fff;
+    color: #000;
     margin: 0px auto;
     display: block;
 }
 
-
-/* abt-text-body */
-.abt-text-body {
-    background: #F4F8FC;
+.abt-hero .abt-hero-text {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
 }
 
-.abt-text-body .abt-header-text {
-    /* background: ; */
-}
 
-.div-text-box {
-    background: #fff;
-    padding: 50px 30px 30px;
-    border-radius: 8px;
-    box-shadow: 0 26px 30px -14px rgba(0, 102, 245, .08);
-}
+/* sec-text-body */
 
-.div-text-box img {
+.about-story p {
     margin-bottom: 50px;
+    font-size: 1.6rem;
+    width: 50%;
 }
 
-.div-text-box h4 {
-    font-size: 1.8rem;
+.about-story h4 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.sec-text-body {
+    background: #050505;
+}
+
+.abt-props .single-props-box {
+    border: 2px solid #EFF2F4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.abt-props .single-props-box p {
+    color: #000;
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+}
+
+.abt-props .single-props-box h5 {
+    font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
-.div-text-box p {
+.abt-props .single-props-box ion-icon {
+    font-size: 3rem;
+    color: #0357EE;
+    margin-bottom: 60px;
+}
+
+.sec-text-body .abt-header-text h4 {
+    font-size: 3.5rem;
+    color: #fff;
+    /* width: 50%; */
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.sec-text-body .abt-header-text p {
+    color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin: 0px auto;
+    display: block;
+    width: 50%;
+    line-height: 1.8;
+}
+
+.team-disp {}
+
+.team-avatar {
+    background: #1A1C1F;
+    border-radius: 8px;
+    width: 100%;
+    height: 30rem;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 20px;
+    /* box-shadow: 0 26px 30px -14px rgba(0, 102, 245, .08); */
+}
+
+.team-disp h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.team-disp p {
+    font-size: 1.4rem;
+    color: #848383;
+}
+
+.sec-text-body .grid-2 {
+    grid-gap: 40px;
 }
 
 .abt-body img {
@@ -96,6 +152,7 @@ ul.break {
 
 
 /* airtime-hero */
+
 .airtime-hero {
     background: #C7E2FE;
     height: 700px;
@@ -117,7 +174,8 @@ ul.break {
     color: #fff;
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: "Gilroy-ExtraBold";
 }
 
 .airtime-hero .cover-div {
@@ -148,6 +206,7 @@ ul.break {
     word-spacing: -5px;
     margin-bottom: 20px;
     line-height: 1.4;
+    font-family: "Gilroy-ExtraBold";
     /* text-transform: capitalize; */
 }
 
@@ -262,12 +321,11 @@ ul.break {
     margin-bottom: 15px;
 }
 
-
 .product-page .simple-props {
     background: #FEF5E6;
     background: #FFFCF9;
     background: #F3F5F7;
-    padding: 40px 30px 30px;
+    padding: 20px 20px 30px;
     border-radius: 8px;
 }
 
@@ -278,7 +336,7 @@ ul.break {
 .product-page .simple-props h4 {
     font-size: 1.8rem;
     line-height: 1.6;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .product-page .simple-props p {
@@ -287,7 +345,7 @@ ul.break {
 }
 
 .product-page .simple-props img {
-    width: 80%;
+    /* width: 80%; */
     margin: 0px auto;
     display: block;
 }
@@ -301,14 +359,39 @@ ul.break {
 }
 
 .product-page .airtime-props.main-div img {
-    width: 60%;
+    /* width: 60%; */
 }
 
 .product-page .airtime-props.main-div h4 {
     font-size: 4rem;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
+.payment-props-div {
+    background: #EFEFEF;
+}
+
+.payment-props-div .payment-single-prop {
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.payment-props-div .payment-single-prop h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.payment-props-div .payment-single-prop img {
+    width: auto;
+    height: 6rem;
+    margin-bottom: 40px;
+}
+
+.central {
+    text-align: center;
+}
 
 .story-div {
     background: #1B1B1B;
@@ -321,6 +404,8 @@ ul.break {
 .story-div p {
     color: rgb(250, 244, 238);
     font-size: 1.5rem;
+    width: 90%;
+    line-height: 1.9;
 }
 
 .story-div a {
@@ -337,12 +422,18 @@ ul.break {
 
 .story-div p.text-top-tag {
     font-size: 1.3rem;
-    font-weight: 900;
+    font-family: "Gilroy-ExtraBold";
+    letter-spacing: 2px;
 }
 
 .story-div h4.sect-title {
     color: rgb(250, 244, 238);
     font-size: 4rem;
+}
+
+.sec-title {
+    font-size: 3.2rem;
+    line-height: 1.4;
 }
 
 .story-div ul li {
@@ -381,7 +472,6 @@ ul.break {
     border-bottom: 2px solid #DAD7D1;
 }
 
-
 .payscribe-display-control {
     background: #FFFCF9;
     background: transparent;
@@ -401,7 +491,7 @@ ul.break {
     font-size: 1.5rem;
     list-style: none;
     padding: 15px 30px;
-    font-weight: 600;
+    font-family: "Gilroy-Bold";
     color: #000;
     color: #FFFCF9;
 }
@@ -410,8 +500,20 @@ ul.break {
     background: #FFFCF9;
     border: 1px solid #FFFCF9;
     border-radius: 50px;
-    font-weight: 800;
     color: #000;
+    font-family: "Gilroy-ExtraBold";
+}
+
+.bg-black.sec-bg .center-div h3 {
+    color: #fff;
+}
+
+.bg-black.sec-bg .center-div p.tag {
+    color: #fff;
+}
+
+.central h2.sec-title {
+    margin-bottom: 15px;
 }
 
 .payscribe-display-box {
@@ -448,6 +550,7 @@ ul.break {
 .payscribe-display-box .business-img {
     border-radius: 16px;
 }
+
 
 /* .payscribe-display-box .payscribe-display-summary button {
     border: 2px solid #D9D2C5;
@@ -528,7 +631,7 @@ ul.break {
 }
 
 .solution {
-    width: 55% !important;
+    width: 60% !important;
     margin: 0px auto;
     display: block;
 }
@@ -562,7 +665,6 @@ ul.break {
 .answer-box .question-box:last-child {
     margin-bottom: 0px;
 }
-
 
 .why-summary .summary-bar {
     border: 2px solid #DAD7D1;
@@ -613,11 +715,16 @@ ul.break {
     grid-gap: 80px;
 }
 
-
 .company-testimonial h3 {
     font-size: 3.5rem;
-    width: 70%;
-    margin-bottom: 10px;
+    /* width: 70%; */
+    margin-bottom: 20px;
+}
+
+.business-props-summary {
+    width: 50%;
+    margin: 0% auto;
+    text-align: center;
 }
 
 .company-testimonial p {
@@ -663,32 +770,48 @@ ul.break {
 
 .faq-hero {
     background: #000;
-    height: 45rem;
+    height: 50rem;
+    height: 35rem;
 }
 
 .faq-hero .faq-hero-text {
     height: 100%;
-    display: flex;
-    align-items: center;
+    position: relative;
     padding: 0px 10%;
+}
+
+.faq-hero .faq-inner-text {
+    position: absolute;
+    bottom: 15%;
 }
 
 .faq-hero .faq-hero-text h2 {
     color: #fff;
-    font-size: 4rem;
-    margin-bottom: 10px;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .faq-hero .faq-hero-text p {
     color: rgb(153, 151, 145);
     color: #fff;
     font-size: 1.6rem;
+    font-size: 1.4rem;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.faq-hero .faq-hero-text a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .faq-hero .faq-hero-text h5 {
     color: rgb(153, 151, 145);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fff;
+    font-weight: 800;
     margin-bottom: 10px;
 }
 
@@ -716,6 +839,7 @@ ul.break {
 
 
 /* airtime-hero */
+
 .airtime-hero {
     background: #C7E2FE;
     height: 650px;
@@ -738,17 +862,9 @@ ul.break {
     width: 80%;
 }
 
-.airtime-hero h5 {
-    /* color: #000; */
-    margin-bottom: 20px;
-    font-weight: 1000;
-    font-size: 1.4rem;
-    letter-spacing: 0px;
-}
-
 .airtime-hero p {
     /* color: #000; */
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: unset;
     width: 80%;
     margin-bottom: 40px;
@@ -784,58 +900,233 @@ ul.break {
     display: block;
 }
 
+.mini-hero .mini-center-hero {
+    height: 100%;
+    background: red;
+}
+
+.below-fold {
+    background: #EFEEEA;
+}
+
+h3.sec-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+
+.below-fold .grid-4 {
+    grid-gap: 50px;
+    row-gap: 60px;
+}
+
+.below-fold .grid-4 p {
+    font-size: 1.3rem;
+}
+
+.below-fold .grid-4 h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.main-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.main-content .business-grid.grid-2 {
+    gap: 60px;
+    align-items: center;
+}
+
+.main-content h3 {
+    font-size: 3.5rem;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.mini-hero {
+    height: 450px;
+    background: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mini-hero .faq-hero-text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mini-hero .faq-hero-text h2 {
+    font-size: 2.8rem;
+}
+
+.mini-hero .form-search-box {
+    background: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.mini-hero .form-search-box input {
+    border-radius: 50px;
+    height: 4.5rem;
+    border: none !important;
+    padding: 0px !important;
+    outline: none !important;
+}
+
+.mini-hero .form-search-box button {
+    border-radius: 50px;
+}
+
+.mini-hero .mini-hero-center h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3.4rem;
+}
+
+.mini-hero-center {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.img-bar {
+    height: 30rem;
+    width: 70%;
+    background: #fff;
+    border-radius: 8px;
+    transform: rotate(-5deg);
+    margin: 0px auto;
+    display: block;
+}
+
+.footer-top-gap {
+    align-items: center;
+}
+
+.footer-top-gap p {
+    color: rgb(153, 151, 145);
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.footer-top-gap h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.count-tag {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.count-tag h5 {
+    font-size: 1.4rem;
+}
+
+.privacy-content {
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+    padding-top: 5%;
+}
+
+.privacy-content p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.privacy-content ul li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.privacy-content h1 {
+    margin-bottom: 20px;
+}
+
+.privacy-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.privacy-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+p.bold {
+    display: inline;
+}
+
 @media screen and (max-width: 720px) {
     .center-div {
         width: 100%;
     }
-
     .product-page .grid-3 {
         display: flex;
         flex-direction: column;
     }
-
     .story-div h4.sect-title {
         font-size: 2.5rem;
     }
-
     .story-div .grid-2 {
         display: flex;
         flex-direction: column-reverse;
     }
-
     .story-div p {
         font-size: 1.3rem;
     }
-
     .story-div .grid-2 .mt_5 {
         margin-top: 3%;
     }
-
     .answer-box {
         width: 100%;
     }
-
     .answer-box .grid-flex {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-
     .airtime-hero .grid-2 {
         display: flex;
         flex-direction: column;
     }
-
     .airtime-hero .img-bar .main-img {
         width: 70%;
         display: none;
     }
-
     .airtime-hero {
         height: 100%;
         padding: 30% 0px 20%;
     }
-
     .airtime-hero h2 {
         font-size: 2.8rem;
         word-spacing: unset;
@@ -843,50 +1134,40 @@ ul.break {
         line-height: 1.4;
         width: 100%;
     }
-
     .airtime-hero h5 {
         font-size: 1.2rem;
         margin-bottom: 10px;
         font-weight: 1000;
     }
-
     .airtime-hero p {
         font-size: 1.3rem;
         line-height: 1.8;
         width: 100%;
     }
-
     .detail-summary p.text-top-tag {
         font-size: 1.2rem !important;
     }
-
     .detail-summary ul.break {
         /* display: none; */
         column-count: unset;
     }
-
     .mobile-testimonial .testimonial-header h3 {
         font-size: 2.3rem;
     }
-
     .mobile-testimonial .testimonial-header .button-flex {
         display: none;
     }
-
     .mobile-testimonial p {
         font-size: 1.3rem;
     }
-
     .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body .grid-flex {
         grid-gap: 0px;
         display: flex;
         /* flex-direction: row; */
     }
-
     .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body h4 {
         font-size: 1.4rem;
     }
-
     .product-page .simple-props {
         padding: 30px 15px;
         padding-top: 40px;
@@ -894,69 +1175,55 @@ ul.break {
         flex-direction: column-reverse;
         text-align: center;
     }
-
     .product-page .airtime-props.main-div h4 {
         font-size: 1.6rem;
         margin-bottom: 0px;
     }
-
     .product-page .simple-props p {
         font-size: 1.3rem;
         margin-bottom: 0px;
     }
-
     .product-page .airtime-props.main-div img {
         width: 70%;
     }
-
     .center-div h3 {
         font-size: 2.3rem;
     }
-
     .center-div p {
         font-size: 1.3rem;
     }
-
     .answer-box .question-box h5 {
         font-size: 1.3rem;
     }
-
     .question-box {
         padding: 15px 15px;
     }
-
     .faq .center-div {
         text-align: left;
         margin-bottom: 40px;
     }
-
     .payscribe-display-mobile-header {
         border-bottom: 2px solid #FFFCF9;
         margin-bottom: 20px;
     }
-
     .payscribe-display-mobile .ant-collapse-header-text {
         font-size: 1.4rem;
         padding-bottom: 5px;
         color: #fff !important;
     }
-
     .payscribe-display-mobile .ant-collapse-header {
         padding: 10px 0px !important;
         border-bottom: 2px solid #FFFCF9;
         border-radius: 0px !important;
     }
-
     .payscribe-display-mobile .ant-collapse-content-box {
         padding: 30px 0px 0px !important;
     }
-
     .payscribe-display-mobile p {
         color: #fff;
         font-size: 1.3rem;
         margin-bottom: 40px;
     }
-
     .payscribe-display-mobile h4 {
         color: #fff;
         font-size: 1.5rem;
@@ -964,33 +1231,165 @@ ul.break {
         width: 80%;
         line-height: 1.6;
     }
-
     .payscribe-display-mobile img {
         margin: 30px 0px;
         border-radius: 8px;
     }
-
     .props-grid-display.mt_5 .grid-2 .mt_5 {
         margin-top: 5%;
     }
-
     .solution {
         width: 70% !important;
         margin-bottom: 40px;
     }
-
     .airtime-hero .cover-div {
         width: calc(100% - 10%);
     }
-
     .airtime-hero .text-ba {
         display: flex;
         flex-direction: column;
         position: relative;
         grid-gap: 50px;
     }
-
     .airtime-hero .text-ba .main-img {
         width: 80%;
     }
+    .faq-hero .faq-hero-text h2 {
+        font-size: 3rem;
+    }
+    .faq-hero .grid-2 {
+        display: block;
+    }
+    .privacy-content {
+        width: 92%;
+        padding-top: 15%;
+    }
+    .faq-hero .faq-hero-text {
+        padding: 0px 5%;
+    }
+    .faq-hero {
+        height: 25rem;
+    }
+    .privacy-content p {
+        font-size: 1.4rem;
+    }
+    .privacy-content h1 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+    .privacy-content h2 {
+        font-size: 1.8rem;
+    }
+    .privacy-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+.about-hero {
+    background: #5a28ff;
+    height: 650px;
+    width: calc(100% - 10%);
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+.about-hero .grid-2 {
+    height: 100%;
+    align-items: center;
+}
+
+.about-hero .story-hero-img {
+    height: 55rem;
+    background: #fff;
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+}
+
+.about-hero p {
+    font-size: 1.4rem;
+}
+
+.about-hero h2 {
+    font-size: 6rem;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 60px;
+    font-size: 1.6rem;
+}
+
+.about-hero h5 {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-hero a.btn {
+    padding: 20px 25px;
+}
+
+.summary-block .grid-3 h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.summary-block .grid-3 ion-icon {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #0357EE;
+}
+
+.about-hero a.btn.btn-default {
+    color: #fff;
+}
+
+.desc-tab {
+    background: #E1FABE;
+    background: #050505;
+    height: 60rem;
+    width: 100%;
+}
+
+.desc-tab .desc-tab-grid-2 {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 20px;
+}
+
+.desc-tab .desc-tab-grid-2.inverse {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    margin-top: 20px;
+}
+
+.desc-tab .desc-tab-grid-2 .single-tab {
+    background: #848383;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.desc-tab .desc-tab-grid-2 .single-tab p {
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.desc-tab .desc-tab-grid-2 .single-tab h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+}
+
+.how-to-single .how-to-img {
+    background: #F5F5F5;
+    height: 30rem;
+    width: 100%;
+    border-radius: 4px;
 }

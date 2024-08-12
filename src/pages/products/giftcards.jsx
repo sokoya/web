@@ -10,9 +10,9 @@ import { Autoplay, Controller, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import "swiper/css/effect-fade";
 
-import CardDealImg from "../../assets/images/homepage/new/shorts/gift_1.png";
-import CardDealImg1 from "../../assets/images/homepage/new/shorts/gift_2.png";
-import CardDealImg2 from "../../assets/images/homepage/new/shorts/bill_3.png";
+import CardDealImg from "../../assets/images/homepage/new/card_deel.png";
+import CardDealImg1 from "../../assets/images/homepage/new/card_deel1.png";
+import CardDealImg2 from "../../assets/images/homepage/new/card_deel2.png";
 
 import ArrowRightMain from "../../assets/images/arrow-up-right.svg";
 import ArrowRightGrayMain from "../../assets/images/arrow-up-right-gray.svg";
@@ -80,9 +80,9 @@ const GiftcardsPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="desktop-only">
+                {/* <div className="desktop-only">
                     <RatingsSlider />
-                </div>
+                </div> */}
                 <div className="airtime-props main-div mt_2 py_5">
                     <div className="cover-div">
                         <div className="center-div">

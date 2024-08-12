@@ -8,6 +8,9 @@ const AppRoutes = {
     save_and_earn: "/save-and-earn",
     events: "/events",
     sell_giftcards: "/sell-giftcards",
+    compliance: "/compliance",
+    privacy_policies: "/privacy-policies",
+    terms: "/terms",
 }
 
 export default AppRoutes;

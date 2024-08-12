@@ -4,12 +4,34 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/images/payscribe.png";
 import { Controller, useForm } from "react-hook-form";
 import { Divider, Input } from "antd";
+import AppRoutes from "../utils/routes";
+
+import ArrowRightMain from "../assets/images/arrow-up-right.svg";
+import ArrowRightGrayMain from "../assets/images/arrow-up-right-gray.svg";
 
 const Footer = props => {
     const { control } = useForm({});
     return (
         <div className={`${props.noMargin ? "no-margin" : ""} footer`}>
             <div className="contain">
+                {/* <div className="footer-top-gap grid-2">
+                    <div>
+                        <div className="footer-img-block">
+                            <div className="img-bar"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Start Building Today</h3>
+                        <p>Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for
+                            seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available
+                            for individuals.</p>
+                        <div className="flex-div">
+                            <Link className="btn btn-accent" to="">Start Building <img src={ArrowRightMain} className="button-arrow" alt="arrow right" /></Link>
+                            <Link className="btn btn-gray-border" to="">Contact Sales <img src={ArrowRightGrayMain} className="button-arrow" alt="arrow right" /></Link>
+                        </div>
+                    </div>
+                </div> */}
+                <div className="footer-divider"></div>
                 <div className="grid-4-bias">
                     <div className="logo-div">
                         <div className="div-logo">
@@ -19,8 +41,6 @@ const Footer = props => {
                         <p>Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for
                             seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available
                             for individuals.</p>
-                        {/* <p>Building the world-class technology that digitalize cash payments and provides daily essentials financial
-                            services all at your finger tips.</p> */}
                         <div className="button-flex">
                             <button className="btn btn-accent"><ion-icon name="logo-google-playstore"></ion-icon> Android</button>
                             <button className="btn btn-accent"><ion-icon name="logo-apple"></ion-icon> iOS</button>
@@ -77,16 +97,13 @@ const Footer = props => {
                             <h5>Resources</h5>
                             <ul>
                                 <li>
-                                    <Link to="">FAQs</Link>
-                                </li>
-                                <li>
-                                    <Link to="">Help</Link>
+                                    <Link to={AppRoutes.faqs}>FAQs</Link>
                                 </li>
                                 <li>
                                     <Link to="">Status Page</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Compliance</Link>
+                                    <Link to={AppRoutes.compliance}>Compliance</Link>
                                 </li>
                             </ul>
                         </div>
@@ -100,7 +117,7 @@ const Footer = props => {
                                     <Link to="">Blog</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Privacy Policy</Link>
+                                    <Link to={AppRoutes.privacy_policies}>Privacy Policy</Link>
                                 </li>
                                 <li>
                                     <Link to="">Terms and Conditions</Link>

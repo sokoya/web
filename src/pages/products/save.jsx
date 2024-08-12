@@ -86,9 +86,9 @@ const SaveAndEarnPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="desktop-only">
+                {/* <div className="desktop-only">
                     <RatingsSlider />
-                </div>
+                </div> */}
                 <div className="airtime-props main-div mt_2 py_5">
                     <div className="cover-div">
                         <div className="center-div">
