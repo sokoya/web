@@ -19,7 +19,7 @@ const FaqDisplay = () => {
     return (
         <div className="detail-summary">
             <div className="faq airtime-props main-div pt_5">
-                <div className="cover-div">
+                <div className="contain">
                     <div className="width-60">
                         <div className="center-div">
                             <h3 className="sec-title">Frequently Asked Questions</h3>
@@ -27,7 +27,7 @@ const FaqDisplay = () => {
                                 with straightforward responses to help you get the information you need. </p> */}
                         </div>
                         <div className="faq-listing mt_4">
-                            <div className="cover-div">
+                            <div className="">
                                 <div className="answer-box">
                                     <div className="question-box">
                                         <div className="grid-flex">

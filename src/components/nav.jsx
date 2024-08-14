@@ -107,7 +107,7 @@ const Navigation = props => {
             key: '1',
             label: (
                 <Link to="/">
-                    About
+                    About Us
                 </Link>
             ),
         },
@@ -157,7 +157,7 @@ const Navigation = props => {
                                         items: solutionItems,
                                     }}>
                                     <div className="relative-bar">
-                                        <Link to="#">Products</Link>
+                                        <Link to="#">Individuals</Link>
                                         {/* <div className="ps-dropdown-bar">
                                         <div className="ps-dropdown-b">
                                             <div className="nav-inline-list">
@@ -270,7 +270,7 @@ const Navigation = props => {
                                 </Dropdown>
                             </li>
                             <li>
-                                <Link to="#">For Businesses</Link>
+                                <Link to="/">For Businesses</Link>
                             </li>
                             <li>
                                 <Dropdown
@@ -287,7 +287,7 @@ const Navigation = props => {
                                         items: companyItems,
                                     }}
                                 >
-                                    <Link to="#">Companies</Link>
+                                    <Link to="#">Company</Link>
                                 </Dropdown>
                             </li>
                         </ul>
@@ -299,10 +299,10 @@ const Navigation = props => {
                             <Link className="" to="/">Sales: +234 (813) 227 7316</Link>
                         </li> */}
                         <li>
-                            <Link className="btn btn-white" to="/">Sign In Now</Link>
+                            <a href="https://app.payscribe.ng/login" className="btn btn-white">Sign In Now</a>
                         </li>
                         <li>
-                            <Link className="btn btn-main" to="/">Open a Free Account</Link>
+                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-main">Open a Free Account</a>
                         </li>
                     </ul>
                 </div>
@@ -346,7 +346,7 @@ const Navigation = props => {
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
-                                to={AppRoutes.home}>For Businesses</NavLink>
+                                to={AppRoutes.business}>For Businesses</NavLink>
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink onClick={e => {
@@ -363,12 +363,19 @@ const Navigation = props => {
                                 to={AppRoutes.home}>About Us</NavLink>
                         </li>
                         <li className="mobile-nav-list">
-                            <NavLink onClick={e => {
+                            <a onClick={e => {
                                 toggleMobileNavDisplay();
                                 e.preventDefault();
                             }} className={({ isActive }) => isActive ? 'active' : ''}
-                                to={AppRoutes.home}>Sign In</NavLink>
+                                href="https://app.payscribe.ng/login">Sign In</a>
                         </li>
+
+                        {/* <li>
+                            <a href="https://app.payscribe.ng/login" className="btn btn-white">Sign In Now</a>
+                        </li>
+                        <li>
+                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-main">Open a Free Account</a>
+                        </li> */}
                         {/* <li className="mobile-nav-list">
                             <NavLink onClick={e => {
                                 toggleMobileNavDisplay();

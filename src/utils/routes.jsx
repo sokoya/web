@@ -1,5 +1,6 @@
 const AppRoutes = {
     home: "/",
+    about_us: "/about-us",
     faqs: "/faqs",
     business: "/for-businesses",
     bills: "/paybills",

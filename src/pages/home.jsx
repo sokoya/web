@@ -40,12 +40,12 @@ const Homepage = () => {
 
     const SwiperButtonPrev = ({ children }) => {
         const swiper = useSwiper();
-        return <button className="carousel-controller" onClick={() => swiper.slideNext()}>{children}</button>;
+        return <a className="carousel-controller" onClick={() => swiper.slideNext()}>{children}</a>;
     };
 
     const SwiperButtonNext = ({ children }) => {
         const swiper = useSwiper();
-        return <button className="carousel-controller" onClick={() => swiper.slidePrev()}>{children}</button>;
+        return <a className="carousel-controller" onClick={() => swiper.slidePrev()}>{children}</a>;
     };
 
     const [currentDisp, setCurrentDisp] = useState(0);
@@ -131,8 +131,8 @@ const Homepage = () => {
                                         </p>
                                     </div>
                                     <div className="button-flex mt_3">
-                                        <Link className="btn btn-main" to="/">Open a Free Account <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
-                                        <Link className="btn btn-white" to="/">Reach out to us <img src={ArrowRightMain} alt="arrow right" /></Link>
+                                        <a className="btn btn-main" href="https://app.payscribe.ng/auth/create">Open a Free Account <img src={ArrowRightGrayMain} alt="arrow right" /></a>
+                                        <a className="btn btn-white" href="https://app.payscribe.ng/auth/create">Reach out to us <img src={ArrowRightMain} alt="arrow right" /></a>
                                     </div>
                                     {/* <div className="companies-box">
                                         <p ref={pushElementToRef}>Trusted by over 20,000 businesses</p>
@@ -234,7 +234,7 @@ const Homepage = () => {
                                                             solutions that simplify transactions, reduce costs, and increase financial inclusion. Our
                                                             commitment is to democratize financial services, ensuring that everyone has the opportunity
                                                             to participate in the global economy.</p>
-                                                        <Link to="" className="btn btn-white">Start accepting payments</Link>
+                                                        <a href="https://app.payscribe.ng/auth/create" className="btn btn-white">Start accepting payments</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -304,27 +304,27 @@ const Homepage = () => {
                                             <p>Effortlessly integrate account and wallet services into your fintech platform, allowing
                                                 your users to manage their finances easily and securely. Our robust API simplifies the
                                                 process, reducing development time and effort.</p>
-                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
                                         </div>
                                         <div className={`${currentDisp === 1 ? "active" : ""} summary-story`}>
                                             <h4>Expand financial <br /> reach with effortless <br /> USD/NGN card issuance</h4>
                                             <p>Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your
                                                 users with cards for both international and local transactions, all through a straightforward
                                                 setup and management process.</p>
-                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
                                         </div>
                                         <div className={`${currentDisp === 2 ? "active" : ""} summary-story`}>
                                             <h4>Boost savings <br /> and investments <br /> with minimal work</h4>
                                             <p>Enhance your fintech services by offering effortless savings and investment solutions. Our platform
                                                 simplifies the process, allowing users to manage and grow their funds with minimal effort. This
                                                 streamlined approach enables you to provide robust financial tools without complex implementation.</p>
-                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
                                         </div>
                                         <div className={`${currentDisp === 3 ? "active" : ""} summary-story`}>
                                             <h4>Simplify bill <br /> payments with ease</h4>
                                             <p>Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their 
                                                 bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.</p>
-                                            <button className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
+                                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-border-main">Get Started <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
                                         </div>
                                     </div>
                                     <div className="payscribe-display-main">
@@ -351,7 +351,7 @@ const Homepage = () => {
                                                 <h4>Expand financial reach with effortless USD/NGN card issuance</h4>
                                                 <p>Put an end to long email chains and misplaced documents. Get all relevant information in one
                                                     place—including essential documents, case details, and costs—and easily book a call for speedy assistance.</p>
-                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <a href="https://app.payscribe.ng/auth/create" className="btn btn-gray-border">Get Started</a>
                                                 <img src={BusinessImg} className="business-img" alt="business" />
                                             </Collapse.Panel>
                                             <Collapse.Panel header="Issue USD/NGN Cards" key="2">
@@ -359,7 +359,7 @@ const Homepage = () => {
                                                 <p>Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your
                                                     users with cards for both international and local transactions, all through a straightforward
                                                     setup and management process.</p>
-                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <a href="https://app.payscribe.ng/auth/create" className="btn btn-gray-border">Get Started</a>
                                                 <img src={BusinessImg1} className="business-img" alt="business" />
                                             </Collapse.Panel>
                                             <Collapse.Panel header="Savings & Investment" key="3">
@@ -367,14 +367,14 @@ const Homepage = () => {
                                                 <p>Enhance your fintech services by offering effortless savings and investment solutions. Our platform
                                                     simplifies the process, allowing users to manage and grow their funds with minimal effort. This
                                                     streamlined approach enables you to provide robust financial tools without complex implementation.</p>
-                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <a href="https://app.payscribe.ng/auth/create" className="btn btn-gray-border">Get Started</a>
                                                 <img src={BusinessImg2} className="business-img" alt="business" />
                                             </Collapse.Panel>
                                             <Collapse.Panel header="Bill Payments" key="4">
                                                 <h4>Simplify bill payments with ease</h4>
                                                 <p>Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their 
                                                     bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.</p>
-                                                <button className="btn btn-gray-border">Get Started</button>
+                                                <a href="https://app.payscribe.ng/auth/create" className="btn btn-gray-border">Get Started</a>
                                                 <img src={BusinessImg3} className="business-img" alt="business" />
                                             </Collapse.Panel>
                                         </Collapse>
@@ -386,7 +386,7 @@ const Homepage = () => {
                                                     <h4>Expand financial reach with effortless USD/NGN card issuance</h4>
                                                     <p>Put an end to long email chains and misplaced documents. Get all relevant information in one
                                                         place—including essential documents, case details, and costs—and easily book a call for speedy assistance.</p>
-                                                    <button className="btn btn-gray-border">Get Started</button>
+                                                    <a className="btn btn-gray-border">Get Started</a>
                                                 </div>
                                             </div> */}
                                     </div>
@@ -422,7 +422,7 @@ const Homepage = () => {
                                     </ul>
                                 </div>
                                 <div className="mt_10">
-                                    <Link style={{ width: "max-content" }} to="" className="btn btn-main">Create an Account For Free</Link>
+                                    <a style={{ width: "max-content" }} href="https://app.payscribe.ng/auth/create" className="btn btn-main">Create an Account For Free</a>
                                 </div>
                             </div>
                         </div>
@@ -447,7 +447,7 @@ const Homepage = () => {
                                     </ul>
                                 </div>
                                 <div className="mt_10">
-                                    <Link style={{ width: "max-content" }} to="" className="btn btn-main">Create an Account For Free</Link>
+                                    <a style={{ width: "max-content" }} href="https://app.payscribe.ng/auth/create" className="btn btn-main">Create an Account For Free</a>
                                 </div>
                             </div>
                             <div>
@@ -516,8 +516,8 @@ const Homepage = () => {
                                     experts are here to help you craft a tailored payment solution that perfectly suits your
                                     business needs - just reach out to us!.</p>
                                 <div className="flex-div">
-                                    <Link className="btn btn-accent" to="">Start Building <img src={ArrowRightMain} alt="arrow right" /></Link>
-                                    <Link className="btn btn-gray-border" to="">Contact Sales <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
+                                    <a className="btn btn-accent" href="https://app.payscribe.ng/auth/create">Start Building <img src={ArrowRightMain} alt="arrow right" /></a>
+                                    <a className="btn btn-gray-border" href="https://app.payscribe.ng/auth/create">Contact Sales <img src={ArrowRightGrayMain} alt="arrow right" /></a>
                                 </div>
                             </div>
                             <div>

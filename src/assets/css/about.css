@@ -512,6 +512,10 @@ ul.break {
     color: #fff;
 }
 
+.bg-black.sec-bg .why-payscribe .center-div {
+    width: 50%;
+}
+
 .central h2.sec-title {
     margin-bottom: 15px;
 }
@@ -1312,9 +1316,9 @@ p.bold {
 }
 
 .about-hero h2 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     color: #fff;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 

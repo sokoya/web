@@ -6,6 +6,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 // import Homepage from "./pages/homepage";
 import Homepage from "./pages/home";
+// import Homepage from "./pages/hm";
 import AboutUsPage from "./pages/about";
 import AirtimeToCashPage from "./pages/products/airtime";
 import BusinessPage from "./pages/business";
@@ -38,12 +39,12 @@ const AllAppRoutes = () => {
                     <Routes>
                         <Route path="/" element={<Homepage />} />
                         <Route path="/individuals" element={<IndividualPage />} />
-                        <Route path="/about-us" element={<AboutUsPage />} />
+                        <Route path={AppRoutes.about_us} element={<AboutUsPage />} />
 
                         <Route path={AppRoutes.faqs} element={<FAQsPage />} />
 
                         <Route path={AppRoutes.airtime_to_cash} element={<AirtimeToCashPage />} />
-                        <Route path={AppRoutes.bills} element={<AbtPage />} />
+                        <Route path={AppRoutes.bills} element={<PayBillsPage />} />
                         <Route path={AppRoutes.handle_payments} element={<PaymentsPage />} />
                         <Route path={AppRoutes.events} element={<EventsPage />} />
                         <Route path={AppRoutes.sell_giftcards} element={<GiftcardsPage />} />

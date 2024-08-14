@@ -9,6 +9,7 @@ import ArrowRightMain from "../assets/images/arrow-up-right.svg";
 import ArrowRightGrayMain from "../assets/images/arrow-up-right-gray.svg";
 
 import PhoneImg from "../assets/images/homepage/phone.png";
+import ProductStories from "../components/product-pages-story";
 
 const AbtPage = () => {
     return (
@@ -18,11 +19,11 @@ const AbtPage = () => {
                 <div className="grid-2">
                     <div className="text-ba">
                         <div className="text-bar">
-                            <h5>Airtime to Cash</h5>
-                            <h2>Instant Airtime Conversion: Turn Your Unused Airtime into Cash</h2>
-                            <p>Easily convert your spare airtime into cash with just a few clicks. Our fast and secure
-                                service ensures you get money in no time, so you can make the most of your unused airtime. Enjoy
-                                the convenience and flexibility of having extra cash at your fingertips!</p>
+                            <h5>Manage Payments</h5>
+                            <h2>Global Payments Made Easy: Send and Receive Money Anywhere.</h2>
+                            <p>Send and receive payments anywhere in the world effortlessly. Our platform makes
+                                international transactions simple and secure, ensuring your money moves quickly
+                                and reliably, no matter where you are.</p>
                             <div className="button-flex mt_3">
                                 <Link className="btn btn-white" to="/">Open a Free Account <img src={ArrowRightMain} alt="arrow right" /></Link>
                                 <Link className="btn btn-default" to="/">Reach out to us <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
@@ -36,101 +37,62 @@ const AbtPage = () => {
             </div>
             <div className="summary-block py_5">
                 <div className="contain">
-                    {/* <h3 className="sec-title">Make authentication easy for everyone</h3> */}
                     <div className="grid-3">
                         <div>
-                            <ion-icon name="boat-outline"></ion-icon>
-                            <h4>Tackle authentication globally</h4>
-                            <p>Every market has its own regulations and behaviors. Adyen’s solution adapts
-                                to local needs so that you can offer frictionless authentication everywhere.</p>
+                            <ion-icon name="globe-outline"></ion-icon>
+                            <h4>Fast International Transfers</h4>
+                            <p>Send and receive money across borders quickly and
+                                securely, ensuring your funds reach their destination efficiently. Enjoy a seamless and reliable process
+                                for all your global financial needs.
+                            </p>
                         </div>
                         <div>
-                            <ion-icon name="boat-outline"></ion-icon>
-                            <h4>Tackle authentication globally</h4>
-                            <p>Every market has its own regulations and behaviors. Adyen’s solution adapts
-                                to local needs so that you can offer frictionless authentication everywhere.</p>
+                            <ion-icon name="tablet-landscape-outline"></ion-icon>
+                            <h4>Low Transfer Fees</h4>
+                            <p>Benefit from our low transfer fees for international transactions. Enjoy affordable and secure
+                                money transfers, with clear and transparent costs that help you save on every transfer.</p>
                         </div>
                         <div>
-                            <ion-icon name="boat-outline"></ion-icon>
-                            <h4>Tackle authentication globally</h4>
-                            <p>Every market has its own regulations and behaviors. Adyen’s solution adapts
-                                to local needs so that you can offer frictionless authentication everywhere.</p>
+                            <ion-icon name="shuffle-outline"></ion-icon>
+                            <h4>Multi-Currency Support</h4>
+                            <p>Easily manage your funds with our multi-currency support. Transfer and receive money in
+                                various currencies with ease, all while enjoying seamless transactions and competitive exchange rates.</p>
                         </div>
                     </div>
                 </div>
                 <div className="contain mt_5">
-                    {/* <h3 className="sec-title">Make authentication easy for everyone</h3> */}
-                    <h3 className="sec-title">Make authentication easy for everyone <br /> and easily without hassle</h3>
+                    <h3 className="sec-title">Maximize Your Savings <br /> and Convenience with Gift Cards</h3>
                     <div className="grid-3 mt_2">
                         <div className="how-to-single">
                             <div className="how-to-img"></div>
                             <div className="how-to-story mt_5">
-                                <h4>Tackle authentication globally</h4>
-                                <p>Every market has its own regulations and behaviors. Adyen’s solution adapts to local needs so 
-                                    that you can offer frictionless authentication everywhere.</p>
+                                <h4>Create a free account</h4>
+                                <p>To get started, the first step is to create an account. Simply click on the "Create a Free Account" button, fill
+                                    in your details, and you're ready to go. Creating an account is quick, easy, and free!</p>
                             </div>
                         </div>
                         <div className="how-to-single">
                             <div className="how-to-img"></div>
                             <div className="how-to-story mt_5">
-                                <h4>Tackle authentication globally</h4>
-                                <p>Every market has its own regulations and behaviors. Adyen’s solution adapts to local needs so 
-                                    that you can offer frictionless authentication everywhere.</p>
+                                <h4>Pick Your Plan and Enter Details</h4>
+                                <p>After creating your account, go to the "Transfers" section. Choose the type of transfer you want to 
+                                    make, and enter the necessary details to get started. It's easy and straightforward!</p>
                             </div>
                         </div>
                         <div className="how-to-single">
                             <div className="how-to-img"></div>
                             <div className="how-to-story mt_5">
-                                <h4>Tackle authentication globally</h4>
-                                <p>Every market has its own regulations and behaviors. Adyen’s solution adapts to local needs so 
-                                    that you can offer frictionless authentication everywhere.</p>
+                                <h4>Complete Transaction</h4>
+                                <p>Finally, enter your transfer amount and proceed to complete the transaction. Carefully input the 
+                                    transfer details, review all the information to be sure, and confirm to finalize the process.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="desc-tab py_5">
-                <div className="contain">
-                    <div className="center-div">
-                        <h3 className="sect-title">A safe space for you and your money</h3>
-                        <p>We leverage the best technology to ensure end-to-end encryption of all your transactions—bank-grade security.</p>
-                    </div>
-                    <div className="desc-tab-grid-2">
-                        <div className="single-tab">
-                            <h4>ISO 27001 certified</h4>
-                            <p>Afriex has an Information Security Management System and we are proud to be ISO 27001 certified, demonstrating our
-                                commitment to maintaining the highest standards of information security. This certification validates our robust
-                                security practices, ensuring the confidentiality, integrity, and availability of sensitive data entrusted to us by
-                                our users.</p>
-                        </div>
-                        <div className="single-tab">
-                            <h4>ISO 27001 certified</h4>
-                            <p>Afriex has an Information Security Management System and we are proud to be ISO 27001 certified, demonstrating our
-                                commitment to maintaining the highest standards of information security. This certification validates our robust
-                                security practices, ensuring the confidentiality, integrity, and availability of sensitive data entrusted to us by
-                                our users.</p>
-                        </div>
-                    </div>
-                    <div className="desc-tab-grid-2 inverse">
-                        <div className="single-tab">
-                            <h4>ISO 27001 certified</h4>
-                            <p>Afriex has an Information Security Management System and we are proud to be ISO 27001 certified, demonstrating our
-                                commitment to maintaining the highest standards of information security. This certification validates our robust
-                                security practices, ensuring the confidentiality, integrity, and availability of sensitive data entrusted to us by
-                                our users.</p>
-                        </div>
-                        <div className="single-tab">
-                            <h4>ISO 27001 certified</h4>
-                            <p>Afriex has an Information Security Management System and we are proud to be ISO 27001 certified, demonstrating our
-                                commitment to maintaining the highest standards of information security. This certification validates our robust
-                                security practices, ensuring the confidentiality, integrity, and availability of sensitive data entrusted to us by
-                                our users.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ProductStories />
             <FaqDisplay />
-            <div className="cover-box">
+            <div className="width-60">
                 <div className="join-us">
                     <div className="grid-2">
                         <div>

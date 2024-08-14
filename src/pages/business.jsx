@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Navigation from "../components/nav";
 import Footer from "../components/footer";
 
@@ -29,6 +29,7 @@ import SolutionImg from "../assets/images/homepage/new/solution.webp";
 
 import { Link } from "react-router-dom";
 import { Collapse, Divider, Rate } from "antd";
+import FaqDisplay from "../components/faq";
 
 const BusinessPage = () => {
 
@@ -44,6 +45,11 @@ const BusinessPage = () => {
         const swiper = useSwiper();
         return <button className="carousel-controller" onClick={() => swiper.slidePrev()}>{children}</button>;
     };
+
+    const textRef = useRef([]);
+    const pushElementToRef = ele => {
+        textRef.current.push(ele);
+    }
 
     const handlePanelChanges = key => {
         if (key.length == 0) {
@@ -74,46 +80,68 @@ const BusinessPage = () => {
         <div className="businesses">
             <div className="product-page">
                 <Navigation />
-                <div className="airtime-hero">
-                    <div className="airtime-hero-text">
-                        <div className="text-bar">
-                            <h2>Providing global teams with equity has never been simpler</h2>
-                            <p>Easily offer equity to +110 countries compliantly. Deel simplifies taxes reporting, automates
-                                admin, and oversees all compensation in one place.</p>
+                <div className="about-hero">
+                    <div className="grid-2">
+                        <div className="text-ba">
+                            <div className="text-bar">
+                                <h5>Tailored for Business Growth</h5>
+                                <h2>Comprehensive Financial Solutions Tailored for Your Business Growth.</h2>
+                                <p>Empower your business with secure transactions, advanced management tools, and seamless financial
+                                    integrations. Our innovative solutions streamline operations, boost efficiency, and drive sustainable
+                                    growth, giving your business the edge it needs to thrive.</p>
+                                <div className="button-flex mt_3">
+                                    <Link className="btn btn-white" to="/">Open a Free Account <img src={ArrowRightMain} alt="arrow right" /></Link>
+                                    <Link className="btn btn-default" to="/">Reach out to us <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
+                                </div>
+                            </div>
                         </div>
-                        <div className="button-flex mt_3">
-                            <Link className="btn btn-main" to="/">Open a Free Account <img src={ArrowRightGrayMain} alt="arrow right" /></Link>
-                            <Link className="btn btn-white" to="/">Reach out to us <img src={ArrowRightMain} alt="arrow right" /></Link>
+                        <div>
+                            <div className="story-hero-img"></div>
                         </div>
                     </div>
-                    <div className="hero-gradient-bar"></div>
                 </div>
-                <div className="business-prop mt_5">
+                <div className="mt_5">
                     <div className="cover-div">
-                        <div className="business-props-summary">
-                            <div>
-                                <h3>$10 billion strong: Deel leads the industry in global payroll payments</h3>
-                                <p>Deel HR automates every aspect of HR, while bringing all of your employee data from around the world into a single
-                                    global HRIS. We compliantly localize everything—from fields and documents to currencies—based on work location.</p>
-                                <Link className="btn btn-main" to="">Reach out to us</Link>
-                            </div>
+                        <div className="top-card-tile">
+                            <h2 ref={pushElementToRef} className="desktop-only">Streamline Your Financial <br /> Services with Ease</h2>
+                            <h2 ref={pushElementToRef} className="mobile-only">Streamline Your Financial Services with Ease</h2>
                         </div>
-                        <div className="grid-4">
-                            <div>
-                                <img src={DeelImg} alt="" />
-                                <p>Results in 15 minutes </p>
+                        <div className="box-grid grid-2">
+                            <div className="box light">
+                                <div className="text-bar">
+                                    <h3>Seamless Integration</h3>
+                                    <p>Effortlessly connect your business with multiple financial services through our unified
+                                        platform, simplifying processes and reducing complexity.</p>
+                                </div>
                             </div>
-                            <div>
-                                <img src={DeelImg} alt="" />
-                                <p>Results in 15 minutes </p>
+                            <div className="box dark-blue">
+                                <div className="text-bar">
+                                    <h3>Secure Transactions</h3>
+                                    <p>Enjoy peace of mind with our robust security measures, ensuring that all your
+                                        financial data and transactions are protected.</p>
+                                </div>
                             </div>
-                            <div>
-                                <img src={DeelImg} alt="" />
-                                <p>Results in 15 minutes </p>
+                            <div className="box light-blue">
+                                <div className="text-bar">
+                                    <h3>Real-Time Data Access</h3>
+                                    <div>
+                                        <p ref={pushElementToRef} className="millions">
+                                            Access up-to-date financial information instantly, allowing you to make informed decisions and
+                                            respond quickly to market changes.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img src={DeelImg} alt="" />
-                                <p>Results in 15 minutes </p>
+                            <div className="box black">
+                                <div className="text-bar">
+                                    <h3>Scalable Solutions</h3>
+                                    <div>
+                                        <p ref={pushElementToRef} className="millions">
+                                            Our platform grows with your business, offering flexible tools that adapt to your 
+                                            needs, from startups to established enterprises.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -123,8 +151,7 @@ const BusinessPage = () => {
                         <div className="cover-div">
                             <div className="center-div">
                                 <p className="tag">Effortless Financial Integration</p>
-                                <h3>Streamline Your Financial Services with Ease</h3>
-                                {/* <h3>One hub for immigration, <br /> payroll, and HR</h3> */}
+                                <h3>Discover the Full Range of Services We Offer to Empower Your Business</h3>
                             </div>
                             <div className="desktop-only">
                                 <div className="payscribe-display-control mt_4">
@@ -222,36 +249,7 @@ const BusinessPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="why-payscribe pt_5">
-                    <div className="cover-div">
-                        <div className="center-div">
-                            <p className="tag">immigration features</p>
-                            <h3>One hub for immigration, <br /> payroll, and HR</h3>
-                        </div>
-                        <div className="payscribe-display-control mt_4">
-                            <ul>
-                                <li className="active">Visa eligibility</li>
-                                <li>Visa eligibility</li>
-                                <li>Visa eligibility</li>
-                                <li>Visa eligibility</li>
-                                <li>Visa eligibility</li>
-                            </ul>
-                        </div>
-                        <div className="payscribe-display-box mt_3">
-                            <div className="payscribe-display-summary">
-                                <div>
-                                    <h4>Access all business <br /> information in one click.</h4>
-                                    <p>Put an end to long email chains and misplaced documents. Get all relevant information in one
-                                        place—including essential documents, case details, and costs—and easily book a call for speedy assistance.</p>
-                                    <button className="btn btn-gray-border">Get Started</button>
-                                </div>
-                            </div>
-                            <div className="payscribe-display-main">
-                                <img src={BusinessImg} alt="business" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <FaqDisplay />
                 <div className="container">
                     <div className="join-us">
                         <div className="grid-2">
