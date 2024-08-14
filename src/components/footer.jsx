@@ -58,10 +58,10 @@ const Footer = props => {
                             <h5>Products</h5>
                             <ul>
                                 <li>
-                                    <Link to="">Sell Giftcards</Link>
+                                    <Link to="">Pay Bills</Link>
                                 </li>
                                 <li>
-                                    <Link to="">Virtual Dollar (coming soon)</Link>
+                                    <Link to="">Virtual Dollar</Link>
                                 </li>
                                 {/* <li>
                                     <Link to="">Rewards</Link>
@@ -97,13 +97,13 @@ const Footer = props => {
                             <h5>Resources</h5>
                             <ul>
                                 <li>
-                                    <Link to={AppRoutes.faqs}>FAQs</Link>
+                                    <Link to="/">FAQs</Link>
                                 </li>
                                 <li>
                                     <Link to="">Status Page</Link>
                                 </li>
                                 <li>
-                                    <Link to={AppRoutes.compliance}>Compliance</Link>
+                                    <Link to="/">Compliance</Link>
                                 </li>
                             </ul>
                         </div>

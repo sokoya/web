@@ -69,7 +69,7 @@ const Navigation = props => {
             key: '4',
             label: (
                 <Link to="/">
-                    Buy and Sell Giftcards
+                    Virtual Dollar
                 </Link>
             ),
         },
@@ -107,7 +107,7 @@ const Navigation = props => {
             key: '1',
             label: (
                 <Link to="/">
-                    About Us
+                    About
                 </Link>
             ),
         },
@@ -157,7 +157,7 @@ const Navigation = props => {
                                         items: solutionItems,
                                     }}>
                                     <div className="relative-bar">
-                                        <Link to="#">Individuals</Link>
+                                        <Link to="#">Products</Link>
                                         {/* <div className="ps-dropdown-bar">
                                         <div className="ps-dropdown-b">
                                             <div className="nav-inline-list">
@@ -287,7 +287,7 @@ const Navigation = props => {
                                         items: companyItems,
                                     }}
                                 >
-                                    <Link to="#">Company</Link>
+                                    <Link to="#">Companies</Link>
                                 </Dropdown>
                             </li>
                         </ul>
@@ -299,10 +299,10 @@ const Navigation = props => {
                             <Link className="" to="/">Sales: +234 (813) 227 7316</Link>
                         </li> */}
                         <li>
-                            <a href="https://app.payscribe.ng/login" className="btn btn-white">Sign In Now</a>
+                            <Link className="btn btn-white" to="/">Sign In Now</Link>
                         </li>
                         <li>
-                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-main">Open a Free Account</a>
+                            <Link className="btn btn-main" to="/">Open a Free Account</Link>
                         </li>
                     </ul>
                 </div>
@@ -346,7 +346,7 @@ const Navigation = props => {
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink className={({ isActive }) => isActive ? 'active' : ''} onClick={toggleMobileNavDisplay}
-                                to={AppRoutes.business}>For Businesses</NavLink>
+                                to="/">For Businesses</NavLink>
                         </li>
                         <li className="mobile-nav-list">
                             <NavLink onClick={e => {
@@ -363,19 +363,12 @@ const Navigation = props => {
                                 to={AppRoutes.home}>About Us</NavLink>
                         </li>
                         <li className="mobile-nav-list">
-                            <a onClick={e => {
+                            <NavLink onClick={e => {
                                 toggleMobileNavDisplay();
                                 e.preventDefault();
                             }} className={({ isActive }) => isActive ? 'active' : ''}
-                                href="https://app.payscribe.ng/login">Sign In</a>
+                                to={AppRoutes.home}>Sign In</NavLink>
                         </li>
-
-                        {/* <li>
-                            <a href="https://app.payscribe.ng/login" className="btn btn-white">Sign In Now</a>
-                        </li>
-                        <li>
-                            <a href="https://app.payscribe.ng/auth/create" className="btn btn-main">Open a Free Account</a>
-                        </li> */}
                         {/* <li className="mobile-nav-list">
                             <NavLink onClick={e => {
                                 toggleMobileNavDisplay();

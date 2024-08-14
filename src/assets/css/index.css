@@ -342,9 +342,8 @@ p {
 .navigation.fixed .div-logo h2.logo-title {
     color: #000;
 }
-
-
-/* .navigation .div-logo h2.logo-title {
+/* 
+.navigation .div-logo h2.logo-title {
     color: #000;
 } */
 
@@ -825,7 +824,6 @@ p {
     }
 }
 
-
 /* .navigation {
     background: #fff;
     position: relative;
@@ -834,7 +832,3 @@ p {
 .navigation ul li a {
     color: #000;
 } */
-
-.div-logo h2.logo-title {
-    /* color: #000; */
-}
