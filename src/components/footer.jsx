@@ -72,9 +72,9 @@ const Footer = props => {
                                 <li>
                                     <Link to="">Save and Earn</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="">Events</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         <div>
