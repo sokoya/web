@@ -659,7 +659,7 @@ ul.break {
 
 .answer-box .question-box h5 {
     font-size: 1.6rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .answer-box .question-box ion-icon {
@@ -914,8 +914,8 @@ ul.break {
 }
 
 h3.sec-title {
-    font-size: 2.6rem;
-    font-weight: 800;
+    font-size: 2.8rem;
+    /* font-weight: 800; */
 }
 
 .below-fold .grid-4 {
@@ -1090,47 +1090,74 @@ p.bold {
     display: inline;
 }
 
+.business-story-div {
+    background: #F7F7F8;
+    padding: 5% 0px;
+}
+
+.business-story-div  {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.business-story-div ion-icon {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #5A28FF;
+}
+
 @media screen and (max-width: 720px) {
     .center-div {
         width: 100%;
     }
+
     .product-page .grid-3 {
         display: flex;
         flex-direction: column;
     }
+
     .story-div h4.sect-title {
         font-size: 2.5rem;
     }
+
     .story-div .grid-2 {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .story-div p {
         font-size: 1.3rem;
     }
+
     .story-div .grid-2 .mt_5 {
         margin-top: 3%;
     }
+
     .answer-box {
         width: 100%;
     }
+
     .answer-box .grid-flex {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .airtime-hero .grid-2 {
         display: flex;
         flex-direction: column;
     }
+
     .airtime-hero .img-bar .main-img {
         width: 70%;
         display: none;
     }
+
     .airtime-hero {
         height: 100%;
         padding: 30% 0px 20%;
     }
+
     .airtime-hero h2 {
         font-size: 2.8rem;
         word-spacing: unset;
@@ -1138,40 +1165,59 @@ p.bold {
         line-height: 1.4;
         width: 100%;
     }
+
     .airtime-hero h5 {
         font-size: 1.2rem;
         margin-bottom: 10px;
         font-weight: 1000;
     }
+
     .airtime-hero p {
         font-size: 1.3rem;
         line-height: 1.8;
         width: 100%;
     }
+
+    .bg-black.sec-bg .why-payscribe .center-div {
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    .center-div p.tag {
+        font-size: 1.2rem;
+    }
+
     .detail-summary p.text-top-tag {
         font-size: 1.2rem !important;
     }
+
     .detail-summary ul.break {
         /* display: none; */
         column-count: unset;
     }
+
     .mobile-testimonial .testimonial-header h3 {
         font-size: 2.3rem;
     }
+
     .mobile-testimonial .testimonial-header .button-flex {
         display: none;
     }
+
     .mobile-testimonial p {
         font-size: 1.3rem;
     }
+
     .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body .grid-flex {
         grid-gap: 0px;
         display: flex;
         /* flex-direction: row; */
     }
+
     .mobile-testimonial .testimonial-bar .testimonial-card .testimonial-card-body h4 {
         font-size: 1.4rem;
     }
+
     .product-page .simple-props {
         padding: 30px 15px;
         padding-top: 40px;
@@ -1179,113 +1225,149 @@ p.bold {
         flex-direction: column-reverse;
         text-align: center;
     }
+
     .product-page .airtime-props.main-div h4 {
         font-size: 1.6rem;
         margin-bottom: 0px;
     }
+
     .product-page .simple-props p {
         font-size: 1.3rem;
         margin-bottom: 0px;
     }
+
     .product-page .airtime-props.main-div img {
         width: 70%;
     }
+
     .center-div h3 {
         font-size: 2.3rem;
     }
+
     .center-div p {
         font-size: 1.3rem;
     }
+
     .answer-box .question-box h5 {
         font-size: 1.3rem;
     }
+
     .question-box {
         padding: 15px 15px;
     }
+
     .faq .center-div {
         text-align: left;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
+
+
+
     .payscribe-display-mobile-header {
         border-bottom: 2px solid #FFFCF9;
         margin-bottom: 20px;
     }
+
     .payscribe-display-mobile .ant-collapse-header-text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding-bottom: 5px;
         color: #fff !important;
+        font-family: "Gilroy-Bold";
     }
+
     .payscribe-display-mobile .ant-collapse-header {
         padding: 10px 0px !important;
         border-bottom: 2px solid #FFFCF9;
         border-radius: 0px !important;
     }
+
     .payscribe-display-mobile .ant-collapse-content-box {
         padding: 30px 0px 0px !important;
     }
+
     .payscribe-display-mobile p {
         color: #fff;
         font-size: 1.3rem;
         margin-bottom: 40px;
     }
+
     .payscribe-display-mobile h4 {
         color: #fff;
         font-size: 1.5rem;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         width: 80%;
         line-height: 1.6;
     }
+
     .payscribe-display-mobile img {
         margin: 30px 0px;
         border-radius: 8px;
     }
+
     .props-grid-display.mt_5 .grid-2 .mt_5 {
         margin-top: 5%;
     }
+
     .solution {
         width: 70% !important;
         margin-bottom: 40px;
     }
+
     .airtime-hero .cover-div {
         width: calc(100% - 10%);
     }
+
     .airtime-hero .text-ba {
         display: flex;
         flex-direction: column;
         position: relative;
         grid-gap: 50px;
     }
+
     .airtime-hero .text-ba .main-img {
         width: 80%;
     }
+
     .faq-hero .faq-hero-text h2 {
         font-size: 3rem;
     }
+
     .faq-hero .grid-2 {
         display: block;
     }
+
     .privacy-content {
         width: 92%;
         padding-top: 15%;
     }
+
     .faq-hero .faq-hero-text {
         padding: 0px 5%;
     }
+
     .faq-hero {
         height: 25rem;
     }
+
     .privacy-content p {
         font-size: 1.4rem;
     }
+
     .privacy-content h1 {
         margin-bottom: 10px;
         font-size: 2rem;
     }
+
     .privacy-content h2 {
         font-size: 1.8rem;
     }
+
     .privacy-content h3 {
         font-size: 1.6rem;
+    }
+
+    .business-story-div ion-icon {
+        margin-bottom: 20px;
     }
 }
 
@@ -1340,12 +1422,12 @@ p.bold {
     padding: 20px 25px;
 }
 
-.summary-block .grid-3 h4 {
+.summary-block h4 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.summary-block .grid-3 ion-icon {
+.summary-block ion-icon {
     font-size: 4rem;
     margin-bottom: 30px;
     color: #0357EE;
@@ -1396,4 +1478,174 @@ p.bold {
     height: 30rem;
     width: 100%;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 720px) {
+    .about-hero h2 {
+        font-size: 2.6rem;
+        line-height: 1.4;
+    }
+
+    .about-hero .grid-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .about-hero .story-hero-img {
+        border-radius: 8px;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .about-hero {
+        padding: 15% 3%;
+        width: calc(100% - 6%);
+        height: max-content;
+    }
+
+    .about-hero p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .summary-block .grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 50px;
+    }
+
+    .summary-block .grid-3.props {
+        text-align: left;
+    }
+
+    .summary-block .grid-3.how-to .mt_5 {
+        margin-top: 20px;
+    }
+
+    .how-to-single .how-to-img {
+        height: 25rem;
+    }
+
+    .business-story-div p,
+    .summary-block p {
+        font-size: 1.3rem;
+    }
+
+    .business-story-div h4,
+    .summary-block h4 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .summary-block ion-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    h3.sec-title {
+        font-size: 2.1rem;
+    }
+
+    .homepage-story.black-bg .grid-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .homepage-story .story-img {
+        height: 30rem;
+        width: 100%;
+    }
+
+    .homepage-story h2 {
+        font-size: 2.3rem;
+    }
+
+    .summary-block.py_5 {
+        padding-top: 10%;
+    }
+
+    .homepage-story h5 {
+        font-size: 1.3rem;
+    }
+
+    .sec-text-body.about .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .team-disp h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+    }
+
+    .team-disp p {
+        font-size: 1.3rem;
+    }
+
+    .abt-props.grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 40px;
+    }
+
+    .abt-props .single-props-box p,
+    .about-story p {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .abt-props .single-props-box h5 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .sec-text-body .abt-header-text h4 {
+        font-size: 2.6urem;
+    }
+
+    .about-story h4 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .abt-props .single-props-box {
+        border: none;
+        padding: 0px;
+    }
+
+    .abt-props .single-props-box ion-icon {
+        margin: 0px auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .sec-text-body.about .team-avatar {
+        height: 20rem;
+    }
+
+    .width-60 {
+        width: 94%;
+    }
+
+    .faq.airtime-props .width-60 {
+        width: 100%;
+    }
+
+    .business-story-div {
+        padding: 15% 0px;
+    }
+
+    .about-hero a.btn {
+        padding: 15px 20px;
+    }
+
+    .about-hero h5 {
+        font-size: 1.3rem;
+    }
+
+    .businesses .cover-div .cover-div {
+        padding: 0px;
+    }
 }

@@ -70,7 +70,7 @@ const AboutUsPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="sec-text-body mt_5 team-sect py_5">
+            <div className="sec-text-body about mt_5 team-sect py_5">
                 <div className="contain">
                     <div className="abt-header-text">
                         <div className="center-div">
