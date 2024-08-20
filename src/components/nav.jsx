@@ -14,6 +14,9 @@ import LogoBlack from "../assets/images/logo.png";
 
 const Navigation = (props) => {
   const [fixedNav, setFixed] = useState(false);
+
+  const [currentView, setCurrentView] = useState("default");
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const offset = window.scrollY;
@@ -298,122 +301,165 @@ const Navigation = (props) => {
           </div>
           <div>
             <div className="nav-control">
-              <img
-                onClick={toggleMobileNavDisplay}
-                src={CancelWhite}
-                alt="Cancel"
-              />
+              {currentView === "default" ? (
+                <img
+                  onClick={toggleMobileNavDisplay}
+                  src={CancelWhite}
+                  alt="Cancel"
+                />
+              ) : (
+                <ion-icon style={{fontSize: "2.4rem"}} onClick={() => setCurrentView("default")} name="arrow-back-circle-outline"></ion-icon>
+              )}
             </div>
           </div>
         </div>
         <div className="nav-main-list">
-          <ul className="mobile-nav">
-            <li className="mobile-nav-list">
-              <NavLink
-                className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={toggleMobileNavDisplay}
-                to="/"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="mobile-nav-list">
-              <NavLink
-                onClick={(e) => {
-                  toggleMobileNavDisplay();
-                  e.preventDefault();
-                }}
-                className={({ isActive }) => (isActive ? "active" : "")}
-                to={AppRoutes.home}
-              >
-                About Us
-              </NavLink>
-            </li>
-            <li className="mobile-nav-list">
-              <NavLink
-                className={({ isActive }) => (isActive ? "active" : "")}
-                to="#"
-              >
-                <div>Products</div>
-                {/* <div className="nav-inner-list">
-                      <ul>
-                        <li>
-                          <Link to="/">Pay Bills</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Pay Bills</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Pay Bills</Link>
-                        </li>
-                        <li>
-                          <Link to="/">Pay Bills</Link>
-                        </li>
-                      </ul>
-                    </div> */}
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </NavLink>
-            </li>
-            <li className="mobile-nav-list">
-              <NavLink
-                className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={toggleMobileNavDisplay}
-                to="/"
-              >
-                For Businesses
-              </NavLink>
-            </li>
-            <li className="mobile-nav-list">
-              <NavLink
-                onClick={(e) => {
-                  toggleMobileNavDisplay();
-                  e.preventDefault();
-                }}
-                className={({ isActive }) => (isActive ? "active" : "")}
-                to={AppRoutes.home}
-              >
-                For Developers
-              </NavLink>
-            </li>
-            <li className="mobile-nav-list">
-              <a
-                href="https://app.payscribe.ng/auth/create"
-                onClick={(e) => {
-                  toggleMobileNavDisplay();
-                  e.preventDefault();
-                }}
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Our FAQs
-              </a>
-            </li>
-            <li className="mobile-nav-list">
-              <NavLink
-                onClick={(e) => {
-                  toggleMobileNavDisplay();
-                  e.preventDefault();
-                }}
-                className={({ isActive }) => (isActive ? "active" : "")}
-                to={AppRoutes.home}
-              >
-                Contact Us
-              </NavLink>
-            </li>
-          </ul>
-          <div className="nav-footer">
-            <div className="">
-              <div className="">
-                <Link to="" className="btn btn-border-main">
-                  Sign In
-                </Link>
+          {currentView === "default" ? (
+            <>
+              <ul className="mobile-nav">
+                <li className="mobile-nav-list">
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    onClick={toggleMobileNavDisplay}
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="mobile-nav-list">
+                  <NavLink
+                    onClick={(e) => {
+                      toggleMobileNavDisplay();
+                      e.preventDefault();
+                    }}
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to={AppRoutes.home}
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li
+                  onClick={() => setCurrentView("products")}
+                  className="mobile-nav-list"
+                >
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to="#"
+                  >
+                    <div>Products</div>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </NavLink>
+                </li>
+                <li className="mobile-nav-list">
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    onClick={toggleMobileNavDisplay}
+                    to={AppRoutes.business}
+                  >
+                    For Businesses
+                  </NavLink>
+                </li>
+                <li className="mobile-nav-list">
+                  <NavLink
+                    onClick={(e) => {
+                      toggleMobileNavDisplay();
+                      e.preventDefault();
+                    }}
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to={AppRoutes.home}
+                  >
+                    For Developers
+                  </NavLink>
+                </li>
+                <li className="mobile-nav-list">
+                  <a
+                    href="https://app.payscribe.ng/auth/create"
+                    onClick={(e) => {
+                      toggleMobileNavDisplay();
+                      e.preventDefault();
+                    }}
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    Our FAQs
+                  </a>
+                </li>
+                <li className="mobile-nav-list">
+                  <NavLink
+                    onClick={(e) => {
+                      toggleMobileNavDisplay();
+                      e.preventDefault();
+                    }}
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                    to={AppRoutes.home}
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+              <div className="nav-footer">
+                <div className="">
+                  <div className="">
+                    <Link to="" className="btn btn-border-main">
+                      Sign In
+                    </Link>
+                  </div>
+                  <div className="mt_2">
+                    <Link to="" className="btn btn-main">
+                      Create a free account
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <div className="mt_2">
-                <Link to="" className="btn btn-main">
-                  Create a free account
-                </Link>
-              </div>
-            </div>
-          </div>
+            </>
+          ) : (
+            <ul className="mobile-nav">
+              <li className="mobile-nav-list">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={toggleMobileNavDisplay}
+                  to={AppRoutes.bills}
+                >
+                  Pay Bills
+                </NavLink>
+              </li>
+              <li className="mobile-nav-list">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={toggleMobileNavDisplay}
+                  to={AppRoutes.save_and_earn}
+                >
+                  Save and Invest
+                </NavLink>
+              </li>
+              <li className="mobile-nav-list">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={toggleMobileNavDisplay}
+                  to={AppRoutes.sell_giftcards}
+                >
+                  Sell Giftcards
+                </NavLink>
+              </li>
+              <li className="mobile-nav-list">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={toggleMobileNavDisplay}
+                  to={AppRoutes.handle_payments}
+                >
+                  Send and Receive Payments
+                </NavLink>
+              </li>
+              <li className="mobile-nav-list">
+                <NavLink
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={toggleMobileNavDisplay}
+                  to={AppRoutes.bills}
+                >
+                  Virtual Cards
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </div>
       </Drawer>
     </div>
