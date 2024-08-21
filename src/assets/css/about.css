@@ -491,7 +491,6 @@ ul.break {
     font-size: 1.5rem;
     list-style: none;
     padding: 15px 30px;
-    font-family: "Gilroy-Bold";
     color: #000;
     color: #FFFCF9;
 }
@@ -501,7 +500,6 @@ ul.break {
     border: 1px solid #FFFCF9;
     border-radius: 50px;
     color: #000;
-    font-family: "Gilroy-ExtraBold";
 }
 
 .bg-black.sec-bg .center-div h3 {
@@ -1095,7 +1093,7 @@ p.bold {
     padding: 5% 0px;
 }
 
-.business-story-div  {
+.business-story-div {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -1391,6 +1389,14 @@ p.bold {
     width: 70%;
     margin: 0px auto;
     display: block;
+}
+
+.about-hero img.main-block {
+    height: 100%;
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+    transform: rotate(-15deg);
 }
 
 .about-hero p {

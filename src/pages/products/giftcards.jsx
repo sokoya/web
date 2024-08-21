@@ -12,6 +12,8 @@ import ArrowRightGrayMain from "../../assets/images/arrow-up-right-gray.svg";
 import PhoneImg from "../../assets/images/homepage/phone.png";
 import ProductStories from "../../components/product-pages-story";
 
+import Raenest1 from "../../assets/images/homepage/new/_1.svg";
+
 const AbtPage = () => {
   let breakpoints = {
     // when window width is >= 320px
@@ -61,7 +63,9 @@ const AbtPage = () => {
             </div>
           </div>
           <div>
-            <div className="story-hero-img"></div>
+            <div className="story-hero-im">
+              <img src={Raenest1} alt="" className="main-block" />
+            </div>
           </div>
         </div>
       </div>

@@ -44,21 +44,26 @@ const Navigation = (props) => {
   const solutionItems = [
     {
       key: "1",
-      label: <Link to={AppRoutes.bills}>Pay Bills</Link>,
+      label: (
+        <Link
+          to=""
+          // to={AppRoutes.bills}
+        >
+          Pay Bills
+        </Link>
+      ),
     },
     {
       key: "2",
-      label: <Link to={AppRoutes.save_and_earn}>Save and Invest</Link>,
+      label: <Link to="/">Save and Invest</Link>,
     },
     {
       key: "4",
-      label: <Link to={AppRoutes.sell_giftcards}>Virtual Dollar</Link>,
+      label: <Link to="/">Virtual Dollar</Link>,
     },
     {
       key: "5",
-      label: (
-        <Link to={AppRoutes.handle_payments}>Send and Receive Payments</Link>
-      ),
+      label: <Link to="/">Send and Receive Payments</Link>,
     },
   ];
 
@@ -83,8 +88,8 @@ const Navigation = (props) => {
       label: <Link to="/">Contact Us</Link>,
     },
     {
-      key: "2",
-      label: <Link to="3">Frequently Asked Questions</Link>,
+      key: "3",
+      label: <Link to="/">Frequently Asked Questions</Link>,
     },
   ];
 
@@ -98,17 +103,17 @@ const Navigation = (props) => {
     >
       <div className="nav-box">
         <div className="inline-nav">
-          {/* {fixedNav ? */}
-          <div className="div-logo">
-            <img src={LogoBlk} alt="logo" className="logo" />
-            <h2 className="logo-title">Payscribe</h2>
-          </div>
-          {/* :
-                        <div className="div-logo">
-                            <img src={Logo} alt="logo" className="logo" />
-                            <h2 className="logo-title">Payscribe</h2>
-                        </div>
-                    } */}
+          {fixedNav ? (
+            <div className="div-logo">
+              <img src={LogoBlk} alt="logo" className="logo" />
+              <h2 className="logo-title">Payscribe</h2>
+            </div>
+          ) : (
+            <div className="div-logo">
+              <img src={Logo} alt="logo" className="logo" />
+              <h2 className="logo-title">Payscribe</h2>
+            </div>
+          )}
           <div className="desktop-only">
             <ul>
               <li>
@@ -281,9 +286,15 @@ const Navigation = (props) => {
           </ul>
         </div>
         <div className="mobile-only">
-          <div onClick={toggleMobileNavDisplay}>
-            <img src={MenuBlackIcon} alt="menu" />
-          </div>
+          {fixedNav ? (
+            <div onClick={toggleMobileNavDisplay}>
+              <img src={MenuBlackIcon} alt="menu" />
+            </div>
+          ) : (
+            <div onClick={toggleMobileNavDisplay}>
+              <img src={MenuIcon} alt="menu" />
+            </div>
+          )}
         </div>
       </div>
       <Drawer
@@ -308,7 +319,11 @@ const Navigation = (props) => {
                   alt="Cancel"
                 />
               ) : (
-                <ion-icon style={{fontSize: "2.4rem"}} onClick={() => setCurrentView("default")} name="arrow-back-circle-outline"></ion-icon>
+                <ion-icon
+                  style={{ fontSize: "2.4rem" }}
+                  onClick={() => setCurrentView("default")}
+                  name="arrow-back-circle-outline"
+                ></ion-icon>
               )}
             </div>
           </div>
@@ -354,7 +369,7 @@ const Navigation = (props) => {
                   <NavLink
                     className={({ isActive }) => (isActive ? "active" : "")}
                     onClick={toggleMobileNavDisplay}
-                    to={AppRoutes.business}
+                    to="/"
                   >
                     For Businesses
                   </NavLink>
@@ -417,7 +432,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={toggleMobileNavDisplay}
-                  to={AppRoutes.bills}
+                  to="/"
                 >
                   Pay Bills
                 </NavLink>
@@ -426,7 +441,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={toggleMobileNavDisplay}
-                  to={AppRoutes.save_and_earn}
+                  to="/"
                 >
                   Save and Invest
                 </NavLink>
@@ -435,7 +450,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={toggleMobileNavDisplay}
-                  to={AppRoutes.sell_giftcards}
+                  to="/"
                 >
                   Sell Giftcards
                 </NavLink>
@@ -444,7 +459,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={toggleMobileNavDisplay}
-                  to={AppRoutes.handle_payments}
+                  to="/"
                 >
                   Send and Receive Payments
                 </NavLink>
@@ -453,7 +468,7 @@ const Navigation = (props) => {
                 <NavLink
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={toggleMobileNavDisplay}
-                  to={AppRoutes.bills}
+                  to="/"
                 >
                   Virtual Cards
                 </NavLink>
