@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+<<<<<<< HEAD
+  plugins: [react()],
+})
+=======
     plugins: [react()],
     manifest: {
         name: "Payscribe",
@@ -31,3 +35,4 @@ export default defineConfig({
         ]
     }
 })
+>>>>>>> 1c595f6ec93b5fc282ddda35436453fcce0f1100

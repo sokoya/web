@@ -1,0 +1,11 @@
+@use '../../Styles/main' as *;
+
+nav 
+{
+  z-index: 999;
+    @media (max-width: 1000px) and (min-width: 1300px)
+    {
+      @include responsive-font-size(60);
+      padding: 0;
+    }
+}

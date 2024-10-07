@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+@mixin responsive-font-size($percentage) {
+    font-size: $percentage * 0.05vw;
+  }
+
+$primary-color: #2c3e50;
+$c-primary-color: #34495e; /*#2c4854, #2c4c59, ##503e2c;*/
+$secondary-color: #3498db;
+$neutral-color: #ffffff;
+$primary-transition: 500ms ease-in-out;
+$default-font-size: 16px;
+
+@mixin link-text {
+  color: $neutral-color;
+  text-decoration: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@mixin responsive-font-size($percentage) {
+  font-size: $percentage * 0.05vw;
+}
+
+@mixin responsive-element($percentage) {
+  transform: scale($percentage * 0.05vw);
+}
