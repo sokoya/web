@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    max-width: 1580px;
+    margin: 0 auto !important;
+    scroll-behavior: smooth;
+
+    // img 
+    // {
+    //   @media(min-width: 850px)
+    //   {
+    //     width: 90%;
+    //     padding: 1em;
+    //   }
+    // }
+  }
+
+  .non-selectable {
+    user-select: none;           /* Disable text/media selection */
+    pointer-events: none;        /* Prevent dragging or right-clicking */
+  }
+
+  img, video 
+  {
+    user-select: none;           /* Disable text/media selection */
+    pointer-events: none;  
+  }
