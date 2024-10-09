@@ -8,21 +8,23 @@ import MobileMenuIcon from './MobileMenuIcon';
 // Define menu items and submenus
 const menuItems = [
   { id: 'home', title: 'Home', link: '/' },
-  { id: 'individuals', title: 'Individuals', link: '/individuals', subMenu: [
-      { title: 'Pay Bills', link: '/pay-bills' },
-      { title: 'Virtual Dollar', link: '/virtual-dollar' },
-      { title: 'Airtime to Cash', link: '/airtime-to-cash' },
-      { title: 'Save and Earn', link: '/save-and-earn' },
-      { title: 'Send and Receive', link: '/send-and-receive' }
-    ] 
-  },
+  // { id: 'individuals', title: 'Individuals', link: '/individuals', subMenu: [
+  //     { title: 'Pay Bills', link: '/pay-bills' },
+  //     { title: 'Virtual Dollar', link: '/virtual-dollar' },
+  //     { title: 'Airtime to Cash', link: '/airtime-to-cash' },
+  //     { title: 'Save and Earn', link: '/save-and-earn' },
+  //     { title: 'Send and Receive', link: '/send-and-receive' }
+  //   ] 
+  // },
   { id: 'business', title: 'For Businesses', link: '/for-business' },
-  { id: 'developers', title: 'For Developers', link: '/for-developers', subMenu: [
+  { 
+    id: 'developers', title: 'For Developers', link: '/for-developers',
+     subMenu: [
       { title: 'Overview', link: '/overview' },
       { title: 'API Documentation', link: '/api-documentation' }
     ]
   },
-  { id: 'companies', title: 'Companies', link: '/companies', subMenu: [
+  { id: 'company', title: 'Company', link: '#', subMenu: [
       { title: 'About', link: '/about' },
       { title: 'Contact Us', link: '/contact-us' },
       { title: 'FAQs', link: '/faqs' }
@@ -61,7 +63,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <div className="md:grid hidden grid-cols-[3fr_2fr]">
-          <ul className="space-x-5 flex font-semibold items-center">
+          <ul className="space-x-5 flex font-semibold justify-center items-center">
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -75,8 +77,8 @@ const Navigation = () => {
 
                 
                 {item.subMenu && hoveredMenu === item.id && (
-                  <div className="absolute bg-white shadow-lg rounded mt-0">
-                    <ul className="text-gray-700">
+                  <div className="absolute bg-white shadow-lg rounded mt-0 w-[12em]">
+                    <ul className="text-gray-700 w-full">
                       {item.subMenu.map((subItem, index) => (
                         <li key={index} className="px-4 py-2 hover:bg-gray-100 text-sm">
                           <Link to={subItem.link}>{subItem.title}</Link>

@@ -16,8 +16,8 @@ export const show = {
       damping: 10,
       mass: 1,
       duration: 1.5,
-      delayChildren: 0.5, // Delay between children
-      staggerChildren: 0.3, // Stagger effect
+      delayChildren: 0.5, 
+      staggerChildren: 0.3,
     },
   },
   show: {
@@ -26,8 +26,8 @@ export const show = {
     transition: {
       duration: 0.8,
       ease: 'easeOut',
-      staggerChildren: 0.3, // Stagger each child by 0.5s
-      delayChildren: 0.3,   // Delay starting children animation by 0.3s
+      staggerChildren: 0.3, 
+      delayChildren: 0.3,   
     },
   },
 };
@@ -53,24 +53,24 @@ export const slideIn = {
   },
 };
 
-// Animation variants for the entire list container
+
 export const listVariants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, // Stagger the appearance of children (list items)
+      staggerChildren: 0.2, 
     },
   },
 };
 
-// Animation variants for individual list items
+
 export const itemVariants = {
-  hidden: { opacity: 0, x: 20 }, // Start below and invisible
+  hidden: { opacity: 0, x: 20 }, 
   show: { 
     opacity: 1, 
     x: 0,
-    transition: { duration: 0.5 } // Ease the translation into view
+    transition: { duration: 0.5 } 
   },
 };
 
@@ -84,15 +84,15 @@ export const menuListVariant = {
     opacity: 1,
     x: 0,
     transition: {
-      staggerChildren: 0.2, // Staggering effect between list items
-      when: 'beforeChildren', // Parent animates before children
+      staggerChildren: 0.2, 
+      when: 'beforeChildren', 
     }
   },
   hidden: {
     opacity: 0,
     x: 100,
     transition: {
-      when: 'afterChildren', // Children animate before parent hides
+      when: 'afterChildren', 
     }
   }
 };
@@ -121,3 +121,27 @@ export const menuVariant = {
     },
   }
 };
+
+export const fadeSlideStagger = {
+  hidden: { 
+    opacity: 0, 
+    // x: -50, 
+  },
+  show: {
+    opacity: 1, 
+    x: 0, 
+    transition: {
+      x: { type: 'spring', stiffness: 100, damping: 20 }, 
+      opacity: { duration: 0.8 }, 
+    },
+  },
+  container: {
+    show: {
+      transition: {
+        staggerChildren: 0.3, 
+      }
+    }
+  }
+};
+
+

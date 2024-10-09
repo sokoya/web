@@ -1,0 +1,238 @@
+import { Link } from 'react-router-dom'
+import React from "react";
+import { motion } from 'framer-motion';
+import { show } from '../../animations';
+import {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
+import TabBanner1 from "../../assets copy/images/homepage/tabbanner1.jpg"
+import TabBanner2 from "../../assets copy/images/homepage/tabbanner2.jpg"
+import TabBanner3 from "../../assets copy/images/homepage/tabbanner3.jpg"
+import TabBanner4 from "../../assets copy/images/homepage/tabbanner4.jpg"
+
+const data = [
+  {
+    label: "Accounts and Wallets",
+    value: "Accounts and Wallets",
+    title: "Build seamless accounts and wallets with half the effort.",
+    desc: `Effortlessly integrate account and wallet services into your fintech platform, allowing your users to manage their finances easily and securely. Our robust API simplifies the process, reducing development time and effort.`,
+    img: TabBanner1,
+  },
+  {
+    label: "Issue USD/NGN Cards",
+    value: "Issue USD/NGN Cards",
+    title: "Expand financial reach with effortless USD/NGN card issuance",
+    desc: `Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your users with cards for both international and local transactions, all through a straightforward setup and management process.`,
+    img: TabBanner2,
+  },
+  {
+    label: "Savings & Investment",
+    value: "Savings & Investment",
+    title: "Boost savings and investments with minimal work",
+    desc: `Enhance your fintech services by offering effortless savings and investment solutions. Our platform simplifies the process, allowing users to manage and grow their funds with minimal effort. This streamlined approach enables you to provide robust financial tools without complex implementation.`,
+    img: TabBanner3,
+  },
+  {
+    label: "Bill Payments",
+    value: "Bill Payments",
+    title: "Simplify bill payments with ease",
+    desc: `Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.`,
+    img: TabBanner4,
+  },
+];
+
+export function HomeTab() {
+  const [activeTab, setActiveTab] = React.useState(data[0].value); // Track active tab
+
+  return (
+    <div className='bg-black flex justify-center down'>
+      
+    <Tabs className="m-5 rounde d-xl bg-black text-white w-full " id="custom-animation" value={activeTab} onChange={(val) => setActiveTab(val)}>
+    <div className='flex justify-center font-bold text-white p-10'>
+        <div className='md:w-[50%] w-full m-3'>
+        <h2 className='text-center uppercase'>Effortless Financial Integration</h2>
+        <p className='text-center text-4xl m-5 '>Streamline Your Financial Services with Ease</p>
+      </div>
+      </div>
+      
+      <div className='md:justify-center justify-start flex md:overflow-hidden overflow-x-scroll w-full relative z-10'>
+      <TabsHeader className="p-1 border border-white rounded-[25em] w-full">
+        {data.map(({ label, value }) => (
+          <Tab
+            key={value}
+            value={value}
+            onClick={() => setActiveTab(value)}
+            className={`${activeTab === value ? "-z-10 bg-white text-black rounded-[25em] " : ""} p-3 font-bold text-sm cursor-pointer whitespace-nowrap mx-1`}
+          >
+            {label}
+          </Tab>
+        ))}
+      </TabsHeader></div>
+
+      {/* Responsive layout for text and image */}
+      <div className="grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-5">
+        {/* Text Panel with translateY top to bottom */}
+        <TabsBody
+          animate={{
+            initial: { opacity: 1, y: 0 }, // Translate Y from top
+            mount: { opacity: 1, y: 0 },      // Final position at Y 0
+            unmount: { opacity: 1, y: 0 }, // Slide out to top
+          }}
+          className="text-panel text-black p-4"
+        >
+          {data.map(({ value, desc, title }) => (
+            <TabPanel key={value} value={value}>
+              <div className="bg-rose-100 rounded-xl p-5 md:p-10">
+                <div className="text-black text-2xl md:text-3xl font-bold tab-content">{title}</div>
+                <div className="text-black my-3 tab-content">{desc}</div>
+                <br/>
+                <div className="my-2 transform hover:-translate-y-1 transition ease-in-out duration-300">
+                  <Link
+                    to="/register"
+                    className="p-2 md:p-3 rounded-lg bg-primary text-white"
+                  >
+                    Create a Free Account
+                  </Link>
+                </div>
+              </div>
+            </TabPanel>
+          ))}
+        </TabsBody>
+
+        {/* Image Panel with zoom-out animation */}
+        <TabsBody
+          animate={{
+            initial: { opacity: 0, scale: 1 }, // Start zoomed in
+            mount: { opacity: 1, scale: 1 },     // Zoom out to full size
+            unmount: { opacity: 0, scale: 1 }, // Zoom out when switching tabs
+          }}
+          className="image-panel text-black p-4"
+        >
+          {data.map(({ value, img }) => (
+            <TabPanel key={value} value={value} className='flex justify-center'>
+               <motion.img 
+           variants={show}
+           initial="hiddenimg"
+           whileInView="imageshow"
+           transition={{ delay: 1.2 }}  src={img} alt={value} className="zoom-out rounded-xl max-w-full h-auto" />
+            </TabPanel>
+          ))}
+        </TabsBody>
+      </div>
+    </Tabs>
+    </div>
+  );
+}
+
+
+
+import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { motion } from 'framer-motion';
+import TabBanner1 from "../../assets copy/images/homepage/tabbanner1.jpg";
+import TabBanner2 from "../../assets copy/images/homepage/tabbanner2.jpg";
+import TabBanner3 from "../../assets copy/images/homepage/tabbanner3.jpg";
+import TabBanner4 from "../../assets copy/images/homepage/tabbanner4.jpg";
+
+const data = [
+  {
+    label: "Accounts and Wallets",
+    value: "accounts-wallets",
+    title: "Build seamless accounts and wallets with half the effort.",
+    desc: `Effortlessly integrate account and wallet services into your fintech platform, allowing your users to manage their finances easily and securely. Our robust API simplifies the process, reducing development time and effort.`,
+    img: TabBanner1,
+  },
+  {
+    label: "Issue USD/NGN Cards",
+    value: "issue-cards",
+    title: "Expand financial reach with effortless USD/NGN card issuance",
+    desc: `Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your users with cards for both international and local transactions, all through a straightforward setup and management process.`,
+    img: TabBanner2,
+  },
+  {
+    label: "Savings & Investment",
+    value: "savings-investment",
+    title: "Boost savings and investments with minimal work",
+    desc: `Enhance your fintech services by offering effortless savings and investment solutions. Our platform simplifies the process, allowing users to manage and grow their funds with minimal effort. This streamlined approach enables you to provide robust financial tools without complex implementation.`,
+    img: TabBanner3,
+  },
+  {
+    label: "Bill Payments",
+    value: "bill-payments",
+    title: "Simplify bill payments with ease",
+    desc: `Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.`,
+    img: TabBanner4,
+  },
+];
+
+export function HomeTab() {
+  const [activeTab, setActiveTab] = useState(data[0].value); // Track active tab
+
+  return (
+    <div className="bg-black justify-center">
+      {/* Header Section */}
+      <div className="flex justify-center font-bold text-white p-10">
+        <div className="md:w-[50%] w-full m-3">
+          <h2 className="text-center uppercase">Effortless Financial Integration</h2>
+          <p className="text-center text-4xl m-5">Streamline Your Financial Services with Ease</p>
+        </div>
+      </div>
+
+      {/* Tab Header */}
+      <div className="md:justify-center justify-start flex md:overflow-hidden overflow-x-scroll w-full relative z-10">
+        <div className="flex p-1 border border-white justify-center rounded-[25em] w-[55%] transition">
+          {data.map(({ label, value }) => (
+            <button
+              key={value}
+              onClick={() => setActiveTab(value)}
+              className={`p-3 font-bold text-sm cursor-pointer whitespace-nowrap mx-1 transition duration-300 ease-in-out 
+              ${activeTab === value ? "bg-white text-black rounded-[25em]" : "text-white"}`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-5 p-5 w-full">
+        {/* Text Panel */}
+        <div className="text-panel text-black p-4">
+          {data.map(({ value, title, desc }) => (
+            <div key={value} className={`${activeTab === value ? 'block' : 'hidden'}`}>
+              <div className="bg-rose-100 rounded-xl p-5 md:p-10">
+                <h3 className="text-black text-2xl md:text-3xl font-bold">{title}</h3>
+                <p className="text-black my-3">{desc}</p>
+                <Link
+                  to="/register"
+                  className="inline-block mt-5 p-2 md:p-3 rounded-lg bg-primary text-white hover:-translate-y-1 transform transition ease-in-out duration-300"
+                >
+                  Create a Free Account
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Image Panel */}
+        <div className="image-panel text-black p-4">
+          {data.map(({ value, img }) => (
+            <motion.div
+              key={value}
+              className={`${activeTab === value ? 'block' : 'hidden'} flex justify-center`}
+              initial={{ opacity: 0, scale: 1.2 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <img src={img} alt={value} className="rounded-xl max-w-full h-auto" />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

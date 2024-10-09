@@ -8,33 +8,7 @@ import {
 import { motion } from 'framer-motion'
 import { show } from '../animations'
 
-const sections = [
-  { id: 'home', title: 'Home', icon: "" },
-  { id: 'individuals', title: 'Individuals', icon: "" },
-  { id: 'for-business', title: 'For Businesses', icon: "" },
-  { id: 'for-developers', title: 'For Developers', icon: "" },
-  { id: 'companies', title: 'Companies', icon: "" },
-];
 
-// Sub-menus for "For Businesses" and "For Developers"
-const subMenus = {
-  "individuals": [
-    { id: 'indv1', title: 'Pay Bills', icon: "" },
-    { id: 'indv2', title: 'Virtual Dollar', icon: "" },
-    { id: 'indv3', title: 'Airtime to Cash', icon: "" },
-    { id: 'indv4', title: 'Save and Earn', icon: "" },
-    { id: 'indv5', title: 'Send and Receive', icon: "" },
-  ],
-  "for-developers": [
-    { id: 'dev1', title: 'API Documentation', icon: "" },
-    { id: 'dev2', title: 'Overview', icon: "" },
-  ],
-  "companies":[
-    { id: 'comp1', title: 'About', icon: "" },
-    { id: 'comp2', title: 'Contact us', icon: "" }, 
-    { id: 'comp3', title: 'Frequently Asked', icon: "" },
-  ]
-};
 
 const blockData = [
   {

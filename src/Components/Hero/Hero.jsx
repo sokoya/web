@@ -57,10 +57,10 @@ function Hero() {
                 Create a Free Account
               </Link>
               <Link
-              to="/login"
+              to="/book-a-demo"
               className=" border-white border-solid border mx-2 p-3 rounded-lg bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
-              Sign in
+              Book a demo
             </Link>
             </div>
           </motion.div>
