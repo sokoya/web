@@ -9,30 +9,30 @@ import { menuVariant, menuItemVariant, menuListVariant } from '../../animations'
 
 
 const sections = [
-  { id: 'home', title: 'Home' },
-  { id: 'individuals', title: 'Individuals' },
-  { id: 'for-business', title: 'For Businesses' },
+  { id: 'home', title: 'Home', url: '/' },
+  // { id: 'individuals', title: 'Individuals' },
+  { id: 'for-business', title: 'For Businesses', url: 'for-business' },
   { id: 'for-developers', title: 'For Developers' },
   { id: 'companies', title: 'Companies' },
 ];
 
 // Sub-menus for "For Businesses" and "For Developers"
 const subMenus = {
-  'individuals': [
-    { id: 'indv1', title: 'Pay Bills' },
-    { id: 'indv2', title: 'Virtual Dollar' },
-    { id: 'indv3', title: 'Airtime to Cash' },
-    { id: 'indv4', title: 'Save and Earn' },
-    { id: 'indv5', title: 'Send and Receive' },
-  ],
+  // 'individuals': [
+  //   { id: 'indv1', title: 'Pay Bills' },
+  //   { id: 'indv2', title: 'Virtual Dollar' },
+  //   { id: 'indv3', title: 'Airtime to Cash' },
+  //   { id: 'indv4', title: 'Save and Earn' },
+  //   { id: 'indv5', title: 'Send and Receive' },
+  // ],
   'for-developers': [
     { id: 'dev1', title: 'API Documentation' },
     { id: 'dev2', title: 'Overview' },
   ],
   'companies': [
-    { id: 'comp1', title: 'About' },
+    { id: 'comp1', title: 'About', url: '/about' },
     { id: 'comp2', title: 'Contact us' },
-    { id: 'comp3', title: 'Frequently Asked' },
+    { id: 'comp3', title: 'FAQs', url: '/faqs' },
   ],
 };
 
@@ -60,7 +60,7 @@ function MobileNav() {
           className='my-2 '
           variants={menuItemVariant} // Apply individual item variants
         >
-          <Link className='px-5 py-2' onClick={() => handleMenuClick(section.id)}>
+          <Link className='px-5 py-2' onClick={() => handleMenuClick(section.id)} to={section.url}>
             {section.title}
           </Link>
         </motion.li>
@@ -87,7 +87,7 @@ function MobileNav() {
                 className='my-2 '
                 variants={menuItemVariant} // Individual item variants for sub-menu
               >
-                <Link className='px-5 py-2'>
+                <Link className='px-5 py-2' to={subItem.url} onClick={() => handleMenuClick()}>
                   {subItem.title}
                 </Link>
               </motion.li>

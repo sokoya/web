@@ -1,47 +1,48 @@
 import React from 'react'
 import Logo from '../../assets copy/images/payscribe.png'
 import { Link } from 'react-router-dom'
-import { IoLogoGooglePlaystore, IoLogoApple } from "react-icons/io5";
+import { IoLogoGooglePlaystore, IoLogoApple } from 'react-icons/io5'
 import Lightning from '../../assets copy/images/globe.png'
-import SocialMediaIcons from '../SocialMediaIcons';
+import SocialMediaIcons from '../SocialMediaIcons'
 
 const lists = [
   {
-    title: "Products",
+    title: 'Products',
     items: [
-      "Pay Bills",
-      "Virtual Dollar",
-      "Airtime to Cash",
-      "Save and Earn"
-    ]
+      { title: 'Accounts and wallets', link: '/accounts-wallets' },
+      { title: 'Cards Issuing', link: '/card-issuing' },
+      { title: 'Bills Payments', link: '/bills-payments' },
+      { title: 'Payments', link: '/payouts' },
+      { title: 'API Services', link: '#' },
+    ],
   },
   {
-    title: "For Businesses",
+    title: 'For Businesses',
     items: [
-      "Why Payscribe",
-      "How It Works",
-      "Ambassadors"
-    ]
+      { title: 'Why Payscribe', link: '/about' },
+      { title: 'How It Works', link: '/about' },
+      { title: 'Ambassadors', link: 'about' },
+    ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     items: [
-      "FAQs",
-      "Status Page",
-      "Compliance"
-    ]
+      { title: 'FAQs', link: '/faqs' },
+      { title: 'Status Page', link: '/' },
+      { title: 'Compliance', link: '/compliance' },
+      { title: 'Book a demo', link: '/book-a-demo' },
+    ],
   },
   {
-    title: "Company",
+    title: 'Company',
     items: [
-      "About",
-      "Blog",
-      "Privacy Policy",
-      "Terms and Conditions"
-    ]
-  }
-];
-
+      { title: 'About', link: '/about' },
+      { title: 'Blog', link: '/' },
+      { title: 'Privacy Policy', link: '/privacy-policy' },
+      { title: 'Terms and Conditions', link: 'terms-and-conditions' },
+    ],
+  },
+]
 
 function Footer() {
   return (
@@ -51,7 +52,7 @@ function Footer() {
         className="non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
       />
       <div className="bg-black grid md:grid-cols-[2fr_3fr] grid-cols-1 md:p-10 p-5 ">
-        <div className="m-5">
+        <div className="md:m-5 m-1">
           <div>
             <div className="flex">
               <Link to="/" className="flex items-center">
@@ -77,28 +78,33 @@ function Footer() {
             </div>
           </div>
         </div>
-
-        <div className="text-white p-3 grid grid-cols-2  md:grid-cols-4 relative md:my-20 my-0">
-          {lists.map((listObj) => (
-            <div key={listObj.title}>
-              <h2 className="font-bold text-md">{listObj.title}</h2>
-              <div className="text-slate-400 text-sm my-5">
-                {listObj.items.map((item, index) => (
-                  <div to="" key={index} className="my-3">
-                    <Link to={item}>{item}</Link>
-                  </div>
-                ))}
+        <div className="">
+          <div className="text-white p-3 grid grid-cols-2  md:grid-cols-4 relative md:my-10 my-0">
+            {lists.map((listObj) => (
+              <div key={listObj.title}>
+                <h2 className="font-bold text-md">{listObj.title}</h2>
+                <div className="text-slate-400 text-sm md:my-5 my-2">
+                  {listObj.items.map((item, index) => (
+                    <div to="" key={index} className="my-3">
+                      <Link to={item.link}>{item.title}</Link>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div>
+            <p className="text-slate-300 flex mx-2 p-1">Payscribe is a fintech company, not a bank. Banking services are provided by licensed banks and financial institutions in their respective jurisdictions.</p>
+          </div>
         </div>
 
-        <div>
+        <div className='grid grid-cols-2'>
           <div className="flex text-slate-300 items-center font-bold">
             <SocialMediaIcons />
           </div>
+          {' '}
         </div>
-       
       </div>
     </div>
   )

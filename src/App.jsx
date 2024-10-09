@@ -14,7 +14,12 @@ import ContactUs from './Pages/ContactUs';
 import FAQs from './Pages/FAQs';
 import Navigation from './Components/Navigation/Navigation';
 import Footer from './Components/Footer/Footer';
+import BookADemo from './Pages/BookADemo';
+import Paybills from './Pages/Paybills';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import Compliance from './Pages/Compliance';
 
+window.scrollTo(0, 0);
 const App = () => {
   return (
     <Router>
@@ -22,6 +27,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/individuals" element={<Individuals />} />
+        <Route path='/book-a-demo' element={<BookADemo/>} />
         <Route path="/for-business" element={<ForBusiness />} />
         <Route path="/for-developers" element={<ForDevelopers />} />
         <Route path="/companies" element={<Companies />} />
@@ -30,6 +36,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path='/pay-bills' element={<Paybills/>} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+        <Route path='/compliance' element={<Compliance/>} />
       </Routes>
       <Footer/>
     </Router>
