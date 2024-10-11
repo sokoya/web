@@ -1,9 +1,15 @@
 import ContentComponent from "../Components/ContentComponent"
 import Img1 from '../assets copy/images/homepage/thepeer.png'
+import { Helmet } from "react-helmet"
 
 function UseCases() {
   return (
     <div>
+       <Helmet>
+        <meta charSet="utf-8" />
+
+        <title>Use Cases | Payscribe</title>
+      </Helmet>
         <ContentComponent
         title="Fintech"
         subtitle="You are one step away from launching our fintech solution."

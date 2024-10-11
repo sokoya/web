@@ -21,6 +21,8 @@ import Compliance from './Pages/Compliance';
 import Payout from './Pages/Payout';
 import Issuing from './Pages/Issuing';
 import UseCases from './Pages/UseCases';
+import CaseStudy from './Pages/CaseStudy';
+import Gamepride from './Pages/CaseStudies/Gamepride';
 
 window.scrollTo(0, 0);
 const App = () => {
@@ -45,6 +47,8 @@ const App = () => {
         <Route path='/payout' element={<Payout/>} />
         <Route path='/card-issuing' element={<Issuing/>} />
         <Route path='/use-cases' element={<UseCases/>} />
+        <Route path='/case-studies' element={<CaseStudy/>} />
+        <Route path='case-studies/gamepride' element={<Gamepride/>} />
       </Routes>
       <Footer/>
     </Router>
