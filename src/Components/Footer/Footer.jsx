@@ -12,7 +12,7 @@ const lists = [
       { title: 'Accounts and wallets', link: '/accounts-wallets' },
       { title: 'Cards Issuing', link: '/card-issuing' },
       { title: 'Bills Payments', link: '/bills-payments' },
-      { title: 'Payments', link: '/payouts' },
+      { title: 'Payments', link: '/payout' },
       { title: 'API Services', link: '#' },
     ],
   },
@@ -31,6 +31,7 @@ const lists = [
       { title: 'Status Page', link: '/' },
       { title: 'Compliance', link: '/compliance' },
       { title: 'Book a demo', link: '/book-a-demo' },
+      { title: 'Use case', link: '/use-cases' }
     ],
   },
   {
@@ -47,10 +48,7 @@ const lists = [
 function Footer() {
   return (
     <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-      <img
-        src={Lightning}
-        className="non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
-      />
+      
       <div className="bg-black grid md:grid-cols-[2fr_3fr] grid-cols-1 md:p-10 p-5 ">
         <div className="md:m-5 m-1">
           <div>
@@ -98,7 +96,10 @@ function Footer() {
             <p className="text-slate-300 flex mx-2 p-1">Payscribe is a fintech company, not a bank. Banking services are provided by licensed banks and financial institutions in their respective jurisdictions.</p>
           </div>
         </div>
-
+        <img
+        src={Lightning}
+        className="non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
+      />
         <div className='grid grid-cols-2'>
           <div className="flex text-slate-300 items-center font-bold">
             <SocialMediaIcons />

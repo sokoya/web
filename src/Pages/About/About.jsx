@@ -8,6 +8,7 @@ import { VscTools } from 'react-icons/vsc'
 import { GiWorld } from 'react-icons/gi'
 import FAQ from '../../Components/FAQ'
 import { Helmet } from 'react-helmet'
+import HeroComponent from '../../Components/HeroComponent'
 
 const blockData = [
   {
@@ -81,49 +82,21 @@ function About() {
                 
                 <title>About | Payscribe</title>
             </Helmet>
-      <div className="h-screen bg-basic-gradient grid md:grid-cols-2 grid-cols-1 ">
-        <div className="flex md:h-[80%] h-[100%] md:my-0 my-5 items-center md:py-10 py-1 md:px-5 px-1">
-          <motion.div
-            className="text-white p-2 md:m-5 m-2"
-            variants={show}
-            initial="hidden"
-            whileInView="show"
-          >
-            <motion.h1 variants={show} className="font-bold m-2 my-1">
-              WHO WE ARE
-            </motion.h1>
-            <motion.h1 className="md:text-5xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
-              Transforming Financial Services for Individuals, Businesses, and
-              Beyond.
-            </motion.h1>
-            <motion.p
-              variants={show}
-              initial="hidden"
-              whileInView="show"
-              className="m-2 md:leading-7 leading-6"
-            >
-              We are on a mission to bridge the gap between individuals and
-              fintech innovation. By offering a platform that serves both
-              personal finance and the sophisticated requirements of businesses,
-              we’re creating a seamless ecosystem where everyone can thrive.
-            </motion.p>
-            <br />
-
-            <div className="my-2 transform  transition ease-in-out duration-300">
-              <Link
-                to="/register"
-                className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black"
-              >
-                Create a Free Account
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-
-        <div className="flex h-[80%] items-center  top-0 sticky">
-          <img src={About1} className="transform scale-[70%] rounded-4xl " />
-        </div>
-      </div>
+            <HeroComponent
+        title="WHO WE ARE"
+        subtitle="Transforming Financial Services for Individuals, Businesses, and Beyond."
+        description="We are on a mission to bridge the gap between individuals and fintech innovation. By offering a platform that serves both personal finance and the sophisticated requirements of businesses, we’re creating a seamless ecosystem where everyone can thrive."
+        primaryLink="/start"
+        primaryLinkText="Join Us"
+        secondaryLink="/register"
+        secondaryLinkText="Create a Free Account"
+        // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
+        textColor="text-white"
+        additionalImage={About1}
+        additionalContent={<p className="text-white"></p>}
+        columns={2}
+        order={['text', 'image']}
+      />
       <div className="md:py-10 py-1 md:px-5 px-1">
         <div className="md:w-1/2 w-full ">
           <h2 className="md:text-3xl text-2xl font-bold md:px-10 md:py-5 py-4 px-4">

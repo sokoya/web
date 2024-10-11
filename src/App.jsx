@@ -18,6 +18,9 @@ import BookADemo from './Pages/BookADemo';
 import Paybills from './Pages/Paybills';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import Compliance from './Pages/Compliance';
+import Payout from './Pages/Payout';
+import Issuing from './Pages/Issuing';
+import UseCases from './Pages/UseCases';
 
 window.scrollTo(0, 0);
 const App = () => {
@@ -39,6 +42,9 @@ const App = () => {
         <Route path='/pay-bills' element={<Paybills/>} />
         <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
         <Route path='/compliance' element={<Compliance/>} />
+        <Route path='/payout' element={<Payout/>} />
+        <Route path='/card-issuing' element={<Issuing/>} />
+        <Route path='/use-cases' element={<UseCases/>} />
       </Routes>
       <Footer/>
     </Router>

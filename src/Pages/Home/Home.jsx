@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../../Components/Hero/Hero'
 import BannerVideo1 from '../../assets copy/images/homepage/2ndpagebannervid.mp4'
 import BannerVideo2 from '../../assets copy/images/homepage/3ndpagebannervidLeft.mp4'
@@ -103,7 +102,7 @@ function Home() {
   <meta name="keywords"
     content="Payscribe,Fintech,Financial Services,Invoice Generation,Payment Links,Freelance Payments,USD Cards,International Payments,Bill Payments,Payment Processing,Online Invoicing,Digital Payments,Financial Tools,Freelancer Finances,Easy Payments"/>
   <meta name="robots" content="index, follow"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="language" content="English"></meta>
                 
                 <title>Payscribe | Veratile Payment Solution for all your business needs</title>
@@ -241,6 +240,8 @@ function Home() {
         data={homeData}
         headerTitle="Effortless Financial Integration"
         headerDescription="Streamline Your Financial Services with Ease"
+        link="/register"
+        linktext="Get Started"
       />
     </div>
 

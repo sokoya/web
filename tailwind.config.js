@@ -29,7 +29,7 @@ module.exports = {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'basic-gradient': 'linear-gradient(to right, #7e22ce, #4f46e5)', // Use the HEX codes or Tailwind color names
+        'basic-gradient': 'linear-gradient(to bottom, #7e22ce, #4f46e5) ', // Use the HEX codes or Tailwind color names
       },
     },
   },

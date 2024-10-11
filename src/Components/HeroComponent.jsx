@@ -1,71 +1,106 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { show } from '../animations'
 
-export default function HeroComponent() {
-  return (
-    <div>
-      <div className="h-screen bg-basic-gradient grid md:grid-cols-2 grid-cols-1">
-        <div className="flex md:h-[80%] h-[100%] md:my-0 my-5 items-center md:py-10 py-1 md:px-5 px-1">
-          <motion.div
-            className="text-white p-2 md:m-5 m-2"
-            variants={show}
-            initial="hidden"
-            whileInView="show"
-          >
-            <motion.h1 variants={show} className="font-bold m-2 my-1">
-              TAILORED FOR BUSINESS GROWTH
-            </motion.h1>
-            <motion.h1 className="md:text-5xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
-              Comprehensive Financial Solutions Tailored for Your Business
-              Growth.
-            </motion.h1>
-            <motion.p
-              variants={show}
-              initial="hidden"
-              whileInView="show"
-              className="m-2 md:leading-7 leading-6"
+const HeroComponent = ({
+  
+  title = 'FAST AND CONVENIENT',
+  subtitle = 'Payout has never been easier',
+  description = 'Send funds instantly to different suppliers, employees, and business partners in their local currency, straight to their bank accounts or digital wallets with Payscribe`s Payout.',
+  primaryLink = '/register',
+  primaryLinkText = 'Get Started',
+  secondaryLink = '/contact-us',
+  secondaryLinkText = 'Reach out to us',
+  bgColor = 'bg-basic-gradient',
+  textColor = 'text-white',
+  additionalImage,
+  additionalContent,
+  columns = 2, 
+  order = ['text', 'image'], 
+}) => {
+  
+  const renderElements = () => {
+    return order.map((element, index) => {
+      switch (element) {
+        case 'text':
+          return (
+            <div
+              key={index}
+              className="flex md:h-[80%] h-[100%] items-center md:py-10 py-1 md:px-5 px-1"
             >
-              Empower your business with secure transactions, advanced
-              management tools, and seamless financial integrations. Our
-              innovative solutions streamline operations, boost efficiency, and
-              drive sustainable growth, giving your business the edge it needs
-              to thrive.
-            </motion.p>
-            <br />
-
-            <div className="my-2 md:flex">
-              <p>
-                <Link
-                  to="/register"
-                  className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black transition-transform duration-300"
+              <motion.div
+                className={`text-white p-2 md:m-5 m-2 ${textColor}`}
+                variants={show}
+                initial="hidden"
+                whileInView="show"
+              >
+                <motion.h1
+                  variants={show}
+                  className="font-bold m-2 my-1"
                 >
-                  Create a Free Account
-                </Link>
-              </p>
-              <br />
-              <p>
-                <Link
-                  to="/contact-us"
-                  className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
-                >
-                  Reach out to us
-                </Link>
-              </p>
+                  {title}
+                </motion.h1>
+                <motion.h2 className="font-bold m-2 my-1 md:text-5xl text-2xl">
+                  {subtitle}
+                </motion.h2>
+                <motion.p className="m-2 md:leading-7 leading-6">
+                  {description}
+                </motion.p>
+                <div className="my-10 flex">
+                  <Link
+                    to={primaryLink}
+                    className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black transition-transform duration-300"
+                  >
+                    {primaryLinkText}
+                  </Link>
+                  <Link
+                    to={secondaryLink}
+                    className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
+                  >
+                    {secondaryLinkText}
+                  </Link>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
-        </div>
+          );
+        case 'image':
+          return (
+            <motion.div
+              key={index}
+              className="flex h-[80%] items-center justify-start"
+              variants={show}
+              initial="hiddenimg"
+              whileInView="imageshow"
+            >
+              {additionalImage && (
+                <img
+                  src={additionalImage}
+                  alt="Banner"
+                  className="transform scale-[70%] rounded-4xl"
+                />
+              )}
+            </motion.div>
+          );
+        case 'additionalContent':
+          return (
+            <div key={index} className="flex justify-center items-center h-full">
+              {additionalContent}
+            </div>
+          );
+        default:
+          return null;
+      }
+    });
+  };
 
-        <motion.div
-          variants={show}
-          initial="hiddenimg"
-          whileInView="imageshow"
-          className="flex h-[80%] items-center top-0 sticky"
-        >
-          <img
-            src={BusImg1}
-            className="transform scale-[70%] rounded-4xl flex justify-start"
-          />
-        </motion.div>
-      </div>
+  return (
+    <div
+      className={`h-screen ${bgColor} grid md:grid-cols-${columns} grid-cols-1`}
+    >
+      {renderElements()}
     </div>
-  )
-}
+  );
+};
+
+export default HeroComponent;
