@@ -31,7 +31,8 @@ const lists = [
       { title: 'Status Page', link: '/' },
       { title: 'Compliance', link: '/compliance' },
       { title: 'Book a demo', link: '/book-a-demo' },
-      { title: 'Use case', link: '/use-cases' }
+      { title: 'Use case', link: '/use-cases' },
+      { title: 'Case-studies', link: '/case-studies'}
     ],
   },
   {

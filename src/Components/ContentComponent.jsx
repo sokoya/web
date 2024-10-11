@@ -44,6 +44,7 @@ FeatureList.propTypes = {
 
 // Customizable Banner component
 const ContentComponent = ({
+  customContentStyle,
   title,
   subtitle,
   description,
@@ -138,6 +139,7 @@ const ContentComponent = ({
 
 // Prop types for ContentComponent
 ContentComponent.propTypes = {
+  customContentStyle: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   description: PropTypes.string,
@@ -163,6 +165,7 @@ ContentComponent.defaultProps = {
   primaryLink: null,
   secondaryLinkText: null,
   secondaryLink: null,
+  customContentStyle: 'my-0',
   bgColor: 'bg-gradient-to-r from-blue-400 to-indigo-600',
   textColor: 'text-white',
   imageSrc: null, // No image by default

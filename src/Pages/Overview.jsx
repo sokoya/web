@@ -1,4 +1,4 @@
-import ContentComponent from "../Components/ContentComponent"
+import { CaseStudyComponent } from "../Components/CaseStudyComponent"
 
 function Overview() {
   return (
