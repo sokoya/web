@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
+import { IoLocationOutline } from "react-icons/io5";
 export function CaseStudyComponent({
   bgImage,
   bannerLink,
@@ -35,10 +35,13 @@ export function CaseStudyComponent({
 }) {
   return (
     <div className="flex flex-col w-full relative p-10">
-        <div className={`h-screen items-center ${bgImage}`}>
+        <div className='flex justify-center'>
+            <img src={brandLogo} className='w-32 h-32' />
+        </div>
+        <div className={`my-20 items-center ${bgImage} bg-[url('../../assets/images/homepage/Screenshot (256).png')]`}>
       {/* Banner Link Back */}
       <div className="bg-gray-100 p-5">
-        <Link to={bannerLink} className="text-blue-600 hover:text-blue-800 ">
+        <Link to='/case-studies' className="text-blue-600 hover:text-blue-800 ">
           ← Case Studies
         </Link>
       </div>
@@ -64,15 +67,15 @@ export function CaseStudyComponent({
         <div className='p-5'>
           {/* Brand Name and About */}
           <h2 className="text-2xl font-bold text-primary">{brandName}</h2>
-          <p className="text-sm text-gray-500 mb-3">{brandLocation}</p>
+          <p className="text-sm text-gray-500 mb-3 flex p-2 items-center"><span><IoLocationOutline/></span>{brandLocation}</p>
           <p className="mb-5">{aboutBrand}</p>
 
           {/* How It Started */}
           <h3 className="text-xl font-semibold text-primary">{howItStartedTitle}</h3>
           <p className="mb-5">{howItStartedContent}</p>
           {quoteBanner0 && (
-            <div className="bg-blue-100 p-4 my-5 rounded-lg text-center">
-              <blockquote className="italic text-lg">"{quoteBanner0}"</blockquote>
+            <div className="bg-basic-gradient p-4 text-white my-5 rounded-lg text-center">
+              <blockquote className="italic text-2xl p-3">"{quoteBanner0}"</blockquote>
               {quotePerson0 && (
                 <div className="flex items-center mt-4">
                   <img
@@ -82,7 +85,7 @@ export function CaseStudyComponent({
                   />
                   <div>
                     <p className="font-semibold">{quotePerson0?.name}</p>
-                    <p className="text-sm text-gray-600">{quoteRole0}</p>
+                    <p className="text-sm text-slate-200">{quoteRole0}</p>
                   </div>
                 </div>
               )}
@@ -97,8 +100,8 @@ export function CaseStudyComponent({
 
           {/* Optional Quote Banner 1 */}
           {quoteBanner1 && (
-            <div className="bg-blue-100 p-4 my-5 rounded-lg text-center">
-              <blockquote className="italic text-lg">"{quoteBanner1}"</blockquote>
+            <div className="bg-basic-gradient p-4 text-white my-5 rounded-lg text-center">
+              <blockquote className="italic text-2xl p-3">"{quoteBanner1}"</blockquote>
               {quotePerson1 && (
                 <div className="flex items-center mt-4">
                   <img
@@ -108,7 +111,7 @@ export function CaseStudyComponent({
                   />
                   <div>
                     <p className="font-semibold">{quotePerson1?.name}</p>
-                    <p className="text-sm text-gray-600">{quoteRole1}</p>
+                    <p className="text-sm text-slate-200">{quoteRole1}</p>
                   </div>
                 </div>
               )}
@@ -123,8 +126,8 @@ export function CaseStudyComponent({
 
           {/* Optional Quote Banner 2 */}
           {quoteBanner2 && (
-            <div className="bg-blue-100 p-4 my-5 rounded-lg text-center">
-              <blockquote className="italic text-lg">"{quoteBanner2}"</blockquote>
+            <div className="bg-basic-gradient p-4 text-white my-5 rounded-lg text-center">
+              <blockquote className="italic text-2xl p-3">"{quoteBanner2}"</blockquote>
               {quotePerson1 && (
                 <div className="flex items-center mt-4">
                   <img
@@ -134,7 +137,7 @@ export function CaseStudyComponent({
                   />
                   <div>
                     <p className="font-semibold">{quotePerson2?.name}</p>
-                    <p className="text-sm text-gray-600">{quoteRole2}</p>
+                    <p className="text-sm text-slate-200">{quoteRole2}</p>
                   </div>
                 </div>
               )}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 import { Helmet } from 'react-helmet';
+import { RxCross2 } from "react-icons/rx";
 
 const faqData = [
   { question: "How do I get started with creating a USD/NGN card?", answer: "It is as easy as signing up on Payscribe and following the instructions on our website." },
@@ -83,21 +84,21 @@ const FAQs = () => {
           />
           <button
             onClick={() => setSearchActive(false)}
-            className="absolute top-4 right-4 text-gray-500"
+            className="absolute top-1 right-1 text-gray-500"
           >
-            Close
+            <RxCross2/>
           </button>
           
           {/* Display search results below search bar */}
           {filteredFAQs.length > 0 && (
-            <div className="absolute top-full left-0 w-full bg-white shadow-lg border border-gray-300 mt-2 z-50">
+            <div className="absolute top-full left-0 w-full bg-white shadow-lg border border-gray-300 mt-2 z-50  rounded-lg">
               {filteredFAQs.map((faq, index) => (
                 <div
                   key={index}
                   className="border-b py-2 cursor-pointer hover:bg-gray-100"
                   onClick={() => handleResultClick(faqData.indexOf(faq))} // Use index of original FAQ
                 >
-                  <h3 className="text-md font-medium">{faq.question}</h3>
+                  <h3 className="text-md font-medium py-2 px-4">{faq.question}</h3>
                 </div>
               ))}
             </div>

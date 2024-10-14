@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { show } from '../animations';
-import BusImg1 from '../assets copy/images/homepage/new/long.png'
+import BusImg1 from '../assets/images/homepage/new/long.png'
 import { IoFlashOutline } from "react-icons/io5";
 import { MdOutlineDateRange, MdLockOutline } from "react-icons/md";
 

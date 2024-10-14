@@ -9,10 +9,10 @@ import { show } from '../animations'
 import { IoFlashOutline } from "react-icons/io5";
 import { IoBan } from "react-icons/io5";
 import { TabsComponent } from '../Components/TabsComponent';
-import TabBanner1 from '../assets copy/images/homepage/tabbanner1.jpg'
-import TabBanner2 from '../assets copy/images/homepage/tabbanner2.jpg'
-import TabBanner3 from '../assets copy/images/homepage/tabbanner3.jpg'
-import TabBanner4 from '../assets copy/images/homepage/tabbanner4.jpg'
+import TabBanner1 from '../assets/images/homepage/tabbanner1.jpg'
+import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
+import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
+import TabBanner4 from '../assets/images/homepage/tabbanner4.jpg'
 
 const payoutData = [
   {

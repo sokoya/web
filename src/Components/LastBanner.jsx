@@ -1,5 +1,5 @@
 import React from 'react'
-import LastBannerImg from '../assets copy/images/homepage/lastbannerimg.png'
+import LastBannerImg from '../assets/images/homepage/lastbannerimg.png'
 import { Link } from 'react-router-dom'
 
 function LastBanner() {

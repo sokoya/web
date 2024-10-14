@@ -12,25 +12,25 @@ import { show } from '../animations'
 
 const blockData = [
   {
-    icon: <IoAlarmOutline className='text-3xl text-black'/>,
+    icon: <IoAlarmOutline className='text-4xl text-primary'/>,
     title: 'Round-the-clock customer support, ready to assist',
     description:
       "Experience tailored assistance with Payscribe's dedicated team of account managers, providing expert support.",
   },
   {
-    icon: <IoExtensionPuzzleOutline className='text-3xl text-black'/>,
+    icon: <IoExtensionPuzzleOutline className='text-4xl text-primary'/>,
     title: 'Streamlined development process with our unified gateway',
     description:
       'Simplify your payment infrastructure with our single API integration, designed to streamline your payment processing capabilities.',
   },
   {
-    icon: <IoShapesOutline className='text-3xl text-black'/>,
+    icon: <IoShapesOutline className='text-4xl text-primary'/>,
     title: 'Gain Valuable Payment Insights Right at Your Fingertips',
     description:
       'Unlock a complete view of your business performance through our user-friendly boards and cutting-edge real-time analytics.',
   },
   {
-    icon: <IoPricetagOutline className='text-3xl text-black'/>,
+    icon: <IoPricetagOutline className='text-4xl text-primary'/>,
     title: 'No hidden fees – clear and transparent financial solutions',
     description:
       'Experience complete transparency with our financial solutions — no hidden charges, just simple straightforward and clear pricing.',
@@ -61,8 +61,8 @@ const BlockGrid = () => {
       variants={show} // Also apply variants to child elements
       className="p-5 backdrop-blur-sm bg-white/30 rounded-xl"
     >
-      <div className="mx-5 my-10 ">
-        <div className='p-5 bg-slate-300 w-[35%] rounded-2xl flex'>{block.icon}</div>
+      <div className="mx-5 my-10 flex">
+        <div className='p-5 bg-slate-50 rounded-2xl flex'>{block.icon}</div>
       </div>
       <div>
         <h5 className='font-bold'>{block.title}</h5>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { show } from '../animations'
 
 const HeroComponent = ({
-  
+  customSectionStyle = 'md:m-5 m-2',
   title = 'FAST AND CONVENIENT',
   subtitle = 'Payout has never been easier',
   description = 'Send funds instantly to different suppliers, employees, and business partners in their local currency, straight to their bank accounts or digital wallets with Payscribe`s Payout.',
@@ -27,10 +27,10 @@ const HeroComponent = ({
           return (
             <div
               key={index}
-              className="flex md:h-[80%] h-[100%] items-center md:py-10 py-1 md:px-5 px-1"
+              className={`flex md:h-[80%] h-[100%] items-center md:py-10 py-1 md:px-5 px-1`}
             >
               <motion.div
-                className={`text-white p-2 md:m-5 m-2 ${textColor}`}
+                className={`text-white md:p-10 p-2 ${customSectionStyle}  ${textColor}`}
                 variants={show}
                 initial="hidden"
                 whileInView="show"
@@ -68,7 +68,7 @@ const HeroComponent = ({
           return (
             <motion.div
               key={index}
-              className="flex h-[80%] items-center justify-start"
+              className="flex h-[80%] items-center justify-start sticky top-0"
               variants={show}
               initial="hiddenimg"
               whileInView="imageshow"

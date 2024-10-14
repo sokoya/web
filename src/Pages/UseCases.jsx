@@ -1,5 +1,5 @@
 import ContentComponent from "../Components/ContentComponent"
-import Img1 from '../assets copy/images/homepage/thepeer.png'
+import Img1 from '../assets/images/homepage/thepeer.png'
 import { Helmet } from "react-helmet"
 
 function UseCases() {
