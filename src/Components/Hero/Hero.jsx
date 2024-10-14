@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import '../../index.scss';
 import './Hero.scss';
 import { motion } from 'framer-motion';
-import Dashboard1 from '../../assets copy/images/homepage/dashboard-img.png';
-import BannerArrowLeft from '../../assets copy/images/homepage/bannerarrowleft.svg';
-import BannerArrowRight from '../../assets copy/images/homepage/bannerarrowright.svg';
+import Dashboard1 from '../../assets/images/homepage/dashboard-img.png';
+import BannerArrowLeft from '../../assets/images/homepage/bannerarrowleft.svg';
+import BannerArrowRight from '../../assets/images/homepage/bannerarrowright.svg';
 import { show } from '../../animations';
 
 
@@ -70,7 +70,7 @@ function Hero() {
            initial="hiddenimg"
            whileInView="imageshow"
            transition={{ delay: 1.2 }} 
-           className='flex justify-center transform scale-60 md:h-auto h-[40%] md:absolute md:my-0 my-20 bottom-0'>
+           className='flex justify-center transform scale-60 md:h-auto mx-20 h-[40%] md:absolute md:my-0 my-20 bottom-0'>
             <img src={BannerArrowLeft} className='transform scale-150 -translate-y-3 md:block hidden -z-10 '/>
             <img src={Dashboard1} className=''/>
             <img src={BannerArrowRight} className='transform scale-150 -translate-y-3 md:block hidden -z-10'/>

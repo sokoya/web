@@ -23,6 +23,7 @@ import Issuing from './Pages/Issuing';
 import UseCases from './Pages/UseCases';
 import CaseStudy from './Pages/CaseStudy';
 import Gamepride from './Pages/CaseStudies/Gamepride';
+import Connekit from './Pages/CaseStudies/Connkit';
 
 window.scrollTo(0, 0);
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
         <Route path='/use-cases' element={<UseCases/>} />
         <Route path='/case-studies' element={<CaseStudy/>} />
         <Route path='case-studies/gamepride' element={<Gamepride/>} />
+        <Route path='case-studies/connekit' element={<Connekit/>} />
       </Routes>
       <Footer/>
     </Router>

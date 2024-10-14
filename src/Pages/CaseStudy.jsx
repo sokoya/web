@@ -1,6 +1,7 @@
-import React from 'react'
 import ContentComponent from '../Components/ContentComponent'
 import { Helmet } from 'react-helmet'
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 // Gamepride (Nigeria)
 // Connect.eo (fintech) (virtual card) (Madagascar)
@@ -44,6 +45,21 @@ function CaseStudy() {
         <div>
 
         <h2 className='font-bold m-10 text-2xl'>Explore case studies</h2>
+        <div className='flex justify-center'>
+            <div className=' p-5 items-center my-10 bg-slate-100 m-5 rounded-2xl'>
+            <img src='https://res.cloudinary.com/duyaimdq3/image/upload/v1726532347/ICON_-_GREEN_ok5aym.png' className='h-20 w-20'/>
+            <h2 className='m-10'>Gamepride</h2> 
+            <Link to='/case-studies/gamepride'><span>Read more</span><FaArrowRight/></Link>
+            </div>
+
+            <div className=' p-5 items-center my-10 bg-slate-100 m-5 rounded-2xl'>
+            <img src='https://connekit-eo.net/images/connekit-eo.png' className='h-20 w-20'/>
+            <h2 className='m-10'>Connekit-eo</h2> 
+            <Link to='/case-studies/connekit'><span>Read more</span><FaArrowRight/></Link>
+            <div className='flex justify-center items-center'>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
   )

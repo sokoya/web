@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.scss';
-import Logo from '../../assets copy/images/payscribe_blk.png';
+import Logo from '../../assets/images/payscribe_blk.png';
 import MobileNav from './MobileNav';
 import MobileMenuIcon from './MobileMenuIcon';
 

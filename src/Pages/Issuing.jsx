@@ -6,58 +6,56 @@ import { motion } from 'framer-motion'
 import { show } from '../animations'
 import { IoCardOutline, IoShieldHalfOutline, IoCashOutline  } from "react-icons/io5";
 import { TabsComponent } from '../Components/TabsComponent';
-import TabBanner1 from '../assets copy/images/homepage/tabbanner1.jpg'
-import TabBanner2 from '../assets copy/images/homepage/tabbanner2.jpg'
-import TabBanner3 from '../assets copy/images/homepage/tabbanner3.jpg'
-import TabBanner4 from '../assets copy/images/homepage/tabbanner4.jpg'
+import TabBanner1 from '../assets/images/homepage/tabbanner1.jpg'
+import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
+import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
+import TabBanner4 from '../assets/images/homepage/tabbanner4.jpg'
 import ContentComponent from '../Components/ContentComponent';
 
 const issuingData = [
   {
-    label: 'Lending',
-    value: 'accounts-wallets',
-    title: 'Lending',
-    desc: `Skip manual processes, and instantly disburse loans to your customers after approval. Automate bulk payments to avoid tedious, repetitive admin work.`,
+    label: 'Smart Lending',
+    value: 'lending',
+    title: 'Instant Loan Disbursement',
+    desc: `Transform your lending operations with automated loan disbursement. Skip the paperwork and instantly approve and transfer funds to your customers with minimal effort. No more tedious manual processes.`,
     img: TabBanner1,
   },
   {
-    label: 'Payroll',
-    value: 'payroll',
-    title: 'Payroll',
-    desc: `Seamlessly automate payroll, benefits, and leave management. Streamline your HR processes with our payroll, benefits, and leave management solutions.`,
+    label: 'Effortless Payroll',
+    value: 'education',
+    title: 'HR Simplified for Education',
+    desc: `Empower your education institution with automated payroll and benefits management. Say goodbye to administrative headaches and streamline your HR processes with precision and ease.`,
     img: TabBanner2,
   },
   {
-    label: 'Insurance',
+    label: 'Fast Claims',
     value: 'insurance',
-    title: 'Insurance',
-    desc: `Quick payout Insurance to your policyholders to meet their exceptations`,
+    title: 'Insurance Payouts Made Simple',
+    desc: `Deliver quick and reliable payouts to your policyholders. With our solution, you can meet expectations and settle claims efficiently, enhancing customer satisfaction.`,
     img: TabBanner3,
   },
   {
-    label: 'MarketPlace',
+    label: 'Marketplace Solutions',
     value: 'market-place',
-    title: 'MarketPlace',
-    desc: `Make instant cost-effective payout to your suppliers, marketers or employees directly into their bank account`,
+    title: 'Seamless Supplier Payouts',
+    desc: `Effortlessly pay your marketplace suppliers, marketers, or employees with our instant, cost-effective payout system. Direct deposits into bank accounts ensure smooth, hassle-free payments.`,
     img: TabBanner4,
   },
   {
-    label: 'Mobility',
-    value: 'mobility',
-    title: 'Mobility',
-    desc: `Settle your transportation payments across multiple places, seamlessly`,
+    label: 'Next-Gen Payments',
+    value: 'digital-payments',
+    title: 'Digital Transactions Reinvented',
+    desc: `Integrate our digital payment API with ease and transform your business. Experience seamless, affordable payments directly within your existing systems, delivering convenience at a fraction of the cost.`,
     img: TabBanner2,
   },
   {
-    label: 'Digital Payments',
-    value: 'digital-payments',
-    title: 'Digital Payments',
-    desc: `Payments have never been made easier with our easy to use API which you can integerate easily to your exsting applications at a very affordable price`,
-    img: TabBanner2,
-  }
-
-
-]
+    label: 'Corporate Payouts',
+    value: 'corporate-payouts',
+    title: 'Automate Corporate Payments',
+    desc: `Manage large-scale corporate payments effortlessly. Automate and schedule payments across departments and partners, reducing administrative strain while boosting operational efficiency.`,
+    img: TabBanner4,
+  },
+];
 
 const blockData = [
   {
@@ -136,7 +134,7 @@ function Issuing() {
           link="/contact"
           linktext="Contact us"
           customActiveContent="bg-amber-500 font-bold"
-          customButtonClass="bg-white text-orange-700"
+          customButtonClass=" text-orange-700"
         />
       </div>
       <div>
@@ -151,7 +149,8 @@ function Issuing() {
         secondaryLink="/contact"
         imageSrc="https://via.placeholder.com/200"
         imagePosition="right"
-        bgColor="bg-gradient-to-r from-green-400 to-teal-500"
+        // bgColor="bg-gradient-to-r from-green-400 to-teal-500"
+        bgColor="bg-white"
         textColor="text-black"
       />
       </div>

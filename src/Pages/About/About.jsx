@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import About1 from '../../assets copy/images/friends.jpg'
+import About1 from '../../assets/images/friends.jpg'
 import { fadeSlideStagger, show } from '../../animations'
 import { motion } from 'framer-motion'
 import { FaRegUser } from 'react-icons/fa'
@@ -9,6 +9,7 @@ import { GiWorld } from 'react-icons/gi'
 import FAQ from '../../Components/FAQ'
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../../Components/HeroComponent'
+import LastBanner from '../../Components/LastBanner'
 
 const blockData = [
   {
@@ -83,6 +84,7 @@ function About() {
                 <title>About | Payscribe</title>
             </Helmet>
             <HeroComponent
+        customSectionStyle='my-10'
         title="WHO WE ARE"
         subtitle="Transforming Financial Services for Individuals, Businesses, and Beyond."
         description="We are on a mission to bridge the gap between individuals and fintech innovation. By offering a platform that serves both personal finance and the sophisticated requirements of businesses, we’re creating a seamless ecosystem where everyone can thrive."
@@ -127,7 +129,7 @@ function About() {
                 className="p-5  rounded-4xl"
               >
                 <div className="mx-5 my-10 flex justify-start">
-                  <div className="p-5 bg-slate-200 rounded-2xl flex">{block.icon}</div>
+                  <div className="p-5 bg-slate-50 rounded-2xl flex">{block.icon}</div>
                 </div>
                 <div>
                   <h5 className="font-bold">{block.title}</h5>
@@ -170,6 +172,7 @@ function About() {
       <div>
         <FAQ />
       </div>
+      <LastBanner/>
     </div>
   )
 }

@@ -31,7 +31,7 @@ function Gamepride() {
             <p>
               {' '}
               Who better to build a solution for this than a Gamer; one who
-              understands the struggle only too well? Mayokun, CEO/Co-founder of
+              understands the struggle only too well? Uchenna, CEO/Co-founder of
               Gamepride, thought, “Surely, there should be a better way”.
             </p>
 
@@ -75,7 +75,7 @@ function Gamepride() {
                 wallets for easy transactions. “Before we integrated with
                 Gamepride, we considered other providers and found the
                 flexibility and compliance that Gamepride’s APIs provided met
-                our aspirations” - Mayokun. With this flexibility, users can
+                our aspirations” - Uchenna. With this flexibility, users can
                 move money using just their usernames. They can make payments
                 for games and in-game purchases with their wallets and send
                 money to their other bank accounts in Nigeria. Gamepride also
@@ -107,7 +107,7 @@ function Gamepride() {
         partnershipContent={<div>
           <p>Integrating with Anchor has provided a reliable financial foundation for Gameporte and a more user-friendly platform for gamers.</p>
           <ol className='list-disc'>
-          Here are Mayokun’s 4 favourite things about building with Anchor:
+          Here are Uchenna’s 4 favourite things about building with Anchor:
 
 <li><b>Reliability</b>: Gamers can now easily perform transactions, making their experience smoother and hassle-free.</li>
 <li><b>Efficiency</b>: With more efficient operations, Gameporte can focus on growing and improving the platform.</li>

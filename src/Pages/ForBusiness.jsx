@@ -1,49 +1,64 @@
 import { motion } from 'framer-motion'
 import { show } from '../animations'
-import BusImg1 from '../assets copy/images/homepage/new/long.png'
+import BusImg1 from '../assets/images/homepage/new/long.png'
 import { IoFlashOutline } from 'react-icons/io5'
 import { MdOutlineDateRange, MdLockOutline } from 'react-icons/md'
 import { TabsComponent } from '../Components/TabsComponent'
 import FAQ from '../Components/FAQ'
 import LastBanner from '../Components/LastBanner'
-import TabBanner1 from '../assets copy/images/homepage/tabbanner1.jpg'
-import TabBanner2 from '../assets copy/images/homepage/tabbanner2.jpg'
-import TabBanner3 from '../assets copy/images/homepage/tabbanner3.jpg'
-import TabBanner4 from '../assets copy/images/homepage/tabbanner4.jpg'
-import Block1 from '../assets copy/images/homepage/peer.png'
+import TabBanner1 from '../assets/images/homepage/tabbanner1.jpg'
+import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
+import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
+import TabBanner4 from '../assets/images/homepage/tabbanner4.jpg'
+import Block1 from '../assets/images/homepage/peer.png'
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../Components/HeroComponent'
 
 const businessData = [
   {
-    label: 'Accounts and Wallets',
+    label: 'Accounts & Wallets',
     value: 'accounts-wallets',
-    title: 'Build seamless accounts and wallets with half the effort.',
-    desc: `Effortlessly integrate account and wallet services into your fintech platform, allowing your users to manage their finances easily and securely. Our robust API simplifies the process, reducing development time and effort.`,
+    title: 'Effortless Financial Management for Your Customers',
+    desc: `Offer your users a streamlined way to manage their finances with integrated accounts and digital wallets. Our API enables businesses to set up secure, user-friendly financial tools that allow for seamless transactions, saving development time while boosting customer satisfaction.`,
     img: TabBanner1,
   },
   {
-    label: 'Issue USD/NGN Cards',
+    label: 'Card Issuance',
     value: 'issue-cards',
-    title: 'Expand financial reach with effortless USD/NGN card issuance',
-    desc: `Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your users with cards for both international and local transactions, all through a straightforward setup and management process.`,
+    title: 'Issue USD/NGN Cards with Ease and Expand Financial Reach',
+    desc: `Enable your business to offer multi-currency card services, providing your customers with the flexibility to make both local and international payments. Our simplified card issuance platform accelerates the process of launching and managing USD/NGN cards, helping your business stay competitive in the financial landscape.`,
     img: TabBanner2,
   },
   {
-    label: 'Savings & Investment',
+    label: 'Savings & Investments',
     value: 'savings-investment',
-    title: 'Boost savings and investments with minimal work',
-    desc: `Enhance your fintech services by offering effortless savings and investment solutions. Our platform simplifies the process, allowing users to manage and grow their funds with minimal effort. This streamlined approach enables you to provide robust financial tools without complex implementation.`,
+    title: 'Empower Users with Smart Savings & Investment Tools',
+    desc: `Attract and retain customers by integrating seamless savings and investment options into your fintech services. Our flexible platform allows businesses to offer robust financial growth opportunities with minimal setup, providing users with intuitive ways to save and invest directly from your application.`,
     img: TabBanner3,
   },
   {
     label: 'Bill Payments',
     value: 'bill-payments',
-    title: 'Simplify bill payments with ease',
-    desc: `Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.`,
+    title: 'Simplify Bill Payments and Maximize User Convenience',
+    desc: `Make bill payments a breeze for your customers by integrating our efficient payment platform. With a user-friendly interface and hassle-free management, your business can offer customers a fast, reliable way to handle all their payment needs in one place.`,
     img: TabBanner4,
   },
-]
+  {
+    label: 'Cross-Border Transfers',
+    value: 'cross-border-transfers',
+    title: 'Expand Globally with Secure Cross-Border Payments',
+    desc: `Unlock international growth by enabling cross-border payments. Our platform simplifies global financial transactions, allowing your business to offer seamless, secure transfers across borders with ease.`,
+    img: TabBanner1,
+  },
+  {
+    label: 'Automated Payouts',
+    value: 'automated-payouts',
+    title: 'Automate Payouts to Suppliers and Contractors',
+    desc: `Streamline your business operations by automating payments to vendors, suppliers, and contractors. Reduce manual effort and improve accuracy with our scalable payout solutions that handle high-volume transactions effortlessly.`,
+    img: TabBanner2,
+  },
+];
+
 
 const blockData = [
   {
@@ -68,34 +83,35 @@ const blockData = [
 
 const gridData = [
   {
-    title: 'Swift Payments',
-    subtitle: 'Secure Transactions',
+    title: 'Unified Financial Platform',
+    subtitle: 'Streamlined Transactions',
     content:
-      ' Effortlessly connect your business with multiple financial services through our unified platform, simplifying processes and reducing complexity.',
+      'Unlock seamless access to a wide range of financial services, all integrated into one platform to keep your business moving smoothly without the hassle of juggling multiple systems.',
     image: Block1,
   },
   {
-    title: 'Swift Payments',
-    subtitle: 'Seamless Integration',
+    title: 'Ironclad Security',
+    subtitle: 'Effortless Protection',
     content:
-      'Enjoy peace of mind with our robust security measures, ensuring that all your financial data and transactions are protected.',
+      'Rest easy knowing your transactions are backed by cutting-edge security protocols, ensuring the highest level of protection for your financial data.',
     image: Block1,
   },
   {
-    title: 'Swift Payments',
-    subtitle: 'Real-Time Data Access',
+    title: 'Real-Time Insights',
+    subtitle: 'Instant Financial Data',
     content:
-      'Access up-to-date financial information instantly, allowing you to make informed decisions and respond quickly to market changes.',
+      'Stay ahead of the game with real-time access to critical financial data, giving you the power to make smart, quick decisions when they matter most.',
     image: Block1,
   },
   {
-    title: 'Swift Payments',
-    subtitle: 'Scalable Solutions',
+    title: 'Scalable Solutions',
+    subtitle: 'Growth-Focused Flexibility',
     content:
-      'Our platform grows with your business, offering flexible tools that adapt to your needs, from startups to established enterprises.',
+      'No matter where your business stands, our platform scales with you, providing tailored solutions that evolve as your company grows, from startups to industry leaders.',
     image: Block1,
   },
-]
+];
+
 
 function ForBusiness() {
   return (

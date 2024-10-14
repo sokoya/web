@@ -58,7 +58,7 @@ const FAQ = () => {
         <div className="bg-white shadow-lg rounded-lg p-5 w-full max-w-md mt-20">
           <input
             type="text"
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none"
+            className="w-full p-5 border border-gray-300 rounded-md focus:outline-none"
             placeholder="Search FAQs..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -78,12 +78,12 @@ const FAQ = () => {
         
         {filteredFAQs.length > 0 ? (
           filteredFAQs.map((faq, index) => (
-            <div key={index} className="border-b py-4">
+            <div key={index} className="border-b p-4">
               <div 
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)} 
               >
-                <h3 className="text-lg font-medium">{faq.question}</h3>
+                <h3 className="text-lg font-medium px-4">{faq.question}</h3>
                 {openIndex === index ? (
                   <IoChevronUp className="text-xl" />
                 ) : (
@@ -99,7 +99,7 @@ const FAQ = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-500 mt-5">
+          <p className="text-center text-gray-500 mt-10">
             Can't find an answer? <a href="/support" className="text-blue-500">Contact support</a>.
           </p>
         )}
