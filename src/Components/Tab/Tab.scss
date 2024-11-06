@@ -1,4 +1,27 @@
-.down
-{
-    z-index: -1000;
-}
+/* Custom CSS to remove unwanted styles from active tabs */
+.active-tab {
+    background-color: transparent !important; /* Remove background */
+    color: white !important;                  /* Ensure text is visible */
+    border: none !important;                  /* Remove borders */
+    box-shadow: none !important;              /* Remove shadows */
+    position: relative;                       /* Position for layering */
+    z-index: 10;                              /* Ensure it's above other elements */
+  }
+  
+  /* Hide any pseudo-elements that might be adding lines or backgrounds */
+  .active-tab::after,
+  .active-tab::before {
+    display: none !important;
+  }
+  
+  /* Remove any border-bottom if present */
+  .active-tab {
+    border-bottom: none !important;
+  }
+  
+  /* Ensure the label text is on top */
+  .active-tab > span {
+    position: relative;
+    z-index: 20;
+  }
+  

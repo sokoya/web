@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MobileMenuIcon from './MobileMenuIcon';
-import Logo from '../../assets copy/images/payscribe_blk.png';
+import Logo from '../../assets/images/payscribe_blk.png';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './MobileNav.scss';
@@ -9,30 +9,30 @@ import { menuVariant, menuItemVariant, menuListVariant } from '../../animations'
 
 
 const sections = [
-  { id: 'home', title: 'Home' },
-  { id: 'individuals', title: 'Individuals' },
-  { id: 'for-business', title: 'For Businesses' },
+  { id: 'home', title: 'Home', url: '/' },
+  // { id: 'individuals', title: 'Individuals' },
+  { id: 'for-business', title: 'For Businesses', url: 'for-business' },
   { id: 'for-developers', title: 'For Developers' },
   { id: 'companies', title: 'Companies' },
 ];
 
 // Sub-menus for "For Businesses" and "For Developers"
 const subMenus = {
-  'individuals': [
-    { id: 'indv1', title: 'Pay Bills' },
-    { id: 'indv2', title: 'Virtual Dollar' },
-    { id: 'indv3', title: 'Airtime to Cash' },
-    { id: 'indv4', title: 'Save and Earn' },
-    { id: 'indv5', title: 'Send and Receive' },
-  ],
+  // 'individuals': [
+  //   { id: 'indv1', title: 'Pay Bills' },
+  //   { id: 'indv2', title: 'Virtual Dollar' },
+  //   { id: 'indv3', title: 'Airtime to Cash' },
+  //   { id: 'indv4', title: 'Save and Earn' },
+  //   { id: 'indv5', title: 'Send and Receive' },
+  // ],
   'for-developers': [
-    { id: 'dev1', title: 'API Documentation' },
+    { id: 'dev1', title: 'API Documentation', url: 'https://developers.payscribe.ng/' },
     { id: 'dev2', title: 'Overview' },
   ],
   'companies': [
-    { id: 'comp1', title: 'About' },
+    { id: 'comp1', title: 'About', url: '/about' },
     { id: 'comp2', title: 'Contact us' },
-    { id: 'comp3', title: 'Frequently Asked' },
+    { id: 'comp3', title: 'FAQs', url: '/faqs' },
   ],
 };
 
@@ -60,7 +60,7 @@ function MobileNav() {
           className='my-2 '
           variants={menuItemVariant} // Apply individual item variants
         >
-          <Link className='px-5 py-2' onClick={() => handleMenuClick(section.id)}>
+          <Link className='px-5 py-2' onClick={() => handleMenuClick(section.id)} to={section.url}>
             {section.title}
           </Link>
         </motion.li>
@@ -87,7 +87,7 @@ function MobileNav() {
                 className='my-2 '
                 variants={menuItemVariant} // Individual item variants for sub-menu
               >
-                <Link className='px-5 py-2'>
+                <Link className='px-5 py-2' to={subItem.url} onClick={() => handleMenuClick()}>
                   {subItem.title}
                 </Link>
               </motion.li>
@@ -117,16 +117,16 @@ function MobileNav() {
         {renderMenu()}
       </motion.ul>
 
-      <motion.div className='alpha-text-auto font-semibold lg:ml-10 ml-2 flex justify-center'>
+      <motion.div className='alpha-text-auto font-semibold lg:ml-10 ml-2 flex flex-col text-center m-1 justify-center'>
         <Link
-          to='/register'
-          className='p-3 rounded-lg mx-2 bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          to='https://app.payscribe.ng/auth/create'
+          className='p-3 rounded-lg mx-2 my-1 font-bold bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Create a Free Account
         </Link>
         <Link
-          to='/login'
-          className='border-white border-solid border mx-2 p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          to='https://app.payscribe.ng/login'
+          className='border-white border-solid border mx-2 my-1 font-bold p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Sign In
         </Link>

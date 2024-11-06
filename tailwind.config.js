@@ -28,9 +28,8 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
-      gradient: {
-        'primary': 'linear-gradient(90deg, #3498db 0%, #2ecc71 100%)',
-        'secondary': 'linear-gradient(90deg, #9b59b6 0%, #e74c3c 100%)',
+      backgroundImage: {
+        'basic-gradient': 'linear-gradient(to bottom, #7e22ce, #4f46e5) ', // Use the HEX codes or Tailwind color names
       },
     },
   },

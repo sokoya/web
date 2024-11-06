@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 
+
 body {
     max-width: 1580px;
     margin: 0 auto !important;
     scroll-behavior: smooth;
+    font-family: Fredoka;
+
 
     // img 
     // {
@@ -27,4 +30,12 @@ body {
   {
     user-select: none;           /* Disable text/media selection */
     pointer-events: none;  
+  }
+
+  .glow {
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+  }
+
+  .radial{
+    background: radial-gradient(rgba(241, 229, 231, 0.208), #020414, #020414, #020414);
   }
