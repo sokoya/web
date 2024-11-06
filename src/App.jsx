@@ -1,7 +1,6 @@
 // App.jsx
 import './Styles/main.scss';
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Individuals from './Pages/Individuals';
 import ForBusiness from './Pages/ForBusiness';
@@ -24,13 +23,21 @@ import UseCases from './Pages/UseCases';
 import CaseStudy from './Pages/CaseStudy';
 import Gamepride from './Pages/CaseStudies/Gamepride';
 import Connekit from './Pages/CaseStudies/Connkit';
+import BusFAQs from './Pages/BusFaqs';
 
-window.scrollTo(0, 0);
+// const NavigateToRoot = () => {
+//   const navigate = useNavigate();
+
+//   navigate('/', { replace: true });
+
+//   return null;
+// };
 const App = () => {
+ 
   return (
     <Router>
       <Navigation />
-      <Routes>
+      <Routes scrollToTop>
         <Route path="/" element={<Home />} />
         <Route path="/individuals" element={<Individuals />} />
         <Route path='/book-a-demo' element={<BookADemo/>} />
@@ -51,8 +58,10 @@ const App = () => {
         <Route path='/case-studies' element={<CaseStudy/>} />
         <Route path='case-studies/gamepride' element={<Gamepride/>} />
         <Route path='case-studies/connekit' element={<Connekit/>} />
+        <Route path="/business-faqs" element={<BusFAQs/>} />
       </Routes>
       <Footer/>
+      {/* <NavigateToRoot/> */}
     </Router>
   );
 };

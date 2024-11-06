@@ -5,7 +5,9 @@ import HeroComponent from '../Components/HeroComponent'
 import { motion } from 'framer-motion'
 import { show } from '../animations'
 import { IoCardOutline, IoShieldHalfOutline, IoCashOutline  } from "react-icons/io5";
+import CardImg from '../assets/exports/hero.png';
 import { TabsComponent } from '../Components/TabsComponent';
+import MockupPhone from '../assets/exports/mockupPhone.jpg'
 import TabBanner1 from '../assets/images/homepage/tabbanner1.jpg'
 import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
 import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
@@ -90,16 +92,18 @@ function Issuing() {
         title="CARD ISSUING"
         subtitle="Collect virtual debit cards easily"
         description="Everything you need to easily build, manage and scale a commercial virtual card issuing solution."
-        primaryLink="/register"
+        primaryLink="https://app.payscribe.ng/auth/create"
+        customSectionStyle=''
         primaryLinkText="Join us now"
         secondaryLink="/support"
         secondaryLinkText="Contact support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
-        additionalImage="https://via.placeholder.com/150"
+        additionalImage={CardImg}
         additionalContent={<p className="text-white"></p>}
         columns={2}
         order={['text', 'image']} 
+        customimgstyle='md:scale-[80%] scale-[100%] md:-translate-y-0 -translate-y-[15em]'
       />
 
 <motion.div
@@ -130,11 +134,12 @@ function Issuing() {
           data={issuingData}
           headerTitle="Virtual cards for any business"
           headerDescription="Payscribe provides virtual debit cards that support a range of business models and industries."
-          // customTabBg = "bg-teal-600"
+          customTabBg = "bg-primary"
           link="/contact"
           linktext="Contact us"
-          customActiveContent="bg-amber-500 font-bold"
-          customButtonClass=" text-orange-700"
+          customActiveContent="bg-white font-bold"
+          customButtonClass="text-white bg-black"
+          customActiveTabClass="text-primary bg-white"
         />
       </div>
       <div>
@@ -144,10 +149,11 @@ function Issuing() {
         description="Our platform offers fast and reliable payment solutions for businesses."
         features={['Fast Payments', 'Global Coverage', 'Flexible Solutions']}
         primaryLinkText="Sign Up"
-        primaryLink="/register"
+        customLinkStyle="text-white"
+        primaryLink="https://app.payscribe.ng/auth/create"
         secondaryLinkText="Learn More"
         secondaryLink="/contact"
-        imageSrc="https://via.placeholder.com/200"
+        imageSrc={MockupPhone}
         imagePosition="right"
         // bgColor="bg-gradient-to-r from-green-400 to-teal-500"
         bgColor="bg-white"

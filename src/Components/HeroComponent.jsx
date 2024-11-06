@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { show } from '../animations'
@@ -8,7 +7,7 @@ const HeroComponent = ({
   title = 'FAST AND CONVENIENT',
   subtitle = 'Payout has never been easier',
   description = 'Send funds instantly to different suppliers, employees, and business partners in their local currency, straight to their bank accounts or digital wallets with Payscribe`s Payout.',
-  primaryLink = '/register',
+  primaryLink = 'https://app.payscribe.ng/auth/create',
   primaryLinkText = 'Get Started',
   secondaryLink = '/contact-us',
   secondaryLinkText = 'Reach out to us',
@@ -18,6 +17,7 @@ const HeroComponent = ({
   additionalContent,
   columns = 2, 
   order = ['text', 'image'], 
+  customimgstyle='scale-[70%]',
 }) => {
   
   const renderElements = () => {
@@ -27,36 +27,37 @@ const HeroComponent = ({
           return (
             <div
               key={index}
-              className={`flex md:h-[80%] h-[100%] items-center md:py-10 py-1 md:px-5 px-1`}
+              className={`flex md:h-[80%] h-screen items-center p-1`}
             >
               <motion.div
-                className={`text-white md:p-10 p-2 ${customSectionStyle}  ${textColor}`}
+                className={`text-white md:p-10 p-2 md:m-0 m-3 transform md:-translate-y-10 -translate-y-0 ${customSectionStyle}  ${textColor}`}
                 variants={show}
                 initial="hidden"
                 whileInView="show"
               >
                 <motion.h1
                   variants={show}
-                  className="font-bold m-2 my-1"
+                  className="font-bold m-2 my-1 md:text-md text-lg"
                 >
                   {title}
                 </motion.h1>
-                <motion.h2 className="font-bold m-2 my-1 md:text-5xl text-2xl">
+                <motion.h2 className="font-bold m-2 my-5  md:my-0 md:text-5xl text-2xl">
                   {subtitle}
                 </motion.h2>
-                <motion.p className="m-2 md:leading-7 leading-6">
+                <motion.p className="m-2 md:my-1 my-10 md:leading-7 leading-6">
                   {description}
                 </motion.p>
-                <div className="my-10 flex">
+                <div className="my-10 md:block flex justify-center flex-col">
                   <Link
+                  target='_blank'
                     to={primaryLink}
-                    className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black transition-transform duration-300"
+                    className="p-3 rounded-lg mx-2 bg-black font-bold hover:-translate-y-1 text-center text-white transition-transform duration-300"
                   >
                     {primaryLinkText}
                   </Link>
                   <Link
                     to={secondaryLink}
-                    className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
+                    className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 text-center  text-black transition-transform duration-300"
                   >
                     {secondaryLinkText}
                   </Link>
@@ -68,7 +69,7 @@ const HeroComponent = ({
           return (
             <motion.div
               key={index}
-              className="flex h-[80%] items-center justify-start sticky top-0"
+              className="flex md:h-[80%] h-auto items-center justify-start md:sticky static overflow glow"
               variants={show}
               initial="hiddenimg"
               whileInView="imageshow"
@@ -77,15 +78,15 @@ const HeroComponent = ({
                 <img
                   src={additionalImage}
                   alt="Banner"
-                  className="transform scale-[70%] rounded-4xl"
+                  className={`transform ${customimgstyle}`}
                 />
               )}
             </motion.div>
           );
         case 'additionalContent':
           return (
-            <div key={index} className="flex justify-center items-center h-full">
-              {additionalContent}
+            <div key={index} className="flex justify-start items-center h-full">
+             <p className='bg-red-800'>{additionalContent}</p>
             </div>
           );
         default:

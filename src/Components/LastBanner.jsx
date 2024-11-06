@@ -1,4 +1,3 @@
-import React from 'react'
 import LastBannerImg from '../assets/images/homepage/lastbannerimg.png'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +11,7 @@ function LastBanner() {
             Start Building Today
           </h2>
 
-          <p className="my-2 text-white text-md">
+          <p className="my-10 text-white text-md">
             Sign up in seconds and start processing payments right away!
             Alternatively, our experts are here to help you craft a
             tailored payment solution that perfectly suits your business
@@ -20,16 +19,16 @@ function LastBanner() {
           </p>
           <br />
 
-          <div className="md:flex block items-center my-3">
+          <div className="md:block flex items-center my-3 flex-col justify-center">
             <Link
-              to="/register"
-              className="p-3 rounded-lg md:w-auto w-full mx-2 font-bold bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
+              to="https://app.payscribe.ng/create"
+              className="p-3 rounded-lg md:w-auto  w-full text-center my-1 mx-2 font-bold bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Start Building
             </Link>
             <Link
-              to="/contactus"
-              className=" border-solid border mx-2 font-bold p-3 rounded-lg bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
+              to="/contact-us"
+              className=" border-solid border mx-2 font-bold p-3 rounded-lg w-full text-center my-1 bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
               Contact us
             </Link>

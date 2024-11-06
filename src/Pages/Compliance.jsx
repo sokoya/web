@@ -1,5 +1,10 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
+import Data from '../assets/exports/data.svg'
+import Security from '../assets/exports/security.svg'
+import Secure from '../assets/exports/secure.svg'
+import { motion } from 'framer-motion';
+import { show } from '../animations'
 
 function Compliance() {
   return (
@@ -8,7 +13,7 @@ function Compliance() {
                 <meta charSet="utf-8" />
                 <title>Compliance | Payscribe</title>
             </Helmet>
-        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center">
             <div className="p-3 m-2 ">
               <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
@@ -24,10 +29,19 @@ function Compliance() {
               </p>
             </div>
           </div>
-          <div></div>
+          <div>
+          <motion.div 
+          className="md:order-1 order-2"
+          variants={show}
+          initial="hiddenimg"
+          whileInView="imageshow"
+          >
+            <img src={Secure} alt="Security" className='transform scale-[70%]'/>
+          </motion.div>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center md:order-2 order-1">
             <div className="p-3 m-2">
               <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
@@ -44,10 +58,17 @@ function Compliance() {
               </p>
             </div>
           </div>
-          <div className="md:order-1 order-2"></div>
+          <motion.div 
+          className="md:order-1 order-2"
+          variants={show}
+          initial="hiddenimg"
+          whileInView="imageshow"
+          >
+            <img src={Security} alt="Security" className='transform scale-[70%]'/>
+          </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center">
             <div className="p-3 m-2 ">
               <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
@@ -65,7 +86,12 @@ function Compliance() {
               </p>
             </div>
           </div>
-          <div></div>
+          <motion.div
+           variants={show}
+           initial="hiddenimg"
+           whileInView="imageshow">
+            <img src={Data} alt='Data' className='transform scale-[70%]' />
+          </motion.div>
         </div>
     </div>
   )

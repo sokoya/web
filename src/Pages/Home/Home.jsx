@@ -17,38 +17,39 @@ import TabBanner1 from "../../assets/images/homepage/tabbanner1.jpg";
 import TabBanner2 from "../../assets/images/homepage/tabbanner2.jpg";
 import TabBanner3 from "../../assets/images/homepage/tabbanner3.jpg";
 import TabBanner4 from "../../assets/images/homepage/tabbanner4.jpg";
+window.scrollTo(0, 0);
+
 
 const homeData = [
   {
     label: "Accounts and Wallets",
     value: "accounts-wallets",
     title: "Build seamless accounts and wallets with half the effort.",
-    desc: `Effortlessly integrate account and wallet services into your fintech platform, allowing your users to manage their finances easily and securely. Our robust API simplifies the process, reducing development time and effort.`,
+    desc: `Effortlessly integrate account and wallet services into your fintech platform, allowing your users to manage their finances easily and securely.`,
     img: TabBanner1,
   },
   {
     label: "Issue USD/NGN Cards",
     value: "issue-cards",
     title: "Expand financial reach with effortless USD/NGN card issuance",
-    desc: `Enhance your fintech offerings with our seamless USD/NGN card issuance. Easily provide your users with cards for both international and local transactions, all through a straightforward setup and management process.`,
+    desc: `Enhance your fintech offerings with our seamless USD/NGN card issuance.`,
     img: TabBanner2,
   },
   {
     label: "Savings & Investment",
     value: "savings-investment",
     title: "Boost savings and investments with minimal work",
-    desc: `Enhance your fintech services by offering effortless savings and investment solutions. Our platform simplifies the process, allowing users to manage and grow their funds with minimal effort. This streamlined approach enables you to provide robust financial tools without complex implementation.`,
+    desc: `Enhance your fintech services by offering effortless savings and investment solutions.`,
     img: TabBanner3,
   },
   {
     label: "Bill Payments",
     value: "bill-payments",
     title: "Simplify bill payments with ease",
-    desc: `Streamline bill payments effortlessly with our platform. Enable your users to manage and pay their bills with minimal hassle, offering a smooth and efficient solution that integrates seamlessly into your services.`,
+    desc: `Streamline bill payments effortlessly with our platform.`,
     img: TabBanner4,
   },
 ];
-
 
 const freelancerFeatures = [
   'Free Payment Links',
@@ -204,7 +205,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-black p-5 rounded-lg md:my-0 my-5">
+            <div className="bg-[black] p-5 rounded-lg md:my-0 my-5">
               <div>
                 <video
                   loop
@@ -236,13 +237,14 @@ function Home() {
         </div>
 
         <div>
-      <TabsComponent
-        data={homeData}
-        headerTitle="Effortless Financial Integration"
-        headerDescription="Streamline Your Financial Services with Ease"
-        link="/register"
-        linktext="Get Started"
-      />
+        <TabsComponent
+  data={homeData}
+  headerTitle="Effortless Financial Integration"
+  customHeaderClass="text-white"
+  headerDescription="Streamline Your Financial Services with Ease"
+  link="https://app.payscribe.ng/auth/create"
+  linktext="Get Started"
+/>
     </div>
 
         <div className="max-w-[1580px] mx-auto">
@@ -280,7 +282,7 @@ function Home() {
                   <br />
                   <div className="my-2 transform hover:-translate-y-1 transition ease-in-out duration-300">
                     <Link
-                      to="/register"
+                      to="https://app.payscribe.ng/auth/create"
                       className="p-3 rounded-lg mx-2 bg-primary text-white"
                     >
                       Create a Free Account
@@ -326,7 +328,7 @@ function Home() {
                 <br />
                 <div className="my-2 transform hover:-translate-y-1 transition ease-in-out duration-300">
                   <Link
-                    to="/register"
+                    to="https://app.payscribe.ng/auth/create"
                     className="p-3 rounded-lg mx-2 bg-primary text-white"
                   >
                     Create a Free Account

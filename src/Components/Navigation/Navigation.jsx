@@ -18,10 +18,10 @@ const menuItems = [
   // },
   { id: 'business', title: 'For Businesses', link: '/for-business' },
   { 
-    id: 'developers', title: 'For Developers', link: '/for-developers',
+    id: 'developers', title: 'For Developers', link: '#',
      subMenu: [
       { title: 'Overview', link: '/overview' },
-      { title: 'API Documentation', link: '/api-documentation' }
+      { title: 'API Documentation', link: 'https://developers.payscribe.ng/' }
     ]
   },
   { id: 'company', title: 'Company', link: '#', subMenu: [
@@ -94,13 +94,15 @@ const Navigation = () => {
           {/* Registration Links */}
           <div className="flex items-center font-semibold lg:ml-10 ml-2">
             <Link
-              to="/register"
+            target='_blank'
+              to="https://app.payscribe.ng/auth/create"
               className="p-3 rounded-lg mx-2 bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Create a Free Account
             </Link>
             <Link
-              to="/login"
+            target='_blank'
+              to="https://app.payscribe.ng/login"
               className="border-white border-solid border mx-2 p-3 rounded-lg bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Sign In

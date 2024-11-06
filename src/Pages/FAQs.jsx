@@ -3,12 +3,32 @@ import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 import { Helmet } from 'react-helmet';
 import { RxCross2 } from "react-icons/rx";
+import HeroComponent from '../Components/HeroComponent';
+import FaqPhone from "../assets/exports/FaqPhone.svg"
+import WhiteStar from "../assets/exports/WhiteStar.svg"
 
 const faqData = [
-  { question: "How do I get started with creating a USD/NGN card?", answer: "It is as easy as signing up on Payscribe and following the instructions on our website." },
-  { question: "What is your return policy?", answer: "Our return policy allows returns within 30 days of purchase." },
-  { question: "How secure are the transactions made through your platform?", answer: "We have stringent security measures in place to ensure your transactions are safe." },
-  { question: "Can I use your payment links for international transactions?", answer: "Yes, you can use your payment links for international transactions." },
+  { 
+    question: "How do I get started with creating a USD/NGN card?",
+    answer: "It is as easy as signing up on Payscribe and following the instructions on our website." 
+  },
+  {
+    question: "What is your return policy?",
+    answer: "Our return policy allows returns within 30 days of purchase." 
+  },
+  { 
+    question: "How secure are the transactions made through your platform?", 
+    answer: "We have stringent security measures in place to ensure your transactions are safe." 
+  },
+  { 
+    question: "Can I use your payment links for international transactions?", 
+    answer: "Yes, you can use your payment links for international transactions."
+   },
+   {
+    question: "",
+    answer: "",
+   },
+   
 ];
 
 const FAQs = () => {
@@ -61,6 +81,29 @@ const FAQs = () => {
                 <title>FAQs | Payscribe</title>
             </Helmet>
       {/* Search Button */}
+      <HeroComponent
+      customSectionStyle='-my-5'
+        title="FAQ"
+        subtitle="You've got any questions?"
+        description="Go through our FAQs to find the answer you're looking for."
+        primaryLink="/start"
+        primaryLinkText="Join Us"
+        secondaryLink="/support"
+        secondaryLinkText="Contact Support"
+        // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
+        textColor="text-white"
+        additionalImage={FaqPhone}
+        additionalContent={
+          <div>
+            <img src={WhiteStar} alt="" className="absolute left-[50%] top-[15%] glow" />
+            <img src={WhiteStar} alt="" className="absolute left-[55%] top-[45%] glow" />
+            <img src={WhiteStar} alt="" className="absolute left-[90%] top-[20%] glow" />
+
+          </div>
+        }
+        columns={2}
+        order={['text', 'image', 'additionalContent']}
+      />
       <div className="fixed bottom-4 right-4 z-50">
         <button
           onClick={() => setSearchActive(true)}

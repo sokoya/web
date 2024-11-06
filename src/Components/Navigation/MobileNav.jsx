@@ -26,7 +26,7 @@ const subMenus = {
   //   { id: 'indv5', title: 'Send and Receive' },
   // ],
   'for-developers': [
-    { id: 'dev1', title: 'API Documentation' },
+    { id: 'dev1', title: 'API Documentation', url: 'https://developers.payscribe.ng/' },
     { id: 'dev2', title: 'Overview' },
   ],
   'companies': [
@@ -117,16 +117,16 @@ function MobileNav() {
         {renderMenu()}
       </motion.ul>
 
-      <motion.div className='alpha-text-auto font-semibold lg:ml-10 ml-2 flex justify-center'>
+      <motion.div className='alpha-text-auto font-semibold lg:ml-10 ml-2 flex flex-col text-center m-1 justify-center'>
         <Link
-          to='/register'
-          className='p-3 rounded-lg mx-2 bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          to='https://app.payscribe.ng/auth/create'
+          className='p-3 rounded-lg mx-2 my-1 font-bold bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Create a Free Account
         </Link>
         <Link
-          to='/login'
-          className='border-white border-solid border mx-2 p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          to='https://app.payscribe.ng/login'
+          className='border-white border-solid border mx-2 my-1 font-bold p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Sign In
         </Link>
