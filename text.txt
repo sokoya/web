@@ -14,7 +14,6 @@ import TabBanner2 from "../../assets copy/images/homepage/tabbanner2.jpg"
 import TabBanner3 from "../../assets copy/images/homepage/tabbanner3.jpg"
 import TabBanner4 from "../../assets copy/images/homepage/tabbanner4.jpg"
 
-
 const data = [
   {
     label: "Accounts and Wallets",
