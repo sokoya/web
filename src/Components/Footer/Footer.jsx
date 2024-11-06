@@ -1,104 +1,129 @@
-import React from 'react'
-import Logo from '../../assets copy/images/payscribe.png'
+import Logo from '../../assets/exports/logo-white.png'
 import { Link } from 'react-router-dom'
-import { IoLogoGooglePlaystore, IoLogoApple } from "react-icons/io5";
-import Lightning from '../../assets copy/images/globe.png'
-import SocialMediaIcons from '../SocialMediaIcons';
+import { IoLogoGooglePlaystore, IoLogoApple } from 'react-icons/io5'
+import Lightning from '../../assets/images/globe.png'
+import SocialMediaIcons from '../SocialMediaIcons'
+import Audit from '../../assets/exports/ndpr-audit.svg'
 
 const lists = [
   {
-    title: "Products",
+    title: 'Products',
     items: [
-      "Pay Bills",
-      "Virtual Dollar",
-      "Airtime to Cash",
-      "Save and Earn"
-    ]
+      { title: 'Accounts and wallets', link: '/accounts-wallets' },
+      { title: 'Cards Issuing', link: '/card-issuing' },
+      // { title: 'Bills Payments', link: '/bills-payments' },
+      { title: 'Payments', link: '/payout' },
+      { title: 'API Services', link: 'https://developers.payscribe.ng/' },
+    ],
   },
   {
-    title: "For Businesses",
+    title: 'For Businesses',
     items: [
-      "Why Payscribe",
-      "How It Works",
-      "Ambassadors"
-    ]
+      { title: 'Why Payscribe', link: '/for-business' },
+      { title: 'How It Works', link: 'https://developers.payscribe.ng/' },
+      { title: 'Ambassadors', link: 'about' },
+    ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     items: [
-      "FAQs",
-      "Status Page",
-      "Compliance"
-    ]
+      { title: 'FAQs', link: '/faqs' },
+      // { title: 'Status Page', link: '/' },
+      { title: 'Compliance', link: '/compliance' },
+      { title: 'Book a demo', link: '/book-a-demo' },
+      { title: 'Use case', link: '/use-cases' },
+      { title: 'Case-studies', link: '/case-studies' },
+    ],
   },
   {
-    title: "Company",
+    title: 'Company',
     items: [
-      "About",
-      "Blog",
-      "Privacy Policy",
-      "Terms and Conditions"
-    ]
-  }
-];
-
+      { title: 'About', link: '/about' },
+      { title: 'Blog', link: 'https://blog.payscribe.ng/' },
+      { title: 'Privacy Policy', link: '/privacy-policy' },
+      { title: 'Terms and Conditions', link: 'terms-and-conditions' },
+    ],
+  },
+]
 
 function Footer() {
   return (
     <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-      <img
+      {/* <img
         src={Lightning}
-        className="non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
-      />
-      <div className="bg-black grid md:grid-cols-[2fr_3fr] grid-cols-1 md:p-10 p-5 ">
-        <div className="m-5">
+        className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
+      /> */}
+      <div className="bg-black grid md:grid-cols-[2fr_3fr] grid-cols-1 md:p-10 p-2 ">
+        <div className="md:m-5 m-1">
           <div>
-            <div className="flex">
+            <div className="flex my-5">
               <Link to="/" className="flex items-center">
-                <img src={Logo} className="h-[2.6em] px-2" alt="Logo" />
-                <span className="text-3xl text-white">Payscribe</span>
+                <img src={Logo} className="h-[3.5em] px-2" alt="Logo" />
               </Link>
             </div>
           </div>
-          <p className="text-slate-300 text-sm md:p-3 p-1 my-5">
+          <p className="text-slate-300 text-sm md:p-3 p-1 md:my-5 my-10">
             Payscribe offers a robust payment infrastructure enabling businesses
             to securely accept payments, issue USD/NGN cards for seamless
             cross-border transactions, and provide comprehensive financial
             services to their customers. Also available for individuals.
           </p>
-
-          <div className="flex text-white text-2xl p-4">
-            <div className="flex p-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
+          <div>
+          <img src={Audit} className="h-[3em] px-2" alt="NDPR" />
+          </div>
+          <br/>
+          <div className="flex text-white text-2xl md:justify-start justify-center md:flex-row flex-col">
+            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
               <IoLogoGooglePlaystore />{' '}
-              <span className="text-sm p-2">Android</span>
+              <span className="text-sm p-2 ">Android</span>
             </div>
-            <div className="flex p-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
-              <IoLogoApple /> <span className="text-sm p-2">iOS</span>
+            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
+              <IoLogoApple /> <span className="text-sm p-2 ">iOS</span>
             </div>
           </div>
         </div>
-
-        <div className="text-white p-3 grid grid-cols-2  md:grid-cols-4 relative md:my-20 my-0">
-          {lists.map((listObj) => (
-            <div key={listObj.title}>
-              <h2 className="font-bold text-md">{listObj.title}</h2>
-              <div className="text-slate-400 text-sm my-5">
-                {listObj.items.map((item, index) => (
-                  <div to="" key={index} className="my-3">
-                    <Link to={item}>{item}</Link>
-                  </div>
-                ))}
+        <div className="">
+          <div className="text-white p-3 grid grid-cols-2  md:grid-cols-4 relative md:my-10 my-0">
+            {lists.map((listObj) => (
+              <div key={listObj.title} className='md:my-0 my-5'>
+                <h2 className="font-bold text-md md:text-left text-center">{listObj.title}</h2>
+                <div className="text-slate-400 text-sm md:my-5 my-2">
+                  {listObj.items.map((item, index) => (
+                    <div key={index} className="my-4 md:text-left text-center">
+                      {item.link.startsWith('http') ? (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className='md:text-left text-center'
+                        >
+                          {item.title}
+                        </a>
+                      ) : (
+                        <Link to={item.link}
+                        className='md:text-left text-center'>{item.title}</Link>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div>
-          <div className="flex text-slate-300 items-center font-bold">
-            <SocialMediaIcons />
+          <div className='z-20'>
+            <p className="text-slate-300 flex mx-2 p-1 z-10 text-center text-sm">
+              Payscribe is a fintech company, not a bank. Banking services are
+              provided by licensed banks and financial institutions in their
+              respective jurisdictions.
+            </p>
           </div>
         </div>
-       
+
+        <div className="md:grid block grid-cols-2">
+          <div className="flex text-slate-300 items-center font-bold md:justify-start justify-center md:my-0 my-5">
+            <SocialMediaIcons />
+          </div>{' '}
+        </div>
       </div>
     </div>
   )

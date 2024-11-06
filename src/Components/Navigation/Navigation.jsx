@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.scss';
-import Logo from '../../assets copy/images/payscribe_blk.png';
+import Logo from '../../assets/images/payscribe_blk.png';
 import MobileNav from './MobileNav';
 import MobileMenuIcon from './MobileMenuIcon';
 
 // Define menu items and submenus
 const menuItems = [
   { id: 'home', title: 'Home', link: '/' },
-  { id: 'individuals', title: 'Individuals', link: '/individuals', subMenu: [
-      { title: 'Pay Bills', link: '/pay-bills' },
-      { title: 'Virtual Dollar', link: '/virtual-dollar' },
-      { title: 'Airtime to Cash', link: '/airtime-to-cash' },
-      { title: 'Save and Earn', link: '/save-and-earn' },
-      { title: 'Send and Receive', link: '/send-and-receive' }
-    ] 
-  },
+  // { id: 'individuals', title: 'Individuals', link: '/individuals', subMenu: [
+  //     { title: 'Pay Bills', link: '/pay-bills' },
+  //     { title: 'Virtual Dollar', link: '/virtual-dollar' },
+  //     { title: 'Airtime to Cash', link: '/airtime-to-cash' },
+  //     { title: 'Save and Earn', link: '/save-and-earn' },
+  //     { title: 'Send and Receive', link: '/send-and-receive' }
+  //   ] 
+  // },
   { id: 'business', title: 'For Businesses', link: '/for-business' },
-  { id: 'developers', title: 'For Developers', link: '/for-developers', subMenu: [
+  { 
+    id: 'developers', title: 'For Developers', link: '#',
+     subMenu: [
       { title: 'Overview', link: '/overview' },
-      { title: 'API Documentation', link: '/api-documentation' }
+      { title: 'API Documentation', link: 'https://developers.payscribe.ng/' }
     ]
   },
-  { id: 'companies', title: 'Companies', link: '/companies', subMenu: [
+  { id: 'company', title: 'Company', link: '#', subMenu: [
       { title: 'About', link: '/about' },
       { title: 'Contact Us', link: '/contact-us' },
       { title: 'FAQs', link: '/faqs' }
@@ -61,7 +63,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <div className="md:grid hidden grid-cols-[3fr_2fr]">
-          <ul className="space-x-5 flex font-semibold items-center">
+          <ul className="space-x-5 flex font-semibold justify-center items-center">
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -75,8 +77,8 @@ const Navigation = () => {
 
                 
                 {item.subMenu && hoveredMenu === item.id && (
-                  <div className="absolute bg-white shadow-lg rounded mt-0">
-                    <ul className="text-gray-700">
+                  <div className="absolute bg-white shadow-lg rounded mt-0 w-[12em]">
+                    <ul className="text-gray-700 w-full">
                       {item.subMenu.map((subItem, index) => (
                         <li key={index} className="px-4 py-2 hover:bg-gray-100 text-sm">
                           <Link to={subItem.link}>{subItem.title}</Link>
@@ -92,13 +94,15 @@ const Navigation = () => {
           {/* Registration Links */}
           <div className="flex items-center font-semibold lg:ml-10 ml-2">
             <Link
-              to="/register"
+            target='_blank'
+              to="https://app.payscribe.ng/auth/create"
               className="p-3 rounded-lg mx-2 bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Create a Free Account
             </Link>
             <Link
-              to="/login"
+            target='_blank'
+              to="https://app.payscribe.ng/login"
               className="border-white border-solid border mx-2 p-3 rounded-lg bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Sign In
