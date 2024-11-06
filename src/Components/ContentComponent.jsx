@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { delay, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { IoCaretUpCircleOutline } from 'react-icons/io5';
+import { show } from '../animations'
+
 
 const listVariants = {
   hidden: { opacity: 0 },
@@ -61,11 +63,15 @@ const ContentComponent = ({
 }) => {
   return (
     <div
-      className={` ${bgColor} grid md:grid-cols-2 grid-cols-1 md:p-20`} id={title}
+      className={` ${bgColor} grid md:grid-cols-2 grid-cols-1 md:p-20 md:h-auto h-screen`} id={title}
     >
       
       {imagePosition === 'left' && imageSrc && (
-        <motion.div className="flex h-full items-center justify-center">
+        <motion.div 
+        className="flex h-full items-center justify-center md:order-1 order-2"
+        variants={show}
+        initial="hiddenimg"
+        whileInView="imageshow">
           <img
             src={imageSrc}
             alt="Banner"
@@ -125,11 +131,16 @@ const ContentComponent = ({
 
       
       {imagePosition === 'right' && imageSrc && (
-        <motion.div className="flex h-full items-center justify-center">
+        <motion.div 
+        className="flex h-full items-center justify-center"
+        variants={show}
+        initial="hiddenimg"
+        whileInView="imageshow"
+        >
           <img
             src={imageSrc}
             alt="Banner"
-            className="transform scale-[70%] rounded-4xl"
+            className="transform scale-[80%] rounded-4xl"
           />
         </motion.div>
       )}

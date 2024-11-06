@@ -9,29 +9,36 @@ import WhiteStar from "../assets/exports/WhiteStar.svg"
 
 const faqData = [
   { 
-    question: "How do I get started with creating a USD/NGN card?",
-    answer: "It is as easy as signing up on Payscribe and following the instructions on our website." 
-  },
-  {
-    question: "What is your return policy?",
-    answer: "Our return policy allows returns within 30 days of purchase." 
+    question: "How do I get started with Payscribe?",
+    answer: "It is pretty easy and seamless, kindly create an account by clicking visiting https://app.payscribe.ng. The onbarding prcess takes few minutes." 
   },
   { 
     question: "How secure are the transactions made through your platform?", 
-    answer: "We have stringent security measures in place to ensure your transactions are safe." 
+    answer: "We have stringent security measures in place to ensure your transactions are safe. All transactions are 100% secured" 
   },
   { 
     question: "Can I use your payment links for international transactions?", 
     answer: "Yes, you can use your payment links for international transactions."
    },
    {
-    question: "",
+    question: "How can payscribe improve my business?",
     answer: "",
    },
-   
+   {
+    question: "How long is the onboarding proccess?",
+    answer: "",
+   },
+   {
+    question: "How do I get the API documentation",
+    answer: "On your dashboard, click on your profile > API",
+   },
+   {
+    question: "",
+    answer: "",
+   }
 ];
 
-const FAQs = () => {
+const BusFAQs = () => {
   const [openIndex, setOpenIndex] = useState(null); // Track which FAQ is open
   const [searchQuery, setSearchQuery] = useState(''); // Search query state
   const [searchActive, setSearchActive] = useState(false); // Search activation state
@@ -184,4 +191,4 @@ const FAQs = () => {
   );
 };
 
-export default FAQs;
+export default BusFAQs;

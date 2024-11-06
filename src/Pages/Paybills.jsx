@@ -62,7 +62,7 @@ function Paybills() {
             <div className="my-2 md:flex">
               <p>
                 <Link
-                  to="/register"
+                  to="https://app.payscribe.ng/auth/create"
                   className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black transition-transform duration-300"
                 >
                   Create a Free Account

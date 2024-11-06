@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../index.scss';
 import './Hero.scss';
@@ -16,25 +15,27 @@ function Hero() {
       <div className="relative">
         <div className="bg-black lg:p-4 p-2 h-screen">
           <div className="lg:m-10 m-5">
+            <div className='flex justify-center'>
             <motion.div
-              className="lg:mx-5 mx-2 md:my-10 my-20"
+              className="lg:mx-5 mx-2 md:my-10 my-10 w-[80%]"
               variants={show}
               initial="hidden"
               whileInView="show"
             >
               <motion.h2
                 variants={show}
-                className="text-white md:text-5xl text-3xl md:font-semibold text-center "
+                className="text-white md:text-5xl text-4xl md:font-semibold text-center  "
               >
-                Versatile payment solutions designed to fit your business needs.
+               Versitile Payment Solution for your business needs
               </motion.h2>
             </motion.div>
-            <div className="flex justify-center md:mx-10 mx-2 my-10">
+            </div>
+            <div className="flex justify-center md:mx-10 mx-2 md:my-10 my-2">
               <motion.h2
                 variants={show}
                 initial="hidden"
                 whileInView="show"
-                className=" text-slate-400 text-sm md:text-md text-center md:w-[70%] w-full"
+                className=" text-slate-400 text-lg md:text-md text-center md:w-[70%] w-full"
               >
                 Payscribe offers a robust payment infrastructure enabling
                 businesses to securely accept payments, issue USD/NGN cards for
@@ -49,20 +50,30 @@ function Hero() {
           whileInView="show"
             className="flex font-semibold justify-center"
           >
-            <div className="flex items-center flex-row">
+            <div className="flex items-center justify-center md:flex-row flex-col md:my-0 my-10 w-[80%]">
               <Link
-                to="/register"
-                className="p-3 rounded-lg mx-2 bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1"
+              target='_blank'
+                to="https://app.payscribe.ng/auth/create"
+                className="p-3 rounded-lg mx-2 bg-primary my-1 md:w-auto w-full  text-center text-white transition ease-in-out duration-300 transform hover:-translate-y-1"
               >
                 Create a Free Account
               </Link>
               <Link
               to="/book-a-demo"
-              className=" border-white border-solid border mx-2 p-3 rounded-lg bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
+              className=" border-white border-solid border mx-2 p-3 md:w-auto w-full  rounded-lg bg-white my-1 text-center text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
               Book a demo
             </Link>
             </div>
+          </motion.div>
+          <motion.div 
+           variants={show}
+           initial="hiddenimg"
+           whileInView="imageshow"
+           transition={{ delay: 1.2 }} 
+           className='flex justify-center transform scale-60  mx-20 md:absolute md:my-0 bottom-0 md:hidden translate-y-20 my-10'>
+            
+            <img src={Dashboard1} className='  transform scale-[180%] block '/>
           </motion.div>
 
           <motion.div 
@@ -70,10 +81,10 @@ function Hero() {
            initial="hiddenimg"
            whileInView="imageshow"
            transition={{ delay: 1.2 }} 
-           className='flex justify-center transform scale-60 md:h-auto mx-20 h-[40%] md:absolute md:my-0 my-20 bottom-0'>
-            <img src={BannerArrowLeft} className='transform scale-150 -translate-y-3 md:block hidden -z-10 '/>
-            <img src={Dashboard1} className=''/>
-            <img src={BannerArrowRight} className='transform scale-150 -translate-y-3 md:block hidden -z-10'/>
+           className=' justify-center transform scale-60 md:h-auto mx-20 h-[50%] md:absolute md:my-0 bottom-0 translate-y-20 my-20 md:flex hidden'>
+            <img src={BannerArrowLeft} className='transform scale-150 -translate-y-3 translate-x-20  -z-10 '/>
+            <img src={Dashboard1} className=' rounded-t-[3em] transform scale-[80%] '/>
+            <img src={BannerArrowRight} className='transform scale-150 -translate-y-3 -translate-x-20 -z-10'/>
           </motion.div>
           
         </div>

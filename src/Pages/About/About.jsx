@@ -1,6 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import About1 from '../../assets/images/friends.jpg'
 import { fadeSlideStagger, show } from '../../animations'
 import { motion } from 'framer-motion'
 import { FaRegUser } from 'react-icons/fa'
@@ -10,6 +7,8 @@ import FAQ from '../../Components/FAQ'
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../../Components/HeroComponent'
 import LastBanner from '../../Components/LastBanner'
+import WhiteStar from "../../assets/exports/WhiteStar.svg"
+
 
 const blockData = [
   {
@@ -90,18 +89,25 @@ function About() {
         description="We are on a mission to bridge the gap between individuals and fintech innovation. By offering a platform that serves both personal finance and the sophisticated requirements of businesses, we’re creating a seamless ecosystem where everyone can thrive."
         primaryLink="/start"
         primaryLinkText="Join Us"
-        secondaryLink="/register"
+        secondaryLink="https://app.payscribe.ng/auth/create"
         secondaryLinkText="Create a Free Account"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
-        additionalImage={About1}
-        additionalContent={<p className="text-white"></p>}
-        columns={2}
-        order={['text', 'image']}
+        // additionalImage={About1}
+        additionalContent={
+          <div className='absolute top-10'>
+            <img src={WhiteStar} alt="" className="absolute left-[50%] top-[25%] glow" />
+            <img src={WhiteStar} alt="" className="absolute left-[55%] top-[65%] glow" />
+            <img src={WhiteStar} alt="" className="absolute left-[60%] top-[50%] glow" />
+
+          </div>
+        }
+        columns={1}
+        order={['text']}
       />
       <div className="md:py-10 py-1 md:px-5 px-1">
         <div className="md:w-1/2 w-full ">
-          <h2 className="md:text-3xl text-2xl font-bold md:px-10 md:py-5 py-4 px-4">
+          <h2 className="md:text-3xl text-2xl font-bold md:px-10 md:py-5 py-4 px-4 md:my-1 my-8">
             From Idea to Impact:
             <br />
             Our goals and aspirations

@@ -11,6 +11,11 @@ import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
 import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
 import TabBanner4 from '../assets/images/homepage/tabbanner4.jpg'
 import Block1 from '../assets/images/homepage/peer.png'
+import Block2 from '../assets/images/homepage/peer2.png'
+import Growth from '../assets/exports/growth.svg'
+import Data from '../assets/exports/dataprocess.svg'
+import Security from '../assets/exports/ironclad.svg'
+
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../Components/HeroComponent'
 
@@ -87,28 +92,28 @@ const gridData = [
     subtitle: 'Streamlined Transactions',
     content:
       'Unlock seamless access to a wide range of financial services, all integrated into one platform to keep your business moving smoothly without the hassle of juggling multiple systems.',
-    image: Block1,
+    image: Block2,
   },
   {
     title: 'Ironclad Security',
     subtitle: 'Effortless Protection',
     content:
       'Rest easy knowing your transactions are backed by cutting-edge security protocols, ensuring the highest level of protection for your financial data.',
-    image: Block1,
+    image: Security,
   },
   {
     title: 'Real-Time Insights',
     subtitle: 'Instant Financial Data',
     content:
       'Stay ahead of the game with real-time access to critical financial data, giving you the power to make smart, quick decisions when they matter most.',
-    image: Block1,
+    image: Data,
   },
   {
     title: 'Scalable Solutions',
     subtitle: 'Growth-Focused Flexibility',
     content:
       'No matter where your business stands, our platform scales with you, providing tailored solutions that evolve as your company grows, from startups to industry leaders.',
-    image: Block1,
+    image: Growth,
   },
 ];
 
@@ -128,7 +133,7 @@ function ForBusiness() {
         description=" Empower your business with secure transactions, advanced management tools, and seamless financial integrations. Our innovative solutions streamline operations, boost efficiency, and drive sustainable growth, giving your business the edge it needs  to thrive."
         primaryLink="/start"
         primaryLinkText="Join Us"
-        secondaryLink="/register"
+        secondaryLink="https://app.payscribe.ng/auth/create"
         secondaryLinkText="Create a Free Account"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
@@ -136,6 +141,7 @@ function ForBusiness() {
         additionalContent={<p className="text-white"></p>}
         columns={2}
         order={['text', 'image']}
+        customimgstyle='md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[18em]'
       />
 
       <div>
@@ -165,17 +171,18 @@ function ForBusiness() {
             {gridData.map((grid, index) => (
               // eslint-disable-next-line react/jsx-key
               <div
-                className={`${[0, 3].includes(index) ? 'bg-slate-300' : 'md:bg-black bg-slate text-white'} space-x-2 md:p-5 p-1 md:m-5 m-1 md:rounded-xl rounded-none`}
+                className={`${[0, 3].includes(index) ? 'md:bg-slate-300 bg-white' : 'md:bg-black bg-slate md:text-white text-black'} space-x-2 md:p-5 p-1 md:m-5 m-1 md:rounded-xl rounded-none`}
               >
-                <div key={index} className="">
-                  <div className="flex justify-start h-1/4">
+                <div key={index} className=" grid grid-col-1">
+                  <div className="flex justify-start md:order-1 order-2">
                     <img src={grid.image} className="transform scale-[70%]" />
                   </div>
-                  <div className="p-5">
+                  <div className="p-5 md:order-2 order-1">
                     <h3 className="font-bold p-1">{grid.title}</h3>
                     <h2 className="font-bold p-1">{grid.subtitle}</h2>
                     <p>{grid.content}</p>
                   </div>
+                  <hr className='md:hidden visible'/>
                 </div>
               </div>
             ))}
@@ -188,7 +195,8 @@ function ForBusiness() {
           data={businessData}
           headerTitle="Effortless Financial Integration"
           headerDescription="Discover the Full Range of Services We Offer to Empower Your Business"
-          link="/register"
+          link="https://app.payscribe.ng/auth/create"
+  customHeaderClass="text-white"
           linktext="Create a free Account"
         />
       </div>

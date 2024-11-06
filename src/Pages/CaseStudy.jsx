@@ -2,6 +2,8 @@ import ContentComponent from '../Components/ContentComponent'
 import { Helmet } from 'react-helmet'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Projection from '../assets/exports/projection.svg'
+import Studies from '../assets/exports/studies.svg'
 
 // Gamepride (Nigeria)
 // Connect.eo (fintech) (virtual card) (Madagascar)
@@ -25,6 +27,7 @@ function CaseStudy() {
         primaryLink="/book-a-demo"
         primaryLinkText="Get started"
         customLinkStyle="bg-transparent border-white hover:bg-white hover:text-slate-800"
+        imageSrc={Studies}
         />
         </div>
 
@@ -38,7 +41,7 @@ function CaseStudy() {
         primaryLink="/book-a-demo"
         primaryLinkText="Get started"
         customLinkStyle="bg-transparent border-black hover:bg-black hover:text-white"
-        imageSrc="https://via.placeholder.com/150"
+        imageSrc={Projection}
         imagePosition='left'
         />
         </div>
