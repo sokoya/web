@@ -102,7 +102,7 @@ export function TabsComponent({
             <div className="flex justify-between items-center">
               <FaChevronLeft className="" />
               <div
-                className={`${mobilesliderclass === 'text-black' ? 'bg-white text-black ' : 'bg-black text-white'} font-bold text-center m-3 p-3   rounded-xl`}
+                className={`${mobilesliderclass === 'bg-black' ? 'bg-white text-black ' : 'bg-black text-white'} font-bold text-center m-3 p-3   rounded-xl`}
               >
                 {activeTab.toUpperCase()}
               </div>
