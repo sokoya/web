@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MobileMenuIcon from './MobileMenuIcon';
-import Logo from '../../assets/images/payscribe_blk.png';
+import Logo from '/assets/images/payscribe_blk.png';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './MobileNav.scss';

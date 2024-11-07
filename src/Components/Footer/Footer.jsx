@@ -1,9 +1,10 @@
-import Logo from '../../assets/exports/logo-white.png'
+import Logo from '/assets/exports/logo-white.png'
 import { Link } from 'react-router-dom'
 import { IoLogoGooglePlaystore, IoLogoApple } from 'react-icons/io5'
-import Lightning from '../../assets/images/globe.png'
+import Lightning from '/assets/images/globe.png'
 import SocialMediaIcons from '../SocialMediaIcons'
-import Audit from '../../assets/exports/ndpr-audit.svg'
+import Audit from '/assets/exports/ndpr-audit.svg'
+import Twinkle from '/assets/exports/glow.png'
 
 const lists = [
   {
@@ -48,7 +49,10 @@ const lists = [
 
 function Footer() {
   return (
-    <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
+    <div className=''>
+      
+         <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
+         <img src={Twinkle} className="absolute top-0"/> 
       {/* <img
         src={Lightning}
         className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
@@ -126,6 +130,8 @@ function Footer() {
         </div>
       </div>
     </div>
+    </div>
+
   )
 }
 

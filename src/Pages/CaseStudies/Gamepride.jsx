@@ -5,7 +5,7 @@ function Gamepride() {
   return (
     <div>
       <CaseStudyComponent
-        bgImage="bg-[url('../../assets copy/images/homepage/Screenshot (256).png')]"
+        bgImage="bg-[url('/assets copy/images/homepage/Screenshot (256).png')]"
         bannerLink=""
         brandLogo="https://res.cloudinary.com/duyaimdq3/image/upload/v1726532347/ICON_-_GREEN_ok5aym.png"
         brandCategory="GAMING"

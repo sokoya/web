@@ -1,8 +1,8 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import Data from '../assets/exports/data.svg'
-import Security from '../assets/exports/security.svg'
-import Secure from '../assets/exports/secure.svg'
+import Data from '/assets/exports/data.svg'
+import Security from '/assets/exports/security.svg'
+import Secure from '/assets/exports/secure.svg'
 import { motion } from 'framer-motion';
 import { show } from '../animations'
 
