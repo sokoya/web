@@ -112,7 +112,7 @@ function About() {
             <br />
             Our goals and aspirations
           </h2>
-          <p className="font-semibold md:px-10 px-4 py-2 leading-7">
+          <p className="font-light md:px-10 px-4 py-2 leading-7">
             Our journey started with the goal to reshape financial services for
             everyone. We aimed to create a platform that meets current needs and
             adapts to future demands. We plan to expand our services, enhance
@@ -150,7 +150,7 @@ function About() {
       <div className="bg-black text-white z-10 flex justify-center">
         <div className="container p-8">
           <h1 className="text-3xl font-bold text-center my-10">Our Team</h1>
-          <motion.div
+          {/* <motion.div
             variants={fadeSlideStagger.container} // Apply stagger to the container
             initial="hidden"
             whileInView="show"
@@ -171,7 +171,7 @@ function About() {
                 <p className="text-gray-500">{member.role}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

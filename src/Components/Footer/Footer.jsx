@@ -10,7 +10,7 @@ const lists = [
   {
     title: 'Products',
     items: [
-      { title: 'Accounts and wallets', link: '/accounts-wallets' },
+      // { title: 'Accounts and wallets', link: '/accounts-wallets' },
       { title: 'Cards Issuing', link: '/card-issuing' },
       // { title: 'Bills Payments', link: '/bills-payments' },
       { title: 'Payments', link: '/payout' },
@@ -22,7 +22,7 @@ const lists = [
     items: [
       { title: 'Why Payscribe', link: '/for-business' },
       { title: 'How It Works', link: 'https://developers.payscribe.ng/' },
-      { title: 'Ambassadors', link: 'about' },
+      // { title: 'Ambassadors', link: 'about' },
     ],
   },
   {
@@ -51,7 +51,7 @@ function Footer() {
   return (
     <div className=''>
          <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-         <img src={Twinkle} className="absolute md:top-0 top-[100%] md:opacity-70 opacity-100"/> 
+         <img src={Twinkle} className="absolute md:top-0 top-[100%] md:opacity-70 opacity-100 w-full"/> 
       {/* <img
         src={Lightning}
         className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
