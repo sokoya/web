@@ -291,10 +291,10 @@ function PrivacyPolicy() {
                   <p className="font-bold">For business transfers:</p> We may
                   use Your information to evaluate or conduct a merger,
                   divestiture, restructuring, reorganization, dissolution, or
-                  other sale or transfer of some or all of Our assets, whether
+                  other sale or transfer of some or all of Our /assets, whether
                   as a going concern or as part of bankruptcy, liquidation, or
                   similar proceeding, in which Personal Data held by Us about
-                  our Service users is among the assets transferred.
+                  our Service users is among the /assets transferred.
                 </p>
               </li>
               <li>
@@ -321,7 +321,7 @@ function PrivacyPolicy() {
               <li>
                 <p className="font-bold">For business transfers:</p> We may
                 share or transfer Your personal information in connection with,
-                or during negotiations of, any merger, sale of Company assets,
+                or during negotiations of, any merger, sale of Company /assets,
                 financing, or acquisition of all or a portion of Our business to
                 another company.
               </li>

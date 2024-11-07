@@ -7,7 +7,7 @@ import FAQ from '../../Components/FAQ'
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../../Components/HeroComponent'
 import LastBanner from '../../Components/LastBanner'
-import WhiteStar from "../../assets/exports/WhiteStar.svg"
+import WhiteStar from "/assets/exports/WhiteStar.svg"
 
 
 const blockData = [

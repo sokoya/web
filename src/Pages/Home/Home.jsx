@@ -1,11 +1,11 @@
 import Hero from '../../Components/Hero/Hero'
-import BannerVideo1 from '../../assets/images/homepage/2ndpagebannervid.mp4'
-import BannerVideo2 from '../../assets/images/homepage/3ndpagebannervidLeft.mp4'
-import BannerVideo3 from '../../assets/images/homepage/3ndpagebannervidRight.mp4'
+import BannerVideo1 from '/assets/images/homepage/2ndpagebannervid.mp4'
+import BannerVideo2 from '/assets/images/homepage/3ndpagebannervidLeft.mp4'
+import BannerVideo3 from '/assets/exports/home/thirdpagebannervidRIght.mp4'
 // import { TabsComponent } from '../../Components/TabsComponent'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
-import PageBanner4 from '../../assets/images/homepage/4thpagebanner.png'
+import PageBanner4 from '/assets/images/homepage/4thpagebanner.png'
 import { IoCaretUpCircleOutline } from 'react-icons/io5'
 import BlockGrid from '../../Components/BlockGrid'
 import './Home.scss'
@@ -13,10 +13,10 @@ import { show, listVariants, itemVariants, charVariants } from '../../animations
 import { motion } from 'framer-motion'
 import LastBanner from '../../Components/LastBanner'
 import {TabsComponent} from '../../Components/TabsComponent';
-import TabBanner1 from "../../assets/images/homepage/tabbanner1.jpg";
-import TabBanner2 from "../../assets/images/homepage/tabbanner2.jpg";
-import TabBanner3 from "../../assets/images/homepage/tabbanner3.jpg";
-import TabBanner4 from "../../assets/images/homepage/tabbanner4.jpg";
+import TabBanner1 from "/assets/images/homepage/tabbanner1.jpg";
+import TabBanner2 from "/assets/images/homepage/tabbanner2.jpg";
+import TabBanner3 from "/assets/images/homepage/tabbanner3.jpg";
+import TabBanner4 from "/assets/images/homepage/tabbanner4.jpg";
 window.scrollTo(0, 0);
 
 

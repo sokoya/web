@@ -101,8 +101,11 @@ export function TabsComponent({
             </div>
             <div className="flex justify-between items-center">
               <FaChevronLeft className="" />
-              <div
-                className={`${mobilesliderclass === 'bg-black' ? 'bg-white text-black ' : 'bg-black text-white'} font-bold text-center m-3 p-3   rounded-xl`}
+              {/* <div
+                className={`${customTabBg === 'bg-white' ? 'bg-black text-white' : 'bg-white text-black'} font-bold text-center m-3 p-3   rounded-xl`}
+              > */}
+                <div
+                className={`${customActiveContent} text-black font-bold text-center m-3 p-3 rounded-xl`}
               >
                 {activeTab.toUpperCase()}
               </div>
@@ -156,7 +159,7 @@ export function TabsComponent({
               aria-labelledby={`tab-${value}`}
             >
               <div
-                className={` text-black ${customActiveContent} rounded-xl p-5 md:p-10 `}
+                className={`  ${customActiveContent} rounded-xl p-5 md:p-10 `}
               >
                 <h3 className="text-2xl md:text-3xl font-bold">{title}</h3>
                 <p className=" my-3">{desc}</p>
@@ -253,7 +256,7 @@ TabsComponent.defaultProps = {
   customTabButtonClass: '',
   customActiveTabClass: '',
   customContentPanelClass: 'text-black',
-  customActiveContent: 'bg-white',
+  customActiveContent: 'bg-white text-black',
   customButtonClass: 'bg-black',
   customImageClass: '',
   onTabChange: null,
