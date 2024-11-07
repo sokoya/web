@@ -2,8 +2,8 @@ import ContentComponent from '../Components/ContentComponent'
 import { Helmet } from 'react-helmet'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Projection from '../assets/exports/projection.svg'
-import Studies from '../assets/exports/studies.svg'
+import Projection from '/assets/exports/projection.svg'
+import Studies from '/assets/exports/studies.svg'
 
 // Gamepride (Nigeria)
 // Connect.eo (fintech) (virtual card) (Madagascar)

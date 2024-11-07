@@ -5,7 +5,6 @@ function Connect() {
   return (
     <div>
       <CaseStudyComponent
-        bgImage="bg-[url('../../assets/images/homepage/ConnecteoCaseStudy.png')]"
         bannerLink=""
         brandLogo="https://connekit-eo.net/images/connekit-eo.png"
         brandCategory="Fintech"

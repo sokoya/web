@@ -4,8 +4,8 @@ import { FiSearch } from "react-icons/fi";
 import { Helmet } from 'react-helmet';
 import { RxCross2 } from "react-icons/rx";
 import HeroComponent from '../Components/HeroComponent';
-import FaqPhone from "../assets/exports/FaqPhone.svg"
-import WhiteStar from "../assets/exports/WhiteStar.svg"
+import FaqPhone from "/assets/exports/FaqPhone.svg"
+import WhiteStar from "/assets/exports/WhiteStar.svg"
 
 const faqData = [
   { 

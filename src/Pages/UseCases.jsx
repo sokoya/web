@@ -1,10 +1,10 @@
 import ContentComponent from "../Components/ContentComponent"
 import { Helmet } from "react-helmet"
-import Fintech from "../assets/exports/finance.svg"
-import Health from "../assets/exports/medicine.svg"
-import Logistics from "../assets/exports/logistics.svg"
-import Retail from "../assets/exports/retail.svg"
-import Gaming from "../assets/exports/gaming.svg"
+import Fintech from "/assets/exports/finance.svg"
+import Health from "/assets/exports/medicine.svg"
+import Logistics from "/assets/exports/logistics.svg"
+import Retail from "/assets/exports/retail.svg"
+import Gaming from "/assets/exports/gaming.svg"
 import LastBanner from "../Components/LastBanner"
 
 

@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import '../../index.scss';
 import './Hero.scss';
 import { motion } from 'framer-motion';
-import Dashboard1 from '../../assets/images/homepage/dashboard-img.png';
-import BannerArrowLeft from '../../assets/images/homepage/bannerarrowleft.svg';
-import BannerArrowRight from '../../assets/images/homepage/bannerarrowright.svg';
+import Dashboard1 from '/assets/images/homepage/dashboard-img.png';
+import BannerArrowLeft from '/assets/images/homepage/bannerarrowleft.svg';
+import BannerArrowRight from '/assets/images/homepage/bannerarrowright.svg';
 import { show } from '../../animations';
 
 
