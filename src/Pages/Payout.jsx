@@ -113,7 +113,7 @@ function Payout() {
         additionalImage={CardInPhone}
         additionalContent={
           <div>
-            <img src={WhiteStar} alt="" className="absolute left-[50%] top-[25%]" />
+            <img src={WhiteStar} alt="" className="absolute md:left-[50%] left-[95%] top-[25%]" />
             {/* <img src={WhiteStar} alt="" className="absolute left-[55%] top-[65%]" />
             <img src={WhiteStar} alt="" className="absolute left-[60%] top-[50%]" /> */}
 
