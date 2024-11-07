@@ -50,9 +50,8 @@ const lists = [
 function Footer() {
   return (
     <div className=''>
-      
          <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-         <img src={Twinkle} className="absolute top-0"/> 
+         <img src={Twinkle} className="absolute md:top-0 top-[100%] md:opacity-70 opacity-100"/> 
       {/* <img
         src={Lightning}
         className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
