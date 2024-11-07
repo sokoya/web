@@ -24,7 +24,7 @@ const FeatureList = ({ features }) => {
       initial="hidden"
       whileInView="show"
       variants={listVariants}
-      className="grid grid-cols-1 my-2 w-full font-bold"
+      className="grid grid-cols-1 my-2 w-full font-mediumbold"
     >
       {features.map((feature, index) => (
         <motion.li
