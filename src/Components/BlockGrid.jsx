@@ -42,7 +42,7 @@ const BlockGrid = () => {
     <div className='p-3 text-black max-w-[1580px] mx-auto'>
       <div className='grid md:w-1/2 w-full grid-cols-1 '>
         <h2 className='md:text-4xl text-2xl font-bold md:p-10 p-4'>Why Businesses And Consumers Love Payscribe?</h2>
-        <p className='font-semibold md:px-10 px-4 md:py-5 py-2'>
+        <p className='md:px-10 px-4 md:py-5 py-2'>
           Payscribe simplifies financial management, providing intuitive tools
           and top-notch support for businesses and consumers alike. Our platform
           ensures secure, efficient, and hassle-free financial transactions.

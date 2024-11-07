@@ -10,11 +10,11 @@ import TabBanner1 from '/assets/images/homepage/tabbanner1.jpg'
 import TabBanner2 from '/assets/images/homepage/tabbanner2.jpg'
 import TabBanner3 from '/assets/images/homepage/tabbanner3.jpg'
 import TabBanner4 from '/assets/images/homepage/tabbanner4.jpg'
-import Block1 from '/assets/images/homepage/peer.png'
-import Block2 from '/assets/images/homepage/peer2.png'
 import Growth from '/assets/exports/growth.svg'
 import Data from '/assets/exports/dataprocess.svg'
 import Security from '/assets/exports/ironclad.svg'
+import Unified from '/assets/exports/home/unified.png'
+
 
 import { Helmet } from 'react-helmet'
 import HeroComponent from '../Components/HeroComponent'
@@ -92,7 +92,7 @@ const gridData = [
     subtitle: 'Streamlined Transactions',
     content:
       'Unlock seamless access to a wide range of financial services, all integrated into one platform to keep your business moving smoothly without the hassle of juggling multiple systems.',
-    image: Block2,
+    image: Unified,
   },
   {
     title: 'Ironclad Security',
@@ -180,7 +180,7 @@ function ForBusiness() {
                   <div className="p-5 md:order-2 order-1">
                     <h3 className="font-bold p-1">{grid.title}</h3>
                     <h2 className="font-bold p-1">{grid.subtitle}</h2>
-                    <p>{grid.content}</p>
+                    <p className="p-1">{grid.content}</p>
                   </div>
                   <hr className='md:hidden visible'/>
                 </div>
