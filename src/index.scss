@@ -11,24 +11,16 @@ body {
     font-family: Fredoka;
 
 
-    // img 
-    // {
-    //   @media(min-width: 850px)
-    //   {
-    //     width: 90%;
-    //     padding: 1em;
-    //   }
-    // }
   }
 
   .non-selectable {
-    user-select: none;           /* Disable text/media selection */
-    pointer-events: none;        /* Prevent dragging or right-clicking */
+    user-select: none;           
+    pointer-events: none;        
   }
 
   img, video 
   {
-    user-select: none;           /* Disable text/media selection */
+    user-select: none;          
     pointer-events: none;  
   }
 
