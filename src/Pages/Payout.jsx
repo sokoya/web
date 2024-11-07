@@ -8,15 +8,15 @@ import { motion } from 'framer-motion'
 import { show } from '../animations'
 import { IoFlashOutline } from "react-icons/io5";
 import { IoBan } from "react-icons/io5";
-// import JustPhone from "../assets/exports/JustPhone.png"
-import CardInPhone from "../assets/exports/CardInPhone.png"
-import WhiteStar from "../assets/exports/WhiteStar.svg"
+// import JustPhone from "/assets/exports/JustPhone.png"
+import CardInPhone from "/assets/exports/CardInPhone.png"
+import WhiteStar from "/assets/exports/WhiteStar.svg"
 import { TabsComponent } from '../Components/TabsComponent';
-import OnlinePayments from '../assets/exports/online-payments.svg'
-import AroundWorld from '../assets/exports/around-world.svg'
-import Payroll from '../assets/exports/payroll.svg'
-import Transfer from '../assets/exports/transfer.svg'
-import Transaction from '../assets/exports/transactions.svg'
+import OnlinePayments from '/assets/exports/online-payments.svg'
+import AroundWorld from '/assets/exports/around-world.svg'
+import Payroll from '/assets/exports/payroll.svg'
+import Transfer from '/assets/exports/transfer.svg'
+import Transaction from '/assets/exports/transactions.svg'
 
 const payoutData = [
   {

@@ -5,13 +5,13 @@ import HeroComponent from '../Components/HeroComponent'
 import { motion } from 'framer-motion'
 import { show } from '../animations'
 import { IoCardOutline, IoShieldHalfOutline, IoCashOutline  } from "react-icons/io5";
-import CardImg from '../assets/exports/hero.png';
+import CardImg from '/assets/exports/hero.png';
 import { TabsComponent } from '../Components/TabsComponent';
-import MockupPhone from '../assets/exports/mockupPhone.jpg'
-import TabBanner1 from '../assets/images/homepage/tabbanner1.jpg'
-import TabBanner2 from '../assets/images/homepage/tabbanner2.jpg'
-import TabBanner3 from '../assets/images/homepage/tabbanner3.jpg'
-import TabBanner4 from '../assets/images/homepage/tabbanner4.jpg'
+import MockupPhone from '/assets/exports/mockupPhone.jpg'
+import TabBanner1 from '/assets/images/homepage/tabbanner1.jpg'
+import TabBanner2 from '/assets/images/homepage/tabbanner2.jpg'
+import TabBanner3 from '/assets/images/homepage/tabbanner3.jpg'
+import TabBanner4 from '/assets/images/homepage/tabbanner4.jpg'
 import ContentComponent from '../Components/ContentComponent';
 
 const issuingData = [

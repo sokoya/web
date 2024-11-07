@@ -38,7 +38,7 @@ export function CaseStudyComponent({
         <div className='flex justify-center'>
             <img src={brandLogo} className='w-32 h-32' />
         </div>
-        <div className={`my-20 items-center ${bgImage} bg-[url('../../assets/images/homepage/Screenshot (256).png')]`}>
+        <div className={`my-20 items-center ${bgImage} bg-[url('/assets/images/homepage/Screenshot (256).png')]`}>
       {/* Banner Link Back */}
       <div className="bg-gray-100 p-5">
         <Link to='/case-studies' className="text-blue-600 hover:text-blue-800 ">
@@ -52,17 +52,17 @@ export function CaseStudyComponent({
 
         <div className="flex m-5 bg-gray-50">
         <img src={brandLogo} alt={`${brandName} logo`} className="h-20 w-20 mr-4" />
-          <p className=" text-white my-5 uppercase font-bold p-3 rounded-xl bg-black flex justify-center w-[15%]">{brandCategory}</p>
+          <span className=" text-white my-5 uppercase font-bold p-3 rounded-xl bg-black flex justify-center md:w-[15%] w-auto">{brandCategory}</span>
        </div>
        <div className=''>
-          <p className="font-semibold text-6xl text-center">{brandMoto}</p>
+          <p className="font-semibold md:text-6xl text-3xl text-center">{brandMoto}</p>
         </div>
         </div>
       </div>
       </div>
 
       {/* Main Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[5fr_2fr] gap-6 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-[5fr_2fr] md:gap-6 gap-2 md:p-6 p-2">
         {/* Left Section */}
         <div className='p-5'>
           {/* Brand Name and About */}
@@ -148,7 +148,7 @@ export function CaseStudyComponent({
           <hr className="my-4 border-gray-300" />
 
           {/* Ending Buttons */}
-          <div className="flex space-x-3">
+          <div className="md:flex block md:space-x-3 space-x-1">
             <p className=" py-2 px-4">
               {endingParagraph}
             </p>

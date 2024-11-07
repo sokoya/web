@@ -1,4 +1,4 @@
-import LastBannerImg from '../assets/images/homepage/lastbannerimg.png'
+import LastBannerImg from '/assets/images/homepage/lastbannerimg.png'
 import { Link } from 'react-router-dom'
 
 function LastBanner() {
@@ -21,7 +21,8 @@ function LastBanner() {
 
           <div className="md:block flex items-center my-3 flex-col justify-center">
             <Link
-              to="https://app.payscribe.ng/create"
+              to="https://app.payscribe.ng/auth/create"
+              target="_blank"
               className="p-3 rounded-lg md:w-auto  w-full text-center my-1 mx-2 font-bold bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Start Building
