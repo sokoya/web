@@ -131,9 +131,9 @@ function Home() {
                     </h2>
 
                     <motion.p
-                      initial="hidden"
-                      whileInView="reveal"
-                      transition={{ staggerChildren: 0.015 }}
+                      // initial="hidden"
+                      // whileInView="reveal"
+                      // transition={{ staggerChildren: 0.015 }}
                       className="m-2 text-slate-300 text-md"
                     >
                       {forbusinessptxtchars.map((char) => (

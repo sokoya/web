@@ -1,4 +1,5 @@
 import LastBannerImg from '/assets/images/homepage/lastbannerimg.png'
+import Dev from '/assets/exports/logo512.png';
 import { Link } from 'react-router-dom'
 
 function LastBanner() {
@@ -28,7 +29,7 @@ function LastBanner() {
               Start Building
             </Link>
             <Link
-              to="/contact-us"
+              to="/book-a-demo"
               className=" border-solid border mx-2 font-bold p-3 rounded-lg w-full text-center my-1 bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
               Contact us
@@ -36,11 +37,16 @@ function LastBanner() {
           </div>
         </div>
 
-        <div className="m-0 md:mt-0 mt-5 pt-5 flex justify-center overflow-hidden">
+        <div className="m-0 md:mt-0 mt-5 pt-5 flex justify-center overflow-hidden relative">
           <img
             src={LastBannerImg}
             className="md:absolute relative h-full mx-auto transform"
           />
+          <Link to="https://wa.me/+2349024328949" target='_blank' className='absolute bottom-[78%] mx-auto opacity-[90%] md:w-12 md:h-12 h-[1em] w-[1em]'>
+          <img
+            src={Dev}
+            className=""
+          /></Link>
         </div>
       </div>
     </div>

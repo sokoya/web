@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/overview" element={<Overview />} />
         <Route path="/api-documentation" element={<APIDocumentation />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/book-a-demo" element={<ContactUs />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path='/pay-bills' element={<Paybills/>} />
         <Route path='/privacy-policy' element={<PrivacyPolicy/>} />

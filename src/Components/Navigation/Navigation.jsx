@@ -26,7 +26,7 @@ const menuItems = [
   },
   { id: 'company', title: 'Company', link: '#', subMenu: [
       { title: 'About', link: '/about' },
-      { title: 'Contact Us', link: '/contact-us' },
+      { title: 'Contact Us', link: '/book-a-demo' },
       { title: 'FAQs', link: '/faqs' }
     ]
   }

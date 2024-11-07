@@ -71,7 +71,7 @@ function Paybills() {
               <br />
               <p>
                 <Link
-                  to="/contact-us"
+                  to="/book-a-demo"
                   className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
                 >
                   Reach out to us
