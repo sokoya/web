@@ -17,7 +17,7 @@ const CustomBanner = ({ title, description, bgColor = 'bg-blue-500', textColor =
       {/* Content */}
       <div className={`relative z-10 grid grid-cols-1 sm:grid-cols-${columns} gap-4`}>
         <div className={`col-span-${columns} text-center`}>
-          <h1 className={`text-4xl font-bold ${textColor}`}>{title}</h1>
+          <h1 className={`text-4xl font-semibold ${textColor}`}>{title}</h1>
           {description && <p className={`mt-4 ${textColor} text-lg`}>{description}</p>}
         </div>
       </div>

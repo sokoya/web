@@ -60,7 +60,7 @@ function MobileNav() {
           className='my-2 '
           variants={menuItemVariant} // Apply individual item variants
         >
-          <Link className='px-5 py-2' onClick={() => handleMenuClick(section.id)} to={section.url}>
+          <Link className='px-5 py-2 text-lg' onClick={() => handleMenuClick(section.id)} to={section.url}>
             {section.title}
           </Link>
         </motion.li>
@@ -87,7 +87,7 @@ function MobileNav() {
                 className='my-2 '
                 variants={menuItemVariant} // Individual item variants for sub-menu
               >
-                <Link className='px-5 py-2' to={subItem.url} onClick={() => handleMenuClick()}>
+                <Link className='px-5 py-2 text-lg' to={subItem.url} onClick={() => handleMenuClick()}>
                   {subItem.title}
                 </Link>
               </motion.li>
@@ -100,15 +100,15 @@ function MobileNav() {
 
   return (
     <motion.div
-      className='mobile-nav bg-white p-2'
+      className='mobile-nav bg-white p-2 overflow-hidden h-screen'
       variants={menuVariant}
       animate={openMenu ? 'open' : 'closed'}
     >
-      <div className='my-4 mx-5'>
+      <div className='my-2 mx-2'>
         <img src={Logo} className='h-[2.6em] px-2' alt='Logo' />
       </div>
       <MobileMenuIcon setOpenMenu={setOpenMenu} />
-
+<hr className='my-5'/>
       <motion.ul
         variants={menuListVariant} // Parent variant for staggering
         initial='hidden'
@@ -120,13 +120,13 @@ function MobileNav() {
       <motion.div className='alpha-text-auto font-semibold lg:ml-10 ml-2 flex flex-col text-center m-1 justify-center'>
         <Link
           to='https://app.payscribe.ng/auth/create'
-          className='p-3 rounded-lg mx-2 my-1 font-bold bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          className='p-3 rounded-lg mx-2 my-1 font-semibold bg-primary text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Create a Free Account
         </Link>
         <Link
           to='https://app.payscribe.ng/login'
-          className='border-white border-solid border mx-2 my-1 font-bold p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
+          className='border-white border-solid border mx-2 my-1 font-semibold p-3 rounded-lg bg-black text-white transition ease-in-out duration-300 transform hover:-translate-y-1'
         >
           Sign In
         </Link>

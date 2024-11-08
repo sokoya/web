@@ -24,6 +24,8 @@ import CaseStudy from './Pages/CaseStudy';
 import Gamepride from './Pages/CaseStudies/Gamepride';
 import Connekit from './Pages/CaseStudies/Connkit';
 import BusFAQs from './Pages/BusFaqs';
+import ScrollToTop from './Components/ScrollToTop';
+
 
 
 // const NavigateToRoot = () => {
@@ -34,11 +36,11 @@ import BusFAQs from './Pages/BusFaqs';
 //   return null;
 // };
 const App = () => {
- 
   return (
     <Router>
       <Navigation />
-      <Routes scrollToTop>
+      <ScrollToTop/>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/individuals" element={<Individuals />} />
         <Route path='/book-a-demo' element={<BookADemo/>} />

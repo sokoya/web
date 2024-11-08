@@ -37,11 +37,11 @@ const HeroComponent = ({
               >
                 <motion.h1
                   variants={show}
-                  className="font-bold m-2 my-1 md:text-md text-lg"
+                  className="font-semibold m-2 my-1 md:text-md text-lg"
                 >
                   {title}
                 </motion.h1>
-                <motion.h2 className="font-bold m-2 my-5  md:my-0 md:text-5xl text-2xl">
+                <motion.h2 className="font-semibold m-2 my-5  md:my-0 md:text-5xl text-2xl">
                   {subtitle}
                 </motion.h2>
                 <motion.p className="m-2 md:my-1 my-10 md:leading-7 leading-6">
@@ -51,13 +51,13 @@ const HeroComponent = ({
                   <Link
                   target='_blank'
                     to={primaryLink}
-                    className="p-3 rounded-lg mx-2 bg-black font-bold hover:-translate-y-1 text-center text-white transition-transform duration-300"
+                    className="p-3 rounded-lg mx-2 bg-black font-semibold hover:-translate-y-1 text-center text-white transition-transform duration-300"
                   >
                     {primaryLinkText}
                   </Link>
                   <Link
                     to={secondaryLink}
-                    className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 text-center  text-black transition-transform duration-300"
+                    className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-semibold hover:-translate-y-1 text-center  text-black transition-transform duration-300"
                   >
                     {secondaryLinkText}
                   </Link>

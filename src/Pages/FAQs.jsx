@@ -25,8 +25,8 @@ const faqData = [
     answer: "Yes, you can use your payment links for international transactions."
    },
    {
-    question: "",
-    answer: "",
+    question: "Who is the developer of this site?",
+    answer: "Alpha-dev",
    },
    
 ];
@@ -68,7 +68,7 @@ const FAQs = () => {
     setOpenIndex(index); // Open the selected FAQ
     setSearchActive(false); // Close the search bar
     setTimeout(() => {
-      const element = document.getElementById(`faq-${index}`);
+      const element = document.getElementById(`faq-${index - 1}`);
       element?.scrollIntoView({ behavior: "smooth" });
     }, 100); // Delay to let search bar close before scroll
   };
@@ -88,7 +88,7 @@ const FAQs = () => {
         description="Go through our FAQs to find the answer you're looking for."
         primaryLink="/start"
         primaryLinkText="Join Us"
-        secondaryLink="/support"
+        secondaryLink="/book-a-demo"
         secondaryLinkText="Contact Support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
@@ -96,13 +96,14 @@ const FAQs = () => {
         additionalContent={
           <div>
             <img src={WhiteStar} alt="" className="absolute left-[50%] top-[15%] glow" />
-            <img src={WhiteStar} alt="" className="absolute left-[55%] top-[45%] glow" />
+            <img src={WhiteStar} alt="" className="absolute left-[55%] top-[42%] glow" />
             <img src={WhiteStar} alt="" className="absolute left-[90%] top-[20%] glow" />
 
           </div>
         }
         columns={2}
         order={['text', 'image', 'additionalContent']}
+        customimgstyle='md:static absolute md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[7em]'
       />
       <div className="fixed bottom-4 right-4 z-50">
         <button
@@ -116,7 +117,7 @@ const FAQs = () => {
 
       {/* Search Overlay */}
       <div className={`fixed inset-0 z-50 flex justify-center items-start ${searchActive ? 'bg-black bg-opacity-50 backdrop-blur-md' : 'hidden'}`}>
-        <div className={`relative bg-white shadow-lg rounded-lg p-5 w-full max-w-md mt-20 transform transition-all duration-300 ${searchActive ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+        <div className={`relative bg-white shadow-lg rounded-lg md:p-5 p-2 w-full max-w-md md:mt-20 my-[6em] transform transition-all duration-300 ${searchActive ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
           <input
             type="text"
             className="w-full p-2 border border-gray-300 rounded-md focus:outline-none"
@@ -134,7 +135,7 @@ const FAQs = () => {
           
           {/* Display search results below search bar */}
           {filteredFAQs.length > 0 && (
-            <div className="absolute top-full left-0 w-full bg-white shadow-lg border border-gray-300 mt-2 z-50  rounded-lg">
+            <div className="absolute top-full left-0 w-full bg-white shadow-lg border border-gray-300 md:mt-2 mt-5 z-50  ">
               {filteredFAQs.map((faq, index) => (
                 <div
                   key={index}
@@ -148,14 +149,14 @@ const FAQs = () => {
           )}
           
           {filteredFAQs.length === 0 && (
-            <p className="text-center text-gray-500 mt-5">No results found.</p>
+            <p className="text-center text-red-500 mt-5">No results found.</p>
           )}
         </div>
       </div>
 
       {/* FAQ Content */}
       <div className={`max-w-4xl mx-auto p-5 md:my-20 transition-all duration-300 ease-in-out ${searchActive ? 'blur-sm' : ''}`}>
-        <h2 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
         
         {faqData.map((faq, index) => (
           <div key={index} id={`faq-${index}`} className="border-b py-4">

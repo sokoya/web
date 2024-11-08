@@ -24,7 +24,7 @@ const FeatureList = ({ features }) => {
       initial="hidden"
       whileInView="show"
       variants={listVariants}
-      className="grid grid-cols-1 my-2 w-full font-mediumbold"
+      className="grid grid-cols-1 my-2 w-full font-medium"
     >
       {features.map((feature, index) => (
         <motion.li
@@ -85,12 +85,12 @@ const ContentComponent = ({
         <div className={`${textColor}`}>
           
           {title && (
-            <motion.h1 className="font-bold uppercase m-2 my-1"><a href={'#'+title}>{title}</a></motion.h1>
+            <motion.h1 className="font-semibold uppercase m-2 my-1"><a href={'#'+title}>{title}</a></motion.h1>
           )}
 
           
           {subtitle && (
-            <motion.h2 className="md:text-4xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
+            <motion.h2 className="md:text-4xl text-2xl font-semibold m-2 my-1 leading-[1.2em]">
               {subtitle}
             </motion.h2>
           )}
@@ -111,7 +111,7 @@ const ContentComponent = ({
               {primaryLink && (
                 <Link
                   to={primaryLink}
-                  className={`p-3 rounded-lg my-2 ${customLinkStyle} transition duration-300 ease-in-out bg-primary font-bold border-2 transform hover:-translate-y-1`}
+                  className={`p-3 rounded-lg my-2 ${customLinkStyle} transition duration-300 ease-in-out bg-primary font-semibold border-2 transform hover:-translate-y-1`}
                 >
                   {primaryLinkText}
                 </Link>

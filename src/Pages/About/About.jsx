@@ -107,7 +107,7 @@ function About() {
       />
       <div className="md:py-10 py-1 md:px-5 px-1">
         <div className="md:w-1/2 w-full ">
-          <h2 className="md:text-3xl text-2xl font-bold md:px-10 md:py-5 py-4 px-4 md:my-1 my-8">
+          <h2 className="md:text-3xl text-2xl font-semibold md:px-10 md:py-5 py-4 px-4 md:my-1 my-8">
             From Idea to Impact:
             <br />
             Our goals and aspirations
@@ -138,7 +138,7 @@ function About() {
                   <div className="p-5 bg-slate-50 rounded-2xl flex">{block.icon}</div>
                 </div>
                 <div>
-                  <h5 className="font-bold">{block.title}</h5>
+                  <h5 className="font-semibold">{block.title}</h5>
                   <p className="my-3 text-ls">{block.description}</p>
                 </div>
               </motion.div>
@@ -149,7 +149,7 @@ function About() {
 
       <div className="bg-black text-white z-10 flex justify-center">
         <div className="container p-8">
-          <h1 className="text-3xl font-bold text-center my-10">Our Team</h1>
+          <h1 className="text-3xl font-semibold text-center my-10">Our Team</h1>
           {/* <motion.div
             variants={fadeSlideStagger.container} // Apply stagger to the container
             initial="hidden"
