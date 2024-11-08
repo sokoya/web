@@ -6,6 +6,7 @@ import BannerVideo3 from '/assets/exports/home/thirdpagebannervidRIght.mp4'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import PageBanner4 from '/assets/images/homepage/4thpagebanner.png'
+import Finance from '/assets/exports/finance.png'
 import { IoCaretUpCircleOutline } from 'react-icons/io5'
 import BlockGrid from '../../Components/BlockGrid'
 import './Home.scss'
@@ -17,6 +18,7 @@ import TabBanner1 from "/assets/images/homepage/tabbanner1.jpg";
 import TabBanner2 from "/assets/images/homepage/tabbanner2.jpg";
 import TabBanner3 from "/assets/images/homepage/tabbanner3.jpg";
 import TabBanner4 from "/assets/images/homepage/tabbanner4.jpg";
+import IconLine from '../../Components/IconLine'
 window.scrollTo(0, 0);
 
 
@@ -114,7 +116,7 @@ function Home() {
         <div className="">
           <div className="md:m-12 md:my-[3em] my-[1em] m-5">
             <div className="md:mx-10 mx-2 md:my-[2em] my-10">
-              <h2 className="text-3xl text-left md:w-[35%] sm:w-1/2 w-full text-textDark font-bold">
+              <h2 className="text-3xl text-left md:w-[35%] sm:w-1/2 w-full text-textDark font-semibold">
                 Comprehensive Financial Tools for All Users
               </h2>
             </div>
@@ -123,10 +125,10 @@ function Home() {
               <div className="bg-[#144BC7] md:p-5 p-2 rounded-xl  ">
                 <div className="flex justify-center md:flex-row flex-col-reverse">
                   <div className="md:p-2 p-1">
-                    <h2 className="text-md font-bold my-1 md:my-2 m-2">
+                    <h2 className="text-md font-semibold my-1 md:my-2 m-2">
                       FOR BUSINESSES
                     </h2>
-                    <h2 className="text-xl font-bold m-2 my-1 md:my-5">
+                    <h2 className="text-xl font-semibold m-2 my-1 md:my-5">
                       Fueling Global Growth with Innovative Payments Solutions.
                     </h2>
 
@@ -164,7 +166,7 @@ function Home() {
                 <div className="p-3 md:my-0 my-5 ">
                   <Link
                     to="/rgister"
-                    className="bg-white text-primary p-3 rounded-md text-md font-bold my-20 md:my-0 hover:-translate-y-1 transform transition duration-300 ease-in-out"
+                    className="bg-white text-primary p-3 rounded-md text-md font-semibold my-20 md:my-0 hover:-translate-y-1 transform transition duration-300 ease-in-out"
                   >
                     Start accepting payments
                   </Link>
@@ -191,10 +193,10 @@ function Home() {
                 </video>
               </div>
               <div className="text-black p-2 md:my-0 my-10">
-                <h2 className="text-md font-bold my-1 md:my-2 m-2 uppercase">
+                <h2 className="text-md font-semibold my-1 md:my-2 m-2 uppercase">
                   For Freelancers
                 </h2>
-                <h2 className="text-xl text-black font-bold m-2 my-1 md:my-5">
+                <h2 className="text-xl text-black font-semibold m-2 my-1 md:my-5">
                   Stay On Top of Your Game.
                 </h2>
 
@@ -219,10 +221,10 @@ function Home() {
                 </video>
               </div>
               <div className="text-white p-2 md:my-0 my-10">
-                <h2 className="text-md font-bold my-1 md:my-2 m-2 uppercase">
+                <h2 className="text-md font-semibold my-1 md:my-2 m-2 uppercase">
                   For Individuals
                 </h2>
-                <h2 className="text-xl font-bold m-2 my-1 md:my-5">
+                <h2 className="text-xl font-semibold m-2 my-1 md:my-5">
                   Take Control of Your Finances.
                 </h2>
 
@@ -262,10 +264,10 @@ function Home() {
 
               <div className="flex items-center">
                 <div className="text-black p-2 md:m-5 m-2">
-                  <h1 className="font-bold text-xs m-2 my-1">
+                  <h1 className="font-semibold text-xs m-2 my-1">
                     GLOBAL PAYMENT SOLUTIONS
                   </h1>
-                  <h1 className="md:text-4xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
+                  <h1 className="md:text-4xl text-2xl font-semibold m-2 my-1 leading-[1.2em]">
                     Simplify Payments with Versatile Payment Links Usable
                     Anywhere in the World
                   </h1>
@@ -303,15 +305,15 @@ function Home() {
               transition={{ delay: 3 }}
               className="p-1 flex md:justify-start justify-center md:order-2 items-center order-1"
             >
-              <img src={PageBanner4} className="md:h-[80%] h-[100%]" />
+              <img src={Finance} className="md:h-[80%] h-[100%]" />
             </motion.div>
 
             <div className="text-white p-2 md:m-5 m-2 md:order-1 order-2 flex items-center">
               <div className="">
-                <h1 className="font-bold text-xs m-2 my-1">
+                <h1 className="font-semibold text-xs m-2 my-1">
                   EASY FINANCIAL MANAGEMENT
                 </h1>
-                <h1 className="md:text-4xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
+                <h1 className="md:text-4xl text-2xl font-semibold m-2 my-1 leading-[1.2em]">
                   Gain Insight into Your Finances with Comprehensive Expense
                   Tracking and Detailed Reports
                 </h1>

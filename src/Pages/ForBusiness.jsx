@@ -156,7 +156,7 @@ function ForBusiness() {
                 <div className="p-5">{block.icon}</div>
               </div>
               <div>
-                <h5 className="font-bold">{block.title}</h5>
+                <h5 className="font-semibold">{block.title}</h5>
                 <p className="my-3 text-ls">{block.description}</p>
               </div>
             </motion.div>
@@ -177,8 +177,8 @@ function ForBusiness() {
                     <img src={grid.image} className="transform scale-[70%]" />
                   </div>
                   <div className="p-5 md:order-2 order-1">
-                    <h3 className="font-bold p-1">{grid.title}</h3>
-                    <h2 className="font-bold p-1">{grid.subtitle}</h2>
+                    <h3 className="font-semibold p-1">{grid.title}</h3>
+                    <h2 className="font-semibold p-1">{grid.subtitle}</h2>
                     <p className="p-1">{grid.content}</p>
                   </div>
                   <hr className='md:hidden visible'/>

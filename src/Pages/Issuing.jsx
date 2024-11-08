@@ -95,7 +95,7 @@ function Issuing() {
         primaryLink="https://app.payscribe.ng/auth/create"
         customSectionStyle=''
         primaryLinkText="Join us now"
-        secondaryLink="/support"
+        secondaryLink="/book-a-demo"
         secondaryLinkText="Contact support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
@@ -122,7 +122,7 @@ function Issuing() {
                   <div className="p-5 bg-slate-50 rounded-2xl flex">{block.icon}</div>
                 </div>
                 <div>
-                  <h5 className="font-bold">{block.title}</h5>
+                  <h5 className="font-semibold">{block.title}</h5>
                   <p className="my-3 text-ls">{block.description}</p>
                 </div>
               </motion.div>
@@ -137,7 +137,7 @@ function Issuing() {
           customTabBg = "bg-primary"
           link="/contact"
           linktext="Contact us"
-          customActiveContent="bg-white font-bold"
+          customActiveContent="bg-white"
           customButtonClass="text-white bg-black"
           customActiveTabClass="text-primary bg-white"
         />
