@@ -36,3 +36,7 @@ $default-font-size: 16px;
 @mixin responsive-element($percentage) {
   transform: scale($percentage * 0.05vw);
 }
+
+.blue-filter {
+  filter: hue-rotate(180deg) saturate(1.5) brightness(1.2);
+}

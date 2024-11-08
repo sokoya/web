@@ -27,7 +27,34 @@ body {
   .glow {
     filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
   }
-
+  .glower {
+    filter: drop-shadow(0 0 300px #fff);
+  }
   .radial{
     background: radial-gradient(rgba(241, 229, 231, 0.208), #020414, #020414, #020414);
   }
+
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .line {
+    width: 40%;
+    height: 1.5px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+
+  

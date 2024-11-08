@@ -4,7 +4,8 @@ import { IoLogoGooglePlaystore, IoLogoApple } from 'react-icons/io5'
 import Lightning from '/assets/images/globe.png'
 import SocialMediaIcons from '../SocialMediaIcons'
 import Audit from '/assets/exports/ndpr-audit.svg'
-import Twinkle from '/assets/exports/glow.png'
+// import Twinkle from '/assets/exports/star1.png'
+import Overlay from '/assets/exports/overlay.png'
 
 const lists = [
   {
@@ -51,7 +52,8 @@ function Footer() {
   return (
     <div className=''>
          <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-         <img src={Twinkle} className="absolute md:top-0 top-[100%] md:opacity-70 opacity-100 w-full"/> 
+         <img src={Overlay} className="absolute md:top-[10%] blue-filter transform rotate-[10deg] md:opacity-5 opacity-5 top-[50%] glower mx-auto md:h-[80%] h-[40%] md:left-[60%] left-[12%] "/> 
+
       {/* <img
         src={Lightning}
         className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
@@ -75,12 +77,12 @@ function Footer() {
           <img src={Audit} className="h-[3em] px-2" alt="NDPR" />
           </div>
           <br/>
-          <div className="flex text-white text-2xl md:justify-start justify-center md:flex-row flex-col">
-            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
+          <div className="md:flex grid grid-cols-2 text-white text-2xl md:justify-start justify-center">
+            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform justify-center">
               <IoLogoGooglePlaystore />{' '}
               <span className="text-sm p-2 ">Android</span>
             </div>
-            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform">
+            <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform justify-center">
               <IoLogoApple /> <span className="text-sm p-2 ">iOS</span>
             </div>
           </div>
@@ -89,7 +91,7 @@ function Footer() {
           <div className="text-white p-3 grid grid-cols-2  md:grid-cols-4 relative md:my-10 my-0">
             {lists.map((listObj) => (
               <div key={listObj.title} className='md:my-0 my-5'>
-                <h2 className="font-bold text-md md:text-left text-center">{listObj.title}</h2>
+                <h2 className="font-semibold text-md md:text-left text-center">{listObj.title}</h2>
                 <div className="text-slate-400 text-sm md:my-5 my-2">
                   {listObj.items.map((item, index) => (
                     <div key={index} className="my-4 md:text-left text-center">
@@ -123,7 +125,7 @@ function Footer() {
         </div>
 
         <div className="md:grid block grid-cols-2">
-          <div className="flex text-slate-300 items-center font-bold md:justify-start justify-center md:my-0 my-5">
+          <div className="flex text-slate-300 items-center font-semibold md:justify-start justify-center md:my-0 my-5">
             <SocialMediaIcons />
           </div>{' '}
         </div>

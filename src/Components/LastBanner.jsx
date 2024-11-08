@@ -9,7 +9,7 @@ function LastBanner() {
     <div className="bg-[#144BC7] md:px-10 md:p-1 p-0 rounded-xl text-white overflow-hidden relative scale-[98%]">
       <div className="grid md:grid-cols-2 grid-cols-1 md:my-5 my-0">
         <div className="md:p-2 p-10">
-          <h2 className="text-md font-bold my-1 md:my-2 text-3xl">
+          <h2 className="text-md font-semibold my-1 md:my-2 text-3xl">
             Start Building Today
           </h2>
 
@@ -25,13 +25,13 @@ function LastBanner() {
             <Link
               to="https://app.payscribe.ng/auth/create"
               target="_blank"
-              className="p-3 rounded-lg md:w-auto  w-full text-center my-1 mx-2 font-bold bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
+              className="p-3 rounded-lg md:w-auto  w-full text-center my-1 mx-2 font-semibold bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1"
             >
               Start Building
             </Link>
             <Link
               to="/book-a-demo"
-              className=" border-solid border mx-2 font-bold p-3 rounded-lg w-full text-center my-1 bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
+              className=" border-solid border mx-2 font-semibold p-3 rounded-lg w-full text-center my-1 bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
               Contact us
             </Link>
@@ -43,7 +43,7 @@ function LastBanner() {
             src={LastBannerImg}
             className="md:absolute relative h-full mx-auto transform"
           />
-          <Link to="https://wa.me/+2349024328949" target='_blank' className='absolute bottom-[78%] mx-auto opacity-[90%] md:w-12 md:h-12 h-[1em] w-[1em]'>
+          <Link to="https://wa.me/+2347038067493" target='_blank' className='absolute bottom-[78%] mx-auto md:opacity-[70%] opacity-[90%] md:w-12 md:h-12 h-[0.5em] w-[0.5em]'>
           <img
             src={Dev}
             className=""

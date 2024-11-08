@@ -34,7 +34,7 @@ export function CaseStudyComponent({
   productContent,
 }) {
   return (
-    <div className="flex flex-col w-full relative p-10">
+    <div className="flex flex-col w-full relative md:p-10">
         <div className='flex justify-center'>
             <img src={brandLogo} className='w-32 h-32' />
         </div>
@@ -52,7 +52,7 @@ export function CaseStudyComponent({
 
         <div className="flex m-5 bg-gray-50">
         <img src={brandLogo} alt={`${brandName} logo`} className="h-20 w-20 mr-4" />
-          <span className=" text-white my-5 uppercase font-bold p-3 rounded-xl bg-black flex justify-center md:w-[15%] w-auto">{brandCategory}</span>
+          <span className=" text-white my-5 uppercase font-semibold p-3 rounded-xl bg-black flex justify-center md:w-[15%] w-auto">{brandCategory}</span>
        </div>
        <div className=''>
           <p className="font-semibold md:text-6xl text-3xl text-center">{brandMoto}</p>
@@ -66,7 +66,7 @@ export function CaseStudyComponent({
         {/* Left Section */}
         <div className='p-5'>
           {/* Brand Name and About */}
-          <h2 className="text-2xl font-bold text-primary">{brandName}</h2>
+          <h2 className="text-2xl font-semibold text-primary">{brandName}</h2>
           <p className="text-sm text-gray-500 mb-3 flex p-2 items-center"><span><IoLocationOutline/></span>{brandLocation}</p>
           <p className="mb-5">{aboutBrand}</p>
 
@@ -152,9 +152,9 @@ export function CaseStudyComponent({
             <p className=" py-2 px-4">
               {endingParagraph}
             </p>
-            <button className="bg-gray-200 text-black py-2 px-4 rounded-lg">
+            <Link to='/book-a-demo' className="bg-gray-200 text-black py-2 px-4 rounded-lg">
               {endingButton2}
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -162,7 +162,7 @@ export function CaseStudyComponent({
         <div className=''>
             <div className='sticky top-[5.5em] bg-black text-white p-5 rounded-3xl m-1'>
           {/* Brand Integration */}
-          <h3 className="text-xl font-bold text-white">{brandIntegrationTitle}</h3>
+          <h3 className="text-xl font-semibold text-white">{brandIntegrationTitle}</h3>
           <ul className="mb-5">
             {brandIntegrationContent.map((item, idx) => (
               <li key={idx} className="text-white">{item}</li>
@@ -170,7 +170,7 @@ export function CaseStudyComponent({
           </ul>
 
           {/* Product */}
-          <h3 className="text-xl font-bold text-white">{productTitle}</h3>
+          <h3 className="text-xl font-semibold text-white">{productTitle}</h3>
           <ul className="">
             {productContent.map((item, idx) => (
               <li key={idx} className="text-white">{item}</li>
