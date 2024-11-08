@@ -83,7 +83,7 @@ function Hero() {
            initial="hiddenimg"
            whileInView="imageshow"
            transition={{ delay: 1.2 }} 
-           className=' justify-center mx-auto transform scale-[80%] md:h-auto w-full h-[50%] absolute -my-[3em] md:flex hidden'>
+           className=' justify-center mx-auto transform xl:scale-[80%]  scale-[120%] md:h-auto w-full h-[50%] absolute -my-[3em] md:flex hidden bottom-0'>
             <img src={BannerArrowLeft} className='transform scale-150 -translate-y-3 translate-x-20  -z-10 '/>
             <img src={Dashboard1} className=' rounded-t-[3em] transform scale-[80%] '/>
             <img src={BannerArrowRight} className='transform scale-150 -translate-y-3 -translate-x-20 -z-10'/>
