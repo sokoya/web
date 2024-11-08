@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml/ico" href="/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, scroll-position: 0">
       <title>Payscribe</title>
+      <script>
+        {% comment %} window.location.replace('new-page-url'); {% endcomment %}
+      </script>
   </head>
-  <body>
+  <body onunload="">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -40,10 +40,10 @@ function Paybills() {
             initial="hidden"
             whileInView="show"
           >
-            <motion.h1 variants={show} className="font-bold m-2 my-1 uppercase">
+            <motion.h1 variants={show} className="font-semibold m-2 my-1 uppercase">
               manage your bills
             </motion.h1>
-            <motion.h1 className="md:text-5xl text-2xl font-bold m-2 my-1 leading-[1.2em]">
+            <motion.h1 className="md:text-5xl text-2xl font-semibold m-2 my-1 leading-[1.2em]">
               Simple Bill Payments: Manage and Pay Bills Quickly and Securely.
             </motion.h1>
             <motion.p
@@ -63,7 +63,7 @@ function Paybills() {
               <p>
                 <Link
                   to="https://app.payscribe.ng/auth/create"
-                  className="p-3 rounded-lg mx-2 bg-white font-bold hover:-translate-y-1 text-black transition-transform duration-300"
+                  className="p-3 rounded-lg mx-2 bg-white font-semibold hover:-translate-y-1 text-black transition-transform duration-300"
                 >
                   Create a Free Account
                 </Link>
@@ -72,7 +72,7 @@ function Paybills() {
               <p>
                 <Link
                   to="/book-a-demo"
-                  className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-bold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
+                  className="p-3 rounded-lg mx-2 md:my-0 my-3 bg-white font-semibold hover:-translate-y-1 hover:bg-slate-500 text-black transition-transform duration-300"
                 >
                   Reach out to us
                 </Link>
@@ -107,7 +107,7 @@ function Paybills() {
                 <div className="p-5">{block.icon}</div>
               </div>
               <div>
-                <h5 className="font-bold">{block.title}</h5>
+                <h5 className="font-semibold">{block.title}</h5>
                 <p className="my-3 text-ls">{block.description}</p>
               </div>
             </motion.div>

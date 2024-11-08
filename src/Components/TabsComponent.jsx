@@ -74,7 +74,7 @@ export function TabsComponent({
     >
       {/* Header Section */}
       <div
-        className={`flex justify-center font-bold  p-10 w-full ${customHeaderClass}`}
+        className={`flex justify-center font-semibold  p-10 w-full ${customHeaderClass}`}
       >
         <div className="md:w-[50%] w-full m-3">
           <h2 className="text-center uppercase">{headerTitle}</h2>
@@ -102,10 +102,10 @@ export function TabsComponent({
             <div className="flex justify-between items-center">
               <FaChevronLeft className="" />
               {/* <div
-                className={`${customTabBg === 'bg-white' ? 'bg-black text-white' : 'bg-white text-black'} font-bold text-center m-3 p-3   rounded-xl`}
+                className={`${customTabBg === 'bg-white' ? 'bg-black text-white' : 'bg-white text-black'} font-semibold text-center m-3 p-3   rounded-xl`}
               > */}
                 <div
-                className={`${customActiveContent} text-black font-bold text-center m-3 p-3 rounded-xl`}
+                className={`${customActiveContent} text-black font-semibold text-center m-3 p-3 rounded-xl`}
               >
                 {activeTab.toUpperCase()}
               </div>
@@ -121,7 +121,7 @@ export function TabsComponent({
             <button
               key={index}
               onClick={() => setActiveTab(value)}
-              className={`p-3 font-bold text-sm cursor-pointer whitespace-nowrap mx-1 transition duration-300 ease-in-out 
+              className={`p-3 font-semibold text-sm cursor-pointer whitespace-nowrap mx-1 transition duration-300 ease-in-out 
           ${activeTab === value ? customActiveTabClass || 'bg-white text-black ' : customTabButtonClass || 'text-white hover:bg-gray-700 hover:bg-opacity-50'}
           ${
             [data[0].value, data[data.length - 1].value].includes(value)
@@ -161,12 +161,12 @@ export function TabsComponent({
               <div
                 className={`  ${customActiveContent} rounded-xl p-5 md:p-10 `}
               >
-                <h3 className="text-2xl md:text-3xl font-bold">{title}</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold">{title}</h3>
                 <p className=" my-3">{desc}</p>
                 {renderCustomButton && renderCustomButton(activeTab)}
                 <Link
                   to={link}
-                  className={`inline-block mt-5 p-2 md:p-3 rounded-lg  text-white font-bold ${customButtonClass} hover:-translate-y-1 transform transition ease-in-out duration-300`}
+                  className={`inline-block mt-5 p-2 md:p-3 rounded-lg  text-white font-semibold ${customButtonClass} hover:-translate-y-1 transform transition ease-in-out duration-300`}
                 >
                   {linktext}
                 </Link>

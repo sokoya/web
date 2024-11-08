@@ -95,7 +95,7 @@ const BusFAQs = () => {
         description="Go through our FAQs to find the answer you're looking for."
         primaryLink="/start"
         primaryLinkText="Join Us"
-        secondaryLink="/support"
+        secondaryLink="/book-a-demo"
         secondaryLinkText="Contact Support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
@@ -162,7 +162,7 @@ const BusFAQs = () => {
 
       {/* FAQ Content */}
       <div className={`max-w-4xl mx-auto p-5 md:my-20 transition-all duration-300 ease-in-out ${searchActive ? 'blur-sm' : ''}`}>
-        <h2 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
         
         {faqData.map((faq, index) => (
           <div key={index} id={`faq-${index}`} className="border-b py-4">

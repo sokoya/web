@@ -8,7 +8,7 @@ function PrivacyPolicy() {
             <div className="faq-hero-text">
               <div className="faq-inner-text">
                 {/* <h5>HELP</h5> */}
-                <h2 className="font-bold text-3xl">Privacy Policies</h2>
+                <h2 className="font-semibold text-3xl">Privacy Policies</h2>
               </div>
             </div>
           </div>
@@ -51,11 +51,11 @@ function PrivacyPolicy() {
               administering the site, tracking users`&apos; movement on the website,
               and gathering demographic information.
             </p>
-            <h1 className=" text-xl font-bold leading-tight text-gray-900 md:text-xl">
+            <h1 className=" text-xl font-semibold leading-tight text-gray-900 md:text-xl">
               Interpretation and Definitions
             </h1>
             <h2>
-              <p className="font-bold">Interpretation</p>
+              <p className="font-semibold">Interpretation</p>
             </h2>
             <p>
               The words of which the initial letter is capitalized have meanings
@@ -64,20 +64,20 @@ function PrivacyPolicy() {
               singular or in plural.
             </p>
             <h2>
-              <p className="font-bold">Definitions</p>
+              <p className="font-semibold">Definitions</p>
             </h2>
 
             <p className="">For the purposes of this Privacy Policy:</p>
             <ul>
               <li>
                 <p>
-                  <p className="font-bold">Account</p> means a unique account
+                  <p className="font-semibold">Account</p> means a unique account
                   created for You to access our Service or parts of our Service.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Affiliate</p> means an entity that
+                  <p className="font-semibold">Affiliate</p> means an entity that
                   controls, is controlled by or is under common control with a
                   party, where &quot;control&quot; means ownership of 50% or
                   more of the shares, equity interest or other securities
@@ -87,13 +87,13 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Application</p> refers to Payscribe,
+                  <p className="font-semibold">Application</p> refers to Payscribe,
                   the software program provided by the Company.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Company</p> (referred to as either
+                  <p className="font-semibold">Company</p> (referred to as either
                   &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or
                   &quot;Our&quot; in this Agreement) refers to Pscribe Digital
                   Services Limited, 95 Oreta Rd., Igbogbo, Ikorodu.
@@ -101,31 +101,31 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Country</p> refers to: Nigeria
+                  <p className="font-semibold">Country</p> refers to: Nigeria
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Device</p> means any device that can
+                  <p className="font-semibold">Device</p> means any device that can
                   access the Service such as a computer, a smart phone or a
                   digital tablet.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Personal Data</p> is any information
+                  <p className="font-semibold">Personal Data</p> is any information
                   that relates to an identified or identifiable individual.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Service</p> refers to the
+                  <p className="font-semibold">Service</p> refers to the
                   Application.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Service Provider</p> means any
+                  <p className="font-semibold">Service Provider</p> means any
                   natural or legal person who processes the data on behalf of
                   the Company. It refers to third-party companies or individuals
                   employed by the Company to facilitate the Service, to provide
@@ -136,7 +136,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">Usage Data</p> refers to data
+                  <p className="font-semibold">Usage Data</p> refers to data
                   collected automatically, either generated by the use of the
                   Service or from the Service infrastructure itself (for
                   example, the duration of a page visit).
@@ -144,21 +144,21 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">You</p> means the individual
+                  <p className="font-semibold">You</p> means the individual
                   accessing or using the Service, or the company, or other legal
                   entity on behalf of which such individual is accessing or
                   using the Service, as applicable.
                 </p>
               </li>
             </ul>
-            <h1 className=" text-xl font-bold leading-tight text-gray-900 md:text-xl">
+            <h1 className=" text-xl font-semibold leading-tight text-gray-900 md:text-xl">
               Collecting and Using Your Personal Data
             </h1>
             <h2 className="">
-              <p className="font-bold">Types of Data Collected</p>
+              <p className="font-semibold">Types of Data Collected</p>
             </h2>
             <h3>
-              <p className="font-bold">Personal Data</p>
+              <p className="font-semibold">Personal Data</p>
             </h3>
 
             <p>
@@ -182,7 +182,7 @@ function PrivacyPolicy() {
               </li>
             </ul>
             <h3 className="">
-              <p className="font-bold">Usage Data</p>
+              <p className="font-semibold">Usage Data</p>
             </h3>
             <p>Usage Data is collected automatically when using the Service.</p>
             <p>
@@ -229,13 +229,13 @@ function PrivacyPolicy() {
               through Your Device settings.
             </p>
             <h2>
-              <p className="font-bold">Use of Your Personal Data</p>
+              <p className="font-semibold">Use of Your Personal Data</p>
             </h2>
             <p>The Company may use Personal Data for the following purposes:</p>
             <ul>
               <li>
                 <p>
-                  <p className="font-bold">
+                  <p className="font-semibold">
                     To provide and maintain our Service
                   </p>
                   , including to monitor the usage of our Service.
@@ -243,7 +243,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">To manage Your Account:</p> to manage
+                  <p className="font-semibold">To manage Your Account:</p> to manage
                   Your registration as a user of the Service. The Personal Data
                   You provide can give You access to different functionalities
                   of the Service that are available to You as a registered user.
@@ -251,7 +251,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">
+                  <p className="font-semibold">
                     For the performance of a contract:
                   </p>{' '}
                   the development, compliance and undertaking of the purchase
@@ -262,7 +262,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">To contact You:</p> To contact You by
+                  <p className="font-semibold">To contact You:</p> To contact You by
                   email, telephone calls, SMS, or other equivalent forms of
                   electronic communication, such as a mobile application`&apos;s push
                   notifications regarding updates or informative communications
@@ -273,7 +273,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">To provide You</p> with news, special
+                  <p className="font-semibold">To provide You</p> with news, special
                   offers and general information about other goods, services and
                   events which we offer that are similar to those that you have
                   already purchased or enquired about unless You have opted not
@@ -282,13 +282,13 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">To manage Your requests:</p> To
+                  <p className="font-semibold">To manage Your requests:</p> To
                   attend and manage Your requests to Us.
                 </p>
               </li>
               <li>
                 <p>
-                  <p className="font-bold">For business transfers:</p> We may
+                  <p className="font-semibold">For business transfers:</p> We may
                   use Your information to evaluate or conduct a merger,
                   divestiture, restructuring, reorganization, dissolution, or
                   other sale or transfer of some or all of Our /assets, whether
@@ -299,7 +299,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 <p>
-                  <p className="font-bold">For other purposes</p>: We may use
+                  <p className="font-semibold">For other purposes</p>: We may use
                   Your information for other purposes, such as data analysis,
                   identifying usage trends, determining the effectiveness of our
                   promotional campaigns and to evaluate and improve our Service,
@@ -308,25 +308,25 @@ function PrivacyPolicy() {
               </li>
             </ul>
 
-            <p className=" text-xl font-bold leading-tight text-gray-900 md:text-xl">
+            <p className=" text-xl font-semibold leading-tight text-gray-900 md:text-xl">
               We may share Your personal information in the following
               situations:
             </p>
             <ul>
               <li>
-                <p className="font-bold">With Service Providers:</p> We may
+                <p className="font-semibold">With Service Providers:</p> We may
                 share Your personal information with Service Providers to
                 monitor and analyze the use of our Service, to contact You.
               </li>
               <li>
-                <p className="font-bold">For business transfers:</p> We may
+                <p className="font-semibold">For business transfers:</p> We may
                 share or transfer Your personal information in connection with,
                 or during negotiations of, any merger, sale of Company /assets,
                 financing, or acquisition of all or a portion of Our business to
                 another company.
               </li>
               <li>
-                <p className="font-bold">With Affiliates:</p> We may share Your
+                <p className="font-semibold">With Affiliates:</p> We may share Your
                 information with Our affiliates, in which case we will require
                 those affiliates to honor this Privacy Policy. Affiliates
                 include Our parent company and any other subsidiaries, joint
@@ -334,25 +334,25 @@ function PrivacyPolicy() {
                 under common control with Us.
               </li>
               <li>
-                <p className="font-bold">With business partners:</p> We may
+                <p className="font-semibold">With business partners:</p> We may
                 share Your information with Our business partners to offer You
                 certain products, services or promotions.
               </li>
               <li>
-                <p className="font-bold">With other users:</p> when You share
+                <p className="font-semibold">With other users:</p> when You share
                 personal information or otherwise interact in the public areas
                 with other users, such information may be viewed by all users
                 and may be publicly distributed outside.
               </li>
               <li>
-                <p className="font-bold">With Your consent</p>: We may disclose
+                <p className="font-semibold">With Your consent</p>: We may disclose
                 Your personal information for any other purpose with Your
                 consent.
               </li>
             </ul>
 
             <h2 className="">
-              <p className="font-bold">Retention of Your Personal Data</p>
+              <p className="font-semibold">Retention of Your Personal Data</p>
             </h2>
             <p>
               The Company will retain Your Personal Data only for as long as is
@@ -393,7 +393,7 @@ function PrivacyPolicy() {
             </p>
 
             <h2 className="">
-              <p className="font-bold">Delete Your Personal Data</p>
+              <p className="font-semibold">Delete Your Personal Data</p>
             </h2>
 
             <p>
@@ -427,7 +427,7 @@ function PrivacyPolicy() {
             </p>
 
             <h2 className="">
-              <p className="font-bold">Law Enforcement</p>
+              <p className="font-semibold">Law Enforcement</p>
             </h2>
 
             <p>
@@ -438,7 +438,7 @@ function PrivacyPolicy() {
             </p>
 
             <h2 className="">
-              <p className="font-bold">Other legal requirements</p>
+              <p className="font-semibold">Other legal requirements</p>
             </h2>
             <p>
               The Company may disclose Your Personal Data in the good faith
@@ -459,7 +459,7 @@ function PrivacyPolicy() {
             </ul>
 
             <h2 className="">
-              <p className="font-bold">Security of Your Personal Data</p>
+              <p className="font-semibold">Security of Your Personal Data</p>
             </h2>
 
             <p>
@@ -470,7 +470,7 @@ function PrivacyPolicy() {
               We cannot guarantee its absolute security.
             </p>
 
-            <h1 className="text-xl font-bold leading-tight text-gray-900 md:text-xl">
+            <h1 className="text-xl font-semibold leading-tight text-gray-900 md:text-xl">
               Children`&apos;s Privacy
             </h1>
 
@@ -492,7 +492,7 @@ function PrivacyPolicy() {
             </p>
 
             <h1 className="">
-              <p className="font-bold">Links to Other Websites</p>
+              <p className="font-semibold">Links to Other Websites</p>
             </h1>
 
             <p>
@@ -526,7 +526,7 @@ function PrivacyPolicy() {
             </p>
 
             <h1 className="">
-              <p className="font-bold">Contact Us</p>
+              <p className="font-semibold">Contact Us</p>
             </h1>
             <p>
               If you have any questions about this Privacy Policy, You can

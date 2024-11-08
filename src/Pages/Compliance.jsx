@@ -13,10 +13,10 @@ function Compliance() {
                 <meta charSet="utf-8" />
                 <title>Compliance | Payscribe</title>
             </Helmet>
-        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto md:my-[3em] my-0">
           <div className="flex justify-center items-center">
             <div className="p-3 m-2 ">
-              <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
+              <span className="p-3 bg-black font-semibold text-white inline-flex rounded-xl my-3">
                 Compliance
               </span>
               <h2 className="md:text-6xl text-3xl leading-15">
@@ -44,7 +44,7 @@ function Compliance() {
         <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center md:order-2 order-1">
             <div className="p-3 m-2">
-              <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
+              <span className="p-3 bg-black font-semibold text-white inline-flex rounded-xl my-3">
                 Security
               </span>
               <h2 className="md:text-6xl text-3xl leading-15">
@@ -71,7 +71,7 @@ function Compliance() {
         <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center">
             <div className="p-3 m-2 ">
-              <span className="p-3 bg-black font-bold text-white inline-flex rounded-xl my-3">
+              <span className="p-3 bg-black font-semibold text-white inline-flex rounded-xl my-3">
                 Data
               </span>
               <h2 className="md:text-6xl text-3xl leading-15">

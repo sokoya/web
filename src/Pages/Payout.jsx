@@ -106,7 +106,7 @@ function Payout() {
         description="Instant payments to suppliers, employees, and partners, directly into their accounts."
         primaryLink="/start"
         primaryLinkText="Join Us"
-        secondaryLink="/support"
+        secondaryLink="/book-a-demo"
         secondaryLinkText="Contact Support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
@@ -127,7 +127,7 @@ function Payout() {
       <div className="md:m-10 m-5">
         <div className="flex justify-center ">
           <div className="w-[70%]">
-            <h2 className="text-5xl text-center my-5 text-black font-bold flex justify-center">
+            <h2 className="text-5xl text-center my-5 text-black font-semibold flex justify-center">
               Make multiple payments instantly and simutaneously
             </h2>
             <p className="text-slate-600 text-center flex justify-center my-2">
@@ -155,7 +155,7 @@ function Payout() {
                 </div>
               </div>
               <div>
-                <h5 className="font-bold">{block.title}</h5>
+                <h5 className="font-semibold">{block.title}</h5>
                 <p className="my-3 text-ls">{block.description}</p>
               </div>
             </motion.div>
@@ -176,7 +176,7 @@ function Payout() {
           linktext="Contact us"
           customActiveTabClass="bg-black text-white"
           customTabButtonClass="text-black"
-          customActiveContent="bg-black text-white font-bold"
+          customActiveContent="bg-black text-white font-semibold"
           customButtonClass="bg-primary text-white"
           customImageClass={'transform scale-[70%] '}
           mobilesliderclass=""
