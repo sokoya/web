@@ -52,8 +52,8 @@ function Footer() {
   return (
     <div className=''>
          <div className="relative bg-black px-2 py-1 text-sm overflow-hidden">
-         {/* <img src={Twinkle} className="absolute md:top-0 top-[100%] md:opacity-70 opacity-100 w-full h-full"/>  */}
          <img src={Overlay} className="absolute md:top-[10%] blue-filter transform rotate-[10deg] md:opacity-5 opacity-5 top-[50%] glower mx-auto md:h-[80%] h-[40%] md:left-[60%] left-[12%] "/> 
+
       {/* <img
         src={Lightning}
         className="md:block hidden non-selectable h-[100%] absolute -right-10 transform rotate-180 -bottom-40 opacity-[40%]"
