@@ -43,7 +43,7 @@ function LastBanner() {
             src={LastBannerImg}
             className="md:absolute relative h-full mx-auto transform"
           />
-          <Link to="https://wa.me/+2349024328949" target='_blank' className='absolute bottom-[78%] mx-auto md:opacity-[70%] opacity-[90%] md:w-12 md:h-12 h-[0.5em] w-[0.5em]'>
+          <Link to="https://wa.me/+2347038067493" target='_blank' className='absolute bottom-[78%] mx-auto md:opacity-[70%] opacity-[90%] md:w-12 md:h-12 h-[0.5em] w-[0.5em]'>
           <img
             src={Dev}
             className=""
