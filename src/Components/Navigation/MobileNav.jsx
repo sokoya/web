@@ -105,7 +105,8 @@ function MobileNav() {
       animate={openMenu ? 'open' : 'closed'}
     >
       <div className='my-2 mx-2'>
-        <img src={Logo} className='h-[2.6em] px-2' alt='Logo' />
+      <img src={Logo} className="h-[3.5em] py-2 md:px-10 bg-white rounded-lg" alt="Logo" />
+
       </div>
       <MobileMenuIcon setOpenMenu={setOpenMenu} />
 <hr className='my-5'/>

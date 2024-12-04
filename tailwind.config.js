@@ -5,17 +5,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Custom colors for light and dark themes
-        primary: '#1D4ED8', // blue
-        secondary: '#D97706', // amber
-        backgroundLight: '#EDEFFC', // light gray
-        backgroundDark: '#111827', // dark gray
-        textLight: '#1F2937', // dark text in light mode
-        textDark: '#030424', // light text in dark mode
+        primary: '#1D4ED8',
+        secondary: '#D97706', 
+        backgroundLight: '#EDEFFC',
+        backgroundDark: '#111827', 
+        textLight: '#1F2937', 
+        textDark: '#030424', 
         black: '#020414',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // You can customize this with a preferred font family
+        sans: ['Nunito', 'sans-serif'],
       },
       screens: {
         'xl': '1200px',
@@ -29,16 +28,16 @@ module.exports = {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'basic-gradient': 'linear-gradient(to bottom, #7e22ce, #4f46e5) ', // Use the HEX codes or Tailwind color names
+        'basic-gradient': 'linear-gradient(to bottom, #7e22ce, #4f46e5) ',
       },
     },
   },
   variants: {
     extend: {
-      backgroundColor: ['dark'], // Enable dark mode for background colors
-      textColor: ['dark'], // Enable dark mode for text colors
-      borderColor: ['dark'], // Enable dark mode for border colors
-      ringColor: ['dark'], // Enable dark mode for focus ring colors
+      backgroundColor: ['dark'], 
+      textColor: ['dark'], 
+      borderColor: ['dark'], 
+      ringColor: ['dark'], 
     },
   },
   plugins: [],

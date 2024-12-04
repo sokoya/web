@@ -94,7 +94,7 @@ const BusFAQs = () => {
         subtitle="You've got any questions?"
         description="Go through our FAQs to find the answer you're looking for."
         primaryLink="/start"
-        primaryLinkText="Join Us"
+        primaryLinkText="Create account"
         secondaryLink="/book-a-demo"
         secondaryLinkText="Contact Support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"

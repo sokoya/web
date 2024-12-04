@@ -23,14 +23,14 @@ const payoutData = [
     label: 'Lending',
     value: 'lending',
     title: 'Lending',
-    desc: `Skip manual processes, and instantly disburse loans to your customers after approval. Automate bulk payments to avoid tedious, repetitive admin work.`,
+    desc: `Use Payscribe Payout API to automate loan disbursements directly to borrowers' accounts. With instant, secure payouts, you can ensure that borrowers receive their funds without delay, improving customer satisfaction and accelerating the lending process.`,
     img: Transaction,
   },
   {
     label: 'Payroll',
     value: 'payroll',
     title: 'Payroll',
-    desc: `Seamlessly automate payroll, benefits, and leave management. Streamline your HR processes with our payroll, benefits, and leave management solutions.`,
+    desc: `Integrate Payscribe Payout API into your payroll system to instantly pay employees, contractors, or freelancers. Set up automated salary transfers in any currency, ensuring timely, hassle-free payments that keep your workforce happy and productive.`,
     img: Payroll,
   },
   // {
@@ -44,21 +44,21 @@ const payoutData = [
     label: 'MarketPlace',
     value: 'market-place',
     title: 'MarketPlace',
-    desc: `Make instant cost-effective payout to your suppliers, marketers or employees directly into their bank account`,
+    desc: `Empower your marketplace by integrating Payscribe Payout API to automate vendor payments. Instantly pay your sellers, whether it’s for commissions, earnings, or refunds, all through a simple, secure, and scalable payout system that helps grow your platform.`,
     img: Transfer,
   },
   {
     label: 'Mobility',
     value: 'mobility',
     title: 'Mobility',
-    desc: `Pay from anywhere, everywhere without any restriction or stress.`,
+    desc: `Integrate Payscribe Payout API to instantly pay your drivers, delivery personnel, or service providers as they complete their tasks. This ensures real-time, hassle-free payouts that enhance efficiency and support the fast-paced demands of the mobility industry.`,
     img: AroundWorld,
   },
   {
     label: 'Digital Payments',
     value: 'digital-payments',
     title: 'Digital Payments',
-    desc: `Payments have never been made easier with our easy to use API which you can integerate easily to your exsting applications at a very affordable price`,
+    desc: `Leverage Payscribe Payout API to streamline digital payments by instantly transferring funds to users, merchants, or service providers. With seamless integration, you can offer fast, secure payouts across borders, boosting your payment platform’s reliability and user satisfaction.`,
     img: OnlinePayments,
   }
 
@@ -68,26 +68,26 @@ const payoutData = [
 const blockData = [
   {
     icon: <IoBan className="text-4xl text-primary" />,
-    title: 'Efficient',
+    title: 'Streamlined Payouts',
     description:
-      'Eliminate data entry mistakes and automate reconciliation to improve efficiency',
+      'Experience seamless and efficient payout processes, ensuring quick and reliable transactions every time.',
   },
   {
     icon: <IoFlashOutline className="text-4xl text-primary" />,
-    title: 'Fast',
+    title: 'Instant Transfers',
     description:
-      'Instantly deploy thousands of payout with bulk disbursements',
+      "Send payouts instantly with our fast and secure system, reducing waiting times and enhancing your business's cash flow.",
   },
   {
     icon: <IoTimerOutline className="text-4xl text-primary" />,
-    title: 'Save Time',
+    title: 'Save Valuable Time',
     description:
-      'Reduce payment processing cost from traditional banks with a cost effective solution',
+      'Optimize your operations by cutting down on manual processes, allowing you to focus more on growing your business.',
   },
   {
     icon: <IoRocketOutline className="text-4xl text-primary" />,
-    title: 'Growth',
-    description: 'Integrate once, launch to new markets and drive growth on a global scale'
+    title: 'Fuel Business Growth',
+    description: 'Leverage our payout solutions to scale your business effortlessly, with reliable and timely payments driving your growth.'
   }
 ]
 
@@ -102,10 +102,10 @@ function Payout() {
       <HeroComponent
       customSectionStyle='-my-5'
         title="PAY OUT WITH EASE"
-        subtitle="Seamless financial transactions"
-        description="Instant payments to suppliers, employees, and partners, directly into their accounts."
-        primaryLink="/start"
-        primaryLinkText="Join Us"
+        subtitle="Payments, fund transfers, and money management"
+        description="Seamlessly handle transactions, move money across accounts, and manage funds with ease and security."
+        primaryLink="https://app.payscribe.ng/auth/create"
+        primaryLinkText="Create account"
         secondaryLink="/book-a-demo"
         secondaryLinkText="Contact Support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
@@ -117,22 +117,22 @@ function Payout() {
             {/* <img src={WhiteStar} alt="" className="absolute left-[55%] top-[65%]" />
             <img src={WhiteStar} alt="" className="absolute left-[60%] top-[50%]" /> */}
 
+
           </div>
         }
         columns={2}
         order={['text', 'image', 'additionalContent']}
-        customimgstyle='md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[22.5em]'
+        // customimgstyle='md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[22.5em]'
       />
 
       <div className="md:m-10 m-5">
         <div className="flex justify-center ">
           <div className="w-[70%]">
             <h2 className="text-5xl text-center my-5 text-black font-semibold flex justify-center">
-              Make multiple payments instantly and simutaneously
+              Make single/bulk payments instantly and simutaneously
             </h2>
             <p className="text-slate-600 text-center flex justify-center my-2">
-              With our API you can instantly send local and international
-              payouts anywhere
+            Our API & dashboard enables you to quickly process local and international payouts across Africa.
             </p>
           </div>
         </div>
@@ -174,6 +174,8 @@ function Payout() {
           customTabHeader='border-black'
           link="/contact"
           linktext="Contact us"
+          Seclink="https://app.payscribe.ng/auth/create"
+          Seclinktext="Get started"
           customActiveTabClass="bg-black text-white"
           customTabButtonClass="text-black"
           customActiveContent="bg-black text-white font-semibold"

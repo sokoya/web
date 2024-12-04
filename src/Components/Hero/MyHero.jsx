@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import Dashboard1 from '/assets/images/homepage/dashboard-img.png';
 import BannerArrowLeft from '/assets/images/homepage/bannerarrowleft.svg';
 import BannerArrowRight from '/assets/images/homepage/bannerarrowright.svg';
-import { show } from '../../animations';
+import { show, slideIn } from '../../animations';
 import IconLine from '../IconLine';
+import Overlay from '/assets/exports/overlay.png';
 
 
-// And is there a way I can write the animation code separately in a different file so I can use it here
 function Hero() {
   return (
     <>
@@ -18,16 +18,16 @@ function Hero() {
           <div className="lg:m-10 m-2">
             <div className='flex justify-center'>
             <motion.div
-              className="lg:mx-5 mx-1 md:my-5 my-10 md:w-[70%] w-full"
+              className="lg:mx-5 mx-1 md:mt-[0em] my-10 md:w-[80%] w-full"
               variants={show}
               initial="hidden"
               whileInView="show"
             >
               <motion.h2
                 variants={show}
-                className="text-white md:text-5xl text-3xl md:font-semibold text-center  "
+                className="text-white md:text-6xl text-3xl md:font-semibold text-center  "
               >
-               Versatile Payment Solution for your business needs
+                <span className='basic-gradient bg-clip-text md:span'>Empowering Businesses with the Future of </span> Financial Innovation<span className='span bg-clip-text'>.</span>
               </motion.h2>
             </motion.div>
             </div>
@@ -38,11 +38,8 @@ function Hero() {
                 whileInView="show"
                 className=" text-slate-400 text-lg md:text-md text-center md:w-[70%] w-full"
               >
-                Payscribe offers a robust payment infrastructure enabling
-                businesses to securely accept payments, issue USD/NGN cards for
-                seamless cross-border transactions, and provide comprehensive
-                financial services to their customers.
-              </motion.h2>
+               Payscribe provides businesses with a robust payment infrastructure to securely accept payments, issue USD/NGN cards for seamless cross-border transactions, and deliver a full range of financial services to enhance customer experience
+               </motion.h2>
             </div>
           </div>
           <motion.div
@@ -67,16 +64,37 @@ function Hero() {
             </Link>
             </div>
           </motion.div>
-          <IconLine />
-          <motion.div 
-           variants={show}
-           initial="hiddenimg"
-           whileInView="imageshow"
+          {/* <IconLine /> */}
+         
+          {/* <motion.div 
+           variants={slideIn}
+           initial="hidden"
+           whileInView="visible"
            transition={{ delay: 1.2 }} 
-           className='flex justify-center transform scale-60  mx-20 md:absolute my-[4em] md:my-0 md:hidden '>
+           className=' justify-end mx-28 transform xl:scale-[80%] relative scale-[220%] left-0 h-auto  md:hidden flex bottom-0'> */}
+            {/* <motion.div
+        className="icon-container absolute "
+        initial={{ scale: 1 }}
+        animate={ { scale: 1.2, filter: 'drop-shadow(0 0 10px #1D4ED8) drop-shadow(0 0 20px #1D4ED8) drop-shadow(0 0 30px #1D4ED8)' } }
+        transition={{ delay: 0.5, duration: 0.5 }}
+      > */}
+        {/* <FaStar className="icon" /> */}
+        {/* <Link to="/"><img src={Overlay} className='icon h-10'/></Link> */}
+
+      {/* </motion.div> */}
+      <motion.div className="relative md:hidden block"
+  variants={slideIn}
+  initial="hidden"
+  whileInView="visible"
+  transition={{ delay: 1.2 }} >
+  <motion.img src={Dashboard1}
+    // variants={show} // define a new variant for the inner element
+    // initial="hidden"
+    animate={ { filter: 'drop-shadow(0 0 10px #1D4ED8) drop-shadow(0 0 20px #1D4ED8)' } }
+    className='absolute transform scale-[180%] left-[16em] top-[7em] block' />
+</motion.div>
            
-            <img src={Dashboard1} className='  transform scale-[180%] block '/>
-          </motion.div>
+          {/* </motion.div> */}
 
           <motion.div 
            variants={show}

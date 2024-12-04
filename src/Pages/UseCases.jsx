@@ -18,6 +18,7 @@ function UseCases() {
         <title>Use Cases | Payscribe</title>
       </Helmet>
         <ContentComponent
+        className="md:-my-[6em]"
         title="Fintech"
         subtitle="You are one step away from launching our fintech solution."
         description="We help you build better Fintech products"
