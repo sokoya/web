@@ -12,6 +12,8 @@ function Compliance() {
          <Helmet>
                 <meta charSet="utf-8" />
                 <title>Compliance | Payscribe</title>
+                 <meta name="keywords" content="Payscribe complicance, payscribe security, payscribe data security" />
+
             </Helmet>
         <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto md:my-[3em] my-0">
           <div className="flex justify-center items-center">
@@ -41,7 +43,7 @@ function Compliance() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
+        <div className="grid md:grid-cols-2  grid-cols-1 md:m-[4.5em] m-1  h-screen md:h-auto">
           <div className="flex justify-center items-center md:order-2 order-1">
             <div className="p-3 m-2">
               <span className="p-3 bg-black font-semibold text-white inline-flex rounded-xl my-3">

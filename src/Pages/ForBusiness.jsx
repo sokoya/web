@@ -91,28 +91,28 @@ const gridData = [
     title: 'Unified Financial Platform',
     subtitle: 'Streamlined Transactions',
     content:
-      'Unlock seamless access to a wide range of financial services, all integrated into one platform to keep your business moving smoothly without the hassle of juggling multiple systems.',
+      "Access a full suite of financial services on one platform, simplifying operations and eliminating the stress of juggling multiple platforms.",
     image: Unified,
   },
   {
     title: 'Ironclad Security',
     subtitle: 'Effortless Protection',
     content:
-      'Rest easy knowing your transactions are backed by cutting-edge security protocols, ensuring the highest level of protection for your financial data.',
+      "At Payscribe, we believe your business truly matters, that's why we've integrated cutting-edge security protocols that safeguard your transactions and financial data at the highest level.",
     image: Security,
   },
   {
     title: 'Real-Time Insights',
     subtitle: 'Instant Financial Data',
     content:
-      'Stay ahead of the game with real-time access to critical financial data, giving you the power to make smart, quick decisions when they matter most.',
+      "Stay ahead with real-time access to critical financial data. You can now make fast, informed decisions when it matters most.",
     image: Data,
   },
   {
     title: 'Scalable Solutions',
     subtitle: 'Growth-Focused Flexibility',
     content:
-      'No matter where your business stands, our platform scales with you, providing tailored solutions that evolve as your company grows, from startups to industry leaders.',
+      "No matter your business size, our platform scales with you, offering tailored solutions to support growth from startups to industry leaders.",
     image: Growth,
   },
 ];
@@ -130,18 +130,19 @@ function ForBusiness() {
       <HeroComponent
         title="TAILORED FOR BUSINESS GROWTH"
         subtitle=" Comprehensive Financial Solutions Tailored for Your Business Growth."
-        description=" Empower your business with secure transactions, advanced management tools, and seamless financial integrations. Our innovative solutions streamline operations, boost efficiency, and drive sustainable growth, giving your business the edge it needs  to thrive."
-        primaryLink="/start"
-        primaryLinkText="Join Us"
-        secondaryLink="https://app.payscribe.ng/auth/create"
-        secondaryLinkText="Create a Free Account"
+        description="With Payscribe you now have access to secure transactions, advanced management tools, and seamless financial integrations, enabling you streamline your operations, boost efficiency, and achieve sustainable growth—giving you the competitive edge to thrive!"
+        secondaryLink="/book-a-demo"
+        secondaryLinkText="Book a demo"
+        primaryLink="https://app.payscribe.ng/auth/create"
+        primaryLinkText="Create a Free Account"
+        customimgstyle="scale-[70%] rotate-[-5deg]"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
         textColor="text-white"
         additionalImage={BusImg1}
         additionalContent={<p className="text-white"></p>}
         columns={2}
         order={['text', 'image']}
-        customimgstyle='md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[18em]'
+        // customimgstyle='md:scale-[80%] scale-[70%] md:-translate-y-0 -translate-y-[18em]'
       />
 
       <div>
@@ -173,14 +174,16 @@ function ForBusiness() {
               <div
                 className={`${[0, 3].includes(index) ? 'md:bg-slate-300 bg-white' : 'md:bg-black bg-slate md:text-white text-black'} space-x-2 md:p-5 p-1 md:m-5 m-1 md:rounded-xl rounded-none`}
               >
-                <div key={index} className=" grid grid-col-1">
+                <div key={index} className=" grid grid-cols-1">
                   <div className="flex justify-start md:order-1 order-2">
                     <img src={grid.image} className="transform scale-[70%]" />
                   </div>
-                  <div className="p-5 md:order-2 order-1">
+                  <div className="p-5 md:order-2 order-1 flex items-end">
+                    <div className='h-full'>
                     <h3 className="font-semibold p-1">{grid.title}</h3>
-                    <h2 className="font-semibold p-1">{grid.subtitle}</h2>
+                    {/* <h2 className="font-semibold p-1">{grid.subtitle}</h2> */}
                     <p className="p-1">{grid.content}</p>
+                    </div>
                   </div>
                   <hr className='md:hidden visible'/>
                 </div>

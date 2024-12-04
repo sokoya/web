@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import PropTypes from 'prop-types'
-import { useSwipeable } from 'react-swipeable'
-import { FaChevronLeft } from 'react-icons/fa'
-import { FaChevronRight } from 'react-icons/fa'
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
+import { useSwipeable } from 'react-swipeable';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export function TabsComponent({
   data,
@@ -15,6 +14,8 @@ export function TabsComponent({
   customTabHeader,
   link,
   linktext,
+  Seclink,
+  Seclinktext,
   customTabBg,
   customTabContainerClass,
   customTabButtonClass,
@@ -34,48 +35,55 @@ export function TabsComponent({
   ariaLabelTabList,
   ariaLabelTabButton,
 }) {
-  const [activeTab, setActiveTab] = useState(data.length ? data[0].value : null)
-  const tabIndex = data.findIndex((tab) => tab.value === activeTab)
+  const location = useLocation();
+  const headerRef = useRef(null);
+  const [activeTab, setActiveTab] = useState(data.length ? data[0].value : null);
+  const tabIndex = data.findIndex((tab) => tab.value === activeTab);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => handleSwipe('left'),
     onSwipedRight: () => handleSwipe('right'),
     trackTouch: true,
     preventScrollOnSwipe: true,
-  })
+  });
 
   const handleSwipe = (direction) => {
-    if (direction === 'left' && tabIndex < data.length - 1) {
-      setActiveTab(data[tabIndex + 1].value)
-    } else if (direction === 'right' && tabIndex > 0) {
-      setActiveTab(data[tabIndex - 1].value)
+    if (direction === 'left') {
+      setActiveTab(tabIndex < data.length - 1 ? data[tabIndex + 1].value : data[0].value);
+    } else if (direction === 'right') {
+      setActiveTab(tabIndex > 0 ? data[tabIndex - 1].value : data[data.length - 1].value);
     }
-  }
+  };
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const urlActiveTab = params.get('tab');
+    if (urlActiveTab && data.some((tab) => tab.value === urlActiveTab)) {
+      setActiveTab(urlActiveTab);
+      headerRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location, data]);
 
   useEffect(() => {
     if (onTabChange && activeTab) {
-      onTabChange(activeTab)
+      onTabChange(activeTab);
     }
-  }, [activeTab, onTabChange])
+  }, [activeTab, onTabChange]);
 
   useEffect(() => {
     if (onContentLoad && activeTab) {
-      onContentLoad(activeTab)
+      onContentLoad(activeTab);
     }
-  }, [onContentLoad, activeTab])
+  }, [onContentLoad, activeTab]);
 
   if (!data.length) {
-    return fallbackContent || <p>No tabs available</p>
+    return fallbackContent || <p>No tabs available</p>;
   }
 
   return (
-    <div
-      className={`bg-black ${customTabBg} flex flex-col items-center w-full`}
-    >
+    <div ref={headerRef} className={`bg-black ${customTabBg} flex flex-col items-center w-full`}>
       {/* Header Section */}
-      <div
-        className={`flex justify-center font-semibold  p-10 w-full ${customHeaderClass}`}
-      >
+      <div className={`flex justify-center font-semibold p-10 w-full ${customHeaderClass}`}>
         <div className="md:w-[50%] w-full m-3">
           <h2 className="text-center uppercase">{headerTitle}</h2>
           <p className="text-center md:text-4xl text-2xl m-5">
@@ -90,23 +98,14 @@ export function TabsComponent({
         aria-label={ariaLabelTabList || 'Tab List'}
         {...swipeHandlers}
       >
-        <div
-          className={`md:hidden flex justify-center w-full  ${mobilesliderclass}`}
-        >
+        <div className={`md:hidden flex justify-center w-full ${mobilesliderclass}`}>
           <div>
             <div>
-              <p className="text-center w-full p-3">
-                Swipe left and right to navigate
-              </p>
+              <p className="text-center w-full p-3">Swipe left and right to navigate</p>
             </div>
             <div className="flex justify-between items-center">
               <FaChevronLeft className="" />
-              {/* <div
-                className={`${customTabBg === 'bg-white' ? 'bg-black text-white' : 'bg-white text-black'} font-semibold text-center m-3 p-3   rounded-xl`}
-              > */}
-                <div
-                className={`${customActiveContent} text-black font-semibold text-center m-3 p-3 rounded-xl`}
-              >
+              <div className={`${customActiveContent} text-black font-semibold text-center m-3 p-3 rounded-xl`}>
                 {activeTab.toUpperCase()}
               </div>
               <FaChevronRight className="" />
@@ -114,30 +113,20 @@ export function TabsComponent({
           </div>
         </div>
 
-        <div
-          className={`hidden p-1 border-2  justify-center rounded-full w-max md:flex ${customTabHeader}`}
-        >
+        <div className={`hidden p-1 border-2 justify-center rounded-full w-max md:flex ${customTabHeader}`}>
           {data.map(({ label, value, index }) => (
             <button
               key={index}
               onClick={() => setActiveTab(value)}
               className={`p-3 font-semibold text-sm cursor-pointer whitespace-nowrap mx-1 transition duration-300 ease-in-out 
-          ${activeTab === value ? customActiveTabClass || 'bg-white text-black ' : customTabButtonClass || 'text-white hover:bg-gray-700 hover:bg-opacity-50'}
-          ${
-            [data[0].value, data[data.length - 1].value].includes(value)
-              ? data[0].value === value
-                ? 'rounded-l-full'
-                : 'rounded-r-full'
-              : ''
-          }
-          `}
+                ${activeTab === value ? customActiveTabClass || 'bg-white text-black ' : customTabButtonClass || 'text-white hover:bg-gray-700 hover:bg-opacity-50'}
+                ${[data[0].value, data[data.length - 1].value].includes(value)
+                  ? data[0].value === value ? 'rounded-l-full' : 'rounded-r-full' : ''}`}
               role="tab"
               aria-selected={activeTab === value}
               aria-controls={`tabpanel-${value}`}
               id={`tab-${value}`}
-              aria-label={
-                ariaLabelTabButton ? ariaLabelTabButton(label) : `Tab ${label}`
-              }
+              aria-label={ariaLabelTabButton ? ariaLabelTabButton(label) : `Tab ${label}`}
             >
               {label}
             </button>
@@ -146,29 +135,31 @@ export function TabsComponent({
       </div>
 
       {/* Tab Content */}
-      <div
-        className={`grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-5 p-5 w-full ${customContentPanelClass}`}
-      >
-        <div className="text-panel  p-4 items-center flex ">
+      <div className={`grid grid-cols-1 md:grid-cols-[4fr_5fr] gap-5 p-5 w-full ${customContentPanelClass}`}>
+        <div className="text-panel p-4 items-center flex">
           {data.map(({ value, title, desc }) => (
             <div
               key={value}
-              className={`${activeTab === value ? 'block' : 'hidden'} `}
+              className={`${activeTab === value ? 'block' : 'hidden'}`}
               role="tabpanel"
               id={`tabpanel-${value}`}
               aria-labelledby={`tab-${value}`}
             >
-              <div
-                className={`  ${customActiveContent} rounded-xl p-5 md:p-10 `}
-              >
+              <div className={` ${customActiveContent} rounded-xl p-5 md:p-10`}>
                 <h3 className="text-2xl md:text-3xl font-semibold">{title}</h3>
-                <p className=" my-3">{desc}</p>
+                <p className="my-3">{desc}</p>
                 {renderCustomButton && renderCustomButton(activeTab)}
                 <Link
                   to={link}
-                  className={`inline-block mt-5 p-2 md:p-3 rounded-lg  text-white font-semibold ${customButtonClass} hover:-translate-y-1 transform transition ease-in-out duration-300`}
+                  className={`inline-block mt-5 p-2 md:p-3 rounded-lg text-white font-semibold ${customButtonClass} hover:-translate-y-1 transform transition ease-in-out duration-300`}
                 >
                   {linktext}
+                </Link>
+                <Link
+                  to={Seclink || ''}
+                  className={`inline-block mt-5 p-2 mx-4 md:p-3 rounded-lg font-semibold ${customContentPanelClass} border-2 border-black hover:-translate-y-1 transform transition ease-in-out duration-300`}
+                >
+                  {Seclinktext}
                 </Link>
               </div>
               {renderExtraContent && renderExtraContent(activeTab)}
@@ -204,8 +195,9 @@ export function TabsComponent({
         </div>
       </div>
     </div>
-  )
+  );
 }
+
 
 TabsComponent.propTypes = {
   data: PropTypes.arrayOf(

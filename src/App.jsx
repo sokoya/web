@@ -25,6 +25,7 @@ import Gamepride from './Pages/CaseStudies/Gamepride';
 import Connekit from './Pages/CaseStudies/Connkit';
 import BusFAQs from './Pages/BusFaqs';
 import ScrollToTop from './Components/ScrollToTop';
+import BillsPayment from './Pages/BillsPayment';
 
 
 
@@ -62,6 +63,7 @@ const App = () => {
         <Route path='case-studies/gamepride' element={<Gamepride/>} />
         <Route path='case-studies/connekit' element={<Connekit/>} />
         <Route path="/business-faqs" element={<BusFAQs/>} />
+        <Route path="/bills-payment" element={<BillsPayment/>} />
       </Routes>
       <Footer/>
       {/* <NavigateToRoot/> */}

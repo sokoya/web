@@ -84,11 +84,11 @@ function About() {
             </Helmet>
             <HeroComponent
         customSectionStyle='my-10'
-        title="WHO WE ARE"
-        subtitle="Transforming Financial Services for Individuals, Businesses, and Beyond."
-        description="We are on a mission to bridge the gap between individuals and fintech innovation. By offering a platform that serves both personal finance and the sophisticated requirements of businesses, we’re creating a seamless ecosystem where everyone can thrive."
+        title="ABOUT US"
+        subtitle="Empowering Your Financial Journey"
+        description="At Payscribe, we’re more than just a financial solutions provider—we’re your partner in progress. Whether you’re a business looking to scale, an individual managing your money, or a freelancer navigating global opportunities, we’re here to make it easier for you to achieve your goals."
         primaryLink="/start"
-        primaryLinkText="Join Us"
+        primaryLinkText="Create account"
         secondaryLink="https://app.payscribe.ng/auth/create"
         secondaryLinkText="Create a Free Account"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
@@ -147,6 +147,10 @@ function About() {
         </div>
       </div>
 
+      <div>
+
+      </div>
+
       <div className="bg-black text-white z-10 flex justify-center">
         <div className="container p-8">
           <h1 className="text-3xl font-semibold text-center my-10">Our Team</h1>
@@ -172,6 +176,21 @@ function About() {
               </motion.div>
             ))}
           </motion.div> */}
+        </div>
+      </div>
+      <div>
+        <div className='md:m-5 m-2 my-10'>
+          <h2 className='text-primary text-center font-semibold text-2xl m-2'>Our Story</h2>
+          <p className='text-black text-center'>We started with a simple idea: to make financial services smarter, faster, and accessible to everyone. Today, that idea has evolved into a platform trusted by thousands for its reliability, innovation, and simplicity.</p>
+        </div>
+
+        <div className='md:m-5 m-2 my-10'>
+          <h2 className='text-primary text-center font-semibold text-2xl m-2'>What Makes Us Different?</h2>
+          <p className='text-black text-center'>Seamless Financial Solutions: From accepting payments to issuing cards and building financial tools, we bring everything together in one secure, easy-to-use platform.</p>
+        </div>
+
+        <div>
+          
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
@@ -29,7 +29,6 @@ const SocialMediaIcon = ({ platform, url, size = 24 }) => {
       style={{ color }}
     >
       {IconComponent && <IconComponent size={size} />}
-      {/* Tooltip */}
       <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 translate-y-2 px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         {label}
       </span>
