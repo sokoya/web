@@ -160,7 +160,7 @@ export function CaseStudyComponent({
 
         {/* Right Section: Integration & Product */}
         <div className=''>
-            <div className='sticky top-[5.5em] bg-black text-white p-5 rounded-3xl m-1'>
+            <div className='sticky top-[6.5em] bg-black text-white p-5 rounded-3xl m-1'>
           {/* Brand Integration */}
           <h3 className="text-xl font-semibold text-white">{brandIntegrationTitle}</h3>
           <ul className="mb-5">

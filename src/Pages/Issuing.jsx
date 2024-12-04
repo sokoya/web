@@ -16,38 +16,38 @@ import ContentComponent from '../Components/ContentComponent';
 
 const issuingData = [
   {
-    label: 'Smart Lending',
+    label: 'E-Commerce',
     value: 'lending',
-    title: 'Instant Loan Disbursement',
-    desc: `Transform your lending operations with automated loan disbursement. Skip the paperwork and instantly approve and transfer funds to your customers with minimal effort. No more tedious manual processes.`,
+    title: 'E-Commerce',
+    desc: `Streamline online transactions with secure virtual cards, making global purchases and vendor payments effortless for online retailers.`,
     img: TabBanner1,
   },
   {
-    label: 'Effortless Payroll',
+    label: 'Freelancers and Gig Economy',
     value: 'education',
-    title: 'HR Simplified for Education',
-    desc: `Empower your education institution with automated payroll and benefits management. Say goodbye to administrative headaches and streamline your HR processes with precision and ease.`,
+    title: 'Freelancers and Gig Economy',
+    desc: `Enable freelancers and gig workers to receive international payments and manage their funds with ease, supporting their global business needs.`,
     img: TabBanner2,
   },
   {
-    label: 'Fast Claims',
+    label: 'Travel and Hospitality',
     value: 'insurance',
-    title: 'Insurance Payouts Made Simple',
-    desc: `Deliver quick and reliable payouts to your policyholders. With our solution, you can meet expectations and settle claims efficiently, enhancing customer satisfaction.`,
+    title: 'Travel and Hospitality',
+    desc: `Provide travelers and hospitality businesses with a convenient way to handle foreign transactions, bookings, and cross-border payments.`,
     img: TabBanner3,
   },
   {
-    label: 'Marketplace Solutions',
+    label: 'Subscription Services',
     value: 'market-place',
-    title: 'Seamless Supplier Payouts',
-    desc: `Effortlessly pay your marketplace suppliers, marketers, or employees with our instant, cost-effective payout system. Direct deposits into bank accounts ensure smooth, hassle-free payments.`,
+    title: 'Subscription Services',
+    desc: `Optimize recurring payments for subscription-based businesses, ensuring reliable, hassle-free billing processes.`,
     img: TabBanner4,
   },
   {
-    label: 'Next-Gen Payments',
+    label: 'Tech Startups and SaaS Platforms',
     value: 'digital-payments',
-    title: 'Digital Transactions Reinvented',
-    desc: `Integrate our digital payment API with ease and transform your business. Experience seamless, affordable payments directly within your existing systems, delivering convenience at a fraction of the cost.`,
+    title: 'Tech Startups and SaaS Platforms',
+    desc: `Support startups and SaaS companies in managing international expenses, vendor payouts, and employee incentives with a unified card solution.`,
     img: TabBanner2,
   },
   {
@@ -64,19 +64,19 @@ const blockData = [
     icon: <IoCardOutline className="text-4xl text-primary" />,
     title: 'Customizable',
     description:
-      'Create a virtual card issuing solution that is fully branded as your own with our APIs.',
+      'Design a virtual card issuing solution that reflects your brand identity, seamlessly integrated with our powerful APIs',
   },
   {
     icon: <IoShieldHalfOutline  className="text-4xl text-primary" />,
-    title: 'Safe and Secure',
+    title: 'Robust Security You Can Trust',
     description:
-      'Prevent fraud from day 1 by leveraging our banking relationships and regulatory expertise.',
+      'Protect your business from day one with advanced fraud prevention, powered by our strong banking partnerships and deep regulatory expertise.',
   },
   {
     icon: <IoCashOutline  className="text-4xl text-primary" />,
-    title: 'Increase Profit Margin',
+    title: 'Maximize Revenue Potential',
     description:
-      'Unlock more revenue with shared profits on processing fees on every card transaction.',
+      'Earn more with every card transaction by sharing in the processing fees, boosting your profitability effortlessly.',
   }
 ]
 
@@ -90,11 +90,11 @@ function Issuing() {
             </Helmet>
       <HeroComponent
         title="CARD ISSUING"
-        subtitle="Collect virtual debit cards easily"
-        description="Everything you need to easily build, manage and scale a commercial virtual card issuing solution."
+        subtitle="Issue virtual debit cards easily"
+        description="With Payscribe's virtual card issuing solution, you can effortlessly create, manage, and scale commercial virtual debit cards. Our platform provides all the tools you need to streamline card issuance, making it simple to offer secure, customizable payment solutions to your customers."
         primaryLink="https://app.payscribe.ng/auth/create"
         customSectionStyle=''
-        primaryLinkText="Join us now"
+        primaryLinkText="Create account now"
         secondaryLink="/book-a-demo"
         secondaryLinkText="Contact support"
         // bgColor="bg-gradient-to-r from-purple-600 to-blue-500"
@@ -103,7 +103,7 @@ function Issuing() {
         additionalContent={<p className="text-white"></p>}
         columns={2}
         order={['text', 'image']} 
-        customimgstyle='md:scale-[80%] scale-[100%] md:-translate-y-0 -translate-y-[15em]'
+        // customimgstyle='md:scale-[80%] scale-[100%] md:-translate-y-0 -translate-y-[15em]'
       />
 
 <motion.div
@@ -118,7 +118,7 @@ function Issuing() {
                 variants={show} // Also apply variants to child elements
                 className="p-5  rounded-4xl"
               >
-                <div className="mx-5 my-10 flex justify-start">
+                <div className="my-10 flex justify-start">
                   <div className="p-5 bg-slate-50 rounded-2xl flex">{block.icon}</div>
                 </div>
                 <div>
@@ -133,10 +133,12 @@ function Issuing() {
         <TabsComponent
           data={issuingData}
           headerTitle="Virtual cards for any business"
-          headerDescription="Payscribe provides virtual debit cards that support a range of business models and industries."
+          headerDescription="Payscribe offers virtual debit cards designed to cater to diverse business models and industries."
           customTabBg = "bg-primary"
           link="/contact"
           linktext="Contact us"
+          Seclink="/book-a-demo"
+          Seclinktext="Book a demo"
           customActiveContent="bg-white"
           customButtonClass="text-white bg-black"
           customActiveTabClass="text-primary bg-white"
@@ -144,10 +146,14 @@ function Issuing() {
       </div>
       <div>
       <ContentComponent
-        title="Complete Payment Solutions"
-        subtitle="Handle transactions with ease"
-        description="Our platform offers fast and reliable payment solutions for businesses."
-        features={['Fast Payments', 'Global Coverage', 'Flexible Solutions']}
+        title="Complete Card Solutions"
+        subtitle="Handle card transactions with ease"
+        description="Seamlessly manage your virtual card issuance with a comprehensive solution designed to operate independently, giving you full control and flexibility"
+        features={[
+          '100% Whitelabel',
+          'Global Coverage',
+          'Flexible Solutions',
+          'Mastercard/Visa/Verve Cards']}
         primaryLinkText="Sign Up"
         customLinkStyle="text-white"
         primaryLink="https://app.payscribe.ng/auth/create"

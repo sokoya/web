@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     overflow-x: hidden;
@@ -39,4 +39,30 @@ $default-font-size: 16px;
 
 .blue-filter {
   filter: hue-rotate(180deg) saturate(1.5) brightness(1.2);
+}
+
+
+.rotate-360
+{
+  transform: rotate(45deg);
+  animation: 30s rotate360  alternate infinite;
+  transition: 300ms ease;
+}
+
+@keyframes rotate360 {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.deymove{
+  transform: translate(0em);
+  animation: 10s deymove alternate infinite;
+  transition: 300ms ease;
+}
+
+@keyframes deymove{
+  to{
+    transform: translate(40em) rotate(360deg);
+  }
 }
