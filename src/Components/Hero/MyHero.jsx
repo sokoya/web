@@ -27,7 +27,7 @@ function Hero() {
                 variants={show}
                 className="text-white md:text-6xl text-3xl md:font-semibold text-center  "
               >
-                <span className='basic-gradient bg-clip-text md:span'>Your Gateway to the Future of </span> Financial Innovation<span className='span bg-clip-text'>.</span>
+                <span className='basic-gradient bg-clip-text md:span'>Empowering Businesses with the Future of </span> Financial Innovation<span className='span bg-clip-text'>.</span>
               </motion.h2>
             </motion.div>
             </div>
@@ -38,8 +38,8 @@ function Hero() {
                 whileInView="show"
                 className=" text-slate-400 text-lg md:text-md text-center md:w-[70%] w-full"
               >
-               Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for seamless cross-border transactions, and provide comprehensive financial services to their customers.
-              </motion.h2>
+               Payscribe provides businesses with a robust payment infrastructure to securely accept payments, issue USD/NGN cards for seamless cross-border transactions, and deliver a full range of financial services to enhance customer experience
+               </motion.h2>
             </div>
           </div>
           <motion.div
