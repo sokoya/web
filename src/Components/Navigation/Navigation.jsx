@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.scss';
 import Logo from '/assets/images/payscribe_blk.png';
 import MobileNav from './MobileNav';
 import MobileMenuIcon from './MobileMenuIcon';
+import ScrollIndicator from '../ScrollIndicator';
 
 // Define menu items and submenus
 const menuItems = [
@@ -34,6 +35,21 @@ const menuItems = [
 
 const Navigation = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);  // Track the hovered menu
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   // Function to handle hover event
   const handleMouseEnter = (id) => {
@@ -47,23 +63,30 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="grid xl:grid-cols-[1fr_3fr] grid-cols-[1fr] sticky lg:p-4 md:p-3 p-4 w-full top-0 shadow-sm bg-white">
+      {/* <nav className="grid xl:grid-cols-[1fr_3fr] grid-cols-[1fr] fixed lg:p-6 md:p-3 p-4 w-full top-0 shadow-sm bg-white/5 backdrop-blur-lg"> */}
         {/* Logo Space */}
+        {/* <nav className=" md:fixed sticky lg:p-4 md:p-3 p-4 w-full top-0 shadow-sm bg-white md:bg-white/5 md:backdrop-blur-lg"> */}
+        <nav className={` lg:p-4 md:p-3 p-4 w-full top-0 shadow-sm bg-white md:bg-white/5 md:backdrop-blur-lg ${isSticky ? 'fixed' : 'sticky'}`}>
+        <div className='bg-whit  w-full grid xl:grid-cols-[1fr_3fr] grid-cols-[1fr] rounded-lg'>
         <div>
-          <Link to="/">
-            <img src={Logo} className="h-[2.6em] px-2" alt="Logo" />
+          <div><ScrollIndicator/></div>
+          
+          <div className='flex items-center'>
+          <Link to="/" >
+            <img src={Logo} className="h-[3.5em] py-2 md:px-10 bg-white rounded-lg" alt="Logo" />
           </Link>
+        </div>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="flex md:hidden absolute right-0 items-center h-full px-4">
-          <MobileMenuIcon />
-          <MobileNav />
+        <div className="flex md:hidden absolute right-0 items-center h-full px-4 my-1">
+          <MobileMenuIcon className="flex items-center" />
+          <MobileNav className="my-1"/>
         </div>
 
         {/* Desktop Navigation */}
         <div className="md:grid hidden grid-cols-[3fr_2fr]">
-          <ul className="space-x-5 flex font-semibold justify-center items-center">
+          <ul className="space-x-5 flex font-bold justify-center items-center bg-white rounded-lg">
             {menuItems.map((item) => (
               <li
                 key={item.id}
@@ -80,7 +103,7 @@ const Navigation = () => {
                   <div className="absolute bg-white shadow-lg rounded mt-0 w-[12em]">
                     <ul className="text-gray-700 w-full">
                       {item.subMenu.map((subItem, index) => (
-                        <li key={index} className="px-4 py-2 hover:bg-gray-100 text-sm">
+                        <li key={index} className="px-4 py-4 hover:bg-gray-100 text-sm">
                           <Link to={subItem.link}>{subItem.title}</Link>
                         </li>
                       ))}
@@ -109,6 +132,7 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
+          </div>
       </nav>
     </>
   );

@@ -1,7 +1,7 @@
 export const show = {
   hidden: { 
     opacity: 0, 
-    y: 150 
+    y: 100 
   },
   hiddenimg: { 
     opacity: 0, 
@@ -42,13 +42,13 @@ export const fadeIn = {
 };
 
 export const slideIn = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: 100 },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
       type: 'tween',
-      duration: 0.8,
+      duration: 1.8,
     },
   },
 };
@@ -113,7 +113,7 @@ export const menuVariant = {
     },
   },
   closed: {
-    clipPath: 'circle(30px at 92% 32px)',
+    clipPath: 'circle(30px at 92% 35px)',
     transition: {
       type: 'spring',
       stiffness: 400,

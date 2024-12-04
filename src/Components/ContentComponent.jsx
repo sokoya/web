@@ -24,7 +24,7 @@ const FeatureList = ({ features }) => {
       initial="hidden"
       whileInView="show"
       variants={listVariants}
-      className="grid grid-cols-1 my-2 w-full font-medium"
+      className="grid grid-cols-2 my-2 w-full font-medium"
     >
       {features.map((feature, index) => (
         <motion.li
@@ -63,7 +63,7 @@ const ContentComponent = ({
 }) => {
   return (
     <div
-      className={` ${bgColor} grid md:grid-cols-2 grid-cols-1 md:p-20 md:h-auto h-screen`} id={title}
+      className={` ${bgColor} grid md:grid-cols-2 grid-cols-1 md:p-20  h-screen`} id={title}
     >
       
       {imagePosition === 'left' && imageSrc && (

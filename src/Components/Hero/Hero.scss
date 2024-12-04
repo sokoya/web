@@ -1,0 +1,13 @@
+.main-text {
+    background: linear-gradient(to right, #ff0000, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .span 
+  {
+    -webkit-text-fill-color: transparent;
+    @apply bg-gradient-to-b from-pink-500 to-blue-400;
+    // @apply bg-basic-gradient
+
+  }
