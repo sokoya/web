@@ -10,7 +10,7 @@ function Connect() {
         brandCategory="Fintech"
         brandMoto="How Connekit-eo Transformed Fintech Solutions with Payscribe"
         brandName="Connekit-eo"
-        brandLocation="Nigeria, Madagasca"
+        brandLocation="Nigeria"
         aboutBrand="Connekit-eo is more than just a financial service provider; they are revolutionizing how businesses and individuals manage their finances. Focused on creating seamless, secure, and efficient transactions, Connekit-eo empowers people to streamline their financial operations in today's fast-paced digital world."
         howItStartedTitle="Built for financial freedom"
         howItStartedContent={
@@ -45,7 +45,7 @@ function Connect() {
         quotePerson0={{
           image:
             'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
-          name: 'Mialisoa Andrianasolo',
+          name: 'CEO',
         }}
         frustrationTitle="Partnering with Payscribe: Simplifying Financial Transactions"
         frustrationContent={
@@ -59,7 +59,7 @@ function Connect() {
                   that’s when we turned to Payscribe,
                 </b>
               </blockquote>{' '}
-              says Mialisoa Andrianasolo, CEO of Connekit-eo.
+              says CEO, CEO of Connekit-eo.
             </p>
             <p>
               Connekit-eo's key features required a robust Wallet solution, and
@@ -97,7 +97,7 @@ function Connect() {
         quotePerson1={{
           image:
             'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
-          name: 'Mialisoa Andrianasolo',
+          name: 'CEO',
         }}
         partnershipTitle="A Strong Partnership"
         partnershipContent={
@@ -138,10 +138,10 @@ function Connect() {
         quotePerson2={{
           image:
             'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
-          name: 'Mialisoa Andrianasolo',
+          name: 'CEO',
         }}
-        endingParagraph="Ready to take your business to the next level like Connekit-eo?"
-        endingButton2="Get started"
+        // endingParagraph="Ready to take your business to the next level like Connekit-eo?"
+        // endingButton2="Get started"
         brandIntegrationTitle="Integrations"
         brandIntegrationContent={[
           'Accounts API (Deposit accounts, Sub accounts)',

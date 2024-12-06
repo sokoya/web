@@ -20,7 +20,7 @@ function UseCases() {
         <ContentComponent
         className="md:-my-[6em]"
         title="Fintech"
-        subtitle="You are one step away from launching our fintech solution."
+        subtitle="You are one step away from launching your fintech solution."
         description="We help you build better Fintech products"
         features=
         {[

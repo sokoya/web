@@ -8,38 +8,51 @@ import FaqPhone from '/assets/exports/FaqPhone.svg'
 import WhiteStar from '/assets/exports/WhiteStar.svg'
 
 const faqData = [
-  {
-    question: 'How do I get started with creating a USD/NGN card?',
-    answer:
-      'It is as easy as signing up on Payscribe and following the instructions on our website.',
-  },
-  {
-    question: 'What is your return policy?',
-    answer: 'Our return policy allows returns within 30 days of purchase.',
-  },
-  {
-    question: 'How secure are the transactions made through your platform?',
-    answer:
-      'We have stringent security measures in place to ensure your transactions are safe.',
-  },
-  {
-    question: 'Can I use your payment links for international transactions?',
-    answer:
-      'Yes, you can use your payment links for international transactions.',
-  },
+{
+    question: "What services does Payscribe offer for businesses?",
+answer: "Payscribe provides a comprehensive suite of financial services, including secure payment acceptance, virtual debit card issuance in USD/NGN, and financial management tools to streamline your operations and grow your business."
+},
+ {
+  question: "How can my business accept payments using Payscribe?",
+answer: "With Payscribe, you can integrate our API or use the dashboard to accept payments from multiple channels, including bank transfers, and mobile wallets, enabling a seamless experience for your customers."
+},
+ {
+  question: "Can Payscribe support cross-border payments?",
+answer: "Yes, Payscribe enables businesses to process cross-border transactions effortlessly with support for multiple currencies, ensuring secure and fast international payouts and settlements."
+},
+ {
+  question: "How do I issue virtual cards through Payscribe?",
+answer: "Using Payscribe’s card issuing API, you can create and manage virtual USD/NGN debit cards for your business or customers, giving them secure and flexible payment options."
+},
+ {
+  question: "Is Payscribe suitable for small businesses and startups?",
+answer: "Absolutely! Payscribe is designed to scale with your business, offering affordable and flexible solutions tailored to meet the needs of small businesses and startups."
+},
+ {
+  question: "How secure is Payscribe’s platform?",
+answer: "Payscribe employs advanced encryption and complies with global security standards to ensure all transactions and data are secure and protected from fraud."
+},
+ {
+  question: "What industries does Payscribe support?",
+answer: "Payscribe supports a variety of industries, including e-commerce, lending, payroll, marketplaces, mobility, and digital payment platforms, with customizable solutions to fit each sector’s unique needs."
+},
+ {
+  question: "Can Payscribe handle recurring payments or subscriptions?",
+answer: "Yes, Payscribe supports recurring payments, making it easy for subscription-based businesses to automate billing cycles and ensure consistent cash flow."
+},
+ {
+  question: "How do I get started with Payscribe?",
+answer: "Getting started is simple! Sign up for a Payscribe business account, integrate our API or use the dashboard, and start accessing our robust financial services. Our support team is available to guide you through the process."
+},
+{
+  question: "What kind of customer support does Payscribe offer?",
+answer: "We provide dedicated support via email, live chat to assist you with integration, troubleshooting, and optimizing your experience with Payscribe."
+},
+  
   // {
   //   question: 'Who is the developer of this site?',
   //   answer: 'Alpha-dev',
   // },
-  
-  {
-    question: "How do I get started using payscribe?",
-    answer: "It is as easy as logging in and following the instructions from there"
-  },
-  {
-    question: "How do I test it all out?",
-    answer: "Click on Book a demo, schedule a meeting and you are all done"
-  }
 ]
 
 const FAQs = () => {
@@ -220,8 +233,8 @@ const FAQs = () => {
         ))}
       </div>
 
-      <div className="m-10 flex justify-center text-xl">
-        <p>
+      <div className="m-10 flex justify-center text-lg">
+        <p className='p-5 bg-primary/20 rounded-2xl text-primary'>
           Got more questions? Email us at{' '}
           <a href="mailto:hello@payscribe.ng">hello@payscribe.ng</a>
         </p>

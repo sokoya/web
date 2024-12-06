@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { IoLocationOutline } from "react-icons/io5";
+import LastBanner from './LastBanner';
 export function CaseStudyComponent({
   bgImage,
   bannerLink,
@@ -26,8 +27,8 @@ export function CaseStudyComponent({
   quoteBanner2,
   quotePerson2,
   quoteRole2,
-  endingParagraph,
-  endingButton2,
+  // endingParagraph,
+  // endingButton2,
   brandIntegrationTitle,
   brandIntegrationContent,
   productTitle,
@@ -41,7 +42,7 @@ export function CaseStudyComponent({
         <div className={`my-20 items-center ${bgImage} bg-[url('/assets/images/homepage/Screenshot (256).png')]`}>
       {/* Banner Link Back */}
       <div className="bg-gray-100 p-5">
-        <Link to='/case-studies' className="text-blue-600 hover:text-blue-800 ">
+        <Link to='/case-studies' className="text-blue-600 hover:text-blue-800 flex justify-start items-center h-full">
           ← Case Studies
         </Link>
       </div>
@@ -145,17 +146,17 @@ export function CaseStudyComponent({
           )}
 
 
-          <hr className="my-4 border-gray-300" />
+          {/* <hr className="my-4 border-gray-300" /> */}
 
           {/* Ending Buttons */}
-          <div className="md:flex block md:space-x-3 space-x-1">
+          {/* <div className="md:flex block md:space-x-3 space-x-1">
             <p className=" py-2 px-4">
               {endingParagraph}
             </p>
             <Link to='/book-a-demo' className="bg-gray-200 text-black py-2 px-4 rounded-lg">
               {endingButton2}
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section: Integration & Product */}
@@ -178,6 +179,7 @@ export function CaseStudyComponent({
           </ul></div>
         </div>
       </div>
+      <LastBanner/>
     </div>
   );
 }

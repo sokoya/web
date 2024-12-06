@@ -1,15 +1,25 @@
 import LastBannerImg from '/assets/images/homepage/lastbannerimg.png'
 
 import Dev from '/assets/exports/logo512.png';
+import Stroke from '/assets/exports/psStrokeW2.png';
 import { Link } from 'react-router-dom'
+import Overlay from '/assets/exports/logo-white.png'
+
 
 function LastBanner() {
   return (
     <div className="py-0 md:px-10 px-1 my-5">
     <div className="bg-[#144BC7] md:px-10 md:p-1 p-0 rounded-xl text-white overflow-hidden relative scale-[98%]">
+      <div className='absolute -z-20 w-full flex justify-center  items-center h-full'>
+        {/* <img src={Stroke} className='opacity-[20%] mr-10 scale-75'/> */}
+        <img
+          src={Overlay}
+          className="absolute md:top-[10%]  transform md:opacity-20 opacity-5 top-[50%] glower mx-auto md:h-[80%] h-[40%] glow "
+        />
+      </div>
       <div className="grid md:grid-cols-2 grid-cols-1 md:my-5 my-0">
         <div>
-        <div className="md:p-2 p-10 items-center md:m-5">
+        <div className="md:p-2 p-10 items-center md:m-5 z-10">
           <h2 className="text-md font-semibold my-1 md:my-2 text-3xl md:text-left text-center">
             Start Building Today
           </h2>
@@ -29,7 +39,7 @@ function LastBanner() {
               Start Building
             </Link>
             <Link
-              to="/book-a-demo"
+              to="/contact"
               className=" border-solid border mx-2 font-semibold p-3 rounded-lg w-full text-center my-1 bg-white text-black transition ease-in-out duration-300 transform hover:-translate-y-1 "
             >
               Contact us
