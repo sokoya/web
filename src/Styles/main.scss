@@ -41,6 +41,10 @@ $default-font-size: 16px;
   filter: hue-rotate(180deg) saturate(1.5) brightness(1.2);
 }
 
+.blue-filter {
+  filter: hue-rotate(0deg) saturate(1.5) brightness(1.2);
+}
+
 
 .rotate-360
 {

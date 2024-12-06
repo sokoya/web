@@ -90,7 +90,7 @@ function Hero() {
   <motion.img src={Dashboard1}
     // variants={show} // define a new variant for the inner element
     // initial="hidden"
-    animate={ { filter: 'drop-shadow(0 0 10px #1D4ED8) drop-shadow(0 0 20px #1D4ED8)' } }
+    // animate={ { filter: 'drop-shadow(0 0 10px #1D4ED8) drop-shadow(0 0 20px #1D4ED8)' } }
     className='absolute transform scale-[180%] left-[16em] top-[7em] block' />
 </motion.div>
            

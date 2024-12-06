@@ -83,7 +83,8 @@ function About() {
                 <title>About | Payscribe</title>
             </Helmet>
             <HeroComponent
-        customSectionStyle='my-10'
+                customSectionStyle="flex flex-col justify-center items-center m-0 h-screen w-screen z-10"
+
         title="ABOUT US"
         subtitle="Empowering Your Financial Journey"
         description="At Payscribe, we’re more than just a financial solutions provider—we’re your partner in progress. Whether you’re a business looking to scale, an individual managing your money, or a freelancer navigating global opportunities, we’re here to make it easier for you to achieve your goals."
