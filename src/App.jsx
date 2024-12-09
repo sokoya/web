@@ -2,6 +2,7 @@
 import './Styles/main.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
+import Terms from './Pages/Terms';
 import Individuals from './Pages/Individuals';
 import ForBusiness from './Pages/ForBusiness';
 import ForDevelopers from './Pages/ForDevelopers';
@@ -51,10 +52,11 @@ const App = () => {
         <Route path="/overview" element={<Overview />} />
         <Route path="/api-documentation" element={<APIDocumentation />} />
         <Route path="/about" element={<About />} />
-        <Route path="/book-a-demo" element={<ContactUs />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path='/pay-bills' element={<Paybills/>} />
         <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+        <Route path='/terms-and-conditions' element={<Terms/>} />
         <Route path='/compliance' element={<Compliance/>} />
         <Route path='/payout' element={<Payout/>} />
         <Route path='/card-issuing' element={<Issuing/>} />

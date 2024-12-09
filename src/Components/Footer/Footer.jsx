@@ -22,7 +22,7 @@ const lists = [
     title: 'For Businesses',
     items: [
       { title: 'Why Payscribe', link: '/for-business' },
-      { title: 'How It Works', link: 'https://developers.payscribe.ng/' },
+      // { title: 'How It Works', link: 'https://developers.payscribe.ng/' },
       // { title: 'Ambassadors', link: 'about' },
     ],
   },
@@ -40,7 +40,7 @@ const lists = [
   {
     title: 'Company',
     items: [
-      { title: 'About', link: '/about' },
+      // { title: 'About', link: '/about' },
       { title: 'Blog', link: 'https://blog.payscribe.ng/' },
       { title: 'Privacy Policy', link: '/privacy-policy' },
       { title: 'Terms and Conditions', link: 'terms-and-conditions' },
@@ -94,7 +94,7 @@ function Footer() {
             <div className="md:flex grid grid-cols-2 text-white text-2xl md:justify-start justify-center">
               <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform justify-center">
                 <IoLogoGooglePlaystore />{' '}
-                <span className="text-sm p-2 ">Android</span>
+                <span className="text-sm p-2 cursor-pointer" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.sokoyaphilip.payscribe', '_blank')}>Android</span>
               </div>
               <div className="flex p-2 md:my-0 my-2 bg-slate-500 mx-2 rounded-lg items-center hover:-translate-y-2 transition duration-300 ease-in-out transform justify-center">
                 <IoLogoApple /> <span className="text-sm p-2 ">iOS</span>

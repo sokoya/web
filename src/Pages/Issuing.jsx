@@ -89,6 +89,7 @@ function Issuing() {
                 <title>Card Issuing | Payscribe</title>
             </Helmet>
       <HeroComponent
+      main={"min-h-screen"}
         title="CARD ISSUING"
         subtitle="Issue virtual debit cards easily"
         description="With Payscribe's virtual card issuing solution, you can effortlessly create, manage, and scale commercial virtual debit cards. Our platform provides all the tools you need to streamline card issuance, making it simple to offer secure, customizable payment solutions to your customers."

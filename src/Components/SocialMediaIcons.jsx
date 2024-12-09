@@ -43,7 +43,7 @@ const SocialMediaIcons = ({ size }) => {
       <SocialMediaIcon platform="facebook" url="https://www.facebook.com/payscribe/" size={size} />
       <SocialMediaIcon platform="instagram" url="https://www.instagram.com/payscribe/?hl=en" size={size} />
       <SocialMediaIcon platform="linkedin" url="https://ng.linkedin.com/company/payscribe" size={size} />
-      <SocialMediaIcon platform="whatsapp" url="https://wa.me/+2349024328949" size={size} />
+      <SocialMediaIcon platform="whatsapp" url="https://wa.me/+2347038067493" size={size} />
       {/* <SocialMediaIcon platform="twitter" url="https://twitter.com" size={size} /> */}
     </div>
   );
