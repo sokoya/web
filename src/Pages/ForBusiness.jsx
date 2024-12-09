@@ -21,38 +21,51 @@ import HeroComponent from '../Components/HeroComponent'
 
 const businessData = [
   {
-    label: 'Accounts & Wallets',
+    label: 'Accounts and Wallets',
     value: 'accounts-wallets',
-    title: 'Effortless Financial Management for Your Customers',
-    desc: `Offer your users a streamlined way to manage their finances with integrated accounts and digital wallets. Our API enables businesses to set up secure, user-friendly financial tools that allow for seamless transactions, saving development time while boosting customer satisfaction.`,
+    title: 'Build seamless accounts and wallets with half the effort.',
+    desc: `Enable your customers to send, receive and store money in multiple currencies. \n With support for multiple currencies, your customers can enjoy greater flexibility and convenience in handling international payments.`,
     img: TabBanner1,
   },
   {
-    label: 'Card Issuance',
+    label: 'Card Issuing',
     value: 'issue-cards',
-    title: 'Issue USD/NGN Cards with Ease and Expand Financial Reach',
-    desc: `Enable your business to offer multi-currency card services, providing your customers with the flexibility to make both local and international payments. Our simplified card issuance platform accelerates the process of launching and managing USD/NGN cards, helping your business stay competitive in the financial landscape.`,
+    title: 'Card Issuing',
+    desc: `Expand your financial reach with seamless USD/NGN card issuance, enabling businesses to customize cards with their brand identity, creating a personalized and professional experience for their customers.`,
     img: TabBanner2,
   },
   {
-    label: 'Savings & Investments',
+    label: 'Savings & Investment',
     value: 'savings-investment',
-    title: 'Empower Users with Smart Savings & Investment Tools',
-    desc: `Attract and retain customers by integrating seamless savings and investment options into your fintech services. Our flexible platform allows businesses to offer robust financial growth opportunities with minimal setup, providing users with intuitive ways to save and invest directly from your application.`,
+    title: 'Boost savings and investments with minimal work',
+    desc: `Set up tailored target savings, fixed deposits, and investment solutions to help individuals and businesses achieve their financial objectives with ease and efficiency.`,
     img: TabBanner3,
   },
   {
     label: 'Bill Payments',
     value: 'bill-payments',
-    title: 'Simplify Bill Payments and Maximize User Convenience',
-    desc: `Make bill payments a breeze for your customers by integrating our efficient payment platform. With a user-friendly interface and hassle-free management, your business can offer customers a fast, reliable way to handle all their payment needs in one place.`,
+    title: 'Simplify bill payments with ease',
+    desc: (
+      <div>
+        <p>
+          Effortlessly manage local and international bill payments with a
+          streamlined and secure platform.
+        </p>
+        <p>
+          From utility bills to global subscriptions, simplify the way you
+          handle payments by offering a single platform for both local and
+          international transactions, ensuring convenience and reliability for
+          your customers.
+        </p>
+      </div>
+    ),
     img: TabBanner4,
   },
   {
     label: 'Cross-Border Transfers',
     value: 'cross-border-transfers',
-    title: 'Expand Globally with Secure Cross-Border Payments',
-    desc: `Unlock international growth by enabling cross-border payments. Our platform simplifies global financial transactions, allowing your business to offer seamless, secure transfers across borders with ease.`,
+    title: 'Unlock Global Growth with Secure Cross-Border Payments',
+    desc: `Expand your business globally by enabling secure cross-border payments. Our platform simplifies international financial transactions, allowing your business to offer seamless and secure transfers across borders with ease.`,
     img: TabBanner1,
   },
   {
@@ -68,21 +81,21 @@ const businessData = [
 const blockData = [
   {
     icon: <IoFlashOutline className="text-4xl text-primary" />,
-    title: 'Convenient and Quick Payments',
+    title: 'Fast and Hassle-Free Payments',
     description:
-      'Pay your bills conveniently and quickly. Our service ensures fast, hassle-free transactions, so you can manage your payments with ease and stay on top of your finances effortlessly.',
+      'Make payments with ease and speed. Our service ensures rapid, secure transactions, so you can manage your finances efficiently and stay on top of your bills.',
   },
   {
     icon: <MdOutlineDateRange className="text-4xl text-primary" />,
-    title: 'Track and Manage All Bills',
+    title: 'Streamlined Bill Management',
     description:
-      'Effortlessly track and manage all your bills in one place. Stay organized, avoid missed payments, and enjoy the convenience of our reliable service, keeping your finances in check.',
+      'Stay organized and in control of your finances. Our service allows you to track and manage all your bills in one place, ensuring you never miss a payment and keeping your finances on track.',
   },
   {
     icon: <MdLockOutline className="text-4xl text-primary" />,
-    title: 'Secure and Reliable Transactions',
+    title: 'Secure and Trustworthy Transactions',
     description:
-      'Pay your bills with confidence. Our secure and reliable service ensures that every transaction is safe and dependable, making it easy for you to manage your payments with peace of mind.',
+      'Pay your bills with confidence and peace of mind. Our secure and reliable service ensures that every transaction is protected and dependable, giving you complete control over your finances.',
   },
 ]
 
@@ -91,32 +104,31 @@ const gridData = [
     title: 'Unified Financial Platform',
     subtitle: 'Streamlined Transactions',
     content:
-      "Access a full suite of financial services on one platform, simplifying operations and eliminating the stress of juggling multiple platforms.",
+      "Unify your financial operations with Payscribe's comprehensive platform. Simplify your workflow and eliminate the burden of managing multiple financial systems. Experience seamless transactions and maximize your business efficiency.",
     image: Unified,
   },
   {
     title: 'Ironclad Security',
     subtitle: 'Effortless Protection',
     content:
-      "At Payscribe, we believe your business truly matters, that's why we've integrated cutting-edge security protocols that safeguard your transactions and financial data at the highest level.",
+      "At Payscribe, we prioritize the security of your financial data. Our cutting-edge security protocols safeguard your transactions and financial information, providing peace of mind and protecting your business from potential threats.",
     image: Security,
   },
   {
     title: 'Real-Time Insights',
     subtitle: 'Instant Financial Data',
     content:
-      "Stay ahead with real-time access to critical financial data. You can now make fast, informed decisions when it matters most.",
+      "Stay ahead with Payscribe's real-time access to critical financial data. Gain instant insights and make informed decisions that drive your business forward. Stay ahead of the competition and achieve your growth objectives.",
     image: Data,
   },
   {
     title: 'Scalable Solutions',
     subtitle: 'Growth-Focused Flexibility',
     content:
-      "No matter your business size, our platform scales with you, offering tailored solutions to support growth from startups to industry leaders.",
+      "Payscribe understands the unique needs of businesses at every stage of growth. Our platform adapts to your business size, offering tailored solutions that cater to your specific requirements. Whether you're a startup or a leading industry player, Payscribe provides the scalable flexibility you need to thrive and achieve your growth goals.",
     image: Growth,
   },
 ];
-
 
 function ForBusiness() {
   return (
@@ -128,9 +140,9 @@ function ForBusiness() {
       </Helmet>
 
       <HeroComponent
-        title="TAILORED FOR BUSINESS GROWTH"
-        subtitle=" Comprehensive Financial Solutions Tailored for Your Business Growth."
-        description="With Payscribe you now have access to secure transactions, advanced management tools, and seamless financial integrations, enabling you streamline your operations, boost efficiency, and achieve sustainable growth—giving you the competitive edge to thrive!"
+        title="Unlock Your Business Potential with Payscribe"
+        subtitle="Expert Financial Solutions Crafted for Ambitious Businesses Like Yours."
+        description="Payscribe empowers you with secure transactions, cutting-edge management tools, and effortless financial integrations. Streamline your operations, amplify efficiency, and drive sustainable growth - giving you the competitive advantage to succeed and thrive in today's fast-paced market."
         secondaryLink="/book-a-demo"
         secondaryLinkText="Book a demo"
         primaryLink="https://app.payscribe.ng/auth/create"
@@ -201,6 +213,8 @@ function ForBusiness() {
           link="https://app.payscribe.ng/auth/create"
   customHeaderClass="text-white"
           linktext="Create a free Account"
+            Seclink="/book-a-demo"
+            Seclinktext="Book a demo"
         />
       </div>
       <div>

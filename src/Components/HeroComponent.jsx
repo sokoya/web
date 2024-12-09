@@ -6,8 +6,8 @@ import Overlay from '/assets/exports/overlay.png'
 
 const HeroComponent = ({
   customSectionStyle = 'md:m-5 m-2',
-  title = 'FAST AND CONVENIENT',
-  subtitle = 'Payout has never been easier',
+  title = '',
+  subtitle = '',
   description = 'Send funds instantly to different suppliers, employees, and business partners in their local currency, straight to their bank accounts or digital wallets with Payscribe`s Payout.',
   primaryLink = 'https://app.payscribe.ng/auth/create',
   primaryLinkText = 'Get Started',
@@ -20,6 +20,7 @@ const HeroComponent = ({
   columns = 2,
   order = ['text', 'image'],
   customimgstyle = 'md:scale-[95%] rotate-[-5deg] scale-[90%]',
+  main,
 }) => {
   const renderElements = () => {
     return order.map((element, index) => {
@@ -101,7 +102,7 @@ const HeroComponent = ({
 
   return (
     <div
-      className={`min-h-screen ${bgColor} grid md:grid-cols-${columns} grid-cols-1 gap-4`}
+      className={` ${bgColor} grid md:grid-cols-${columns} grid-cols-1 gap-4 ${main}`}
     >
             <motion.div className='md:flex hidden absolute w-[20em] h-[20em] bg-white/10 backdrop-blur-xs top-[25%] rounded-3xl transform rotate-45 rotate-360 left-[35%]'></motion.div>
             <motion.div className='md:flex hidden absolute w-[10em] h-[10em] bg-white/10 backdrop-blur-xs bottom-[25%] rounded-3xl justify-center items-center transform rotate-45 rotate-360 right-[5%]'>

@@ -124,8 +124,8 @@ function Gamepride() {
             'https://media.licdn.com/dms/image/v2/D4D03AQGCLU2XhsuUbA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728172534441?e=2147483647&v=beta&t=SX63N6UTZLC4X5zjWu6LkLRDUpmR2fDlTLW0iu0uTy4',
           name: 'Uchenna Uzoma',
         }}
-        endingParagraph="Ready take a leap like Gamepride?"
-        endingButton2="Get started"
+        // endingParagraph="Ready take a leap like Gamepride?"
+        // endingButton2="Get started"
         brandIntegrationTitle="Integrations"
         brandIntegrationContent={['Accounts API (Deposit account, Sub accounts)', 'Collections API (Virtual Nuban, Payments)', 'Transfers API (NIP transfer, Book transfer)', 'Bills Payments API']}
         productTitle="Product"
