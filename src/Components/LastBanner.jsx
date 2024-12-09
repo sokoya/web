@@ -14,7 +14,7 @@ function LastBanner() {
         {/* <img src={Stroke} className='opacity-[20%] mr-10 scale-75'/> */}
         <img
           src={Overlay}
-          className="absolute md:top-[10%]  transform md:opacity-20 opacity-5 top-[50%] glower mx-auto md:h-[80%] h-[40%] glow "
+          className="absolute md:top-[10%]  transform md:opacity-20 opacity-5 top-[50%] glower mx-auto md:h-[80%] h-[15%] glow "
         />
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 md:my-5 my-0">

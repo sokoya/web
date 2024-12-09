@@ -22,7 +22,7 @@ function PrivacyPolicy() {
             <div className="faq-hero-text">
               <div className="faq-inner-text">
                 {/* <h5>HELP</h5> */}
-                <h2 className="font-semibold text-3xl">Privacy Policies</h2>
+                <h2 className="font-semibold md:text-3xl text-xl">Privacy Policies</h2>
               </div>
             </div>
           </div>

@@ -56,9 +56,9 @@ function ContactUs() {
         title=''
         subtitle='Contact us'
         description={''}/> */}
-<div className='flex justify-center items-center h-[60vh] bg-basic-gradient'>
+<div className='flex justify-center items-center h-[60vh] bg-basic-gradient w-full'>
   <div>
-<h2 className='text-white text-center font-semibold mb-5 md:mb-2 md:text-5xl text-2xl'>Contact us</h2>
+<h2 className='text-white text-center font-semibold mb-5 md:mb-2 md:text-5xl text-3xl'>Contact us</h2>
   </div>
 </div>
         <div className=' p-5 flex justify-center items-center w-full '>
@@ -71,12 +71,12 @@ function ContactUs() {
             hidden: { opacity: 0, y: 100 },
             show: { opacity: 1, y: 0 },
           }}
-        className="form-container p-5 w-[50%] bg-slate-200/50 backdrop-blur-2xl rounded-xl"
+        className="form-container p-5 md:w-[50%] w-full bg-slate-200/50 backdrop-blur-2xl rounded-xl"
         onSubmit={handleSubmit}
       >
         <h3 className="my-10 mt-10 text-sm p-3 font-medium text-center text-black/80">We want to send your question directly to the correct department and answer your questions as quickly as possible. To help us with this, we ask that you please complete the form below. Include any details you think may be helpful.</h3>
-        <div className="grid grid-cols-2">
-          <div className="m-5">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="md:m-5 m-3">
             <label className="font-semibold">Full name:</label>
             <br />
             <input
@@ -92,7 +92,7 @@ function ContactUs() {
             />
             {errors.name && <small className="text-red-500">{errors.name}</small>}
           </div>
-          <div className="m-5">
+          <div className="md:m-5 m-3">
             <label className="font-semibold">Email</label>
             <br />
             <input
@@ -110,7 +110,7 @@ function ContactUs() {
             {errors.email && <small className="text-red-500">{errors.email}</small>}
           </div>
         </div>
-        <div className="m-5">
+        <div className="md:m-5 m-3">
           <label className="font-semibold">Reason</label>
           <br />
           <select
@@ -124,14 +124,16 @@ function ContactUs() {
 
           >
             <option value="">Select an option</option>
-            <option value="Make Enquiries">Bills Paymentst</option>
-            <option value="Suggestion">Card Issuing</option>
-            <option value="Ask questions">Payment Collection</option>
-            <option value="Ask questions">Custom Request</option>
+            <option value="Bills Payment">Bills Payment</option>
+            <option value="Card Issuing">Card Issuing</option>
+            <option value="Payment Collection">Payment Collection</option>
+            <option value="Custom Request">Custom Request</option>
+            <option value="Payment links">Payment links</option>
+
           </select>
           {errors.reason && <small className="text-red-500">{errors.reason}</small>}
         </div>
-        <div className="m-5">
+        <div className="md:m-5 m-3">
           <label className="font-semibold">Description</label>
           <br />
           <textarea
@@ -151,7 +153,7 @@ function ContactUs() {
           <button
             type="submit"
             data-sitekey="6LdkXqQUAAAAAPlxlHzz763aYs4WGxY0eFntsc20" data-callback="onSubmit"
-            className=" g-recaptcha bg-primary text-white p-2 m-5 w-[80%] rounded-lg hover:bg-primary-dark transition duration-300"
+            className=" g-recaptcha bg-primary text-white p-2 md:m-5 m-3 w-[80%] rounded-lg hover:bg-primary-dark transition duration-300"
           >
             Send
           </button>

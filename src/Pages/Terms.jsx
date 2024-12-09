@@ -16,9 +16,10 @@ function Terms() {
          main="min-h-auto"
         customSectionStyle="flex flex-col justify-center mt-[5em] items-center m-0 w-screen z-10"
         columns={1}
-        title='Terms of use'
-        subtitle='Terms and Conditions for Payscribe'
-        description='Read below the terms of use of payscribe' />
+        title={<span className="text-center">Terms of use</span>}
+        subtitle={<span className="text-center">Terms and Conditions for Payscribe</span>}
+        description={<span className="text-center">Read below the terms of use of payscribe</span>}
+         />
 
         <div className='md:p-20 p-5'>
         <h2 className='font-bold text-black text-2xl my-5'>Payscribe’s Terms of Use</h2>
