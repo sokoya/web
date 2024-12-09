@@ -149,6 +149,7 @@ export function TabsComponent({
                 <h3 className="text-2xl md:text-3xl font-semibold">{title}</h3>
                 <p className="my-3">{desc}</p>
                 {renderCustomButton && renderCustomButton(activeTab)}
+                <div className="">
                 <Link
                   to={link}
                   className={`inline-block mt-5 p-2 md:p-3 rounded-lg text-white font-semibold ${customButtonClass} hover:-translate-y-1 transform transition ease-in-out duration-300`}
@@ -157,10 +158,13 @@ export function TabsComponent({
                 </Link>
                 <Link
                   to={Seclink || ''}
-                  className={`inline-block mt-5 p-2 md:mx-4 mx-0 md:p-3 rounded-lg font-semibold ${customContentPanelClass} border-2 outline-4 outline-red-600 border-black hover:-translate-y-1 transform transition ease-in-out duration-300`}
+                  className={`inline-block mt-5 p-2 mx-4md:p-3 rounded-lg font-semibold ${customContentPanelClass} ring-2   ring-black hover:-translate-y-1 transform transition ease-in-out duration-300`}
                 >
                   {Seclinktext}
                 </Link>
+                </div>
+
+               
               </div>
               {renderExtraContent && renderExtraContent(activeTab)}
             </div>
