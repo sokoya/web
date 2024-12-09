@@ -158,7 +158,7 @@ export function TabsComponent({
                 </Link>
                 <Link
                   to={Seclink || ''}
-                  className={`inline-block mt-5 p-2 mx-4md:p-3 rounded-lg font-semibold ${customContentPanelClass} ring-2   ring-black hover:-translate-y-1 transform transition ease-in-out duration-300`}
+                  className={`inline-block mt-5 p-2 mx-4 md:p-3 rounded-lg font-semibold ${customContentPanelClass} ring-2   ring-black hover:-translate-y-1 transform transition ease-in-out duration-300`}
                 >
                   {Seclinktext}
                 </Link>
