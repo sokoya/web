@@ -56,9 +56,9 @@ function ContactUs() {
         title=''
         subtitle='Contact us'
         description={''}/> */}
-<div className='flex justify-center items-center h-[60vh] bg-basic-gradient'>
+<div className='flex justify-center items-center h-[60vh] bg-basic-gradient w-full'>
   <div>
-<h2 className='text-white text-center font-semibold mb-5 md:mb-2 md:text-5xl text-2xl'>Contact us</h2>
+<h2 className='text-white text-center font-semibold mb-5 md:mb-2 md:text-5xl text-3xl'>Contact us</h2>
   </div>
 </div>
         <div className=' p-5 flex justify-center items-center w-full '>
@@ -124,10 +124,12 @@ function ContactUs() {
 
           >
             <option value="">Select an option</option>
-            <option value="Make Enquiries">Bills Paymentst</option>
-            <option value="Suggestion">Card Issuing</option>
-            <option value="Ask questions">Payment Collection</option>
-            <option value="Ask questions">Custom Request</option>
+            <option value="Bills Payment">Bills Payment</option>
+            <option value="Card Issuing">Card Issuing</option>
+            <option value="Payment Collection">Payment Collection</option>
+            <option value="Custom Request">Custom Request</option>
+            <option value="Payment links">Payment links</option>
+
           </select>
           {errors.reason && <small className="text-red-500">{errors.reason}</small>}
         </div>
