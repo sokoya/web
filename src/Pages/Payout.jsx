@@ -100,7 +100,7 @@ function Payout() {
         <title>Payout | Payscribe</title>
       </Helmet>
       <HeroComponent
-      customSectionStyle='-my-5'
+      customSectionStyle='md:-my-5 my-0'
         title="PAY OUT WITH EASE"
         subtitle="Payments, fund transfers, and money management"
         description="Seamlessly handle transactions, move money across accounts, and manage funds with ease and security."
