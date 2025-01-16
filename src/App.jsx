@@ -27,6 +27,8 @@ import Connekit from './Pages/CaseStudies/Connkit';
 import BusFAQs from './Pages/BusFaqs';
 import ScrollToTop from './Components/ScrollToTop';
 import BillsPayment from './Pages/BillsPayment';
+import Kredapay from './Pages/CaseStudies/Kredapay';
+import ErrorPage from './Pages/ErrorPage';
 
 
 
@@ -64,8 +66,10 @@ const App = () => {
         <Route path='/case-studies' element={<CaseStudy/>} />
         <Route path='case-studies/gamepride' element={<Gamepride/>} />
         <Route path='case-studies/connekit' element={<Connekit/>} />
+        <Route path='case-studies/kredapay' element={<Kredapay/>} />
         <Route path="/business-faqs" element={<BusFAQs/>} />
         <Route path="/bills-payment" element={<BillsPayment/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer/>
       {/* <NavigateToRoot/> */}

@@ -44,7 +44,7 @@ function Connect() {
         quoteRole0="CEO/Co-Founder, Connekit-eo"
         quotePerson0={{
           image:
-            'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
+            '',
           name: 'CEO',
         }}
         frustrationTitle="Partnering with Payscribe: Simplifying Financial Transactions"
@@ -96,7 +96,7 @@ function Connect() {
         quoteRole1="CEO/Co-Founder, Connekit-eo"
         quotePerson1={{
           image:
-            'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
+            '',
           name: 'CEO',
         }}
         partnershipTitle="A Strong Partnership"
@@ -137,7 +137,7 @@ function Connect() {
         quoteRole2="CEO/Co-Founder, Connekit-eo"
         quotePerson2={{
           image:
-            'https://media.licdn.com/dms/image/v2/D4E03AQFPSLomsC3CJQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714027844957?e=2147483647&v=beta&t=eCgNZPZeiTmFyEEeQ59h8cv0oLidOLZipJslstmtV5U',
+            '',
           name: 'CEO',
         }}
         // endingParagraph="Ready to take your business to the next level like Connekit-eo?"
