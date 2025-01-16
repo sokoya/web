@@ -17,6 +17,7 @@
     "antd": "^5.21.2",
     "eslint-config-prettier": "^9.1.0",
     "framer-motion": "^11.10.0",
+    "lucide-react": "^0.471.1",
     "prettier": "^3.3.3",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
