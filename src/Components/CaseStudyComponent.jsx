@@ -37,7 +37,7 @@ export function CaseStudyComponent({
   return (
     <div className="flex flex-col w-full relative md:p-10">
         <div className='flex justify-center'>
-            <img src={brandLogo} className='w-32 h-32' />
+            <img src={brandLogo} className=' h-32' />
         </div>
         <div className={`my-20 items-center ${bgImage} bg-[url('/assets/images/homepage/Screenshot (256).png')]`}>
       {/* Banner Link Back */}
@@ -52,7 +52,7 @@ export function CaseStudyComponent({
         <div className='items-center'>
 
         <div className="flex m-5 bg-gray-50">
-        <img src={brandLogo} alt={`${brandName} logo`} className="h-20 w-20 mr-4" />
+        <img src={brandLogo} alt={`${brandName} logo`} className="h-20 mr-4" />
           <span className=" text-white my-5 uppercase font-semibold p-3 rounded-xl bg-black flex justify-center md:w-[15%] w-auto">{brandCategory}</span>
        </div>
        <div className=''>
@@ -80,7 +80,7 @@ export function CaseStudyComponent({
               {quotePerson0 && (
                 <div className="flex items-center mt-4">
                   <img
-                    src={quotePerson0?.image}
+                    src={quotePerson0?.image || brandLogo}
                     alt={quotePerson0?.name}
                     className="h-10 w-10 rounded-full mr-3"
                   />
@@ -106,7 +106,7 @@ export function CaseStudyComponent({
               {quotePerson1 && (
                 <div className="flex items-center mt-4">
                   <img
-                    src={quotePerson1?.image}
+                    src={quotePerson1?.image || brandLogo}
                     alt={quotePerson1?.name}
                     className="h-10 w-10 rounded-full mr-3"
                   />
@@ -132,7 +132,7 @@ export function CaseStudyComponent({
               {quotePerson1 && (
                 <div className="flex items-center mt-4">
                   <img
-                    src={quotePerson2?.image}
+                    src={quotePerson2?.image || brandLogo}
                     alt={quotePerson2?.name}
                     className="h-10 w-10 rounded-full mr-3"
                   />
