@@ -33,6 +33,7 @@ const subMenus = {
     { id: 'comp1', title: 'About', url: '/about' },
     { id: 'comp2', title: 'Contact us' },
     { id: 'comp3', title: 'FAQs', url: '/faqs' },
+    { id: 'comp4', title: 'Affiliate', url: '/affiliate' },
   ],
 };
 
@@ -58,7 +59,7 @@ function MobileNav() {
         <motion.li
           key={index}
           className='my-2 '
-          variants={menuItemVariant} // Apply individual item variants
+          variants={menuItemVariant} 
         >
           <Link className='px-5 py-2 text-lg' onClick={() => handleMenuClick(section.id)} to={section.url}>
             {section.title}
@@ -66,26 +67,26 @@ function MobileNav() {
         </motion.li>
       ));
     } else {
-      // Render sub-menu with a back button
       return (
         <>
           <motion.li
-            className='my-2 '
+            className='mb-5 '
             variants={menuItemVariant}
             onClick={handleBackClick}
           >
             <button className='px-5 py-2 border-black border-2 border-l-0'>← Back</button>
           </motion.li>
           <motion.ul
-            variants={menuListVariant} // Apply staggering effect to sub-menu
+            variants={menuListVariant} 
             initial='hidden'
             animate='show'
+            className=' mobileul'
           >
             {subMenus[activeMenu].map((subItem, index) => (
               <motion.li
                 key={index}
-                className='my-2 '
-                variants={menuItemVariant} // Individual item variants for sub-menu
+                className={`${index < 1 ? `mb-2` : `my-2`}`}
+                variants={menuItemVariant}
               >
                 <Link className='px-5 py-2 text-lg' to={subItem.url} onClick={() => handleMenuClick()}>
                   {subItem.title}
@@ -111,7 +112,7 @@ function MobileNav() {
       <MobileMenuIcon setOpenMenu={setOpenMenu} />
 <hr className='my-5'/>
       <motion.ul
-        variants={menuListVariant} // Parent variant for staggering
+        variants={menuListVariant}
         initial='hidden'
         animate={openMenu ? 'show' : 'hidden'}
       >
