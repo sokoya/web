@@ -35,6 +35,7 @@ const menuItems = [
       // { title: 'About', link: '/about' },
       { title: 'Contact Us', link: '/contact' },
       { title: 'FAQs', link: '/faqs' },
+      // { title: 'Affiliate', link: '/affiliate' },
     ],
   },
 ]

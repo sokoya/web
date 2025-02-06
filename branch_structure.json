@@ -1,0 +1,39 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Alpha-dev",
+    "blog_refactor",
+    "dev",
+    "main",
+    "new",
+    "old",
+    "origin",
+    "seo",
+    "terms",
+    "uk"
+  ],
+  "parent": {
+    "Alpha-dev": "main",
+    "blog_refactor": "main",
+    "dev": "main",
+    "main": null,
+    "new": "main",
+    "old": "main",
+    "origin": "main",
+    "seo": "main",
+    "terms": "main",
+    "uk": "main"
+  },
+  "order": [
+    "main",
+    "Alpha-dev",
+    "blog_refactor",
+    "dev",
+    "new",
+    "old",
+    "origin",
+    "seo",
+    "terms",
+    "uk"
+  ]
+}

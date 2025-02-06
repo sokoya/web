@@ -29,6 +29,9 @@ import ScrollToTop from './Components/ScrollToTop';
 import BillsPayment from './Pages/BillsPayment';
 import Kredapay from './Pages/CaseStudies/Kredapay';
 import ErrorPage from './Pages/ErrorPage';
+import Affiliate from './Pages/Affiliate';
+import PartnersList from './Pages/PartnersList';
+import WhiteLabel from './Pages/WhiteLabel';
 
 
 
@@ -70,6 +73,9 @@ const App = () => {
         <Route path="/business-faqs" element={<BusFAQs/>} />
         <Route path="/bills-payment" element={<BillsPayment/>} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/affiliate" element={<Affiliate />} />
+        <Route path="/partners-list" element={<PartnersList />} />
+        <Route path='/whitelabel' element={<WhiteLabel />} />
       </Routes>
       <Footer/>
       {/* <NavigateToRoot/> */}
