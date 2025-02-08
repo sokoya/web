@@ -23,7 +23,7 @@ const lists = [
     items: [
       { title: 'Why Payscribe', link: '/for-business' },
       // { title: 'How It Works', link: 'https://developers.payscribe.ng/' },
-      // { title: 'Ambassadors', link: 'about' },
+      // { title: 'affiliates', link: 'about' },
     ],
   },
   {
@@ -40,7 +40,7 @@ const lists = [
   {
     title: 'Company',
     items: [
-      // { title: 'About', link: '/about' },
+      // { title: 'Become an Affiliate Partner', link: '/affiliate' },
       { title: 'Blog', link: 'https://blog.payscribe.ng/' },
       { title: 'Privacy Policy', link: '/privacy-policy' },
       { title: 'Terms and Conditions', link: 'terms-and-conditions' },
