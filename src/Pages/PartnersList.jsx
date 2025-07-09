@@ -10,7 +10,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
-import Button from '../components/Button'
+import Button from '../Components/Button'
 
 const placeholderPartners = [
   {
