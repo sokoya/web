@@ -82,9 +82,12 @@ function Footer() {
             <hr className='border-t-1 border-dashed ml-2 my-2 border-slate-500 w-[90%]'/>
             </div>
               <p className="text-slate-300 flex  md:p-3 p-1  z-10 text-sm">
-                Payscribe is a fintech company, not a bank. Banking services are
+                Payscribe (Pscribe Digital Services Ltd RC1946239) is a fintech company, not a bank. Banking services are
                 provided by licensed banks and financial institutions in their
                 respective jurisdictions.
+              </p>
+              <p>
+                <span>95 Oreta Road, Igbogbo <br />Ikorodu<br />Lagos Nigeria</span>
               </p>
             </div>
             <div>
