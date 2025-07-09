@@ -86,7 +86,7 @@ function Footer() {
                 provided by licensed banks and financial institutions in their
                 respective jurisdictions.
               </p>
-              <p>
+              <p className="text-slate-300 flex  md:p-3 p-1  z-10 text-sm">
                 <span>95 Oreta Road, Igbogbo <br />Ikorodu<br />Lagos Nigeria</span>
               </p>
             </div>
