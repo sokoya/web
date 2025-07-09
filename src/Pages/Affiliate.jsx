@@ -17,9 +17,9 @@ import {
   Rocket,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Button from '../components/Button';
-import GradientList from '../components/GradientList';
-import GradientNumberedCard from '../components/GradientNumberedCard';
+import Button from '../Components/Button';
+import GradientList from '../Components/GradientList';
+import GradientNumberedCard from '../Components/GradientNumberedCard';
 import { Helmet } from 'react-helmet';
 
 const partnertypes = [
