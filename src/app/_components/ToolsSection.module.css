@@ -1,0 +1,67 @@
+@keyframes glowSweep {
+  0% {
+    transform: translateX(-150%) rotate(18deg);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.14;
+  }
+  100% {
+    transform: translateX(180%) rotate(18deg);
+    opacity: 0;
+  }
+}
+
+.cardBase {
+  position: relative;
+  overflow: hidden;
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cardBase::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -35%;
+  width: 40%;
+  height: 140%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  pointer-events: none;
+  animation: glowSweep 2400ms ease-in-out both;
+  animation-delay: var(--sweep-delay, 0ms);
+}
+
+.cardBase:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(2, 4, 19, 0.08);
+}
+
+.ctaButton {
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ctaButton:hover {
+  transform: translateY(-0.5px);
+  box-shadow: 0 8px 14px rgba(33, 77, 192, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardBase::after,
+  .cardBase {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .cardBase,
+  .ctaButton {
+    transition: none !important;
+  }
+}
