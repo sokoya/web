@@ -3,7 +3,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { heroCtaPulse, heroDropFromTop, inViewFadeUp, inViewZoom } from "@/lib/animations";
+import {
+	heroCtaPulse,
+	heroDropFromTop,
+	inViewFadeUp,
+	inViewZoom,
+} from "@/lib/animations";
+import {
+	GamingIllustration,
+	HealthIllustration,
+	LogisticsIllustration,
+	PhoneIllustration,
+	RetailIllustration,
+} from "./illustrations";
 
 const SIGNUP_URL = "https://app.payscribe.ng/auth/create";
 
@@ -18,11 +30,12 @@ const USE_CASES: {
 }[] = [
 	{
 		key: "Fintech",
-		title: "You are one step away from launching your fintech solution.",
-		subtitle: "We help you build better Fintech products",
+		title: "Innovative solution for health services.",
+		subtitle: "We help you build and enhance health tech products.",
 		points: [
-			"Use Payscribe's account issuance APIs, digital wallet APIs, and card issuance APIs to go to market faster.",
-			"Offer a comprehensive suite of financial services with secure and reliable transactions.",
+			"Leverage Payscribe's bank accounts integration API for seamless health insurance premium management.",
+			"Implement Payscribe's savings feature for efficient health savings plans.",
+			"Integrate the card issuance API for convenient health service payments.",
 		],
 		illustration: <PhoneIllustration />,
 	},
@@ -34,37 +47,37 @@ const USE_CASES: {
 			"Collect consultation fees, subscriptions, and insurance payouts with unified payment rails.",
 			"Automate payouts to clinics, pharmacies, and practitioners with clear reporting.",
 		],
-		illustration: <PhoneIllustration />,
+		illustration: <HealthIllustration />,
 	},
 	{
 		key: "Retail",
-		title: "Build shopping experiences your customers love.",
-		subtitle: "From checkout to refunds, we've got you covered",
+		title: "Enhance your customers' retail experiences.",
+		subtitle: "We help you build and enhance better Retail products.",
 		points: [
-			"Accept card, bank transfer, and wallet payments in-store and online.",
-			"Manage settlements, refunds, and loyalty payouts from one dashboard.",
+			"Implement Payscribe's digital wallet APIs to provide customers with a convenient payment option.",
+			"Integrate Payscribe's card issuance APIs to issue branded cards for smoother transactions.",
 		],
-		illustration: <PhoneIllustration />,
+		illustration: <RetailIllustration />,
 	},
 	{
 		key: "Logistics",
-		title: "Keep deliveries and driver payouts running smoothly.",
-		subtitle: "Better cashflow for riders, drivers, and fleets",
+		title: "Efficient logistics operations.",
+		subtitle: "We help you build and enhance your Logistics products",
 		points: [
-			"Automate cash-on-delivery reconciliation and wallet top-ups.",
-			"Disburse earnings to drivers and partners in real time.",
+			"Use Payscribe's branded programmable cards API to simplify operations for riders and drivers.",
+			"Enable secure and efficient transactions with Payscribe's Digital Wallet APIs.",
 		],
-		illustration: <PhoneIllustration />,
+		illustration: <LogisticsIllustration />,
 	},
 	{
 		key: "Gaming",
-		title: "Monetize games with seamless, global payments.",
-		subtitle: "Focus on gameplay, not payment complexity",
+		title: "You are one step away from integrating our fintech solution.",
+		subtitle: "We help you build better payment solution for your gaming idea",
 		points: [
-			"Accept in-game purchases and subscriptions in multiple currencies.",
-			"Pay out to creators, streamers, and partners without friction.",
+			"Use Payscribe's account issuance APIs, digital wallet APIs, and card Issuance APIs to go to market faster.",
+			"Offer a comprehensive suite of financial services with secure and reliable transactions.",
 		],
-		illustration: <PhoneIllustration />,
+		illustration: <GamingIllustration />,
 	},
 ];
 
@@ -75,25 +88,6 @@ const TABS: UseCaseKey[] = [
 	"Logistics",
 	"Gaming",
 ];
-
-function PhoneIllustration() {
-	return (
-		<svg
-			viewBox='0 0 120 180'
-			fill='none'
-			xmlns='http://www.w3.org/2000/svg'
-			className='w-28 h-44 md:w-36 md:h-56 shrink-0'
-			aria-hidden='true'
-		>
-			{/* Phone body */}
-			<rect x='4' y='4' width='112' height='172' rx='18' fill='#2D55C8' />
-			{/* Screen */}
-			<rect x='16' y='22' width='88' height='118' rx='6' fill='#A8B9F0' />
-			{/* Home button */}
-			<circle cx='60' cy='158' r='10' fill='white' />
-		</svg>
-	);
-}
 
 const UseCaseTabs = () => {
 	const prefersReducedMotion = useReducedMotion();
@@ -106,13 +100,23 @@ const UseCaseTabs = () => {
 			<div className='mx-auto container px-5'>
 				{/* Outer wrapper — light blue-grey background, rounded */}
 				<motion.div
-					{...inViewZoom({ reduced: reducedMotion, delay: 0.05, duration: 0.95, amount: 0.25 })}
+					{...inViewZoom({
+						reduced: reducedMotion,
+						delay: 0.05,
+						duration: 0.95,
+						amount: 0.25,
+					})}
 					className='relative overflow-visible rounded-3xl'
 				>
 					<div className='flex flex-col md:flex-row'>
 						{/* ── Left: vertical tab list ── */}
 						<motion.div
-							{...inViewFadeUp({ reduced: reducedMotion, delay: 0.08, duration: 0.85, amount: 0.35 })}
+							{...inViewFadeUp({
+								reduced: reducedMotion,
+								delay: 0.08,
+								duration: 0.85,
+								amount: 0.35,
+							})}
 							className='flex flex-row flex-wrap gap-1 p-4 md:w-[220px] md:shrink-0 md:flex-col md:gap-0 md:p-0 md:pb-8 md:pt-8'
 						>
 							{TABS.map((tab) => {
@@ -143,9 +147,21 @@ const UseCaseTabs = () => {
 							<AnimatePresence mode='wait'>
 								<motion.div
 									key={active}
-									initial={reducedMotion ? undefined : { opacity: 0, y: 12, filter: "blur(6px)" }}
-									animate={reducedMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
-									exit={reducedMotion ? undefined : { opacity: 0, y: -10, filter: "blur(6px)" }}
+									initial={
+										reducedMotion
+											? undefined
+											: { opacity: 0, y: 12, filter: "blur(6px)" }
+									}
+									animate={
+										reducedMotion
+											? undefined
+											: { opacity: 1, y: 0, filter: "blur(0px)" }
+									}
+									exit={
+										reducedMotion
+											? undefined
+											: { opacity: 0, y: -10, filter: "blur(6px)" }
+									}
 									transition={
 										reducedMotion
 											? undefined
@@ -156,13 +172,23 @@ const UseCaseTabs = () => {
 									<div className='flex h-full flex-1 flex-col justify-between'>
 										<div>
 											<motion.h2
-												{...heroDropFromTop({ reduced: reducedMotion, delay: 0.05, duration: 0.85, amount: 0.3 })}
+												{...heroDropFromTop({
+													reduced: reducedMotion,
+													delay: 0.05,
+													duration: 0.85,
+													amount: 0.3,
+												})}
 												className='text-2xl font-medium leading-snug text-black md:text-4xl'
 											>
 												{current.title}
 											</motion.h2>
 											<motion.p
-												{...heroDropFromTop({ reduced: reducedMotion, delay: 0.12, duration: 0.8, amount: 0.3 })}
+												{...heroDropFromTop({
+													reduced: reducedMotion,
+													delay: 0.12,
+													duration: 0.8,
+													amount: 0.3,
+												})}
 												className='mt-4 text-sm font-medium text-slate-500'
 											>
 												{current.subtitle}
@@ -205,7 +231,12 @@ const UseCaseTabs = () => {
 									</div>
 
 									<motion.div
-										{...inViewZoom({ reduced: reducedMotion, delay: 0.1, duration: 0.85, amount: 0.6 })}
+										{...inViewZoom({
+											reduced: reducedMotion,
+											delay: 0.1,
+											duration: 0.85,
+											amount: 0.6,
+										})}
 										className='hidden shrink-0 items-center justify-center self-center md:flex'
 									>
 										{current.illustration}
