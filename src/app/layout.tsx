@@ -21,11 +21,6 @@ export const metadata: Metadata = {
 		"wallets",
 		"API",
 	],
-	icons: {
-		// Use public asset for maximum compatibility.
-		icon: [{ url: "/app-icon.png", type: "image/png" }],
-		apple: [{ url: "/app-icon.png", type: "image/png" }],
-	},
 };
 
 export default function RootLayout({
@@ -35,7 +30,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<head />
+			<head>
+				<link
+					rel='icon'
+					href='/app-icon.ico'
+					sizes='any'
+					type='image/png'
+				></link>
+			</head>
 			<body className='antialiased'>{children}</body>
 		</html>
 	);
