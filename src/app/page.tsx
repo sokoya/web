@@ -33,7 +33,7 @@ export default function Home() {
 		<div className='min-h-screen bg-gray-50 text-secondary'>
 			<Nav />
 			<Hero />
-			<SponsorSection />
+			{/* <SponsorSection /> */}
 			<ToolsSection />
 			<IntegrationSection />
 			<ServiceSection />
