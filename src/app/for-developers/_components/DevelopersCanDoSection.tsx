@@ -127,7 +127,7 @@ const FEATURES: Feature[] = [
 		category: "Other",
 	},
 	{
-		title: "Stablecoin (NEW)",
+		title: "Stablecoin",
 		description:
 			"Stablecoin rails and endpoints for modern cross-border flows.",
 		link: "https://docs.payscribe.co/#67e26a44-37bd-47fc-8bc5-e2a119e1eb1d",
