@@ -39,7 +39,7 @@ const StartBuilding = () => {
 			<Image
 				src={cardGroup}
 				alt='cardBg'
-				className='w-fit h-[400px] absolute bottom-0 right-10'
+				className='w-fit h-[400px] absolute bottom-0 right-10 hidden md:block'
 				width={500}
 				height={500}
 			/>
