@@ -1,0 +1,71 @@
+Payscribe Landing Page (Next.js) — LLM Instructions
+
+Purpose
+- Marketing site + content/blog/press pages.
+- Includes an admin dashboard for managing blog posts, press items, and contact submissions.
+
+Tech stack
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- MongoDB (admin/content backend)
+- Cloudinary (image upload/storage)
+
+Runtime requirements
+- Node.js: 24.x (see `package.json` engines and `.nvmrc`)
+
+How to run (local)
+- Install: `npm install`
+- Dev: `npm run dev` (http://localhost:3000)
+- Build: `npm run build`
+- Start: `npm run start`
+- Lint: `npm run lint`
+
+Key directories
+- `src/app/`: App Router pages (public + admin)
+- `src/app/api/`: API routes (admin + public)
+- `public/`: static assets
+- `scripts/`: utility scripts (e.g. admin creation/testing)
+
+Important pages (App Router)
+- `/` → `src/app/page.tsx`
+- `/blog` and `/blog/[slug]`
+- `/press`
+- `/contact-us`, `/book-a-demo`, `/faqs`, `/privacy-policy`, `/terms-and-conditions`, `/use-case`, etc.
+- Admin:
+  - `/admin/login` → login
+  - `/admin` → dashboard
+  - `/admin/blog`, `/admin/press`, `/admin/contact`
+
+API overview
+- Public:
+  - `POST /api/contact`
+  - `GET /api/press`
+  - `GET /api/blog`
+  - `GET /api/blog/[slug]`
+- Admin (cookie/JWT auth):
+  - `POST /api/admin/auth/login`, `GET /api/admin/auth/me`, `POST /api/admin/auth/logout`
+  - `GET /api/admin/dashboard`
+  - Blog CRUD: `/api/admin/blog`, `/api/admin/blog/[id]`, publish/unpublish
+  - Press CRUD: `/api/admin/press`, `/api/admin/press/[id]`
+  - Contact: `/api/admin/contact`, `/api/admin/contact/[id]`
+  - Upload: `/api/admin/upload/image`, `/api/admin/upload/image/delete`
+
+For route details and UI integration points
+- See `documentation.md`
+
+Redirects & images
+- Redirects are configured in `next.config.ts` (e.g. `/invoice` → `/invoicing`)
+- Remote images allowed from Cloudinary and Medium (see `next.config.ts`)
+
+Security / privacy (very important)
+- Do NOT read, print, or commit secrets.
+- This repo contains `.env` patterns in `.gitignore`, but local `.env` files may still exist.
+- Prefer using environment variables configured in your runtime (Vercel/local shell) and, if needed, create a sanitized `.env.example`.
+- Never include credentials (Mongo URI, JWT secrets, Cloudinary keys) in code changes, logs, or documentation output.
+
+What to optimize for when making changes
+- Keep public pages fast (avoid heavy client-side JS when possible).
+- Maintain SEO metadata and accessible UI.
+- Prefer server components by default; use client components only when necessary.
