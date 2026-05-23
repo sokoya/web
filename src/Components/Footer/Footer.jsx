@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { IoLogoGooglePlaystore, IoLogoApple } from 'react-icons/io5'
 import SocialMediaIcons from '../SocialMediaIcons'
 import Audit from '/assets/exports/ndpr-audit.svg'
-import PCIAudit from '/assets/exports/pci-audit.svg'
+import PCIAudit from '/assets/exports/pci-audit.png'
 // import Twinkle from '/assets/exports/star1.png'
 import Overlay from '/assets/exports/overlay.png'
 
@@ -89,8 +89,8 @@ function Footer() {
               </p>
             </div>
             <div className="md:flex grid grid-cols-2 text-white text-2xl md:justify-start justify-center">
-              <img src={Audit} className="h-[3em] px-2" alt="NDPR" />              
-              <img src={PCIAudit} className="h-[3em] px-2" alt="PCI DSS certified" />
+              <img src={Audit} className="h-[2em] px-2" alt="NDPR" />              
+              <img src={PCIAudit} className="h-[2em] px-2" alt="PCI DSS certified" />
             </div>
             <br />
             <div className="md:flex grid grid-cols-2 text-white text-2xl md:justify-start justify-center">
