@@ -173,6 +173,11 @@ export function Footer() {
 									FAQs
 								</Link>
 							</li>
+							<li>
+								<Link href='/blog' className='hover:text-white'>
+									Blog
+								</Link>
+							</li>
 							<li>Compliance</li>
 							<li>
 								<Link href='/book-a-demo' className='hover:text-white'>
@@ -196,8 +201,8 @@ export function Footer() {
 						<h4 className='font-semibold text-white'>Company</h4>
 						<ul className='space-y-4 text-slate-300'>
 							<li>
-								<Link href='/blog' className='hover:text-white'>
-									Blog
+								<Link href='/contact-us' className='hover:text-white'>
+									Contact Us
 								</Link>
 							</li>
 							<li>
@@ -208,6 +213,11 @@ export function Footer() {
 							<li>
 								<Link href='/privacy-policy' className='hover:text-white'>
 									Privacy Policy
+								</Link>
+							</li>
+							<li>
+								<Link href='/cookies-policy' className='hover:text-white'>
+									Cookies Policy
 								</Link>
 							</li>
 							<li>
