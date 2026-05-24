@@ -6,7 +6,7 @@ import whiteBg from "@/assets/images/white-bg.png";
 import { motion, useReducedMotion } from "framer-motion";
 import { heroCtaPulse, heroDropFromTop } from "@/lib/animations";
 
-export function CookiesPolicyHero() {
+export function ComplaintPolicyHero() {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedMotion = !!prefersReducedMotion;
 
@@ -33,26 +33,27 @@ export function CookiesPolicyHero() {
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.18, duration: 0.9 })}
 					className='mt-5 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl'
 				>
-					Cookie Policy
+					Complaint Policy
 				</motion.h1>
 				<motion.p
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.28, duration: 0.9 })}
 					className='mt-4 text-base text-slate-300 md:text-lg'
 				>
-					This policy explains what cookies are, which ones we use on our
-					platform, and how you can manage your preferences at any time.
+					We take every complaint seriously. This policy explains how to raise
+					a concern, how we will handle it, and what to do if you remain
+					dissatisfied with our response.
 				</motion.p>
 
 				<motion.div
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.38, duration: 0.85 })}
 					className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'
 				>
-					<Link href='#cookie-content' className='inline-flex'>
+					<Link href='#omplaints-content' className='inline-flex'>
 						<motion.span
 							{...heroCtaPulse(reducedMotion)}
 							className='rounded-full bg-primary px-10 py-3 text-sm font-semibold text-white'
 						>
-							Last updated: 23 May 2026 &mdash; Version 2.0
+							Last updated: 23 May 2026 &mdash; Version 1.0
 						</motion.span>
 					</Link>
 					<Link
