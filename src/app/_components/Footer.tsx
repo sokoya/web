@@ -220,9 +220,20 @@ export function Footer() {
 									Cookies Policy
 								</Link>
 							</li>
+							
 							<li>
 								<Link href='/terms-and-conditions' className='hover:text-white'>
 									Terms and Conditions
+								</Link>
+							</li>
+							<li>
+								<Link href='/complaints-policy' className='hover:text-white'>
+									Complaints Policy
+								</Link>
+							</li>
+							<li>
+								<Link href='/acceptable-use-policy' className='hover:text-white'>
+									Acceptable Use Policy
 								</Link>
 							</li>
 						</ul>

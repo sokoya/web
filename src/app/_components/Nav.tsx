@@ -36,9 +36,9 @@ export const Nav = ({
 					<Link href='/'>Home</Link>
 					<Link href='/for-business'>For Businesses</Link>
 					<Link href='/for-developers'>For Developers</Link>
-					<Link href='/contact-us'>Contact Us</Link>
+					{/* <Link href='/contact-us'>Contact Us</Link>
 					<Link href='/faqs'>FAQs</Link>
-					<Link href='/blog'>Blog</Link>
+					<Link href='/blog'>Blog</Link> */}
 				</nav>
 
 				<div className='hidden items-center gap-4 sm:flex'>
