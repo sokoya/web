@@ -6,7 +6,7 @@ import { TermsAndConditionsContent } from "./_components/TermsAndConditionsConte
 
 export const metadata: Metadata = {
 	title: "Terms and Conditions",
-	description: "Read Payscribe’s terms and conditions for using our platform and services.",
+	description: "Read Payscribe's terms and conditions for using our platform and services.",
 	keywords: ["Payscribe", "terms", "terms and conditions", "legal", "compliance"],
 };
 

@@ -28,19 +28,21 @@ export function TermsAndConditionsHero() {
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.1, duration: 0.75 })}
 					className='text-xs font-semibold uppercase tracking-[0.2em] text-slate-400'
 				>
-					Terms of Use
+					Legal
 				</motion.p>
 				<motion.h1
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.18, duration: 0.9 })}
 					className='mt-5 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl'
 				>
-					Terms and Conditions for Payscribe
+					Terms and Conditions
 				</motion.h1>
 				<motion.p
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.28, duration: 0.9 })}
 					className='mt-4 text-base text-slate-300 md:text-lg'
 				>
-					Read below the terms of use of payscribe
+					These Terms govern your access to and use of Payscribe&apos;s platform,
+					services, and applications. Please read them carefully before using our
+					services.
 				</motion.p>
 
 				<motion.div
@@ -52,7 +54,7 @@ export function TermsAndConditionsHero() {
 							{...heroCtaPulse(reducedMotion)}
 							className='rounded-full bg-primary px-10 py-3 text-sm font-semibold text-white'
 						>
-							Get Started
+							Last updated: 23 May 2026 &mdash; Version 2.0
 						</motion.span>
 					</Link>
 					<Link
@@ -77,7 +79,7 @@ export function TermsAndConditionsHero() {
 					/>
 				</svg>
 			</div>
+			
 		</section>
 	);
 }
-

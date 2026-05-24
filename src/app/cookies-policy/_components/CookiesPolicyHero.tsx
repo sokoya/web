@@ -6,7 +6,7 @@ import whiteBg from "@/assets/images/white-bg.png";
 import { motion, useReducedMotion } from "framer-motion";
 import { heroCtaPulse, heroDropFromTop } from "@/lib/animations";
 
-export function PrivacyPolicyHero() {
+export function CookiesPolicyHero() {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedMotion = !!prefersReducedMotion;
 
@@ -33,14 +33,14 @@ export function PrivacyPolicyHero() {
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.18, duration: 0.9 })}
 					className='mt-5 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl'
 				>
-					Privacy Policy
+					Cookie Policy
 				</motion.h1>
 				<motion.p
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.28, duration: 0.9 })}
 					className='mt-4 text-base text-slate-300 md:text-lg'
-				>We are committed to protecting your personal data. This policy explains
-					what we collect, how we use it, and the rights you have over your
-					information.
+				>
+					This policy explains what cookies are, which ones we use on our
+					platform, and how you can manage your preferences at any time.
 				</motion.p>
 
 				<motion.div
