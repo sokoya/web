@@ -18,15 +18,10 @@ export function Footer() {
 						priority
 					/>
 					<p className='text-sm leading-relaxed text-slate-300'>
-						Payscribe offers a robust payment infrastructure enabling businesses
-						to securely accept payments, issue USD/NGN cards for seamless
-						cross-border transactions, and provide comprehensive financial
-						services to their customers. Also available for individuals.
+						Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available for individuals.
 					</p>
 					<p className='text-xs leading-relaxed text-slate-400'>
-						Payscribe (Pscribe Digital Services Ltd RC1946239) is a fintech
-						company, not a bank. Banking services are provided by licensed banks
-						and financial institutions in their respective jurisdictions.
+						Payscribe is the trading name of Payscribe Limited (registered in England and Wales, Company No. 17196544, ICO Registration No. ZC155519) and its affiliated Nigerian entity, Pscribe Digital Services Limited (RC1946239). Payscribe is a fintech company, not a bank. Banking and safeguarding services are provided by licensed banks and authorised financial institutions in their respective jurisdictions.
 					</p>
 
 					<div className='flex gap-3 pt-2'>
@@ -267,18 +262,28 @@ export function Footer() {
 
 				{/* App buttons */}
 				<div className='flex items-center gap-3'>
-					<button className='flex items-center gap-2 rounded-full bg-slate-800 px-5 py-3 text-sm font-semibold text-white'>
+					<a
+							href='https://play.google.com/store/apps/details?id=com.sokoyaphilip.payscribe&hl=en_GB'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label='Payscribe on Android'
+							className='flex items-center gap-2 rounded-full bg-slate-800 px-5 py-3 text-sm font-semibold text-white'>
 						<svg className='h-4 w-4' fill='currentColor' viewBox='0 0 24 24'>
 							<path d='M3 20.5v-17c0-.83 1-.83 1.5-.5l14 8.5-14 8.5c-.5.33-1.5.33-1.5-.5z' />
 						</svg>
 						Android
-					</button>
-					<button className='flex items-center gap-2 rounded-full bg-slate-700 px-5 py-3 text-sm font-semibold text-white'>
+					</a>
+					<a
+							href='https://apps.apple.com/us/app/payscribe-save-spend-earn/id1671409069'
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label='Payscribe on iOS'
+							className='flex items-center gap-2 rounded-full bg-slate-800 px-5 py-3 text-sm font-semibold text-white'>
 						<svg className='h-4 w-4' fill='currentColor' viewBox='0 0 24 24'>
 							<path d='M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z' />
 						</svg>
 						iOS
-					</button>
+					</a>
 				</div>
 			</div>
 		</footer>
