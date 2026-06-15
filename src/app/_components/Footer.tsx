@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import footerLogo from "@/assets/images/logo-white.png";
 import ndprlogo from "@/assets/images/footer-logo.png";
+import { CountrySwitcher } from "@/app/_components/CountrySwitcher";
 
 const year = new Date().getFullYear();
 
@@ -261,7 +262,8 @@ export function Footer() {
 				/>
 
 				{/* App buttons */}
-				<div className='flex items-center gap-3'>
+				<div className='flex flex-wrap items-center justify-center gap-3'>
+					<CountrySwitcher />
 					<a
 							href='https://play.google.com/store/apps/details?id=com.sokoyaphilip.payscribe&hl=en_GB'
 							target='_blank'
