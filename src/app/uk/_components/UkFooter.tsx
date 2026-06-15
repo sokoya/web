@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CountrySwitcher } from "@/app/_components/CountrySwitcher";
 import footerLogo from "@/assets/images/logo-white.png";
 
 const POLICY_LINKS = [
@@ -51,6 +52,10 @@ export function UkFooter() {
 					and authorised financial institutions in their respective
 					jurisdictions.
 				</p>
+
+				<div className='mt-8'>
+					<CountrySwitcher defaultCountry='uk' />
+				</div>
 			</div>
 		</footer>
 	);

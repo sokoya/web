@@ -24,14 +24,15 @@ export function UkNav() {
 						className='w-[110px] object-contain'
 						priority
 					/>
-					<span className='hidden rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-slate-500 sm:inline'>
-						United Kingdom
-					</span>
 				</Link>
 
 				<nav className='hidden items-center gap-8 text-sm font-medium text-slate-600 lg:flex'>
 					{NAV_LINKS.map((link) => (
-						<Link key={link.href} href={link.href} className='hover:text-primary'>
+						<Link
+							key={link.href}
+							href={link.href}
+							className='hover:text-primary'
+						>
 							{link.label}
 						</Link>
 					))}
