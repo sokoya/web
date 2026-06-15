@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nav } from "./_components/Nav";
 import { Hero } from "./_components/Hero";
 import { Footer } from "./_components/Footer";
+import { EntityDisclaimerModal } from "./_components/EntityDisclaimerModal";
 import SponsorSection from "./_components/sponsorSection";
 import { ToolsSection } from "./_components/ToolsSection";
 import { IntegrationSection } from "./_components/IntegrationSection";
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<div className='min-h-screen bg-gray-50 text-secondary'>
+			<EntityDisclaimerModal />
 			<Nav />
 			<Hero />
 			{/* <SponsorSection /> */}
