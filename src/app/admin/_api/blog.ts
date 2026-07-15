@@ -3,7 +3,7 @@
 import { adminApi } from "./client";
 
 export type BlogStatus = "draft" | "published";
-export type BlogCategory = "Company" | "Product" | "Finance" | "API";
+export type BlogCategory = "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
 
 export type BlogPostRow = {
   id: string;
@@ -82,4 +82,3 @@ export async function updatePost(
   const res = await adminApi.patch(`/api/admin/blog/${id}`, input);
   return res.data as { ok: true };
 }
-

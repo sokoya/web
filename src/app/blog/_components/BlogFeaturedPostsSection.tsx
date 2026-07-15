@@ -8,7 +8,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { heroDropFromTop, inViewZoom } from "@/lib/animations";
 
-type Category = "All" | "Company" | "Product" | "Finance" | "API";
+type Category = "All" | "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
 
 type FeaturedPost = {
 	id: string;
@@ -23,7 +23,7 @@ type FeaturedPost = {
 	coverImageUrl?: string | null;
 };
 
-const categories: Category[] = ["All", "Company", "Product", "Finance", "API"];
+const categories: Category[] = ["All", "Company", "Product", "Finance", "API", "Engineering", "Documentation"];
 
 export function BlogFeaturedPostsSection({
 	posts,
@@ -196,4 +196,3 @@ export function BlogFeaturedPostsSection({
 		</section>
 	);
 }
-
