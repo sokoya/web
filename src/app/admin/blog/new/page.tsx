@@ -10,7 +10,7 @@ import { getApiErrorMessage } from "../../_api/client";
 import { createPost } from "../../_api/blog";
 import { uploadImage } from "../../_api/upload";
 
-type Category = "Company" | "Product" | "Finance" | "API";
+type Category = "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
 
 export default function AdminBlogNewPage() {
   const router = useRouter();
@@ -223,6 +223,8 @@ export default function AdminBlogNewPage() {
                     <option value="Product">Product</option>
                     <option value="Finance">Finance</option>
                     <option value="API">API</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Documentation">Documentation</option>
                   </select>
                 </div>
                 <div className="space-y-2">
@@ -273,7 +275,7 @@ export default function AdminBlogNewPage() {
               minHeight="360px"
             />
             <p className="text-xs text-slate-500">
-              Images inserted in the editor are stored inline. Cover image uploads to Cloudinary.
+              Use the code-block control for snippets and the quote control for notes or callouts. Images inserted in the editor are stored inline.
             </p>
           </div>
 
@@ -305,4 +307,3 @@ export default function AdminBlogNewPage() {
     </AdminShell>
   );
 }
-

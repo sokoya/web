@@ -6,7 +6,7 @@ export type PublicBlogPost = {
   title: string;
   slug: string;
   excerpt?: string;
-  category: "Company" | "Product" | "Finance" | "API";
+  category: "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
   contentHtml?: string;
   coverImageUrl?: string | null;
   publishedAt?: string | Date | null;
@@ -38,4 +38,3 @@ export async function getPublishedPostBySlugFromApi(slug: string): Promise<Publi
   if (!data?.ok || !data.post) return null;
   return data.post;
 }
-

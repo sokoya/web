@@ -66,7 +66,11 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className='antialiased'>
 				{children}
-		        <CookiesBanner />
+				<CookiesBanner />
+				{/* <script
+					src='https://payscribe-crm.vercel.app/support-widget.js'
+					data-merchant-id='BIZ-00003'
+				></script> */}
 			</body>
 		</html>
 	);

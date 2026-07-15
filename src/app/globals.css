@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
 
 :root {
   --background: #edf4fb;
@@ -64,4 +65,91 @@ body {
   .uk-corridor-pulse {
     animation: uk-corridor-travel 3.2s ease-in-out infinite;
   }
+}
+
+.blog-post-content {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.blog-post-content > div > * + * {
+  margin-top: 1.25rem;
+}
+
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4 {
+  margin-top: 2.25rem;
+  color: #020413;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.blog-post-content h1 { font-size: 2rem; }
+.blog-post-content h2 { font-size: 1.625rem; }
+.blog-post-content h3 { font-size: 1.3rem; }
+.blog-post-content h4 { font-size: 1.1rem; }
+
+.blog-post-content a {
+  color: #214dc0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.blog-post-content ol,
+.blog-post-content ul {
+  padding-left: 1.5rem;
+}
+
+.blog-post-content ol { list-style: decimal; }
+.blog-post-content ul { list-style: disc; }
+.blog-post-content li + li { margin-top: 0.4rem; }
+
+.blog-post-content blockquote {
+  margin: 1.75rem 0;
+  border-left: 4px solid #214dc0;
+  background: #f8fafc;
+  padding: 1rem 1.25rem;
+  color: #475569;
+}
+
+.blog-post-content pre,
+.blog-post-content .ql-code-block-container {
+  margin: 1.75rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background: #0f172a;
+  padding: 1.25rem;
+  color: #e2e8f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.blog-post-content .ql-code-block-container .ql-ui {
+  display: none;
+}
+
+.blog-post-content pre.hljs,
+.blog-post-content .ql-code-block-container.hljs {
+  background: #0f172a;
+  padding: 1.25rem;
+}
+
+.blog-post-content img,
+.blog-post-content video,
+.blog-post-content iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.blog-post-content img {
+  height: auto;
 }
