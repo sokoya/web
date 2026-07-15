@@ -4,6 +4,7 @@ import { Nav } from "@/app/_components/Nav";
 import Link from "next/link";
 import Image from "next/image";
 import { getPublishedPostBySlugFromApi } from "../_api/blog";
+import { HighlightedBlogContent } from "../_components/HighlightedBlogContent";
 
 export async function generateMetadata({
   params,
@@ -117,8 +118,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         <section className="px-5 py-12">
           <div className="mx-auto container max-w-3xl">
-            <div className="prose prose-slate max-w-none">
-              <div dangerouslySetInnerHTML={{ __html: post.contentHtml ?? "" }} />
+            <div className="blog-post-content">
+              <HighlightedBlogContent html={post.contentHtml ?? ""} />
             </div>
           </div>
         </section>
@@ -127,4 +128,3 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     </div>
   );
 }
-

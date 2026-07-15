@@ -11,7 +11,7 @@ import { getApiErrorMessage } from "@/app/admin/_api/client";
 import { getPost, updatePost } from "@/app/admin/_api/blog";
 import { deleteImage, uploadImage } from "@/app/admin/_api/upload";
 
-type Category = "Company" | "Product" | "Finance" | "API";
+type Category = "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
 
 export default function AdminBlogEditPage() {
   const params = useParams<{ id: string }>();
@@ -319,6 +319,8 @@ export default function AdminBlogEditPage() {
                 <option value="Product">Product</option>
                 <option value="Finance">Finance</option>
                 <option value="API">API</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Documentation">Documentation</option>
               </select>
             </div>
             <div className="space-y-2">
@@ -348,6 +350,9 @@ export default function AdminBlogEditPage() {
               placeholder="Write your post content here…"
               minHeight="360px"
             />
+            <p className="text-xs text-slate-500">
+              Use the code-block control for snippets and the quote control for notes or callouts.
+            </p>
           </div>
 
           {err ? (
@@ -396,4 +401,3 @@ export default function AdminBlogEditPage() {
     </AdminShell>
   );
 }
-

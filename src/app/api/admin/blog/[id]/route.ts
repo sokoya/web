@@ -9,7 +9,7 @@ const UpdateSchema = z.object({
   title: z.string().min(2).optional(),
   slug: z.string().min(2).optional(),
   excerpt: z.string().optional(),
-  category: z.enum(["Company", "Product", "Finance", "API"]).optional(),
+  category: z.enum(["Company", "Product", "Finance", "API", "Engineering", "Documentation"]).optional(),
   status: z.enum(["draft", "published"]).optional(),
   contentHtml: z.string().optional(),
   coverImageUrl: z.string().url().optional().nullable(),
@@ -81,4 +81,3 @@ export async function DELETE(_: Request, ctx: { params: Promise<{ id: string }> 
     return error(e instanceof Error ? e.message : "Bad request", 400);
   }
 }
-

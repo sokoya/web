@@ -8,7 +8,7 @@ const CreateSchema = z.object({
   title: z.string().min(2),
   slug: z.string().min(2),
   excerpt: z.string().optional().default(""),
-  category: z.enum(["Company", "Product", "Finance", "API"]),
+  category: z.enum(["Company", "Product", "Finance", "API", "Engineering", "Documentation"]),
   status: z.enum(["draft", "published"]).default("draft"),
   contentHtml: z.string().optional().default(""),
   coverImageUrl: z.string().url().optional().nullable(),
@@ -83,4 +83,3 @@ export async function POST(req: Request) {
     return error(msg, 400);
   }
 }
-

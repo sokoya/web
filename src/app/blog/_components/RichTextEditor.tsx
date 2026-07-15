@@ -5,9 +5,9 @@ import React, {
 	useRef,
 	useImperativeHandle,
 	forwardRef,
-	useState,
 } from "react";
 import { useQuill } from "react-quilljs";
+import hljs from "highlight.js";
 import "quill/dist/quill.snow.css";
 
 export type RichTextEditorRef = {
@@ -23,16 +23,27 @@ type RichTextEditorProps = {
 	minHeight?: string;
 };
 
+
 const QUILL_MODULES = {
-	toolbar: [
+	toolbar: {
+		container: [
 		["bold", "italic", "underline", "strike"],
+		["blockquote", "code-block"],
 		[{ align: [] }],
 		[{ list: "ordered" }, { list: "bullet" }],
 		[{ indent: "-1" }, { indent: "+1" }],
 		[{ header: [1, 2, 3, 4, 5, 6, false] }],
 		["link", "image", "video"],
 		[{ color: [] }, { background: [] }],
-	],
+		["clean"],
+		],
+		handlers: {
+			"code-block": function (this: { quill: { format: (name: string, value: string | false) => void } }, value: boolean) {
+				this.quill.format("code-block", value ? "javascript" : false);
+			},
+		},
+	},
+	syntax: { hljs },
 	clipboard: { matchVisual: false },
 };
 
@@ -41,6 +52,9 @@ const QUILL_FORMATS = [
 	"italic",
 	"underline",
 	"strike",
+	"blockquote",
+	"code-block",
+	"code-token",
 	"align",
 	"list",
 	"indent",
@@ -51,6 +65,12 @@ const QUILL_FORMATS = [
 	"color",
 	"background",
 ];
+
+const TOOL_LABELS: Record<string, string> = {
+	"ql-blockquote": "Quote",
+	"ql-code-block": "Code block",
+	"ql-clean": "Clear formatting",
+};
 
 const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 	(
@@ -63,10 +83,8 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 		},
 		ref,
 	) => {
-		const [mounted, setMounted] = useState(false);
 		const initialSetRef = useRef(false);
 		const onChangeRef = useRef(onChange);
-		onChangeRef.current = onChange;
 
 		const { quill, quillRef } = useQuill({
 			theme: "snow",
@@ -75,23 +93,35 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 			placeholder,
 		});
 
-		// Only render Quill on client to avoid SSR/document issues
 		useEffect(() => {
-			setMounted(true);
-		}, []);
+			onChangeRef.current = onChange;
+		}, [onChange]);
 
 		// Set initial content when quill is ready
 		useEffect(() => {
-			if (!quill || !mounted) return;
+			if (!quill) return;
 			if (!initialSetRef.current && (initialContent || initialContent === "")) {
 				initialSetRef.current = true;
 				quill.clipboard.dangerouslyPasteHTML(initialContent || "<p><br></p>");
 			}
-		}, [quill, mounted, initialContent]);
+		}, [quill, initialContent]);
 
 		// text-change handler for onChange
 		useEffect(() => {
 			if (!quill) return;
+			const toolbar = quill.getModule("toolbar") as {
+				container?: HTMLElement;
+			};
+			Object.entries(TOOL_LABELS).forEach(([className, label]) => {
+				const control = toolbar.container?.querySelector(
+					`.${className}`,
+				) as HTMLElement | null;
+				if (control) {
+					control.title = label;
+					control.setAttribute("aria-label", label);
+				}
+			});
+
 			const handler = () => {
 				const html = quill.root.innerHTML;
 				onChangeRef.current?.(html);
@@ -118,19 +148,6 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 			[quill],
 		);
 
-		if (!mounted) {
-			return (
-				<div
-					className={`overflow-hidden rounded-2xl border border-slate-200 bg-white ${className}`}
-					style={{ minHeight }}
-				>
-					<div className='animate-pulse p-4 text-sm text-slate-500'>
-						Loading editor…
-					</div>
-				</div>
-			);
-		}
-
 		return (
 			<div
 				className={`ps-quill overflow-hidden rounded-2xl border border-slate-200 bg-white ${className}`}
@@ -151,6 +168,34 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 						min-height: ${minHeight};
 						padding: 16px;
 						color: rgb(2 4 19);
+					}
+					.ps-quill .ql-editor pre,
+					.ps-quill .ql-editor .ql-code-block-container {
+						margin: 16px 0;
+						overflow-x: auto;
+						border-radius: 8px;
+						background: rgb(15 23 42);
+						padding: 16px;
+						color: rgb(226 232 240);
+						font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+						font-size: 13px;
+						line-height: 1.7;
+						white-space: pre;
+					}
+					.ps-quill .ql-editor blockquote {
+						border-left: 4px solid rgb(33 77 192);
+						padding-left: 16px;
+						color: rgb(71 85 105);
+					}
+					.ps-quill .ql-code-block-container select.ql-ui {
+						margin-bottom: 12px;
+						border: 1px solid rgb(71 85 105);
+						border-radius: 6px;
+						background: rgb(30 41 59);
+						padding: 4px 8px;
+						color: rgb(226 232 240);
+						font-family: var(--font-sans);
+						font-size: 12px;
 					}
 					.ps-quill .ql-editor.ql-blank::before {
 						color: rgb(100 116 139);

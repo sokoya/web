@@ -4,6 +4,7 @@ import { createPortal } from "react-dom";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { EyeIcon } from "lucide-react";
 import { AdminShell } from "../_components/AdminShell";
 import { ConfirmModal } from "../_components/ConfirmModal";
 import { BlogTableSkeleton } from "../_components/Skeletons";
@@ -134,7 +135,15 @@ export default function AdminBlogListPage() {
                       {p.updatedAt ? new Date(p.updatedAt).toLocaleDateString() : "—"}
                     </td>
                     <td className="px-6 py-4 align-top text-right">
-                      <div className="inline-flex">
+                      <div className="inline-flex items-center gap-2">
+                        <Link
+                          href={`/admin/blog/${p.id}/preview`}
+                          aria-label={`Preview ${p.title}`}
+                          title="Preview"
+                          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition hover:border-primary hover:text-primary"
+                        >
+                          <EyeIcon className="h-4 w-4" aria-hidden="true" />
+                        </Link>
                         <button
                           type="button"
                           aria-label="Actions"
@@ -268,4 +277,3 @@ export default function AdminBlogListPage() {
     </AdminShell>
   );
 }
-
