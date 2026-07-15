@@ -22,7 +22,7 @@ export function Footer() {
 						Payscribe offers a robust payment infrastructure enabling businesses to securely accept payments, issue USD/NGN cards for seamless cross-border transactions, and provide comprehensive financial services to their customers. Also available for individuals.
 					</p>
 					<p className='text-xs leading-relaxed text-slate-400'>
-						Payscribe is the trading name of Payscribe Limited (registered in England and Wales, Company No. 17196544, ICO Registration No. ZC155519) and its affiliated Nigerian entity, Pscribe Digital Services Limited (RC1946239). Payscribe is a fintech company, not a bank. Banking and safeguarding services are provided by licensed banks and authorised financial institutions in their respective jurisdictions.
+						Payscribe is the trading name of Payscribe Limited (registered in England and Wales, Company No. 17196544, ICO Registration No. ZC155519), Pscribe Digital Services Limited (RC1946239). Payscribe is a fintech company, not a bank. Banking and safeguarding services are provided by licensed banks and authorised financial institutions in their respective jurisdictions.
 					</p>
 
 					<div className='flex gap-3 pt-2'>
