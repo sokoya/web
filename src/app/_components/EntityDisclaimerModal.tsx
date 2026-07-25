@@ -5,19 +5,15 @@ import { createPortal } from "react-dom";
 import { useEffect, useMemo, useState } from "react";
 import { Info } from "lucide-react";
 
-const STORAGE_KEY = "entity_disclaimer_acknowledged";
-
 export function EntityDisclaimerModal() {
 	const [visible, setVisible] = useState(false);
 	const canUseDom = useMemo(() => typeof document !== "undefined", []);
 
 	useEffect(() => {
-		const acknowledged = localStorage.getItem(STORAGE_KEY);
-		if (!acknowledged) setVisible(true);
+		setVisible(true);
 	}, []);
 
 	const handleDismiss = () => {
-		localStorage.setItem(STORAGE_KEY, "true");
 		setVisible(false);
 	};
 
