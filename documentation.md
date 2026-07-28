@@ -240,10 +240,11 @@ These are required for the backend features to function:
 ## Public APIs
 
 ### `POST /api/contact`
-- **Purpose**: Public contact form submission.
+- **Purpose**: Public contact form submission. Sends `Sales` and `Partnership` notifications to `growth@payscribe.co`; all other reasons notify `support@payscribe.co`.
 - **Auth**: None.
 - **Body**: `{ fullName, email, reason, description }`
 - **Success**: `{ ok: true }`
+- **Email configuration**: `POSTMARK_SERVER_TOKEN` and `POSTMARK_FROM_EMAIL`, matching the Payscribe CRM Postmark configuration.
 
 ### `GET /api/press`
 - **Purpose**: Public press feed (drives `/press`).
