@@ -23,6 +23,29 @@ type RichTextEditorProps = {
 	minHeight?: string;
 };
 
+const LEGACY_LANGUAGE_MENU_TEXT =
+	"PlainBashC++C#CSSDiffHTML/XMLJavaJavaScriptMarkdownPHPPythonRubySQL";
+
+function sanitizeBlogHtml(html: string) {
+	if (!html) return "";
+
+	const document = new DOMParser().parseFromString(html, "text/html");
+	document
+		.querySelectorAll(".ql-code-block-container > select, select.ql-ui")
+		.forEach((element) => element.remove());
+
+	// Older saves serialized Quill's language picker, which reloads as a paragraph.
+	document.body.querySelectorAll("p").forEach((paragraph) => {
+		const normalizedText = (paragraph.textContent ?? "").replace(/\s/g, "");
+		if (normalizedText === LEGACY_LANGUAGE_MENU_TEXT) paragraph.remove();
+	});
+
+	return document.body.innerHTML;
+}
+
+function getCleanEditorHtml(quill: { getSemanticHTML: () => string }) {
+	return sanitizeBlogHtml(quill.getSemanticHTML());
+}
 
 const QUILL_MODULES = {
 	toolbar: {
@@ -102,7 +125,9 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 			if (!quill) return;
 			if (!initialSetRef.current && (initialContent || initialContent === "")) {
 				initialSetRef.current = true;
-				quill.clipboard.dangerouslyPasteHTML(initialContent || "<p><br></p>");
+				const cleanInitialContent = sanitizeBlogHtml(initialContent);
+				quill.clipboard.dangerouslyPasteHTML(cleanInitialContent || "<p><br></p>");
+				onChangeRef.current?.(getCleanEditorHtml(quill));
 			}
 		}, [quill, initialContent]);
 
@@ -123,8 +148,7 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 			});
 
 			const handler = () => {
-				const html = quill.root.innerHTML;
-				onChangeRef.current?.(html);
+				onChangeRef.current?.(getCleanEditorHtml(quill));
 			};
 			quill.on("text-change", handler);
 			return () => {
@@ -138,11 +162,13 @@ const RichTextEditor = forwardRef<RichTextEditorRef, RichTextEditorProps>(
 			() => ({
 				getHTML: () => {
 					if (!quill?.root) return "";
-					return quill.root.innerHTML;
+					return getCleanEditorHtml(quill);
 				},
 				setContent: (html: string) => {
 					if (!quill) return;
-					quill.clipboard.dangerouslyPasteHTML(html || "<p><br></p>");
+					const cleanContent = sanitizeBlogHtml(html);
+					quill.clipboard.dangerouslyPasteHTML(cleanContent || "<p><br></p>");
+					onChangeRef.current?.(getCleanEditorHtml(quill));
 				},
 			}),
 			[quill],
