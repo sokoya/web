@@ -52,23 +52,23 @@ export default function AdminBlogPreviewPage() {
       ) : !post ? (
         <div className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-600">Loading preview...</div>
       ) : (
-        <article className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+        <article className="min-w-0 max-w-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
           <header className="relative min-h-72 overflow-hidden bg-secondary px-6 py-12 sm:px-10">
             {post.coverImageUrl ? (
               <Image src={post.coverImageUrl} alt="" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 900px" priority />
             ) : null}
             <div className="absolute inset-0 bg-black/65" />
-            <div className="relative mx-auto max-w-3xl">
+            <div className="relative mx-auto min-w-0 max-w-3xl">
               <span className="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-semibold text-white">
                 {post.status === "published" ? "Published" : "Unpublished draft"}
               </span>
-              <h1 className="mt-5 text-3xl font-semibold leading-tight text-white sm:text-5xl">{post.title}</h1>
+              <h1 className="mt-5 max-w-full text-3xl font-semibold leading-tight text-white [overflow-wrap:anywhere] sm:text-4xl lg:text-5xl">{post.title}</h1>
               <p className="mt-4 text-sm text-white/80">{post.category}</p>
             </div>
           </header>
 
-          <div className="mx-auto max-w-3xl px-6 py-12 sm:px-10">
-            {post.excerpt ? <p className="mb-8 text-lg leading-relaxed text-slate-600">{post.excerpt}</p> : null}
+          <div className="mx-auto min-w-0 max-w-3xl px-6 py-12 sm:px-10">
+            {post.excerpt ? <p className="mb-8 max-w-full text-lg leading-relaxed text-slate-600 [overflow-wrap:anywhere]">{post.excerpt}</p> : null}
             <div className="blog-post-content">
               <HighlightedBlogContent html={post.contentHtml ?? ""} />
             </div>

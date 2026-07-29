@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 ← Back to blog
               </Link>
 
-              <h1 className="mt-6 text-3xl font-semibold leading-tight text-white sm:text-5xl">
+              <h1 className="mt-6 max-w-full text-3xl font-semibold leading-tight text-white [overflow-wrap:anywhere] sm:text-4xl lg:text-5xl">
                 {post.title}
               </h1>
               <p className="mt-4 text-sm text-white/80">

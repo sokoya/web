@@ -67,9 +67,26 @@ body {
   }
 }
 .blog-post-content {
+  min-width: 0;
+  max-width: 100%;
   color: #334155;
   font-size: 1rem;
   line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.blog-post-content > div,
+.blog-post-content p,
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content li,
+.blog-post-content blockquote {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .blog-post-content > div > * + * {
@@ -130,6 +147,8 @@ body {
   line-height: 1.7;
   white-space: pre;
   tab-size: 2;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .blog-post-content .ql-code-block-container .ql-ui {
