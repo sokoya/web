@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CookiesBanner } from "./_components/CookiesBanner";
+import { StructuredData } from "./_components/StructuredData";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.payscribe.co"),
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
 			"Payscribe provides robust payment infrastructure for businesses: digital payments, stablecoin rails, card issuing, invoicing, and more.",
 		images: [
 			{
-				url: "/opengraph-image",
+				url: "/opengraph-image?v=2",
 				width: 1200,
 				height: 630,
 				alt: "Payscribe payment infrastructure",
@@ -53,7 +55,7 @@ export const metadata: Metadata = {
 		title: "Payscribe",
 		description:
 			"Payment infrastructure for digital payments, stablecoin rails, card issuing, invoicing, and more.",
-		images: ["/opengraph-image"],
+		images: ["/opengraph-image?v=2"],
 	},
 };
 
@@ -65,6 +67,28 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className='antialiased'>
+				<StructuredData
+					data={[
+						{
+							"@context": "https://schema.org",
+							"@type": "Organization",
+							name: "Payscribe",
+							url: SITE_URL,
+							logo: `${SITE_URL}/app-icon.png`,
+							sameAs: [
+								"https://www.facebook.com/payscribe/",
+								"https://www.instagram.com/payscribe/",
+								"https://ng.linkedin.com/company/payscribe",
+							],
+						},
+						{
+							"@context": "https://schema.org",
+							"@type": "WebSite",
+							name: "Payscribe",
+							url: SITE_URL,
+						},
+					]}
+				/>
 				{children}
 				<CookiesBanner />
 				{/* <script

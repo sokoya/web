@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "@/app/_components/Nav";
 import { Footer } from "@/app/_components/Footer";
 import { CaseStudiesHero } from "./_components/CaseStudiesHero";
@@ -6,11 +7,12 @@ import FintechSection from "./_components/FintechSection";
 import ExploreCaseStudies from "./_components/ExploreCaseStudies";
 import StartBuilding from "../_components/startBuilding";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/case-studies",
 	title: "Case Studies",
 	description: "Explore how businesses build and scale with Payscribe’s payment infrastructure.",
 	keywords: ["Payscribe", "case studies", "customers", "fintech", "payments", "API"],
-};
+});
 
 export default function CaseStudiesPage() {
 	return (
