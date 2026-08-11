@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { CookiesPolicyHero } from "@/app/cookies-policy/_components/CookiesPolicyHero";
 import { CookiesPolicyContent } from "@/app/cookies-policy/_components/CookiesPolicyContent";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/uk/cookies-policy",
 	title: "Cookies Policy",
 	description: "Read Payscribe’s cookies policy and how we use cookies on our website.",
 	keywords: ["Payscribe", "cookies policy", "cookies", "data protection", "compliance"],
-};
+});
 
 export default function UkCookiesPolicyPage() {
 	return (

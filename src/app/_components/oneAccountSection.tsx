@@ -93,10 +93,11 @@ const OneAccountSection = () => {
 				>
 					<Image
 						src={map}
-						alt='map'
+						alt='Payscribe global payment coverage'
 						width={500}
 						className='w-full'
 						height={500}
+						sizes='(max-width: 768px) 100vw, 50vw'
 					/>
 				</motion.div>
 			</div>

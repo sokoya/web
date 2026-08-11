@@ -17,9 +17,10 @@ const TrustedSection = () => {
 					src={trust}
 					className='animate-spin w-full'
 					style={{ animationDuration: "20s" }}
-					alt='trust'
+					alt='Businesses using Payscribe around the world'
 					width={500}
 					height={500}
+					sizes='(max-width: 768px) 100vw, 768px'
 				/>
 			</div>
 		</div>
