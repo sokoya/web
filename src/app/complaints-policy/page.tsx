@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "@/app/_components/Nav";
 import { Footer } from "@/app/_components/Footer";
 import { ComplaintPolicyHero } from "./_components/ComplaintPolicyHero";
 import { ComplaintsPolicyContent } from "./_components/ComplaintPolicyContent";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/complaints-policy",
 	title: "Complaints Policy",
 	description: "Read Payscribe’s complaints policy and how we handle complaints.",
 	keywords: ["Payscribe", "Payscribe Customers", "complaints policy", "complaints", "customer service", "support"],
-};	
+});	
 
 export default function ComplaintsPolicyPage() {
 	return (

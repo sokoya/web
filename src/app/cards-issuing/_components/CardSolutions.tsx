@@ -40,6 +40,7 @@ export default function CardSolutions() {
 							width={440}
 							height={280}
 							priority={false}
+							sizes='(max-width: 768px) 100vw, 50vw'
 						/>
 					</motion.div>
 

@@ -1,40 +1,60 @@
-import axios from "axios";
-import { headers } from "next/headers";
+import { cache } from "react";
+import { getDb } from "@/lib/mongodb";
 
 export type PublicBlogPost = {
-  id: string;
-  title: string;
-  slug: string;
-  excerpt?: string;
-  category: "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
-  contentHtml?: string;
-  coverImageUrl?: string | null;
-  publishedAt?: string | Date | null;
-  updatedAt?: string | Date;
+	id: string;
+	title: string;
+	slug: string;
+	excerpt?: string;
+	category: "Company" | "Product" | "Finance" | "API" | "Engineering" | "Documentation";
+	contentHtml?: string;
+	coverImageUrl?: string | null;
+	publishedAt?: string | null;
+	updatedAt?: string;
 };
 
-function getBaseUrlFromHeaders(h: Headers) {
-  const host = h.get("x-forwarded-host") ?? h.get("host") ?? "localhost:3000";
-  const proto = h.get("x-forwarded-proto") ?? "http";
-  return `${proto}://${host}`;
+function serializePost(post: Record<string, unknown>): PublicBlogPost {
+	const publishedAt = toIsoString(post.publishedAt);
+	const updatedAt = toIsoString(post.updatedAt);
+
+	return {
+		id: String(post._id),
+		title: String(post.title ?? ""),
+		slug: String(post.slug ?? ""),
+		excerpt: typeof post.excerpt === "string" ? post.excerpt : undefined,
+		category: post.category as PublicBlogPost["category"],
+		contentHtml: typeof post.contentHtml === "string" ? post.contentHtml : undefined,
+		coverImageUrl: typeof post.coverImageUrl === "string" ? post.coverImageUrl : null,
+		publishedAt,
+		updatedAt: updatedAt ?? undefined,
+	};
 }
 
-export async function getPublishedPostsFromApi(): Promise<PublicBlogPost[]> {
-  const h = await headers();
-  const baseUrl = getBaseUrlFromHeaders(h);
-  const url = new URL("/api/blog", baseUrl).toString();
-  const res = await axios.get(url, { headers: { "cache-control": "no-store" }, withCredentials: false });
-  const data = res.data as { ok?: boolean; posts?: PublicBlogPost[] };
-  if (!data?.ok || !Array.isArray(data.posts)) return [];
-  return data.posts;
+function toIsoString(value: unknown): string | null {
+	if (value instanceof Date) return value.toISOString();
+	if (typeof value === "string" || typeof value === "number") {
+		const date = new Date(value);
+		return Number.isNaN(date.getTime()) ? null : date.toISOString();
+	}
+	return null;
 }
 
-export async function getPublishedPostBySlugFromApi(slug: string): Promise<PublicBlogPost | null> {
-  const h = await headers();
-  const baseUrl = getBaseUrlFromHeaders(h);
-  const url = new URL(`/api/blog/${encodeURIComponent(slug)}`, baseUrl).toString();
-  const res = await axios.get(url, { headers: { "cache-control": "no-store" }, withCredentials: false });
-  const data = res.data as { ok?: boolean; post?: PublicBlogPost };
-  if (!data?.ok || !data.post) return null;
-  return data.post;
-}
+export const getPublishedPostsFromApi = cache(async (): Promise<PublicBlogPost[]> => {
+	const db = await getDb();
+	const posts = await db
+		.collection("posts")
+		.find({ status: "published" })
+		.sort({ publishedAt: -1, updatedAt: -1, _id: -1 })
+		.limit(200)
+		.toArray();
+
+	return posts.map((post) => serializePost(post));
+});
+
+export const getPublishedPostBySlugFromApi = cache(
+	async (slug: string): Promise<PublicBlogPost | null> => {
+		const db = await getDb();
+		const post = await db.collection("posts").findOne({ slug, status: "published" });
+		return post ? serializePost(post) : null;
+	},
+);

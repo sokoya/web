@@ -5,6 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { getPublishedPostBySlugFromApi } from "../_api/blog";
 import { HighlightedBlogContent } from "../_components/HighlightedBlogContent";
+import { notFound } from "next/navigation";
+import { createPageMetadata, absoluteUrl } from "@/lib/seo";
+import { StructuredData } from "@/app/_components/StructuredData";
 
 export async function generateMetadata({
   params,
@@ -15,74 +18,84 @@ export async function generateMetadata({
   try {
     const post = await getPublishedPostBySlugFromApi(slug);
     if (!post) {
-      return {
+      return createPageMetadata({
         title: "Blog post",
         description: "Payscribe blog post.",
+        path: `/blog/${slug}`,
         keywords: ["Payscribe", "blog", "payments", "fintech"],
-      };
+        noIndex: true,
+      });
     }
-    return {
+    const metadata = createPageMetadata({
       title: post.title,
       description: post.excerpt || "Payscribe blog post.",
+      path: `/blog/${post.slug}`,
+      image: post.coverImageUrl || undefined,
+      type: "article",
       keywords: ["Payscribe", "blog", post.category, "payments", "fintech", "API"],
+    });
+    return {
+      ...metadata,
+      openGraph: {
+        ...metadata.openGraph,
+        type: "article",
+        publishedTime: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
+        modifiedTime: post.updatedAt ? new Date(post.updatedAt).toISOString() : undefined,
+        authors: ["Payscribe"],
+      },
     };
   } catch {
-    return {
+    return createPageMetadata({
       title: "Blog post",
       description: "Payscribe blog post.",
+      path: `/blog/${slug}`,
       keywords: ["Payscribe", "blog", "payments", "fintech"],
-    };
+      noIndex: true,
+    });
   }
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  let post: Awaited<ReturnType<typeof getPublishedPostBySlugFromApi>> = null;
-  let loadFailed = false;
-  try {
-    post = await getPublishedPostBySlugFromApi(slug);
-  } catch {
-    loadFailed = true;
-  }
+  const post = await getPublishedPostBySlugFromApi(slug);
 
-  if (!post) {
-    return (
-      <div className="min-h-screen bg-white text-secondary">
-        <Nav />
-        <main className="px-5 py-20">
-          <div className="mx-auto container">
-            <div className="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm sm:p-14">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Blog</p>
-              <h1 className="mt-3 text-2xl font-semibold text-secondary sm:text-3xl">
-                {loadFailed ? "Unable to load post" : "Post not found"}
-              </h1>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600">
-                {loadFailed ? "Please try again in a moment." : "The post may have been removed or is not published yet."}
-              </p>
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link
-                  href="/blog"
-                  className="rounded-full bg-secondary px-6 py-3 text-sm font-semibold text-white transition hover:opacity-95"
-                >
-                  Back to blog
-                </Link>
-                <Link
-                  href="/"
-                  className="rounded-full bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-200"
-                >
-                  Home
-                </Link>
-              </div>
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
+  if (!post) notFound();
+
+  const articleUrl = absoluteUrl(`/blog/${post.slug}`);
+  const publishedAt = post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined;
+  const updatedAt = post.updatedAt ? new Date(post.updatedAt).toISOString() : publishedAt;
 
   return (
     <div className="min-h-screen bg-white text-secondary">
+      <StructuredData
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description: post.excerpt || "Payscribe blog post.",
+            image: post.coverImageUrl || absoluteUrl("/opengraph-image"),
+            datePublished: publishedAt,
+            dateModified: updatedAt,
+            mainEntityOfPage: articleUrl,
+            author: { "@type": "Organization", name: "Payscribe" },
+            publisher: {
+              "@type": "Organization",
+              name: "Payscribe",
+              logo: { "@type": "ImageObject", url: absoluteUrl("/app-icon.png") },
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+              { "@type": "ListItem", position: 2, name: "Blog", item: absoluteUrl("/blog") },
+              { "@type": "ListItem", position: 3, name: post.title, item: articleUrl },
+            ],
+          },
+        ]}
+      />
       <Nav />
       <main>
         <header className="relative overflow-hidden bg-secondary">

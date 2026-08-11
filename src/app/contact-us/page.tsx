@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "@/app/_components/Nav";
 import { Footer } from "@/app/_components/Footer";
 import { ContactUsHero } from "./_components/ContactUsHero";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/contact-us",
 	title: "Contact us",
 	description: "Contact Payscribe for support, sales, or partnership inquiries.",
 	keywords: ["Payscribe", "contact", "support", "sales", "partnership", "fintech"],
-};
+});
 
 export default function ContactUsPage() {
 	return (

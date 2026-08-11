@@ -143,7 +143,7 @@ export function Hero() {
 							})}
 					className='max-w-4xl text-balance text-4xl font-medium leading-tight sm:text-5xl'
 				>
-					Empowering Businesses with the Future of Financial Innovation.
+					Payment infrastructure for modern businesses across Africa.
 				</motion.h1>
 				<motion.p
 					{...(reducedMotion
