@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "@/app/_components/Nav";
 import { Footer } from "@/app/_components/Footer";
 import { ForBusinessHero } from "./_components/ForBusinessHero";
@@ -8,11 +9,12 @@ import { IntegrationSection } from "../_components/IntegrationSection";
 import { FaqSection } from "./_components/FaqSection";
 import StartBuilding from "../_components/startBuilding";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/for-business",
 	title: "For Business",
 	description: "Build and scale your business with Payscribe’s payment infrastructure and financial services.",
 	keywords: ["Payscribe", "business", "payments", "collections", "payouts", "fintech", "API"],
-};
+});
 
 export default function ForBusinessPage() {
 	return (

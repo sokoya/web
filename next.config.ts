@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         destination: "/invoicing",
         permanent: true,
       },
+      {
+        source: "/blog/gamepride",
+        destination: "/case-studies/gamepride",
+        permanent: true,
+      },
     ];
   },
 };

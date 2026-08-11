@@ -38,10 +38,11 @@ const StartBuilding = () => {
 			</div>
 			<Image
 				src={cardGroup}
-				alt='cardBg'
+				alt='Payscribe virtual cards'
 				className='w-fit h-[400px] absolute bottom-0 right-10 hidden md:block'
 				width={500}
 				height={500}
+				sizes='500px'
 			/>
 		</section>
 	);

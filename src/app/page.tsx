@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "./_components/Nav";
 import { Hero } from "./_components/Hero";
 import { Footer } from "./_components/Footer";
@@ -13,8 +14,9 @@ import WhyBusinessSection from "./_components/whyBusinessSection";
 import TrustedSection from "./_components/trustedSection";
 import StartBuilding from "./_components/startBuilding";
 
-export const metadata: Metadata = {
-	title: "Home",
+export const metadata: Metadata = createPageMetadata({
+	path: "/",
+	title: "Payment Infrastructure for Modern Businesses",
 	description:
 		"Payscribe provides payment infrastructure for businesses: digital payments, card issuing, stablecoin rails, invoicing, and more.",
 	keywords: [
@@ -27,7 +29,8 @@ export const metadata: Metadata = {
 		"stablecoin",
 		"invoicing",
 	],
-};
+	languages: { "en-NG": "/", "en-GB": "/uk" },
+});
 
 export default function Home() {
 	return (

@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 import { Nav } from "@/app/_components/Nav";
 import { Footer } from "@/app/_components/Footer";
 import UseCaseTabs from "./_components/UseCaseTabs";
 import StartBuilding from "../_components/startBuilding";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+	path: "/use-case",
 	title: "Use case",
 	description: "Explore real-world use cases and how Payscribe helps teams ship payments faster.",
 	keywords: ["Payscribe", "use case", "payments", "fintech", "API", "business"],
-};
+});
 
 export default function UseCasePage() {
 	return (
