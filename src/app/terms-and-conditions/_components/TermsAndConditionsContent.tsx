@@ -243,9 +243,6 @@ export function TermsAndConditionsContent() {
 							>
 								hello@payscribe.co
 							</Link>
-							. Under the UK Payment Services Regulations 2017, you generally have
-							up to <strong>13 months</strong> from the date of a transaction to
-							report it as unauthorised.
 						</p>
 						<p className='font-semibold text-secondary'>8.2 Investigation Process</p>
 						<p>On receiving a dispute, we will:</p>
