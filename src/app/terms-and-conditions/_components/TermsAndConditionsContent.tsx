@@ -17,16 +17,9 @@ export function TermsAndConditionsContent() {
 						<p>
 							These Terms and Conditions (&quot;Terms&quot;) govern your access to and use
 							of the services, platform, website, and applications provided by{" "}
-							<strong>Payscribe Limited</strong>, a private limited company
-							incorporated in England and Wales under company number{" "}
-							<strong>17196544</strong>, with its registered office at 12 Beverley
-							Road, Hull, HU5 1LU, United Kingdom (&quot;Payscribe&quot;, &quot;we&quot;, &quot;us&quot;,
-							or &quot;our&quot;).
-						</p>
-						<p>
-							Where services are provided to users in Nigeria and other African
-							markets, those services are operated by our affiliated entity,{" "}
-							<strong>Pscribe Digital Services Limited</strong> (RC1946239), 95
+							<strong>Pscribe Digital Services Limited</strong>, a private limited company
+							incorporated in Federal Republic of Nigeria under company number{" "}
+							<strong>RC1946239</strong>, with its registered office at 195
 							Oreta Road, Igbogbo, Ikorodu, Lagos, Nigeria (&quot;Payscribe Nigeria&quot;).
 						</p>
 						<p>
