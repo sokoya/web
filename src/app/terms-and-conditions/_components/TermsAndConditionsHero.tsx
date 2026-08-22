@@ -6,7 +6,13 @@ import whiteBg from "@/assets/images/white-bg.png";
 import { motion, useReducedMotion } from "framer-motion";
 import { heroCtaPulse, heroDropFromTop } from "@/lib/animations";
 
-export function TermsAndConditionsHero() {
+export function TermsAndConditionsHero({
+	region = "Nigeria",
+	version = "3.0",
+}: {
+	region?: string;
+	version?: string;
+}) {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedMotion = !!prefersReducedMotion;
 
@@ -34,7 +40,7 @@ export function TermsAndConditionsHero() {
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.18, duration: 0.9 })}
 					className='mt-5 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl'
 				>
-					Terms and Conditions
+					Terms and Conditions - {region}
 				</motion.h1>
 				<motion.p
 					{...heroDropFromTop({ reduced: reducedMotion, delay: 0.28, duration: 0.9 })}
@@ -54,7 +60,7 @@ export function TermsAndConditionsHero() {
 							{...heroCtaPulse(reducedMotion)}
 							className='rounded-full bg-primary px-10 py-3 text-sm font-semibold text-white'
 						>
-							Last updated: 23 May 2026 &mdash; Version 2.0
+							Version {version}
 						</motion.span>
 					</Link>
 					<Link
