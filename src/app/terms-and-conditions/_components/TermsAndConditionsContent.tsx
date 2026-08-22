@@ -45,12 +45,6 @@ export function TermsAndConditionsContent() {
 					<div className='space-y-4'>
 						<h3 className='text-2xl font-semibold'>2. Regulatory Status</h3>
 						<p>
-							Payscribe Limited is registered as a Money Services Business with HM
-							Revenue &amp; Customs (HMRC) and is in the process of obtaining
-							authorisation from the Financial Conduct Authority (FCA) as a Small
-							Payment Institution under the Payment Services Regulations 2017.
-						</p>
-						<p>
 							Payscribe Nigeria (Pscribe Digital Services Limited) operates under
 							applicable Nigerian financial services regulations.
 						</p>
