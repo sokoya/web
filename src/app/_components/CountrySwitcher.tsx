@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
+import { REGION_PREFERENCE_KEY } from "./RegionRedirect";
 
 type Country = "ng" | "uk";
 
@@ -51,6 +52,7 @@ export function CountrySwitcher({
 				value={activeCountry}
 				onChange={(event) => {
 					const nextCountry = event.target.value as Country;
+					window.localStorage.setItem(REGION_PREFERENCE_KEY, nextCountry);
 					router.push(getCountryPath(nextCountry, pathname));
 				}}
 				className='h-11 appearance-none rounded-full border border-slate-700 bg-slate-900/70 py-2 pl-4 pr-10 text-sm font-semibold text-white outline-none transition hover:border-slate-500 focus:border-white'
