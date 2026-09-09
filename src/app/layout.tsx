@@ -3,6 +3,7 @@ import "./globals.css";
 import { CookiesBanner } from "./_components/CookiesBanner";
 import { StructuredData } from "./_components/StructuredData";
 import { SITE_URL } from "@/lib/seo";
+import { RegionRedirect } from "./_components/RegionRedirect";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.payscribe.co"),
@@ -67,6 +68,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className='antialiased'>
+				<RegionRedirect />
 				<StructuredData
 					data={[
 						{
