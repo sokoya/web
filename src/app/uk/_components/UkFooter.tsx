@@ -9,6 +9,7 @@ const POLICY_LINKS = [
 	{ href: "/uk/complaints-policy", label: "Complaints Policy" },
 	{ href: "/uk/cookies-policy", label: "Cookie Policy" },
 	{ href: "/uk/acceptable-use-policy", label: "Acceptable Use Policy" },
+	{ href: "/report-transaction", label: "Report a transaction" },
 ] as const;
 
 export function UkFooter() {

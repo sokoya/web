@@ -59,7 +59,13 @@ export function ComplaintsPolicyContent() {
 					<div className='space-y-4'>
 						<h3 className='text-2xl font-semibold'>3. How to Raise a Complaint</h3>
 						<p>
-							You can submit a complaint through any of the following channels:
+							You can submit a complaint through any of the following channels.
+							For delayed, incorrect, unauthorised, or unrecognised transactions,
+							use the{" "}
+							<Link href='/report-transaction' className='text-primary underline'>
+								Report a transaction
+							</Link>{" "}
+							form so we can look it up quickly.
 						</p>
 
 						<p className='font-semibold text-secondary'>
@@ -107,6 +113,16 @@ export function ComplaintsPolicyContent() {
 										<td className='border border-slate-200 px-4 py-3'>
 											Via the Help &amp; Support section of the Payscribe
 											platform
+										</td>
+									</tr>
+									<tr className='bg-slate-50/50'>
+										<td className='border border-slate-200 px-4 py-3 font-semibold'>
+											Website
+										</td>
+										<td className='border border-slate-200 px-4 py-3'>
+											<Link href='/report-transaction' className='text-primary underline'>
+												Report a transaction
+											</Link>
 										</td>
 									</tr>
 								</tbody>
@@ -157,6 +173,16 @@ export function ComplaintsPolicyContent() {
 										<td className='border border-slate-200 px-4 py-3'>
 											Complaints, Pscribe Digital Services Limited, 95 Oreta
 											Road, Igbogbo, Ikorodu, Lagos, Nigeria
+										</td>
+									</tr>
+									<tr className='bg-slate-50/50'>
+										<td className='border border-slate-200 px-4 py-3 font-semibold'>
+											Website
+										</td>
+										<td className='border border-slate-200 px-4 py-3'>
+											<Link href='/report-transaction' className='text-primary underline'>
+												Report a transaction
+											</Link>
 										</td>
 									</tr>
 								</tbody>

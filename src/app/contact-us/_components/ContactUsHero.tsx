@@ -1,12 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "framer-motion";
 import { heroCtaPulse, heroDropFromTop, inViewZoom } from "@/lib/animations";
 
 export function ContactUsHero() {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedMotion = !!prefersReducedMotion;
+	const router = useRouter();
 
 	const [fullName, setFullName] = useState("");
 	const [email, setEmail] = useState("");
@@ -122,13 +124,21 @@ export function ContactUsHero() {
 						<select
 							id='reason'
 							value={reason}
-							onChange={(e) => setReason(e.target.value as typeof reason)}
+							onChange={(e) => {
+								const value = e.target.value;
+								if (value === "report-transaction") {
+									router.push("/report-transaction");
+									return;
+								}
+								setReason(value as typeof reason);
+							}}
 							className='w-full appearance-none rounded-xl border border-slate-600 bg-slate-700/50 px-4 py-3 text-slate-300 focus:border-primary focus:outline-none'
 						>
 							<option value=''>Select Option</option>
 							<option value='Support'>Support</option>
 							<option value='Sales'>Sales</option>
 							<option value='Partnership'>Partnership</option>
+							<option value='report-transaction'>Report a transaction</option>
 							<option value='Other'>Other</option>
 						</select>
 					</div>

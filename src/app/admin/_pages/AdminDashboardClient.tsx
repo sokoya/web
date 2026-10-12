@@ -17,7 +17,7 @@ function StatCard({ label, value, hint }: { label: string; value: string; hint: 
 }
 
 export default function AdminDashboardClient() {
-  const { loading, err, published, drafts, newContacts, recentPosts, recentContacts } = useAdminDashboard();
+  const { loading, err, published, drafts, newContacts, newReports, recentPosts, recentContacts } = useAdminDashboard();
 
   const subtitle = useMemo(() => {
     if (loading) return "Loading overview…";
@@ -37,6 +37,9 @@ export default function AdminDashboardClient() {
           <Link href="/admin/contact" className="rounded-full bg-blue-100 px-6 py-3 text-sm font-semibold text-primary">
             View submissions
           </Link>
+          <Link href="/admin/reports" className="rounded-full bg-blue-100 px-6 py-3 text-sm font-semibold text-primary">
+            View reports
+          </Link>
         </>
       }
     >
@@ -48,10 +51,11 @@ export default function AdminDashboardClient() {
 
       {!loading ? (
         <>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <StatCard label="Published posts" value={String(published)} hint="Visible on the public blog." />
             <StatCard label="Draft posts" value={String(drafts)} hint="Not yet published." />
             <StatCard label="New contact requests" value={String(newContacts)} hint="Needs review." />
+            <StatCard label="New transaction reports" value={String(newReports)} hint="Disputes awaiting review." />
           </div>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
