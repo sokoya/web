@@ -202,6 +202,11 @@ export function Footer() {
 								</Link>
 							</li>
 							<li>
+								<Link href='/report-transaction' className='hover:text-white'>
+									Report a transaction
+								</Link>
+							</li>
+							<li>
 								<Link href='/press' className='hover:text-white'>
 									Press
 								</Link>

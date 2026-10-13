@@ -7,17 +7,18 @@ export async function GET() {
     await requireAdminOrThrow();
     const db = await getDb();
 
-    const [published, drafts, newContacts, recentPosts, recentContacts] = await Promise.all([
+    const [published, drafts, newContacts, newReports, recentPosts, recentContacts] = await Promise.all([
       db.collection("posts").countDocuments({ status: "published" }),
       db.collection("posts").countDocuments({ status: "draft" }),
       db.collection("contact_submissions").countDocuments({ status: "new" }),
+      db.collection("transaction_reports").countDocuments({ status: "new" }),
       db.collection("posts").find({}).sort({ updatedAt: -1 }).limit(3).toArray(),
       db.collection("contact_submissions").find({}).sort({ createdAt: -1 }).limit(3).toArray(),
     ]);
 
     return json({
       ok: true,
-      stats: { published, drafts, newContacts },
+      stats: { published, drafts, newContacts, newReports },
       recentPosts: recentPosts.map((p) => ({ ...p, id: String(p._id), _id: undefined })),
       recentContacts: recentContacts.map((c) => ({ ...c, id: String(c._id), _id: undefined })),
     });

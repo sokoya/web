@@ -21,6 +21,7 @@ const staticPages = [
 	{ path: "/press", changeFrequency: "weekly", priority: 0.6 },
 	{ path: "/faqs", changeFrequency: "monthly", priority: 0.6 },
 	{ path: "/contact-us", changeFrequency: "yearly", priority: 0.5 },
+	{ path: "/report-transaction", changeFrequency: "yearly", priority: 0.5 },
 	{ path: "/book-a-demo", changeFrequency: "yearly", priority: 0.7 },
 	{ path: "/uk", changeFrequency: "monthly", priority: 0.8 },
 	{ path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },

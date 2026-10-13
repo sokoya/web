@@ -3,7 +3,7 @@
 import { adminApi } from "./client";
 
 export type DashboardData = {
-  stats: { published: number; drafts: number; newContacts: number };
+  stats: { published: number; drafts: number; newContacts: number; newReports: number };
   recentPosts: any[];
   recentContacts: any[];
 };

@@ -9,6 +9,7 @@ import {
 	LayoutDashboardIcon,
 	InboxIcon,
 	MegaphoneIcon,
+	FlagIcon,
 	User2Icon,
 } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
@@ -27,6 +28,7 @@ const nav = [
 	{ href: "/admin/blog", label: "Blog", icon: NewspaperIcon },
 	{ href: "/admin/press", label: "Press", icon: MegaphoneIcon },
 	{ href: "/admin/contact", label: "Contact Submissions", icon: InboxIcon },
+	{ href: "/admin/reports", label: "Transaction Reports", icon: FlagIcon },
 ] as const;
 
 function NavItem({

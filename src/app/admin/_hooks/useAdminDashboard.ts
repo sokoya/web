@@ -10,6 +10,7 @@ export function useAdminDashboard() {
   const [published, setPublished] = useState(0);
   const [drafts, setDrafts] = useState(0);
   const [newContacts, setNewContacts] = useState(0);
+  const [newReports, setNewReports] = useState(0);
   const [recentPosts, setRecentPosts] = useState<any[]>([]);
   const [recentContacts, setRecentContacts] = useState<any[]>([]);
 
@@ -24,6 +25,7 @@ export function useAdminDashboard() {
         setPublished(data.stats?.published ?? 0);
         setDrafts(data.stats?.drafts ?? 0);
         setNewContacts(data.stats?.newContacts ?? 0);
+        setNewReports(data.stats?.newReports ?? 0);
         setRecentPosts((data.recentPosts ?? []).slice(0, 3));
         setRecentContacts((data.recentContacts ?? []).slice(0, 3));
       } catch (e) {
@@ -38,6 +40,6 @@ export function useAdminDashboard() {
     };
   }, []);
 
-  return { loading, err, published, drafts, newContacts, recentPosts, recentContacts };
+  return { loading, err, published, drafts, newContacts, newReports, recentPosts, recentContacts };
 }
 
