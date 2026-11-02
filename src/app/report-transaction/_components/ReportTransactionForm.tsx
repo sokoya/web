@@ -16,6 +16,14 @@ type FormStatus = null | { type: "success" | "error"; message: string };
 const inputClass =
 	"w-full rounded-xl border border-slate-600 bg-slate-700/50 px-4 py-3 text-white placeholder-slate-400 outline-none focus:border-primary";
 
+function formatAmountInput(value: string): string {
+	const cleaned = value.replace(/[^0-9.]/g, "");
+	const parts = cleaned.split(".");
+	const formattedInt = (parts[0] ?? "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	if (parts.length === 1) return formattedInt;
+	return `${formattedInt}.${parts.slice(1).join("").slice(0, 2)}`;
+}
+
 export function ReportTransactionForm() {
 	const prefersReducedMotion = useReducedMotion();
 	const reducedMotion = !!prefersReducedMotion;
@@ -135,7 +143,7 @@ export function ReportTransactionForm() {
 							<input
 								id='fullName'
 								type='text'
-								placeholder='Enter'
+								placeholder='Enter your full name'
 								value={fullName}
 								onChange={(e) => setFullName(e.target.value)}
 								className={inputClass}
@@ -148,7 +156,7 @@ export function ReportTransactionForm() {
 							<input
 								id='email'
 								type='email'
-								placeholder='Enter'
+								placeholder='Enter your email address'
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
 								className={inputClass}
@@ -163,7 +171,7 @@ export function ReportTransactionForm() {
 						<input
 							id='phone'
 							type='tel'
-							placeholder='Enter'
+							placeholder='e.g. +234 801 234 5678'
 							value={phone}
 							onChange={(e) => setPhone(e.target.value)}
 							className={inputClass}
@@ -243,9 +251,10 @@ export function ReportTransactionForm() {
 							<input
 								id='amount'
 								type='text'
-								placeholder='e.g. 5000'
+								inputMode='decimal'
+								placeholder='e.g. 5,000'
 								value={amount}
-								onChange={(e) => setAmount(e.target.value)}
+								onChange={(e) => setAmount(formatAmountInput(e.target.value))}
 								className={inputClass}
 							/>
 						</div>
